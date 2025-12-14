@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Timetable Fetcher</title>
+    <style>
+      body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; max-width: 900px; margin: 40px auto; padding: 0 20px; }
+      input[type=text], input[type=date], input[type=number] { width: 100%; padding: 8px; margin: 6px 0 12px; }
+      label { font-weight: 600; }
+      .card { border: 1px solid #e1e1e1; padding: 18px; border-radius: 8px; }
+      .actions { margin-top: 12px; }
+    </style>
+  </head>
+  <body>
+    <h1>Timetable Fetcher</h1>
+    <p>Paste a published Outlook calendar URL or upload an <code>.ics</code> file. Press <strong>Fetch</strong>.</p>
+
+    <div class="card">
+      <form action="/fetch" method="post" enctype="multipart/form-data">
+        <label for="url">Calendar URL</label>
+        <input id="url" name="url" type="text" placeholder="https://outlook.office365.com/.../calendar.html" />
+
+        <label for="icsfile">Or upload a .ics file</label>
+        <input id="icsfile" name="icsfile" type="file" accept=".ics" />
+
+        <label for="days">Days to show</label>
+        <input id="days" name="days" type="number" value="7" min="1" />
+
+        <label for="from">From (optional)</label>
+        <input id="from" name="from" type="date" />
+
+        <label for="to">To (optional)</label>
+        <input id="to" name="to" type="date" />
+
+  <label for="render">Render page (execute JavaScript) and then fetch</label>
+  <input id="render" name="render" type="checkbox" value="1" />
+
+        <div class="actions">
+          <button type="submit">Fetch</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
