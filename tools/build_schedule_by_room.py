@@ -33,9 +33,17 @@ from datetime import date, datetime, timedelta
 import pathlib
 import re
 from dateutil import parser as dtparser
+import sys
 
 # Import parserul inteligent pentru subiecte
 from subject_parser import get_parser, parse_title, get_mappings
+
+# Ensure stdout/stderr use UTF-8 where the platform default may be cp1252 (Windows).
+try:
+    sys.stdout.reconfigure(encoding='utf-8')
+    sys.stderr.reconfigure(encoding='utf-8')
+except Exception:
+    pass
 
 
 def load_subject_mappings():

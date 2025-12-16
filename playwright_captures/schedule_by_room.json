@@ -7,7 +7,8 @@
         "title": "Graphic Processing",
         "subject": "Graphic Processing",
         "location": "utcn_room_ac_doro_105@campus.utcluj.ro",
-        "professor": "Graphic Processing"
+        "professor": "Graphic Processing",
+        "source": null
       },
       {
         "start": "2025-12-16T10:00:00+02:00",
@@ -15,7 +16,8 @@
         "title": "Graphic Processing",
         "subject": "Graphic Processing",
         "location": "utcn_room_ac_doro_105@campus.utcluj.ro",
-        "professor": "Graphic Processing"
+        "professor": "Graphic Processing",
+        "source": null
       }
     ],
     "2025-12-17": [
@@ -25,7 +27,8 @@
         "title": "Graphic Processing",
         "subject": "Graphic Processing",
         "location": "utcn_room_ac_doro_105@campus.utcluj.ro",
-        "professor": "Graphic Processing"
+        "professor": "Graphic Processing",
+        "source": null
       },
       {
         "start": "2025-12-17T10:00:00+02:00",
@@ -33,7 +36,8 @@
         "title": "Graphic Processing",
         "subject": "Graphic Processing",
         "location": "utcn_room_ac_doro_105@campus.utcluj.ro",
-        "professor": "Graphic Processing"
+        "professor": "Graphic Processing",
+        "source": null
       }
     ],
     "2025-12-19": [
@@ -43,7 +47,8 @@
         "title": "Graphic Processing",
         "subject": "Graphic Processing",
         "location": "utcn_room_ac_doro_105@campus.utcluj.ro",
-        "professor": "Graphic Processing"
+        "professor": "Graphic Processing",
+        "source": null
       },
       {
         "start": "2025-12-19T12:00:00+02:00",
@@ -51,7 +56,8 @@
         "title": "Graphic Processing",
         "subject": "Graphic Processing",
         "location": "utcn_room_ac_doro_105@campus.utcluj.ro",
-        "professor": "Graphic Processing"
+        "professor": "Graphic Processing",
+        "source": null
       },
       {
         "start": "2025-12-19T14:00:00+02:00",
@@ -59,7 +65,8 @@
         "title": "Graphic Processing",
         "subject": "Graphic Processing",
         "location": "utcn_room_ac_doro_105@campus.utcluj.ro",
-        "professor": "Graphic Processing"
+        "professor": "Graphic Processing",
+        "source": null
       }
     ]
   },
@@ -71,7 +78,8 @@
         "title": "Structure Of Computer Systems",
         "subject": "Structure Of Computer Systems",
         "location": "utcn_room_ac_bar_s42@campus.utcluj.ro",
-        "professor": "Practice"
+        "professor": "Practice",
+        "source": null
       },
       {
         "start": "2025-12-16T10:00:00+02:00",
@@ -79,7 +87,8 @@
         "title": "Structure Of Computer Systems",
         "subject": "Structure Of Computer Systems",
         "location": "utcn_room_ac_bar_s42@campus.utcluj.ro",
-        "professor": "Practice"
+        "professor": "Practice",
+        "source": null
       }
     ],
     "2025-12-17": [
@@ -89,7 +98,8 @@
         "title": "Structure Of Computer Systems",
         "subject": "Structure Of Computer Systems",
         "location": "utcn_room_ac_bar_s42@campus.utcluj.ro",
-        "professor": "Structure Of Computer Systems"
+        "professor": "Structure Of Computer Systems",
+        "source": null
       }
     ],
     "2025-12-19": [
@@ -99,7 +109,8 @@
         "title": "Structure Of Computer Systems",
         "subject": "Structure Of Computer Systems",
         "location": "utcn_room_ac_bar_s42@campus.utcluj.ro",
-        "professor": "Structure Of Computer Systems"
+        "professor": "Structure Of Computer Systems",
+        "source": null
       },
       {
         "start": "2025-12-19T12:00:00+02:00",
@@ -107,7 +118,8 @@
         "title": "Structure Of Computer Systems",
         "subject": "Structure Of Computer Systems",
         "location": "utcn_room_ac_bar_s42@campus.utcluj.ro",
-        "professor": "Structure Of Computer Systems"
+        "professor": "Structure Of Computer Systems",
+        "source": null
       },
       {
         "start": "2025-12-19T14:00:00+02:00",
@@ -115,7 +127,8 @@
         "title": "Structure Of Computer Systems",
         "subject": "Structure Of Computer Systems",
         "location": "utcn_room_ac_bar_s42@campus.utcluj.ro",
-        "professor": "Practice"
+        "professor": "Practice",
+        "source": null
       },
       {
         "start": "2025-12-19T16:00:00+02:00",
@@ -123,7 +136,8 @@
         "title": "Structure Of Computer Systems",
         "subject": "Structure Of Computer Systems",
         "location": "utcn_room_ac_bar_s42@campus.utcluj.ro",
-        "professor": "Structure Of Computer Systems"
+        "professor": "Structure Of Computer Systems",
+        "source": null
       },
       {
         "start": "2025-12-19T18:00:00+02:00",
@@ -131,7 +145,8 @@
         "title": "Structure Of Computer Systems",
         "subject": "Structure Of Computer Systems",
         "location": "utcn_room_ac_bar_s42@campus.utcluj.ro",
-        "professor": "Structure Of Computer Systems"
+        "professor": "Structure Of Computer Systems",
+        "source": null
       }
     ]
   },
@@ -143,7 +158,8 @@
         "title": "Design With Microprocessors",
         "subject": "Design With Microprocessors",
         "location": "utcn_room_ac_doro_107@campus.utcluj.ro",
-        "professor": "Design With Microprocessors"
+        "professor": "Design With Microprocessors",
+        "source": null
       },
       {
         "start": "2025-12-16T10:00:00+02:00",
@@ -151,7 +167,8 @@
         "title": "Design With Microprocessors",
         "subject": "Design With Microprocessors",
         "location": "utcn_room_ac_doro_107@campus.utcluj.ro",
-        "professor": "Design With Microprocessors"
+        "professor": "Design With Microprocessors",
+        "source": null
       }
     ],
     "2025-12-17": [
@@ -161,7 +178,8 @@
         "title": "Design With Microprocessors",
         "subject": "Design With Microprocessors",
         "location": "utcn_room_ac_doro_107@campus.utcluj.ro",
-        "professor": "Design With Microprocessors"
+        "professor": "Design With Microprocessors",
+        "source": null
       },
       {
         "start": "2025-12-17T10:00:00+02:00",
@@ -169,7 +187,8 @@
         "title": "Design With Microprocessors",
         "subject": "Design With Microprocessors",
         "location": "utcn_room_ac_doro_107@campus.utcluj.ro",
-        "professor": "Design With Microprocessors"
+        "professor": "Design With Microprocessors",
+        "source": null
       },
       {
         "start": "2025-12-17T16:00:00+02:00",
@@ -177,7 +196,8 @@
         "title": "Design With Microprocessors",
         "subject": "Design With Microprocessors",
         "location": "utcn_room_ac_doro_107@campus.utcluj.ro",
-        "professor": "Design With Microprocessors"
+        "professor": "Design With Microprocessors",
+        "source": null
       },
       {
         "start": "2025-12-17T18:00:00+02:00",
@@ -185,7 +205,8 @@
         "title": "Design With Microprocessors",
         "subject": "Design With Microprocessors",
         "location": "utcn_room_ac_doro_107@campus.utcluj.ro",
-        "professor": "Design With Microprocessors"
+        "professor": "Design With Microprocessors",
+        "source": null
       }
     ],
     "2025-12-19": [
@@ -195,7 +216,8 @@
         "title": "Design With Microprocessors",
         "subject": "Design With Microprocessors",
         "location": "utcn_room_ac_doro_107@campus.utcluj.ro",
-        "professor": "Design With Microprocessors"
+        "professor": "Design With Microprocessors",
+        "source": null
       },
       {
         "start": "2025-12-19T10:00:00+02:00",
@@ -203,7 +225,8 @@
         "title": "Design With Microprocessors",
         "subject": "Design With Microprocessors",
         "location": "utcn_room_ac_doro_107@campus.utcluj.ro",
-        "professor": "Design With Microprocessors"
+        "professor": "Design With Microprocessors",
+        "source": null
       },
       {
         "start": "2025-12-19T12:00:00+02:00",
@@ -211,7 +234,8 @@
         "title": "Design With Microprocessors",
         "subject": "Design With Microprocessors",
         "location": "utcn_room_ac_doro_107@campus.utcluj.ro",
-        "professor": "Design With Microprocessors"
+        "professor": "Design With Microprocessors",
+        "source": null
       },
       {
         "start": "2025-12-19T14:00:00+02:00",
@@ -219,7 +243,8 @@
         "title": "Design With Microprocessors",
         "subject": "Design With Microprocessors",
         "location": "utcn_room_ac_doro_107@campus.utcluj.ro",
-        "professor": "Design With Microprocessors"
+        "professor": "Design With Microprocessors",
+        "source": null
       }
     ]
   },
@@ -231,7 +256,8 @@
         "title": "Functional Programming",
         "subject": "Functional Programming",
         "location": "utcn_room_ac_bar_40@campus.utcluj.ro",
-        "professor": "R. Slavescu"
+        "professor": "R. Slavescu",
+        "source": null
       },
       {
         "start": "2025-12-16T16:00:00+02:00",
@@ -239,7 +265,8 @@
         "title": "Economic Law",
         "subject": "Economic Law",
         "location": "utcn_room_ac_bar_40@campus.utcluj.ro",
-        "professor": "R. Cordos"
+        "professor": "R. Cordos",
+        "source": null
       }
     ]
   },
@@ -251,7 +278,8 @@
         "title": "Computer Assisted Instruction.(fac) 356 / Seminar 356",
         "subject": "Computer Assisted Instruction.(fac) 356 / Seminar 356",
         "location": "utcn_room_ac_bar_356@campus.utcluj.ro",
-        "professor": "Computer Assisted Instruction."
+        "professor": "Computer Assisted Instruction.",
+        "source": null
       }
     ]
   },
@@ -263,7 +291,8 @@
         "title": "Artificial Intelligence",
         "subject": "Artificial Intelligence",
         "location": "utcn_room_ac_bar_26b@campus.utcluj.ro",
-        "professor": "Artificial Intelligence"
+        "professor": "Artificial Intelligence",
+        "source": null
       },
       {
         "start": "2025-12-17T10:00:00+02:00",
@@ -271,7 +300,8 @@
         "title": "Artificial Intelligence",
         "subject": "Artificial Intelligence",
         "location": "utcn_room_ac_bar_26b@campus.utcluj.ro",
-        "professor": "Artificial Intelligence"
+        "professor": "Artificial Intelligence",
+        "source": null
       },
       {
         "start": "2025-12-17T12:00:00+02:00",
@@ -279,7 +309,8 @@
         "title": "Artificial Intelligence",
         "subject": "Artificial Intelligence",
         "location": "utcn_room_ac_bar_26b@campus.utcluj.ro",
-        "professor": "Artificial Intelligence"
+        "professor": "Artificial Intelligence",
+        "source": null
       },
       {
         "start": "2025-12-17T14:00:00+02:00",
@@ -287,7 +318,8 @@
         "title": "Artificial Intelligence",
         "subject": "Artificial Intelligence",
         "location": "utcn_room_ac_bar_26b@campus.utcluj.ro",
-        "professor": "Artificial Intelligence"
+        "professor": "Artificial Intelligence",
+        "source": null
       },
       {
         "start": "2025-12-17T16:00:00+02:00",
@@ -295,7 +327,8 @@
         "title": "Artificial Intelligence",
         "subject": "Artificial Intelligence",
         "location": "utcn_room_ac_bar_26b@campus.utcluj.ro",
-        "professor": "Artificial Intelligence"
+        "professor": "Artificial Intelligence",
+        "source": null
       }
     ],
     "2025-12-19": [
@@ -305,7 +338,8 @@
         "title": "Functional Programming",
         "subject": "Functional Programming",
         "location": "utcn_room_ac_bar_26b@campus.utcluj.ro",
-        "professor": "Functional Programming"
+        "professor": "Functional Programming",
+        "source": null
       },
       {
         "start": "2025-12-19T10:00:00+02:00",
@@ -313,7 +347,8 @@
         "title": "Artificial Intelligence",
         "subject": "Artificial Intelligence",
         "location": "utcn_room_ac_bar_26b@campus.utcluj.ro",
-        "professor": "Artificial Intelligence"
+        "professor": "Artificial Intelligence",
+        "source": null
       },
       {
         "start": "2025-12-19T12:00:00+02:00",
@@ -321,7 +356,8 @@
         "title": "Artificial Intelligence",
         "subject": "Artificial Intelligence",
         "location": "utcn_room_ac_bar_26b@campus.utcluj.ro",
-        "professor": "Artificial Intelligence"
+        "professor": "Artificial Intelligence",
+        "source": null
       }
     ]
   },
@@ -333,7 +369,8 @@
         "title": "Functional Programming",
         "subject": "Functional Programming",
         "location": "utcn_room_ac_daic_479@campus.utcluj.ro",
-        "professor": "Functional Programming"
+        "professor": "Functional Programming",
+        "source": null
       },
       {
         "start": "2025-12-17T10:00:00+02:00",
@@ -341,7 +378,8 @@
         "title": "Functional Programming",
         "subject": "Functional Programming",
         "location": "utcn_room_ac_daic_479@campus.utcluj.ro",
-        "professor": "Functional Programming"
+        "professor": "Functional Programming",
+        "source": null
       },
       {
         "start": "2025-12-17T12:00:00+02:00",
@@ -349,7 +387,8 @@
         "title": "Functional Programming",
         "subject": "Functional Programming",
         "location": "utcn_room_ac_daic_479@campus.utcluj.ro",
-        "professor": "Functional Programming"
+        "professor": "Functional Programming",
+        "source": null
       },
       {
         "start": "2025-12-17T14:00:00+02:00",
@@ -357,7 +396,8 @@
         "title": "Functional Programming",
         "subject": "Functional Programming",
         "location": "utcn_room_ac_daic_479@campus.utcluj.ro",
-        "professor": "Functional Programming"
+        "professor": "Functional Programming",
+        "source": null
       }
     ],
     "2025-12-19": [
@@ -367,7 +407,8 @@
         "title": "Functional Programming",
         "subject": "Functional Programming",
         "location": "utcn_room_ac_daic_479@campus.utcluj.ro",
-        "professor": "Functional Programming"
+        "professor": "Functional Programming",
+        "source": null
       }
     ]
   },
@@ -379,7 +420,8 @@
         "title": "Software Engineering",
         "subject": "Software Engineering",
         "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
-        "professor": "Software Engineering"
+        "professor": "Software Engineering",
+        "source": null
       },
       {
         "start": "2025-12-17T12:00:00+02:00",
@@ -387,7 +429,8 @@
         "title": "Software Engineering",
         "subject": "Software Engineering",
         "location": "utcn_room_ac_bar_bt-503@campus.utcluj.ro",
-        "professor": "Software Engineering"
+        "professor": "Software Engineering",
+        "source": null
       },
       {
         "start": "2025-12-17T14:00:00+02:00",
@@ -395,7 +438,8 @@
         "title": "Software Engineering",
         "subject": "Software Engineering",
         "location": "utcn_room_ac_bar_bt-503@campus.utcluj.ro",
-        "professor": "Software Engineering"
+        "professor": "Software Engineering",
+        "source": null
       },
       {
         "start": "2025-12-17T16:00:00+02:00",
@@ -403,7 +447,8 @@
         "title": "Software Engineering",
         "subject": "Software Engineering",
         "location": "UTCN - AC Bar - Sala BT 503",
-        "professor": "Software Engineering"
+        "professor": "Software Engineering",
+        "source": null
       },
       {
         "start": "2025-12-17T18:00:00+02:00",
@@ -411,7 +456,8 @@
         "title": "Software Engineering",
         "subject": "Software Engineering",
         "location": "utcn_room_ac_bar_bt-503@campus.utcluj.ro",
-        "professor": "Software Engineering"
+        "professor": "Software Engineering",
+        "source": null
       }
     ],
     "2025-12-19": [
@@ -421,7 +467,8 @@
         "title": "Software Engineering",
         "subject": "Software Engineering",
         "location": "utcn_room_ac_bar_bt-503@campus.utcluj.ro",
-        "professor": "Software Engineering"
+        "professor": "Software Engineering",
+        "source": null
       },
       {
         "start": "2025-12-19T14:00:00+02:00",
@@ -429,7 +476,8 @@
         "title": "Software Engineering",
         "subject": "Software Engineering",
         "location": "utcn_room_ac_bar_bt-503@campus.utcluj.ro",
-        "professor": "Software Engineering"
+        "professor": "Software Engineering",
+        "source": null
       }
     ]
   },
@@ -441,7 +489,8 @@
         "title": "Structure Of Computer Systems",
         "subject": "Structure Of Computer Systems",
         "location": "utcn_room_ac_doro_103@campus.utcluj.ro",
-        "professor": "Practice"
+        "professor": "Practice",
+        "source": null
       },
       {
         "start": "2025-12-17T14:00:00+02:00",
@@ -449,7 +498,8 @@
         "title": "Structure Of Computer Systems",
         "subject": "Structure Of Computer Systems",
         "location": "utcn_room_ac_doro_103@campus.utcluj.ro",
-        "professor": "Practice"
+        "professor": "Practice",
+        "source": null
       },
       {
         "start": "2025-12-17T16:00:00+02:00",
@@ -457,7 +507,8 @@
         "title": "Structure Of Computer Systems",
         "subject": "Structure Of Computer Systems",
         "location": "utcn_room_ac_doro_103@campus.utcluj.ro",
-        "professor": "Structure Of Computer Systems"
+        "professor": "Structure Of Computer Systems",
+        "source": null
       },
       {
         "start": "2025-12-17T18:00:00+02:00",
@@ -465,7 +516,8 @@
         "title": "Structure Of Computer Systems",
         "subject": "Structure Of Computer Systems",
         "location": "utcn_room_ac_doro_103@campus.utcluj.ro",
-        "professor": "Structure Of Computer Systems"
+        "professor": "Structure Of Computer Systems",
+        "source": null
       }
     ],
     "2025-12-18": [
@@ -475,7 +527,8 @@
         "title": "Structure Of Computer Systems",
         "subject": "Structure Of Computer Systems",
         "location": "utcn_room_ac_doro_103@campus.utcluj.ro",
-        "professor": "Structure Of Computer Systems"
+        "professor": "Structure Of Computer Systems",
+        "source": null
       }
     ],
     "2025-12-19": [
@@ -485,7 +538,8 @@
         "title": "Artificial Intelligence",
         "subject": "Artificial Intelligence",
         "location": "utcn_room_ac_doro_103@campus.utcluj.ro",
-        "professor": "Artificial Intelligence"
+        "professor": "Artificial Intelligence",
+        "source": null
       }
     ]
   },
@@ -497,7 +551,8 @@
         "title": "Software Engineering",
         "subject": "Software Engineering",
         "location": "utcn_room_ac_bar_16b@campus.utcluj.ro",
-        "professor": "Software Engineering"
+        "professor": "Software Engineering",
+        "source": null
       }
     ]
   },
@@ -509,7 +564,8 @@
         "title": "Didact . Spec. 206 (turn)/",
         "subject": "Didact . Spec. 206 (turn)/",
         "location": "utcn_room_ac_daic_206@campus.utcluj.ro",
-        "professor": null
+        "professor": null,
+        "source": null
       },
       {
         "start": "2025-12-17T18:00:00+02:00",
@@ -517,7 +573,8 @@
         "title": "Didactica Specialitatii",
         "subject": "Didactica Specialitatii",
         "location": "utcn_room_ac_daic_206@campus.utcluj.ro",
-        "professor": "Didactica Specialitatii"
+        "professor": "Didactica Specialitatii",
+        "source": null
       }
     ]
   },
@@ -529,7 +586,8 @@
         "title": "Graphic Processing",
         "subject": "Graphic Processing",
         "location": "utcn_room_ac_doro_d01@campus.utcluj.ro",
-        "professor": "D. Gorgan"
+        "professor": "D. Gorgan",
+        "source": null
       },
       {
         "start": "2025-12-18T10:00:00+02:00",
@@ -537,7 +595,8 @@
         "title": "Design With Microprocessors",
         "subject": "Design With Microprocessors",
         "location": "utcn_room_ac_doro_d01@campus.utcluj.ro",
-        "professor": "R. Danescu"
+        "professor": "R. Danescu",
+        "source": null
       },
       {
         "start": "2025-12-18T12:00:00+02:00",
@@ -545,7 +604,8 @@
         "title": "Structure Of Computer Systems",
         "subject": "Structure Of Computer Systems",
         "location": "utcn_room_ac_doro_d01@campus.utcluj.ro",
-        "professor": "G. Sebestyen"
+        "professor": "G. Sebestyen",
+        "source": null
       }
     ]
   }

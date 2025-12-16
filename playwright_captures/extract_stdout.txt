@@ -3,10 +3,11 @@ Extracting URL: https://outlook.office365.com/calendar/published/173862b98010453
 Navigating to page...
 Captured: https://outlook.office365.com/owa/published/173862b98010453296f2a697e45f3b1e@campus.utcluj.ro/daeb64d4bd994c52b4f54d04ba1940ca2236386271423118770/service.svc?action=GetAnonymousCalendarSessionData&app=PublishedCalendar&n=0 -> playwright_captures/json_capture_0.json
 Captured: https://outlook.office365.com/owa/published/service.svc?action=GetTimeZoneOffsets&app=PublishedCalendar&n=1 -> playwright_captures/json_capture_1.json
-Captured: https://outlook.office365.com/owa/published/service.svc?action=GetTimeZoneOffsets&app=PublishedCalendar&n=0 -> playwright_captures/json_capture_2.json
-Captured: https://outlook.office365.com/owa/published/173862b98010453296f2a697e45f3b1e@campus.utcluj.ro/daeb64d4bd994c52b4f54d04ba1940ca2236386271423118770/service.svc?action=FindItem&app=PublishedCalendar&n=2 -> playwright_captures/json_capture_3.json
+Captured: https://outlook.office365.com/owa/published/173862b98010453296f2a697e45f3b1e@campus.utcluj.ro/daeb64d4bd994c52b4f54d04ba1940ca2236386271423118770/service.svc?action=FindItem&app=PublishedCalendar&n=2 -> playwright_captures/json_capture_2.json
 Found 41 candidate elements to click (trying up to 40)
+Captured: https://outlook.office365.com/owa/published/service.svc?action=GetTimeZoneOffsets&app=PublishedCalendar&n=0 -> playwright_captures/json_capture_3.json
 Captured: https://outlook.office365.com/owa/published/173862b98010453296f2a697e45f3b1e@campus.utcluj.ro/daeb64d4bd994c52b4f54d04ba1940ca2236386271423118770/service.svc?action=GetItem&app=PublishedCalendar&n=3 -> playwright_captures/json_capture_4.json
+Captured: https://outlook.office365.com/owa/published/service.svc?action=GetTimeZoneOffsets&app=PublishedCalendar&n=4 -> playwright_captures/json_capture_5.json
 Saved page_after_clicks.html
 Învățat 7 mapping-uri din titluri:
   AI -> Artificial Intelligence

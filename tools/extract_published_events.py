@@ -27,6 +27,22 @@ from dateutil import parser as dtparser
 import sys
 import hashlib
 
+# Ensure the process uses UTF-8 for stdout/stderr on Windows where the default
+# console encoding can be cp1252. Attempt to reconfigure the IO streams and
+# set PYTHONUTF8/PYTHONIOENCODING to help child processes and libraries.
+try:
+    # Python 3.7+ provides reconfigure for TextIOWrapper
+    sys.stdout.reconfigure(encoding='utf-8')
+    sys.stderr.reconfigure(encoding='utf-8')
+except Exception:
+    pass
+try:
+    import os
+    os.environ.setdefault('PYTHONUTF8', '1')
+    os.environ.setdefault('PYTHONIOENCODING', 'utf-8')
+except Exception:
+    pass
+
 # Import parserul inteligent pentru subiecte
 from subject_parser import get_parser, learn_from_events, expand_title
 

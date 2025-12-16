@@ -613,8 +613,12 @@ def _run_extractor_background():
     script = pathlib.Path('tools') / 'extract_published_events.py'
     cmd = [sys.executable, str(script)]
     try:
+        # ensure child python runs use UTF-8 on Windows (avoid cp1252 issues)
+        env = os.environ.copy()
+        env.setdefault('PYTHONUTF8', '1')
+        env.setdefault('PYTHONIOENCODING', 'utf-8')
         with open(stdout_path, 'w', encoding='utf-8') as out_f, open(stderr_path, 'w', encoding='utf-8') as err_f:
-            proc = subprocess.run(cmd, stdout=out_f, stderr=err_f, text=True)
+            proc = subprocess.run(cmd, stdout=out_f, stderr=err_f, text=True, env=env)
             extractor_state['last_rc'] = proc.returncode
     except Exception as e:
         with open(stderr_path, 'a', encoding='utf-8') as err_f:
@@ -633,8 +637,12 @@ def _run_extractor_for_url(url: str) -> int:
     stderr_path = out_dir / f'extract_{h}.stderr.txt'
     cmd = [sys.executable, str(pathlib.Path('tools') / 'extract_published_events.py'), url]
     try:
+        # force UTF-8 for child process to avoid Windows cp1252 / OEM codepage problems
+        env = os.environ.copy()
+        env.setdefault('PYTHONUTF8', '1')
+        env.setdefault('PYTHONIOENCODING', 'utf-8')
         with open(stdout_path, 'w', encoding='utf-8') as out_f, open(stderr_path, 'w', encoding='utf-8') as err_f:
-            proc = subprocess.run(cmd, stdout=out_f, stderr=err_f, text=True)
+            proc = subprocess.run(cmd, stdout=out_f, stderr=err_f, text=True, env=env)
             rc = proc.returncode
     except Exception as e:
         with open(stderr_path, 'a', encoding='utf-8') as err_f:
