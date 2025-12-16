@@ -41,12 +41,18 @@ Quick setup (automated):
 ./setup.sh
 ```
 
-If you prefer manual steps, after creating the venv you can optionally install Playwright browsers:
+The `setup.sh` script now performs the full bootstrap:
+
+- creates and activates `.venv`
+- installs Python dependencies from `requirements.txt`
+- installs Playwright browsers (required for the extractor UI rendering)
+- initializes the local SQLite DB and migrates any legacy configs into `data/app.db`
+
+You can then run the app with:
 
 ```bash
-python -m playwright install
-# or install only chromium
-python -m playwright install chromium
+source .venv/bin/activate
+python app.py
 ```
 
 If you don't want to activate the virtualenv, use the interpreter directly:

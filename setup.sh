@@ -16,7 +16,13 @@ source "$PY_VENV_DIR/bin/activate"
 pip install --upgrade pip
 pip install -r requirements.txt
 
-echo "Optionally install Playwright browsers (required for extractor UI rendering):"
-echo "  python -m playwright install"
+echo "Installing Playwright browsers (required for extractor UI rendering)..."
+# Install Playwright browser binaries so the extractor and UI rendering work out of the box.
+python -m playwright install
+
+echo "Initializing application database and migrating any existing configs..."
+# Ensure data directory exists and initialize DB via the app helper functions.
+mkdir -p data
+"$PY_VENV_DIR/bin/python" -c "from app import init_db, migrate_from_files; init_db(); migrate_from_files(); print('DB initialized')"
 
 echo "Setup complete. Activate with: source $PY_VENV_DIR/bin/activate"
