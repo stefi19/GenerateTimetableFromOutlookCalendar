@@ -35,6 +35,20 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+Quick setup (automated):
+
+```bash
+./setup.sh
+```
+
+If you prefer manual steps, after creating the venv you can optionally install Playwright browsers:
+
+```bash
+python -m playwright install
+# or install only chromium
+python -m playwright install chromium
+```
+
 If you don't want to activate the virtualenv, use the interpreter directly:
 
 ```bash

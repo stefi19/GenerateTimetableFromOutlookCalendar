@@ -11,10 +11,11 @@ last_ics_response.html
 .idea/
 .vscode/
 
-# NOTE: `venv/` and `.venv/` are intentionally not ignored so the virtualenv
-# can be committed if desired. Committing virtualenvs is normally discouraged
-# (large, platform-specific). Keep this only if you really want to include
-# the environment in the repo for immediate setup.
+
+# Ignore virtualenvs by default (committing them is discouraged; large and
+# platform-specific). This prevents accidentally adding .venv/ to git.
+venv/
+.venv/
 /.venv/
 /venv/
 __pycache__/
