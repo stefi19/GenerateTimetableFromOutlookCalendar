@@ -178,7 +178,7 @@ data/app.db
 - Add new parsers or building mappings in `tools/subject_parser.py`.
 - The extractor lives in `tools/extract_published_events.py` and can be run standalone when debugging a URL.
 
-If you want, I can add a `run.sh` to standardize startup/stop, add a `.gitignore` with the above entries, or make the periodic fetcher interval configurable via an environment variable. Tell me which and I'll add it.
+<!-- Removed: optional run.sh / .gitignore / env suggestion per request -->
 
 ---
 License: MIT

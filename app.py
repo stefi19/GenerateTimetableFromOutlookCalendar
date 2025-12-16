@@ -11,6 +11,7 @@ import pathlib
 import json
 import sys
 import subprocess
+import hashlib
 from datetime import datetime, date, timedelta
 from typing import List, Dict, Optional
 
@@ -294,6 +295,63 @@ def ensure_schedule(from_date: date, to_date: date):
     out_dir = pathlib.Path('playwright_captures')
     jpath = out_dir / 'schedule_by_room.json'
     cpath = out_dir / 'schedule_by_room.csv'
+    # Before regenerating, merge any per-calendar extracted files (events_<hash>.json)
+    try:
+        out_dir = pathlib.Path('playwright_captures')
+        merged_path = out_dir / 'events.json'
+        # find per-calendar files
+        parts = list(out_dir.glob('events_*.json'))
+        # include untagged events.json if present
+        generic = out_dir / 'events.json'
+        if generic.exists():
+            parts.insert(0, generic)
+        merged = []
+        seen = set()
+        if parts:
+            for p in parts:
+                try:
+                    with open(p, 'r', encoding='utf-8') as f:
+                        items = json.load(f)
+                except Exception:
+                    items = []
+                for it in items:
+                    # dedupe by raw ItemId if available, otherwise by title+start
+                    key = None
+                    try:
+                        raw = it.get('raw') or {}
+                        iid = None
+                        if isinstance(raw, dict):
+                            iid = raw.get('ItemId', {}).get('Id') if raw.get('ItemId') else None
+                        key = iid or (str(it.get('title','')) + '|' + str(it.get('start') or ''))
+                    except Exception:
+                        key = (str(it.get('title','')) + '|' + str(it.get('start') or ''))
+                    if key in seen:
+                        continue
+                    seen.add(key)
+                    # attempt to enrich with calendar color from calendar_map.json
+                    try:
+                        map_path = out_dir / 'calendar_map.json'
+                        if map_path.exists() and it.get('source'):
+                            with open(map_path, 'r', encoding='utf-8') as mf:
+                                cmap = json.load(mf)
+                            meta = cmap.get(it.get('source')) or {}
+                            col = meta.get('color')
+                            if col:
+                                it['color'] = col
+                    except Exception:
+                        pass
+                    merged.append(it)
+            # save merged file
+            try:
+                out_dir.mkdir(parents=True, exist_ok=True)
+                with open(merged_path, 'w', encoding='utf-8') as f:
+                    json.dump(merged, f, indent=2, ensure_ascii=False, default=str)
+            except Exception:
+                pass
+
+    except Exception:
+        pass
+
     # call the build script to regenerate for the requested range
     try:
         script = pathlib.Path('tools') / 'build_schedule_by_room.py'
@@ -577,11 +635,75 @@ def _run_extractor_for_url(url: str) -> int:
     try:
         with open(stdout_path, 'w', encoding='utf-8') as out_f, open(stderr_path, 'w', encoding='utf-8') as err_f:
             proc = subprocess.run(cmd, stdout=out_f, stderr=err_f, text=True)
-            return proc.returncode
+            rc = proc.returncode
     except Exception as e:
         with open(stderr_path, 'a', encoding='utf-8') as err_f:
             err_f.write(str(e))
-        return 1
+        rc = 1
+
+    # If extractor produced an events.json, tag the events with the source hash
+    try:
+        out_dir = pathlib.Path('playwright_captures')
+        ev_in = out_dir / 'events.json'
+        if ev_in.exists():
+            h = h = hashlib.sha1(url.encode('utf-8')).hexdigest()[:8]
+            ev_out = out_dir / f'events_{h}.json'
+            try:
+                with open(ev_in, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+            except Exception:
+                data = []
+
+            # attach source id to each event
+            for it in data:
+                try:
+                    it['source'] = h
+                except Exception:
+                    pass
+
+            # write per-calendar events file
+            try:
+                with open(ev_out, 'w', encoding='utf-8') as f:
+                    json.dump(data, f, indent=2, ensure_ascii=False, default=str)
+            except Exception:
+                pass
+
+            # update mapping file (hash -> url/name/color)
+            try:
+                map_path = out_dir / 'calendar_map.json'
+                cmap = {}
+                if map_path.exists():
+                    with open(map_path, 'r', encoding='utf-8') as f:
+                        cmap = json.load(f)
+                # attempt to get name/color from DB
+                name = None
+                color = None
+                try:
+                    init_db()
+                    rows = list_calendar_urls()
+                    for r in rows:
+                        if r.get('url') == url:
+                            name = r.get('name')
+                            color = r.get('color')
+                            break
+                except Exception:
+                    pass
+                cmap[h] = {'url': url, 'name': name or '', 'color': color}
+                with open(map_path, 'w', encoding='utf-8') as f:
+                    json.dump(cmap, f, indent=2, ensure_ascii=False)
+            except Exception:
+                pass
+
+            # remove the generic events.json to avoid accidental reuse
+            try:
+                ev_in.unlink()
+            except Exception:
+                pass
+
+    except Exception:
+        pass
+
+    return rc
 
 
 def periodic_fetcher(interval_minutes: int = 60):
@@ -814,7 +936,29 @@ def events_json():
                     'professor': prof,
                     'location': location,
                     'color': None,
+                    'source': e.get('source') if isinstance(e, dict) else None,
                 }
+                # resolve color from merged metadata or calendar_map.json
+                try:
+                    # if schedule already had a color (merged), preserve it
+                    if isinstance(e, dict) and e.get('color'):
+                        ev['color'] = e.get('color')
+                    else:
+                        src = ev.get('source')
+                        if src:
+                            map_path = pathlib.Path('playwright_captures') / 'calendar_map.json'
+                            if map_path.exists():
+                                try:
+                                    with open(map_path, 'r', encoding='utf-8') as mf:
+                                        cmap = json.load(mf)
+                                    meta = cmap.get(src) or {}
+                                    if meta.get('color'):
+                                        ev['color'] = meta.get('color')
+                                except Exception:
+                                    pass
+                except Exception:
+                    pass
+
                 events.append(ev)
 
     # Append manual admin events from DB
@@ -1125,6 +1269,7 @@ def departures_view():
                 'location': xe.get('location') or '',
                 'organizer': xe.get('organizer') or '',
                 'extracurricular': True,
+                'color': '#7c3aed',
             }
             all_events.append(evt)
     except Exception:
@@ -1204,6 +1349,7 @@ def departures_view():
             'building_name': building_name,
             'is_now': event_date == today and start_dt <= now,
             'date': event_date,
+            'color': ev.get('color') if isinstance(ev, dict) else None,
         }
         
         if event_date == today:

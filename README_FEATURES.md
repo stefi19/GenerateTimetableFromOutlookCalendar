@@ -91,9 +91,7 @@ events API). It contains tools that use Playwright when client-side rendering is
 - If DB migration fails, check `data/app.db` permissions and any legacy JSON files under `config/`.
 
 ---
-If you want, I can extend this file with screenshots, example API responses, or a short
-architectural diagram showing where Playwright, DB, and templates interact. Tell me which
-extras you prefer.
+<!-- Removed: optional extension offer removed per request -->
 
 ## Planned features / Roadmap
 
@@ -143,6 +141,4 @@ Below are the features you've asked for and suggested approaches to implement th
       - For many devices, scale the WebSocket layer via a message broker (Redis pub/sub,
         Kafka) and horizontally scaled web nodes.
 
-Each of these features can be staged incrementally (start with per-calendar colors, add
-simple password protection, then design the sync topology). Tell me which one you want
-me to implement first and I can create a concrete plan and PR for it.
+<!-- Removed: roadmap staging suggestion per request -->

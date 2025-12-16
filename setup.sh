@@ -15,6 +15,9 @@ echo "Activating virtualenv and installing requirements..."
 source "$PY_VENV_DIR/bin/activate"
 pip install --upgrade pip
 pip install -r requirements.txt
+# Ensure Flask is available in the venv (requirements.txt already contains Flask, but
+# install explicitly to satisfy environments where requirements may be incomplete)
+pip install Flask
 
 echo "Installing Playwright browsers (required for extractor UI rendering)..."
 # Install Playwright browser binaries so the extractor and UI rendering work out of the box.

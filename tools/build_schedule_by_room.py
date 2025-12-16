@@ -303,12 +303,13 @@ def build_schedule(events):
         # capture professor if available from the loaded events or parsed from title
         prof = ev.get('professor') or professor or None
         schedule[room][day].append({
-            'start': st, 
-            'end': end, 
+            'start': st,
+            'end': end,
             'title': display_title or title,  # Folosește titlul formatat
-            'subject': subj, 
-            'location': location, 
-            'professor': prof
+            'subject': subj,
+            'location': location,
+            'professor': prof,
+            'source': ev.get('source') if isinstance(ev, dict) else None,
         })
 
     # sort events in each day by start
@@ -339,7 +340,15 @@ def save_outputs(schedule, out_dir: pathlib.Path):
         for day, evs in days.items():
             serial[out_room][day] = []
             for e in evs:
-                serial[out_room][day].append({'start': e['start'].isoformat() if e['start'] else None, 'end': e['end'].isoformat() if e['end'] else None, 'title': e['title'], 'subject': e['subject'], 'location': e['location'], 'professor': e.get('professor')})
+                serial[out_room][day].append({
+                    'start': e['start'].isoformat() if e['start'] else None,
+                    'end': e['end'].isoformat() if e['end'] else None,
+                    'title': e['title'],
+                    'subject': e['subject'],
+                    'location': e['location'],
+                    'professor': e.get('professor'),
+                    'source': e.get('source')
+                })
     with open(jpath, 'w', encoding='utf-8') as f:
         json.dump(serial, f, indent=2, ensure_ascii=False)
 

@@ -186,7 +186,12 @@
                         <div class="board-row {% if ev.is_now %}now{% endif %}">
                             <div class="time">{{ ev.time }}</div>
                             <div class="room">{{ ev.room }}</div>
-                            <div class="subject">{{ ev.display_title }}</div>
+                            <div class="subject">
+                                {% if ev.color %}
+                                <span class="cal-swatch" data-color="{{ ev.color }}" style="display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:8px;border:1px solid rgba(0,0,0,0.08);"></span>
+                                {% endif %}
+                                {{ ev.display_title }}
+                            </div>
                             <div class="professor">{{ ev.professor or '-' }}</div>
                         </div>
                         {% endfor %}
@@ -212,6 +217,16 @@
         }
         updateClock();
         setInterval(updateClock, 1000);
+
+        // Apply color swatches for elements with data-color to avoid template CSS parsing issues
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.cal-swatch[data-color]').forEach(function(el) {
+                var c = el.getAttribute('data-color');
+                if (c) {
+                    el.style.backgroundColor = c;
+                }
+            });
+        });
     </script>
 </body>
 </html>
