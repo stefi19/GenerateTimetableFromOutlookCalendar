@@ -34,36 +34,49 @@ import pathlib
 import re
 from dateutil import parser as dtparser
 
+# Import parserul inteligent pentru subiecte
+from subject_parser import get_parser, parse_title, get_mappings
+
+
+def load_subject_mappings():
+    """Încarcă mapping-urile salvate de extract_published_events.py."""
+    mappings_file = pathlib.Path('playwright_captures/subject_mappings.json')
+    if mappings_file.exists():
+        try:
+            with open(mappings_file, 'r', encoding='utf-8') as f:
+                mappings = json.load(f)
+            parser = get_parser()
+            for abbrev, name in mappings.items():
+                parser.add_mapping(abbrev, name)
+            return mappings
+        except Exception:
+            pass
+    return {}
+
 
 def guess_subject_and_room(title: str, location: str | None):
-    """Simpler extraction: return (subject, room).
+    """Simpler extraction: return (subject, room, display_title, professor).
 
-    Subject: take the text before the first ' - ' or '(' or the first few words.
-    Room: try to extract from title tokens or fall back to `location` parsing.
+    Uses the intelligent subject parser to extract information from the title.
+    Falls back to location parsing for room when necessary.
     """
     if not title and not location:
-        return (None, None)
+        return (None, None, None, None)
 
-    t = (title or '').strip()
-    # Prefer the segment before ' - ' which often separates subject / prof / room
-    parts = [p.strip() for p in re.split(r"\s+-\s+", t) if p.strip()]
-    if parts:
-        first = parts[0]
-    else:
-        first = t
-    # If the first part contains a parenthesized abbreviation, keep it together
-    m = re.match(r"^(.+?\(.+?\)).*$", first)
-    if m:
-        subject = m.group(1).strip()
-    else:
-        # otherwise take up to first 6 words to be slightly more descriptive
-        subj_tokens = re.split(r"\s+", first)[:6]
-        subject = ' '.join(subj_tokens).strip() if subj_tokens else None
-
-    # try to find a room-like token in title (a short token with digits)
-    parts = t.split()
+    # Folosește parserul inteligent
+    parsed = parse_title(title)
+    
+    subject = parsed.subject_name or None
+    display_title = parsed.display_title or title
+    professor = parsed.professor
+    
+    # Încearcă să găsească camera din titlu sau din location
     room = None
-    for tok in parts[::-1][:6]:
+    
+    # Mai întâi încearcă să găsească un token de cameră în titlu
+    t = (title or '').strip()
+    parts = t.split()
+    for tok in parts[::-1][:8]:
         rt = normalize_room(tok)
         if rt:
             room = rt
@@ -72,9 +85,7 @@ def guess_subject_and_room(title: str, location: str | None):
     if not room and location:
         room = room_from_location(location)
 
-    return (subject, room)
-
-    return (None, None)
+    return (subject, room, display_title, professor)
 
 
 def normalize_room(tok: str) -> str | None:
@@ -281,7 +292,7 @@ def build_schedule(events):
     for ev in events:
         title = ev.get('title') or ''
         location = ev.get('location')
-        subj, room = guess_subject_and_room(title, location)
+        subj, room, display_title, professor = guess_subject_and_room(title, location)
         if not room:
             room = location or 'UNKNOWN'
         # normalize room string
@@ -289,9 +300,16 @@ def build_schedule(events):
         st = ev.get('start')
         end = ev.get('end')
         day = st.date().isoformat()
-        # capture professor if available from the loaded events
-        prof = ev.get('professor') or None
-        schedule[room][day].append({'start': st, 'end': end, 'title': title, 'subject': subj, 'location': location, 'professor': prof})
+        # capture professor if available from the loaded events or parsed from title
+        prof = ev.get('professor') or professor or None
+        schedule[room][day].append({
+            'start': st, 
+            'end': end, 
+            'title': display_title or title,  # Folosește titlul formatat
+            'subject': subj, 
+            'location': location, 
+            'professor': prof
+        })
 
     # sort events in each day by start
     for room in schedule:
@@ -382,7 +400,19 @@ def main():
         print('Source events file not found:', src)
         return 2
 
+    # Încarcă mapping-urile de subiecte salvate anterior
+    loaded_mappings = load_subject_mappings()
+    if loaded_mappings:
+        print(f'Încărcat {len(loaded_mappings)} mapping-uri de subiecte')
+
     events = load_events(src)
+    
+    # Învață din evenimentele curente (pentru titluri complete)
+    from subject_parser import learn_from_events
+    new_mappings = learn_from_events(events)
+    if new_mappings:
+        print(f'Învățat {len(new_mappings)} noi mapping-uri din evenimente')
+    
     today = date.today()
     if args.from_date:
         from_d = dtparser.parse(args.from_date).date()

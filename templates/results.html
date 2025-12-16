@@ -62,7 +62,7 @@
         <h2>{{ d[0].strftime('%A, %Y-%m-%d') }}</h2>
         {% for e in d[1] %}
           <div class="event">
-            <div><strong>{{ e.timestr() }}</strong> — {{ e.title }}</div>
+            <div><strong>{{ e.timestr() }}</strong> — {{ e.display_title or e.title }}</div>
             <div class="meta">{{ e.location }} {% if e.description %}• {{ e.description }}{% endif %}</div>
           </div>
         {% endfor %}

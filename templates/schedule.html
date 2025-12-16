@@ -1,198 +1,233 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Timetable by Room</title>
-    <!-- FullCalendar CSS -->
+    <title>Calendar View - UTCN AC Timetable</title>
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet" />
     <style>
-      body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; max-width: 1000px; margin: 24px auto; padding: 0 18px; }
-      .controls { margin: 12px 0 20px; }
-      table { border-collapse: collapse; width: 100%; margin-bottom: 20px }
-      th, td { border: 1px solid #e6e6e6; padding: 8px; text-align: left }
-      th { background: #fafafa }
-      .room { margin-top: 28px }
-      .download { margin-left: 8px }
-      .muted { color:#666; font-size:0.9rem }
-      .back { display:inline-block; margin-top: 6px }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --utcn-blue: #003366;
+            --utcn-blue-light: #004080;
+            --utcn-blue-dark: #002244;
+            --utcn-accent: #0066cc;
+            --white: #ffffff;
+            --gray-50: #f8f9fa;
+            --gray-200: #dee2e6;
+            --gray-300: #ced4da;
+            --gray-600: #6c757d;
+            --gray-800: #343a40;
+            --success: #28a745;
+        }
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--gray-50);
+            min-height: 100vh;
+            color: var(--gray-800);
+        }
+        .header {
+            background: var(--utcn-blue);
+            color: var(--white);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+        .header-top {
+            background: var(--utcn-blue-dark);
+            padding: 8px 30px;
+            font-size: 0.85rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        .header-main {
+            padding: 20px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header h1 { font-size: 1.5rem; font-weight: 600; }
+        .header .subtitle { font-size: 0.9rem; opacity: 0.8; margin-top: 2px; }
+        .nav { display: flex; gap: 5px; }
+        .nav a {
+            color: var(--white);
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            background: rgba(255,255,255,0.1);
+        }
+        .nav a:hover { background: rgba(255,255,255,0.2); }
+        .nav a.active { background: var(--white); color: var(--utcn-blue); }
+        .controls-bar {
+            background: var(--white);
+            padding: 15px 30px;
+            border-bottom: 1px solid var(--gray-200);
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .control-group { display: flex; align-items: center; gap: 8px; }
+        .control-group label { font-size: 0.85rem; font-weight: 500; color: var(--gray-600); }
+        .control-group input, .control-group select {
+            padding: 8px 12px;
+            border: 1px solid var(--gray-300);
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .btn-primary { background: var(--utcn-blue); color: var(--white); }
+        .btn-secondary { background: var(--gray-200); color: var(--gray-800); }
+        .btn-outline { background: transparent; border: 1px solid var(--gray-300); color: var(--gray-800); }
+        .container { max-width: 1400px; margin: 0 auto; padding: 30px; }
+        .calendar-wrapper {
+            background: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        .fc { font-family: inherit; }
+        .fc-toolbar-title { color: var(--utcn-blue); font-size: 1.3rem !important; }
+        .fc-button-primary { background: var(--utcn-blue) !important; border-color: var(--utcn-blue) !important; }
+        .fc-event { background: var(--utcn-accent) !important; border-color: var(--utcn-blue) !important; }
+        .downloads { display: flex; gap: 10px; margin-left: auto; }
     </style>
-  </head>
-  <body>
-    <a class="back" href="/">← Back</a>
-    <h1>Timetable by Room</h1>
-
-  <form id="controlsForm" method="get" action="/schedule" class="controls">
-  From: <input type="date" name="from" value="{{ from_date.isoformat() if from_date else '' }}" />
-  To: <input type="date" name="to" value="{{ to_date.isoformat() if to_date else '' }}" />
-      Days: <input type="number" name="days" min="1" value="7" />
-      Subject filter: 
-      <select name="subject" id="subjectFilter">
-        <option value="">(any)</option>
-        {% for s in subjects %}
-          <option value="{{ s }}" {% if subject==s %}selected{% endif %}>{{ s }}</option>
-        {% endfor %}
-      </select>
-      Professor filter: 
-      <select name="professor" id="professorFilter">
-        <option value="">(any)</option>
-        {% for p in professors %}
-          <option value="{{ p }}" {% if professor==p %}selected{% endif %}>{{ p }}</option>
-        {% endfor %}
-      </select>
-      Room filter:
-      <select name="room" id="roomFilter">
-        <option value="">(any)</option>
-        {% for r in rooms %}
-          <option value="{{ r }}" {% if room==r %}selected{% endif %}>{{ r }}</option>
-        {% endfor %}
-      </select>
-      <button type="submit">Refresh</button>
-      <button type="button" id="clearFilters">Clear filters</button>
-      <a class="download" href="/download/schedule_by_room.csv">Download CSV</a>
-      <a class="download" href="/download/calendar_full.ics">Download ICS</a>
+</head>
+<body>
+    <div class="header">
+        <div class="header-top">
+            <span>Technical University of Cluj-Napoca</span>
+            <span>Faculty of Automation and Computer Science</span>
+        </div>
+        <div class="header-main">
+            <div>
+                <h1>Timetable Calendar</h1>
+                <div class="subtitle">Weekly Schedule View</div>
+            </div>
+            <nav class="nav">
+                <a href="/departures">Departure Board</a>
+                <a href="/schedule">Calendar View</a>
+                <a href="/events" class="active">Events</a>
+                <a href="/admin">Admin</a>
+            </nav>
+        </div>
+    </div>
+    <form id="controlsForm" method="get" action="/schedule" class="controls-bar">
+        <div class="control-group">
+            <label>From:</label>
+            <input type="date" name="from" value="{{ from_date.isoformat() if from_date else '' }}" />
+        </div>
+        <div class="control-group">
+            <label>To:</label>
+            <input type="date" name="to" value="{{ to_date.isoformat() if to_date else '' }}" />
+        </div>
+        <div class="control-group">
+            <label>Subject:</label>
+            <select name="subject" id="subjectFilter">
+                <option value="">(any)</option>
+                {% for s in subjects %}<option value="{{ s }}" {% if subject==s %}selected{% endif %}>{{ s }}</option>{% endfor %}
+            </select>
+        </div>
+        <div class="control-group">
+            <label>Professor:</label>
+            <select name="professor" id="professorFilter">
+                <option value="">(any)</option>
+                {% for p in professors %}<option value="{{ p }}" {% if professor==p %}selected{% endif %}>{{ p }}</option>{% endfor %}
+            </select>
+        </div>
+        <div class="control-group">
+            <label>Room:</label>
+            <select name="room" id="roomFilter">
+                <option value="">(any)</option>
+                {% for r in rooms %}<option value="{{ r }}" {% if room==r %}selected{% endif %}>{{ r }}</option>{% endfor %}
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Apply</button>
+        <button type="button" id="clearFilters" class="btn btn-secondary">Clear</button>
+        <div class="downloads">
+            <button type="button" id="exportRoomPdf" class="btn btn-outline">PDF</button>
+            <a class="btn btn-outline" href="/download/schedule_by_room.csv">CSV</a>
+            <a class="btn btn-outline" href="/download/calendar_full.ics">ICS</a>
+        </div>
     </form>
-
-    <form id="generateForm" method="post" action="/generate_events" style="margin-bottom:18px">
-  <input type="hidden" name="from" value="{{ from_date.isoformat() if from_date else '' }}" />
-  <input type="hidden" name="to" value="{{ to_date.isoformat() if to_date else '' }}" />
-      <input type="hidden" name="days" value="7" />
-      <button id="generateBtn" type="submit">Generate events (render page with Playwright)</button>
-      <span class="muted">(One-time login may be required; the server will run the extractor and save captured events.)</span>
-    </form>
-    <div id="genStatus" style="margin-bottom:12px; font-size:0.95rem; color:#333"></div>
-
-    <div id="calendar"></div>
-
-    {% if not schedule %}
-      <p>No schedule available for this range.</p>
-    {% endif %}
-
-    <!-- FullCalendar from CDN -->
+    <div class="container">
+        <div class="calendar-wrapper">
+            <div id="calendar"></div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        var calendarEl = document.getElementById('calendar');
-  var fromDate = "{{ from_date.isoformat() if from_date else '' }}";
-  var toDate = "{{ to_date.isoformat() if to_date else '' }}";
-  var subject = "{{ subject or '' }}";
-  var professor = "{{ professor or '' }}";
-  var room = "{{ room or '' }}";
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-          initialView: 'timeGridWeek',
-          headerToolbar: { left: 'prev,next today', center: 'title', right: 'timeGridDay,timeGridWeek' },
-          nowIndicator: true,
-          height: 'auto',
-          events: function(fetchInfo, successCallback, failureCallback) {
-            var params = new URLSearchParams();
-            params.set('from', fromDate);
-            params.set('to', toDate);
-            if (subject) params.set('subject', subject);
-            if (professor) params.set('professor', professor);
-            if (room) params.set('room', room);
-            fetch('/events.json?' + params.toString()).then(function(resp) { return resp.json(); }).then(function(data) {
-              var evs = data.map(function(e, idx) {
-                return { id: idx, title: e.title + (e.room ? ' — ' + e.room : ''), start: e.start, end: e.end, extendedProps: { room: e.room, subject: e.subject, professor: e.professor } };
-              });
-              successCallback(evs);
-            }).catch(function(err) { failureCallback(err); });
-          },
-          eventDidMount: function(info) {
-            // tooltip-like details
-            var t = info.event.title + '\n' + (info.event.extendedProps.subject || '') + '\n' + (info.event.extendedProps.professor || '');
-            info.el.setAttribute('title', t);
-          }
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+            var fromDate = "{{ from_date.isoformat() if from_date else '' }}";
+            var toDate = "{{ to_date.isoformat() if to_date else '' }}";
+            var subject = "{{ subject or '' }}";
+            var professor = "{{ professor or '' }}";
+            var room = "{{ room or '' }}";
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'timeGridWeek',
+                headerToolbar: { left: 'prev,next today', center: 'title', right: 'timeGridDay,timeGridWeek' },
+                nowIndicator: true,
+                height: 'auto',
+                slotMinTime: '07:00:00',
+                slotMaxTime: '22:00:00',
+                events: function(fetchInfo, successCallback, failureCallback) {
+                    var params = new URLSearchParams();
+                    params.set('from', fromDate);
+                    params.set('to', toDate);
+                    if (subject) params.set('subject', subject);
+                    if (professor) params.set('professor', professor);
+                    if (room) params.set('room', room);
+                    fetch('/events.json?' + params.toString())
+                        .then(function(resp) { return resp.json(); })
+                        .then(function(data) {
+                                var evs = data.map(function(e, idx) {
+                                    var t = (e.display_title || e.title || '') + (e.room ? ' - ' + e.room : '');
+                                    var obj = { id: idx, title: t, start: e.start, end: e.end };
+                                    if (e.color) obj.color = e.color;
+                                    return obj;
+                                });
+                            successCallback(evs);
+                        }).catch(function(err) { failureCallback(err); });
+                }
+            });
+            calendar.render();
+            document.getElementById('clearFilters').addEventListener('click', function() {
+                document.getElementById('subjectFilter').value = '';
+                document.getElementById('professorFilter').value = '';
+                document.getElementById('roomFilter').value = '';
+                document.querySelector('input[name="from"]').value = '';
+                document.querySelector('input[name="to"]').value = '';
+                document.getElementById('controlsForm').submit();
+            });
+            document.getElementById('exportRoomPdf').addEventListener('click', function() {
+                var r = document.getElementById('roomFilter').value;
+                if (!r) { alert('Please select a room first.'); return; }
+                var params = new URLSearchParams();
+                if (fromDate) params.set('from', fromDate);
+                if (toDate) params.set('to', toDate);
+                params.set('room', r);
+                window.open('/export_room?' + params.toString() + '&format=pdf');
+            });
+            document.getElementById('controlsForm').addEventListener('submit', function(ev) {
+                ev.preventDefault();
+                var fd = new FormData(this);
+                fromDate = fd.get('from') || '';
+                toDate = fd.get('to') || '';
+                subject = fd.get('subject') || '';
+                professor = fd.get('professor') || '';
+                room = fd.get('room') || '';
+                calendar.refetchEvents();
+            });
         });
-        calendar.render();
-
-        // Clear filters button behaviour
-        var clearBtn = document.getElementById('clearFilters');
-        if (clearBtn) {
-          clearBtn.addEventListener('click', function() {
-            var subj = document.getElementById('subjectFilter');
-            var prof = document.getElementById('professorFilter');
-            var fromInput = document.querySelector('input[name="from"]');
-            var toInput = document.querySelector('input[name="to"]');
-            if (subj) subj.value = '';
-            if (prof) prof.value = '';
-            if (fromInput) fromInput.value = '';
-            if (toInput) toInput.value = '';
-            // submit the form to refresh
-            var f = document.querySelector('form.controls');
-            if (f) f.submit();
-          });
-        }
-
-        // controls form: intercept and refresh calendar without full page reload
-        var controlsForm = document.getElementById('controlsForm');
-        if (controlsForm) {
-          controlsForm.addEventListener('submit', function(ev) {
-            ev.preventDefault();
-            var fd = new FormData(controlsForm);
-            var ffrom = fd.get('from') || '';
-            var fto = fd.get('to') || '';
-            var fsubject = fd.get('subject') || '';
-            var fprof = fd.get('professor') || '';
-            var froom = fd.get('room') || '';
-            fromDate = ffrom;
-            toDate = fto;
-            subject = fsubject;
-            professor = fprof;
-            room = froom;
-            calendar.refetchEvents();
-            // update URL params without reload
-            var url = new URL(window.location.href);
-            if (ffrom) url.searchParams.set('from', ffrom); else url.searchParams.delete('from');
-            if (fto) url.searchParams.set('to', fto); else url.searchParams.delete('to');
-            if (fsubject) url.searchParams.set('subject', fsubject); else url.searchParams.delete('subject');
-            if (fprof) url.searchParams.set('professor', fprof); else url.searchParams.delete('professor');
-            if (froom) url.searchParams.set('room', froom); else url.searchParams.delete('room');
-            window.history.replaceState({}, '', url.toString());
-          });
-          // also auto-refetch when date inputs change
-          var fromInput = controlsForm.querySelector('input[name="from"]');
-          var toInput = controlsForm.querySelector('input[name="to"]');
-          if (fromInput) fromInput.addEventListener('change', function(){ controlsForm.dispatchEvent(new Event('submit')); });
-          if (toInput) toInput.addEventListener('change', function(){ controlsForm.dispatchEvent(new Event('submit')); });
-        }
-
-        // generate button: submit via fetch and poll status
-        var genForm = document.getElementById('generateForm');
-        var genBtn = document.getElementById('generateBtn');
-        var genStatus = document.getElementById('genStatus');
-        if (genForm && genBtn) {
-          genForm.addEventListener('submit', function(ev) {
-            ev.preventDefault();
-            genBtn.disabled = true;
-            genStatus.textContent = 'Starting extractor...';
-            var data = new FormData(genForm);
-            fetch(genForm.action, { method: 'POST', body: data }).then(function(r){ return r.json(); }).then(function(resp){
-              if (resp.started) {
-                genStatus.textContent = 'Extractor started. Waiting for completion...';
-                // poll status
-                var poll = setInterval(function() {
-                  fetch('/generate_status').then(function(r){ return r.json(); }).then(function(s) {
-                    genStatus.textContent = s.running ? ('Running... started: ' + (s.last_started || '')) : ('Done. rc=' + (s.last_rc === null ? 'unknown' : s.last_rc));
-                    if (!s.running) {
-                      clearInterval(poll);
-                      genBtn.disabled = false;
-                      // show tails
-                      if (s.stderr_tail) {
-                        genStatus.textContent += '\nErrors:\n' + s.stderr_tail;
-                      }
-                      // After finished, refresh schedule data
-                      calendar.refetchEvents();
-                    }
-                  }).catch(function(err){ console.error(err); clearInterval(poll); genBtn.disabled = false; genStatus.textContent = 'Status check failed'; });
-                }, 2000);
-              } else {
-                genStatus.textContent = resp.message || 'Failed to start extractor';
-                genBtn.disabled = false;
-              }
-            }).catch(function(err){ genStatus.textContent = 'Failed to start extractor: ' + err; genBtn.disabled = false; });
-          });
-        }
-      });
     </script>
-  </body>
+</body>
 </html>

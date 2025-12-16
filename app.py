@@ -5,12 +5,14 @@ import tempfile
 import threading
 import time
 from collections import defaultdict
-from datetime import date, timedelta, datetime
-from typing import List
-import json
-import subprocess
-import sys
+import sqlite3
+from contextlib import closing
 import pathlib
+import json
+import sys
+import subprocess
+from datetime import datetime, date, timedelta
+from typing import List, Dict, Optional
 
 from flask import Flask, render_template, request, redirect, url_for, send_file, jsonify
 
@@ -127,6 +129,25 @@ def fetch_route():
         return redirect(url_for("index"))
 
     grouped = group_events(events, from_date, to_date)
+    # Apply subject parsing to events so templates can show cleaned/display titles
+    try:
+        from tools.subject_parser import parse_title
+        for day, evs in grouped.items():
+            for ev in evs:
+                try:
+                    parsed = parse_title(ev.title or '')
+                    # attach display_title and subject to Event instance for templates
+                    setattr(ev, 'display_title', parsed.display_title)
+                    setattr(ev, 'subject', parsed.subject_name)
+                    # if professor not set, use parsed professor
+                    if not getattr(ev, 'professor', None) and parsed.professor:
+                        setattr(ev, 'professor', parsed.professor)
+                except Exception:
+                    setattr(ev, 'display_title', ev.title)
+                    setattr(ev, 'subject', '')
+    except Exception:
+        # parser not available — ignore
+        pass
     return render_template("results.html", grouped=grouped, from_date=from_date, to_date=to_date, diagnostics=diagnostics)
 
 
@@ -298,6 +319,228 @@ extractor_state = {
     'stderr_path': None,
 }
 
+# Scheduler control
+periodic_fetch_state = {
+    'running': False,
+    'last_run': None,
+    'last_success': None,
+}
+
+# Lock to avoid overlapping periodic runs
+_periodic_lock = threading.Lock()
+
+
+# --------- Simple SQLite helpers ---------
+DB_PATH = pathlib.Path('data') / 'app.db'
+DB_PATH.parent.mkdir(exist_ok=True)
+
+def get_db_connection():
+    conn = sqlite3.connect(str(DB_PATH))
+    conn.row_factory = sqlite3.Row
+    return conn
+
+def init_db():
+    """Create tables if they do not exist."""
+    with get_db_connection() as conn:
+        cur = conn.cursor()
+        cur.execute('''
+            CREATE TABLE IF NOT EXISTS calendars (
+                id INTEGER PRIMARY KEY,
+                url TEXT UNIQUE,
+                name TEXT,
+                color TEXT,
+                enabled INTEGER DEFAULT 1,
+                created_at TEXT,
+                last_fetched TEXT
+            )
+        ''')
+        cur.execute('''
+            CREATE TABLE IF NOT EXISTS extracurricular_events (
+                id INTEGER PRIMARY KEY,
+                title TEXT,
+                organizer TEXT,
+                date TEXT,
+                time TEXT,
+                location TEXT,
+                category TEXT,
+                description TEXT,
+                created_at TEXT
+            )
+        ''')
+        cur.execute('''
+            CREATE TABLE IF NOT EXISTS manual_events (
+                id INTEGER PRIMARY KEY,
+                start TEXT,
+                end TEXT,
+                title TEXT,
+                location TEXT,
+                raw TEXT,
+                created_at TEXT
+            )
+        ''')
+        conn.commit()
+    # ensure older DBs have the color column
+    try:
+        with get_db_connection() as conn:
+            cur = conn.cursor()
+            cur.execute("SELECT color FROM calendars LIMIT 1")
+            _ = cur.fetchone()
+    except Exception:
+        try:
+            with get_db_connection() as conn:
+                cur = conn.cursor()
+                cur.execute('ALTER TABLE calendars ADD COLUMN color TEXT')
+                conn.commit()
+        except Exception:
+            pass
+
+def migrate_from_files():
+    """Migrate existing JSON configs into the DB if present."""
+    # migrate calendar_config.json
+    cfg_file = pathlib.Path('config') / 'calendar_config.json'
+    if cfg_file.exists():
+        try:
+            with open(cfg_file, 'r', encoding='utf-8') as f:
+                cfg = json.load(f)
+            urls = []
+            if isinstance(cfg.get('calendar_urls'), list):
+                urls = cfg.get('calendar_urls')
+            elif cfg.get('calendar_url'):
+                urls = [cfg.get('calendar_url')]
+            for u in urls:
+                if u:
+                    add_calendar_url(u)
+            # optionally remove file
+            try:
+                cfg_file.unlink()
+            except Exception:
+                pass
+        except Exception:
+            pass
+
+    # migrate extracurricular events
+    extras = pathlib.Path('config') / 'extracurricular_events.json'
+    if extras.exists():
+        try:
+            with open(extras, 'r', encoding='utf-8') as f:
+                items = json.load(f)
+            if isinstance(items, list):
+                for it in items:
+                    try:
+                        ev = {
+                            'title': it.get('title'),
+                            'organizer': it.get('organizer'),
+                            'date': it.get('date'),
+                            'time': it.get('time'),
+                            'location': it.get('location'),
+                            'category': it.get('category'),
+                            'description': it.get('description'),
+                            'created_at': it.get('created_at') or datetime.now().isoformat()
+                        }
+                        add_extracurricular_db(ev)
+                    except Exception:
+                        pass
+            try:
+                extras.unlink()
+            except Exception:
+                pass
+        except Exception:
+            pass
+
+def add_calendar_url(url: str, name: str = None):
+    with get_db_connection() as conn:
+        cur = conn.cursor()
+        try:
+            cur.execute('INSERT OR IGNORE INTO calendars (url, name, color, enabled, created_at) VALUES (?, ?, ?, 1, ?)',
+                        (url, name or '', None, datetime.now().isoformat()))
+            conn.commit()
+        except Exception:
+            pass
+
+def update_calendar_metadata(url: str, name: str = None, color: str = None):
+    try:
+        with get_db_connection() as conn:
+            cur = conn.cursor()
+            cur.execute('UPDATE calendars SET name = ?, color = ? WHERE url = ?', (name or '', color or None, url))
+            conn.commit()
+    except Exception:
+        pass
+
+def list_calendar_urls():
+    with get_db_connection() as conn:
+        cur = conn.cursor()
+        cur.execute('SELECT id, url, name, enabled, created_at, last_fetched FROM calendars ORDER BY id')
+        return [dict(row) for row in cur.fetchall()]
+
+def add_extracurricular_db(ev: dict):
+    with get_db_connection() as conn:
+        cur = conn.cursor()
+        cur.execute('''INSERT INTO extracurricular_events (title, organizer, date, time, location, category, description, created_at)
+                       VALUES (?, ?, ?, ?, ?, ?, ?, ?)''',
+                    (ev.get('title'), ev.get('organizer'), ev.get('date'), ev.get('time'), ev.get('location'), ev.get('category'), ev.get('description'), ev.get('created_at')))
+        conn.commit()
+        return cur.lastrowid
+
+    def delete_calendar_db(cal_id: int):
+        with get_db_connection() as conn:
+            cur = conn.cursor()
+            cur.execute('DELETE FROM calendars WHERE id = ?', (cal_id,))
+            conn.commit()
+
+    def delete_manual_db(man_id: int):
+        with get_db_connection() as conn:
+            cur = conn.cursor()
+            cur.execute('DELETE FROM manual_events WHERE id = ?', (man_id,))
+            conn.commit()
+
+def add_manual_event_db(ev: dict):
+    with get_db_connection() as conn:
+        cur = conn.cursor()
+        cur.execute('''INSERT INTO manual_events (start, end, title, location, raw, created_at)
+                       VALUES (?, ?, ?, ?, ?, ?)''',
+                    (ev.get('start'), ev.get('end'), ev.get('title'), ev.get('location'), json.dumps(ev.get('raw') or {}), ev.get('created_at')))
+        conn.commit()
+        return cur.lastrowid
+
+def list_manual_events_db():
+    with get_db_connection() as conn:
+        cur = conn.cursor()
+        cur.execute('SELECT * FROM manual_events ORDER BY start')
+        rows = [dict(r) for r in cur.fetchall()]
+        # parse raw json
+        for r in rows:
+            try:
+                r['raw'] = json.loads(r.get('raw') or '{}')
+            except Exception:
+                r['raw'] = {}
+        return rows
+
+def list_extracurricular_db():
+    with get_db_connection() as conn:
+        cur = conn.cursor()
+        cur.execute('SELECT * FROM extracurricular_events ORDER BY date, time, id')
+        return [dict(row) for row in cur.fetchall()]
+
+def delete_extracurricular_db(ev_id: int):
+    with get_db_connection() as conn:
+        cur = conn.cursor()
+        cur.execute('DELETE FROM extracurricular_events WHERE id = ?', (ev_id,))
+        conn.commit()
+
+
+def delete_calendar_db(cal_id: int):
+    with get_db_connection() as conn:
+        cur = conn.cursor()
+        cur.execute('DELETE FROM calendars WHERE id = ?', (cal_id,))
+        conn.commit()
+
+
+def delete_manual_db(man_id: int):
+    with get_db_connection() as conn:
+        cur = conn.cursor()
+        cur.execute('DELETE FROM manual_events WHERE id = ?', (man_id,))
+        conn.commit()
+
 
 def _run_extractor_background():
     """Internal: run the extractor script and update extractor_state."""
@@ -323,13 +566,82 @@ def _run_extractor_background():
         extractor_state['running'] = False
 
 
+def _run_extractor_for_url(url: str) -> int:
+    """Run the extractor script for a specific URL (uses CLI arg). Returns returncode."""
+    out_dir = pathlib.Path('playwright_captures')
+    out_dir.mkdir(exist_ok=True)
+    h = hashlib.sha1(url.encode('utf-8')).hexdigest()[:8]
+    stdout_path = out_dir / f'extract_{h}.stdout.txt'
+    stderr_path = out_dir / f'extract_{h}.stderr.txt'
+    cmd = [sys.executable, str(pathlib.Path('tools') / 'extract_published_events.py'), url]
+    try:
+        with open(stdout_path, 'w', encoding='utf-8') as out_f, open(stderr_path, 'w', encoding='utf-8') as err_f:
+            proc = subprocess.run(cmd, stdout=out_f, stderr=err_f, text=True)
+            return proc.returncode
+    except Exception as e:
+        with open(stderr_path, 'a', encoding='utf-8') as err_f:
+            err_f.write(str(e))
+        return 1
+
+
+def periodic_fetcher(interval_minutes: int = 60):
+    """Background loop that periodically fetches configured calendar URLs and runs extraction/parsing."""
+    global periodic_fetch_state
+    # read calendar URLs from DB
+    while True:
+        try:
+
+            # Avoid overlapping runs
+            if not _periodic_lock.acquire(blocking=False):
+                # already running
+                continue
+            periodic_fetch_state['running'] = True
+            periodic_fetch_state['last_run'] = datetime.utcnow().isoformat()
+
+            # Read URLs from DB
+            urls = []
+            try:
+                rows = list_calendar_urls()
+                for r in rows:
+                    if r.get('enabled') and r.get('url'):
+                        urls.append(r.get('url'))
+            except Exception:
+                urls = []
+
+            # If no URLs configured, skip
+            if not urls:
+                periodic_fetch_state['running'] = False
+                _periodic_lock.release()
+                continue
+
+            # Run extractor for each URL sequentially
+            any_success = False
+            for u in urls:
+                rc = _run_extractor_for_url(u)
+                if rc == 0:
+                    any_success = True
+
+            if any_success:
+                periodic_fetch_state['last_success'] = datetime.utcnow().isoformat()
+
+        except Exception:
+            pass
+        finally:
+            periodic_fetch_state['running'] = False
+            try:
+                _periodic_lock.release()
+            except Exception:
+                pass
+        # Sleep until next run
+        time.sleep(interval_minutes * 60)
+
+
 
 @app.route('/schedule', methods=['GET', 'POST'])
 def schedule_view():
     # form inputs
     from_s = request.values.get('from')
     to_s = request.values.get('to')
-    days = int(request.values.get('days') or 7)
     today = date.today()
     if from_s:
         from_date = date.fromisoformat(from_s)
@@ -338,7 +650,8 @@ def schedule_view():
     if to_s:
         to_date = date.fromisoformat(to_s)
     else:
-        to_date = from_date + timedelta(days=days - 1)
+        # default to 7-day range when `to` not provided
+        to_date = from_date + timedelta(days=6)
 
     try:
         jpath, cpath = ensure_schedule(from_date, to_date)
@@ -396,9 +709,26 @@ def schedule_view():
         rooms.add(room)
         for day, evs in days.items():
             for e in evs:
-                subj = e.get('subject')
                 title = e.get('title') or ''
+                subj = e.get('subject') or ''
                 prof = e.get('professor') or ''
+
+                # Prefer parser-derived subject/display_title when available
+                try:
+                    from tools.subject_parser import parse_title
+                    parsed = parse_title(e.get('display_title') or title)
+                    if parsed and parsed.subject_name:
+                        subj = parsed.subject_name
+                        # update schedule entry for consistency
+                        e['subject'] = subj
+                        e['display_title'] = parsed.display_title
+                    if not prof and parsed and parsed.professor:
+                        prof = parsed.professor
+                        e['professor'] = prof
+                except Exception:
+                    # parser not available — keep raw values
+                    pass
+
                 if subj:
                     subjects.add(subj)
                 if prof:
@@ -476,16 +806,197 @@ def events_json():
 
                 ev = {
                     'title': title,
+                    'display_title': e.get('display_title') or title,
                     'start': start,
                     'end': end,
                     'room': room,
                     'subject': subject,
                     'professor': prof,
                     'location': location,
+                    'color': None,
                 }
                 events.append(ev)
 
+    # Append manual admin events from DB
+    try:
+        init_db()
+        manual = list_manual_events_db()
+        from dateutil import parser as dtparser
+        for me in manual:
+            try:
+                if not me.get('start'):
+                    continue
+                start_dt = me.get('start')
+                # filter by range (string ISO)
+                try:
+                    d = dtparser.parse(start_dt).date()
+                except Exception:
+                    continue
+                if d < from_date or d > to_date:
+                    continue
+                ev_obj = {
+                    'title': me.get('title'),
+                    'display_title': me.get('title'),
+                    'start': me.get('start'),
+                    'end': me.get('end'),
+                    'room': me.get('location') or '',
+                    'subject': '',
+                    'professor': '',
+                    'location': me.get('location') or '',
+                    'color': '#004080',
+                    'manual': True,
+                }
+                events.append(ev_obj)
+            except Exception:
+                continue
+    except Exception:
+        pass
+
+    # Append extracurricular events from DB so they appear in the calendar with a distinct color
+    try:
+        init_db()
+        extra_events = list_extracurricular_db()
+        from dateutil import parser as dtparser
+        for xe in extra_events:
+            d = xe.get('date')
+            if not d:
+                continue
+            try:
+                ev_date = dtparser.parse(d).date()
+            except Exception:
+                continue
+            if ev_date < from_date or ev_date > to_date:
+                continue
+            time_s = (xe.get('time') or '').strip()
+            if time_s:
+                start_iso = f"{ev_date.isoformat()}T{time_s}:00"
+            else:
+                start_iso = ev_date.isoformat()
+            try:
+                from tools.subject_parser import parse_title
+                parsed = parse_title(xe.get('title', '') or '')
+                disp = parsed.display_title
+                subj = parsed.subject_name
+            except Exception:
+                disp = xe.get('title')
+                subj = ''
+            ev_obj = {
+                'title': xe.get('title'),
+                'display_title': disp,
+                'start': start_iso,
+                'end': None,
+                'room': xe.get('location') or '',
+                'subject': subj,
+                'professor': xe.get('organizer') or '',
+                'location': xe.get('location') or '',
+                'color': '#7c3aed',  # purple for extracurricular
+                'extracurricular': True,
+            }
+            events.append(ev_obj)
+    except Exception:
+        pass
+
     return jsonify(events)
+
+
+@app.route('/export_room')
+def export_room():
+    """Render a printable timetable for a single room and optionally export to PDF/PNG.
+
+    Query params: room (required), from, to, format=pdf|png
+    """
+    room = (request.values.get('room') or '').strip()
+    if not room:
+        return "Missing 'room' parameter", 400
+
+    from_s = request.values.get('from')
+    to_s = request.values.get('to')
+    today = date.today()
+    try:
+        from_date = date.fromisoformat(from_s) if from_s else today
+    except Exception:
+        from_date = today
+    try:
+        to_date = date.fromisoformat(to_s) if to_s else from_date + timedelta(days=6)
+    except Exception:
+        to_date = from_date + timedelta(days=6)
+
+    try:
+        jpath, cpath = ensure_schedule(from_date, to_date)
+    except Exception as e:
+        return f'Failed to build schedule: {e}', 500
+
+    with open(jpath, 'r', encoding='utf-8') as f:
+        schedule = json.load(f)
+
+    # collect events for room
+    events = []
+    for r, days in schedule.items():
+        if r.lower() != room.lower():
+            continue
+        for day, evs in days.items():
+            try:
+                day_date = date.fromisoformat(day)
+            except Exception:
+                continue
+            if day_date < from_date or day_date > to_date:
+                continue
+            for e in evs:
+                events.append({
+                    'date': day,
+                    'start': e.get('start'),
+                    'end': e.get('end'),
+                    'title': e.get('title'),
+                    'subject': e.get('subject'),
+                    'professor': e.get('professor') or '',
+                    'location': e.get('location') or '',
+                })
+
+    # sort events by date and start time
+    events.sort(key=lambda x: (x['date'], x.get('start') or ''))
+
+    html = render_template('room_print.html', room=room, events=events, from_date=from_date, to_date=to_date)
+
+    fmt = (request.values.get('format') or 'pdf').lower()
+    if fmt not in ('pdf', 'png', 'jpg', 'jpeg'):
+        fmt = 'pdf'
+
+    # If client requested PDF/PNG, try to render with Playwright
+    if fmt in ('pdf', 'png', 'jpg', 'jpeg'):
+        try:
+            from playwright.sync_api import sync_playwright
+        except Exception:
+            return "Playwright is not available on the server; cannot export to PDF/image.", 500
+
+        tmpd = pathlib.Path(tempfile.mkdtemp(prefix='export_room_'))
+        html_path = tmpd / 'room.html'
+        out_path = tmpd / ('room.pdf' if fmt == 'pdf' else 'room.png')
+        with open(html_path, 'w', encoding='utf-8') as fh:
+            fh.write(html)
+        try:
+            with sync_playwright() as p:
+                browser = p.chromium.launch()
+                page = browser.new_page()
+                page.goto('file://' + str(html_path.resolve()))
+                page.wait_for_timeout(250)
+                if fmt == 'pdf':
+                    page.pdf(path=str(out_path), format='A4', print_background=True)
+                else:
+                    page.screenshot(path=str(out_path), full_page=True)
+                browser.close()
+        except Exception as e:
+            return f'Failed to render export: {e}', 500
+
+        # send file as attachment
+        filename = f"{room.replace(' ', '_')}_{from_date.isoformat()}_{to_date.isoformat()}.{out_path.suffix.lstrip('.') }"
+        # use download_name for newer Flask versions
+        try:
+            return send_file(str(out_path), as_attachment=True, download_name=filename)
+        except TypeError:
+            return send_file(str(out_path), as_attachment=True)
+
+    # fallback: return HTML
+    return html
 
 
 @app.route('/generate_events', methods=['POST'])
@@ -566,7 +1077,606 @@ def saved_response(fname: str):
     return "Not found", 404
 
 
+@app.route('/departures')
+def departures_view():
+    """Departure board style view - shows today's and tomorrow's classes by building."""
+    from dateutil import parser as dtparser
+    
+    # Add tools directory to path for imports
+    tools_dir = pathlib.Path(__file__).parent / 'tools'
+    if str(tools_dir) not in sys.path:
+        sys.path.insert(0, str(tools_dir))
+    
+    from subject_parser import parse_location, parse_title, get_parser, learn_from_events, get_all_buildings
+    
+    # Get selected building from query params (default: show all)
+    selected_building = request.args.get('building', '').lower()
+    
+    # Load events
+    events_file = pathlib.Path('playwright_captures/events.json')
+    if not events_file.exists():
+        return render_template('departures.html', 
+                             events_by_day={}, 
+                             buildings=get_all_buildings(),
+                             selected_building=selected_building,
+                             current_time=datetime.now(),
+                             error="No events file found. Please go to Admin to import a calendar.")
+    
+    with open(events_file, 'r', encoding='utf-8') as f:
+        all_events = json.load(f)
+
+    # Also append extracurricular events persisted in DB so they appear on the departure board
+    try:
+        init_db()
+        extra_events = list_extracurricular_db()
+        for xe in extra_events:
+            d = xe.get('date')
+            if not d:
+                continue
+            t = (xe.get('time') or '').strip()
+            if t:
+                start = f"{d}T{t}:00"
+            else:
+                start = d
+            evt = {
+                'title': xe.get('title'),
+                'start': start,
+                'end': None,
+                'location': xe.get('location') or '',
+                'organizer': xe.get('organizer') or '',
+                'extracurricular': True,
+            }
+            all_events.append(evt)
+    except Exception:
+        # ignore DB errors and continue with file-based events
+        pass
+    
+    # Learn subject mappings from events
+    learn_from_events(all_events)
+    
+    # Get current datetime
+    now = datetime.now()
+    today = now.date()
+    tomorrow = today + timedelta(days=1)
+    
+    # Parse and filter events for today and tomorrow
+    events_today = defaultdict(list)
+    events_tomorrow = defaultdict(list)
+    has_today_events = False
+    
+    for ev in all_events:
+        start_str = ev.get('start')
+        if not start_str:
+            continue
+        
+        try:
+            start_dt = dtparser.parse(start_str)
+            if start_dt.tzinfo:
+                start_dt = start_dt.replace(tzinfo=None)
+        except Exception:
+            continue
+        
+        event_date = start_dt.date()
+        
+        # Only today or tomorrow
+        if event_date not in (today, tomorrow):
+            continue
+        
+        # For today, only events that haven't ended yet
+        if event_date == today:
+            end_str = ev.get('end')
+            if end_str:
+                try:
+                    end_dt = dtparser.parse(end_str)
+                    if end_dt.tzinfo:
+                        end_dt = end_dt.replace(tzinfo=None)
+                    if end_dt < now:
+                        continue  # Already ended
+                except Exception:
+                    pass
+        
+        # Parse location
+        location = ev.get('location') or ''
+        parsed_loc = parse_location(location)
+        building_code = parsed_loc.building_code or 'other'
+        building_name = parsed_loc.building_name or 'Other'
+        room = parsed_loc.room_normalized or parsed_loc.room or ''
+        
+        # Filter by building if selected
+        if selected_building and building_code != selected_building:
+            continue
+        
+        # Parse title
+        title = ev.get('title') or ''
+        parsed_title = parse_title(title)
+        
+        # Build event info
+        event_info = {
+            'start': start_dt,
+            'end_str': end_str if 'end_str' in dir() else ev.get('end'),
+            'time': start_dt.strftime('%H:%M'),
+            'subject': parsed_title.subject_name,
+            'display_title': parsed_title.display_title,
+            'professor': parsed_title.professor or '',
+            'room': room,
+            'room_display': parsed_loc.display_name,
+            'building_code': building_code,
+            'building_name': building_name,
+            'is_now': event_date == today and start_dt <= now,
+            'date': event_date,
+        }
+        
+        if event_date == today:
+            events_today[building_name].append(event_info)
+            has_today_events = True
+        else:
+            events_tomorrow[building_name].append(event_info)
+    
+    # Sort events by start time within each building
+    for building in events_today:
+        events_today[building].sort(key=lambda x: x['start'])
+    for building in events_tomorrow:
+        events_tomorrow[building].sort(key=lambda x: x['start'])
+    
+    # Sort buildings alphabetically
+    events_today = dict(sorted(events_today.items()))
+    events_tomorrow = dict(sorted(events_tomorrow.items()))
+    
+    # Combine into structure for template
+    events_by_day = {}
+    if events_today:
+        events_by_day['Astăzi'] = events_today
+    if events_tomorrow:
+        events_by_day['Mâine'] = events_tomorrow
+    
+    return render_template('departures.html',
+                         events_by_day=events_by_day,
+                         buildings=get_all_buildings(),
+                         selected_building=selected_building,
+                         current_time=now,
+                         has_today_events=has_today_events,
+                         error=None)
+
+
+# =============================================================================
+# ADMIN ROUTES
+# =============================================================================
+
+@app.route('/admin')
+def admin_view():
+    """Admin page for managing calendar imports and events."""
+    # Get first configured calendar URL from DB if present
+    calendar_url = ''
+    calendar_name = ''
+    calendar_color = None
+    try:
+        init_db()
+        rows = list_calendar_urls()
+        if rows:
+            calendar_url = rows[0].get('url')
+            calendar_name = rows[0].get('name') or ''
+            calendar_color = rows[0].get('color') or None
+    except Exception:
+        # fallback to config file
+        config_file = pathlib.Path('config/calendar_config.json')
+        calendar_url = ''
+        if config_file.exists():
+            try:
+                with open(config_file, 'r', encoding='utf-8') as f:
+                    config = json.load(f)
+                    calendar_url = config.get('calendar_url', '')
+                    calendar_name = config.get('calendar_name', '')
+                    calendar_color = config.get('calendar_color', None)
+            except Exception:
+                pass
+    
+    # Get events stats
+    events_file = pathlib.Path('playwright_captures/events.json')
+    events_count = 0
+    last_import = None
+    if events_file.exists():
+        try:
+            with open(events_file, 'r', encoding='utf-8') as f:
+                events = json.load(f)
+                events_count = len(events)
+            # Get file modification time
+            import os
+            mtime = os.path.getmtime(events_file)
+            last_import = datetime.fromtimestamp(mtime)
+        except Exception:
+            pass
+    
+    # Get extractor status
+    extractor_running = extractor_state.get('running', False)
+    
+    # Load configured calendars, extracurricular and manual events for management
+    calendars = []
+    extracurricular = []
+    manual_events = []
+    try:
+        init_db()
+        calendars = list_calendar_urls()
+        extracurricular = list_extracurricular_db()
+        manual_events = list_manual_events_db()
+    except Exception:
+        # fall back to file-based lists if DB unavailable
+        try:
+            cfg_file = pathlib.Path('config') / 'calendar_config.json'
+            if cfg_file.exists():
+                with open(cfg_file, 'r', encoding='utf-8') as f:
+                    cfg = json.load(f)
+                    url = cfg.get('calendar_url')
+                    if url:
+                        calendars = [{'id': 0, 'url': url, 'name': ''}]
+        except Exception:
+            pass
+
+    return render_template('admin.html',
+                         calendar_url=calendar_url,
+                         calendar_name=calendar_name,
+                         calendar_color=calendar_color,
+                         events_count=events_count,
+                         last_import=last_import,
+                         extractor_running=extractor_running,
+                         calendars=calendars,
+                         extracurricular=extracurricular,
+                         manual_events=manual_events)
+
+
+@app.route('/admin/set_calendar_url', methods=['POST'])
+def admin_set_calendar_url():
+    """Save the calendar URL to config."""
+    url = request.form.get('calendar_url', '').strip()
+    name = request.form.get('calendar_name') or request.form.get('calendar_name', '')
+    color = request.form.get('calendar_color') or request.form.get('calendar_color', None)
+    if not url:
+        return redirect(url_for('admin_view'))
+
+    # Ensure DB initialized
+    try:
+        init_db()
+        add_calendar_url(url, name)
+        # persist optional metadata (name/color)
+        update_calendar_metadata(url, name=name, color=color)
+    except Exception:
+        # fallback to file if DB unavailable
+        config_dir = pathlib.Path('config')
+        config_dir.mkdir(exist_ok=True)
+        config_file = config_dir / 'calendar_config.json'
+        config = {}
+        if config_file.exists():
+            try:
+                with open(config_file, 'r', encoding='utf-8') as f:
+                    config = json.load(f)
+            except Exception:
+                pass
+        config['calendar_url'] = url
+        if name:
+            config['calendar_name'] = name
+        if color:
+            config['calendar_color'] = color
+        with open(config_file, 'w', encoding='utf-8') as f:
+            json.dump(config, f, indent=2)
+
+    return redirect(url_for('admin_view'))
+
+
+@app.route('/admin/import_calendar', methods=['POST'])
+def admin_import_calendar():
+    """Trigger calendar import from the configured URL."""
+    # Accept optional url, name, color fields and persist the calendar before import
+    url = request.form.get('calendar_url') or request.form.get('url')
+    name = request.form.get('calendar_name') or request.form.get('name')
+    color = request.form.get('calendar_color') or request.form.get('color')
+
+    if url:
+        try:
+            init_db()
+            add_calendar_url(url, name)
+            # update metadata (name/color) in case the calendar already existed
+            update_calendar_metadata(url, name=name, color=color)
+        except Exception:
+            pass
+
+    if extractor_state.get('running'):
+        return jsonify({'success': False, 'message': 'Import already in progress'}), 200
+
+    # Start extractor in background
+    t = threading.Thread(target=_run_extractor_background, daemon=True)
+    t.start()
+
+    return jsonify({'success': True, 'message': 'Import started'}), 202
+
+
+@app.route('/admin/add_event', methods=['POST'])
+def admin_add_event():
+    """Manually add an event."""
+    from dateutil import parser as dtparser
+    
+    title = request.form.get('title', '').strip()
+    start_date = request.form.get('start_date', '')
+    start_time = request.form.get('start_time', '')
+    end_time = request.form.get('end_time', '')
+    location = request.form.get('location', '').strip()
+    building = request.form.get('building', '').strip()
+    room = request.form.get('room', '').strip()
+    
+    if not title or not start_date or not start_time:
+        return jsonify({'success': False, 'message': 'Missing required fields'}), 400
+    
+    # Build location string if building/room provided
+    if building and room and not location:
+        location = f"utcn_room_ac_{building}_{room}@campus.utcluj.ro"
+    
+    # Parse datetime
+    try:
+        start_str = f"{start_date}T{start_time}:00+02:00"
+        end_str = f"{start_date}T{end_time}:00+02:00" if end_time else None
+    except Exception as e:
+        return jsonify({'success': False, 'message': f'Invalid date/time: {e}'}), 400
+    
+    # Store manual event in DB and also append to playwright_captures/events.json for compatibility
+    try:
+        init_db()
+        new_event = {
+            'start': start_str,
+            'end': end_str,
+            'title': title,
+            'location': location,
+            'raw': {'manual': True},
+            'created_at': datetime.now().isoformat()
+        }
+        ev_id = add_manual_event_db(new_event)
+        # Append to playwright_captures/events.json as before
+        events_file = pathlib.Path('playwright_captures/events.json')
+        events = []
+        if events_file.exists():
+            try:
+                with open(events_file, 'r', encoding='utf-8') as f:
+                    events = json.load(f)
+            except Exception:
+                events = []
+        events.append(new_event)
+        events_file.parent.mkdir(exist_ok=True)
+        with open(events_file, 'w', encoding='utf-8') as f:
+            json.dump(events, f, indent=2, ensure_ascii=False)
+        return jsonify({'success': True, 'message': 'Event added successfully', 'id': ev_id})
+    except Exception:
+        # fallback to previous file-only behavior
+        events_file = pathlib.Path('playwright_captures/events.json')
+        events = []
+        if events_file.exists():
+            try:
+                with open(events_file, 'r', encoding='utf-8') as f:
+                    events = json.load(f)
+            except Exception:
+                events = []
+        new_event = {
+            'start': start_str,
+            'end': end_str,
+            'title': title,
+            'location': location,
+            'raw': {'manual': True}
+        }
+        events.append(new_event)
+        events_file.parent.mkdir(exist_ok=True)
+        with open(events_file, 'w', encoding='utf-8') as f:
+            json.dump(events, f, indent=2, ensure_ascii=False)
+        return jsonify({'success': True, 'message': 'Event added successfully'})
+
+
+@app.route('/admin/delete_event', methods=['POST'])
+def admin_delete_event():
+    """Delete an event by index."""
+    try:
+        index = int(request.form.get('index', -1))
+    except ValueError:
+        return jsonify({'success': False, 'message': 'Invalid index'}), 400
+    
+    events_file = pathlib.Path('playwright_captures/events.json')
+    if not events_file.exists():
+        return jsonify({'success': False, 'message': 'No events file'}), 404
+    
+    with open(events_file, 'r', encoding='utf-8') as f:
+        events = json.load(f)
+    
+    if index < 0 or index >= len(events):
+        return jsonify({'success': False, 'message': 'Index out of range'}), 400
+    
+    events.pop(index)
+    
+    with open(events_file, 'w', encoding='utf-8') as f:
+        json.dump(events, f, indent=2, ensure_ascii=False)
+    
+    return jsonify({'success': True, 'message': 'Event deleted'})
+
+
+@app.route('/admin/delete_calendar', methods=['POST'])
+def admin_delete_calendar():
+    """Delete a configured calendar by id (returns JSON)."""
+    try:
+        cal_id = int(request.form.get('id', -1))
+    except Exception:
+        return jsonify({'success': False, 'message': 'Invalid calendar id'}), 400
+
+    try:
+        init_db()
+        delete_calendar_db(cal_id)
+        return jsonify({'success': True, 'message': 'Calendar deleted'})
+    except Exception as e:
+        return jsonify({'success': False, 'message': f'Failed to delete calendar: {e}'}), 500
+
+
+@app.route('/admin/delete_manual', methods=['POST'])
+def admin_delete_manual():
+    """Delete a manual event by id (returns JSON)."""
+    try:
+        man_id = int(request.form.get('id', -1))
+    except Exception:
+        return jsonify({'success': False, 'message': 'Invalid event id'}), 400
+
+    try:
+        init_db()
+        delete_manual_db(man_id)
+        return jsonify({'success': True, 'message': 'Manual event deleted'})
+    except Exception as e:
+        return jsonify({'success': False, 'message': f'Failed to delete manual event: {e}'}), 500
+
+
+# =============================================================================
+# EXTRACURRICULAR EVENTS ROUTES
+# =============================================================================
+
+@app.route('/events')
+def extracurricular_events_view():
+    """View extracurricular events."""
+    # Read events from DB
+    try:
+        init_db()
+        events = list_extracurricular_db()
+    except Exception:
+        # fallback to file
+        events_file = pathlib.Path('config/extracurricular_events.json')
+        events = []
+        if events_file.exists():
+            try:
+                with open(events_file, 'r', encoding='utf-8') as f:
+                    events = json.load(f)
+            except Exception:
+                events = []
+    
+    # Sort by date
+    from dateutil import parser as dtparser
+    for ev in events:
+        try:
+            ev['_date'] = dtparser.parse(ev.get('date', ''))
+        except:
+            ev['_date'] = datetime.max
+    events.sort(key=lambda x: x['_date'])
+    
+    # Get unique categories for filtering
+    categories = sorted(set(ev.get('category', 'Other') for ev in events))
+    
+    # Parse titles so UI shows cleaned/display titles (apply subject parsing rules)
+    try:
+        from tools.subject_parser import parse_title
+        for ev in events:
+            try:
+                parsed = parse_title(ev.get('title', '') or '')
+                ev['display_title'] = parsed.display_title
+                ev['subject'] = parsed.subject_name
+            except Exception:
+                ev['display_title'] = ev.get('title')
+                ev['subject'] = ev.get('subject', '')
+    except Exception:
+        # If parser not available, fallback to raw title
+        for ev in events:
+            ev['display_title'] = ev.get('title')
+            ev['subject'] = ev.get('subject', '')
+
+    return render_template('extracurricular.html', events=events, categories=categories)
+
+
+@app.route('/events/add', methods=['POST'])
+def add_extracurricular_event():
+    """Add a new extracurricular event."""
+    title = request.form.get('title', '').strip()
+    organizer = request.form.get('organizer', '').strip()
+    date_str = request.form.get('date', '').strip()
+    time_str = request.form.get('time', '').strip()
+    location = request.form.get('location', '').strip()
+    category = request.form.get('category', '').strip()
+    description = request.form.get('description', '').strip()
+    
+    if not title or not date_str:
+        return jsonify({'success': False, 'message': 'Title and date are required'}), 400
+    
+    # Store in DB
+    try:
+        init_db()
+        new_event = {
+            'title': title,
+            'organizer': organizer,
+            'date': date_str,
+            'time': time_str,
+            'location': location,
+            'category': category or 'Other',
+            'description': description,
+            'created_at': datetime.now().isoformat()
+        }
+        ev_id = add_extracurricular_db(new_event)
+        return jsonify({'success': True, 'message': 'Event added successfully', 'id': ev_id})
+    except Exception:
+        # fallback to file-based storage
+        events_file = pathlib.Path('config/extracurricular_events.json')
+        events_file.parent.mkdir(exist_ok=True)
+        events = []
+        if events_file.exists():
+            try:
+                with open(events_file, 'r', encoding='utf-8') as f:
+                    events = json.load(f)
+            except Exception:
+                events = []
+        new_event = {
+            'id': len(events) + 1,
+            'title': title,
+            'organizer': organizer,
+            'date': date_str,
+            'time': time_str,
+            'location': location,
+            'category': category or 'Other',
+            'description': description,
+            'created_at': datetime.now().isoformat()
+        }
+        events.append(new_event)
+        with open(events_file, 'w', encoding='utf-8') as f:
+            json.dump(events, f, indent=2, ensure_ascii=False)
+        return jsonify({'success': True, 'message': 'Event added successfully'})
+
+
+@app.route('/events/delete', methods=['POST'])
+def delete_extracurricular_event():
+    """Delete an extracurricular event."""
+    try:
+        event_id = int(request.form.get('id', -1))
+    except ValueError:
+        return jsonify({'success': False, 'message': 'Invalid event ID'}), 400
+    
+    # Try DB deletion first
+    try:
+        init_db()
+        delete_extracurricular_db(event_id)
+        return jsonify({'success': True, 'message': 'Event deleted'})
+    except Exception:
+        # fallback to file
+        events_file = pathlib.Path('config/extracurricular_events.json')
+        if not events_file.exists():
+            return jsonify({'success': False, 'message': 'No events file'}), 404
+        with open(events_file, 'r', encoding='utf-8') as f:
+            events = json.load(f)
+        events = [ev for ev in events if ev.get('id') != event_id]
+        with open(events_file, 'w', encoding='utf-8') as f:
+            json.dump(events, f, indent=2, ensure_ascii=False)
+        return jsonify({'success': True, 'message': 'Event deleted'})
+
+
 if __name__ == "__main__":
+    # Start periodic fetcher thread (runs every 30 minutes) before launching the app.
+    try:
+        t = threading.Thread(target=periodic_fetcher, args=(60,), daemon=True)
+        t.start()
+        print('Started periodic calendar fetcher (initial run now, then every 60 minutes)')
+    except Exception:
+        print('Failed to start periodic fetcher')
+
+    # Initialize DB and migrate any existing JSON configuration into it
+    try:
+        init_db()
+        migrate_from_files()
+        print('Initialized DB and migrated existing configs (if any).')
+    except Exception:
+        print('DB initialization or migration failed; continuing with file-based config if present.')
+
     # Disable the auto-reloader to avoid Playwright event-loop lifecycle issues
     # when the Flask debug reloader spawns child processes.
     app.run(debug=True, use_reloader=False)

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Timetable - {{ room }}</title>
+    <style>
+      body { font-family: Arial, Helvetica, sans-serif; margin: 18px; }
+      h1 { margin-bottom: 4px }
+      .meta { color: #444; margin-bottom: 12px }
+      table { border-collapse: collapse; width: 100%; margin-top: 12px }
+      th, td { border: 1px solid #ddd; padding: 8px; text-align: left }
+      th { background: #f6f6f6 }
+      .small { font-size: 0.9rem; color:#666 }
+      @media print {
+        body { margin: 6mm }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Room: {{ room }}</h1>
+    <div class="meta">From: {{ from_date.isoformat() }} — To: {{ to_date.isoformat() }}</div>
+
+    {% if not events %}
+      <div class="small">No events for this room in the selected range.</div>
+    {% else %}
+      <table>
+        <thead>
+          <tr><th>Date</th><th>Start</th><th>End</th><th>Subject</th><th>Professor</th><th>Location</th></tr>
+        </thead>
+        <tbody>
+        {% for e in events %}
+          <tr>
+            <td>{{ e.date }}</td>
+            <td>{{ e.start.split('T')[1] if e.start and 'T' in e.start else (e.start or '') }}</td>
+            <td>{{ e.end.split('T')[1] if e.end and 'T' in e.end else (e.end or '') }}</td>
+            <td>{{ e.subject or e.title }}</td>
+            <td>{{ e.professor }}</td>
+            <td>{{ e.location }}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    {% endif %}
+  </body>
+</html>

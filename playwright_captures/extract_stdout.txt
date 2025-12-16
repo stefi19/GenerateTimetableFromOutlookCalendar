@@ -1,692 +1,275 @@
 Using PLAYWRIGHT_USER_DATA_DIR: /Users/stefi/.playwright_profile
+Extracting URL: https://outlook.office365.com/calendar/published/173862b98010453296f2a697e45f3b1e@campus.utcluj.ro/daeb64d4bd994c52b4f54d04ba1940ca2236386271423118770/calendar.html
 Navigating to page...
 Captured: https://outlook.office365.com/owa/published/173862b98010453296f2a697e45f3b1e@campus.utcluj.ro/daeb64d4bd994c52b4f54d04ba1940ca2236386271423118770/service.svc?action=GetAnonymousCalendarSessionData&app=PublishedCalendar&n=0 -> playwright_captures/json_capture_0.json
 Captured: https://outlook.office365.com/owa/published/service.svc?action=GetTimeZoneOffsets&app=PublishedCalendar&n=1 -> playwright_captures/json_capture_1.json
-Captured: https://outlook.office365.com/owa/published/173862b98010453296f2a697e45f3b1e@campus.utcluj.ro/daeb64d4bd994c52b4f54d04ba1940ca2236386271423118770/service.svc?action=FindItem&app=PublishedCalendar&n=2 -> playwright_captures/json_capture_2.json
-Captured: https://outlook.office365.com/owa/published/service.svc?action=GetTimeZoneOffsets&app=PublishedCalendar&n=0 -> playwright_captures/json_capture_3.json
-Found 23 candidate elements to click (trying up to 40)
-Captured: https://outlook.office365.com/owa/published/173862b98010453296f2a697e45f3b1e@campus.utcluj.ro/daeb64d4bd994c52b4f54d04ba1940ca2236386271423118770/service.svc?action=FindItem&app=PublishedCalendar&n=3 -> playwright_captures/json_capture_4.json
-Captured: https://outlook.office365.com/owa/published/173862b98010453296f2a697e45f3b1e@campus.utcluj.ro/daeb64d4bd994c52b4f54d04ba1940ca2236386271423118770/service.svc?action=FindItem&app=PublishedCalendar&n=4 -> playwright_captures/json_capture_5.json
-Captured: https://outlook.office365.com/owa/published/service.svc?action=GetTimeZoneOffsets&app=PublishedCalendar&n=5 -> playwright_captures/json_capture_6.json
+Captured: https://outlook.office365.com/owa/published/service.svc?action=GetTimeZoneOffsets&app=PublishedCalendar&n=0 -> playwright_captures/json_capture_2.json
+Captured: https://outlook.office365.com/owa/published/173862b98010453296f2a697e45f3b1e@campus.utcluj.ro/daeb64d4bd994c52b4f54d04ba1940ca2236386271423118770/service.svc?action=FindItem&app=PublishedCalendar&n=2 -> playwright_captures/json_capture_3.json
+Found 41 candidate elements to click (trying up to 40)
+Captured: https://outlook.office365.com/owa/published/173862b98010453296f2a697e45f3b1e@campus.utcluj.ro/daeb64d4bd994c52b4f54d04ba1940ca2236386271423118770/service.svc?action=GetItem&app=PublishedCalendar&n=3 -> playwright_captures/json_capture_4.json
 Saved page_after_clicks.html
+Învățat 7 mapping-uri din titluri:
+  AI -> Artificial Intelligence
+  DMP -> Design With Microprocessors
+  EL -> Economic Law
+  FP -> Functional Programming
+  GP -> Graphic Processing
+  SCS -> Structure Of Computer Systems
+  SE -> Software Engineering
+Saved subject mappings to playwright_captures/subject_mappings.json
 Saved extracted events to playwright_captures/events.json
 
-=== 2025-10-27
-  2025-10-27T08:00:00+02:00 -> 2025-10-27T10:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-10-27T08:00:00+02:00 -> 2025-10-27T10:00:00+02:00  FP BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-10-27T08:00:00+02:00 -> 2025-10-27T10:00:00+02:00  GP BT5.05 [In-person]  @ utcn_room_ac_bar_bt-505@campus.utcluj.ro
-  2025-10-27T08:00:00+02:00 -> 2025-10-27T10:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-10-27T08:00:00+02:00 -> 2025-10-27T10:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-10-27T10:00:00+02:00 -> 2025-10-27T12:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-10-27T10:00:00+02:00 -> 2025-10-27T12:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-10-27T10:00:00+02:00 -> 2025-10-27T12:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-10-27T10:00:00+02:00 -> 2025-10-27T12:00:00+02:00  GP BT5.05 [In-person]  @ utcn_room_ac_bar_bt-505@campus.utcluj.ro
-  2025-10-27T10:00:00+02:00 -> 2025-10-27T12:00:00+02:00  FP BT5.04 [In-person]  @ utcn_room_ac_bar_bt-504@campus.utcluj.ro
-  2025-10-27T10:00:00+02:00 -> 2025-10-27T12:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-10-27T12:00:00+02:00 -> 2025-10-27T14:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-10-27T12:00:00+02:00 -> 2025-10-27T14:00:00+02:00  GP BT5.05 [In-person]  @ utcn_room_ac_bar_bt-505@campus.utcluj.ro
-  2025-10-27T14:00:00+02:00 -> 2025-10-27T16:00:00+02:00    Artificial intelligence (AI) - A. Groza - P03 [In-person]  @ utcn_room_ac_bar_p03@campus.utcluj.ro
-  2025-10-27T16:00:00+02:00 -> 2025-10-27T18:00:00+02:00    Software engineering (SE) - E. Todoran  - P03 [In-person]  @ utcn_room_ac_bar_p03@campus.utcluj.ro
-
-=== 2025-10-28
-  2025-10-28T08:00:00+02:00 -> 2025-10-28T10:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-10-28T08:00:00+02:00 -> 2025-10-28T10:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-10-28T08:00:00+02:00 -> 2025-10-28T10:00:00+02:00  SCS p S4.2 / SCS p S4.2	 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-10-28T10:00:00+02:00 -> 2025-10-28T12:00:00+02:00    GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-10-28T10:00:00+02:00 -> 2025-10-28T12:00:00+02:00  SCS p S4.2/ SCS p S4.2	 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-10-28T10:00:00+02:00 -> 2025-10-28T12:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-10-28T14:00:00+02:00 -> 2025-10-28T16:00:00+02:00  Functional programming (FP) - R. Slavescu - 40 [In-person]  @ utcn_room_ac_bar_40@campus.utcluj.ro
-  2025-10-28T16:00:00+02:00 -> 2025-10-28T18:00:00+02:00  Economic law (EL) - R. Cordos - 40 [In-person]  @ utcn_room_ac_bar_40@campus.utcluj.ro
-  2025-10-28T20:00:00+02:00 -> 2025-10-28T22:00:00+02:00  Computer assisted instruction.(fac) 356 / seminar 356 [In-person]  @ utcn_room_ac_bar_356@campus.utcluj.ro
-
-=== 2025-10-29
-  2025-10-29T08:00:00+02:00 -> 2025-10-29T10:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-10-29T08:00:00+02:00 -> 2025-10-29T10:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-10-29T08:00:00+02:00 -> 2025-10-29T10:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-10-29T08:00:00+02:00 -> 2025-10-29T10:00:00+02:00    AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-10-29T10:00:00+02:00 -> 2025-10-29T12:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-10-29T10:00:00+02:00 -> 2025-10-29T12:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-501@campus.utcluj.ro
-  2025-10-29T10:00:00+02:00 -> 2025-10-29T12:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-10-29T10:00:00+02:00 -> 2025-10-29T12:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-10-29T10:00:00+02:00 -> 2025-10-29T12:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-10-29T12:00:00+02:00 -> 2025-10-29T14:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-10-29T12:00:00+02:00 -> 2025-10-29T14:00:00+02:00  SCS p 103  /    SCS p 103	 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-10-29T12:00:00+02:00 -> 2025-10-29T14:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-10-29T12:00:00+02:00 -> 2025-10-29T14:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-10-29T14:00:00+02:00 -> 2025-10-29T16:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-10-29T14:00:00+02:00 -> 2025-10-29T16:00:00+02:00  SE 16B [In-person]  @ utcn_room_ac_bar_16b@campus.utcluj.ro
-  2025-10-29T14:00:00+02:00 -> 2025-10-29T16:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-10-29T14:00:00+02:00 -> 2025-10-29T16:00:00+02:00  SCS p 103/ SCS p 103	 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-10-29T14:00:00+02:00 -> 2025-10-29T18:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-10-29T14:00:00+02:00 -> 2025-10-29T16:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-10-29T16:00:00+02:00 -> 2025-10-29T18:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-10-29T16:00:00+02:00 -> 2025-10-29T18:00:00+02:00  SCS 103 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-10-29T16:00:00+02:00 -> 2025-10-29T18:00:00+02:00  SE BT5.03 [In-person]  @ UTCN - AC Bar - Sala BT 503
-  2025-10-29T16:00:00+02:00 -> 2025-10-29T18:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-10-29T16:00:00+02:00 -> 2025-10-29T18:00:00+02:00  Didact . spec. 206 (turn)/ [In-person]  @ utcn_room_ac_daic_206@campus.utcluj.ro
-  2025-10-29T18:00:00+02:00 -> 2025-10-29T20:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-10-29T18:00:00+02:00 -> 2025-10-29T20:00:00+02:00  SCS 103 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-10-29T18:00:00+02:00 -> 2025-10-29T20:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-10-29T18:00:00+02:00 -> 2025-10-29T20:00:00+02:00  Didactica specialitatii - I. Iuhos  206 (turn) - optional 	 [In-person]  @ utcn_room_ac_daic_206@campus.utcluj.ro
-
-=== 2025-10-30
-  2025-10-30T08:00:00+02:00 -> 2025-10-30T10:00:00+02:00  Graphic processing (GP) - D. Gorgan - D01 [In-person]  @ utcn_room_ac_doro_d01@campus.utcluj.ro
-  2025-10-30T10:00:00+02:00 -> 2025-10-30T12:00:00+02:00  Design with microprocessors (DMP) - R. Danescu  - D01 [In-person]  @ utcn_room_ac_doro_d01@campus.utcluj.ro
-  2025-10-30T12:00:00+02:00 -> 2025-10-30T14:00:00+02:00  Structure of computer systems (SCS) - G. Sebestyen - D01 [In-person]  @ utcn_room_ac_doro_d01@campus.utcluj.ro
-  2025-10-30T14:00:00+02:00 -> 2025-10-30T16:00:00+02:00  SCS 103 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-
-=== 2025-10-31
-  2025-10-31T08:00:00+02:00 -> 2025-10-31T10:00:00+02:00  AI 103 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-10-31T08:00:00+02:00 -> 2025-10-31T10:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-10-31T08:00:00+02:00 -> 2025-10-31T10:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-10-31T08:00:00+02:00 -> 2025-10-31T10:00:00+02:00  FP 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-10-31T10:00:00+02:00 -> 2025-10-31T12:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-10-31T10:00:00+02:00 -> 2025-10-31T12:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-10-31T10:00:00+02:00 -> 2025-10-31T12:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-10-31T10:00:00+02:00 -> 2025-10-31T12:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-10-31T12:00:00+02:00 -> 2025-10-31T14:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-10-31T12:00:00+02:00 -> 2025-10-31T14:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-10-31T12:00:00+02:00 -> 2025-10-31T14:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-10-31T12:00:00+02:00 -> 2025-10-31T14:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-10-31T12:00:00+02:00 -> 2025-10-31T14:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-10-31T14:00:00+02:00 -> 2025-10-31T16:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-10-31T14:00:00+02:00 -> 2025-10-31T16:00:00+02:00  SCS p S4.2 / SCS p S4.2	 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-10-31T14:00:00+02:00 -> 2025-10-31T16:00:00+02:00    SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-10-31T14:00:00+02:00 -> 2025-10-31T16:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-10-31T16:00:00+02:00 -> 2025-10-31T18:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-10-31T18:00:00+02:00 -> 2025-10-31T20:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-
-=== 2025-11-03
-  2025-11-03T08:00:00+02:00 -> 2025-11-03T10:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-03T08:00:00+02:00 -> 2025-11-03T10:00:00+02:00  GP BT5.05 [In-person]  @ utcn_room_ac_bar_bt-505@campus.utcluj.ro
-  2025-11-03T08:00:00+02:00 -> 2025-11-03T10:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-03T08:00:00+02:00 -> 2025-11-03T10:00:00+02:00  FP BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-11-03T08:00:00+02:00 -> 2025-11-03T10:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-11-03T10:00:00+02:00 -> 2025-11-03T12:00:00+02:00  GP BT5.05 [In-person]  @ utcn_room_ac_bar_bt-505@campus.utcluj.ro
-  2025-11-03T10:00:00+02:00 -> 2025-11-03T12:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-03T10:00:00+02:00 -> 2025-11-03T12:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-03T10:00:00+02:00 -> 2025-11-03T12:00:00+02:00  FP BT5.04 [In-person]  @ utcn_room_ac_bar_bt-504@campus.utcluj.ro
-  2025-11-03T10:00:00+02:00 -> 2025-11-03T12:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-11-03T10:00:00+02:00 -> 2025-11-03T12:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-11-03T12:00:00+02:00 -> 2025-11-03T14:00:00+02:00  GP BT5.05 [In-person]  @ utcn_room_ac_bar_bt-505@campus.utcluj.ro
-  2025-11-03T12:00:00+02:00 -> 2025-11-03T14:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-11-03T14:00:00+02:00 -> 2025-11-03T16:00:00+02:00    Artificial intelligence (AI) - A. Groza - P03 [In-person]  @ utcn_room_ac_bar_p03@campus.utcluj.ro
-  2025-11-03T16:00:00+02:00 -> 2025-11-03T18:00:00+02:00    Software engineering (SE) - E. Todoran  - P03 [In-person]  @ utcn_room_ac_bar_p03@campus.utcluj.ro
-
-=== 2025-11-04
-  2025-11-04T08:00:00+02:00 -> 2025-11-04T10:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-11-04T08:00:00+02:00 -> 2025-11-04T10:00:00+02:00  SCS p S4.2 / SCS p S4.2	 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-04T08:00:00+02:00 -> 2025-11-04T10:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-04T10:00:00+02:00 -> 2025-11-04T12:00:00+02:00  SCS p S4.2/ SCS p S4.2	 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-04T10:00:00+02:00 -> 2025-11-04T12:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-04T10:00:00+02:00 -> 2025-11-04T12:00:00+02:00    GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-11-04T14:00:00+02:00 -> 2025-11-04T16:00:00+02:00  Functional programming (FP) - R. Slavescu - 40 [In-person]  @ utcn_room_ac_bar_40@campus.utcluj.ro
-  2025-11-04T16:00:00+02:00 -> 2025-11-04T18:00:00+02:00  Economic law (EL) - R. Cordos - 40 [In-person]  @ utcn_room_ac_bar_40@campus.utcluj.ro
-  2025-11-04T20:00:00+02:00 -> 2025-11-04T22:00:00+02:00  Computer assisted instruction.(fac) 356 / seminar 356 [In-person]  @ utcn_room_ac_bar_356@campus.utcluj.ro
-
-=== 2025-11-05
-  2025-11-05T08:00:00+02:00 -> 2025-11-05T10:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-11-05T08:00:00+02:00 -> 2025-11-05T10:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-05T08:00:00+02:00 -> 2025-11-05T10:00:00+02:00    AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-05T08:00:00+02:00 -> 2025-11-05T10:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-11-05T10:00:00+02:00 -> 2025-11-05T12:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-05T10:00:00+02:00 -> 2025-11-05T12:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-05T10:00:00+02:00 -> 2025-11-05T12:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-11-05T10:00:00+02:00 -> 2025-11-05T12:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-11-05T10:00:00+02:00 -> 2025-11-05T12:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-501@campus.utcluj.ro
-  2025-11-05T12:00:00+02:00 -> 2025-11-05T14:00:00+02:00  SCS p 103  /    SCS p 103	 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-11-05T12:00:00+02:00 -> 2025-11-05T14:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-11-05T12:00:00+02:00 -> 2025-11-05T14:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-11-05T12:00:00+02:00 -> 2025-11-05T14:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-05T14:00:00+02:00 -> 2025-11-05T18:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-05T14:00:00+02:00 -> 2025-11-05T16:00:00+02:00  SE 16B [In-person]  @ utcn_room_ac_bar_16b@campus.utcluj.ro
-  2025-11-05T14:00:00+02:00 -> 2025-11-05T16:00:00+02:00  SCS p 103/ SCS p 103	 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-11-05T14:00:00+02:00 -> 2025-11-05T16:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-11-05T14:00:00+02:00 -> 2025-11-05T16:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-11-05T14:00:00+02:00 -> 2025-11-05T16:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-05T16:00:00+02:00 -> 2025-11-05T18:00:00+02:00  SE BT5.03 [In-person]  @ UTCN - AC Bar - Sala BT 503
-  2025-11-05T16:00:00+02:00 -> 2025-11-05T18:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-05T16:00:00+02:00 -> 2025-11-05T18:00:00+02:00  SCS 103 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-11-05T16:00:00+02:00 -> 2025-11-05T18:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-05T16:00:00+02:00 -> 2025-11-05T18:00:00+02:00  Didact . spec. 206 (turn)/ [In-person]  @ utcn_room_ac_daic_206@campus.utcluj.ro
-  2025-11-05T18:00:00+02:00 -> 2025-11-05T20:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-11-05T18:00:00+02:00 -> 2025-11-05T20:00:00+02:00  Didactica specialitatii - I. Iuhos  206 (turn) - optional 	 [In-person]  @ utcn_room_ac_daic_206@campus.utcluj.ro
-  2025-11-05T18:00:00+02:00 -> 2025-11-05T20:00:00+02:00  SCS 103 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-11-05T18:00:00+02:00 -> 2025-11-05T20:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-
-=== 2025-11-06
-  2025-11-06T08:00:00+02:00 -> 2025-11-06T10:00:00+02:00  Graphic processing (GP) - D. Gorgan - D01 [In-person]  @ utcn_room_ac_doro_d01@campus.utcluj.ro
-  2025-11-06T10:00:00+02:00 -> 2025-11-06T12:00:00+02:00  Design with microprocessors (DMP) - R. Danescu  - D01 [In-person]  @ utcn_room_ac_doro_d01@campus.utcluj.ro
-  2025-11-06T12:00:00+02:00 -> 2025-11-06T14:00:00+02:00  Structure of computer systems (SCS) - G. Sebestyen - D01 [In-person]  @ utcn_room_ac_doro_d01@campus.utcluj.ro
-  2025-11-06T14:00:00+02:00 -> 2025-11-06T16:00:00+02:00  SCS 103 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-
-=== 2025-11-07
-  2025-11-07T08:00:00+02:00 -> 2025-11-07T10:00:00+02:00  AI 103 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-11-07T08:00:00+02:00 -> 2025-11-07T10:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-07T08:00:00+02:00 -> 2025-11-07T10:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-11-07T08:00:00+02:00 -> 2025-11-07T10:00:00+02:00  FP 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-07T10:00:00+02:00 -> 2025-11-07T12:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-07T10:00:00+02:00 -> 2025-11-07T12:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-07T10:00:00+02:00 -> 2025-11-07T12:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-11-07T10:00:00+02:00 -> 2025-11-07T12:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-07T12:00:00+02:00 -> 2025-11-07T14:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-07T12:00:00+02:00 -> 2025-11-07T14:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-07T12:00:00+02:00 -> 2025-11-07T14:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-11-07T12:00:00+02:00 -> 2025-11-07T14:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-07T12:00:00+02:00 -> 2025-11-07T14:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-11-07T14:00:00+02:00 -> 2025-11-07T16:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-07T14:00:00+02:00 -> 2025-11-07T16:00:00+02:00  SCS p S4.2 / SCS p S4.2	 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-07T14:00:00+02:00 -> 2025-11-07T16:00:00+02:00    SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-11-07T14:00:00+02:00 -> 2025-11-07T16:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-11-07T16:00:00+02:00 -> 2025-11-07T18:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-07T18:00:00+02:00 -> 2025-11-07T20:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-
-=== 2025-11-10
-  2025-11-10T08:00:00+02:00 -> 2025-11-10T10:00:00+02:00  FP BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-11-10T08:00:00+02:00 -> 2025-11-10T10:00:00+02:00  GP BT5.05 [In-person]  @ utcn_room_ac_bar_bt-505@campus.utcluj.ro
-  2025-11-10T08:00:00+02:00 -> 2025-11-10T10:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-10T08:00:00+02:00 -> 2025-11-10T10:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-10T08:00:00+02:00 -> 2025-11-10T10:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-11-10T10:00:00+02:00 -> 2025-11-10T12:00:00+02:00  FP BT5.04 [In-person]  @ utcn_room_ac_bar_bt-504@campus.utcluj.ro
-  2025-11-10T10:00:00+02:00 -> 2025-11-10T12:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-11-10T10:00:00+02:00 -> 2025-11-10T12:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-10T10:00:00+02:00 -> 2025-11-10T12:00:00+02:00  GP BT5.05 [In-person]  @ utcn_room_ac_bar_bt-505@campus.utcluj.ro
-  2025-11-10T10:00:00+02:00 -> 2025-11-10T12:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-11-10T10:00:00+02:00 -> 2025-11-10T12:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-10T12:00:00+02:00 -> 2025-11-10T14:00:00+02:00  GP BT5.05 [In-person]  @ utcn_room_ac_bar_bt-505@campus.utcluj.ro
-  2025-11-10T12:00:00+02:00 -> 2025-11-10T14:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-11-10T14:00:00+02:00 -> 2025-11-10T16:00:00+02:00    Artificial intelligence (AI) - A. Groza - P03 [In-person]  @ utcn_room_ac_bar_p03@campus.utcluj.ro
-  2025-11-10T16:00:00+02:00 -> 2025-11-10T18:00:00+02:00    Software engineering (SE) - E. Todoran  - P03 [In-person]  @ utcn_room_ac_bar_p03@campus.utcluj.ro
-
-=== 2025-11-11
-  2025-11-11T08:00:00+02:00 -> 2025-11-11T10:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-11-11T08:00:00+02:00 -> 2025-11-11T10:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-11T08:00:00+02:00 -> 2025-11-11T10:00:00+02:00  SCS p S4.2 / SCS p S4.2	 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-11T10:00:00+02:00 -> 2025-11-11T12:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-11T10:00:00+02:00 -> 2025-11-11T12:00:00+02:00  SCS p S4.2/ SCS p S4.2	 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-11T10:00:00+02:00 -> 2025-11-11T12:00:00+02:00    GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-11-11T14:00:00+02:00 -> 2025-11-11T16:00:00+02:00  Functional programming (FP) - R. Slavescu - 40 [In-person]  @ utcn_room_ac_bar_40@campus.utcluj.ro
-  2025-11-11T16:00:00+02:00 -> 2025-11-11T18:00:00+02:00  Economic law (EL) - R. Cordos - 40 [In-person]  @ utcn_room_ac_bar_40@campus.utcluj.ro
-  2025-11-11T20:00:00+02:00 -> 2025-11-11T22:00:00+02:00  Computer assisted instruction.(fac) 356 / seminar 356 [In-person]  @ utcn_room_ac_bar_356@campus.utcluj.ro
-
-=== 2025-11-12
-  2025-11-12T08:00:00+02:00 -> 2025-11-12T10:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-11-12T08:00:00+02:00 -> 2025-11-12T10:00:00+02:00    AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-12T08:00:00+02:00 -> 2025-11-12T10:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-12T08:00:00+02:00 -> 2025-11-12T10:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-11-12T10:00:00+02:00 -> 2025-11-12T12:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-11-12T10:00:00+02:00 -> 2025-11-12T12:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-11-12T10:00:00+02:00 -> 2025-11-12T12:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-501@campus.utcluj.ro
-  2025-11-12T10:00:00+02:00 -> 2025-11-12T12:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-12T10:00:00+02:00 -> 2025-11-12T12:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-12T12:00:00+02:00 -> 2025-11-12T14:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-11-12T12:00:00+02:00 -> 2025-11-12T14:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-12T12:00:00+02:00 -> 2025-11-12T14:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-11-12T12:00:00+02:00 -> 2025-11-12T14:00:00+02:00  SCS p 103  /    SCS p 103	 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-11-12T14:00:00+02:00 -> 2025-11-12T18:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-12T14:00:00+02:00 -> 2025-11-12T16:00:00+02:00  SE 16B [In-person]  @ utcn_room_ac_bar_16b@campus.utcluj.ro
-  2025-11-12T14:00:00+02:00 -> 2025-11-12T16:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-11-12T14:00:00+02:00 -> 2025-11-12T16:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-12T14:00:00+02:00 -> 2025-11-12T16:00:00+02:00  SCS p 103/ SCS p 103	 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-11-12T14:00:00+02:00 -> 2025-11-12T16:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-11-12T16:00:00+02:00 -> 2025-11-12T18:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-12T16:00:00+02:00 -> 2025-11-12T18:00:00+02:00  SE BT5.03 [In-person]  @ UTCN - AC Bar - Sala BT 503
-  2025-11-12T16:00:00+02:00 -> 2025-11-12T18:00:00+02:00  SCS 103 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-11-12T16:00:00+02:00 -> 2025-11-12T18:00:00+02:00  Didact . spec. 206 (turn)/ [In-person]  @ utcn_room_ac_daic_206@campus.utcluj.ro
-  2025-11-12T16:00:00+02:00 -> 2025-11-12T18:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-12T18:00:00+02:00 -> 2025-11-12T20:00:00+02:00  Didactica specialitatii - I. Iuhos  206 (turn) - optional 	 [In-person]  @ utcn_room_ac_daic_206@campus.utcluj.ro
-  2025-11-12T18:00:00+02:00 -> 2025-11-12T20:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-11-12T18:00:00+02:00 -> 2025-11-12T20:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-12T18:00:00+02:00 -> 2025-11-12T20:00:00+02:00  SCS 103 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-
-=== 2025-11-13
-  2025-11-13T08:00:00+02:00 -> 2025-11-13T10:00:00+02:00  Graphic processing (GP) - D. Gorgan - D01 [In-person]  @ utcn_room_ac_doro_d01@campus.utcluj.ro
-  2025-11-13T10:00:00+02:00 -> 2025-11-13T12:00:00+02:00  Design with microprocessors (DMP) - R. Danescu  - D01 [In-person]  @ utcn_room_ac_doro_d01@campus.utcluj.ro
-  2025-11-13T12:00:00+02:00 -> 2025-11-13T14:00:00+02:00  Structure of computer systems (SCS) - G. Sebestyen - D01 [In-person]  @ utcn_room_ac_doro_d01@campus.utcluj.ro
-  2025-11-13T14:00:00+02:00 -> 2025-11-13T16:00:00+02:00  SCS 103 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-
-=== 2025-11-14
-  2025-11-14T08:00:00+02:00 -> 2025-11-14T10:00:00+02:00  FP 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-14T08:00:00+02:00 -> 2025-11-14T10:00:00+02:00  AI 103 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-11-14T08:00:00+02:00 -> 2025-11-14T10:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-11-14T08:00:00+02:00 -> 2025-11-14T10:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-14T10:00:00+02:00 -> 2025-11-14T12:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-14T10:00:00+02:00 -> 2025-11-14T12:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-14T10:00:00+02:00 -> 2025-11-14T12:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-11-14T10:00:00+02:00 -> 2025-11-14T12:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-14T12:00:00+02:00 -> 2025-11-14T14:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-14T12:00:00+02:00 -> 2025-11-14T14:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-11-14T12:00:00+02:00 -> 2025-11-14T14:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-14T12:00:00+02:00 -> 2025-11-14T14:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-11-14T12:00:00+02:00 -> 2025-11-14T14:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-14T14:00:00+02:00 -> 2025-11-14T16:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-14T14:00:00+02:00 -> 2025-11-14T16:00:00+02:00  SCS p S4.2 / SCS p S4.2	 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-14T14:00:00+02:00 -> 2025-11-14T16:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-11-14T14:00:00+02:00 -> 2025-11-14T16:00:00+02:00    SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-11-14T16:00:00+02:00 -> 2025-11-14T18:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-14T18:00:00+02:00 -> 2025-11-14T20:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-
-=== 2025-11-17
-  2025-11-17T08:00:00+02:00 -> 2025-11-17T10:00:00+02:00  GP BT5.05 [In-person]  @ utcn_room_ac_bar_bt-505@campus.utcluj.ro
-  2025-11-17T08:00:00+02:00 -> 2025-11-17T10:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-11-17T08:00:00+02:00 -> 2025-11-17T10:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-17T08:00:00+02:00 -> 2025-11-17T10:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-17T08:00:00+02:00 -> 2025-11-17T10:00:00+02:00  FP BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-11-17T10:00:00+02:00 -> 2025-11-17T12:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-17T10:00:00+02:00 -> 2025-11-17T12:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-11-17T10:00:00+02:00 -> 2025-11-17T12:00:00+02:00  FP BT5.04 [In-person]  @ utcn_room_ac_bar_bt-504@campus.utcluj.ro
-  2025-11-17T10:00:00+02:00 -> 2025-11-17T12:00:00+02:00  GP BT5.05 [In-person]  @ utcn_room_ac_bar_bt-505@campus.utcluj.ro
-  2025-11-17T10:00:00+02:00 -> 2025-11-17T12:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-17T10:00:00+02:00 -> 2025-11-17T12:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-11-17T12:00:00+02:00 -> 2025-11-17T14:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-11-17T12:00:00+02:00 -> 2025-11-17T14:00:00+02:00  GP BT5.05 [In-person]  @ utcn_room_ac_bar_bt-505@campus.utcluj.ro
-  2025-11-17T14:00:00+02:00 -> 2025-11-17T16:00:00+02:00    Artificial intelligence (AI) - A. Groza - P03 [In-person]  @ utcn_room_ac_bar_p03@campus.utcluj.ro
-  2025-11-17T16:00:00+02:00 -> 2025-11-17T18:00:00+02:00    Software engineering (SE) - E. Todoran  - P03 [In-person]  @ utcn_room_ac_bar_p03@campus.utcluj.ro
-
-=== 2025-11-18
-  2025-11-18T08:00:00+02:00 -> 2025-11-18T10:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-18T08:00:00+02:00 -> 2025-11-18T10:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-11-18T08:00:00+02:00 -> 2025-11-18T10:00:00+02:00  SCS p S4.2 / SCS p S4.2	 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-18T10:00:00+02:00 -> 2025-11-18T12:00:00+02:00  SCS p S4.2/ SCS p S4.2	 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-18T10:00:00+02:00 -> 2025-11-18T12:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-18T10:00:00+02:00 -> 2025-11-18T12:00:00+02:00    GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-11-18T14:00:00+02:00 -> 2025-11-18T16:00:00+02:00  Functional programming (FP) - R. Slavescu - 40 [In-person]  @ utcn_room_ac_bar_40@campus.utcluj.ro
-  2025-11-18T16:00:00+02:00 -> 2025-11-18T18:00:00+02:00  Economic law (EL) - R. Cordos - 40 [In-person]  @ utcn_room_ac_bar_40@campus.utcluj.ro
-  2025-11-18T20:00:00+02:00 -> 2025-11-18T22:00:00+02:00  Computer assisted instruction.(fac) 356 / seminar 356 [In-person]  @ utcn_room_ac_bar_356@campus.utcluj.ro
-
-=== 2025-11-19
-  2025-11-19T08:00:00+02:00 -> 2025-11-19T10:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-11-19T08:00:00+02:00 -> 2025-11-19T10:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-11-19T08:00:00+02:00 -> 2025-11-19T10:00:00+02:00    AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-19T08:00:00+02:00 -> 2025-11-19T10:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-19T10:00:00+02:00 -> 2025-11-19T12:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-501@campus.utcluj.ro
-  2025-11-19T10:00:00+02:00 -> 2025-11-19T12:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-19T10:00:00+02:00 -> 2025-11-19T12:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-11-19T10:00:00+02:00 -> 2025-11-19T12:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-19T10:00:00+02:00 -> 2025-11-19T12:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-11-19T12:00:00+02:00 -> 2025-11-19T14:00:00+02:00  SCS p 103  /    SCS p 103	 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-11-19T12:00:00+02:00 -> 2025-11-19T14:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-19T12:00:00+02:00 -> 2025-11-19T14:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-11-19T12:00:00+02:00 -> 2025-11-19T14:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-11-19T14:00:00+02:00 -> 2025-11-19T16:00:00+02:00  SE 16B [In-person]  @ utcn_room_ac_bar_16b@campus.utcluj.ro
-  2025-11-19T14:00:00+02:00 -> 2025-11-19T16:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-11-19T14:00:00+02:00 -> 2025-11-19T16:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-11-19T14:00:00+02:00 -> 2025-11-19T16:00:00+02:00  SCS p 103/ SCS p 103	 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-11-19T14:00:00+02:00 -> 2025-11-19T16:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-19T14:00:00+02:00 -> 2025-11-19T18:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-19T16:00:00+02:00 -> 2025-11-19T18:00:00+02:00  SCS 103 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-11-19T16:00:00+02:00 -> 2025-11-19T18:00:00+02:00  SE BT5.03 [In-person]  @ UTCN - AC Bar - Sala BT 503
-  2025-11-19T16:00:00+02:00 -> 2025-11-19T18:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-19T16:00:00+02:00 -> 2025-11-19T18:00:00+02:00  Didact . spec. 206 (turn)/ [In-person]  @ utcn_room_ac_daic_206@campus.utcluj.ro
-  2025-11-19T16:00:00+02:00 -> 2025-11-19T18:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-19T18:00:00+02:00 -> 2025-11-19T20:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-19T18:00:00+02:00 -> 2025-11-19T20:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-11-19T18:00:00+02:00 -> 2025-11-19T20:00:00+02:00  SCS 103 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-11-19T18:00:00+02:00 -> 2025-11-19T20:00:00+02:00  Didactica specialitatii - I. Iuhos  206 (turn) - optional 	 [In-person]  @ utcn_room_ac_daic_206@campus.utcluj.ro
-
-=== 2025-11-20
-  2025-11-20T08:00:00+02:00 -> 2025-11-20T10:00:00+02:00  Graphic processing (GP) - D. Gorgan - D01 [In-person]  @ utcn_room_ac_doro_d01@campus.utcluj.ro
-  2025-11-20T10:00:00+02:00 -> 2025-11-20T12:00:00+02:00  Design with microprocessors (DMP) - R. Danescu  - D01 [In-person]  @ utcn_room_ac_doro_d01@campus.utcluj.ro
-  2025-11-20T12:00:00+02:00 -> 2025-11-20T14:00:00+02:00  Structure of computer systems (SCS) - G. Sebestyen - D01 [In-person]  @ utcn_room_ac_doro_d01@campus.utcluj.ro
-  2025-11-20T14:00:00+02:00 -> 2025-11-20T16:00:00+02:00  SCS 103 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-
-=== 2025-11-21
-  2025-11-21T08:00:00+02:00 -> 2025-11-21T10:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-21T08:00:00+02:00 -> 2025-11-21T10:00:00+02:00  FP 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-21T08:00:00+02:00 -> 2025-11-21T10:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-11-21T08:00:00+02:00 -> 2025-11-21T10:00:00+02:00  AI 103 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-11-21T10:00:00+02:00 -> 2025-11-21T12:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-21T10:00:00+02:00 -> 2025-11-21T12:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-21T10:00:00+02:00 -> 2025-11-21T12:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-11-21T10:00:00+02:00 -> 2025-11-21T12:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-21T12:00:00+02:00 -> 2025-11-21T14:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-11-21T12:00:00+02:00 -> 2025-11-21T14:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-11-21T12:00:00+02:00 -> 2025-11-21T14:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-21T12:00:00+02:00 -> 2025-11-21T14:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-21T12:00:00+02:00 -> 2025-11-21T14:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-21T14:00:00+02:00 -> 2025-11-21T16:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-21T14:00:00+02:00 -> 2025-11-21T16:00:00+02:00  SCS p S4.2 / SCS p S4.2	 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-21T14:00:00+02:00 -> 2025-11-21T16:00:00+02:00    SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-11-21T14:00:00+02:00 -> 2025-11-21T16:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-11-21T16:00:00+02:00 -> 2025-11-21T18:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-21T18:00:00+02:00 -> 2025-11-21T20:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-
-=== 2025-11-24
-  2025-11-24T08:00:00+02:00 -> 2025-11-24T10:00:00+02:00  GP BT5.05 [In-person]  @ utcn_room_ac_bar_bt-505@campus.utcluj.ro
-  2025-11-24T08:00:00+02:00 -> 2025-11-24T10:00:00+02:00  FP BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-11-24T08:00:00+02:00 -> 2025-11-24T10:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-11-24T08:00:00+02:00 -> 2025-11-24T10:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-24T08:00:00+02:00 -> 2025-11-24T10:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-24T10:00:00+02:00 -> 2025-11-24T12:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-11-24T10:00:00+02:00 -> 2025-11-24T12:00:00+02:00  FP BT5.04 [In-person]  @ utcn_room_ac_bar_bt-504@campus.utcluj.ro
-  2025-11-24T10:00:00+02:00 -> 2025-11-24T12:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-24T10:00:00+02:00 -> 2025-11-24T12:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-24T10:00:00+02:00 -> 2025-11-24T12:00:00+02:00  GP BT5.05 [In-person]  @ utcn_room_ac_bar_bt-505@campus.utcluj.ro
-  2025-11-24T10:00:00+02:00 -> 2025-11-24T12:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-11-24T12:00:00+02:00 -> 2025-11-24T14:00:00+02:00  GP BT5.05 [In-person]  @ utcn_room_ac_bar_bt-505@campus.utcluj.ro
-  2025-11-24T12:00:00+02:00 -> 2025-11-24T14:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-11-24T14:00:00+02:00 -> 2025-11-24T16:00:00+02:00    Artificial intelligence (AI) - A. Groza - P03 [In-person]  @ utcn_room_ac_bar_p03@campus.utcluj.ro
-  2025-11-24T16:00:00+02:00 -> 2025-11-24T18:00:00+02:00    Software engineering (SE) - E. Todoran  - P03 [In-person]  @ utcn_room_ac_bar_p03@campus.utcluj.ro
-
-=== 2025-11-25
-  2025-11-25T08:00:00+02:00 -> 2025-11-25T10:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-11-25T08:00:00+02:00 -> 2025-11-25T10:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-25T08:00:00+02:00 -> 2025-11-25T10:00:00+02:00  SCS p S4.2 / SCS p S4.2	 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-25T10:00:00+02:00 -> 2025-11-25T12:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-25T10:00:00+02:00 -> 2025-11-25T12:00:00+02:00  SCS p S4.2/ SCS p S4.2	 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-25T10:00:00+02:00 -> 2025-11-25T12:00:00+02:00    GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-11-25T14:00:00+02:00 -> 2025-11-25T16:00:00+02:00  Functional programming (FP) - R. Slavescu - 40 [In-person]  @ utcn_room_ac_bar_40@campus.utcluj.ro
-  2025-11-25T16:00:00+02:00 -> 2025-11-25T18:00:00+02:00  Economic law (EL) - R. Cordos - 40 [In-person]  @ utcn_room_ac_bar_40@campus.utcluj.ro
-  2025-11-25T20:00:00+02:00 -> 2025-11-25T22:00:00+02:00  Computer assisted instruction.(fac) 356 / seminar 356 [In-person]  @ utcn_room_ac_bar_356@campus.utcluj.ro
-
-=== 2025-11-26
-  2025-11-26T08:00:00+02:00 -> 2025-11-26T10:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-26T08:00:00+02:00 -> 2025-11-26T10:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-11-26T08:00:00+02:00 -> 2025-11-26T10:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-11-26T08:00:00+02:00 -> 2025-11-26T10:00:00+02:00    AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-26T10:00:00+02:00 -> 2025-11-26T12:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-11-26T10:00:00+02:00 -> 2025-11-26T12:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-26T10:00:00+02:00 -> 2025-11-26T12:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-501@campus.utcluj.ro
-  2025-11-26T10:00:00+02:00 -> 2025-11-26T12:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-11-26T10:00:00+02:00 -> 2025-11-26T12:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-26T12:00:00+02:00 -> 2025-11-26T14:00:00+02:00  SCS p 103  /    SCS p 103	 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-11-26T12:00:00+02:00 -> 2025-11-26T14:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-11-26T12:00:00+02:00 -> 2025-11-26T14:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-26T12:00:00+02:00 -> 2025-11-26T14:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-11-26T14:00:00+02:00 -> 2025-11-26T16:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-11-26T14:00:00+02:00 -> 2025-11-26T18:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-26T14:00:00+02:00 -> 2025-11-26T16:00:00+02:00  SE 16B [In-person]  @ utcn_room_ac_bar_16b@campus.utcluj.ro
-  2025-11-26T14:00:00+02:00 -> 2025-11-26T16:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-11-26T14:00:00+02:00 -> 2025-11-26T16:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-26T14:00:00+02:00 -> 2025-11-26T16:00:00+02:00  SCS p 103/ SCS p 103	 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-11-26T16:00:00+02:00 -> 2025-11-26T18:00:00+02:00  Didact . spec. 206 (turn)/ [In-person]  @ utcn_room_ac_daic_206@campus.utcluj.ro
-  2025-11-26T16:00:00+02:00 -> 2025-11-26T18:00:00+02:00  SCS 103 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-11-26T16:00:00+02:00 -> 2025-11-26T18:00:00+02:00  SE BT5.03 [In-person]  @ UTCN - AC Bar - Sala BT 503
-  2025-11-26T16:00:00+02:00 -> 2025-11-26T18:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-26T16:00:00+02:00 -> 2025-11-26T18:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-26T18:00:00+02:00 -> 2025-11-26T20:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-11-26T18:00:00+02:00 -> 2025-11-26T20:00:00+02:00  Didactica specialitatii - I. Iuhos  206 (turn) - optional 	 [In-person]  @ utcn_room_ac_daic_206@campus.utcluj.ro
-  2025-11-26T18:00:00+02:00 -> 2025-11-26T20:00:00+02:00  SCS 103 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-11-26T18:00:00+02:00 -> 2025-11-26T20:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-
-=== 2025-11-27
-  2025-11-27T08:00:00+02:00 -> 2025-11-27T10:00:00+02:00  Graphic processing (GP) - D. Gorgan - D01 [In-person]  @ utcn_room_ac_doro_d01@campus.utcluj.ro
-  2025-11-27T10:00:00+02:00 -> 2025-11-27T12:00:00+02:00  Design with microprocessors (DMP) - R. Danescu  - D01 [In-person]  @ utcn_room_ac_doro_d01@campus.utcluj.ro
-  2025-11-27T12:00:00+02:00 -> 2025-11-27T14:00:00+02:00  Structure of computer systems (SCS) - G. Sebestyen - D01 [In-person]  @ utcn_room_ac_doro_d01@campus.utcluj.ro
-  2025-11-27T14:00:00+02:00 -> 2025-11-27T16:00:00+02:00  SCS 103 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-
-=== 2025-11-28
-  2025-11-28T08:00:00+02:00 -> 2025-11-28T10:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-11-28T08:00:00+02:00 -> 2025-11-28T10:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-28T08:00:00+02:00 -> 2025-11-28T10:00:00+02:00  FP 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-28T08:00:00+02:00 -> 2025-11-28T10:00:00+02:00  AI 103 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-11-28T10:00:00+02:00 -> 2025-11-28T12:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-28T10:00:00+02:00 -> 2025-11-28T12:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-28T10:00:00+02:00 -> 2025-11-28T12:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-28T10:00:00+02:00 -> 2025-11-28T12:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-11-28T12:00:00+02:00 -> 2025-11-28T14:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-28T12:00:00+02:00 -> 2025-11-28T14:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-11-28T12:00:00+02:00 -> 2025-11-28T14:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-11-28T12:00:00+02:00 -> 2025-11-28T14:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-11-28T12:00:00+02:00 -> 2025-11-28T14:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-28T14:00:00+02:00 -> 2025-11-28T16:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-11-28T14:00:00+02:00 -> 2025-11-28T16:00:00+02:00  SCS p S4.2 / SCS p S4.2	 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-28T14:00:00+02:00 -> 2025-11-28T16:00:00+02:00    SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-11-28T14:00:00+02:00 -> 2025-11-28T16:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-11-28T16:00:00+02:00 -> 2025-11-28T18:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-11-28T18:00:00+02:00 -> 2025-11-28T20:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-
 === 2025-12-01
-  2025-12-01T08:00:00+02:00 -> 2025-12-01T10:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-12-01T08:00:00+02:00 -> 2025-12-01T10:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-12-01T08:00:00+02:00 -> 2025-12-01T10:00:00+02:00  GP BT5.05 [In-person]  @ utcn_room_ac_bar_bt-505@campus.utcluj.ro
-  2025-12-01T08:00:00+02:00 -> 2025-12-01T10:00:00+02:00  FP BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-12-01T08:00:00+02:00 -> 2025-12-01T10:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-12-01T10:00:00+02:00 -> 2025-12-01T12:00:00+02:00  FP BT5.04 [In-person]  @ utcn_room_ac_bar_bt-504@campus.utcluj.ro
-  2025-12-01T10:00:00+02:00 -> 2025-12-01T12:00:00+02:00  GP BT5.05 [In-person]  @ utcn_room_ac_bar_bt-505@campus.utcluj.ro
-  2025-12-01T10:00:00+02:00 -> 2025-12-01T12:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-12-01T10:00:00+02:00 -> 2025-12-01T12:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-12-01T10:00:00+02:00 -> 2025-12-01T12:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-12-01T10:00:00+02:00 -> 2025-12-01T12:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-12-01T12:00:00+02:00 -> 2025-12-01T14:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-12-01T12:00:00+02:00 -> 2025-12-01T14:00:00+02:00  GP BT5.05 [In-person]  @ utcn_room_ac_bar_bt-505@campus.utcluj.ro
-  2025-12-01T14:00:00+02:00 -> 2025-12-01T16:00:00+02:00    Artificial intelligence (AI) - A. Groza - P03 [In-person]  @ utcn_room_ac_bar_p03@campus.utcluj.ro
-  2025-12-01T16:00:00+02:00 -> 2025-12-01T18:00:00+02:00    Software engineering (SE) - E. Todoran  - P03 [In-person]  @ utcn_room_ac_bar_p03@campus.utcluj.ro
+  2025-12-01T08:00:00+02:00 -> 2025-12-01T10:00:00+02:00  Functional Programming - Room 479  @ utcn_room_ac_daic_479@campus.utcluj.ro
+  2025-12-01T08:00:00+02:00 -> 2025-12-01T10:00:00+02:00  Artificial Intelligence - Room 26B  @ utcn_room_ac_bar_26b@campus.utcluj.ro
+  2025-12-01T08:00:00+02:00 -> 2025-12-01T10:00:00+02:00  Graphic Processing - Room BT5.05  @ utcn_room_ac_bar_bt-505@campus.utcluj.ro
+  2025-12-01T08:00:00+02:00 -> 2025-12-01T10:00:00+02:00  Functional Programming - Room BT5.03  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
+  2025-12-01T08:00:00+02:00 -> 2025-12-01T10:00:00+02:00  Structure Of Computer Systems - Room S4.2  @ utcn_room_ac_bar_s42@campus.utcluj.ro
+  2025-12-01T10:00:00+02:00 -> 2025-12-01T12:00:00+02:00  Functional Programming - Room BT5.04  @ utcn_room_ac_bar_bt-504@campus.utcluj.ro
+  2025-12-01T10:00:00+02:00 -> 2025-12-01T12:00:00+02:00  Graphic Processing - Room BT5.05  @ utcn_room_ac_bar_bt-505@campus.utcluj.ro
+  2025-12-01T10:00:00+02:00 -> 2025-12-01T12:00:00+02:00  Structure Of Computer Systems - Room S4.2  @ utcn_room_ac_bar_s42@campus.utcluj.ro
+  2025-12-01T10:00:00+02:00 -> 2025-12-01T12:00:00+02:00  Functional Programming - Room 479  @ utcn_room_ac_daic_479@campus.utcluj.ro
+  2025-12-01T10:00:00+02:00 -> 2025-12-01T12:00:00+02:00  Artificial Intelligence - Room 26B  @ utcn_room_ac_bar_26b@campus.utcluj.ro
+  2025-12-01T10:00:00+02:00 -> 2025-12-01T12:00:00+02:00  Software Engineering - Room BT5.03  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
+  2025-12-01T12:00:00+02:00 -> 2025-12-01T14:00:00+02:00  Software Engineering - Room BT5.03  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
+  2025-12-01T12:00:00+02:00 -> 2025-12-01T14:00:00+02:00  Graphic Processing - Room BT5.05  @ utcn_room_ac_bar_bt-505@campus.utcluj.ro
+  2025-12-01T14:00:00+02:00 -> 2025-12-01T16:00:00+02:00  Artificial Intelligence - A. Groza (P03)  @ utcn_room_ac_bar_p03@campus.utcluj.ro
+  2025-12-01T16:00:00+02:00 -> 2025-12-01T18:00:00+02:00  Software Engineering - E. Todoran (P03)  @ utcn_room_ac_bar_p03@campus.utcluj.ro
 
 === 2025-12-02
-  2025-12-02T08:00:00+02:00 -> 2025-12-02T10:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-12-02T08:00:00+02:00 -> 2025-12-02T10:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-12-02T08:00:00+02:00 -> 2025-12-02T10:00:00+02:00  SCS p S4.2 / SCS p S4.2	 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-12-02T10:00:00+02:00 -> 2025-12-02T12:00:00+02:00  SCS p S4.2/ SCS p S4.2	 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-12-02T10:00:00+02:00 -> 2025-12-02T12:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-12-02T10:00:00+02:00 -> 2025-12-02T12:00:00+02:00    GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-12-02T14:00:00+02:00 -> 2025-12-02T16:00:00+02:00  Functional programming (FP) - R. Slavescu - 40 [In-person]  @ utcn_room_ac_bar_40@campus.utcluj.ro
-  2025-12-02T16:00:00+02:00 -> 2025-12-02T18:00:00+02:00  Economic law (EL) - R. Cordos - 40 [In-person]  @ utcn_room_ac_bar_40@campus.utcluj.ro
-  2025-12-02T20:00:00+02:00 -> 2025-12-02T22:00:00+02:00  Computer assisted instruction.(fac) 356 / seminar 356 [In-person]  @ utcn_room_ac_bar_356@campus.utcluj.ro
+  2025-12-02T08:00:00+02:00 -> 2025-12-02T10:00:00+02:00  Design With Microprocessors - Room 107  @ utcn_room_ac_doro_107@campus.utcluj.ro
+  2025-12-02T08:00:00+02:00 -> 2025-12-02T10:00:00+02:00  Graphic Processing - Room 105  @ utcn_room_ac_doro_105@campus.utcluj.ro
+  2025-12-02T08:00:00+02:00 -> 2025-12-02T10:00:00+02:00  Structure Of Computer Systems (Practice) - S4.2 / SCS S4.2  @ utcn_room_ac_bar_s42@campus.utcluj.ro
+  2025-12-02T10:00:00+02:00 -> 2025-12-02T12:00:00+02:00  Structure Of Computer Systems (Practice) - S4.2 / SCS S4.2  @ utcn_room_ac_bar_s42@campus.utcluj.ro
+  2025-12-02T10:00:00+02:00 -> 2025-12-02T12:00:00+02:00  Design With Microprocessors - Room 107  @ utcn_room_ac_doro_107@campus.utcluj.ro
+  2025-12-02T10:00:00+02:00 -> 2025-12-02T12:00:00+02:00  Graphic Processing - Room 105  @ utcn_room_ac_doro_105@campus.utcluj.ro
+  2025-12-02T14:00:00+02:00 -> 2025-12-02T16:00:00+02:00  Functional Programming - R. Slavescu (40)  @ utcn_room_ac_bar_40@campus.utcluj.ro
+  2025-12-02T16:00:00+02:00 -> 2025-12-02T18:00:00+02:00  Economic Law - R. Cordos (40)  @ utcn_room_ac_bar_40@campus.utcluj.ro
+  2025-12-02T20:00:00+02:00 -> 2025-12-02T22:00:00+02:00  Computer Assisted Instruction.(fac) 356 / Seminar 356  @ utcn_room_ac_bar_356@campus.utcluj.ro
 
 === 2025-12-03
-  2025-12-03T08:00:00+02:00 -> 2025-12-03T10:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-12-03T08:00:00+02:00 -> 2025-12-03T10:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-12-03T08:00:00+02:00 -> 2025-12-03T10:00:00+02:00    AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-12-03T08:00:00+02:00 -> 2025-12-03T10:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-12-03T10:00:00+02:00 -> 2025-12-03T12:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-12-03T10:00:00+02:00 -> 2025-12-03T12:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-501@campus.utcluj.ro
-  2025-12-03T10:00:00+02:00 -> 2025-12-03T12:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-12-03T10:00:00+02:00 -> 2025-12-03T12:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-12-03T10:00:00+02:00 -> 2025-12-03T12:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-12-03T12:00:00+02:00 -> 2025-12-03T14:00:00+02:00  SCS p 103  /    SCS p 103	 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-12-03T12:00:00+02:00 -> 2025-12-03T14:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-12-03T12:00:00+02:00 -> 2025-12-03T14:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-12-03T12:00:00+02:00 -> 2025-12-03T14:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-12-03T14:00:00+02:00 -> 2025-12-03T16:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-12-03T14:00:00+02:00 -> 2025-12-03T16:00:00+02:00  SCS p 103/ SCS p 103	 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-12-03T14:00:00+02:00 -> 2025-12-03T18:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-12-03T14:00:00+02:00 -> 2025-12-03T16:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-12-03T14:00:00+02:00 -> 2025-12-03T16:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-12-03T14:00:00+02:00 -> 2025-12-03T16:00:00+02:00  SE 16B [In-person]  @ utcn_room_ac_bar_16b@campus.utcluj.ro
-  2025-12-03T16:00:00+02:00 -> 2025-12-03T18:00:00+02:00  Didact . spec. 206 (turn)/ [In-person]  @ utcn_room_ac_daic_206@campus.utcluj.ro
-  2025-12-03T16:00:00+02:00 -> 2025-12-03T18:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-12-03T16:00:00+02:00 -> 2025-12-03T18:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-12-03T16:00:00+02:00 -> 2025-12-03T18:00:00+02:00  SCS 103 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-12-03T16:00:00+02:00 -> 2025-12-03T18:00:00+02:00  SE BT5.03 [In-person]  @ UTCN - AC Bar - Sala BT 503
-  2025-12-03T18:00:00+02:00 -> 2025-12-03T20:00:00+02:00  Didactica specialitatii - I. Iuhos  206 (turn) - optional 	 [In-person]  @ utcn_room_ac_daic_206@campus.utcluj.ro
-  2025-12-03T18:00:00+02:00 -> 2025-12-03T20:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-12-03T18:00:00+02:00 -> 2025-12-03T20:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-12-03T18:00:00+02:00 -> 2025-12-03T20:00:00+02:00  SCS 103 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
+  2025-12-03T08:00:00+02:00 -> 2025-12-03T10:00:00+02:00  Functional Programming - Room 479  @ utcn_room_ac_daic_479@campus.utcluj.ro
+  2025-12-03T08:00:00+02:00 -> 2025-12-03T10:00:00+02:00  Graphic Processing - Room 105  @ utcn_room_ac_doro_105@campus.utcluj.ro
+  2025-12-03T08:00:00+02:00 -> 2025-12-03T10:00:00+02:00  Artificial Intelligence - Room 26B  @ utcn_room_ac_bar_26b@campus.utcluj.ro
+  2025-12-03T08:00:00+02:00 -> 2025-12-03T10:00:00+02:00  Design With Microprocessors - Room 107  @ utcn_room_ac_doro_107@campus.utcluj.ro
+  2025-12-03T10:00:00+02:00 -> 2025-12-03T12:00:00+02:00  Functional Programming - Room 479  @ utcn_room_ac_daic_479@campus.utcluj.ro
+  2025-12-03T10:00:00+02:00 -> 2025-12-03T12:00:00+02:00  Software Engineering - Room BT5.03  @ utcn_room_ac_bar_bt-501@campus.utcluj.ro
+  2025-12-03T10:00:00+02:00 -> 2025-12-03T12:00:00+02:00  Design With Microprocessors - Room 107  @ utcn_room_ac_doro_107@campus.utcluj.ro
+  2025-12-03T10:00:00+02:00 -> 2025-12-03T12:00:00+02:00  Graphic Processing - Room 105  @ utcn_room_ac_doro_105@campus.utcluj.ro
+  2025-12-03T10:00:00+02:00 -> 2025-12-03T12:00:00+02:00  Artificial Intelligence - Room 26B  @ utcn_room_ac_bar_26b@campus.utcluj.ro
+  2025-12-03T12:00:00+02:00 -> 2025-12-03T14:00:00+02:00  Structure Of Computer Systems (Practice) - 103 / SCS 103  @ utcn_room_ac_doro_103@campus.utcluj.ro
+  2025-12-03T12:00:00+02:00 -> 2025-12-03T14:00:00+02:00  Software Engineering - Room BT5.03  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
+  2025-12-03T12:00:00+02:00 -> 2025-12-03T14:00:00+02:00  Functional Programming - Room 479  @ utcn_room_ac_daic_479@campus.utcluj.ro
+  2025-12-03T12:00:00+02:00 -> 2025-12-03T14:00:00+02:00  Artificial Intelligence - Room 26B  @ utcn_room_ac_bar_26b@campus.utcluj.ro
+  2025-12-03T14:00:00+02:00 -> 2025-12-03T16:00:00+02:00  Software Engineering - Room BT5.03  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
+  2025-12-03T14:00:00+02:00 -> 2025-12-03T16:00:00+02:00  Structure Of Computer Systems (Practice) - 103 / SCS 103  @ utcn_room_ac_doro_103@campus.utcluj.ro
+  2025-12-03T14:00:00+02:00 -> 2025-12-03T18:00:00+02:00  Structure Of Computer Systems - Room S4.2  @ utcn_room_ac_bar_s42@campus.utcluj.ro
+  2025-12-03T14:00:00+02:00 -> 2025-12-03T16:00:00+02:00  Functional Programming - Room 479  @ utcn_room_ac_daic_479@campus.utcluj.ro
+  2025-12-03T14:00:00+02:00 -> 2025-12-03T16:00:00+02:00  Artificial Intelligence - Room 26B  @ utcn_room_ac_bar_26b@campus.utcluj.ro
+  2025-12-03T14:00:00+02:00 -> 2025-12-03T16:00:00+02:00  Software Engineering - Room 16B  @ utcn_room_ac_bar_16b@campus.utcluj.ro
+  2025-12-03T16:00:00+02:00 -> 2025-12-03T18:00:00+02:00  Didact . Spec. 206 (turn)/  @ utcn_room_ac_daic_206@campus.utcluj.ro
+  2025-12-03T16:00:00+02:00 -> 2025-12-03T18:00:00+02:00  Artificial Intelligence - Room 26B  @ utcn_room_ac_bar_26b@campus.utcluj.ro
+  2025-12-03T16:00:00+02:00 -> 2025-12-03T18:00:00+02:00  Design With Microprocessors - Room 107  @ utcn_room_ac_doro_107@campus.utcluj.ro
+  2025-12-03T16:00:00+02:00 -> 2025-12-03T18:00:00+02:00  Structure Of Computer Systems - Room 103  @ utcn_room_ac_doro_103@campus.utcluj.ro
+  2025-12-03T16:00:00+02:00 -> 2025-12-03T18:00:00+02:00  Software Engineering - Room BT5.03  @ UTCN - AC Bar - Sala BT 503
+  2025-12-03T18:00:00+02:00 -> 2025-12-03T20:00:00+02:00  Didactica Specialitatii  @ utcn_room_ac_daic_206@campus.utcluj.ro
+  2025-12-03T18:00:00+02:00 -> 2025-12-03T20:00:00+02:00  Design With Microprocessors - Room 107  @ utcn_room_ac_doro_107@campus.utcluj.ro
+  2025-12-03T18:00:00+02:00 -> 2025-12-03T20:00:00+02:00  Software Engineering - Room BT5.03  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
+  2025-12-03T18:00:00+02:00 -> 2025-12-03T20:00:00+02:00  Structure Of Computer Systems - Room 103  @ utcn_room_ac_doro_103@campus.utcluj.ro
 
 === 2025-12-04
-  2025-12-04T08:00:00+02:00 -> 2025-12-04T10:00:00+02:00  Graphic processing (GP) - D. Gorgan - D01 [In-person]  @ utcn_room_ac_doro_d01@campus.utcluj.ro
-  2025-12-04T10:00:00+02:00 -> 2025-12-04T12:00:00+02:00  Design with microprocessors (DMP) - R. Danescu  - D01 [In-person]  @ utcn_room_ac_doro_d01@campus.utcluj.ro
-  2025-12-04T12:00:00+02:00 -> 2025-12-04T14:00:00+02:00  Structure of computer systems (SCS) - G. Sebestyen - D01 [In-person]  @ utcn_room_ac_doro_d01@campus.utcluj.ro
-  2025-12-04T14:00:00+02:00 -> 2025-12-04T16:00:00+02:00  SCS 103 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
+  2025-12-04T08:00:00+02:00 -> 2025-12-04T10:00:00+02:00  Graphic Processing - D. Gorgan (D01)  @ utcn_room_ac_doro_d01@campus.utcluj.ro
+  2025-12-04T10:00:00+02:00 -> 2025-12-04T12:00:00+02:00  Design With Microprocessors - R. Danescu (D01)  @ utcn_room_ac_doro_d01@campus.utcluj.ro
+  2025-12-04T12:00:00+02:00 -> 2025-12-04T14:00:00+02:00  Structure Of Computer Systems - G. Sebestyen (D01)  @ utcn_room_ac_doro_d01@campus.utcluj.ro
+  2025-12-04T14:00:00+02:00 -> 2025-12-04T16:00:00+02:00  Structure Of Computer Systems - Room 103  @ utcn_room_ac_doro_103@campus.utcluj.ro
 
 === 2025-12-05
-  2025-12-05T08:00:00+02:00 -> 2025-12-05T10:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-12-05T08:00:00+02:00 -> 2025-12-05T10:00:00+02:00  FP 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-12-05T08:00:00+02:00 -> 2025-12-05T10:00:00+02:00  AI 103 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-12-05T08:00:00+02:00 -> 2025-12-05T10:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-12-05T10:00:00+02:00 -> 2025-12-05T12:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-12-05T10:00:00+02:00 -> 2025-12-05T12:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-12-05T10:00:00+02:00 -> 2025-12-05T12:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-12-05T10:00:00+02:00 -> 2025-12-05T12:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-12-05T12:00:00+02:00 -> 2025-12-05T14:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-12-05T12:00:00+02:00 -> 2025-12-05T14:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-12-05T12:00:00+02:00 -> 2025-12-05T14:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-12-05T12:00:00+02:00 -> 2025-12-05T14:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-12-05T12:00:00+02:00 -> 2025-12-05T14:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-12-05T14:00:00+02:00 -> 2025-12-05T16:00:00+02:00    SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-12-05T14:00:00+02:00 -> 2025-12-05T16:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-12-05T14:00:00+02:00 -> 2025-12-05T16:00:00+02:00  SCS p S4.2 / SCS p S4.2	 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-12-05T14:00:00+02:00 -> 2025-12-05T16:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-12-05T16:00:00+02:00 -> 2025-12-05T18:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-12-05T18:00:00+02:00 -> 2025-12-05T20:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
+  2025-12-05T08:00:00+02:00 -> 2025-12-05T10:00:00+02:00  Functional Programming - Room 479  @ utcn_room_ac_daic_479@campus.utcluj.ro
+  2025-12-05T08:00:00+02:00 -> 2025-12-05T10:00:00+02:00  Functional Programming - Room 26B  @ utcn_room_ac_bar_26b@campus.utcluj.ro
+  2025-12-05T08:00:00+02:00 -> 2025-12-05T10:00:00+02:00  Artificial Intelligence - Room 103  @ utcn_room_ac_doro_103@campus.utcluj.ro
+  2025-12-05T08:00:00+02:00 -> 2025-12-05T10:00:00+02:00  Design With Microprocessors - Room 107  @ utcn_room_ac_doro_107@campus.utcluj.ro
+  2025-12-05T10:00:00+02:00 -> 2025-12-05T12:00:00+02:00  Graphic Processing - Room 105  @ utcn_room_ac_doro_105@campus.utcluj.ro
+  2025-12-05T10:00:00+02:00 -> 2025-12-05T12:00:00+02:00  Design With Microprocessors - Room 107  @ utcn_room_ac_doro_107@campus.utcluj.ro
+  2025-12-05T10:00:00+02:00 -> 2025-12-05T12:00:00+02:00  Artificial Intelligence - Room 26B  @ utcn_room_ac_bar_26b@campus.utcluj.ro
+  2025-12-05T10:00:00+02:00 -> 2025-12-05T12:00:00+02:00  Structure Of Computer Systems - Room S4.2  @ utcn_room_ac_bar_s42@campus.utcluj.ro
+  2025-12-05T12:00:00+02:00 -> 2025-12-05T14:00:00+02:00  Design With Microprocessors - Room 107  @ utcn_room_ac_doro_107@campus.utcluj.ro
+  2025-12-05T12:00:00+02:00 -> 2025-12-05T14:00:00+02:00  Software Engineering - Room BT5.03  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
+  2025-12-05T12:00:00+02:00 -> 2025-12-05T14:00:00+02:00  Graphic Processing - Room 105  @ utcn_room_ac_doro_105@campus.utcluj.ro
+  2025-12-05T12:00:00+02:00 -> 2025-12-05T14:00:00+02:00  Structure Of Computer Systems - Room S4.2  @ utcn_room_ac_bar_s42@campus.utcluj.ro
+  2025-12-05T12:00:00+02:00 -> 2025-12-05T14:00:00+02:00  Artificial Intelligence - Room 26B  @ utcn_room_ac_bar_26b@campus.utcluj.ro
+  2025-12-05T14:00:00+02:00 -> 2025-12-05T16:00:00+02:00  Software Engineering - Room BT5.03  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
+  2025-12-05T14:00:00+02:00 -> 2025-12-05T16:00:00+02:00  Design With Microprocessors - Room 107  @ utcn_room_ac_doro_107@campus.utcluj.ro
+  2025-12-05T14:00:00+02:00 -> 2025-12-05T16:00:00+02:00  Structure Of Computer Systems (Practice) - S4.2 / SCS S4.2  @ utcn_room_ac_bar_s42@campus.utcluj.ro
+  2025-12-05T14:00:00+02:00 -> 2025-12-05T16:00:00+02:00  Graphic Processing - Room 105  @ utcn_room_ac_doro_105@campus.utcluj.ro
+  2025-12-05T16:00:00+02:00 -> 2025-12-05T18:00:00+02:00  Structure Of Computer Systems - Room S4.2  @ utcn_room_ac_bar_s42@campus.utcluj.ro
+  2025-12-05T18:00:00+02:00 -> 2025-12-05T20:00:00+02:00  Structure Of Computer Systems - Room S4.2  @ utcn_room_ac_bar_s42@campus.utcluj.ro
 
 === 2025-12-08
-  2025-12-08T08:00:00+02:00 -> 2025-12-08T10:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-12-08T08:00:00+02:00 -> 2025-12-08T10:00:00+02:00  GP BT5.05 [In-person]  @ utcn_room_ac_bar_bt-505@campus.utcluj.ro
-  2025-12-08T08:00:00+02:00 -> 2025-12-08T10:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-12-08T08:00:00+02:00 -> 2025-12-08T10:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-12-08T08:00:00+02:00 -> 2025-12-08T10:00:00+02:00  FP BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-12-08T10:00:00+02:00 -> 2025-12-08T12:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-12-08T10:00:00+02:00 -> 2025-12-08T12:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-12-08T10:00:00+02:00 -> 2025-12-08T12:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-12-08T10:00:00+02:00 -> 2025-12-08T12:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-12-08T10:00:00+02:00 -> 2025-12-08T12:00:00+02:00  GP BT5.05 [In-person]  @ utcn_room_ac_bar_bt-505@campus.utcluj.ro
-  2025-12-08T10:00:00+02:00 -> 2025-12-08T12:00:00+02:00  FP BT5.04 [In-person]  @ utcn_room_ac_bar_bt-504@campus.utcluj.ro
-  2025-12-08T12:00:00+02:00 -> 2025-12-08T14:00:00+02:00  GP BT5.05 [In-person]  @ utcn_room_ac_bar_bt-505@campus.utcluj.ro
-  2025-12-08T12:00:00+02:00 -> 2025-12-08T14:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-12-08T14:00:00+02:00 -> 2025-12-08T16:00:00+02:00    Artificial intelligence (AI) - A. Groza - P03 [In-person]  @ utcn_room_ac_bar_p03@campus.utcluj.ro
-  2025-12-08T16:00:00+02:00 -> 2025-12-08T18:00:00+02:00    Software engineering (SE) - E. Todoran  - P03 [In-person]  @ utcn_room_ac_bar_p03@campus.utcluj.ro
+  2025-12-08T08:00:00+02:00 -> 2025-12-08T10:00:00+02:00  Structure Of Computer Systems - Room S4.2  @ utcn_room_ac_bar_s42@campus.utcluj.ro
+  2025-12-08T08:00:00+02:00 -> 2025-12-08T10:00:00+02:00  Graphic Processing - Room BT5.05  @ utcn_room_ac_bar_bt-505@campus.utcluj.ro
+  2025-12-08T08:00:00+02:00 -> 2025-12-08T10:00:00+02:00  Artificial Intelligence - Room 26B  @ utcn_room_ac_bar_26b@campus.utcluj.ro
+  2025-12-08T08:00:00+02:00 -> 2025-12-08T10:00:00+02:00  Functional Programming - Room 479  @ utcn_room_ac_daic_479@campus.utcluj.ro
+  2025-12-08T08:00:00+02:00 -> 2025-12-08T10:00:00+02:00  Functional Programming - Room BT5.03  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
+  2025-12-08T10:00:00+02:00 -> 2025-12-08T12:00:00+02:00  Software Engineering - Room BT5.03  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
+  2025-12-08T10:00:00+02:00 -> 2025-12-08T12:00:00+02:00  Artificial Intelligence - Room 26B  @ utcn_room_ac_bar_26b@campus.utcluj.ro
+  2025-12-08T10:00:00+02:00 -> 2025-12-08T12:00:00+02:00  Functional Programming - Room 479  @ utcn_room_ac_daic_479@campus.utcluj.ro
+  2025-12-08T10:00:00+02:00 -> 2025-12-08T12:00:00+02:00  Structure Of Computer Systems - Room S4.2  @ utcn_room_ac_bar_s42@campus.utcluj.ro
+  2025-12-08T10:00:00+02:00 -> 2025-12-08T12:00:00+02:00  Graphic Processing - Room BT5.05  @ utcn_room_ac_bar_bt-505@campus.utcluj.ro
+  2025-12-08T10:00:00+02:00 -> 2025-12-08T12:00:00+02:00  Functional Programming - Room BT5.04  @ utcn_room_ac_bar_bt-504@campus.utcluj.ro
+  2025-12-08T12:00:00+02:00 -> 2025-12-08T14:00:00+02:00  Graphic Processing - Room BT5.05  @ utcn_room_ac_bar_bt-505@campus.utcluj.ro
+  2025-12-08T12:00:00+02:00 -> 2025-12-08T14:00:00+02:00  Software Engineering - Room BT5.03  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
+  2025-12-08T14:00:00+02:00 -> 2025-12-08T16:00:00+02:00  Artificial Intelligence - A. Groza (P03)  @ utcn_room_ac_bar_p03@campus.utcluj.ro
+  2025-12-08T16:00:00+02:00 -> 2025-12-08T18:00:00+02:00  Software Engineering - E. Todoran (P03)  @ utcn_room_ac_bar_p03@campus.utcluj.ro
 
 === 2025-12-09
-  2025-12-09T08:00:00+02:00 -> 2025-12-09T10:00:00+02:00  SCS p S4.2 / SCS p S4.2	 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-12-09T08:00:00+02:00 -> 2025-12-09T10:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-12-09T08:00:00+02:00 -> 2025-12-09T10:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-12-09T10:00:00+02:00 -> 2025-12-09T12:00:00+02:00    GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-12-09T10:00:00+02:00 -> 2025-12-09T12:00:00+02:00  SCS p S4.2/ SCS p S4.2	 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-12-09T10:00:00+02:00 -> 2025-12-09T12:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-12-09T14:00:00+02:00 -> 2025-12-09T16:00:00+02:00  Functional programming (FP) - R. Slavescu - 40 [In-person]  @ utcn_room_ac_bar_40@campus.utcluj.ro
-  2025-12-09T16:00:00+02:00 -> 2025-12-09T18:00:00+02:00  Economic law (EL) - R. Cordos - 40 [In-person]  @ utcn_room_ac_bar_40@campus.utcluj.ro
-  2025-12-09T20:00:00+02:00 -> 2025-12-09T22:00:00+02:00  Computer assisted instruction.(fac) 356 / seminar 356 [In-person]  @ utcn_room_ac_bar_356@campus.utcluj.ro
+  2025-12-09T08:00:00+02:00 -> 2025-12-09T10:00:00+02:00  Structure Of Computer Systems (Practice) - S4.2 / SCS S4.2  @ utcn_room_ac_bar_s42@campus.utcluj.ro
+  2025-12-09T08:00:00+02:00 -> 2025-12-09T10:00:00+02:00  Design With Microprocessors - Room 107  @ utcn_room_ac_doro_107@campus.utcluj.ro
+  2025-12-09T08:00:00+02:00 -> 2025-12-09T10:00:00+02:00  Graphic Processing - Room 105  @ utcn_room_ac_doro_105@campus.utcluj.ro
+  2025-12-09T10:00:00+02:00 -> 2025-12-09T12:00:00+02:00  Graphic Processing - Room 105  @ utcn_room_ac_doro_105@campus.utcluj.ro
+  2025-12-09T10:00:00+02:00 -> 2025-12-09T12:00:00+02:00  Structure Of Computer Systems (Practice) - S4.2 / SCS S4.2  @ utcn_room_ac_bar_s42@campus.utcluj.ro
+  2025-12-09T10:00:00+02:00 -> 2025-12-09T12:00:00+02:00  Design With Microprocessors - Room 107  @ utcn_room_ac_doro_107@campus.utcluj.ro
+  2025-12-09T14:00:00+02:00 -> 2025-12-09T16:00:00+02:00  Functional Programming - R. Slavescu (40)  @ utcn_room_ac_bar_40@campus.utcluj.ro
+  2025-12-09T16:00:00+02:00 -> 2025-12-09T18:00:00+02:00  Economic Law - R. Cordos (40)  @ utcn_room_ac_bar_40@campus.utcluj.ro
+  2025-12-09T20:00:00+02:00 -> 2025-12-09T22:00:00+02:00  Computer Assisted Instruction.(fac) 356 / Seminar 356  @ utcn_room_ac_bar_356@campus.utcluj.ro
 
 === 2025-12-10
-  2025-12-10T08:00:00+02:00 -> 2025-12-10T10:00:00+02:00    AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-12-10T08:00:00+02:00 -> 2025-12-10T10:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-12-10T08:00:00+02:00 -> 2025-12-10T10:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-12-10T08:00:00+02:00 -> 2025-12-10T10:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-12-10T10:00:00+02:00 -> 2025-12-10T12:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-12-10T10:00:00+02:00 -> 2025-12-10T12:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-12-10T10:00:00+02:00 -> 2025-12-10T12:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-501@campus.utcluj.ro
-  2025-12-10T10:00:00+02:00 -> 2025-12-10T12:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-12-10T10:00:00+02:00 -> 2025-12-10T12:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-12-10T12:00:00+02:00 -> 2025-12-10T14:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-12-10T12:00:00+02:00 -> 2025-12-10T14:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-12-10T12:00:00+02:00 -> 2025-12-10T14:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-12-10T12:00:00+02:00 -> 2025-12-10T14:00:00+02:00  SCS p 103  /    SCS p 103	 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-12-10T14:00:00+02:00 -> 2025-12-10T18:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-12-10T14:00:00+02:00 -> 2025-12-10T16:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-12-10T14:00:00+02:00 -> 2025-12-10T16:00:00+02:00  SE 16B [In-person]  @ utcn_room_ac_bar_16b@campus.utcluj.ro
-  2025-12-10T14:00:00+02:00 -> 2025-12-10T16:00:00+02:00  SCS p 103/ SCS p 103	 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-12-10T14:00:00+02:00 -> 2025-12-10T16:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-12-10T14:00:00+02:00 -> 2025-12-10T16:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-12-10T16:00:00+02:00 -> 2025-12-10T18:00:00+02:00  Didact . spec. 206 (turn)/ [In-person]  @ utcn_room_ac_daic_206@campus.utcluj.ro
-  2025-12-10T16:00:00+02:00 -> 2025-12-10T18:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-12-10T16:00:00+02:00 -> 2025-12-10T18:00:00+02:00  SCS 103 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-12-10T16:00:00+02:00 -> 2025-12-10T18:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-12-10T16:00:00+02:00 -> 2025-12-10T18:00:00+02:00  SE BT5.03 [In-person]  @ UTCN - AC Bar - Sala BT 503
-  2025-12-10T18:00:00+02:00 -> 2025-12-10T20:00:00+02:00  SCS 103 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-12-10T18:00:00+02:00 -> 2025-12-10T20:00:00+02:00  Didactica specialitatii - I. Iuhos  206 (turn) - optional 	 [In-person]  @ utcn_room_ac_daic_206@campus.utcluj.ro
-  2025-12-10T18:00:00+02:00 -> 2025-12-10T20:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-12-10T18:00:00+02:00 -> 2025-12-10T20:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
+  2025-12-10T08:00:00+02:00 -> 2025-12-10T10:00:00+02:00  Artificial Intelligence - Room 26B  @ utcn_room_ac_bar_26b@campus.utcluj.ro
+  2025-12-10T08:00:00+02:00 -> 2025-12-10T10:00:00+02:00  Functional Programming - Room 479  @ utcn_room_ac_daic_479@campus.utcluj.ro
+  2025-12-10T08:00:00+02:00 -> 2025-12-10T10:00:00+02:00  Graphic Processing - Room 105  @ utcn_room_ac_doro_105@campus.utcluj.ro
+  2025-12-10T08:00:00+02:00 -> 2025-12-10T10:00:00+02:00  Design With Microprocessors - Room 107  @ utcn_room_ac_doro_107@campus.utcluj.ro
+  2025-12-10T10:00:00+02:00 -> 2025-12-10T12:00:00+02:00  Design With Microprocessors - Room 107  @ utcn_room_ac_doro_107@campus.utcluj.ro
+  2025-12-10T10:00:00+02:00 -> 2025-12-10T12:00:00+02:00  Artificial Intelligence - Room 26B  @ utcn_room_ac_bar_26b@campus.utcluj.ro
+  2025-12-10T10:00:00+02:00 -> 2025-12-10T12:00:00+02:00  Software Engineering - Room BT5.03  @ utcn_room_ac_bar_bt-501@campus.utcluj.ro
+  2025-12-10T10:00:00+02:00 -> 2025-12-10T12:00:00+02:00  Functional Programming - Room 479  @ utcn_room_ac_daic_479@campus.utcluj.ro
+  2025-12-10T10:00:00+02:00 -> 2025-12-10T12:00:00+02:00  Graphic Processing - Room 105  @ utcn_room_ac_doro_105@campus.utcluj.ro
+  2025-12-10T12:00:00+02:00 -> 2025-12-10T14:00:00+02:00  Functional Programming - Room 479  @ utcn_room_ac_daic_479@campus.utcluj.ro
+  2025-12-10T12:00:00+02:00 -> 2025-12-10T14:00:00+02:00  Software Engineering - Room BT5.03  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
+  2025-12-10T12:00:00+02:00 -> 2025-12-10T14:00:00+02:00  Artificial Intelligence - Room 26B  @ utcn_room_ac_bar_26b@campus.utcluj.ro
+  2025-12-10T12:00:00+02:00 -> 2025-12-10T14:00:00+02:00  Structure Of Computer Systems (Practice) - 103 / SCS 103  @ utcn_room_ac_doro_103@campus.utcluj.ro
+  2025-12-10T14:00:00+02:00 -> 2025-12-10T18:00:00+02:00  Structure Of Computer Systems - Room S4.2  @ utcn_room_ac_bar_s42@campus.utcluj.ro
+  2025-12-10T14:00:00+02:00 -> 2025-12-10T16:00:00+02:00  Functional Programming - Room 479  @ utcn_room_ac_daic_479@campus.utcluj.ro
+  2025-12-10T14:00:00+02:00 -> 2025-12-10T16:00:00+02:00  Software Engineering - Room 16B  @ utcn_room_ac_bar_16b@campus.utcluj.ro
+  2025-12-10T14:00:00+02:00 -> 2025-12-10T16:00:00+02:00  Structure Of Computer Systems (Practice) - 103 / SCS 103  @ utcn_room_ac_doro_103@campus.utcluj.ro
+  2025-12-10T14:00:00+02:00 -> 2025-12-10T16:00:00+02:00  Software Engineering - Room BT5.03  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
+  2025-12-10T14:00:00+02:00 -> 2025-12-10T16:00:00+02:00  Artificial Intelligence - Room 26B  @ utcn_room_ac_bar_26b@campus.utcluj.ro
+  2025-12-10T16:00:00+02:00 -> 2025-12-10T18:00:00+02:00  Didact . Spec. 206 (turn)/  @ utcn_room_ac_daic_206@campus.utcluj.ro
+  2025-12-10T16:00:00+02:00 -> 2025-12-10T18:00:00+02:00  Artificial Intelligence - Room 26B  @ utcn_room_ac_bar_26b@campus.utcluj.ro
+  2025-12-10T16:00:00+02:00 -> 2025-12-10T18:00:00+02:00  Structure Of Computer Systems - Room 103  @ utcn_room_ac_doro_103@campus.utcluj.ro
+  2025-12-10T16:00:00+02:00 -> 2025-12-10T18:00:00+02:00  Design With Microprocessors - Room 107  @ utcn_room_ac_doro_107@campus.utcluj.ro
+  2025-12-10T16:00:00+02:00 -> 2025-12-10T18:00:00+02:00  Software Engineering - Room BT5.03  @ UTCN - AC Bar - Sala BT 503
+  2025-12-10T18:00:00+02:00 -> 2025-12-10T20:00:00+02:00  Structure Of Computer Systems - Room 103  @ utcn_room_ac_doro_103@campus.utcluj.ro
+  2025-12-10T18:00:00+02:00 -> 2025-12-10T20:00:00+02:00  Didactica Specialitatii  @ utcn_room_ac_daic_206@campus.utcluj.ro
+  2025-12-10T18:00:00+02:00 -> 2025-12-10T20:00:00+02:00  Software Engineering - Room BT5.03  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
+  2025-12-10T18:00:00+02:00 -> 2025-12-10T20:00:00+02:00  Design With Microprocessors - Room 107  @ utcn_room_ac_doro_107@campus.utcluj.ro
 
 === 2025-12-11
-  2025-12-11T08:00:00+02:00 -> 2025-12-11T10:00:00+02:00  Graphic processing (GP) - D. Gorgan - D01 [In-person]  @ utcn_room_ac_doro_d01@campus.utcluj.ro
-  2025-12-11T10:00:00+02:00 -> 2025-12-11T12:00:00+02:00  Design with microprocessors (DMP) - R. Danescu  - D01 [In-person]  @ utcn_room_ac_doro_d01@campus.utcluj.ro
-  2025-12-11T12:00:00+02:00 -> 2025-12-11T14:00:00+02:00  Structure of computer systems (SCS) - G. Sebestyen - D01 [In-person]  @ utcn_room_ac_doro_d01@campus.utcluj.ro
-  2025-12-11T14:00:00+02:00 -> 2025-12-11T16:00:00+02:00  SCS 103 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
+  2025-12-11T08:00:00+02:00 -> 2025-12-11T10:00:00+02:00  Graphic Processing - D. Gorgan (D01)  @ utcn_room_ac_doro_d01@campus.utcluj.ro
+  2025-12-11T10:00:00+02:00 -> 2025-12-11T12:00:00+02:00  Design With Microprocessors - R. Danescu (D01)  @ utcn_room_ac_doro_d01@campus.utcluj.ro
+  2025-12-11T12:00:00+02:00 -> 2025-12-11T14:00:00+02:00  Structure Of Computer Systems - G. Sebestyen (D01)  @ utcn_room_ac_doro_d01@campus.utcluj.ro
+  2025-12-11T14:00:00+02:00 -> 2025-12-11T16:00:00+02:00  Structure Of Computer Systems - Room 103  @ utcn_room_ac_doro_103@campus.utcluj.ro
 
 === 2025-12-12
-  2025-12-12T08:00:00+02:00 -> 2025-12-12T10:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-12-12T08:00:00+02:00 -> 2025-12-12T10:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-12-12T08:00:00+02:00 -> 2025-12-12T10:00:00+02:00  FP 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-12-12T08:00:00+02:00 -> 2025-12-12T10:00:00+02:00  AI 103 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-12-12T10:00:00+02:00 -> 2025-12-12T12:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-12-12T10:00:00+02:00 -> 2025-12-12T12:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-12-12T10:00:00+02:00 -> 2025-12-12T12:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-12-12T10:00:00+02:00 -> 2025-12-12T12:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-12-12T12:00:00+02:00 -> 2025-12-12T14:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-12-12T12:00:00+02:00 -> 2025-12-12T14:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-12-12T12:00:00+02:00 -> 2025-12-12T14:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-12-12T12:00:00+02:00 -> 2025-12-12T14:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-12-12T12:00:00+02:00 -> 2025-12-12T14:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-12-12T14:00:00+02:00 -> 2025-12-12T16:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-12-12T14:00:00+02:00 -> 2025-12-12T16:00:00+02:00    SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-12-12T14:00:00+02:00 -> 2025-12-12T16:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-12-12T14:00:00+02:00 -> 2025-12-12T16:00:00+02:00  SCS p S4.2 / SCS p S4.2	 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-12-12T16:00:00+02:00 -> 2025-12-12T18:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-12-12T18:00:00+02:00 -> 2025-12-12T20:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
+  2025-12-12T08:00:00+02:00 -> 2025-12-12T10:00:00+02:00  Design With Microprocessors - Room 107  @ utcn_room_ac_doro_107@campus.utcluj.ro
+  2025-12-12T08:00:00+02:00 -> 2025-12-12T10:00:00+02:00  Functional Programming - Room 479  @ utcn_room_ac_daic_479@campus.utcluj.ro
+  2025-12-12T08:00:00+02:00 -> 2025-12-12T10:00:00+02:00  Functional Programming - Room 26B  @ utcn_room_ac_bar_26b@campus.utcluj.ro
+  2025-12-12T08:00:00+02:00 -> 2025-12-12T10:00:00+02:00  Artificial Intelligence - Room 103  @ utcn_room_ac_doro_103@campus.utcluj.ro
+  2025-12-12T10:00:00+02:00 -> 2025-12-12T12:00:00+02:00  Graphic Processing - Room 105  @ utcn_room_ac_doro_105@campus.utcluj.ro
+  2025-12-12T10:00:00+02:00 -> 2025-12-12T12:00:00+02:00  Artificial Intelligence - Room 26B  @ utcn_room_ac_bar_26b@campus.utcluj.ro
+  2025-12-12T10:00:00+02:00 -> 2025-12-12T12:00:00+02:00  Structure Of Computer Systems - Room S4.2  @ utcn_room_ac_bar_s42@campus.utcluj.ro
+  2025-12-12T10:00:00+02:00 -> 2025-12-12T12:00:00+02:00  Design With Microprocessors - Room 107  @ utcn_room_ac_doro_107@campus.utcluj.ro
+  2025-12-12T12:00:00+02:00 -> 2025-12-12T14:00:00+02:00  Software Engineering - Room BT5.03  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
+  2025-12-12T12:00:00+02:00 -> 2025-12-12T14:00:00+02:00  Artificial Intelligence - Room 26B  @ utcn_room_ac_bar_26b@campus.utcluj.ro
+  2025-12-12T12:00:00+02:00 -> 2025-12-12T14:00:00+02:00  Structure Of Computer Systems - Room S4.2  @ utcn_room_ac_bar_s42@campus.utcluj.ro
+  2025-12-12T12:00:00+02:00 -> 2025-12-12T14:00:00+02:00  Design With Microprocessors - Room 107  @ utcn_room_ac_doro_107@campus.utcluj.ro
+  2025-12-12T12:00:00+02:00 -> 2025-12-12T14:00:00+02:00  Graphic Processing - Room 105  @ utcn_room_ac_doro_105@campus.utcluj.ro
+  2025-12-12T14:00:00+02:00 -> 2025-12-12T16:00:00+02:00  Design With Microprocessors - Room 107  @ utcn_room_ac_doro_107@campus.utcluj.ro
+  2025-12-12T14:00:00+02:00 -> 2025-12-12T16:00:00+02:00  Software Engineering - Room BT5.03  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
+  2025-12-12T14:00:00+02:00 -> 2025-12-12T16:00:00+02:00  Graphic Processing - Room 105  @ utcn_room_ac_doro_105@campus.utcluj.ro
+  2025-12-12T14:00:00+02:00 -> 2025-12-12T16:00:00+02:00  Structure Of Computer Systems (Practice) - S4.2 / SCS S4.2  @ utcn_room_ac_bar_s42@campus.utcluj.ro
+  2025-12-12T16:00:00+02:00 -> 2025-12-12T18:00:00+02:00  Structure Of Computer Systems - Room S4.2  @ utcn_room_ac_bar_s42@campus.utcluj.ro
+  2025-12-12T18:00:00+02:00 -> 2025-12-12T20:00:00+02:00  Structure Of Computer Systems - Room S4.2  @ utcn_room_ac_bar_s42@campus.utcluj.ro
 
 === 2025-12-15
-  2025-12-15T08:00:00+02:00 -> 2025-12-15T10:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-12-15T08:00:00+02:00 -> 2025-12-15T10:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-12-15T08:00:00+02:00 -> 2025-12-15T10:00:00+02:00  FP BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-12-15T08:00:00+02:00 -> 2025-12-15T10:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-12-15T08:00:00+02:00 -> 2025-12-15T10:00:00+02:00  GP BT5.05 [In-person]  @ utcn_room_ac_bar_bt-505@campus.utcluj.ro
-  2025-12-15T10:00:00+02:00 -> 2025-12-15T12:00:00+02:00  GP BT5.05 [In-person]  @ utcn_room_ac_bar_bt-505@campus.utcluj.ro
-  2025-12-15T10:00:00+02:00 -> 2025-12-15T12:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-12-15T10:00:00+02:00 -> 2025-12-15T12:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-12-15T10:00:00+02:00 -> 2025-12-15T12:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-12-15T10:00:00+02:00 -> 2025-12-15T12:00:00+02:00  FP BT5.04 [In-person]  @ utcn_room_ac_bar_bt-504@campus.utcluj.ro
-  2025-12-15T10:00:00+02:00 -> 2025-12-15T12:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-12-15T12:00:00+02:00 -> 2025-12-15T14:00:00+02:00  GP BT5.05 [In-person]  @ utcn_room_ac_bar_bt-505@campus.utcluj.ro
-  2025-12-15T12:00:00+02:00 -> 2025-12-15T14:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-12-15T14:00:00+02:00 -> 2025-12-15T16:00:00+02:00    Artificial intelligence (AI) - A. Groza - P03 [In-person]  @ utcn_room_ac_bar_p03@campus.utcluj.ro
-  2025-12-15T16:00:00+02:00 -> 2025-12-15T18:00:00+02:00    Software engineering (SE) - E. Todoran  - P03 [In-person]  @ utcn_room_ac_bar_p03@campus.utcluj.ro
+  2025-12-15T08:00:00+02:00 -> 2025-12-15T10:00:00+02:00  Functional Programming - Room 479  @ utcn_room_ac_daic_479@campus.utcluj.ro
+  2025-12-15T08:00:00+02:00 -> 2025-12-15T10:00:00+02:00  Structure Of Computer Systems - Room S4.2  @ utcn_room_ac_bar_s42@campus.utcluj.ro
+  2025-12-15T08:00:00+02:00 -> 2025-12-15T10:00:00+02:00  Functional Programming - Room BT5.03  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
+  2025-12-15T08:00:00+02:00 -> 2025-12-15T10:00:00+02:00  Artificial Intelligence - Room 26B  @ utcn_room_ac_bar_26b@campus.utcluj.ro
+  2025-12-15T08:00:00+02:00 -> 2025-12-15T10:00:00+02:00  Graphic Processing - Room BT5.05  @ utcn_room_ac_bar_bt-505@campus.utcluj.ro
+  2025-12-15T10:00:00+02:00 -> 2025-12-15T12:00:00+02:00  Graphic Processing - Room BT5.05  @ utcn_room_ac_bar_bt-505@campus.utcluj.ro
+  2025-12-15T10:00:00+02:00 -> 2025-12-15T12:00:00+02:00  Software Engineering - Room BT5.03  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
+  2025-12-15T10:00:00+02:00 -> 2025-12-15T12:00:00+02:00  Artificial Intelligence - Room 26B  @ utcn_room_ac_bar_26b@campus.utcluj.ro
+  2025-12-15T10:00:00+02:00 -> 2025-12-15T12:00:00+02:00  Structure Of Computer Systems - Room S4.2  @ utcn_room_ac_bar_s42@campus.utcluj.ro
+  2025-12-15T10:00:00+02:00 -> 2025-12-15T12:00:00+02:00  Functional Programming - Room BT5.04  @ utcn_room_ac_bar_bt-504@campus.utcluj.ro
+  2025-12-15T10:00:00+02:00 -> 2025-12-15T12:00:00+02:00  Functional Programming - Room 479  @ utcn_room_ac_daic_479@campus.utcluj.ro
+  2025-12-15T12:00:00+02:00 -> 2025-12-15T14:00:00+02:00  Graphic Processing - Room BT5.05  @ utcn_room_ac_bar_bt-505@campus.utcluj.ro
+  2025-12-15T12:00:00+02:00 -> 2025-12-15T14:00:00+02:00  Software Engineering - Room BT5.03  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
+  2025-12-15T14:00:00+02:00 -> 2025-12-15T16:00:00+02:00  Artificial Intelligence - A. Groza (P03)  @ utcn_room_ac_bar_p03@campus.utcluj.ro
+  2025-12-15T16:00:00+02:00 -> 2025-12-15T18:00:00+02:00  Software Engineering - E. Todoran (P03)  @ utcn_room_ac_bar_p03@campus.utcluj.ro
 
 === 2025-12-16
-  2025-12-16T08:00:00+02:00 -> 2025-12-16T10:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-12-16T08:00:00+02:00 -> 2025-12-16T10:00:00+02:00  SCS p S4.2 / SCS p S4.2	 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-12-16T08:00:00+02:00 -> 2025-12-16T10:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-12-16T10:00:00+02:00 -> 2025-12-16T12:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-12-16T10:00:00+02:00 -> 2025-12-16T12:00:00+02:00    GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-12-16T10:00:00+02:00 -> 2025-12-16T12:00:00+02:00  SCS p S4.2/ SCS p S4.2	 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-12-16T14:00:00+02:00 -> 2025-12-16T16:00:00+02:00  Functional programming (FP) - R. Slavescu - 40 [In-person]  @ utcn_room_ac_bar_40@campus.utcluj.ro
-  2025-12-16T16:00:00+02:00 -> 2025-12-16T18:00:00+02:00  Economic law (EL) - R. Cordos - 40 [In-person]  @ utcn_room_ac_bar_40@campus.utcluj.ro
-  2025-12-16T20:00:00+02:00 -> 2025-12-16T22:00:00+02:00  Computer assisted instruction.(fac) 356 / seminar 356 [In-person]  @ utcn_room_ac_bar_356@campus.utcluj.ro
+  2025-12-16T08:00:00+02:00 -> 2025-12-16T10:00:00+02:00  Graphic Processing - Room 105  @ utcn_room_ac_doro_105@campus.utcluj.ro
+  2025-12-16T08:00:00+02:00 -> 2025-12-16T10:00:00+02:00  Structure Of Computer Systems (Practice) - S4.2 / SCS S4.2  @ utcn_room_ac_bar_s42@campus.utcluj.ro
+  2025-12-16T08:00:00+02:00 -> 2025-12-16T10:00:00+02:00  Design With Microprocessors - Room 107  @ utcn_room_ac_doro_107@campus.utcluj.ro
+  2025-12-16T10:00:00+02:00 -> 2025-12-16T12:00:00+02:00  Design With Microprocessors - Room 107  @ utcn_room_ac_doro_107@campus.utcluj.ro
+  2025-12-16T10:00:00+02:00 -> 2025-12-16T12:00:00+02:00  Graphic Processing - Room 105  @ utcn_room_ac_doro_105@campus.utcluj.ro
+  2025-12-16T10:00:00+02:00 -> 2025-12-16T12:00:00+02:00  Structure Of Computer Systems (Practice) - S4.2 / SCS S4.2  @ utcn_room_ac_bar_s42@campus.utcluj.ro
+  2025-12-16T14:00:00+02:00 -> 2025-12-16T16:00:00+02:00  Functional Programming - R. Slavescu (40)  @ utcn_room_ac_bar_40@campus.utcluj.ro
+  2025-12-16T16:00:00+02:00 -> 2025-12-16T18:00:00+02:00  Economic Law - R. Cordos (40)  @ utcn_room_ac_bar_40@campus.utcluj.ro
+  2025-12-16T20:00:00+02:00 -> 2025-12-16T22:00:00+02:00  Computer Assisted Instruction.(fac) 356 / Seminar 356  @ utcn_room_ac_bar_356@campus.utcluj.ro
 
 === 2025-12-17
-  2025-12-17T08:00:00+02:00 -> 2025-12-17T10:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-12-17T08:00:00+02:00 -> 2025-12-17T10:00:00+02:00    AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-12-17T08:00:00+02:00 -> 2025-12-17T10:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-12-17T08:00:00+02:00 -> 2025-12-17T10:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-12-17T10:00:00+02:00 -> 2025-12-17T12:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-501@campus.utcluj.ro
-  2025-12-17T10:00:00+02:00 -> 2025-12-17T12:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-12-17T10:00:00+02:00 -> 2025-12-17T12:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-12-17T10:00:00+02:00 -> 2025-12-17T12:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-12-17T10:00:00+02:00 -> 2025-12-17T12:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-12-17T12:00:00+02:00 -> 2025-12-17T14:00:00+02:00  SCS p 103  /    SCS p 103	 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-12-17T12:00:00+02:00 -> 2025-12-17T14:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-12-17T12:00:00+02:00 -> 2025-12-17T14:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-12-17T12:00:00+02:00 -> 2025-12-17T14:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-12-17T14:00:00+02:00 -> 2025-12-17T16:00:00+02:00  SE 16B [In-person]  @ utcn_room_ac_bar_16b@campus.utcluj.ro
-  2025-12-17T14:00:00+02:00 -> 2025-12-17T16:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-12-17T14:00:00+02:00 -> 2025-12-17T16:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-12-17T14:00:00+02:00 -> 2025-12-17T16:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-12-17T14:00:00+02:00 -> 2025-12-17T18:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-12-17T14:00:00+02:00 -> 2025-12-17T16:00:00+02:00  SCS p 103/ SCS p 103	 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-12-17T16:00:00+02:00 -> 2025-12-17T18:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-12-17T16:00:00+02:00 -> 2025-12-17T18:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-12-17T16:00:00+02:00 -> 2025-12-17T18:00:00+02:00  SE BT5.03 [In-person]  @ UTCN - AC Bar - Sala BT 503
-  2025-12-17T16:00:00+02:00 -> 2025-12-17T18:00:00+02:00  Didact . spec. 206 (turn)/ [In-person]  @ utcn_room_ac_daic_206@campus.utcluj.ro
-  2025-12-17T16:00:00+02:00 -> 2025-12-17T18:00:00+02:00  SCS 103 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-12-17T18:00:00+02:00 -> 2025-12-17T20:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-12-17T18:00:00+02:00 -> 2025-12-17T20:00:00+02:00  SCS 103 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-12-17T18:00:00+02:00 -> 2025-12-17T20:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-12-17T18:00:00+02:00 -> 2025-12-17T20:00:00+02:00  Didactica specialitatii - I. Iuhos  206 (turn) - optional 	 [In-person]  @ utcn_room_ac_daic_206@campus.utcluj.ro
+  2025-12-17T08:00:00+02:00 -> 2025-12-17T10:00:00+02:00  Graphic Processing - Room 105  @ utcn_room_ac_doro_105@campus.utcluj.ro
+  2025-12-17T08:00:00+02:00 -> 2025-12-17T10:00:00+02:00  Artificial Intelligence - Room 26B  @ utcn_room_ac_bar_26b@campus.utcluj.ro
+  2025-12-17T08:00:00+02:00 -> 2025-12-17T10:00:00+02:00  Design With Microprocessors - Room 107  @ utcn_room_ac_doro_107@campus.utcluj.ro
+  2025-12-17T08:00:00+02:00 -> 2025-12-17T10:00:00+02:00  Functional Programming - Room 479  @ utcn_room_ac_daic_479@campus.utcluj.ro
+  2025-12-17T10:00:00+02:00 -> 2025-12-17T12:00:00+02:00  Software Engineering - Room BT5.03  @ utcn_room_ac_bar_bt-501@campus.utcluj.ro
+  2025-12-17T10:00:00+02:00 -> 2025-12-17T12:00:00+02:00  Artificial Intelligence - Room 26B  @ utcn_room_ac_bar_26b@campus.utcluj.ro
+  2025-12-17T10:00:00+02:00 -> 2025-12-17T12:00:00+02:00  Functional Programming - Room 479  @ utcn_room_ac_daic_479@campus.utcluj.ro
+  2025-12-17T10:00:00+02:00 -> 2025-12-17T12:00:00+02:00  Graphic Processing - Room 105  @ utcn_room_ac_doro_105@campus.utcluj.ro
+  2025-12-17T10:00:00+02:00 -> 2025-12-17T12:00:00+02:00  Design With Microprocessors - Room 107  @ utcn_room_ac_doro_107@campus.utcluj.ro
+  2025-12-17T12:00:00+02:00 -> 2025-12-17T14:00:00+02:00  Structure Of Computer Systems (Practice) - 103 / SCS 103  @ utcn_room_ac_doro_103@campus.utcluj.ro
+  2025-12-17T12:00:00+02:00 -> 2025-12-17T14:00:00+02:00  Software Engineering - Room BT5.03  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
+  2025-12-17T12:00:00+02:00 -> 2025-12-17T14:00:00+02:00  Artificial Intelligence - Room 26B  @ utcn_room_ac_bar_26b@campus.utcluj.ro
+  2025-12-17T12:00:00+02:00 -> 2025-12-17T14:00:00+02:00  Functional Programming - Room 479  @ utcn_room_ac_daic_479@campus.utcluj.ro
+  2025-12-17T14:00:00+02:00 -> 2025-12-17T16:00:00+02:00  Software Engineering - Room 16B  @ utcn_room_ac_bar_16b@campus.utcluj.ro
+  2025-12-17T14:00:00+02:00 -> 2025-12-17T16:00:00+02:00  Artificial Intelligence - Room 26B  @ utcn_room_ac_bar_26b@campus.utcluj.ro
+  2025-12-17T14:00:00+02:00 -> 2025-12-17T16:00:00+02:00  Software Engineering - Room BT5.03  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
+  2025-12-17T14:00:00+02:00 -> 2025-12-17T16:00:00+02:00  Functional Programming - Room 479  @ utcn_room_ac_daic_479@campus.utcluj.ro
+  2025-12-17T14:00:00+02:00 -> 2025-12-17T18:00:00+02:00  Structure Of Computer Systems - Room S4.2  @ utcn_room_ac_bar_s42@campus.utcluj.ro
+  2025-12-17T14:00:00+02:00 -> 2025-12-17T16:00:00+02:00  Structure Of Computer Systems (Practice) - 103 / SCS 103  @ utcn_room_ac_doro_103@campus.utcluj.ro
+  2025-12-17T16:00:00+02:00 -> 2025-12-17T18:00:00+02:00  Design With Microprocessors - Room 107  @ utcn_room_ac_doro_107@campus.utcluj.ro
+  2025-12-17T16:00:00+02:00 -> 2025-12-17T18:00:00+02:00  Artificial Intelligence - Room 26B  @ utcn_room_ac_bar_26b@campus.utcluj.ro
+  2025-12-17T16:00:00+02:00 -> 2025-12-17T18:00:00+02:00  Software Engineering - Room BT5.03  @ UTCN - AC Bar - Sala BT 503
+  2025-12-17T16:00:00+02:00 -> 2025-12-17T18:00:00+02:00  Didact . Spec. 206 (turn)/  @ utcn_room_ac_daic_206@campus.utcluj.ro
+  2025-12-17T16:00:00+02:00 -> 2025-12-17T18:00:00+02:00  Structure Of Computer Systems - Room 103  @ utcn_room_ac_doro_103@campus.utcluj.ro
+  2025-12-17T18:00:00+02:00 -> 2025-12-17T20:00:00+02:00  Software Engineering - Room BT5.03  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
+  2025-12-17T18:00:00+02:00 -> 2025-12-17T20:00:00+02:00  Structure Of Computer Systems - Room 103  @ utcn_room_ac_doro_103@campus.utcluj.ro
+  2025-12-17T18:00:00+02:00 -> 2025-12-17T20:00:00+02:00  Design With Microprocessors - Room 107  @ utcn_room_ac_doro_107@campus.utcluj.ro
+  2025-12-17T18:00:00+02:00 -> 2025-12-17T20:00:00+02:00  Didactica Specialitatii  @ utcn_room_ac_daic_206@campus.utcluj.ro
 
 === 2025-12-18
-  2025-12-18T08:00:00+02:00 -> 2025-12-18T10:00:00+02:00  Graphic processing (GP) - D. Gorgan - D01 [In-person]  @ utcn_room_ac_doro_d01@campus.utcluj.ro
-  2025-12-18T10:00:00+02:00 -> 2025-12-18T12:00:00+02:00  Design with microprocessors (DMP) - R. Danescu  - D01 [In-person]  @ utcn_room_ac_doro_d01@campus.utcluj.ro
-  2025-12-18T12:00:00+02:00 -> 2025-12-18T14:00:00+02:00  Structure of computer systems (SCS) - G. Sebestyen - D01 [In-person]  @ utcn_room_ac_doro_d01@campus.utcluj.ro
-  2025-12-18T14:00:00+02:00 -> 2025-12-18T16:00:00+02:00  SCS 103 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
+  2025-12-18T08:00:00+02:00 -> 2025-12-18T10:00:00+02:00  Graphic Processing - D. Gorgan (D01)  @ utcn_room_ac_doro_d01@campus.utcluj.ro
+  2025-12-18T10:00:00+02:00 -> 2025-12-18T12:00:00+02:00  Design With Microprocessors - R. Danescu (D01)  @ utcn_room_ac_doro_d01@campus.utcluj.ro
+  2025-12-18T12:00:00+02:00 -> 2025-12-18T14:00:00+02:00  Structure Of Computer Systems - G. Sebestyen (D01)  @ utcn_room_ac_doro_d01@campus.utcluj.ro
+  2025-12-18T14:00:00+02:00 -> 2025-12-18T16:00:00+02:00  Structure Of Computer Systems - Room 103  @ utcn_room_ac_doro_103@campus.utcluj.ro
 
 === 2025-12-19
-  2025-12-19T08:00:00+02:00 -> 2025-12-19T10:00:00+02:00  AI 103 [In-person]  @ utcn_room_ac_doro_103@campus.utcluj.ro
-  2025-12-19T08:00:00+02:00 -> 2025-12-19T10:00:00+02:00  FP 479 [In-person]  @ utcn_room_ac_daic_479@campus.utcluj.ro
-  2025-12-19T08:00:00+02:00 -> 2025-12-19T10:00:00+02:00  FP 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-12-19T08:00:00+02:00 -> 2025-12-19T10:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-12-19T10:00:00+02:00 -> 2025-12-19T12:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-12-19T10:00:00+02:00 -> 2025-12-19T12:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-12-19T10:00:00+02:00 -> 2025-12-19T12:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-12-19T10:00:00+02:00 -> 2025-12-19T12:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-12-19T12:00:00+02:00 -> 2025-12-19T14:00:00+02:00  AI 26B [In-person]  @ utcn_room_ac_bar_26b@campus.utcluj.ro
-  2025-12-19T12:00:00+02:00 -> 2025-12-19T14:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-12-19T12:00:00+02:00 -> 2025-12-19T14:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-12-19T12:00:00+02:00 -> 2025-12-19T14:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-12-19T12:00:00+02:00 -> 2025-12-19T14:00:00+02:00  SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-12-19T14:00:00+02:00 -> 2025-12-19T16:00:00+02:00  DMP 107 [In-person]  @ utcn_room_ac_doro_107@campus.utcluj.ro
-  2025-12-19T14:00:00+02:00 -> 2025-12-19T16:00:00+02:00  GP 105 [In-person]  @ utcn_room_ac_doro_105@campus.utcluj.ro
-  2025-12-19T14:00:00+02:00 -> 2025-12-19T16:00:00+02:00    SE BT5.03 [In-person]  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
-  2025-12-19T14:00:00+02:00 -> 2025-12-19T16:00:00+02:00  SCS p S4.2 / SCS p S4.2	 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-12-19T16:00:00+02:00 -> 2025-12-19T18:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
-  2025-12-19T18:00:00+02:00 -> 2025-12-19T20:00:00+02:00  SCS S4.2 [In-person]  @ utcn_room_ac_bar_s42@campus.utcluj.ro
+  2025-12-19T08:00:00+02:00 -> 2025-12-19T10:00:00+02:00  Artificial Intelligence - Room 103  @ utcn_room_ac_doro_103@campus.utcluj.ro
+  2025-12-19T08:00:00+02:00 -> 2025-12-19T10:00:00+02:00  Functional Programming - Room 479  @ utcn_room_ac_daic_479@campus.utcluj.ro
+  2025-12-19T08:00:00+02:00 -> 2025-12-19T10:00:00+02:00  Functional Programming - Room 26B  @ utcn_room_ac_bar_26b@campus.utcluj.ro
+  2025-12-19T08:00:00+02:00 -> 2025-12-19T10:00:00+02:00  Design With Microprocessors - Room 107  @ utcn_room_ac_doro_107@campus.utcluj.ro
+  2025-12-19T10:00:00+02:00 -> 2025-12-19T12:00:00+02:00  Graphic Processing - Room 105  @ utcn_room_ac_doro_105@campus.utcluj.ro
+  2025-12-19T10:00:00+02:00 -> 2025-12-19T12:00:00+02:00  Structure Of Computer Systems - Room S4.2  @ utcn_room_ac_bar_s42@campus.utcluj.ro
+  2025-12-19T10:00:00+02:00 -> 2025-12-19T12:00:00+02:00  Artificial Intelligence - Room 26B  @ utcn_room_ac_bar_26b@campus.utcluj.ro
+  2025-12-19T10:00:00+02:00 -> 2025-12-19T12:00:00+02:00  Design With Microprocessors - Room 107  @ utcn_room_ac_doro_107@campus.utcluj.ro
+  2025-12-19T12:00:00+02:00 -> 2025-12-19T14:00:00+02:00  Artificial Intelligence - Room 26B  @ utcn_room_ac_bar_26b@campus.utcluj.ro
+  2025-12-19T12:00:00+02:00 -> 2025-12-19T14:00:00+02:00  Design With Microprocessors - Room 107  @ utcn_room_ac_doro_107@campus.utcluj.ro
+  2025-12-19T12:00:00+02:00 -> 2025-12-19T14:00:00+02:00  Graphic Processing - Room 105  @ utcn_room_ac_doro_105@campus.utcluj.ro
+  2025-12-19T12:00:00+02:00 -> 2025-12-19T14:00:00+02:00  Structure Of Computer Systems - Room S4.2  @ utcn_room_ac_bar_s42@campus.utcluj.ro
+  2025-12-19T12:00:00+02:00 -> 2025-12-19T14:00:00+02:00  Software Engineering - Room BT5.03  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
+  2025-12-19T14:00:00+02:00 -> 2025-12-19T16:00:00+02:00  Design With Microprocessors - Room 107  @ utcn_room_ac_doro_107@campus.utcluj.ro
+  2025-12-19T14:00:00+02:00 -> 2025-12-19T16:00:00+02:00  Graphic Processing - Room 105  @ utcn_room_ac_doro_105@campus.utcluj.ro
+  2025-12-19T14:00:00+02:00 -> 2025-12-19T16:00:00+02:00  Software Engineering - Room BT5.03  @ utcn_room_ac_bar_bt-503@campus.utcluj.ro
+  2025-12-19T14:00:00+02:00 -> 2025-12-19T16:00:00+02:00  Structure Of Computer Systems (Practice) - S4.2 / SCS S4.2  @ utcn_room_ac_bar_s42@campus.utcluj.ro
+  2025-12-19T16:00:00+02:00 -> 2025-12-19T18:00:00+02:00  Structure Of Computer Systems - Room S4.2  @ utcn_room_ac_bar_s42@campus.utcluj.ro
+  2025-12-19T18:00:00+02:00 -> 2025-12-19T20:00:00+02:00  Structure Of Computer Systems - Room S4.2  @ utcn_room_ac_bar_s42@campus.utcluj.ro

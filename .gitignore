@@ -1,0 +1,31 @@
+__pycache__/
+*.pyc
+server.log
+data/app.db
+playwright_captures/*.stdout.txt
+playwright_captures/*.stderr.txt
+playwright_captures/page*.html
+playwright_captures/json_capture_*.json
+last_ics_response.html
+/.DS_Store
+.idea/
+.vscode/
+
+# NOTE: `venv/` and `.venv/` are intentionally not ignored so the virtualenv
+# can be committed if desired. Committing virtualenvs is normally discouraged
+# (large, platform-specific). Keep this only if you really want to include
+# the environment in the repo for immediate setup.
+/.venv/
+/venv/
+__pycache__/
+*.pyc
+server.log
+data/app.db
+playwright_captures/*.stdout.txt
+playwright_captures/*.stderr.txt
+playwright_captures/page*.html
+playwright_captures/json_capture_*.json
+last_ics_response.html
+/.DS_Store
+.idea/
+.vscode/

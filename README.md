@@ -25,48 +25,12 @@ python timetable.py \
   "https://outlook.office365.com/calendar/published/173862b98010453296f2a697e45f3b1e@campus.utcluj.ro/daeb64d4bd994c52b4f54d04ba1940ca2236386271423118770/calendar.html"
 ```
 
-Optional flags:
-- `--days N` show only the next N days (default: 7)
-- `--from YYYY-MM-DD` and `--to YYYY-MM-DD` to specify an explicit date range
+README.md has been removed and replaced with this small pointer.
 
-Example:
+Please read `README_UPDATED.md` for the full project documentation and setup instructions.
 
-```bash
-python timetable.py <URL> --days 14
-```
+If you still want the repository to contain a committed virtualenv for instant setup, ensure you commit the `venv/` or `.venv/` directory (the `.gitignore` has been updated to allow that).
 
-Web UI
-------
-You can run a small web interface where users can paste a calendar URL or upload a `.ics` file and view a timetable.
-
-1. Install dependencies (see above).
-
-2. Run the Flask app:
-
-```bash
-export FLASK_APP=app.py
-flask run --host=127.0.0.1 --port=5000
-# or: python app.py
-```
-
-3. Open http://127.0.0.1:5000 in a browser.
-
-The web UI will attempt to detect and fetch a linked `.ics` feed from the published page and display events grouped by day. If the published page returns a client-side (JS) rendered page, download the `.ics` manually and upload it via the form.
-
-Run helper (recommended)
-------------------------
-To avoid accidentally running outside the virtualenv, there's a helper script `run.sh` that activates the venv, installs dependencies, and starts the app.
-
-Make it executable and run it:
-
-```bash
-chmod +x run.sh
-./run.sh
-```
-
-If you prefer to run manually, always activate the venv first:
-
-```bash
 source .venv/bin/activate
 python -m pip install -r requirements.txt
 python app.py

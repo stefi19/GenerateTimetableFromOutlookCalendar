@@ -24,6 +24,11 @@ from datetime import datetime
 from typing import List
 
 from dateutil import parser as dtparser
+import sys
+import hashlib
+
+# Import parserul inteligent pentru subiecte
+from subject_parser import get_parser, learn_from_events, expand_title
 
 
 def main():
@@ -33,13 +38,22 @@ def main():
         print("playwright not available. Install with: pip install playwright && playwright install")
         raise
 
-    # reuse the same published URL used elsewhere in the project
-    url = 'https://outlook.office365.com/calendar/published/173862b98010453296f2a697e45f3b1e@campus.utcluj.ro/daeb64d4bd994c52b4f54d04ba1940ca2236386271423118770/calendar.html'
+    # Determine URL to fetch. Priority: CLI arg -> EXTRACT_URL env -> hardcoded default
+    url = None
+    if len(sys.argv) > 1 and sys.argv[1].strip():
+        url = sys.argv[1].strip()
+    else:
+        url = os.environ.get('EXTRACT_URL')
+
+    if not url:
+        # fallback default (kept for backwards compatibility)
+        url = 'https://outlook.office365.com/calendar/published/173862b98010453296f2a697e45f3b1e@campus.utcluj.ro/daeb64d4bd994c52b4f54d04ba1940ca2236386271423118770/calendar.html'
     user_data_dir = os.environ.get('PLAYWRIGHT_USER_DATA_DIR', os.path.expanduser('~/.playwright_profile'))
     out_dir = pathlib.Path('playwright_captures')
     out_dir.mkdir(exist_ok=True)
 
     print('Using PLAYWRIGHT_USER_DATA_DIR:', user_data_dir)
+    print('Extracting URL:', url)
 
     captured_json_texts = []
     captured_urls = []
@@ -181,6 +195,18 @@ def main():
         except Exception as e:
             print('parse capture error', e)
 
+    # Învață mapping-urile din titlurile complete (ex: "Functional programming (FP) - ...")
+    # și apoi expandează abrevierile în toate titlurile
+    learned = learn_from_events(events)
+    if learned:
+        print(f'Învățat {len(learned)} mapping-uri din titluri:')
+        for abbrev, name in sorted(learned.items()):
+            print(f'  {abbrev} -> {name}')
+    
+    # Aplică expandarea pe toate evenimentele
+    for ev in events:
+        ev['title'] = expand_title(ev.get('title') or '')
+
     # dedupe by ItemId if available
     deduped = []
     seen_ids = set()
@@ -193,6 +219,13 @@ def main():
         if key not in seen_ids:
             seen_ids.add(key)
             deduped.append(ev)
+
+    # Salvează și mapping-urile învățate pentru utilizare în UI
+    from subject_parser import get_mappings
+    mappings_file = out_dir / 'subject_mappings.json'
+    with open(mappings_file, 'w', encoding='utf-8') as f:
+        json.dump(get_mappings(), f, indent=2, ensure_ascii=False)
+    print(f'Saved subject mappings to {mappings_file}')
 
     # save results
     out_file = out_dir / 'events.json'

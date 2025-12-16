@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Extracurricular Events - UTCN AC</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --utcn-blue: #003366;
+            --utcn-blue-light: #004080;
+            --utcn-blue-dark: #002244;
+            --utcn-accent: #0066cc;
+            --white: #ffffff;
+            --gray-50: #f8f9fa;
+            --gray-100: #e9ecef;
+            --gray-200: #dee2e6;
+            --gray-300: #ced4da;
+            --gray-600: #6c757d;
+            --gray-800: #343a40;
+            --success: #28a745;
+            --danger: #dc3545;
+        }
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--gray-50);
+            min-height: 100vh;
+            color: var(--gray-800);
+        }
+        .header {
+            background: var(--utcn-blue);
+            color: var(--white);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+        .header-top {
+            background: var(--utcn-blue-dark);
+            padding: 8px 30px;
+            font-size: 0.85rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        .header-main {
+            padding: 20px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header h1 { font-size: 1.5rem; font-weight: 600; }
+        .header .subtitle { font-size: 0.9rem; opacity: 0.8; margin-top: 2px; }
+        .nav { display: flex; gap: 5px; }
+        .nav a {
+            color: var(--white);
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            background: rgba(255,255,255,0.1);
+        }
+        .nav a:hover { background: rgba(255,255,255,0.2); }
+        .nav a.active { background: var(--white); color: var(--utcn-blue); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 30px; }
+        .page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .page-title { font-size: 1.5rem; color: var(--utcn-blue); }
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .btn-primary { background: var(--utcn-blue); color: var(--white); }
+        .btn-primary:hover { background: var(--utcn-blue-light); }
+    /* use UTCN colors instead of red for destructive buttons to match theme */
+    .btn-danger { background: var(--utcn-blue-dark); color: var(--white); }
+    .btn-danger:hover { background: var(--utcn-blue); }
+        .btn-sm { padding: 6px 12px; font-size: 0.8rem; }
+        
+        /* Events Grid */
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        .event-card {
+            background: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .event-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+        }
+        .event-card-header {
+            background: var(--utcn-blue);
+            color: var(--white);
+            padding: 15px 20px;
+        }
+        .event-card-header h3 { font-size: 1.1rem; margin-bottom: 5px; }
+        .event-category {
+            display: inline-block;
+            padding: 3px 10px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 20px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+        }
+        .event-card-body { padding: 20px; }
+        .event-info { margin-bottom: 12px; display: flex; gap: 10px; }
+        .event-info-icon {
+            width: 20px;
+            text-align: center;
+            color: var(--utcn-accent);
+            font-weight: bold;
+        }
+        .event-info-text { color: var(--gray-800); }
+        .event-info-label { color: var(--gray-600); font-size: 0.85rem; }
+        .event-description {
+            color: var(--gray-600);
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid var(--gray-200);
+        }
+        .event-card-footer {
+            padding: 15px 20px;
+            background: var(--gray-50);
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        /* Add Event Form */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+        .modal-overlay.show { display: flex; }
+        .modal {
+            background: var(--white);
+            border-radius: 8px;
+            width: 100%;
+            max-width: 600px;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+        .modal-header {
+            background: var(--utcn-blue);
+            color: var(--white);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .modal-header h2 { font-size: 1.2rem; }
+        .modal-close {
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 1.5rem;
+            cursor: pointer;
+            line-height: 1;
+        }
+        .modal-body { padding: 25px; }
+        .form-group { margin-bottom: 18px; }
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 500;
+            color: var(--gray-800);
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid var(--gray-300);
+            border-radius: 4px;
+            font-size: 0.95rem;
+        }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--utcn-accent);
+        }
+        .form-group textarea { min-height: 100px; resize: vertical; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .modal-footer {
+            padding: 15px 25px;
+            background: var(--gray-50);
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+        .btn-secondary { background: var(--gray-300); color: var(--gray-800); }
+        
+        .empty-state {
+            text-align: center;
+            padding: 80px 20px;
+            color: var(--gray-600);
+        }
+        .empty-state h3 { color: var(--gray-800); margin-bottom: 10px; }
+        
+        /* Categories */
+        .category-workshop { background: #7c3aed; }
+    .category-hackathon { background: var(--utcn-accent); }
+        .category-seminar { background: #0891b2; }
+        .category-conference { background: #059669; }
+        .category-social { background: #d97706; }
+        .category-other { background: var(--gray-600); }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-top">
+            <span>Technical University of Cluj-Napoca</span>
+            <span>Faculty of Automation and Computer Science</span>
+        </div>
+        <div class="header-main">
+            <div>
+                <h1>Extracurricular Events</h1>
+                <div class="subtitle">Workshops, Hackathons, Seminars & More</div>
+            </div>
+            <nav class="nav">
+                <a href="/departures">Departure Board</a>
+                <a href="/schedule">Calendar View</a>
+                <a href="/events" class="active">Events</a>
+                <a href="/admin">Admin</a>
+            </nav>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="page-header">
+            <h2 class="page-title">Upcoming Events</h2>
+            <button class="btn btn-primary" onclick="openModal()">Add New Event</button>
+        </div>
+        
+        {% if events %}
+        <div class="events-grid">
+            {% for event in events %}
+            <div class="event-card">
+                <div class="event-card-header">
+                    <h3>{{ event.display_title or event.title }}</h3>
+                    <span class="event-category">{{ event.category or 'Other' }}</span>
+                </div>
+                <div class="event-card-body">
+                    <div class="event-info">
+                        <span class="event-info-icon">O</span>
+                        <div>
+                            <div class="event-info-label">Organizer</div>
+                            <div class="event-info-text">{{ event.organizer or 'TBA' }}</div>
+                        </div>
+                    </div>
+                    <div class="event-info">
+                        <span class="event-info-icon">D</span>
+                        <div>
+                            <div class="event-info-label">Date & Time</div>
+                            <div class="event-info-text">{{ event.date }}{% if event.time %} at {{ event.time }}{% endif %}</div>
+                        </div>
+                    </div>
+                    <div class="event-info">
+                        <span class="event-info-icon">L</span>
+                        <div>
+                            <div class="event-info-label">Location</div>
+                            <div class="event-info-text">{{ event.location or 'TBA' }}</div>
+                        </div>
+                    </div>
+                    {% if event.description %}
+                    <div class="event-description">{{ event.description }}</div>
+                    {% endif %}
+                </div>
+                <div class="event-card-footer">
+                    <button class="btn btn-danger btn-sm btn-delete-event" type="button" data-id="{{ event.id }}">Delete</button>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="empty-state">
+            <h3>No Events Scheduled</h3>
+            <p>There are no extracurricular events at the moment. Click "Add New Event" to create one.</p>
+        </div>
+        {% endif %}
+    </div>
+    
+    <!-- Add Event Modal -->
+    <div class="modal-overlay" id="addEventModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>Add New Event</h2>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <form id="addEventForm" onsubmit="return submitEvent(event)">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="title">Event Title *</label>
+                        <input type="text" id="title" name="title" required placeholder="e.g., AI Workshop">
+                    </div>
+                    <div class="form-group">
+                        <label for="organizer">Organizer</label>
+                        <input type="text" id="organizer" name="organizer" placeholder="e.g., BEST Cluj-Napoca">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Date *</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Time</label>
+                            <input type="time" id="time" name="time">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <input type="text" id="location" name="location" placeholder="e.g., Room 26B, Baritiu">
+                        </div>
+                        <div class="form-group">
+                            <label for="category">Category</label>
+                            <select id="category" name="category">
+                                <option value="Workshop">Workshop</option>
+                                <option value="Hackathon">Hackathon</option>
+                                <option value="Seminar">Seminar</option>
+                                <option value="Conference">Conference</option>
+                                <option value="Social">Social Event</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" name="description" placeholder="Event details, requirements, registration links..."></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Add Event</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        function openModal() {
+            document.getElementById('addEventModal').classList.add('show');
+        }
+        
+        function closeModal() {
+            document.getElementById('addEventModal').classList.remove('show');
+            document.getElementById('addEventForm').reset();
+        }
+        
+        function submitEvent(e) {
+            e.preventDefault();
+            var form = document.getElementById('addEventForm');
+            var formData = new FormData(form);
+            
+            fetch('/events/add', { method: 'POST', body: formData })
+                .then(r => r.json())
+                .then(data => {
+                    if (data.success) {
+                        window.location.reload();
+                    } else {
+                        alert(data.message || 'Error adding event');
+                    }
+                })
+                .catch(err => alert('Error: ' + err));
+            
+            return false;
+        }
+        
+        function deleteEvent(id) {
+            if (!confirm('Are you sure you want to delete this event?')) return;
+            
+            var formData = new FormData();
+            formData.append('id', id);
+            
+            fetch('/events/delete', { method: 'POST', body: formData })
+                .then(r => r.json())
+                .then(data => {
+                    if (data.success) {
+                        window.location.reload();
+                    } else {
+                        alert(data.message || 'Error deleting event');
+                    }
+                })
+                .catch(err => alert('Error: ' + err));
+        }
+        
+        // Close modal when clicking outside
+        document.getElementById('addEventModal').addEventListener('click', function(e) {
+            if (e.target === this) closeModal();
+        });
+
+        // Attach delete listeners to buttons rendered with data-id (avoid inline Jinja in onclick)
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.btn-delete-event').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const id = btn.dataset.id;
+                    deleteEvent(id);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
