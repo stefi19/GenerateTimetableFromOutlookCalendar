@@ -1679,4 +1679,9 @@ if __name__ == "__main__":
 
     # Disable the auto-reloader to avoid Playwright event-loop lifecycle issues
     # when the Flask debug reloader spawns child processes.
-    app.run(debug=True, use_reloader=False)
+    # Allow overriding the port using the PORT environment variable so the
+    # server can be started on a different port when 5000 is in use by the
+    # system (e.g. macOS AirPlay Receiver). Default remains 5000.
+    import os
+    port = int(os.environ.get('PORT', '5000'))
+    app.run(debug=True, use_reloader=False, port=port)
