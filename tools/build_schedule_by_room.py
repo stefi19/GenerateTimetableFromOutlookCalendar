@@ -414,26 +414,74 @@ def pretty_print(schedule):
 
 def parse_args():
     p = argparse.ArgumentParser()
-    p.add_argument('--source', default='playwright_captures/events.json', help='Path to extracted events JSON')
+    p.add_argument('--source', default='playwright_captures/events.json', help='Path to extracted events JSON (or directory with events_*.json)')
     p.add_argument('--from', dest='from_date', help='Start date YYYY-MM-DD')
     p.add_argument('--to', dest='to_date', help='End date YYYY-MM-DD')
     p.add_argument('--days', type=int, default=7, help='If --from is given, default to --from + days-1 when --to not provided')
     return p.parse_args()
 
 
+def load_all_events(source_path: str):
+    """Load events from source. If source is a directory or doesn't exist,
+    load all events_*.json files from playwright_captures/ directory."""
+    all_events = []
+    out_dir = pathlib.Path('playwright_captures')
+    
+    # Try to load individual events_*.json files first (multi-calendar setup)
+    event_files = list(out_dir.glob('events_*.json'))
+    
+    if event_files:
+        print(f'Found {len(event_files)} calendar event files')
+        for ef in event_files:
+            try:
+                events = load_events(str(ef))
+                print(f'  Loaded {len(events)} events from {ef.name}')
+                all_events.extend(events)
+            except Exception as e:
+                print(f'  Error loading {ef.name}: {e}')
+    
+    # Fallback: also try the main events.json if it exists
+    main_events_file = pathlib.Path(source_path)
+    if main_events_file.exists() and main_events_file.name == 'events.json':
+        try:
+            events = load_events(str(main_events_file))
+            # Avoid duplicates if these events are already in events_*.json
+            # Check by comparing (start, title) tuples
+            existing = set()
+            for e in all_events:
+                key = (str(e.get('start')), e.get('title'))
+                existing.add(key)
+            new_count = 0
+            for e in events:
+                key = (str(e.get('start')), e.get('title'))
+                if key not in existing:
+                    all_events.append(e)
+                    new_count += 1
+            if new_count > 0:
+                print(f'  Added {new_count} additional events from events.json')
+        except Exception:
+            pass
+    
+    return all_events
+
+
 def main():
     args = parse_args()
     src = args.source
-    if not os.path.exists(src):
-        print('Source events file not found:', src)
-        return 2
 
     # Încarcă mapping-urile de subiecte salvate anterior
     loaded_mappings = load_subject_mappings()
     if loaded_mappings:
         print(f'Încărcat {len(loaded_mappings)} mapping-uri de subiecte')
 
-    events = load_events(src)
+    # Load events from all sources
+    events = load_all_events(src)
+    
+    if not events:
+        print('No events found in any source files')
+        return 2
+    
+    print(f'Total events loaded: {len(events)}')
     
     # Învață din evenimentele curente (pentru titluri complete)
     from subject_parser import learn_from_events

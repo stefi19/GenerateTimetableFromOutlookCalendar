@@ -365,6 +365,43 @@ body {
 .stat-value { font-size: 1.75rem; font-weight: 700; color: var(--utcn-blue); }
 .stat-label { font-size: 0.85rem; color: var(--gray-600); }
 
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  animation: pulse 1.5s infinite;
+}
+.status-badge.importing {
+  background: #fff3cd;
+  color: #856404;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.periodic-status {
+  background: var(--gray-50);
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  border: 1px solid var(--gray-200);
+}
+.periodic-status small {
+  color: var(--gray-600);
+  font-size: 0.8rem;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .calendar-list, .events-list-admin { margin-bottom: 16px; }
 .calendar-item, .event-item-admin {
   display: flex;

@@ -438,14 +438,19 @@ def migrate_from_files():
             pass
 
 def add_calendar_url(url: str, name: str = None):
+    """Add a calendar URL to the database. Returns the calendar ID."""
     with get_db_connection() as conn:
         cur = conn.cursor()
         try:
             cur.execute('INSERT OR IGNORE INTO calendars (url, name, color, enabled, created_at) VALUES (?, ?, ?, 1, ?)',
                         (url, name or '', None, datetime.now().isoformat()))
             conn.commit()
+            # Get the ID (either newly inserted or existing)
+            cur.execute('SELECT id FROM calendars WHERE url = ?', (url,))
+            row = cur.fetchone()
+            return row['id'] if row else None
         except Exception:
-            pass
+            return None
 
 def update_calendar_metadata(url: str, name: str = None, color: str = None):
     try:
@@ -710,6 +715,32 @@ def periodic_fetcher(interval_minutes: int = 60):
                 pass
         # Sleep until next run
         time.sleep(interval_minutes * 60)
+
+
+# Flag to ensure we only start the periodic fetcher once
+_periodic_fetcher_started = False
+_periodic_fetcher_lock = threading.Lock()
+
+def start_periodic_fetcher_if_needed(interval_minutes: int = 60):
+    """Start the periodic fetcher thread if not already started. Safe to call multiple times."""
+    global _periodic_fetcher_started
+    with _periodic_fetcher_lock:
+        if _periodic_fetcher_started:
+            return False
+        _periodic_fetcher_started = True
+    try:
+        t = threading.Thread(target=periodic_fetcher, args=(interval_minutes,), daemon=True)
+        t.start()
+        print(f'Started periodic calendar fetcher (runs every {interval_minutes} minutes)')
+        return True
+    except Exception as e:
+        print(f'Failed to start periodic fetcher: {e}')
+        return False
+
+
+# Start the periodic fetcher on module import (works with Gunicorn)
+# This runs once when the app is loaded
+start_periodic_fetcher_if_needed(60)
 
 
 # OLD FRONTEND ROUTE - DISABLED (use /app for React SPA)
@@ -1285,16 +1316,31 @@ def admin_api_status():
         calendars = list_calendar_urls()
         manual_events = list_manual_events_db()
         
-        # Get events count
-        events_file = pathlib.Path('playwright_captures/events.json')
-        if events_file.exists():
-            with open(events_file, 'r', encoding='utf-8') as f:
-                events = json.load(f)
-                events_count = len(events)
+        # Get events count from all events_*.json files
+        out_dir = pathlib.Path('playwright_captures')
+        event_files = list(out_dir.glob('events_*.json'))
+        for ef in event_files:
+            try:
+                with open(ef, 'r', encoding='utf-8') as f:
+                    events = json.load(f)
+                    events_count += len(events)
+                # Track latest import time
+                mtime = ef.stat().st_mtime
+                if last_import is None or mtime > last_import:
+                    last_import = mtime
+            except Exception:
+                pass
         
-        # Get last import time
-        if events_file.exists():
-            last_import = events_file.stat().st_mtime
+        # Also check main events.json if it exists (fallback)
+        events_file = pathlib.Path('playwright_captures/events.json')
+        if events_file.exists() and not event_files:
+            try:
+                with open(events_file, 'r', encoding='utf-8') as f:
+                    events = json.load(f)
+                    events_count = len(events)
+                last_import = events_file.stat().st_mtime
+            except Exception:
+                pass
     except Exception as e:
         pass
     
@@ -1303,24 +1349,38 @@ def admin_api_status():
         'manual_events': manual_events,
         'events_count': events_count,
         'last_import': last_import,
-        'extractor_running': extractor_state.get('running', False)
+        'extractor_running': extractor_state.get('running', False),
+        'periodic_fetcher': {
+            'started': _periodic_fetcher_started,
+            'running': periodic_fetch_state.get('running', False),
+            'last_run': periodic_fetch_state.get('last_run'),
+            'last_success': periodic_fetch_state.get('last_success'),
+            'interval_minutes': 60
+        }
     })
 
 
 @app.route('/admin/set_calendar_url', methods=['POST'])
 @require_admin
 def admin_set_calendar_url():
-    """Save the calendar URL to config."""
+    """Save the calendar URL to config and immediately start importing events."""
     url = request.form.get('calendar_url', '').strip()
     name = request.form.get('calendar_name') or request.form.get('calendar_name', '')
     color = request.form.get('calendar_color') or request.form.get('calendar_color', None)
+    
+    # Check if this is an API call (wants JSON response)
+    wants_json = request.headers.get('Accept', '').startswith('application/json') or request.is_json
+    
     if not url:
+        if wants_json:
+            return jsonify({'success': False, 'error': 'URL is required'}), 400
         return redirect(url_for('admin_view'))
 
-    # Ensure DB initialized
+    # Ensure DB initialized and save calendar
+    calendar_id = None
     try:
         init_db()
-        add_calendar_url(url, name)
+        calendar_id = add_calendar_url(url, name)
         # persist optional metadata (name/color)
         update_calendar_metadata(url, name=name, color=color)
     except Exception:
@@ -1343,6 +1403,24 @@ def admin_set_calendar_url():
         with open(config_file, 'w', encoding='utf-8') as f:
             json.dump(config, f, indent=2)
 
+    # Immediately start importing events from this calendar in background
+    if url and not extractor_state.get('running'):
+        t = threading.Thread(target=_run_extractor_for_url, args=(url,), daemon=True)
+        t.start()
+        import_started = True
+    else:
+        import_started = False
+
+    if wants_json:
+        return jsonify({
+            'success': True, 
+            'calendar_id': calendar_id,
+            'url': url,
+            'name': name,
+            'import_started': import_started,
+            'message': 'Calendar added and import started' if import_started else 'Calendar added (import already in progress)'
+        })
+    
     return redirect(url_for('admin_view'))
 
 
@@ -1351,9 +1429,32 @@ def admin_set_calendar_url():
 def admin_import_calendar():
     """Trigger calendar import from the configured URL."""
     # Accept optional url, name, color fields and persist the calendar before import
+    # Also accept calendar_id from JSON body to import a specific calendar
     url = request.form.get('calendar_url') or request.form.get('url')
     name = request.form.get('calendar_name') or request.form.get('name')
     color = request.form.get('calendar_color') or request.form.get('color')
+    
+    # Check JSON body for calendar_id
+    calendar_id = None
+    if request.is_json:
+        json_data = request.get_json(silent=True) or {}
+        calendar_id = json_data.get('calendar_id')
+        if not url:
+            url = json_data.get('url')
+        if not name:
+            name = json_data.get('name')
+
+    # If calendar_id provided, fetch URL from database
+    if calendar_id and not url:
+        try:
+            init_db()
+            calendars = list_calendar_urls()
+            for cal in calendars:
+                if cal.get('id') == calendar_id:
+                    url = cal.get('url')
+                    break
+        except Exception:
+            pass
 
     if url:
         try:
@@ -1367,11 +1468,14 @@ def admin_import_calendar():
     if extractor_state.get('running'):
         return jsonify({'success': False, 'message': 'Import already in progress'}), 200
 
-    # Start extractor in background
-    t = threading.Thread(target=_run_extractor_background, daemon=True)
+    # Start extractor in background - use URL if provided, else default
+    if url:
+        t = threading.Thread(target=_run_extractor_for_url, args=(url,), daemon=True)
+    else:
+        t = threading.Thread(target=_run_extractor_background, daemon=True)
     t.start()
 
-    return jsonify({'success': True, 'message': 'Import started'}), 202
+    return jsonify({'success': True, 'message': 'Import started', 'url': url}), 202
 
 
 @app.route('/admin/add_event', methods=['POST'])
@@ -1879,13 +1983,8 @@ def departures_json():
 
 
 if __name__ == "__main__":
-    # Start periodic fetcher thread (runs every 30 minutes) before launching the app.
-    try:
-        t = threading.Thread(target=periodic_fetcher, args=(60,), daemon=True)
-        t.start()
-        print('Started periodic calendar fetcher (initial run now, then every 60 minutes)')
-    except Exception:
-        print('Failed to start periodic fetcher')
+    # Periodic fetcher is already started at module import level
+    # (see start_periodic_fetcher_if_needed call above)
 
     # Initialize DB and migrate any existing JSON configuration into it
     try:

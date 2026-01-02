@@ -61,8 +61,13 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt \
     && pip install --no-cache-dir gunicorn
 
-# Install Playwright browsers (Chromium only for smaller image)
-RUN playwright install chromium --with-deps
+# Create non-root user for security BEFORE installing Playwright
+RUN useradd --create-home --shell /bin/bash appuser
+
+# Install Playwright browsers as appuser (so cache is in their home)
+USER appuser
+RUN playwright install chromium
+USER root
 
 # Copy application code
 COPY app.py timetable.py ./
@@ -74,12 +79,10 @@ COPY static/ static/
 # Copy built frontend from Stage 1
 COPY --from=frontend-builder /app/frontend/dist/ frontend/dist/
 
-# Create data directories
-RUN mkdir -p data playwright_captures
-
-# Create non-root user for security
-RUN useradd --create-home --shell /bin/bash appuser \
+# Create data directories and set ownership
+RUN mkdir -p data playwright_captures \
     && chown -R appuser:appuser /app
+
 USER appuser
 
 # Expose port
