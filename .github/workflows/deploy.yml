@@ -21,12 +21,12 @@ jobs:
           printf "%s\n" "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan -H timetable.utcluj.ro >> ~/.ssh/known_hosts
-
-
+      
       - name: Deploy on VM
         run: |
-          ssh deploy@10.20.7.144 << 'EOF'
+          ssh deploy@timetable.utcluj.ro << 'EOF'
             cd /home/mstefania/GenerateTimetableFromOutlookCalendar
             git pull
             docker compose up -d --build
           EOF
+
