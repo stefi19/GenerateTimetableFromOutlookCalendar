@@ -24,9 +24,10 @@ jobs:
       
       - name: Deploy on VM
         run: |
-          ssh deploy@timetable.utcluj.ro << 'EOF'
+          ssh mstefania@timetable.utcluj.ro << 'EOF'
             cd /home/mstefania/GenerateTimetableFromOutlookCalendar
             git pull
             docker compose up -d --build
           EOF
+
 
