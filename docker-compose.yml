@@ -1,0 +1,41 @@
+services:
+  timetable:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: utcn-timetable
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    volumes:
+      # Persist database and captures
+      - timetable_data:/app/data
+      - timetable_captures:/app/playwright_captures
+      # Optional: mount config for runtime changes
+      - ./config:/app/config:ro
+    environment:
+      - FLASK_ENV=production
+      - FLASK_SECRET=${FLASK_SECRET:-change-me-in-production}
+      # Optional: for authenticated calendar fetching
+      # - PLAYWRIGHT_USER_DATA_DIR=/app/playwright_data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    # Resource limits (adjust based on your server)
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 2G
+        reservations:
+          cpus: '0.5'
+          memory: 512M
+
+volumes:
+  timetable_data:
+    driver: local
+  timetable_captures:
+    driver: local

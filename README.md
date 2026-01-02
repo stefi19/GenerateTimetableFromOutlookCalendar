@@ -61,12 +61,13 @@ This project is a complete timetable management system for the Technical Univers
 
 | Layer | Technology |
 |-------|------------|
-| **Backend** | Python 3.10+, Flask |
+| **Backend** | Python 3.10+, Flask, Gunicorn |
 | **Frontend** | React 18, Vite |
 | **Database** | SQLite (`data/app.db`) |
 | **Calendar Parsing** | `ics` library, custom microformat parser |
 | **Web Scraping** | Playwright (for client-side rendered pages) |
 | **Styling** | Custom CSS with modern design |
+| **Containerization** | Docker, Docker Compose |
 
 ## Project Structure
 
@@ -74,6 +75,8 @@ This project is a complete timetable management system for the Technical Univers
 ├── app.py                    # Flask backend (API + routes)
 ├── timetable.py              # Calendar parsing utilities
 ├── requirements.txt          # Python dependencies
+├── Dockerfile                # Docker image build
+├── docker-compose.yml        # Docker Compose config
 ├── run.sh                    # Quick start script
 ├── setup.sh                  # Full setup script
 ├── config/
@@ -105,11 +108,27 @@ This project is a complete timetable management system for the Technical Univers
 
 - **Python**: 3.10+ (tested with 3.14)
 - **Node.js**: 18+ (for frontend development)
+- **Docker**: 20+ (for containerized deployment)
 - **System**: macOS / Linux (Playwright requires extra setup on some systems)
 
 ## Quick Start
 
-### Option 1: Automated Setup (Recommended)
+### Option 1: Docker (Recommended for Production)
+
+```bash
+# Build and run with Docker Compose
+docker compose up -d
+
+# View logs
+docker compose logs -f
+
+# Stop
+docker compose down
+```
+
+The app will be available at **http://localhost:5000**
+
+### Option 2: Automated Setup (Development)
 
 ```bash
 # Clone and setup
@@ -119,7 +138,7 @@ This project is a complete timetable management system for the Technical Univers
 ./run.sh
 ```
 
-### Option 2: Manual Setup
+### Option 3: Manual Setup
 
 ```bash
 # Create virtual environment
@@ -329,6 +348,93 @@ npm run dev
 ```
 
 The Vite dev server runs at `http://localhost:5173` with hot reload.
+
+---
+
+## Docker Deployment
+
+### Quick Deploy
+
+```bash
+# Build and start
+docker compose up -d
+
+# Check status
+docker compose ps
+
+# View logs
+docker compose logs -f timetable
+
+# Stop
+docker compose down
+```
+
+### Production Deployment
+
+1. **Set environment variables:**
+
+```bash
+# Create .env file
+echo "FLASK_SECRET=$(openssl rand -hex 32)" > .env
+```
+
+2. **Deploy with Docker Compose:**
+
+```bash
+docker compose up -d --build
+```
+
+3. **With reverse proxy (nginx):**
+
+```nginx
+server {
+    listen 80;
+    server_name timetable.example.com;
+
+    location / {
+        proxy_pass http://localhost:5000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+```
+
+### Docker Commands Reference
+
+| Command | Description |
+|---------|-------------|
+| `docker compose up -d` | Start in background |
+| `docker compose down` | Stop and remove containers |
+| `docker compose logs -f` | Follow logs |
+| `docker compose restart` | Restart service |
+| `docker compose build --no-cache` | Rebuild from scratch |
+| `docker compose exec timetable bash` | Shell into container |
+
+### Volumes
+
+Data is persisted in Docker volumes:
+- `timetable_data` — SQLite database
+- `timetable_captures` — Playwright captures/events
+
+```bash
+# Backup data
+docker compose exec timetable cat /app/data/app.db > backup.db
+
+# View volume location
+docker volume inspect utcn-timetable_timetable_data
+```
+
+### Resource Requirements
+
+| Resource | Minimum | Recommended |
+|----------|---------|-------------|
+| CPU | 1 core | 2 cores |
+| RAM | 512MB | 2GB |
+| Disk | 1GB | 5GB |
+
+*Note: Playwright/Chromium requires ~500MB RAM when running extractions.*
 
 ---
 

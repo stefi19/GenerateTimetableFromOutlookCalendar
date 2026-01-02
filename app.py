@@ -38,6 +38,16 @@ def group_events(events: List[Event], from_date: date, to_date: date):
     return groups
 
 
+@app.route("/health", methods=["GET"])
+def health_check():
+    """Health check endpoint for Docker/load balancers."""
+    return jsonify({
+        "status": "healthy",
+        "service": "utcn-timetable",
+        "version": "1.0.0"
+    }), 200
+
+
 @app.route("/", methods=["GET"])
 def index():
     # Redirect root to the React SPA frontend

@@ -4,3 +4,4 @@ ics>=0.7
 python-dateutil>=2.8.0
 Flask>=2.0.0
 playwright>=1.40.0
+gunicorn>=21.0.0

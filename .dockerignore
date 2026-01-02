@@ -1,0 +1,53 @@
+# Dependencies
+node_modules/
+**/node_modules/
+frontend/node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Build artifacts (we build in Docker)
+frontend/dist/
+*.egg-info/
+
+# Development files
+.git/
+.gitignore
+.dockerignore
+*.md
+!README.md
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+server.log
+flask.log
+
+# Local database (we use volumes)
+data/app.db
+
+# Temporary files
+playwright_captures/*.stdout.txt
+playwright_captures/*.stderr.txt
+playwright_captures/page*.html
+playwright_captures/json_capture_*.json
+last_ics_response.html
+
+# Test files
+tests/
+*.test.py
+pytest.ini
+
+# Documentation duplicates
+README\ 2.md
