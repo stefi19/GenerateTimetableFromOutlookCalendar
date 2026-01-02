@@ -3,8 +3,8 @@
     "ServerVersionInfo": {
       "MajorVersion": 15,
       "MinorVersion": 20,
-      "MajorBuildNumber": 9412,
-      "MinorBuildNumber": 12,
+      "MajorBuildNumber": 9499,
+      "MinorBuildNumber": 1,
       "Version": "V2018_01_08"
     }
   },
@@ -14,7 +14,7 @@
         "TimeZoneId": "Dateline Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -720
           }
         ],
@@ -27,15 +27,7 @@
         "TimeZoneId": "Samoa Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": -600
-          },
-          {
-            "UtcTime": "2011-04-02T14:00:00Z",
-            "Offset": -660
-          },
-          {
-            "UtcTime": "2011-09-24T14:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -600
           },
           {
@@ -128,7 +120,7 @@
         "TimeZoneId": "UTC-11",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -660
           }
         ],
@@ -145,15 +137,7 @@
         "TimeZoneId": "Aleutian Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": -600
-          },
-          {
-            "UtcTime": "2011-03-13T12:00:00Z",
-            "Offset": -540
-          },
-          {
-            "UtcTime": "2011-11-06T11:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -600
           },
           {
@@ -379,6 +363,14 @@
           {
             "UtcTime": "2039-11-06T11:00:00Z",
             "Offset": -600
+          },
+          {
+            "UtcTime": "2040-03-11T12:00:00Z",
+            "Offset": -540
+          },
+          {
+            "UtcTime": "2040-11-04T11:00:00Z",
+            "Offset": -600
           }
         ],
         "TimeZoneName": "(UTC-10:00) Aleutian Islands",
@@ -392,7 +384,7 @@
         "TimeZoneId": "Hawaiian Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -600
           }
         ],
@@ -410,7 +402,7 @@
         "TimeZoneId": "Marquesas Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -570
           }
         ],
@@ -423,15 +415,7 @@
         "TimeZoneId": "Alaskan Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": -540
-          },
-          {
-            "UtcTime": "2011-03-13T11:00:00Z",
-            "Offset": -480
-          },
-          {
-            "UtcTime": "2011-11-06T10:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -540
           },
           {
@@ -657,6 +641,14 @@
           {
             "UtcTime": "2039-11-06T10:00:00Z",
             "Offset": -540
+          },
+          {
+            "UtcTime": "2040-03-11T11:00:00Z",
+            "Offset": -480
+          },
+          {
+            "UtcTime": "2040-11-04T10:00:00Z",
+            "Offset": -540
           }
         ],
         "TimeZoneName": "(UTC-09:00) Alaska",
@@ -673,7 +665,7 @@
         "TimeZoneId": "UTC-09",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -540
           }
         ],
@@ -687,15 +679,7 @@
         "TimeZoneId": "Yukon Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": -480
-          },
-          {
-            "UtcTime": "2011-03-13T10:00:00Z",
-            "Offset": -420
-          },
-          {
-            "UtcTime": "2011-11-06T09:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -480
           },
           {
@@ -781,15 +765,7 @@
         "TimeZoneId": "Pacific Standard Time (Mexico)",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": -480
-          },
-          {
-            "UtcTime": "2011-03-13T10:00:00Z",
-            "Offset": -420
-          },
-          {
-            "UtcTime": "2011-11-06T09:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -480
           },
           {
@@ -1014,6 +990,14 @@
           },
           {
             "UtcTime": "2039-11-06T09:00:00Z",
+            "Offset": -480
+          },
+          {
+            "UtcTime": "2040-03-11T10:00:00Z",
+            "Offset": -420
+          },
+          {
+            "UtcTime": "2040-11-04T09:00:00Z",
             "Offset": -480
           }
         ],
@@ -1029,7 +1013,7 @@
         "TimeZoneId": "UTC-08",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -480
           }
         ],
@@ -1043,15 +1027,7 @@
         "TimeZoneId": "Pacific Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": -480
-          },
-          {
-            "UtcTime": "2011-03-13T10:00:00Z",
-            "Offset": -420
-          },
-          {
-            "UtcTime": "2011-11-06T09:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -480
           },
           {
@@ -1276,6 +1252,14 @@
           },
           {
             "UtcTime": "2039-11-06T09:00:00Z",
+            "Offset": -480
+          },
+          {
+            "UtcTime": "2040-03-11T10:00:00Z",
+            "Offset": -420
+          },
+          {
+            "UtcTime": "2040-11-04T09:00:00Z",
             "Offset": -480
           }
         ],
@@ -1293,7 +1277,7 @@
         "TimeZoneId": "US Mountain Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -420
           }
         ],
@@ -1309,15 +1293,7 @@
         "TimeZoneId": "Mountain Standard Time (Mexico)",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": -420
-          },
-          {
-            "UtcTime": "2011-04-03T09:00:00Z",
-            "Offset": -360
-          },
-          {
-            "UtcTime": "2011-10-30T08:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -420
           },
           {
@@ -1419,15 +1395,7 @@
         "TimeZoneId": "Mountain Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": -420
-          },
-          {
-            "UtcTime": "2011-03-13T09:00:00Z",
-            "Offset": -360
-          },
-          {
-            "UtcTime": "2011-11-06T08:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -420
           },
           {
@@ -1653,6 +1621,14 @@
           {
             "UtcTime": "2039-11-06T08:00:00Z",
             "Offset": -420
+          },
+          {
+            "UtcTime": "2040-03-11T09:00:00Z",
+            "Offset": -360
+          },
+          {
+            "UtcTime": "2040-11-04T08:00:00Z",
+            "Offset": -420
           }
         ],
         "TimeZoneName": "(UTC-07:00) Mountain Time (US & Canada)",
@@ -1674,15 +1650,7 @@
         "TimeZoneId": "Eastern Standard Time (Mexico)",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": -360
-          },
-          {
-            "UtcTime": "2011-04-03T08:00:00Z",
-            "Offset": -300
-          },
-          {
-            "UtcTime": "2011-10-30T07:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -360
           },
           {
@@ -1723,7 +1691,7 @@
         "TimeZoneId": "Central America Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -360
           }
         ],
@@ -1743,15 +1711,7 @@
         "TimeZoneId": "Central Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": -360
-          },
-          {
-            "UtcTime": "2011-03-13T08:00:00Z",
-            "Offset": -300
-          },
-          {
-            "UtcTime": "2011-11-06T07:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -360
           },
           {
@@ -1977,6 +1937,14 @@
           {
             "UtcTime": "2039-11-06T07:00:00Z",
             "Offset": -360
+          },
+          {
+            "UtcTime": "2040-03-11T08:00:00Z",
+            "Offset": -300
+          },
+          {
+            "UtcTime": "2040-11-04T07:00:00Z",
+            "Offset": -360
           }
         ],
         "TimeZoneName": "(UTC-06:00) Central Time (US & Canada)",
@@ -2005,15 +1973,7 @@
         "TimeZoneId": "Easter Island Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": -300
-          },
-          {
-            "UtcTime": "2011-05-08T03:00:00Z",
-            "Offset": -360
-          },
-          {
-            "UtcTime": "2011-08-21T04:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -300
           },
           {
@@ -2231,6 +2191,14 @@
           {
             "UtcTime": "2039-09-04T04:00:00Z",
             "Offset": -300
+          },
+          {
+            "UtcTime": "2040-04-08T03:00:00Z",
+            "Offset": -360
+          },
+          {
+            "UtcTime": "2040-09-02T04:00:00Z",
+            "Offset": -300
           }
         ],
         "TimeZoneName": "(UTC-06:00) Easter Island",
@@ -2243,15 +2211,7 @@
         "TimeZoneId": "Central Standard Time (Mexico)",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": -360
-          },
-          {
-            "UtcTime": "2011-04-03T08:00:00Z",
-            "Offset": -300
-          },
-          {
-            "UtcTime": "2011-10-30T07:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -360
           },
           {
@@ -2357,7 +2317,7 @@
         "TimeZoneId": "Canada Central Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -360
           }
         ],
@@ -2372,7 +2332,7 @@
         "TimeZoneId": "SA Pacific Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -300
           }
         ],
@@ -2398,15 +2358,7 @@
         "TimeZoneId": "Eastern Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": -300
-          },
-          {
-            "UtcTime": "2011-03-13T07:00:00Z",
-            "Offset": -240
-          },
-          {
-            "UtcTime": "2011-11-06T06:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -300
           },
           {
@@ -2632,6 +2584,14 @@
           {
             "UtcTime": "2039-11-06T06:00:00Z",
             "Offset": -300
+          },
+          {
+            "UtcTime": "2040-03-11T07:00:00Z",
+            "Offset": -240
+          },
+          {
+            "UtcTime": "2040-11-04T06:00:00Z",
+            "Offset": -300
           }
         ],
         "TimeZoneName": "(UTC-05:00) Eastern Time (US & Canada)",
@@ -2661,7 +2621,7 @@
         "TimeZoneId": "Haiti Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -300
           },
           {
@@ -2879,6 +2839,14 @@
           {
             "UtcTime": "2039-11-06T06:00:00Z",
             "Offset": -300
+          },
+          {
+            "UtcTime": "2040-03-11T07:00:00Z",
+            "Offset": -240
+          },
+          {
+            "UtcTime": "2040-11-04T06:00:00Z",
+            "Offset": -300
           }
         ],
         "TimeZoneName": "(UTC-05:00) Haiti",
@@ -2890,15 +2858,7 @@
         "TimeZoneId": "Cuba Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": -300
-          },
-          {
-            "UtcTime": "2011-03-20T05:00:00Z",
-            "Offset": -240
-          },
-          {
-            "UtcTime": "2011-11-13T05:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -300
           },
           {
@@ -3124,6 +3084,14 @@
           {
             "UtcTime": "2039-11-06T05:00:00Z",
             "Offset": -300
+          },
+          {
+            "UtcTime": "2040-03-11T05:00:00Z",
+            "Offset": -240
+          },
+          {
+            "UtcTime": "2040-11-04T05:00:00Z",
+            "Offset": -300
           }
         ],
         "TimeZoneName": "(UTC-05:00) Havana",
@@ -3136,15 +3104,7 @@
         "TimeZoneId": "US Eastern Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": -300
-          },
-          {
-            "UtcTime": "2011-03-13T07:00:00Z",
-            "Offset": -240
-          },
-          {
-            "UtcTime": "2011-11-06T06:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -300
           },
           {
@@ -3370,6 +3330,14 @@
           {
             "UtcTime": "2039-11-06T06:00:00Z",
             "Offset": -300
+          },
+          {
+            "UtcTime": "2040-03-11T07:00:00Z",
+            "Offset": -240
+          },
+          {
+            "UtcTime": "2040-11-04T06:00:00Z",
+            "Offset": -300
           }
         ],
         "TimeZoneName": "(UTC-05:00) Indiana (East)",
@@ -3386,15 +3354,7 @@
         "TimeZoneId": "Turks And Caicos Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": -300
-          },
-          {
-            "UtcTime": "2011-03-13T07:00:00Z",
-            "Offset": -240
-          },
-          {
-            "UtcTime": "2011-11-06T06:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -300
           },
           {
@@ -3604,6 +3564,14 @@
           {
             "UtcTime": "2039-11-06T06:00:00Z",
             "Offset": -300
+          },
+          {
+            "UtcTime": "2040-03-11T07:00:00Z",
+            "Offset": -240
+          },
+          {
+            "UtcTime": "2040-11-04T06:00:00Z",
+            "Offset": -300
           }
         ],
         "TimeZoneName": "(UTC-05:00) Turks and Caicos",
@@ -3615,7 +3583,7 @@
         "TimeZoneId": "Venezuela Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -270
           },
           {
@@ -3632,15 +3600,7 @@
         "TimeZoneId": "Magallanes Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": -180
-          },
-          {
-            "UtcTime": "2011-05-08T02:59:59.999Z",
-            "Offset": -240
-          },
-          {
-            "UtcTime": "2011-08-21T03:59:59.999Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -180
           },
           {
@@ -3685,15 +3645,7 @@
         "TimeZoneId": "Paraguay Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": -180
-          },
-          {
-            "UtcTime": "2011-04-10T02:59:59.999Z",
-            "Offset": -240
-          },
-          {
-            "UtcTime": "2011-10-02T03:59:59.999Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -180
           },
           {
@@ -3810,15 +3762,7 @@
         "TimeZoneId": "Atlantic Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": -240
-          },
-          {
-            "UtcTime": "2011-03-13T06:00:00Z",
-            "Offset": -180
-          },
-          {
-            "UtcTime": "2011-11-06T05:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -240
           },
           {
@@ -4044,6 +3988,14 @@
           {
             "UtcTime": "2039-11-06T05:00:00Z",
             "Offset": -240
+          },
+          {
+            "UtcTime": "2040-03-11T06:00:00Z",
+            "Offset": -180
+          },
+          {
+            "UtcTime": "2040-11-04T05:00:00Z",
+            "Offset": -240
           }
         ],
         "TimeZoneName": "(UTC-04:00) Atlantic Time (Canada)",
@@ -4061,15 +4013,7 @@
         "TimeZoneId": "Central Brazilian Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": -180
-          },
-          {
-            "UtcTime": "2011-02-20T02:59:59.999Z",
-            "Offset": -240
-          },
-          {
-            "UtcTime": "2011-10-16T03:59:59.999Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -180
           },
           {
@@ -4143,7 +4087,7 @@
         "TimeZoneId": "SA Western Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -240
           }
         ],
@@ -4186,15 +4130,7 @@
         "TimeZoneId": "Pacific SA Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": -180
-          },
-          {
-            "UtcTime": "2011-05-08T02:59:59.999Z",
-            "Offset": -240
-          },
-          {
-            "UtcTime": "2011-08-21T03:59:59.999Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -180
           },
           {
@@ -4412,6 +4348,14 @@
           {
             "UtcTime": "2039-09-04T03:59:59.999Z",
             "Offset": -180
+          },
+          {
+            "UtcTime": "2040-04-08T02:59:59.999Z",
+            "Offset": -240
+          },
+          {
+            "UtcTime": "2040-09-02T03:59:59.999Z",
+            "Offset": -180
           }
         ],
         "TimeZoneName": "(UTC-04:00) Santiago",
@@ -4424,15 +4368,7 @@
         "TimeZoneId": "Newfoundland Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": -210
-          },
-          {
-            "UtcTime": "2011-03-13T03:31:00Z",
-            "Offset": -150
-          },
-          {
-            "UtcTime": "2011-11-06T04:30:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -210
           },
           {
@@ -4658,6 +4594,14 @@
           {
             "UtcTime": "2039-11-06T04:30:00Z",
             "Offset": -210
+          },
+          {
+            "UtcTime": "2040-03-11T05:30:00Z",
+            "Offset": -150
+          },
+          {
+            "UtcTime": "2040-11-04T04:30:00Z",
+            "Offset": -210
           }
         ],
         "TimeZoneName": "(UTC-03:30) Newfoundland",
@@ -4670,7 +4614,7 @@
         "TimeZoneId": "Tocantins Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -180
           },
           {
@@ -4691,15 +4635,7 @@
         "TimeZoneId": "E. South America Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": -120
-          },
-          {
-            "UtcTime": "2011-02-20T01:59:59.999Z",
-            "Offset": -180
-          },
-          {
-            "UtcTime": "2011-10-16T02:59:59.999Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -120
           },
           {
@@ -4773,7 +4709,7 @@
         "TimeZoneId": "SA Eastern Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -180
           }
         ],
@@ -4796,7 +4732,7 @@
         "TimeZoneId": "Argentina Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -180
           }
         ],
@@ -4827,15 +4763,7 @@
         "TimeZoneId": "Greenland Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": -180
-          },
-          {
-            "UtcTime": "2011-03-27T01:00:00Z",
-            "Offset": -120
-          },
-          {
-            "UtcTime": "2011-10-30T01:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -180
           },
           {
@@ -5057,6 +4985,14 @@
           {
             "UtcTime": "2039-10-30T01:00:00Z",
             "Offset": -120
+          },
+          {
+            "UtcTime": "2040-04-01T01:00:00Z",
+            "Offset": -60
+          },
+          {
+            "UtcTime": "2040-10-28T01:00:00Z",
+            "Offset": -120
           }
         ],
         "TimeZoneName": "(UTC-02:00) Greenland",
@@ -5068,15 +5004,7 @@
         "TimeZoneId": "Montevideo Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": -120
-          },
-          {
-            "UtcTime": "2011-03-13T04:00:00Z",
-            "Offset": -180
-          },
-          {
-            "UtcTime": "2011-10-02T05:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -120
           },
           {
@@ -5117,15 +5045,7 @@
         "TimeZoneId": "Saint Pierre Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": -180
-          },
-          {
-            "UtcTime": "2011-03-13T05:00:00Z",
-            "Offset": -120
-          },
-          {
-            "UtcTime": "2011-11-06T04:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -180
           },
           {
@@ -5351,6 +5271,14 @@
           {
             "UtcTime": "2039-11-06T04:00:00Z",
             "Offset": -180
+          },
+          {
+            "UtcTime": "2040-03-11T05:00:00Z",
+            "Offset": -120
+          },
+          {
+            "UtcTime": "2040-11-04T04:00:00Z",
+            "Offset": -180
           }
         ],
         "TimeZoneName": "(UTC-03:00) Saint Pierre and Miquelon",
@@ -5362,19 +5290,7 @@
         "TimeZoneId": "Bahia Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": -180
-          },
-          {
-            "UtcTime": "2011-10-16T02:59:59.999Z",
-            "Offset": -120
-          },
-          {
-            "UtcTime": "2012-01-01T02:00:00Z",
-            "Offset": -180
-          },
-          {
-            "UtcTime": "2012-01-01T03:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -120
           },
           {
@@ -5391,7 +5307,7 @@
         "TimeZoneId": "UTC-02",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -120
           }
         ],
@@ -5407,15 +5323,7 @@
         "TimeZoneId": "Mid-Atlantic Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": -120
-          },
-          {
-            "UtcTime": "2011-03-27T04:00:00Z",
-            "Offset": -60
-          },
-          {
-            "UtcTime": "2011-09-25T03:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -120
           },
           {
@@ -5641,6 +5549,14 @@
           {
             "UtcTime": "2039-09-25T03:00:00Z",
             "Offset": -120
+          },
+          {
+            "UtcTime": "2040-03-25T04:00:00Z",
+            "Offset": -60
+          },
+          {
+            "UtcTime": "2040-09-30T03:00:00Z",
+            "Offset": -120
           }
         ],
         "TimeZoneName": "(UTC-02:00) Mid-Atlantic - Old",
@@ -5650,15 +5566,7 @@
         "TimeZoneId": "Azores Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": -60
-          },
-          {
-            "UtcTime": "2011-03-27T01:00:00Z",
-            "Offset": 0
-          },
-          {
-            "UtcTime": "2011-10-30T01:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -60
           },
           {
@@ -5884,6 +5792,14 @@
           {
             "UtcTime": "2039-10-30T01:00:00Z",
             "Offset": -60
+          },
+          {
+            "UtcTime": "2040-03-25T01:00:00Z",
+            "Offset": 0
+          },
+          {
+            "UtcTime": "2040-10-28T01:00:00Z",
+            "Offset": -60
           }
         ],
         "TimeZoneName": "(UTC-01:00) Azores",
@@ -5896,7 +5812,7 @@
         "TimeZoneId": "Cape Verde Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": -60
           }
         ],
@@ -5910,7 +5826,7 @@
         "TimeZoneId": "UTC",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 0
           }
         ],
@@ -5926,15 +5842,7 @@
         "TimeZoneId": "GMT Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 0
-          },
-          {
-            "UtcTime": "2011-03-27T01:00:00Z",
-            "Offset": 60
-          },
-          {
-            "UtcTime": "2011-10-30T01:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 0
           },
           {
@@ -6159,6 +6067,14 @@
           },
           {
             "UtcTime": "2039-10-30T01:00:00Z",
+            "Offset": 0
+          },
+          {
+            "UtcTime": "2040-03-25T01:00:00Z",
+            "Offset": 60
+          },
+          {
+            "UtcTime": "2040-10-28T01:00:00Z",
             "Offset": 0
           }
         ],
@@ -6182,7 +6098,7 @@
         "TimeZoneId": "Greenwich Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 0
           }
         ],
@@ -6210,15 +6126,7 @@
         "TimeZoneId": "Morocco Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 0
-          },
-          {
-            "UtcTime": "2011-04-02T23:59:59.999Z",
-            "Offset": 60
-          },
-          {
-            "UtcTime": "2011-07-30T22:59:59.999Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 0
           },
           {
@@ -6440,6 +6348,14 @@
           {
             "UtcTime": "2039-02-20T02:00:00Z",
             "Offset": 60
+          },
+          {
+            "UtcTime": "2040-01-08T02:00:00Z",
+            "Offset": 0
+          },
+          {
+            "UtcTime": "2040-02-19T02:00:00Z",
+            "Offset": 60
           }
         ],
         "TimeZoneName": "(UTC+01:00) Casablanca",
@@ -6452,15 +6368,7 @@
         "TimeZoneId": "W. Europe Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 60
-          },
-          {
-            "UtcTime": "2011-03-27T01:00:00Z",
-            "Offset": 120
-          },
-          {
-            "UtcTime": "2011-10-30T01:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 60
           },
           {
@@ -6685,6 +6593,14 @@
           },
           {
             "UtcTime": "2039-10-30T01:00:00Z",
+            "Offset": 60
+          },
+          {
+            "UtcTime": "2040-03-25T01:00:00Z",
+            "Offset": 120
+          },
+          {
+            "UtcTime": "2040-10-28T01:00:00Z",
             "Offset": 60
           }
         ],
@@ -6714,15 +6630,7 @@
         "TimeZoneId": "Central Europe Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 60
-          },
-          {
-            "UtcTime": "2011-03-27T01:00:00Z",
-            "Offset": 120
-          },
-          {
-            "UtcTime": "2011-10-30T01:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 60
           },
           {
@@ -6947,6 +6855,14 @@
           },
           {
             "UtcTime": "2039-10-30T01:00:00Z",
+            "Offset": 60
+          },
+          {
+            "UtcTime": "2040-03-25T01:00:00Z",
+            "Offset": 120
+          },
+          {
+            "UtcTime": "2040-10-28T01:00:00Z",
             "Offset": 60
           }
         ],
@@ -6965,15 +6881,7 @@
         "TimeZoneId": "Romance Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 60
-          },
-          {
-            "UtcTime": "2011-03-27T01:00:00Z",
-            "Offset": 120
-          },
-          {
-            "UtcTime": "2011-10-30T01:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 60
           },
           {
@@ -7198,6 +7106,14 @@
           },
           {
             "UtcTime": "2039-10-30T01:00:00Z",
+            "Offset": 60
+          },
+          {
+            "UtcTime": "2040-03-25T01:00:00Z",
+            "Offset": 120
+          },
+          {
+            "UtcTime": "2040-10-28T01:00:00Z",
             "Offset": 60
           }
         ],
@@ -7214,15 +7130,7 @@
         "TimeZoneId": "Central European Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 60
-          },
-          {
-            "UtcTime": "2011-03-27T01:00:00Z",
-            "Offset": 120
-          },
-          {
-            "UtcTime": "2011-10-30T01:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 60
           },
           {
@@ -7448,6 +7356,14 @@
           {
             "UtcTime": "2039-10-30T01:00:00Z",
             "Offset": 60
+          },
+          {
+            "UtcTime": "2040-03-25T01:00:00Z",
+            "Offset": 120
+          },
+          {
+            "UtcTime": "2040-10-28T01:00:00Z",
+            "Offset": 60
           }
         ],
         "TimeZoneName": "(UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb",
@@ -7463,7 +7379,7 @@
         "TimeZoneId": "W. Central Africa Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 60
           }
         ],
@@ -7489,7 +7405,7 @@
         "TimeZoneId": "Libya Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 120
           },
           {
@@ -7510,15 +7426,7 @@
         "TimeZoneId": "Namibia Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 120
-          },
-          {
-            "UtcTime": "2011-04-03T00:00:00Z",
-            "Offset": 60
-          },
-          {
-            "UtcTime": "2011-09-04T01:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 120
           },
           {
@@ -7579,15 +7487,7 @@
         "TimeZoneId": "GTB Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 120
-          },
-          {
-            "UtcTime": "2011-03-27T01:00:00Z",
-            "Offset": 180
-          },
-          {
-            "UtcTime": "2011-10-30T01:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 120
           },
           {
@@ -7813,6 +7713,14 @@
           {
             "UtcTime": "2039-10-30T01:00:00Z",
             "Offset": 120
+          },
+          {
+            "UtcTime": "2040-03-25T01:00:00Z",
+            "Offset": 180
+          },
+          {
+            "UtcTime": "2040-10-28T01:00:00Z",
+            "Offset": 120
           }
         ],
         "TimeZoneName": "(UTC+02:00) Athens, Bucharest",
@@ -7827,15 +7735,7 @@
         "TimeZoneId": "Middle East Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 120
-          },
-          {
-            "UtcTime": "2011-03-26T21:59:59.999Z",
-            "Offset": 180
-          },
-          {
-            "UtcTime": "2011-10-29T20:59:59.999Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 120
           },
           {
@@ -8061,6 +7961,14 @@
           {
             "UtcTime": "2039-10-22T21:00:00Z",
             "Offset": 120
+          },
+          {
+            "UtcTime": "2040-03-24T22:00:00Z",
+            "Offset": 180
+          },
+          {
+            "UtcTime": "2040-10-27T21:00:00Z",
+            "Offset": 120
           }
         ],
         "TimeZoneName": "(UTC+02:00) Beirut",
@@ -8072,7 +7980,7 @@
         "TimeZoneId": "Egypt Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 120
           },
           {
@@ -8218,6 +8126,14 @@
           {
             "UtcTime": "2039-10-27T20:59:59.999Z",
             "Offset": 120
+          },
+          {
+            "UtcTime": "2040-04-26T22:00:00Z",
+            "Offset": 180
+          },
+          {
+            "UtcTime": "2040-10-25T20:59:59.999Z",
+            "Offset": 120
           }
         ],
         "TimeZoneName": "(UTC+02:00) Cairo",
@@ -8230,15 +8146,7 @@
         "TimeZoneId": "E. Europe Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 120
-          },
-          {
-            "UtcTime": "2011-03-27T00:00:00Z",
-            "Offset": 180
-          },
-          {
-            "UtcTime": "2011-10-30T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 120
           },
           {
@@ -8464,6 +8372,14 @@
           {
             "UtcTime": "2039-10-30T00:00:00Z",
             "Offset": 120
+          },
+          {
+            "UtcTime": "2040-03-25T00:00:00Z",
+            "Offset": 180
+          },
+          {
+            "UtcTime": "2040-10-28T00:00:00Z",
+            "Offset": 120
           }
         ],
         "TimeZoneName": "(UTC+02:00) Chisinau",
@@ -8475,15 +8391,7 @@
         "TimeZoneId": "Syria Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 120
-          },
-          {
-            "UtcTime": "2011-03-31T22:00:00Z",
-            "Offset": 180
-          },
-          {
-            "UtcTime": "2011-10-27T20:59:59.999Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 120
           },
           {
@@ -8580,15 +8488,7 @@
         "TimeZoneId": "West Bank Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 120
-          },
-          {
-            "UtcTime": "2011-03-31T21:59:59.999Z",
-            "Offset": 180
-          },
-          {
-            "UtcTime": "2011-09-15T22:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 120
           },
           {
@@ -8814,6 +8714,14 @@
           {
             "UtcTime": "2039-10-21T23:00:00Z",
             "Offset": 120
+          },
+          {
+            "UtcTime": "2040-03-31T00:00:00Z",
+            "Offset": 180
+          },
+          {
+            "UtcTime": "2040-10-26T23:00:00Z",
+            "Offset": 120
           }
         ],
         "TimeZoneName": "(UTC+02:00) Gaza, Hebron",
@@ -8826,7 +8734,7 @@
         "TimeZoneId": "South Africa Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 120
           }
         ],
@@ -8850,15 +8758,7 @@
         "TimeZoneId": "FLE Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 120
-          },
-          {
-            "UtcTime": "2011-03-27T01:00:00Z",
-            "Offset": 180
-          },
-          {
-            "UtcTime": "2011-10-30T01:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 120
           },
           {
@@ -9084,6 +8984,14 @@
           {
             "UtcTime": "2039-10-30T01:00:00Z",
             "Offset": 120
+          },
+          {
+            "UtcTime": "2040-03-25T01:00:00Z",
+            "Offset": 180
+          },
+          {
+            "UtcTime": "2040-10-28T01:00:00Z",
+            "Offset": 120
           }
         ],
         "TimeZoneName": "(UTC+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius",
@@ -9104,15 +9012,7 @@
         "TimeZoneId": "Israel Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 120
-          },
-          {
-            "UtcTime": "2011-04-01T00:00:00Z",
-            "Offset": 180
-          },
-          {
-            "UtcTime": "2011-10-01T23:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 120
           },
           {
@@ -9338,6 +9238,14 @@
           {
             "UtcTime": "2039-10-29T23:00:00Z",
             "Offset": 120
+          },
+          {
+            "UtcTime": "2040-03-30T00:00:00Z",
+            "Offset": 180
+          },
+          {
+            "UtcTime": "2040-10-27T23:00:00Z",
+            "Offset": 120
           }
         ],
         "TimeZoneName": "(UTC+02:00) Jerusalem",
@@ -9351,7 +9259,7 @@
         "TimeZoneId": "South Sudan Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 180
           },
           {
@@ -9368,11 +9276,7 @@
         "TimeZoneId": "Kaliningrad Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 120
-          },
-          {
-            "UtcTime": "2011-03-27T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 180
           },
           {
@@ -9389,7 +9293,7 @@
         "TimeZoneId": "Sudan Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 180
           },
           {
@@ -9406,15 +9310,7 @@
         "TimeZoneId": "Jordan Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 120
-          },
-          {
-            "UtcTime": "2011-03-31T21:59:59.999Z",
-            "Offset": 180
-          },
-          {
-            "UtcTime": "2011-10-27T22:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 120
           },
           {
@@ -9503,15 +9399,7 @@
         "TimeZoneId": "Turkey Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 120
-          },
-          {
-            "UtcTime": "2011-03-28T01:00:00Z",
-            "Offset": 180
-          },
-          {
-            "UtcTime": "2011-10-30T01:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 120
           },
           {
@@ -9562,11 +9450,7 @@
         "TimeZoneId": "Belarus Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 120
-          },
-          {
-            "UtcTime": "2011-03-27T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 180
           }
         ],
@@ -9579,7 +9463,7 @@
         "TimeZoneId": "Arabic Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 180
           }
         ],
@@ -9592,7 +9476,7 @@
         "TimeZoneId": "Arab Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 180
           }
         ],
@@ -9609,11 +9493,7 @@
         "TimeZoneId": "Russian Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 180
-          },
-          {
-            "UtcTime": "2011-03-26T23:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 240
           },
           {
@@ -9632,7 +9512,7 @@
         "TimeZoneId": "E. Africa Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 180
           }
         ],
@@ -9657,11 +9537,7 @@
         "TimeZoneId": "Volgograd Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 180
-          },
-          {
-            "UtcTime": "2011-03-26T23:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 240
           },
           {
@@ -9694,11 +9570,7 @@
         "TimeZoneId": "Astrakhan Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 180
-          },
-          {
-            "UtcTime": "2011-03-26T23:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 240
           },
           {
@@ -9720,11 +9592,7 @@
         "TimeZoneId": "Russia Time Zone 3",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 180
-          },
-          {
-            "UtcTime": "2011-03-26T23:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 240
           }
         ],
@@ -9737,11 +9605,7 @@
         "TimeZoneId": "Saratov Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 180
-          },
-          {
-            "UtcTime": "2011-03-26T23:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 240
           },
           {
@@ -9762,15 +9626,7 @@
         "TimeZoneId": "Iran Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 210
-          },
-          {
-            "UtcTime": "2011-03-21T20:30:00Z",
-            "Offset": 270
-          },
-          {
-            "UtcTime": "2011-09-21T19:29:59.999Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 210
           },
           {
@@ -9872,7 +9728,7 @@
         "TimeZoneId": "Arabian Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 240
           }
         ],
@@ -9887,15 +9743,7 @@
         "TimeZoneId": "Azerbaijan Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 240
-          },
-          {
-            "UtcTime": "2011-03-27T00:00:00Z",
-            "Offset": 300
-          },
-          {
-            "UtcTime": "2011-10-30T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 240
           },
           {
@@ -9940,7 +9788,7 @@
         "TimeZoneId": "Mauritius Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 240
           }
         ],
@@ -9955,7 +9803,7 @@
         "TimeZoneId": "Georgian Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 240
           }
         ],
@@ -9968,15 +9816,7 @@
         "TimeZoneId": "Caucasus Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 240
-          },
-          {
-            "UtcTime": "2011-03-26T22:00:00Z",
-            "Offset": 300
-          },
-          {
-            "UtcTime": "2011-10-29T22:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 240
           }
         ],
@@ -9989,7 +9829,7 @@
         "TimeZoneId": "Afghanistan Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 270
           }
         ],
@@ -10002,7 +9842,7 @@
         "TimeZoneId": "West Asia Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 300
           }
         ],
@@ -10027,7 +9867,7 @@
         "TimeZoneId": "Qyzylorda Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 360
           },
           {
@@ -10046,11 +9886,7 @@
         "TimeZoneId": "Ekaterinburg Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 300
-          },
-          {
-            "UtcTime": "2011-03-26T21:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 360
           },
           {
@@ -10067,7 +9903,7 @@
         "TimeZoneId": "Pakistan Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 300
           }
         ],
@@ -10080,7 +9916,7 @@
         "TimeZoneId": "India Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 330
           }
         ],
@@ -10094,7 +9930,7 @@
         "TimeZoneId": "Sri Lanka Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 330
           }
         ],
@@ -10107,7 +9943,7 @@
         "TimeZoneId": "Nepal Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 345
           }
         ],
@@ -10121,7 +9957,7 @@
         "TimeZoneId": "Central Asia Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 360
           }
         ],
@@ -10137,7 +9973,7 @@
         "TimeZoneId": "Bangladesh Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 360
           }
         ],
@@ -10153,11 +9989,7 @@
         "TimeZoneId": "Omsk Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 360
-          },
-          {
-            "UtcTime": "2011-03-26T20:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 420
           },
           {
@@ -10174,11 +10006,7 @@
         "TimeZoneId": "Altai Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 360
-          },
-          {
-            "UtcTime": "2011-03-26T20:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 420
           },
           {
@@ -10199,11 +10027,7 @@
         "TimeZoneId": "N. Central Asia Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 360
-          },
-          {
-            "UtcTime": "2011-03-26T20:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 420
           },
           {
@@ -10224,11 +10048,7 @@
         "TimeZoneId": "Tomsk Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 360
-          },
-          {
-            "UtcTime": "2011-03-26T20:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 420
           },
           {
@@ -10249,7 +10069,7 @@
         "TimeZoneId": "Myanmar Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 390
           }
         ],
@@ -10264,7 +10084,7 @@
         "TimeZoneId": "SE Asia Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 420
           }
         ],
@@ -10286,7 +10106,7 @@
         "TimeZoneId": "W. Mongolia Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 420
           },
           {
@@ -10315,11 +10135,7 @@
         "TimeZoneId": "North Asia Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 420
-          },
-          {
-            "UtcTime": "2011-03-26T19:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 480
           },
           {
@@ -10337,7 +10153,7 @@
         "TimeZoneId": "China Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 480
           }
         ],
@@ -10359,11 +10175,7 @@
         "TimeZoneId": "North Asia East Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 480
-          },
-          {
-            "UtcTime": "2011-03-26T18:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 540
           },
           {
@@ -10380,7 +10192,7 @@
         "TimeZoneId": "Singapore Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 480
           }
         ],
@@ -10400,7 +10212,7 @@
         "TimeZoneId": "W. Australia Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 480
           }
         ],
@@ -10415,7 +10227,7 @@
         "TimeZoneId": "Taipei Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 480
           }
         ],
@@ -10428,7 +10240,7 @@
         "TimeZoneId": "Ulaanbaatar Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 480
           },
           {
@@ -10459,11 +10271,7 @@
         "TimeZoneId": "Transbaikal Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 540
-          },
-          {
-            "UtcTime": "2011-03-26T17:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 600
           },
           {
@@ -10484,7 +10292,7 @@
         "TimeZoneId": "North Korea Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 540
           },
           {
@@ -10505,7 +10313,7 @@
         "TimeZoneId": "Aus Central W. Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 525
           }
         ],
@@ -10518,7 +10326,7 @@
         "TimeZoneId": "Tokyo Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 540
           }
         ],
@@ -10535,7 +10343,7 @@
         "TimeZoneId": "Korea Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 540
           }
         ],
@@ -10548,11 +10356,7 @@
         "TimeZoneId": "Yakutsk Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 540
-          },
-          {
-            "UtcTime": "2011-03-26T17:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 600
           },
           {
@@ -10570,15 +10374,7 @@
         "TimeZoneId": "Cen. Australia Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 630
-          },
-          {
-            "UtcTime": "2011-04-02T16:30:00Z",
-            "Offset": 570
-          },
-          {
-            "UtcTime": "2011-10-01T16:30:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 630
           },
           {
@@ -10804,6 +10600,14 @@
           {
             "UtcTime": "2039-10-01T16:30:00Z",
             "Offset": 630
+          },
+          {
+            "UtcTime": "2040-03-31T16:30:00Z",
+            "Offset": 570
+          },
+          {
+            "UtcTime": "2040-10-06T16:30:00Z",
+            "Offset": 630
           }
         ],
         "TimeZoneName": "(UTC+09:30) Adelaide",
@@ -10818,7 +10622,7 @@
         "TimeZoneId": "AUS Central Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 570
           }
         ],
@@ -10832,7 +10636,7 @@
         "TimeZoneId": "E. Australia Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 600
           }
         ],
@@ -10847,15 +10651,7 @@
         "TimeZoneId": "AUS Eastern Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 660
-          },
-          {
-            "UtcTime": "2011-04-02T16:00:00Z",
-            "Offset": 600
-          },
-          {
-            "UtcTime": "2011-10-01T16:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 660
           },
           {
@@ -11081,6 +10877,14 @@
           {
             "UtcTime": "2039-10-01T16:00:00Z",
             "Offset": 660
+          },
+          {
+            "UtcTime": "2040-03-31T16:00:00Z",
+            "Offset": 600
+          },
+          {
+            "UtcTime": "2040-10-06T16:00:00Z",
+            "Offset": 660
           }
         ],
         "TimeZoneName": "(UTC+10:00) Canberra, Melbourne, Sydney",
@@ -11097,7 +10901,7 @@
         "TimeZoneId": "West Pacific Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 600
           }
         ],
@@ -11116,15 +10920,7 @@
         "TimeZoneId": "Tasmania Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 660
-          },
-          {
-            "UtcTime": "2011-04-02T16:00:00Z",
-            "Offset": 600
-          },
-          {
-            "UtcTime": "2011-10-01T16:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 660
           },
           {
@@ -11350,6 +11146,14 @@
           {
             "UtcTime": "2039-10-01T16:00:00Z",
             "Offset": 660
+          },
+          {
+            "UtcTime": "2040-03-31T16:00:00Z",
+            "Offset": 600
+          },
+          {
+            "UtcTime": "2040-10-06T16:00:00Z",
+            "Offset": 660
           }
         ],
         "TimeZoneName": "(UTC+10:00) Hobart",
@@ -11364,11 +11168,7 @@
         "TimeZoneId": "Vladivostok Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 600
-          },
-          {
-            "UtcTime": "2011-03-26T16:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 660
           },
           {
@@ -11386,7 +11186,7 @@
         "TimeZoneId": "Bougainville Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 600
           },
           {
@@ -11403,11 +11203,7 @@
         "TimeZoneId": "Magadan Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 660
-          },
-          {
-            "UtcTime": "2011-03-26T15:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 720
           },
           {
@@ -11428,11 +11224,7 @@
         "TimeZoneId": "Sakhalin Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 600
-          },
-          {
-            "UtcTime": "2011-03-26T16:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 660
           },
           {
@@ -11453,15 +11245,7 @@
         "TimeZoneId": "Lord Howe Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 660
-          },
-          {
-            "UtcTime": "2011-04-02T15:00:00Z",
-            "Offset": 630
-          },
-          {
-            "UtcTime": "2011-10-01T15:30:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 660
           },
           {
@@ -11687,6 +11471,14 @@
           {
             "UtcTime": "2039-10-01T15:30:00Z",
             "Offset": 660
+          },
+          {
+            "UtcTime": "2040-03-31T15:00:00Z",
+            "Offset": 630
+          },
+          {
+            "UtcTime": "2040-10-06T15:30:00Z",
+            "Offset": 660
           }
         ],
         "TimeZoneName": "(UTC+10:30) Lord Howe Island",
@@ -11699,11 +11491,7 @@
         "TimeZoneId": "Russia Time Zone 10",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 660
-          },
-          {
-            "UtcTime": "2011-03-26T15:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 720
           },
           {
@@ -11720,7 +11508,7 @@
         "TimeZoneId": "Norfolk Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 690
           },
           {
@@ -11890,6 +11678,14 @@
           {
             "UtcTime": "2039-10-01T15:00:00Z",
             "Offset": 720
+          },
+          {
+            "UtcTime": "2040-03-31T15:00:00Z",
+            "Offset": 660
+          },
+          {
+            "UtcTime": "2040-10-06T15:00:00Z",
+            "Offset": 720
           }
         ],
         "TimeZoneName": "(UTC+11:00) Norfolk Island",
@@ -11901,7 +11697,7 @@
         "TimeZoneId": "Central Pacific Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 660
           }
         ],
@@ -11920,11 +11716,7 @@
         "TimeZoneId": "Russia Time Zone 11",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 660
-          },
-          {
-            "UtcTime": "2011-03-26T15:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 720
           }
         ],
@@ -11938,15 +11730,7 @@
         "TimeZoneId": "New Zealand Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 780
-          },
-          {
-            "UtcTime": "2011-04-02T14:00:00Z",
-            "Offset": 720
-          },
-          {
-            "UtcTime": "2011-09-24T14:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 780
           },
           {
@@ -12172,6 +11956,14 @@
           {
             "UtcTime": "2039-09-24T14:00:00Z",
             "Offset": 780
+          },
+          {
+            "UtcTime": "2040-03-31T14:00:00Z",
+            "Offset": 720
+          },
+          {
+            "UtcTime": "2040-09-29T14:00:00Z",
+            "Offset": 780
           }
         ],
         "TimeZoneName": "(UTC+12:00) Auckland, Wellington",
@@ -12185,7 +11977,7 @@
         "TimeZoneId": "UTC+12",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 720
           }
         ],
@@ -12205,15 +11997,7 @@
         "TimeZoneId": "Fiji Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 780
-          },
-          {
-            "UtcTime": "2011-03-05T14:00:00Z",
-            "Offset": 720
-          },
-          {
-            "UtcTime": "2011-10-22T14:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 780
           },
           {
@@ -12302,15 +12086,7 @@
         "TimeZoneId": "Kamchatka Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 720
-          },
-          {
-            "UtcTime": "2011-03-26T14:00:00Z",
-            "Offset": 780
-          },
-          {
-            "UtcTime": "2011-10-29T14:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 720
           },
           {
@@ -12536,6 +12312,14 @@
           {
             "UtcTime": "2039-10-29T14:00:00Z",
             "Offset": 720
+          },
+          {
+            "UtcTime": "2040-03-24T14:00:00Z",
+            "Offset": 780
+          },
+          {
+            "UtcTime": "2040-10-27T14:00:00Z",
+            "Offset": 720
           }
         ],
         "TimeZoneName": "(UTC+12:00) Petropavlovsk-Kamchatsky - Old",
@@ -12545,15 +12329,7 @@
         "TimeZoneId": "Chatham Islands Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
-            "Offset": 825
-          },
-          {
-            "UtcTime": "2011-04-02T14:00:00Z",
-            "Offset": 765
-          },
-          {
-            "UtcTime": "2011-09-24T14:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 825
           },
           {
@@ -12779,6 +12555,14 @@
           {
             "UtcTime": "2039-09-24T14:00:00Z",
             "Offset": 825
+          },
+          {
+            "UtcTime": "2040-03-31T14:00:00Z",
+            "Offset": 765
+          },
+          {
+            "UtcTime": "2040-09-29T14:00:00Z",
+            "Offset": 825
           }
         ],
         "TimeZoneName": "(UTC+12:45) Chatham Islands",
@@ -12790,7 +12574,7 @@
         "TimeZoneId": "UTC+13",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 780
           }
         ],
@@ -12805,7 +12589,7 @@
         "TimeZoneId": "Tonga Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 780
           },
           {
@@ -12826,7 +12610,7 @@
         "TimeZoneId": "Line Islands Standard Time",
         "OffsetRanges": [
           {
-            "UtcTime": "2011-01-01T00:00:00Z",
+            "UtcTime": "2012-01-01T00:00:00Z",
             "Offset": 840
           }
         ],

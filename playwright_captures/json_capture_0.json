@@ -3,8 +3,8 @@
     "ServerVersionInfo": {
       "MajorVersion": 15,
       "MinorVersion": 20,
-      "MajorBuildNumber": 9412,
-      "MinorBuildNumber": 12,
+      "MajorBuildNumber": 9456,
+      "MinorBuildNumber": 13,
       "Version": "V2018_01_18"
     }
   },
@@ -13,12 +13,12 @@
       "__type": "CalendarFolder:#Exchange",
       "FolderId": {
         "__type": "FolderId:#Exchange",
-        "Id": "AAMkADE3Mzg2MmI5LTgwMTAtNDUzMi05NmYyLWE2OTdlNDVmM2IxZQAuAAAAAADli1ASFwcmSq0Tt1dY3y17AQAdqydNOrgnQ7hsdNYiARn6AADQJt+yAAA=",
+        "Id": "AAMkADdlYWU3NzAyLWRkZmYtNDE4ZC1iZjlhLWEwZTgwMmQ5NDNmNAAuAAAAAAAqaN7mkKeeQIShS3M8ztuEAQAevbZTnpOlSYOkK90O01zvAAuK3lThAAA=",
         "ChangeKey": "AgAAAA=="
       },
       "Charm": "None",
       "FolderClass": "IPF.Appointment",
-      "DisplayName": "Orar Anul 3 EN - Calculatoare",
+      "DisplayName": "2025-2026 Fall Session AC Computer Science",
       "ChildFolderCount": 0,
       "EffectiveRights": {
         "CreateAssociated": false,
@@ -142,15 +142,7 @@
             "TimeZoneId": "GTB Standard Time",
             "OffsetRanges": [
               {
-                "UtcTime": "2023-01-01T00:00:00Z",
-                "Offset": 120
-              },
-              {
-                "UtcTime": "2023-03-26T01:00:00Z",
-                "Offset": 180
-              },
-              {
-                "UtcTime": "2023-10-29T01:00:00Z",
+                "UtcTime": "2024-01-01T00:00:00Z",
                 "Offset": 120
               },
               {
@@ -191,6 +183,14 @@
               },
               {
                 "UtcTime": "2028-10-29T01:00:00Z",
+                "Offset": 120
+              },
+              {
+                "UtcTime": "2029-03-25T01:00:00Z",
+                "Offset": 180
+              },
+              {
+                "UtcTime": "2029-10-28T01:00:00Z",
                 "Offset": 120
               }
             ],
@@ -278,7 +278,6 @@
         "PreferAccessibleContent": false,
         "FavoriteTimezonesForDisplay": null,
         "ClientTypeOptInState": 0,
-        "TasksClientTypeOptInState": 0,
         "ReactOptinSettings": null,
         "AgendaPaneEnabled": true,
         "IsPermanentlyOptedIn": false,
@@ -320,7 +319,7 @@
         "BirthdayPrecision": null,
         "BposCompanyName": null,
         "CompanyName": null,
-        "UserDisplayName": "Norina Elvira Herki",
+        "UserDisplayName": "Adrian Petru Groza",
         "UserPrincipalName": null,
         "UserEmailAddress": null,
         "UserLegacyExchangeDN": null,
@@ -345,7 +344,7 @@
         "DefaultFolderIds": [
           {
             "__type": "FolderId:#Exchange",
-            "Id": "AAMkADE3Mzg2MmI5LTgwMTAtNDUzMi05NmYyLWE2OTdlNDVmM2IxZQAuAAAAAADli1ASFwcmSq0Tt1dY3y17AQAdqydNOrgnQ7hsdNYiARn6AADQJt+yAAA=",
+            "Id": "AAMkADdlYWU3NzAyLWRkZmYtNDE4ZC1iZjlhLWEwZTgwMmQ5NDNmNAAuAAAAAAAqaN7mkKeeQIShS3M8ztuEAQAevbZTnpOlSYOkK90O01zvAAuK3lThAAA=",
             "ChangeKey": "AgAAAA=="
           }
         ],

@@ -3,61 +3,25 @@
     "ServerVersionInfo": {
       "MajorVersion": 15,
       "MinorVersion": 20,
-      "MajorBuildNumber": 9412,
-      "MinorBuildNumber": 12,
+      "MajorBuildNumber": 9456,
+      "MinorBuildNumber": 13,
       "Version": "V2018_01_18"
     }
   },
   "Body": {
-    "__type": "GetItemResponse:#Exchange",
+    "__type": "FindItemResponse:#Exchange",
     "ResponseMessages": {
       "Items": [
         {
-          "__type": "ItemInfoResponseMessage:#Exchange",
-          "Items": [
-            {
-              "__type": "CalendarItem:#Exchange",
-              "ItemId": {
-                "__type": "ItemId:#Exchange",
-                "ChangeKey": "DwAAABYAAAAdqydNOrgnQ7hsdNYiARn6AADPzB1j",
-                "Id": "AAMkADE3Mzg2MmI5LTgwMTAtNDUzMi05NmYyLWE2OTdlNDVmM2IxZQFRAAgI3jw2DlwAAEYAAAAA5YtQEhcHJkqtE7dXWN8tewcAHasnTTq4J0O4bHTWIgEZ+gAA0CbfsgAAHasnTTq4J0O4bHTWIgEZ+gAA0CcO3AAAEA=="
-              },
-              "ParentFolderId": {
-                "__type": "FolderId:#Exchange",
-                "Id": "AAMkADE3Mzg2MmI5LTgwMTAtNDUzMi05NmYyLWE2OTdlNDVmM2IxZQAuAAAAAADli1ASFwcmSq0Tt1dY3y17AQAdqydNOrgnQ7hsdNYiARn6AADQJt+yAAA=",
-                "ChangeKey": "AQAAAA=="
-              },
-              "Start": "2025-12-16T08:00:00+02:00",
-              "End": "2025-12-16T10:00:00+02:00",
-              "Subject": "GP 105 [In-person]",
-              "Sensitivity": "Normal",
-              "IsAllDayEvent": false,
-              "Body": {
-                "BodyType": "HTML",
-                "Value": "",
-                "IsTruncated": false
-              },
-              "FreeBusyType": "Busy",
-              "IsCancelled": false,
-              "CalendarItemType": "Occurrence",
-              "Location": {
-                "DisplayName": "utcn_room_ac_doro_105@campus.utcluj.ro",
-                "PostalAddress": {
-                  "Street": null,
-                  "City": null,
-                  "State": null,
-                  "Country": null,
-                  "PostalCode": null,
-                  "PostOfficeBox": null,
-                  "Type": "Home",
-                  "LocationSource": "None"
-                },
-                "IdType": "Unknown",
-                "LocationType": "Unknown"
-              },
-              "Charm": "None"
-            }
-          ],
+          "__type": "FindItemResponseMessage:#Exchange",
+          "RootFolder": {
+            "__type": "FindItemParentWrapper:#Exchange",
+            "Items": [],
+            "Groups": null,
+            "TotalItemsInView": 0,
+            "IncludesLastItemInRange": true
+          },
+          "HighlightTerms": null,
           "ResponseCode": "NoError",
           "ResponseClass": "Success"
         }
