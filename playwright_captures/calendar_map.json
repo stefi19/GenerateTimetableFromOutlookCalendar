@@ -2,6 +2,11 @@
   "a7788ebf": {
     "url": "https://outlook.office365.com/calendar/published/173862b98010453296f2a697e45f3b1e@campus.utcluj.ro/daeb64d4bd994c52b4f54d04ba1940ca2236386271423118770/calendar.html",
     "name": "AC - Year 3 - CTI English ",
-    "color": null
+    "color": "#e83e8c"
+  },
+  "f33d2fb6": {
+    "url": "https://outlook.office365.com/owa/calendar/7eae7702ddff418dbf9aa0e802d943f4@campus.utcluj.ro/f121b4583f9c4fc48d98b75d700eca0811508330940505534286/calendar.html",
+    "name": "Exam Sessions",
+    "color": "#fd7e14"
   }
 }

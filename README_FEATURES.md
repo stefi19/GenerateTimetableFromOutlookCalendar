@@ -1,144 +1,217 @@
-# Features — Outlook published calendar timetable viewer
+# Features — AC UTCN Timetable Viewer
 
-This document lists the current features of the project and short descriptions for each.
+This document provides a detailed breakdown of all implemented features and the technical architecture.
 
 ## Overview
-The app ingests events from Outlook "published calendar" pages (or uploaded .ics feeds),
-normalizes subjects and room/location names, persists configured calendars and user-added
-events, and exposes a small admin UI and a number of public views (schedule, departures,
-events API). It contains tools that use Playwright when client-side rendering is required.
 
-## Features
+The app is a complete timetable management system with:
+- **React SPA Frontend** — Modern single-page application with Schedule, Departures, and Admin views
+- **Flask Backend** — REST API and calendar extraction pipeline
+- **SQLite Persistence** — Reliable data storage for calendars and events
+- **Playwright Extraction** — Automated scraping of client-side rendered calendar pages
 
-- Schedule view (`/schedule`)
-  - Full timetable view built from imported events and manual/extracurricular events.
-  - Filter by subject, professor, and room.
-  - Shows a 7-day default range (configurable via query params).
+## Implemented Features
 
-- Departures / Board view (`/departures`)
-  - Departure-board style UI showing events for today and tomorrow grouped by building.
-  - Includes manual and extracurricular events (persisted in DB).
-  - Useful for large display screens (lecture halls/entrances).
+### 🎨 React SPA Frontend (`/app`)
 
-- Admin UI (`/admin`)
-  - Add / persist Published Calendar URLs.
-  - Optional friendly name and color per calendar for UI identification.
-  - Trigger an immediate import (extractor runs in background).
-  - Add manual events (persisted in DB and appended to `playwright_captures/events.json`).
-  - Manage extracurricular events (add/delete) persisted in DB.
-  - Delete configured calendars and manual/extracurricular events from the DB.
+The main user interface is a React single-page application built with Vite.
 
-- Persistence (SQLite DB)
-  - `data/app.db` stores configured calendars, manual events and extracurricular events.
-  - Migration helpers: legacy JSON config files (from `config/` or `playwright_captures/`) are
-    migrated into the DB via `migrate_from_files()`.
+| Component | File | Description |
+|-----------|------|-------------|
+| **App** | `App.jsx` | Main container with tabbed navigation and live clock |
+| **Schedule** | `Schedule.jsx` | Weekly timetable with day grouping and event cards |
+| **Departures** | `Departures.jsx` | Departure-board style view for displays |
+| **Admin** | `Admin.jsx` | Calendar and event management panel |
 
-- Playwright-backed extractor
-  - Uses Playwright to fully render published calendar pages that are client-side rendered
-    and extract `.ics` links or network responses.
-  - Fallback parsing: if no `.ics` is available, the extractor attempts to parse microformats
-    (hCalendar / vevent) and other heuristics.
-  - Extracted events are written to `playwright_captures/events.json` and supporting files
-    such as `schedule_by_room.json` / `.csv` and `calendar_full.ics`.
+**UI Features:**
+- Live clock with real-time updates (second precision)
+- UTCN branding with university header
+- Responsive tabbed navigation
+- Event cards with visual styling
+- Date-based grouping for schedule view
 
-- Subject and location normalization
-  - A subject parser attempts to normalize event titles into a subject name, display title,
-    and professor where possible. This improves UI grouping and filtering.
-  - Room/location normalization maps Outlook locations into canonical building/room codes.
+### 📅 Schedule View
 
-- Events API (`/events.json`)
-  - Returns a flattened list of events suitable for FullCalendar or other API consumers.
-  - Supports `from`, `to`, `subject`, `professor` and `room` query filters.
+- Full timetable built from imported + manual + extracurricular events
+- Events grouped by day with clear date headers
+- Event cards showing:
+  - Time range (start - end)
+  - Event title/subject
+  - Location/room
+  - Professor (when parsed)
+- Supports query parameter filtering (subject, professor, room, date range)
+- 7-day default range (configurable)
 
-- Periodic importer / background fetcher
-  - Background thread that performs an initial import on startup and repeats every 60
-    minutes (configurable by editing `app.py`).
-  - Avoids overlapping runs with an internal lock.
+### 🚀 Departures / Board View
 
-- Manual and extracurricular events
-  - Manual events (added from Admin) are persisted and appear in `events.json` and UI views.
-  - Extracurricular events are stored in DB (or legacy `config/extracurricular_events.json`)
-    and are shown in the `Events` UI and departures view.
+- Departure-board style UI optimized for large displays
+- Shows events for today and tomorrow
+- Grouped by building/location
+- Includes all event types (imported, manual, extracurricular)
+- Auto-refreshing display suitable for lobby screens
 
-- UI templates
-  - Jinja2 templates for schedule, departures, admin, extracurricular and small JS helpers.
-  - Admin UI shows color swatches and uses fetch/XHR endpoints returning JSON for smooth
-    button actions (delete/import/etc.).
+### ⚙️ Admin Panel
 
-- Setup automation (`setup.sh`)
-  - Script to create `.venv`, install `requirements.txt`, install Playwright browsers, and
-    initialize the DB (runs `init_db()` and `migrate_from_files()`).
+| Feature | Description |
+|---------|-------------|
+| Add Calendar URL | Save published Outlook calendar with optional name and color |
+| Import Now | Trigger immediate calendar extraction (background Playwright) |
+| Delete Calendar | Remove calendar configuration from database |
+| Add Manual Event | Create one-time event with custom details |
+| Add Extracurricular | Add recurring activities (clubs, sports) |
+| Delete Events | Remove manual or extracurricular events |
+| Color Swatches | Visual color indicators for each calendar source |
 
-- Clean workspace & UX helpers
-  - `playwright_captures/` contains extractor outputs; noisy temporary capture files are
-    ignored via `.gitignore`.
-  - `server.log` is used when running the app via `nohup` or background runs.
+### 💾 Persistence (SQLite)
 
-## Admin / Developer notes
+Database location: `data/app.db`
 
-- Playwright: browser downloads are large; `setup.sh` installs them automatically but this
-  step can take time and network bandwidth.
-- The app is tested with Python 3.10+ (3.14 used during development). Use an isolated venv
-  to avoid dependency conflicts.
-- Committing a full virtualenv is intentionally avoided — use `setup.sh` to bootstrap the
-  environment quickly. If you need a prebuilt environment for offline distribution, consider
-  using an archive or release asset.
+**Tables:**
+```sql
+calendars (id, url, name, color, enabled, created_at, last_fetched)
+manual_events (id, start, end, title, location, raw, created_at)
+extracurricular_events (id, title, organizer, date, time, location, category, description, created_at)
+```
+
+**Features:**
+- Automatic migration from legacy JSON config files
+- Transaction-safe operations
+- Concurrent access handling
+
+### 🎭 Playwright-Backed Extractor
+
+- Renders client-side JavaScript pages in headless Chromium
+- Captures network responses for calendar data
+- Extracts `.ics` links from DOM
+- Fallback parsing for microformats (hCalendar/vevent)
+- Outputs to `playwright_captures/events.json`
+
+### 📝 Subject & Location Normalization
+
+- Parses event titles into structured components:
+  - Subject name
+  - Display title
+  - Professor name
+- Room/location mapping via `config/room_aliases.json`
+- Improves filtering and UI grouping
+
+### 🔌 Events API
+
+**Endpoint:** `GET /events.json`
+
+**Query Parameters:**
+| Param | Type | Description |
+|-------|------|-------------|
+| `from` | date | Start date filter (YYYY-MM-DD) |
+| `to` | date | End date filter (YYYY-MM-DD) |
+| `subject` | string | Filter by subject |
+| `professor` | string | Filter by professor |
+| `room` | string | Filter by room |
+
+**Response:** JSON array of event objects suitable for FullCalendar or custom UIs.
+
+### ⏰ Periodic Background Importer
+
+- Background thread started on app launch
+- Initial import runs immediately (no delay)
+- Subsequent runs every 60 minutes
+- Internal lock prevents overlapping runs
+- Configurable interval in `app.py`
+
+### 🎨 Per-Calendar Colors
+
+- Optional hex color assignment for each calendar source
+- Color displayed as swatch in Admin UI
+- Can be used for visual differentiation in schedule view
+
+### 🔧 Setup Automation
+
+**`setup.sh`** performs full bootstrap:
+1. Creates `.venv` virtual environment
+2. Installs Python dependencies from `requirements.txt`
+3. Installs Playwright browsers (Chromium)
+4. Initializes SQLite database
+5. Migrates legacy JSON configs to database
+
+**`run.sh`** quick start script:
+1. Activates virtual environment
+2. Ensures dependencies are installed
+3. Starts Flask development server
+
+### 📁 Clean Workspace
+
+- `playwright_captures/` contains extractor outputs
+- Temporary/noisy files excluded via `.gitignore`
+- `server.log` for background execution logging
+
+## Technical Architecture
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                     React SPA Frontend                       │
+│  ┌──────────┐  ┌──────────────┐  ┌─────────┐               │
+│  │ Schedule │  │  Departures  │  │  Admin  │               │
+│  └──────────┘  └──────────────┘  └─────────┘               │
+└─────────────────────────┬───────────────────────────────────┘
+                          │ HTTP/JSON
+┌─────────────────────────▼───────────────────────────────────┐
+│                     Flask Backend                            │
+│  ┌──────────────┐  ┌───────────────┐  ┌─────────────────┐  │
+│  │  Events API  │  │  Admin Routes │  │ Periodic Import │  │
+│  └──────────────┘  └───────────────┘  └─────────────────┘  │
+└─────────────────────────┬───────────────────────────────────┘
+                          │
+┌─────────────────────────▼───────────────────────────────────┐
+│                   Data Layer                                 │
+│  ┌────────────────┐  ┌──────────────────────────────────┐  │
+│  │ SQLite (app.db)│  │ playwright_captures/events.json  │  │
+│  └────────────────┘  └──────────────────────────────────┘  │
+└─────────────────────────────────────────────────────────────┘
+                          │
+┌─────────────────────────▼───────────────────────────────────┐
+│               Playwright Extractor                           │
+│  ┌──────────────────┐  ┌────────────────────────────────┐  │
+│  │ Headless Browser │  │ .ics Parser / Microformat      │  │
+│  └──────────────────┘  └────────────────────────────────┘  │
+└─────────────────────────────────────────────────────────────┘
+```
 
 ## Troubleshooting
 
-- If the extractor fails due to Playwright lifecycle or OS dependencies, run the extractor
-  manually from `tools/extract_published_events.py` and inspect `playwright_captures/*.stderr.txt`.
-- If DB migration fails, check `data/app.db` permissions and any legacy JSON files under `config/`.
+| Issue | Solution |
+|-------|----------|
+| Playwright lifecycle errors | Run extractor manually: `python tools/extract_published_events.py` and check `*.stderr.txt` |
+| DB migration fails | Check `data/app.db` permissions and legacy JSON in `config/` |
+| Import hangs | Check network connectivity to calendar URLs |
+| Events not appearing | Verify `playwright_captures/events.json` contains data |
 
 ---
-<!-- Removed: optional extension offer removed per request -->
 
-## Planned features / Roadmap
+## Planned Features / Roadmap
 
-Below are the features you've asked for and suggested approaches to implement them.
+### 🔐 Password-Protected Admin Access
 
-- Per-calendar colors (UI)
-  - Description: allow each configured calendar to have an independent color swatch that is
-    used throughout the UI (schedule, admin lists, compact views) so users can visually
-    distinguish events from different sources more easily.
-  - Implementation notes: the DB already stores an optional `color` field for calendars —
-    ensure the admin UI exposes a color picker when adding/editing a calendar and propagate
-    the color into schedule rendering (add CSS variables or inline style attributes).
+- Restrict Admin panel behind authentication
+- Flask sessions with secure password hash
+- Optional multi-user with roles (admin, professor)
+- Implementation: `users` table + Flask-Login + login_required decorator
 
-- Password-protected Admin and Professor access
-  - Description: restrict the Admin panel (and optionally special professor-only actions)
-    behind an authentication layer (username/password). Professors would have restricted
-    capabilities compared to Admin (for example: view-only or event suggestions).
-  - Implementation notes: implement a simple authentication system using Flask sessions and
-    a secure password hash stored in the DB or environment variable for a single admin user.
-    For a multi-user solution, add a `users` table (id, username, password_hash, role,
-    created_at) and use Flask-Login (or a lightweight JWT approach) for sessions. Protect
-    all `@app.route('/admin')` endpoints with a login_required decorator and add login/logout
-    views. Use TLS (HTTPS) in production and rate-limit login attempts.
+### ☁️ Hosted Central Server + Sync
 
-- Hosted central server + local DB + real-time sync to devices
-  - Description: run a central hosted server (cloud or on-prem) that holds the canonical
-    data store and serves the web app. Each device running the app keeps a local DB copy
-    (SQLite) for offline resilience and receives updates in near-real-time so multiple
-    displays/devices stay synchronized.
-  - Implementation notes / options:
-    - Simple approach: central REST API + WebSocket push
-      - Host a central server with the canonical `app.db` and expose REST endpoints for
-        calendar management, events, and exports. Devices run the same app but in client
-        mode: they fetch data via the API and subscribe to a WebSocket channel for live
-        updates (server pushes a small event payload when calendars/events change).
-      - Devices maintain a local SQLite cache that is refreshed when updates arrive.
-    - Offline-first / syncable DB approach (CouchDB / PouchDB)
-      - Use CouchDB on the server and PouchDB in the browser or a lightweight local
-        replication client on devices. PouchDB/CouchDB handle replication and conflict
-        resolution automatically and are a good fit when full offline writes are required.
-    - Two-way sync considerations
-      - Implement conflict handling (last-write-wins or explicit merge UI) and provide
-        optimistic updates in the UI. Use change feeds (Postgres logical decoding, CouchDB
-        _changes, or Redis streams) to broadcast updates.
-    - Security & scaling
-      - Use HTTPS, authenticate devices (API keys / OAuth2 / JWT), and rate-limit APIs.
-      - For many devices, scale the WebSocket layer via a message broker (Redis pub/sub,
-        Kafka) and horizontally scaled web nodes.
+- Central hosted server with canonical database
+- Local DB copies on devices for offline resilience
+- Real-time sync via WebSocket push
+- Options:
+  - REST API + WebSocket channel
+  - CouchDB/PouchDB for offline-first sync
+  - Redis pub/sub for scaling
 
-<!-- Removed: roadmap staging suggestion per request -->
+### 👨‍🏫 Professor-Specific Views
+
+- Restricted capabilities compared to Admin
+- View-only or event suggestion features
+- Personal schedule filtering
+
+---
+
+**Last Updated**: January 2026

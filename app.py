@@ -40,116 +40,13 @@ def group_events(events: List[Event], from_date: date, to_date: date):
 
 @app.route("/", methods=["GET"])
 def index():
-    # Redirect root to the schedule view — we no longer show the URL upload page
-    return redirect(url_for('schedule_view'))
+    # Redirect root to the React SPA frontend
+    return redirect(url_for('spa_index'))
 
 
-@app.route("/fetch", methods=["POST"])
-def fetch_route():
-    url = request.form.get("url", "").strip()
-    days = int(request.form.get("days") or 7)
-    from_s = request.form.get("from")
-    to_s = request.form.get("to")
-
-    today = date.today()
-    if from_s:
-        from_date = date.fromisoformat(from_s)
-    else:
-        from_date = today
-    if to_s:
-        to_date = date.fromisoformat(to_s)
-    else:
-        to_date = from_date + timedelta(days=days - 1)
-
-    events: List[Event] = []
-
-    # If file uploaded, parse it
-    ics_file = request.files.get("icsfile")
-    if ics_file and ics_file.filename:
-        content = ics_file.read().decode("utf-8")
-        try:
-            # parse via parse_ics_from_url by saving temp file and calling it
-            tf = tempfile.NamedTemporaryFile(delete=False, suffix=".ics")
-            tf.write(content.encode("utf-8"))
-            tf.close()
-            # reuse parse_ics_from_url by passing file:// path won't work; instead, parse here
-            events = parse_ics_direct(content)
-        finally:
-            try:
-                os.unlink(tf.name)
-            except Exception:
-                pass
-    elif url:
-        render_flag = bool(request.form.get("render"))
-
-        diagnostics = {}
-        if render_flag:
-            # Try headless render to find .ics or calendar network responses
-            try:
-                ics_candidates, saved_files = render_and_find_ics(url)
-            except Exception as e:
-                return render_template("results.html", error=f"Render failed: {e}")
-
-            # try each candidate
-            diagnostics["candidates"] = ics_candidates
-            diagnostics["saved_files"] = saved_files
-            for cand in ics_candidates:
-                try:
-                    events = parse_ics_from_url(cand, verbose=True)
-                    diagnostics["used_candidate"] = cand
-                    break
-                except Exception:
-                    events = []
-
-            if not events:
-                # fetch static HTML as fallback
-                try:
-                    html = fetch(url)
-                except Exception as e:
-                    return render_template("results.html", error=f"Failed to fetch URL: {e}")
-                events = parse_microformat_vevents(html)
-                # include last response file if it exists
-                if os.path.exists("last_ics_response.html"):
-                    diagnostics["last_response_file"] = "last_ics_response.html"
-        else:
-            try:
-                html = fetch(url)
-            except Exception as e:
-                return render_template("results.html", error=f"Failed to fetch URL: {e}")
-
-            ics_url = find_ics_url_from_html(html, url)
-            if ics_url:
-                try:
-                    events = parse_ics_from_url(ics_url, verbose=True)
-                except Exception:
-                    # fallback
-                    events = parse_microformat_vevents(html)
-            else:
-                events = parse_microformat_vevents(html)
-    else:
-        return redirect(url_for("index"))
-
-    grouped = group_events(events, from_date, to_date)
-    # Apply subject parsing to events so templates can show cleaned/display titles
-    try:
-        from tools.subject_parser import parse_title
-        for day, evs in grouped.items():
-            for ev in evs:
-                try:
-                    parsed = parse_title(ev.title or '')
-                    # attach display_title and subject to Event instance for templates
-                    setattr(ev, 'display_title', parsed.display_title)
-                    setattr(ev, 'subject', parsed.subject_name)
-                    # if professor not set, use parsed professor
-                    if not getattr(ev, 'professor', None) and parsed.professor:
-                        setattr(ev, 'professor', parsed.professor)
-                except Exception:
-                    setattr(ev, 'display_title', ev.title)
-                    setattr(ev, 'subject', '')
-    except Exception:
-        # parser not available — ignore
-        pass
-    return render_template("results.html", grouped=grouped, from_date=from_date, to_date=to_date, diagnostics=diagnostics)
+# OLD FRONTEND ROUTE - DISABLED (use /app for React SPA)
+# @app.route("/fetch", methods=["POST"])
+# def fetch_route(): ... (removed - old Jinja frontend)
 
 
 def parse_ics_direct(text: str) -> List[Event]:
@@ -301,10 +198,8 @@ def ensure_schedule(from_date: date, to_date: date):
         merged_path = out_dir / 'events.json'
         # find per-calendar files
         parts = list(out_dir.glob('events_*.json'))
-        # include untagged events.json if present
-        generic = out_dir / 'events.json'
-        if generic.exists():
-            parts.insert(0, generic)
+        # DON'T include the generic events.json as it's the output file
+        # and processing it first would prevent newer events with colors from being added
         merged = []
         seen = set()
         if parts:
@@ -341,13 +236,13 @@ def ensure_schedule(from_date: date, to_date: date):
                     except Exception:
                         pass
                     merged.append(it)
-            # save merged file
-            try:
-                out_dir.mkdir(parents=True, exist_ok=True)
-                with open(merged_path, 'w', encoding='utf-8') as f:
-                    json.dump(merged, f, indent=2, ensure_ascii=False, default=str)
-            except Exception:
-                pass
+        # ALWAYS save merged file (even if empty, to clear old events)
+        try:
+            out_dir.mkdir(parents=True, exist_ok=True)
+            with open(merged_path, 'w', encoding='utf-8') as f:
+                json.dump(merged, f, indent=2, ensure_ascii=False, default=str)
+        except Exception:
+            pass
 
     except Exception:
         pass
@@ -527,7 +422,7 @@ def update_calendar_metadata(url: str, name: str = None, color: str = None):
 def list_calendar_urls():
     with get_db_connection() as conn:
         cur = conn.cursor()
-        cur.execute('SELECT id, url, name, enabled, created_at, last_fetched FROM calendars ORDER BY id')
+        cur.execute('SELECT id, url, name, color, enabled, created_at, last_fetched FROM calendars ORDER BY id')
         return [dict(row) for row in cur.fetchall()]
 
 def add_extracurricular_db(ev: dict):
@@ -654,7 +549,7 @@ def _run_extractor_for_url(url: str) -> int:
         out_dir = pathlib.Path('playwright_captures')
         ev_in = out_dir / 'events.json'
         if ev_in.exists():
-            h = h = hashlib.sha1(url.encode('utf-8')).hexdigest()[:8]
+            h = hashlib.sha1(url.encode('utf-8')).hexdigest()[:8]
             ev_out = out_dir / f'events_{h}.json'
             try:
                 with open(ev_in, 'r', encoding='utf-8') as f:
@@ -662,10 +557,24 @@ def _run_extractor_for_url(url: str) -> int:
             except Exception:
                 data = []
 
-            # attach source id to each event
+            # Get the color from DB for this calendar
+            cal_color = None
+            try:
+                init_db()
+                rows = list_calendar_urls()
+                for r in rows:
+                    if r.get('url') == url:
+                        cal_color = r.get('color')
+                        break
+            except Exception:
+                pass
+
+            # attach source id and color to each event
             for it in data:
                 try:
                     it['source'] = h
+                    if cal_color:
+                        it['color'] = cal_color
                 except Exception:
                     pass
 
@@ -766,117 +675,31 @@ def periodic_fetcher(interval_minutes: int = 60):
         time.sleep(interval_minutes * 60)
 
 
+# OLD FRONTEND ROUTE - DISABLED (use /app for React SPA)
+# @app.route('/schedule', methods=['GET', 'POST'])
+# def schedule_view(): ... (removed - old Jinja frontend)
 
-@app.route('/schedule', methods=['GET', 'POST'])
-def schedule_view():
-    # form inputs
-    from_s = request.values.get('from')
-    to_s = request.values.get('to')
-    today = date.today()
-    if from_s:
-        from_date = date.fromisoformat(from_s)
-    else:
-        from_date = today
-    if to_s:
-        to_date = date.fromisoformat(to_s)
-    else:
-        # default to 7-day range when `to` not provided
-        to_date = from_date + timedelta(days=6)
 
+@app.route('/calendars.json')
+def calendars_json():
+    """Return the calendar map with source hashes, names, and colors from DB."""
     try:
-        jpath, cpath = ensure_schedule(from_date, to_date)
-    except Exception as e:
-        return render_template('results.html', error=f'Failed to build schedule: {e}')
-
-    # load JSON schedule (full)
-    with open(jpath, 'r', encoding='utf-8') as f:
-        schedule = json.load(f)
-
-    # preserve original full schedule for dropdown population
-    full_schedule = schedule
-
-    # optional filters
-    subject_filter = (request.values.get('subject') or '').strip()
-    professor_filter = (request.values.get('professor') or '').strip()
-    room_filter = (request.values.get('room') or '').strip()
-
-    # apply filters to create a filtered schedule for display
-    sf = subject_filter.lower()
-    pf = professor_filter.lower()
-    rf = room_filter.lower()
-    if sf or pf or rf:
-        filtered = {}
-        for room, days in schedule.items():
-            ndays = {}
-            for day, evs in days.items():
-                new_evs = []
-                for e in evs:
-                    title = (e.get('title') or '')
-                    subj = (e.get('subject') or '')
-                    prof_field = (e.get('professor') or '')
-                    hay = (title + ' ' + subj).lower()
-                    prof_hay = prof_field.lower() if prof_field else title.lower()
-                    ok = True
-                    if sf and sf not in hay:
-                        ok = False
-                    if pf and pf not in prof_hay:
-                        ok = False
-                    if rf and rf not in room.lower():
-                        ok = False
-                    if ok:
-                        new_evs.append(e)
-                if new_evs:
-                    ndays[day] = new_evs
-            if ndays:
-                filtered[room] = ndays
-        schedule = filtered
-
-    # Extract available subjects, professors and rooms for dropdowns from the full schedule
-    subjects = set()
-    professors = set()
-    rooms = set()
-    for room, days in full_schedule.items():
-        rooms.add(room)
-        for day, evs in days.items():
-            for e in evs:
-                title = e.get('title') or ''
-                subj = e.get('subject') or ''
-                prof = e.get('professor') or ''
-
-                # Prefer parser-derived subject/display_title when available
-                try:
-                    from tools.subject_parser import parse_title
-                    parsed = parse_title(e.get('display_title') or title)
-                    if parsed and parsed.subject_name:
-                        subj = parsed.subject_name
-                        # update schedule entry for consistency
-                        e['subject'] = subj
-                        e['display_title'] = parsed.display_title
-                    if not prof and parsed and parsed.professor:
-                        prof = parsed.professor
-                        e['professor'] = prof
-                except Exception:
-                    # parser not available — keep raw values
-                    pass
-
-                if subj:
-                    subjects.add(subj)
-                if prof:
-                    professors.add(prof)
-                else:
-                    # fallback: rudimentary professor heuristic: look for two capitalized words in title
-                    import re
-                    m = re.search(r"\b([A-Z][a-z]+\s+[A-Z][a-z]+)\b", title)
-                    if m:
-                        professors.add(m.group(1))
-
-    subjects = sorted(s for s in subjects if s)
-    professors = sorted(p for p in professors if p)
-    rooms = sorted(r for r in rooms if r)
-
-    # schedule is { room: { date: [ {start,end,title,subject,location}, ... ] } }
-    return render_template('schedule.html', schedule=schedule, from_date=from_date, to_date=to_date, subject=subject_filter, professor=professor_filter, subjects=subjects, professors=professors, rooms=rooms, room=room_filter)
-
+        init_db()
+        calendars = list_calendar_urls()
+        result = {}
+        for cal in calendars:
+            url = cal.get('url', '')
+            # Calculate hash the same way as in _run_extractor_for_url (SHA1, not MD5)
+            url_hash = hashlib.sha1(url.encode('utf-8')).hexdigest()[:8]
+            result[url_hash] = {
+                'name': cal.get('name') or f"Calendar {cal.get('id')}",
+                'color': cal.get('color'),
+                'url': url
+            }
+        return jsonify(result)
+    except Exception:
+        pass
+    return jsonify({})
 
 
 @app.route('/events.json')
@@ -884,6 +707,7 @@ def events_json():
     """Return flattened events for FullCalendar or API clients.
 
     Query params: from, to, subject, professor
+    Always fetches and stores events for the next 2 months by default.
     """
     from_s = request.values.get('from')
     to_s = request.values.get('to')
@@ -891,14 +715,18 @@ def events_json():
     professor_filter = (request.values.get('professor') or '').strip().lower()
     room_filter = (request.values.get('room') or '').strip().lower()
     today = date.today()
+    
+    # Always ensure we have 2 months of events stored
+    two_months_from_now = today + timedelta(days=60)
+    
     try:
         from_date = date.fromisoformat(from_s) if from_s else today
     except Exception:
         from_date = today
     try:
-        to_date = date.fromisoformat(to_s) if to_s else from_date + timedelta(days=6)
+        to_date = date.fromisoformat(to_s) if to_s else two_months_from_now
     except Exception:
-        to_date = from_date + timedelta(days=6)
+        to_date = two_months_from_now
 
     # ensure schedule exists
     try:
@@ -945,25 +773,28 @@ def events_json():
                     'location': location,
                     'color': None,
                     'source': e.get('source') if isinstance(e, dict) else None,
+                    'calendar_name': None,
                 }
-                # resolve color from merged metadata or calendar_map.json
+                # resolve color and calendar_name from merged metadata or calendar_map.json
                 try:
                     # if schedule already had a color (merged), preserve it
                     if isinstance(e, dict) and e.get('color'):
                         ev['color'] = e.get('color')
-                    else:
-                        src = ev.get('source')
-                        if src:
-                            map_path = pathlib.Path('playwright_captures') / 'calendar_map.json'
-                            if map_path.exists():
-                                try:
-                                    with open(map_path, 'r', encoding='utf-8') as mf:
-                                        cmap = json.load(mf)
-                                    meta = cmap.get(src) or {}
-                                    if meta.get('color'):
-                                        ev['color'] = meta.get('color')
-                                except Exception:
-                                    pass
+                    
+                    src = ev.get('source')
+                    if src:
+                        map_path = pathlib.Path('playwright_captures') / 'calendar_map.json'
+                        if map_path.exists():
+                            try:
+                                with open(map_path, 'r', encoding='utf-8') as mf:
+                                    cmap = json.load(mf)
+                                meta = cmap.get(src) or {}
+                                if meta.get('color') and not ev['color']:
+                                    ev['color'] = meta.get('color')
+                                if meta.get('name'):
+                                    ev['calendar_name'] = meta.get('name')
+                            except Exception:
+                                pass
                 except Exception:
                     pass
 
@@ -1477,6 +1308,41 @@ def admin_view():
                          manual_events=manual_events)
 
 
+@app.route('/admin/api/status', methods=['GET'])
+def admin_api_status():
+    """API endpoint returning admin status for React frontend."""
+    calendars = []
+    manual_events = []
+    events_count = 0
+    last_import = None
+    
+    try:
+        init_db()
+        calendars = list_calendar_urls()
+        manual_events = list_manual_events_db()
+        
+        # Get events count
+        events_file = pathlib.Path('playwright_captures/events.json')
+        if events_file.exists():
+            with open(events_file, 'r', encoding='utf-8') as f:
+                events = json.load(f)
+                events_count = len(events)
+        
+        # Get last import time
+        if events_file.exists():
+            last_import = events_file.stat().st_mtime
+    except Exception as e:
+        pass
+    
+    return jsonify({
+        'calendars': calendars,
+        'manual_events': manual_events,
+        'events_count': events_count,
+        'last_import': last_import,
+        'extractor_running': extractor_state.get('running', False)
+    })
+
+
 @app.route('/admin/set_calendar_url', methods=['POST'])
 def admin_set_calendar_url():
     """Save the calendar URL to config."""
@@ -1655,10 +1521,102 @@ def admin_delete_calendar():
 
     try:
         init_db()
+        
+        # 1. Get URL to identify files to delete
+        url = None
+        with get_db_connection() as conn:
+            cur = conn.cursor()
+            cur.execute('SELECT url FROM calendars WHERE id = ?', (cal_id,))
+            row = cur.fetchone()
+            if row:
+                url = row['url']
+        
+        if url:
+            # 2. Delete associated files
+            try:
+                h = hashlib.sha1(url.encode('utf-8')).hexdigest()[:8]
+                out_dir = pathlib.Path('playwright_captures')
+                
+                # Delete events file
+                events_file = out_dir / f'events_{h}.json'
+                if events_file.exists():
+                    events_file.unlink()
+                
+                # Delete log files
+                (out_dir / f'extract_{h}.stdout.txt').unlink(missing_ok=True)
+                (out_dir / f'extract_{h}.stderr.txt').unlink(missing_ok=True)
+                
+                # 3. Update calendar_map.json
+                map_path = out_dir / 'calendar_map.json'
+                if map_path.exists():
+                    try:
+                        with open(map_path, 'r', encoding='utf-8') as f:
+                            cmap = json.load(f)
+                        if h in cmap:
+                            del cmap[h]
+                            with open(map_path, 'w', encoding='utf-8') as f:
+                                json.dump(cmap, f, indent=2)
+                    except Exception:
+                        pass
+            except Exception as e:
+                print(f"Error cleaning up files for calendar {cal_id}: {e}")
+
+        # 4. Delete from DB
         delete_calendar_db(cal_id)
-        return jsonify({'success': True, 'message': 'Calendar deleted'})
+        
+        # 5. Regenerate merged events and schedule
+        today = date.today()
+        ensure_schedule(today, today + timedelta(days=7))
+        
+        return jsonify({'success': True, 'message': 'Calendar deleted and events removed'})
     except Exception as e:
         return jsonify({'success': False, 'message': f'Failed to delete calendar: {e}'}), 500
+
+
+@app.route('/admin/update_calendar_color', methods=['POST'])
+def admin_update_calendar_color():
+    """Update the color of a calendar by id (returns JSON)."""
+    try:
+        cal_id = int(request.form.get('id', -1))
+        color = request.form.get('color', '').strip()
+    except Exception:
+        return jsonify({'success': False, 'message': 'Invalid parameters'}), 400
+
+    if not color:
+        return jsonify({'success': False, 'message': 'Color is required'}), 400
+
+    try:
+        init_db()
+        with get_db_connection() as conn:
+            cur = conn.cursor()
+            # Get the URL for this calendar
+            cur.execute('SELECT url FROM calendars WHERE id = ?', (cal_id,))
+            row = cur.fetchone()
+            if not row:
+                return jsonify({'success': False, 'message': 'Calendar not found'}), 404
+            url = row['url']
+            # Update the color
+            cur.execute('UPDATE calendars SET color = ? WHERE id = ?', (color, cal_id))
+            conn.commit()
+        
+        # Also update calendar_map.json
+        import hashlib
+        h = hashlib.sha1(url.encode('utf-8')).hexdigest()[:8]
+        map_path = pathlib.Path('playwright_captures') / 'calendar_map.json'
+        if map_path.exists():
+            try:
+                with open(map_path, 'r', encoding='utf-8') as f:
+                    cmap = json.load(f)
+                if h in cmap:
+                    cmap[h]['color'] = color
+                    with open(map_path, 'w', encoding='utf-8') as f:
+                        json.dump(cmap, f, indent=2, ensure_ascii=False)
+            except Exception:
+                pass
+        
+        return jsonify({'success': True, 'message': 'Color updated'})
+    except Exception as e:
+        return jsonify({'success': False, 'message': f'Failed to update color: {e}'}), 500
 
 
 @app.route('/admin/delete_manual', methods=['POST'])
@@ -1812,6 +1770,141 @@ def delete_extracurricular_event():
         with open(events_file, 'w', encoding='utf-8') as f:
             json.dump(events, f, indent=2, ensure_ascii=False)
         return jsonify({'success': True, 'message': 'Event deleted'})
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# React SPA frontend routes
+# ─────────────────────────────────────────────────────────────────────────────
+
+@app.route('/app')
+def spa_index():
+    """Serve the React SPA frontend."""
+    frontend_dist = pathlib.Path(__file__).parent / 'frontend' / 'dist' / 'index.html'
+    if frontend_dist.exists():
+        return send_file(frontend_dist)
+    return """
+    <html>
+    <head><title>Frontend Not Built</title></head>
+    <body style="font-family: sans-serif; padding: 2rem; text-align: center;">
+        <h1>Frontend not built</h1>
+        <p>Run the following commands to build the frontend:</p>
+        <pre style="background: #f3f4f6; padding: 1rem; border-radius: 8px; display: inline-block; text-align: left;">
+cd frontend
+npm install
+npm run build
+        </pre>
+        <p>Then refresh this page.</p>
+        <p><a href="/schedule">Go to legacy schedule view</a></p>
+    </body>
+    </html>
+    """, 200
+
+
+@app.route('/frontend/<path:filename>')
+def frontend_static(filename):
+    """Serve built frontend assets from frontend/dist."""
+    frontend_dist = pathlib.Path(__file__).parent / 'frontend' / 'dist'
+    return send_file(frontend_dist / filename)
+
+
+@app.route('/departures.json')
+def departures_json():
+    """Return events for today and tomorrow as JSON for the departures board."""
+    from dateutil import parser as dtparser
+    
+    today = date.today()
+    tomorrow = today + timedelta(days=1)
+    
+    # Load events from schedule
+    events_file = pathlib.Path('playwright_captures/events.json')
+    all_events = []
+    
+    if events_file.exists():
+        with open(events_file, 'r', encoding='utf-8') as f:
+            all_events = json.load(f)
+    
+    # Also load from schedule_by_room.json if available
+    schedule_file = pathlib.Path('playwright_captures/schedule_by_room.json')
+    if schedule_file.exists():
+        with open(schedule_file, 'r', encoding='utf-8') as f:
+            schedule = json.load(f)
+        for room, days in schedule.items():
+            for day, evs in days.items():
+                for e in evs:
+                    e['room'] = room
+                    all_events.append(e)
+    
+    # Add extracurricular events from DB
+    try:
+        init_db()
+        extra_events = list_extracurricular_db()
+        for xe in extra_events:
+            d = xe.get('date')
+            if not d:
+                continue
+            t = (xe.get('time') or '').strip()
+            start = f"{d}T{t}:00" if t else d
+            evt = {
+                'title': xe.get('title'),
+                'start': start,
+                'end': None,
+                'location': xe.get('location') or '',
+                'room': xe.get('location') or '',
+                'color': '#7c3aed',
+                'extracurricular': True,
+            }
+            all_events.append(evt)
+    except Exception:
+        pass
+    
+    # Add manual events from DB
+    try:
+        manual = list_manual_events_db()
+        for me in manual:
+            evt = {
+                'title': me.get('title'),
+                'start': me.get('start'),
+                'end': me.get('end'),
+                'location': me.get('location') or '',
+                'room': me.get('location') or '',
+                'color': '#004080',
+                'manual': True,
+            }
+            all_events.append(evt)
+    except Exception:
+        pass
+    
+    # Filter for today and tomorrow
+    filtered = []
+    for ev in all_events:
+        start_str = ev.get('start')
+        if not start_str:
+            continue
+        try:
+            start_dt = dtparser.parse(start_str)
+            event_date = start_dt.date()
+            if event_date in (today, tomorrow):
+                filtered.append(ev)
+        except Exception:
+            continue
+    
+    # Extract buildings from locations
+    buildings = {}
+    for ev in filtered:
+        loc = ev.get('room') or ev.get('location') or ''
+        import re
+        match = re.match(r'^([A-Z]{1,3})', loc.upper())
+        if match:
+            code = match.group(1)
+            if code not in buildings:
+                buildings[code] = code  # code -> name (can be enhanced)
+    
+    return jsonify({
+        'events': filtered,
+        'buildings': buildings,
+        'today': today.isoformat(),
+        'tomorrow': tomorrow.isoformat()
+    })
 
 
 if __name__ == "__main__":

@@ -278,7 +278,16 @@ def load_events(path: str):
         title = item.get('title') or item.get('Subject') or ''
         location = item.get('location') or (item.get('raw', {}) or {}).get('Location', {}) and (item.get('raw', {}) or {}).get('Location', {}).get('DisplayName')
         prof = extract_professor(title, item.get('raw'))
-        events.append({'start': start, 'end': end, 'title': title, 'location': location, 'raw': item.get('raw'), 'professor': prof})
+        events.append({
+            'start': start, 
+            'end': end, 
+            'title': title, 
+            'location': location, 
+            'raw': item.get('raw'), 
+            'professor': prof,
+            'source': item.get('source'),
+            'color': item.get('color')
+        })
     return events
 
 
@@ -318,6 +327,7 @@ def build_schedule(events):
             'location': location,
             'professor': prof,
             'source': ev.get('source') if isinstance(ev, dict) else None,
+            'color': ev.get('color') if isinstance(ev, dict) else None,
         })
 
     # sort events in each day by start
@@ -355,7 +365,8 @@ def save_outputs(schedule, out_dir: pathlib.Path):
                     'subject': e['subject'],
                     'location': e['location'],
                     'professor': e.get('professor'),
-                    'source': e.get('source')
+                    'source': e.get('source'),
+                    'color': e.get('color')
                 })
     with open(jpath, 'w', encoding='utf-8') as f:
         json.dump(serial, f, indent=2, ensure_ascii=False)

@@ -1,0 +1,88 @@
+[
+  {
+    "start": "2026-01-26T08:00:00+02:00",
+    "end": "2026-01-26T11:00:00+02:00",
+    "title": "Computer Programming",
+    "location": "Microsoft Teams Meeting",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAevbZTnpOlSYOkK90O01zvAAuIeys0",
+        "Id": "AAMkADdlYWU3NzAyLWRkZmYtNDE4ZC1iZjlhLWEwZTgwMmQ5NDNmNABGAAAAAAAqaN7mkKeeQIShS3M8ztuEBwAevbZTnpOlSYOkK90O01zvAAuK3lThAAAevbZTnpOlSYOkK90O01zvAAuK36H5AAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADdlYWU3NzAyLWRkZmYtNDE4ZC1iZjlhLWEwZTgwMmQ5NDNmNAAuAAAAAAAqaN7mkKeeQIShS3M8ztuEAQAevbZTnpOlSYOkK90O01zvAAuK3lThAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-26T08:00:00+02:00",
+      "End": "2026-01-26T11:00:00+02:00",
+      "Subject": "Computer Programming",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    },
+    "source": "f33d2fb6",
+    "color": "#fd7e14"
+  },
+  {
+    "start": "2026-01-31T08:00:00+02:00",
+    "end": "2026-01-31T11:00:00+02:00",
+    "title": "Mathematical Analysis I",
+    "location": "UTCN - AC BAR - SALA 40",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAevbZTnpOlSYOkK90O01zvAAuIeyrF",
+        "Id": "AAMkADdlYWU3NzAyLWRkZmYtNDE4ZC1iZjlhLWEwZTgwMmQ5NDNmNABGAAAAAAAqaN7mkKeeQIShS3M8ztuEBwAevbZTnpOlSYOkK90O01zvAAuK3lThAAAevbZTnpOlSYOkK90O01zvAAuK36H0AAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADdlYWU3NzAyLWRkZmYtNDE4ZC1iZjlhLWEwZTgwMmQ5NDNmNAAuAAAAAAAqaN7mkKeeQIShS3M8ztuEAQAevbZTnpOlSYOkK90O01zvAAuK3lThAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-31T08:00:00+02:00",
+      "End": "2026-01-31T11:00:00+02:00",
+      "Subject": "Mathematical Analysis I [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - AC BAR - SALA 40",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    },
+    "source": "f33d2fb6",
+    "color": "#fd7e14"
+  }
+]
