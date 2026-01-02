@@ -12,6 +12,9 @@ last_ics_response.html
 .idea/
 .vscode/
 
+# Environment variables (secrets!)
+.env
+
 # Frontend
 frontend/node_modules/
 frontend/dist/
@@ -22,5 +25,3 @@ venv/
 .venv/
 /.venv/
 /venv/
-.idea/
-.vscode/

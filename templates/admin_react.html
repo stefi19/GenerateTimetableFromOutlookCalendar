@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - UTCN AC Timetable</title>
+    <link rel="stylesheet" href="/frontend/assets/index-DL3vvXPq.css">
+    <style>
+        /* Admin-specific overrides */
+        .admin-header {
+            background: linear-gradient(135deg, #003366 0%, #004080 100%);
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .admin-header h1 {
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .admin-header .back-link {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+        .admin-header .back-link:hover {
+            background: rgba(255,255,255,0.1);
+        }
+        .admin-notice {
+            background: #fff3cd;
+            color: #856404;
+            padding: 0.75rem 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="admin-header">
+        <h1>⚙️ Admin Panel</h1>
+        <a href="/" class="back-link">← Back to Schedule</a>
+    </div>
+    <div class="admin-notice">
+        🔒 You are logged in as administrator. All changes will be saved immediately.
+    </div>
+    <div id="admin-root"></div>
+    
+    <script type="module">
+        import React from 'https://esm.sh/react@18'
+        import ReactDOM from 'https://esm.sh/react-dom@18/client'
+        
+        const COLORS = ['#003366', '#0066cc', '#28a745', '#dc3545', '#fd7e14', '#6f42c1', '#20c997', '#e83e8c']
+
+        function Admin() {
+            const [calendars, setCalendars] = React.useState([])
+            const [manualEvents, setManualEvents] = React.useState([])
+            const [loading, setLoading] = React.useState(true)
+            const [importing, setImporting] = React.useState(false)
+            const [message, setMessage] = React.useState(null)
+            const [newCalendar, setNewCalendar] = React.useState({ url: '', name: '', color: '#003366' })
+            const [newEvent, setNewEvent] = React.useState({ title: '', start_date: '', start_time: '', end_time: '', location: '' })
+            const [stats, setStats] = React.useState({ events_count: 0, last_import: null })
+
+            const fetchData = React.useCallback(async () => {
+                try {
+                    setLoading(true)
+                    const res = await fetch('/admin/api/status')
+                    if (res.ok) {
+                        const data = await res.json()
+                        setCalendars(data.calendars || [])
+                        setManualEvents(data.manual_events || [])
+                        setStats({ events_count: data.events_count || 0, last_import: data.last_import })
+                    }
+                } catch (e) {
+                    console.error(e)
+                } finally {
+                    setLoading(false)
+                }
+            }, [])
+
+            React.useEffect(() => { fetchData() }, [fetchData])
+
+            const showMessage = (text, type) => {
+                setMessage({ text, type })
+                setTimeout(() => setMessage(null), 4000)
+            }
+
+            const addCalendar = async (e) => {
+                e.preventDefault()
+                if (!newCalendar.url) return showMessage('URL is required', 'error')
+                
+                try {
+                    const form = new FormData()
+                    form.append('calendar_url', newCalendar.url)
+                    form.append('calendar_name', newCalendar.name)
+                    form.append('calendar_color', newCalendar.color)
+                    
+                    const res = await fetch('/admin/set_calendar_url', { method: 'POST', body: form })
+                    if (res.ok) {
+                        showMessage('Calendar added successfully', 'success')
+                        setNewCalendar({ url: '', name: '', color: '#003366' })
+                        fetchData()
+                    }
+                } catch (e) {
+                    showMessage('Error adding calendar', 'error')
+                }
+            }
+
+            const importCalendar = async () => {
+                setImporting(true)
+                try {
+                    const res = await fetch('/admin/import_calendar', { method: 'POST' })
+                    const data = await res.json()
+                    showMessage(data.message || 'Import started', 'success')
+                } catch (e) {
+                    showMessage('Import error', 'error')
+                } finally {
+                    setImporting(false)
+                }
+            }
+
+            const deleteCalendar = async (id) => {
+                if (!confirm('Are you sure you want to delete this calendar?')) return
+                try {
+                    const form = new FormData()
+                    form.append('id', id)
+                    const res = await fetch('/admin/delete_calendar', { method: 'POST', body: form })
+                    if (res.ok) {
+                        showMessage('Calendar deleted', 'success')
+                        fetchData()
+                    }
+                } catch (e) {
+                    showMessage('Error deleting', 'error')
+                }
+            }
+
+            const addEvent = async (e) => {
+                e.preventDefault()
+                if (!newEvent.title || !newEvent.start_date || !newEvent.start_time) {
+                    return showMessage('Please fill in required fields', 'error')
+                }
+                try {
+                    const form = new FormData()
+                    Object.entries(newEvent).forEach(([k, v]) => form.append(k, v))
+                    const res = await fetch('/admin/add_event', { method: 'POST', body: form })
+                    const data = await res.json()
+                    if (data.success) {
+                        showMessage('Event added', 'success')
+                        setNewEvent({ title: '', start_date: '', start_time: '', end_time: '', location: '' })
+                        fetchData()
+                    } else {
+                        showMessage(data.message || 'Error', 'error')
+                    }
+                } catch (e) {
+                    showMessage('Error adding event', 'error')
+                }
+            }
+
+            const deleteManual = async (id) => {
+                if (!confirm('Delete this event?')) return
+                try {
+                    const form = new FormData()
+                    form.append('id', id)
+                    await fetch('/admin/delete_manual', { method: 'POST', body: form })
+                    showMessage('Event deleted', 'success')
+                    fetchData()
+                } catch (e) {
+                    showMessage('Error', 'error')
+                }
+            }
+
+            if (loading) {
+                return React.createElement('div', { className: 'admin-loading', style: { padding: '2rem', textAlign: 'center' } }, 
+                    React.createElement('div', { className: 'spinner' }),
+                    ' Loading...'
+                )
+            }
+
+            return React.createElement('div', { className: 'admin-container', style: { padding: '2rem', maxWidth: '1200px', margin: '0 auto' } },
+                // Message
+                message && React.createElement('div', { 
+                    className: `admin-message ${message.type}`,
+                    style: { 
+                        padding: '1rem', 
+                        marginBottom: '1rem', 
+                        borderRadius: '8px',
+                        background: message.type === 'success' ? '#d4edda' : '#f8d7da',
+                        color: message.type === 'success' ? '#155724' : '#721c24'
+                    }
+                }, message.text),
+
+                // Stats
+                React.createElement('div', { className: 'admin-stats', style: { 
+                    display: 'grid', 
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', 
+                    gap: '1rem',
+                    marginBottom: '2rem'
+                }},
+                    React.createElement('div', { style: { background: '#f8f9fa', padding: '1rem', borderRadius: '8px', textAlign: 'center' }},
+                        React.createElement('div', { style: { fontSize: '2rem', fontWeight: 'bold', color: '#003366' }}, calendars.length),
+                        React.createElement('div', { style: { color: '#666' }}, 'Calendars')
+                    ),
+                    React.createElement('div', { style: { background: '#f8f9fa', padding: '1rem', borderRadius: '8px', textAlign: 'center' }},
+                        React.createElement('div', { style: { fontSize: '2rem', fontWeight: 'bold', color: '#003366' }}, stats.events_count),
+                        React.createElement('div', { style: { color: '#666' }}, 'Events')
+                    ),
+                    React.createElement('div', { style: { background: '#f8f9fa', padding: '1rem', borderRadius: '8px', textAlign: 'center' }},
+                        React.createElement('div', { style: { fontSize: '1rem', fontWeight: 'bold', color: '#003366' }}, 
+                            stats.last_import ? new Date(stats.last_import).toLocaleString() : 'Never'
+                        ),
+                        React.createElement('div', { style: { color: '#666' }}, 'Last Import')
+                    )
+                ),
+
+                // Add Calendar Form
+                React.createElement('div', { style: { background: 'white', padding: '1.5rem', borderRadius: '8px', marginBottom: '2rem', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }},
+                    React.createElement('h2', { style: { marginBottom: '1rem', color: '#003366' }}, '📅 Add Calendar'),
+                    React.createElement('form', { onSubmit: addCalendar, style: { display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }},
+                        React.createElement('input', {
+                            type: 'url',
+                            placeholder: 'Published Calendar URL',
+                            value: newCalendar.url,
+                            onChange: (e) => setNewCalendar({...newCalendar, url: e.target.value}),
+                            style: { flex: '1', minWidth: '300px', padding: '0.5rem', border: '1px solid #ddd', borderRadius: '4px' }
+                        }),
+                        React.createElement('input', {
+                            type: 'text',
+                            placeholder: 'Name (optional)',
+                            value: newCalendar.name,
+                            onChange: (e) => setNewCalendar({...newCalendar, name: e.target.value}),
+                            style: { width: '150px', padding: '0.5rem', border: '1px solid #ddd', borderRadius: '4px' }
+                        }),
+                        React.createElement('input', {
+                            type: 'color',
+                            value: newCalendar.color,
+                            onChange: (e) => setNewCalendar({...newCalendar, color: e.target.value}),
+                            style: { width: '50px', padding: '0.25rem', border: '1px solid #ddd', borderRadius: '4px' }
+                        }),
+                        React.createElement('button', { 
+                            type: 'submit',
+                            style: { padding: '0.5rem 1rem', background: '#003366', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }
+                        }, 'Add'),
+                        React.createElement('button', { 
+                            type: 'button',
+                            onClick: importCalendar,
+                            disabled: importing,
+                            style: { padding: '0.5rem 1rem', background: '#28a745', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }
+                        }, importing ? 'Importing...' : '🔄 Import All')
+                    )
+                ),
+
+                // Calendars List
+                React.createElement('div', { style: { background: 'white', padding: '1.5rem', borderRadius: '8px', marginBottom: '2rem', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }},
+                    React.createElement('h2', { style: { marginBottom: '1rem', color: '#003366' }}, '📋 Configured Calendars'),
+                    calendars.length === 0 
+                        ? React.createElement('p', { style: { color: '#666' }}, 'No calendars configured yet.')
+                        : React.createElement('div', { style: { display: 'flex', flexDirection: 'column', gap: '0.5rem' }},
+                            calendars.map((cal) => 
+                                React.createElement('div', { 
+                                    key: cal.id,
+                                    style: { 
+                                        display: 'flex', 
+                                        alignItems: 'center', 
+                                        gap: '1rem', 
+                                        padding: '0.75rem', 
+                                        background: '#f8f9fa', 
+                                        borderRadius: '4px',
+                                        borderLeft: `4px solid ${cal.color || '#003366'}`
+                                    }
+                                },
+                                    React.createElement('span', { style: { flex: 1, fontWeight: '500' }}, cal.name || 'Unnamed'),
+                                    React.createElement('span', { style: { color: '#666', fontSize: '0.85rem', maxWidth: '400px', overflow: 'hidden', textOverflow: 'ellipsis' }}, cal.url),
+                                    React.createElement('button', {
+                                        onClick: () => deleteCalendar(cal.id),
+                                        style: { padding: '0.25rem 0.5rem', background: '#dc3545', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer', fontSize: '0.8rem' }
+                                    }, '🗑️ Delete')
+                                )
+                            )
+                        )
+                ),
+
+                // Add Event Form
+                React.createElement('div', { style: { background: 'white', padding: '1.5rem', borderRadius: '8px', marginBottom: '2rem', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }},
+                    React.createElement('h2', { style: { marginBottom: '1rem', color: '#003366' }}, '➕ Add Manual Event'),
+                    React.createElement('form', { onSubmit: addEvent, style: { display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '0.75rem' }},
+                        React.createElement('input', {
+                            type: 'text',
+                            placeholder: 'Event Title *',
+                            value: newEvent.title,
+                            onChange: (e) => setNewEvent({...newEvent, title: e.target.value}),
+                            required: true,
+                            style: { padding: '0.5rem', border: '1px solid #ddd', borderRadius: '4px' }
+                        }),
+                        React.createElement('input', {
+                            type: 'date',
+                            value: newEvent.start_date,
+                            onChange: (e) => setNewEvent({...newEvent, start_date: e.target.value}),
+                            required: true,
+                            style: { padding: '0.5rem', border: '1px solid #ddd', borderRadius: '4px' }
+                        }),
+                        React.createElement('input', {
+                            type: 'time',
+                            placeholder: 'Start Time *',
+                            value: newEvent.start_time,
+                            onChange: (e) => setNewEvent({...newEvent, start_time: e.target.value}),
+                            required: true,
+                            style: { padding: '0.5rem', border: '1px solid #ddd', borderRadius: '4px' }
+                        }),
+                        React.createElement('input', {
+                            type: 'time',
+                            placeholder: 'End Time',
+                            value: newEvent.end_time,
+                            onChange: (e) => setNewEvent({...newEvent, end_time: e.target.value}),
+                            style: { padding: '0.5rem', border: '1px solid #ddd', borderRadius: '4px' }
+                        }),
+                        React.createElement('input', {
+                            type: 'text',
+                            placeholder: 'Location',
+                            value: newEvent.location,
+                            onChange: (e) => setNewEvent({...newEvent, location: e.target.value}),
+                            style: { padding: '0.5rem', border: '1px solid #ddd', borderRadius: '4px' }
+                        }),
+                        React.createElement('button', { 
+                            type: 'submit',
+                            style: { padding: '0.5rem 1rem', background: '#003366', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }
+                        }, 'Add Event')
+                    )
+                ),
+
+                // Manual Events List
+                manualEvents.length > 0 && React.createElement('div', { style: { background: 'white', padding: '1.5rem', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }},
+                    React.createElement('h2', { style: { marginBottom: '1rem', color: '#003366' }}, '📝 Manual Events'),
+                    React.createElement('div', { style: { display: 'flex', flexDirection: 'column', gap: '0.5rem' }},
+                        manualEvents.map((ev) => 
+                            React.createElement('div', { 
+                                key: ev.id,
+                                style: { 
+                                    display: 'flex', 
+                                    alignItems: 'center', 
+                                    gap: '1rem', 
+                                    padding: '0.75rem', 
+                                    background: '#f8f9fa', 
+                                    borderRadius: '4px'
+                                }
+                            },
+                                React.createElement('span', { style: { flex: 1, fontWeight: '500' }}, ev.title),
+                                React.createElement('span', { style: { color: '#666' }}, ev.start),
+                                React.createElement('span', { style: { color: '#666' }}, ev.location),
+                                React.createElement('button', {
+                                    onClick: () => deleteManual(ev.id),
+                                    style: { padding: '0.25rem 0.5rem', background: '#dc3545', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer', fontSize: '0.8rem' }
+                                }, '🗑️')
+                            )
+                        )
+                    )
+                )
+            )
+        }
+
+        ReactDOM.createRoot(document.getElementById('admin-root')).render(React.createElement(Admin))
+    </script>
+</body>
+</html>

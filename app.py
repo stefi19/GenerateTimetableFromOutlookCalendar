@@ -12,10 +12,11 @@ import json
 import sys
 import subprocess
 import hashlib
+import functools
 from datetime import datetime, date, timedelta
 from typing import List, Dict, Optional
 
-from flask import Flask, render_template, request, redirect, url_for, send_file, jsonify
+from flask import Flask, render_template, request, redirect, url_for, send_file, jsonify, session, Response
 
 from timetable import (
     Event,
@@ -27,6 +28,32 @@ from timetable import (
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = os.environ.get("FLASK_SECRET", "dev-secret")
+
+# Admin authentication
+ADMIN_PASSWORD = os.environ.get("ADMIN_PASSWORD", "admin123")  # Change in production!
+
+
+def check_admin_auth():
+    """Check if request has valid admin authentication."""
+    auth = request.authorization
+    if auth and auth.password == ADMIN_PASSWORD:
+        return True
+    return session.get('admin_authenticated', False)
+
+
+def require_admin(f):
+    """Decorator to require admin authentication."""
+    @functools.wraps(f)
+    def decorated(*args, **kwargs):
+        if not check_admin_auth():
+            return Response(
+                'Admin authentication required.\n'
+                'Please login with the admin password.',
+                401,
+                {'WWW-Authenticate': 'Basic realm="Admin Area"'}
+            )
+        return f(*args, **kwargs)
+    return decorated
 
 
 def group_events(events: List[Event], from_date: date, to_date: date):
@@ -1234,91 +1261,18 @@ def departures_view():
 
 
 # =============================================================================
-# ADMIN ROUTES
+# ADMIN ROUTES (Password Protected)
 # =============================================================================
 
 @app.route('/admin')
+@require_admin
 def admin_view():
-    """Admin page for managing calendar imports and events."""
-    # Get first configured calendar URL from DB if present
-    calendar_url = ''
-    calendar_name = ''
-    calendar_color = None
-    try:
-        init_db()
-        rows = list_calendar_urls()
-        if rows:
-            calendar_url = rows[0].get('url')
-            calendar_name = rows[0].get('name') or ''
-            calendar_color = rows[0].get('color') or None
-    except Exception:
-        # fallback to config file
-        config_file = pathlib.Path('config/calendar_config.json')
-        calendar_url = ''
-        if config_file.exists():
-            try:
-                with open(config_file, 'r', encoding='utf-8') as f:
-                    config = json.load(f)
-                    calendar_url = config.get('calendar_url', '')
-                    calendar_name = config.get('calendar_name', '')
-                    calendar_color = config.get('calendar_color', None)
-            except Exception:
-                pass
-    
-    # Get events stats
-    events_file = pathlib.Path('playwright_captures/events.json')
-    events_count = 0
-    last_import = None
-    if events_file.exists():
-        try:
-            with open(events_file, 'r', encoding='utf-8') as f:
-                events = json.load(f)
-                events_count = len(events)
-            # Get file modification time
-            import os
-            mtime = os.path.getmtime(events_file)
-            last_import = datetime.fromtimestamp(mtime)
-        except Exception:
-            pass
-    
-    # Get extractor status
-    extractor_running = extractor_state.get('running', False)
-    
-    # Load configured calendars, extracurricular and manual events for management
-    calendars = []
-    extracurricular = []
-    manual_events = []
-    try:
-        init_db()
-        calendars = list_calendar_urls()
-        extracurricular = list_extracurricular_db()
-        manual_events = list_manual_events_db()
-    except Exception:
-        # fall back to file-based lists if DB unavailable
-        try:
-            cfg_file = pathlib.Path('config') / 'calendar_config.json'
-            if cfg_file.exists():
-                with open(cfg_file, 'r', encoding='utf-8') as f:
-                    cfg = json.load(f)
-                    url = cfg.get('calendar_url')
-                    if url:
-                        calendars = [{'id': 0, 'url': url, 'name': ''}]
-        except Exception:
-            pass
-
-    return render_template('admin.html',
-                         calendar_url=calendar_url,
-                         calendar_name=calendar_name,
-                         calendar_color=calendar_color,
-                         events_count=events_count,
-                         last_import=last_import,
-                         extractor_running=extractor_running,
-                         calendars=calendars,
-                         extracurricular=extracurricular,
-                         manual_events=manual_events)
+    """Admin page for managing calendar imports and events - React version."""
+    return render_template('admin_react.html')
 
 
 @app.route('/admin/api/status', methods=['GET'])
+@require_admin
 def admin_api_status():
     """API endpoint returning admin status for React frontend."""
     calendars = []
@@ -1354,6 +1308,7 @@ def admin_api_status():
 
 
 @app.route('/admin/set_calendar_url', methods=['POST'])
+@require_admin
 def admin_set_calendar_url():
     """Save the calendar URL to config."""
     url = request.form.get('calendar_url', '').strip()
@@ -1392,6 +1347,7 @@ def admin_set_calendar_url():
 
 
 @app.route('/admin/import_calendar', methods=['POST'])
+@require_admin
 def admin_import_calendar():
     """Trigger calendar import from the configured URL."""
     # Accept optional url, name, color fields and persist the calendar before import
@@ -1419,6 +1375,7 @@ def admin_import_calendar():
 
 
 @app.route('/admin/add_event', methods=['POST'])
+@require_admin
 def admin_add_event():
     """Manually add an event."""
     from dateutil import parser as dtparser
@@ -1496,6 +1453,7 @@ def admin_add_event():
 
 
 @app.route('/admin/delete_event', methods=['POST'])
+@require_admin
 def admin_delete_event():
     """Delete an event by index."""
     try:
@@ -1522,6 +1480,7 @@ def admin_delete_event():
 
 
 @app.route('/admin/delete_calendar', methods=['POST'])
+@require_admin
 def admin_delete_calendar():
     """Delete a configured calendar by id (returns JSON)."""
     try:
@@ -1584,6 +1543,7 @@ def admin_delete_calendar():
 
 
 @app.route('/admin/update_calendar_color', methods=['POST'])
+@require_admin
 def admin_update_calendar_color():
     """Update the color of a calendar by id (returns JSON)."""
     try:
@@ -1630,6 +1590,7 @@ def admin_update_calendar_color():
 
 
 @app.route('/admin/delete_manual', methods=['POST'])
+@require_admin
 def admin_delete_manual():
     """Delete a manual event by id (returns JSON)."""
     try:

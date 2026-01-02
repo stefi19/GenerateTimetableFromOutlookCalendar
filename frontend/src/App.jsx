@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Schedule from './Schedule'
 import Departures from './Departures'
-import Admin from './Admin'
 
 export default function App() {
   const [tab, setTab] = useState('schedule')
@@ -62,12 +61,6 @@ export default function App() {
             >
               🚀 Departures
             </button>
-            <button 
-              onClick={() => setTab('admin')} 
-              className={"nav-btn " + (tab === 'admin' ? 'active' : '')}
-            >
-              ⚙️ Admin
-            </button>
           </nav>
         </div>
       </header>
@@ -79,7 +72,6 @@ export default function App() {
       <main className="main">
         {tab === 'schedule' && <Schedule />}
         {tab === 'departures' && <Departures />}
-        {tab === 'admin' && <Admin />}
       </main>
 
       <footer className="footer">

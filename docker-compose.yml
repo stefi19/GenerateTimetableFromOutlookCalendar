@@ -16,8 +16,12 @@ services:
     environment:
       - FLASK_ENV=production
       - FLASK_SECRET=${FLASK_SECRET:-change-me-in-production}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD:-admin123}
       # Optional: for authenticated calendar fetching
       # - PLAYWRIGHT_USER_DATA_DIR=/app/playwright_data
+    env_file:
+      - path: .env
+        required: false
     healthcheck:
       test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5000/health')"]
       interval: 30s
