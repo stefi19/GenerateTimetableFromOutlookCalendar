@@ -212,7 +212,7 @@
                     ),
                     React.createElement('div', { style: { background: '#f8f9fa', padding: '1rem', borderRadius: '8px', textAlign: 'center' }},
                         React.createElement('div', { style: { fontSize: '1rem', fontWeight: 'bold', color: '#003366' }}, 
-                            stats.last_import ? new Date(stats.last_import).toLocaleString() : 'Never'
+                            stats.last_import ? new Date(stats.last_import * 1000).toLocaleString() : 'Never'
                         ),
                         React.createElement('div', { style: { color: '#666' }}, 'Last Import')
                     )
