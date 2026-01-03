@@ -4,6 +4,8 @@
   --utcn-blue-light: #004080;
   --utcn-blue-dark: #002244;
   --utcn-accent: #0066cc;
+  --utcn-red: #C8102E;
+  --utcn-gold: #DAAA00;
   --white: #ffffff;
   --gray-50: #f8f9fa;
   --gray-100: #e9ecef;
@@ -386,13 +388,18 @@ body {
   border-radius: 0 0 8px 8px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  position: relative; /* for gradient hint overlay */
 }
 .events-table-inner {
-  min-width: 500px;
+  /* Make the inner table wide enough so horizontal scroll reveals all columns on mobile */
+  min-width: 1000px;
 }
 .table-header {
   display: grid;
-  grid-template-columns: 100px 1fr 150px 150px;
+  /* Time | Event | Professor | Room | Group/Year | Status */
+  /* reduce Event column and expand Room column */
+  grid-template-columns: 85px 0.8fr 130px 180px 100px 80px;
+  gap: 12px;
   padding: 10px 16px;
   background: var(--gray-100);
   font-size: 0.8rem;
@@ -402,7 +409,9 @@ body {
 }
 .table-row {
   display: grid;
-  grid-template-columns: 100px 1fr 150px 150px;
+  /* reduce Event column and expand Room column */
+  grid-template-columns: 85px 0.8fr 130px 180px 100px 80px;
+  gap: 12px;
   padding: 12px 16px;
   border-top: 1px solid var(--gray-200);
   border-left: 4px solid var(--utcn-blue);
@@ -415,10 +424,15 @@ body {
 .col-title small { color: var(--gray-600); font-size: 0.85rem; }
 .col-location { color: var(--gray-600); font-size: 0.9rem; }
 .col-professor { color: var(--gray-600); font-size: 0.9rem; }
+/* Allow event title to wrap and avoid invisible truncation on mobile; ensure inner element can shrink
+  without hiding content when container scrolls. */
+.col-title { min-width: 0; }
+.col-title .event-title { white-space: normal; word-break: break-word; }
+.event-meta { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; }
 
 /* Departures */
 .departures-grid { padding: 20px; display: grid; gap: 24px; }
-.departure-section {}
+.departure-section { padding: 0; }
 .section-header {
   display: flex;
   justify-content: space-between;
@@ -433,11 +447,15 @@ body {
 .departure-board {
   background: var(--gray-800);
   border-radius: 0 0 8px 8px;
-  overflow: hidden;
+  /* allow horizontal scrolling so the board can keep all columns on one line */
+  overflow-x: auto;
 }
 .board-header {
   display: grid;
-  grid-template-columns: 80px 1fr 100px 120px;
+  /* Time | Event | Professor | Room | Group/Year | Status */
+  /* reduce Event column and expand Room column */
+  grid-template-columns: 85px 0.8fr 130px 180px 100px 80px;
+  gap: 12px;
   padding: 10px 16px;
   background: var(--gray-600);
   color: var(--gray-200);
@@ -447,7 +465,8 @@ body {
 }
 .board-row {
   display: grid;
-  grid-template-columns: 80px 1fr 100px 120px;
+  grid-template-columns: 85px 1fr 150px 80px 120px 90px;
+  gap: 12px;
   padding: 12px 16px;
   color: var(--gray-100);
   border-top: 1px solid var(--gray-600);
@@ -457,14 +476,45 @@ body {
 .board-row:hover { background: rgba(255,255,255,0.05); }
 .board-row .col-time { color: #ffc107; font-family: 'SF Mono', Monaco, monospace; }
 .board-row .col-event .event-title { font-weight: 500; }
-.board-row .col-event .event-professor { display: block; color: var(--gray-300); font-size: 0.85rem; }
+.board-row .col-event .event-meta { display: block; color: var(--gray-300); font-size: 0.85rem; }
 .board-row .col-room { color: #60a5fa; }
+.board-row .col-prof { color: var(--gray-200); }
+.board-row .col-group { color: var(--gray-300); }
 .board-row .col-status { font-size: 0.85rem; }
 .board-row.status-active { background: rgba(40,167,69,0.15); }
 .board-row.status-active .col-status { color: var(--success); font-weight: 600; }
 .board-row.status-soon { background: rgba(253,126,20,0.15); }
 .board-row.status-soon .col-status { color: var(--warning); }
 .board-row.status-upcoming .col-status { color: #60a5fa; }
+
+/* Gradient hint overlay at right edge to suggest horizontal scroll */
+.events-table::after,
+.departure-board::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 48px;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(to right, rgba(255,255,255,0), rgba(0,0,0,0.06));
+  mix-blend-mode: normal;
+  transition: opacity 0.2s ease;
+}
+
+/* Make the gradient less visible on large screens and more visible on small screens */
+@media (min-width: 600px) {
+  .events-table::after, .departure-board::after { opacity: 0.4; }
+}
+@media (max-width: 599px) {
+  .events-table::after, .departure-board::after { opacity: 0.8; }
+}
+
+/* Webkit scrollbar styling for a thin, visible horizontal scrollbar */
+.events-table::-webkit-scrollbar { height: 8px; }
+.events-table::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.2); border-radius: 4px; }
+.departure-board::-webkit-scrollbar { height: 8px; }
+.departure-board::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 4px; }
 
 .no-events {
   padding: 32px;
@@ -689,10 +739,10 @@ body {
   .legend-actions { justify-content: center; }
   .schedule-grid { padding: 12px; }
   .day-section { margin-bottom: 16px; }
-  .table-header, .table-row { grid-template-columns: 70px 1fr; font-size: 0.85rem; padding: 10px 12px; }
-  .col-location, .col-professor { display: none; }
+  /* Keep full column set on mobile but allow horizontal scroll. Event column is flexible. */
+  .table-header, .table-row { grid-template-columns: 70px minmax(120px,1fr) 110px 160px 90px 70px; font-size: 0.85rem; padding: 10px 12px; }
   .departures-grid { padding: 12px; }
-  .board-header, .board-row { grid-template-columns: 65px 1fr 70px; font-size: 0.8rem; padding: 10px 12px; }
+  .board-header, .board-row { grid-template-columns: 65px minmax(120px,1fr) 110px 140px 90px 70px; font-size: 0.8rem; padding: 10px 12px; }
   .board-row .col-status { display: none; }
   .admin-grid { grid-template-columns: 1fr; }
   .admin-section { padding: 16px; }
@@ -721,12 +771,14 @@ body {
   .schedule-grid, .departures-grid { padding: 8px; }
   .day-header { padding: 10px 12px; }
   .day-header h3 { font-size: 0.9rem; }
-  .table-header, .table-row { grid-template-columns: 80px 1fr 120px 120px; padding: 8px 10px; }
+  /* On very small screens hide low-priority Status column and keep Room visible.
+    Update grid to 5 columns: Time | Event | Professor | Room | Group/Year */
+  .table-header, .table-row { grid-template-columns: 80px minmax(100px,1fr) 90px 120px 80px; padding: 8px 10px; }
   .col-time { font-size: 0.8rem; }
   .col-location, .col-professor { font-size: 0.8rem; }
   .section-header { padding: 10px 12px; }
   .section-header h3 { font-size: 0.9rem; }
-  .board-header, .board-row { grid-template-columns: 55px 1fr 60px; padding: 8px 10px; }
+  .board-header, .board-row { grid-template-columns: 55px minmax(100px,1fr) 60px 100px 70px; padding: 8px 10px; }
   .board-header { font-size: 0.65rem; }
   .admin-section { padding: 12px; }
   .admin-section .section-header { margin: -12px -12px 12px -12px; }

@@ -7,6 +7,8 @@ Extrage:
 """
 
 import re
+import json
+import pathlib
 from dataclasses import dataclass
 from typing import Optional, Dict
 
@@ -21,6 +23,21 @@ BUILDING_ALIASES = {
     'memorandumului': 'Memorandumului',
     'memo': 'Memorandumului',
 }
+
+# Load extra aliases from config/building_aliases.json if present to make the
+# heuristic data-driven and editable without code changes.
+try:
+    cfg_path = pathlib.Path('config') / 'building_aliases.json'
+    if cfg_path.exists():
+        with cfg_path.open('r', encoding='utf-8') as fh:
+            user_map = json.load(fh)
+            # user_map is alias -> canonical
+            for k, v in user_map.items():
+                if k and isinstance(k, str):
+                    BUILDING_ALIASES[k.lower()] = v
+except Exception:
+    # Ignore config load errors and fall back to built-in mapping
+    pass
 
 # Prefixuri pentru săli speciale
 ROOM_PREFIXES = {
@@ -109,11 +126,16 @@ def parse_location_text(text: str) -> Dict[str, str]:
     
     text_lower = text.lower()
     
-    # Caută clădirea
-    for alias, building in BUILDING_ALIASES.items():
-        if alias in text_lower:
-            result['building'] = building
-            break
+    # Caută clădirea - preferăm aliasuri mai lungi (de exemplu 'ac bar') peste 'bar'
+    if text_lower:
+        # Sort aliases by length desc so longer phrases are matched first
+        aliases = sorted(BUILDING_ALIASES.keys(), key=lambda s: -len(s))
+        for alias in aliases:
+            if not alias:
+                continue
+            if alias in text_lower:
+                result['building'] = BUILDING_ALIASES.get(alias, '')
+                break
     
     # Caută sala - pattern-uri comune
     # "Sala BT 503", "Sala 479", "BT5.03", "S4.2"
@@ -301,6 +323,49 @@ def parse_event(event: dict) -> dict:
         result['room'] = parsed_title.room_code
     
     return result
+
+
+def parse_group_from_string(s: str) -> Dict[str, str]:
+    """Extract year and group from a free-form string (calendar name / subject).
+
+    Returns dict: {'year': '3', 'group': 'A', 'display': 'Year 3 • Group A'} or empty strings.
+    """
+    out = {'year': '', 'group': '', 'display': ''}
+    if not s:
+        return out
+    try:
+        txt = str(s).lower()
+        # patterns: 'year 3', 'grupa A', 'group A', '3A', '3 A', 'eng 3', 'CTI A 3'
+        m = re.search(r'\byear\s*([1-4])\b', txt)
+        if m:
+            out['year'] = m.group(1)
+        m = re.search(r'\bgrup[ai]\s*([a-z0-9]+)\b', txt)
+        if m:
+            out['group'] = m.group(1).upper()
+        m = re.search(r'\bgroup\s*([a-z0-9]+)\b', txt)
+        if m and not out['group']:
+            out['group'] = m.group(1).upper()
+        # tokens like '3A' or '3 A'
+        if not out['year']:
+            m = re.search(r'\b([1-4])\s*([a-z])\b', txt)
+            if m:
+                out['year'] = m.group(1)
+                out['group'] = m.group(2).upper()
+        # trailing single digit year
+        if not out['year']:
+            m = re.search(r'\b([1-4])\b(?!.*\d)', txt)
+            if m:
+                out['year'] = m.group(1)
+        # build display
+        parts = []
+        if out['year']:
+            parts.append('Year ' + out['year'])
+        if out['group']:
+            parts.append('Group ' + out['group'])
+        out['display'] = ' • '.join(parts)
+    except Exception:
+        pass
+    return out
 
 
 # Funcții de compatibilitate cu vechiul API

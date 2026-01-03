@@ -7,7 +7,7 @@
         "title": "Computer Programming",
         "subject": "Computer Programming",
         "location": "Microsoft Teams Meeting",
-        "professor": "Computer Programming",
+        "professor": null,
         "source": "f33d2fb6",
         "color": "#fd7e14"
       }
@@ -21,7 +21,7 @@
         "title": "Mathematical Analysis I",
         "subject": "Mathematical Analysis I",
         "location": "UTCN - AC BAR - SALA 40",
-        "professor": "Mathematical Analysis I",
+        "professor": null,
         "source": "f33d2fb6",
         "color": "#fd7e14"
       }

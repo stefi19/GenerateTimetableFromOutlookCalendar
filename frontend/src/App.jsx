@@ -42,8 +42,8 @@ export default function App() {
           <div className="header-brand">
             <div className="logo">
               <div className="logo-text">
-                <h1>AC UTCN</h1>
-                <span className="subtitle">Automation & Computer Science</span>
+                <h1>UTCN Timetable</h1>
+                <span className="subtitle">Technical University of Cluj-Napoca</span>
               </div>
             </div>
           </div>
@@ -58,7 +58,7 @@ export default function App() {
               onClick={() => setTab('departures')} 
               className={"nav-btn " + (tab === 'departures' ? 'active' : '')}
             >
-              Departures
+              Live
             </button>
           </nav>
         </div>

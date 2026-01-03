@@ -310,6 +310,39 @@ export default function Schedule() {
     }
   }
 
+  // Helpers copied from Departures.jsx to keep parsing consistent in calendar view
+  const parseRoomFromLocation = (loc) => {
+    if (!loc) return ''
+    try {
+      const sala = /Sala\s*([A-Za-z0-9\-]+)/i.exec(loc)
+      if (sala && sala[1]) return sala[1]
+      const nums = loc.match(/(\d+)/g)
+      if (nums && nums.length) return nums[nums.length - 1]
+    } catch (e) {}
+    return ''
+  }
+
+  const parseGroupFromString = (s) => {
+    if (!s) return ''
+    try {
+      const txt = s.toString()
+      const l = txt.toLowerCase()
+      let m = l.match(/\byear\s*(\d)\b/) || l.match(/\b(1|2|3|4)\s*year\b/)
+      if (m) return 'Year ' + (m[1] || m[0])
+      m = l.match(/\bgrup[ai]\s*([A-Za-z0-9]+)\b/) || l.match(/\bgroup\s*([A-Za-z0-9]+)\b/)
+      if (m) return 'Group ' + m[1].toUpperCase()
+      m = l.match(/\b([1-4])\s*([A-Za-z])\b/) || l.match(/\b([1-4][A-Za-z])\b/)
+      if (m) {
+        const year = m[1]
+        const grp = m[2] ? m[2].toUpperCase() : (m[1].slice ? m[1].slice(1).toUpperCase() : '')
+        return 'Year ' + year + ' • Group ' + grp
+      }
+      m = l.match(/(\b[1-4]\b)(?!.*\d)/)
+      if (m) return 'Year ' + m[1]
+    } catch (e) {}
+    return ''
+  }
+
   const formatDateHeader = (dateStr) => {
     try {
       const d = new Date(dateStr)
@@ -486,17 +519,21 @@ export default function Schedule() {
                 <div className="table-header">
                   <span className="col-time">Time</span>
                   <span className="col-title">Event</span>
-                  <span className="col-location">Location</span>
                   <span className="col-professor">Professor</span>
+                  <span className="col-location">Room</span>
+                  <span className="col-group">Group/Year</span>
+                  <span className="col-status">Status</span>
                 </div>
                 {groupedByDate[date].sort((a, b) => (a.start || '').localeCompare(b.start || '')).map((ev, idx) => (
                   <div key={idx} className="table-row" style={{ borderLeftColor: ev.color || '#003366' }}>
                     <span className="col-time">{formatTime(ev.start)}<small>{formatTime(ev.end)}</small></span>
                     <span className="col-title"><strong>{ev.display_title || ev.title}</strong>
-                      {ev.subject && ev.subject !== ev.display_title && <small>{ev.subject}</small>}
+                      {ev.subject && ev.subject !== ev.display_title && <small className="event-meta">{ev.subject}</small>}
                     </span>
-                    <span className="col-location">{ev.room || ev.location || '-'}</span>
                     <span className="col-professor">{ev.professor || '-'}</span>
+                    <span className="col-location">{ev.room || parseRoomFromLocation(ev.location) || '-'}</span>
+                    <span className="col-group">{ev.group_display || parseGroupFromString((calendars[ev.source] && calendars[ev.source].name) || ev.calendar_name || ev.subject || ev.title) || '-'}</span>
+                    <span className="col-status">{''}</span>
                   </div>
                 ))}
               </div>

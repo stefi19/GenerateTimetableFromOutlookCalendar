@@ -901,13 +901,16 @@ def events_json():
                     'color': None,
                     'source': e.get('source') if isinstance(e, dict) else None,
                     'calendar_name': None,
+                    'year': '',
+                    'group': '',
+                    'group_display': '',
                 }
                 # resolve color and calendar_name from merged metadata or calendar_map.json
                 try:
                     # if schedule already had a color (merged), preserve it
                     if isinstance(e, dict) and e.get('color'):
                         ev['color'] = e.get('color')
-                    
+
                     src = ev.get('source')
                     if src:
                         map_path = pathlib.Path('playwright_captures') / 'calendar_map.json'
@@ -922,6 +925,19 @@ def events_json():
                                     ev['calendar_name'] = meta.get('name')
                             except Exception:
                                 pass
+                except Exception:
+                    # ignore any errors resolving calendar metadata
+                    pass
+
+                # Try to parse group/year from calendar_name or subject/display_title
+                try:
+                    from tools.event_parser import parse_group_from_string
+                    sample = ev.get('calendar_name') or ev.get('subject') or ev.get('display_title') or ''
+                    grp = parse_group_from_string(sample)
+                    if grp and isinstance(grp, dict):
+                        ev['year'] = grp.get('year', '')
+                        ev['group'] = grp.get('group', '')
+                        ev['group_display'] = grp.get('display', '')
                 except Exception:
                     pass
 
@@ -2081,17 +2097,156 @@ def departures_json():
                 filtered.append(ev)
         except Exception:
             continue
+
+    # Deduplicate events: events.json may contain the same items as schedule_by_room.json
+    # Use raw.ItemId.Id when available, otherwise fallback to title|start|location key.
+    # Improved deduplication: prefer events with more populated fields when duplicates
+    deduped = []
+    seen_map = {}  # map key_start_loc -> index in deduped
+    for ev in filtered:
+        try:
+            raw = ev.get('raw') or {}
+            iid = None
+            if isinstance(raw, dict):
+                try:
+                    iid = raw.get('ItemId', {}).get('Id') if raw.get('ItemId') else None
+                except Exception:
+                    iid = None
+
+            # If ItemId available, use a dedicated key
+            if iid:
+                pkey = f'ID:{iid}'
+                if pkey in seen_map:
+                    # compare scores and replace if new event is richer
+                    idx = seen_map[pkey]
+                    existing = deduped[idx]
+                    def score(x):
+                        return int(bool(x.get('room'))) + int(bool(x.get('professor'))) + int(bool(x.get('calendar_name'))) + int(bool(x.get('subject')))
+                    if score(ev) > score(existing):
+                        deduped[idx] = ev
+                else:
+                    seen_map[pkey] = len(deduped)
+                    deduped.append(ev)
+                continue
+
+            start = str(ev.get('start') or '').strip()
+            loc = str(ev.get('location') or ev.get('room') or '').strip()
+            norm_title = str(ev.get('title') or '').strip().lower()
+            key_start_loc = f'SL:{start}|{loc}'
+
+            if key_start_loc in seen_map:
+                idx = seen_map[key_start_loc]
+                existing = deduped[idx]
+                def score(x):
+                    return int(bool(x.get('room'))) + int(bool(x.get('professor'))) + int(bool(x.get('calendar_name'))) + int(bool(x.get('subject')))
+                if score(ev) > score(existing):
+                    deduped[idx] = ev
+                # else keep existing
+            else:
+                seen_map[key_start_loc] = len(deduped)
+                deduped.append(ev)
+        except Exception:
+            deduped.append(ev)
+    filtered = deduped
     
-    # Extract buildings from locations
+    # ensure buildings var exists even if enrichment fails
+    buildings = {}
+
+    # Enrich events with calendar_name and parsed group/year when possible
+    try:
+        map_path = pathlib.Path('playwright_captures') / 'calendar_map.json'
+        cmap = {}
+        if map_path.exists():
+            try:
+                with open(map_path, 'r', encoding='utf-8') as mf:
+                    cmap = json.load(mf)
+            except Exception:
+                cmap = {}
+        # load parser utilities (for group/year, and richer location/title parsing)
+        try:
+            from tools.event_parser import parse_group_from_string, parse_event
+        except Exception:
+            parse_group_from_string = None
+            parse_event = None
+
+        for ev in filtered:
+            try:
+                src = ev.get('source')
+                if src and cmap.get(src) and cmap.get(src).get('name'):
+                    ev['calendar_name'] = cmap.get(src).get('name')
+                else:
+                    ev['calendar_name'] = ev.get('calendar_name') if ev.get('calendar_name') is not None else None
+
+                # Enrich event using backend parser when available. This ensures we have
+                # structured 'room' and 'building' values instead of free-form location strings.
+                if parse_event:
+                    try:
+                        parsed = parse_event(ev)
+                        # prefer parsed structured values (room/building) when available
+                        ev['room'] = (parsed.get('room') or ev.get('room') or '')
+                        ev['building'] = (parsed.get('building') or ev.get('building') or '')
+                        ev['professor'] = (parsed.get('professor') or ev.get('professor') or None)
+                        ev['subject'] = (parsed.get('subject') or ev.get('subject') or ev.get('title'))
+                        ev['display_title'] = (parsed.get('display_title') or ev.get('display_title') or ev.get('title'))
+                    except Exception:
+                        # ignore parsing failure per-event
+                        ev['room'] = ev.get('room') or ''
+                        ev['building'] = ev.get('building') or ''
+                else:
+                    ev['room'] = ev.get('room') or ''
+                    ev['building'] = ev.get('building') or ''
+
+                # parse group/year
+                sample = ev.get('calendar_name') or ev.get('subject') or ev.get('title') or ''
+                if parse_group_from_string:
+                    try:
+                        grp = parse_group_from_string(sample)
+                        if grp and isinstance(grp, dict):
+                            ev['year'] = grp.get('year', '')
+                            ev['group'] = grp.get('group', '')
+                            ev['group_display'] = grp.get('display', '')
+                        else:
+                            ev['year'] = ''
+                            ev['group'] = ''
+                            ev['group_display'] = ''
+                    except Exception:
+                        ev['year'] = ''
+                        ev['group'] = ''
+                        ev['group_display'] = ''
+                else:
+                    ev['year'] = ev.get('year', '') or ''
+                    ev['group'] = ev.get('group', '') or ''
+                    ev['group_display'] = ev.get('group_display', '') or ''
+            except Exception:
+                # tolerate per-event failures
+                ev['calendar_name'] = ev.get('calendar_name') if ev.get('calendar_name') is not None else None
+                ev['year'] = ev.get('year', '') or ''
+                ev['group'] = ev.get('group', '') or ''
+                ev['group_display'] = ev.get('group_display', '') or ''
+
+    except Exception:
+        # ignore enrichment failures
+        pass
+
+    # Extract buildings from enriched events (prefer structured 'building' field)
     buildings = {}
     for ev in filtered:
-        loc = ev.get('room') or ev.get('location') or ''
-        import re
-        match = re.match(r'^([A-Z]{1,3})', loc.upper())
-        if match:
-            code = match.group(1)
-            if code not in buildings:
-                buildings[code] = code  # code -> name (can be enhanced)
+        b = (ev.get('building') or '').strip()
+        # normalize empty vs None
+        if b:
+            # keep unique canonical building names
+            if b not in buildings:
+                buildings[b] = b
+        else:
+            # fallback: try to extract building code from room (e.g. BT503 -> BT)
+            room = (ev.get('room') or '').strip()
+            if room:
+                import re
+                m = re.match(r'^([A-Z]{1,3})', room.upper())
+                if m:
+                    code = m.group(1)
+                    if code not in buildings:
+                        buildings[code] = code
     
     return jsonify({
         'events': filtered,
