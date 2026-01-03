@@ -47,11 +47,11 @@
 </head>
 <body>
     <div class="admin-header">
-        <h1>⚙️ Admin Panel</h1>
+        <h1>Admin Panel</h1>
         <a href="/" class="back-link">← Back to Schedule</a>
     </div>
     <div class="admin-notice">
-        🔒 You are logged in as administrator. All changes will be saved immediately.
+        You are logged in as administrator. All changes will be saved immediately.
     </div>
     <div id="admin-root"></div>
     
@@ -71,6 +71,7 @@
             const [message, setMessage] = React.useState(null)
             const [newCalendar, setNewCalendar] = React.useState({ url: '', name: '', color: '#003366' })
             const [newEvent, setNewEvent] = React.useState({ title: '', start_date: '', start_time: '', end_time: '', location: '' })
+            const [editingCalendar, setEditingCalendar] = React.useState(null)
             const [stats, setStats] = React.useState({ events_count: 0, last_import: null })
             const [importLog, setImportLog] = React.useState([])
 
@@ -214,6 +215,29 @@
                 }
             }
 
+            const updateCalendar = async (e) => {
+                e.preventDefault()
+                if (!editingCalendar) return
+                try {
+                    const form = new FormData()
+                    form.append('id', editingCalendar.id)
+                    form.append('name', editingCalendar.name || '')
+                    form.append('color', editingCalendar.color || '#003366')
+                    form.append('enabled', editingCalendar.enabled ? '1' : '0')
+                    const res = await fetch('/admin/update_calendar', { method: 'POST', body: form })
+                    const data = await res.json()
+                    if (data.success) {
+                        showMessage('Calendar updated', 'success')
+                        setEditingCalendar(null)
+                        fetchData()
+                    } else {
+                        showMessage(data.message || 'Error updating', 'error')
+                    }
+                } catch (e) {
+                    showMessage('Error updating calendar', 'error')
+                }
+            }
+
             if (loading) {
                 return React.createElement('div', { className: 'admin-loading', style: { padding: '2rem', textAlign: 'center' } }, 
                     React.createElement('div', { className: 'spinner' }),
@@ -269,7 +293,7 @@
                 },
                     React.createElement('div', { style: { display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }},
                         React.createElement('h3', { style: { margin: 0, color: extractorRunning ? '#856404' : '#2e7d32', display: 'flex', alignItems: 'center', gap: '0.5rem' }}, 
-                            extractorRunning ? '⏳ Import in Progress...' : '✓ Import Complete'
+                            extractorRunning ? 'Import in Progress...' : 'Import Complete'
                         ),
                         !extractorRunning && importLog.length > 0 && React.createElement('button', {
                             onClick: () => setImportLog([]),
@@ -343,7 +367,7 @@
 
                 // Add Calendar Form
                 React.createElement('div', { style: { background: 'white', padding: '1.5rem', borderRadius: '8px', marginBottom: '2rem', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }},
-                    React.createElement('h2', { style: { marginBottom: '1rem', color: '#003366' }}, '📅 Add Calendar'),
+                    React.createElement('h2', { style: { marginBottom: '1rem', color: '#003366' }}, 'Add Calendar'),
                     React.createElement('form', { onSubmit: addCalendar, style: { display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }},
                         React.createElement('input', {
                             type: 'url',
@@ -374,43 +398,97 @@
                             onClick: importCalendar,
                             disabled: importing,
                             style: { padding: '0.5rem 1rem', background: '#28a745', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }
-                        }, importing ? 'Importing...' : '🔄 Import All')
+                        }, importing ? 'Importing...' : 'Import All')
                     )
                 ),
 
                 // Calendars List
                 React.createElement('div', { style: { background: 'white', padding: '1.5rem', borderRadius: '8px', marginBottom: '2rem', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }},
-                    React.createElement('h2', { style: { marginBottom: '1rem', color: '#003366' }}, '📋 Configured Calendars'),
+                    React.createElement('h2', { style: { marginBottom: '1rem', color: '#003366' }}, 'Configured Calendars'),
                     calendars.length === 0 
                         ? React.createElement('p', { style: { color: '#666' }}, 'No calendars configured yet.')
                         : React.createElement('div', { style: { display: 'flex', flexDirection: 'column', gap: '0.5rem' }},
                             calendars.map((cal) => 
-                                React.createElement('div', { 
-                                    key: cal.id,
-                                    style: { 
-                                        display: 'flex', 
-                                        alignItems: 'center', 
-                                        gap: '1rem', 
-                                        padding: '0.75rem', 
-                                        background: '#f8f9fa', 
-                                        borderRadius: '4px',
-                                        borderLeft: `4px solid ${cal.color || '#003366'}`
-                                    }
-                                },
-                                    React.createElement('span', { style: { flex: 1, fontWeight: '500' }}, cal.name || 'Unnamed'),
-                                    React.createElement('span', { style: { color: '#666', fontSize: '0.85rem', maxWidth: '400px', overflow: 'hidden', textOverflow: 'ellipsis' }}, cal.url),
-                                    React.createElement('button', {
-                                        onClick: () => deleteCalendar(cal.id),
-                                        style: { padding: '0.25rem 0.5rem', background: '#dc3545', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer', fontSize: '0.8rem' }
-                                    }, '🗑️ Delete')
-                                )
+                                editingCalendar && editingCalendar.id === cal.id
+                                    // Edit mode
+                                    ? React.createElement('form', { 
+                                        key: cal.id,
+                                        onSubmit: updateCalendar,
+                                        style: { 
+                                            display: 'flex', 
+                                            alignItems: 'center', 
+                                            gap: '0.5rem', 
+                                            padding: '0.75rem', 
+                                            background: '#e3f2fd', 
+                                            borderRadius: '4px',
+                                            borderLeft: `4px solid ${editingCalendar.color || '#003366'}`,
+                                            flexWrap: 'wrap'
+                                        }
+                                    },
+                                        React.createElement('input', {
+                                            type: 'text',
+                                            placeholder: 'Calendar name',
+                                            value: editingCalendar.name || '',
+                                            onChange: (e) => setEditingCalendar({...editingCalendar, name: e.target.value}),
+                                            style: { flex: '1', minWidth: '150px', padding: '0.4rem', border: '1px solid #90caf9', borderRadius: '4px' }
+                                        }),
+                                        React.createElement('input', {
+                                            type: 'color',
+                                            value: editingCalendar.color || '#003366',
+                                            onChange: (e) => setEditingCalendar({...editingCalendar, color: e.target.value}),
+                                            style: { width: '40px', height: '32px', padding: '2px', border: '1px solid #90caf9', borderRadius: '4px', cursor: 'pointer' }
+                                        }),
+                                        React.createElement('label', { style: { display: 'flex', alignItems: 'center', gap: '0.25rem', fontSize: '0.85rem' }},
+                                            React.createElement('input', {
+                                                type: 'checkbox',
+                                                checked: editingCalendar.enabled !== 0,
+                                                onChange: (e) => setEditingCalendar({...editingCalendar, enabled: e.target.checked ? 1 : 0})
+                                            }),
+                                            'Enabled'
+                                        ),
+                                        React.createElement('button', {
+                                            type: 'submit',
+                                            style: { padding: '0.4rem 0.75rem', background: '#28a745', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer', fontSize: '0.85rem' }
+                                        }, 'Save'),
+                                        React.createElement('button', {
+                                            type: 'button',
+                                            onClick: () => setEditingCalendar(null),
+                                            style: { padding: '0.4rem 0.75rem', background: '#6c757d', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer', fontSize: '0.85rem' }
+                                        }, 'Cancel')
+                                    )
+                                    // View mode
+                                    : React.createElement('div', { 
+                                        key: cal.id,
+                                        style: { 
+                                            display: 'flex', 
+                                            alignItems: 'center', 
+                                            gap: '1rem', 
+                                            padding: '0.75rem', 
+                                            background: cal.enabled === 0 ? '#f0f0f0' : '#f8f9fa', 
+                                            borderRadius: '4px',
+                                            borderLeft: `4px solid ${cal.color || '#003366'}`,
+                                            opacity: cal.enabled === 0 ? 0.6 : 1
+                                        }
+                                    },
+                                        React.createElement('span', { style: { flex: 1, fontWeight: '500' }}, cal.name || 'Unnamed'),
+                                        React.createElement('span', { style: { color: '#666', fontSize: '0.85rem', maxWidth: '300px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}, cal.url),
+                                        cal.enabled === 0 && React.createElement('span', { style: { fontSize: '0.75rem', color: '#999', fontStyle: 'italic' }}, 'disabled'),
+                                        React.createElement('button', {
+                                            onClick: () => setEditingCalendar({...cal}),
+                                            style: { padding: '0.25rem 0.5rem', background: '#0066cc', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer', fontSize: '0.8rem' }
+                                        }, 'Edit'),
+                                        React.createElement('button', {
+                                            onClick: () => deleteCalendar(cal.id),
+                                            style: { padding: '0.25rem 0.5rem', background: '#dc3545', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer', fontSize: '0.8rem' }
+                                        }, 'Delete')
+                                    )
                             )
                         )
                 ),
 
                 // Add Event Form
                 React.createElement('div', { style: { background: 'white', padding: '1.5rem', borderRadius: '8px', marginBottom: '2rem', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }},
-                    React.createElement('h2', { style: { marginBottom: '1rem', color: '#003366' }}, '➕ Add Manual Event'),
+                    React.createElement('h2', { style: { marginBottom: '1rem', color: '#003366' }}, 'Add Manual Event'),
                     React.createElement('form', { onSubmit: addEvent, style: { display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '0.75rem' }},
                         React.createElement('input', {
                             type: 'text',
@@ -458,7 +536,7 @@
 
                 // Manual Events List
                 manualEvents.length > 0 && React.createElement('div', { style: { background: 'white', padding: '1.5rem', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }},
-                    React.createElement('h2', { style: { marginBottom: '1rem', color: '#003366' }}, '📝 Manual Events'),
+                    React.createElement('h2', { style: { marginBottom: '1rem', color: '#003366' }}, 'Manual Events'),
                     React.createElement('div', { style: { display: 'flex', flexDirection: 'column', gap: '0.5rem' }},
                         manualEvents.map((ev) => 
                             React.createElement('div', { 
@@ -478,7 +556,7 @@
                                 React.createElement('button', {
                                     onClick: () => deleteManual(ev.id),
                                     style: { padding: '0.25rem 0.5rem', background: '#dc3545', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer', fontSize: '0.8rem' }
-                                }, '🗑️')
+                                }, 'X')
                             )
                         )
                     )

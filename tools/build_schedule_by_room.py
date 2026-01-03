@@ -176,12 +176,27 @@ def extract_professor(title: str, raw: dict | None):
     # Helper to test if a segment looks like a person name
     def looks_like_name(s: str) -> bool:
         s = s.strip()
+        # Reject if more than 3 words (likely a subject name, not a person)
+        word_count = len(s.split())
+        if word_count > 3:
+            return False
+        # Reject common subject keywords
+        lower = s.lower()
+        subject_keywords = ['programming', 'systems', 'engineering', 'intelligence', 
+                           'processing', 'structures', 'computer', 'software', 
+                           'design', 'analysis', 'networks', 'databases', 'security',
+                           'algorithms', 'operating', 'functional', 'artificial',
+                           'graphics', 'parallel', 'distributed', 'machine', 'learning']
+        for kw in subject_keywords:
+            if kw in lower:
+                return False
         # common forms: 'A. Groza', 'A Groza', 'Adrian Groza', 'A. D. Popescu'
         if re.match(r'^[A-Z]\.[A-Za-z\-]+$', s):
             return True
         if re.match(r'^[A-Z]\.[A-Z]\.[A-Za-z\-]+$', s):
             return True
-        if re.match(r'^[A-Z][a-z\-]+\s+[A-Z][a-z\-]+', s):
+        # Two words where first is a proper first name (not a subject keyword)
+        if re.match(r'^[A-Z][a-z\-]+\s+[A-Z][a-z\-]+$', s) and word_count == 2:
             return True
         if re.match(r'^[A-Z]\.?\s?[A-Za-z\-]+$', s):
             return True

@@ -9,10 +9,14 @@ export default function Schedule() {
   const [events, setEvents] = useState([])
   const [allEvents, setAllEvents] = useState([]) // All events for 2 months
   const [calendars, setCalendars] = useState({})
+  const [enabledCalendars, setEnabledCalendars] = useState({}) // Which calendars are checked
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
   const [filters, setFilters] = useState({ subject: '', professor: '', room: '' })
-  const [selectedCalendar, setSelectedCalendar] = useState('all') // Calendar filter
+  const [searchQuery, setSearchQuery] = useState('') // Search input
+  const [searchSuggestions, setSearchSuggestions] = useState([]) // Autocomplete suggestions
+  const [showSuggestions, setShowSuggestions] = useState(false)
+  const [calendarSearch, setCalendarSearch] = useState('') // Search calendars
   const [lastUpdate, setLastUpdate] = useState(null)
   const [viewMode, setViewMode] = useState('week')
   const [nearestDay, setNearestDay] = useState(null) // For showing nearest events message
@@ -51,13 +55,23 @@ export default function Schedule() {
         const data = await res.json()
         // data is { hash: { name, color, url }, ... }
         const calMap = {}
+        const enabled = {}
         Object.entries(data).forEach(([hash, info]) => {
           calMap[hash] = {
             color: info.color || CALENDAR_COLORS[Object.keys(calMap).length % CALENDAR_COLORS.length],
             name: info.name || hash
           }
+          enabled[hash] = true // All enabled by default
         })
         setCalendars(calMap)
+        setEnabledCalendars(prev => {
+          // Keep existing preferences, add new calendars as enabled
+          const merged = { ...enabled }
+          Object.keys(prev).forEach(k => {
+            if (k in merged) merged[k] = prev[k]
+          })
+          return merged
+        })
       }
     } catch (e) {
       console.error('Failed to fetch calendar list:', e)
@@ -201,10 +215,82 @@ export default function Schedule() {
     }
   }, [viewMode])
 
-  // Filter events by selected calendar
-  const filteredEvents = selectedCalendar === 'all' 
-    ? events 
-    : events.filter(ev => (ev.source || 'default') === selectedCalendar)
+  // Generate search suggestions from event titles
+  const updateSearchSuggestions = useCallback((query) => {
+    const lowerQuery = (query || '').toLowerCase()
+    const titleSet = new Set()
+    allEvents.forEach(ev => {
+      const title = ev.display_title || ev.title || ''
+      // If no query, show all unique titles; otherwise filter
+      if (!lowerQuery || title.toLowerCase().includes(lowerQuery)) {
+        titleSet.add(title)
+      }
+      // Also check calendar names
+      const calName = ev.calendar_name || calendars[ev.source]?.name || ''
+      if (!lowerQuery || calName.toLowerCase().includes(lowerQuery)) {
+        if (calName) titleSet.add(calName)
+      }
+    })
+    // Sort and limit to 10 suggestions
+    const suggestions = [...titleSet].sort().slice(0, 10)
+    setSearchSuggestions(suggestions)
+  }, [allEvents, calendars])
+
+  // Handle search input change
+  const handleSearchChange = (e) => {
+    const value = e.target.value
+    setSearchQuery(value)
+    updateSearchSuggestions(value)
+    setShowSuggestions(true)
+  }
+
+  // Handle search focus - show all suggestions
+  const handleSearchFocus = () => {
+    updateSearchSuggestions(searchQuery)
+    setShowSuggestions(true)
+  }
+
+  // Select a suggestion
+  const selectSuggestion = (suggestion) => {
+    setSearchQuery(suggestion)
+    setShowSuggestions(false)
+    setSearchSuggestions([])
+  }
+
+  // Toggle calendar visibility
+  const toggleCalendar = (source) => {
+    setEnabledCalendars(prev => ({
+      ...prev,
+      [source]: !prev[source]
+    }))
+  }
+
+  // Toggle all calendars
+  const toggleAllCalendars = (enabled) => {
+    const newState = {}
+    Object.keys(calendars).forEach(k => { newState[k] = enabled })
+    setEnabledCalendars(newState)
+  }
+
+  // Filter events by enabled calendars and search query
+  const filteredEvents = events.filter(ev => {
+    const source = ev.source || 'default'
+    // Check if calendar is enabled
+    if (enabledCalendars[source] === false) return false
+    // Check search query
+    if (searchQuery) {
+      const lowerQuery = searchQuery.toLowerCase()
+      const title = (ev.display_title || ev.title || '').toLowerCase()
+      const location = (ev.room || ev.location || '').toLowerCase()
+      const professor = (ev.professor || '').toLowerCase()
+      const calName = (ev.calendar_name || calendars[source]?.name || '').toLowerCase()
+      if (!title.includes(lowerQuery) && !location.includes(lowerQuery) && 
+          !professor.includes(lowerQuery) && !calName.includes(lowerQuery)) {
+        return false
+      }
+    }
+    return true
+  })
 
   const groupedByDate = filteredEvents.reduce((acc, ev) => {
     const date = ev.start ? ev.start.split('T')[0] : 'Unknown'
@@ -240,10 +326,13 @@ export default function Schedule() {
 
   const clearFilters = () => {
     setFilters({ subject: '', professor: '', room: '' })
-    setSelectedCalendar('all')
+    setSearchQuery('')
+    setSearchSuggestions([])
+    toggleAllCalendars(true)
   }
 
-  const hasActiveFilters = filters.subject || filters.professor || filters.room || selectedCalendar !== 'all'
+  const someCalendarsDisabled = Object.values(enabledCalendars).some(v => v === false)
+  const hasActiveFilters = filters.subject || filters.professor || filters.room || searchQuery || someCalendarsDisabled
 
   return (
     <div className="schedule-container">
@@ -281,20 +370,32 @@ export default function Schedule() {
       )}
 
       <div className="filters-bar">
-        <div className="filter-group">
-          <label>Calendar:</label>
-          <select 
-            value={selectedCalendar} 
-            onChange={(e) => setSelectedCalendar(e.target.value)}
-            className="calendar-select"
-          >
-            <option value="all">All Calendars</option>
-            {Object.entries(calendars).map(([source, cal]) => (
-              <option key={source} value={source}>
-                {cal.name}
-              </option>
-            ))}
-          </select>
+        <div className="filter-group search-group">
+          <label>Search:</label>
+          <div className="search-wrapper">
+            <input 
+              type="text" 
+              placeholder="Search events..." 
+              value={searchQuery}
+              onChange={handleSearchChange}
+              onFocus={handleSearchFocus}
+              onBlur={() => setTimeout(() => setShowSuggestions(false), 200)}
+              className="search-input"
+            />
+            {showSuggestions && searchSuggestions.length > 0 && (
+              <div className="search-suggestions">
+                {searchSuggestions.map((suggestion, idx) => (
+                  <div 
+                    key={idx} 
+                    className="suggestion-item"
+                    onClick={() => selectSuggestion(suggestion)}
+                  >
+                    {suggestion}
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
         <div className="filter-group">
           <label>Subject:</label>
@@ -312,19 +413,42 @@ export default function Schedule() {
             onChange={(e) => setFilters(f => ({ ...f, room: e.target.value }))} />
         </div>
         {hasActiveFilters && (
-          <button onClick={clearFilters} className="btn-clear">✕ Clear filters</button>
+          <button onClick={clearFilters} className="btn-clear">Clear filters</button>
         )}
       </div>
 
       {Object.keys(calendars).length > 0 && (
-        <div className="calendar-legend">
+        <div className="calendar-legend-container">
           <span className="legend-title">Calendars:</span>
-          {Object.entries(calendars).map(([source, cal]) => (
-            <span key={source} className="legend-item">
-              <span className="legend-dot" style={{ backgroundColor: cal.color }}></span>
-              {cal.name}
-            </span>
-          ))}
+          <input 
+            type="text"
+            placeholder="Search calendars..."
+            value={calendarSearch}
+            onChange={(e) => setCalendarSearch(e.target.value)}
+            className="calendar-search-input"
+          />
+          <div className="calendar-legend">
+            {Object.entries(calendars)
+              .filter(([source, cal]) => {
+                if (!calendarSearch) return true
+                return cal.name.toLowerCase().includes(calendarSearch.toLowerCase())
+              })
+              .map(([source, cal]) => (
+              <label key={source} className="legend-item" title={cal.name}>
+                <input 
+                  type="checkbox" 
+                  checked={enabledCalendars[source] !== false}
+                  onChange={() => toggleCalendar(source)}
+                />
+                <span className="legend-dot" style={{ backgroundColor: cal.color }}></span>
+                <span className="legend-name">{cal.name}</span>
+              </label>
+            ))}
+          </div>
+          <div className="legend-actions">
+            <button onClick={() => toggleAllCalendars(true)} className="btn-legend">All</button>
+            <button onClick={() => toggleAllCalendars(false)} className="btn-legend">None</button>
+          </div>
         </div>
       )}
 

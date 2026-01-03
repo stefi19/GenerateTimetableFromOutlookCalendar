@@ -77,8 +77,26 @@ def health_check():
 
 @app.route("/", methods=["GET"])
 def index():
-    # Redirect root to the React SPA frontend
-    return redirect(url_for('spa_index'))
+    """Serve the React SPA frontend directly on root."""
+    frontend_dist = pathlib.Path(__file__).parent / 'frontend' / 'dist' / 'index.html'
+    if frontend_dist.exists():
+        return send_file(frontend_dist)
+    return """
+    <html>
+    <head><title>Frontend Not Built</title></head>
+    <body style="font-family: sans-serif; padding: 2rem; text-align: center;">
+        <h1>Frontend not built</h1>
+        <p>Run <code>cd frontend && npm install && npm run build</code></p>
+    </body>
+    </html>
+    """, 200
+
+
+# Legacy /app route for backwards compatibility
+@app.route('/app')
+def spa_index_legacy():
+    """Redirect /app to root for backwards compatibility."""
+    return redirect('/')
 
 
 # OLD FRONTEND ROUTE - DISABLED (use /app for React SPA)
@@ -790,6 +808,13 @@ def events_json():
     Query params: from, to, subject, professor
     Always fetches and stores events for the next 2 months by default.
     """
+    # Import the event parser
+    try:
+        from tools.event_parser import parse_event, parse_title, parse_location
+    except ImportError:
+        parse_event = None
+        parse_title = None
+        parse_location = None
     from_s = request.values.get('from')
     to_s = request.values.get('to')
     subject_filter = (request.values.get('subject') or '').strip().lower()
@@ -829,30 +854,47 @@ def events_json():
                 start = e.get('start')
                 end = e.get('end')
                 title = e.get('title') or ''
-                subject = (e.get('subject') or '')
                 location = e.get('location') or ''
-                # use stored professor when available, otherwise fallback to a heuristic
-                prof = e.get('professor') or ''
-                if not prof:
-                    import re
-                    m = re.search(r"\b([A-Z][a-z]+\s+[A-Z][a-z]+)\b", title)
-                    if m:
-                        prof = m.group(1)
+                
+                # Use event parser to extract structured data
+                parsed_subject = ''
+                parsed_prof = ''
+                parsed_building = ''
+                parsed_room = ''
+                display_title = title
+                
+                if parse_event:
+                    try:
+                        parsed = parse_event(e)
+                        parsed_subject = parsed.get('subject', '')
+                        parsed_prof = parsed.get('professor', '')
+                        parsed_building = parsed.get('building', '')
+                        parsed_room = parsed.get('room', '')
+                        display_title = parsed.get('display_title', '') or title
+                    except Exception:
+                        pass
+                
+                # Fallback to existing data if parser didn't find anything
+                subject = parsed_subject or (e.get('subject') or '')
+                prof = parsed_prof or (e.get('professor') or '')
+                building = parsed_building or ''
+                room_parsed = parsed_room or room
 
-                hay = (title + ' ' + subject).lower()
+                hay = (title + ' ' + subject + ' ' + display_title).lower()
                 if subject_filter and subject_filter not in hay:
                     continue
                 if professor_filter and professor_filter not in (prof or '').lower():
                     continue
-                if room_filter and room_filter not in room.lower():
+                if room_filter and room_filter not in room.lower() and room_filter not in room_parsed.lower():
                     continue
 
                 ev = {
                     'title': title,
-                    'display_title': e.get('display_title') or title,
+                    'display_title': display_title,
                     'start': start,
                     'end': end,
-                    'room': room,
+                    'room': room_parsed or room,
+                    'building': building,
                     'subject': subject,
                     'professor': prof,
                     'location': location,
@@ -941,10 +983,10 @@ def events_json():
             else:
                 start_iso = ev_date.isoformat()
             try:
-                from tools.subject_parser import parse_title
+                from tools.event_parser import parse_title
                 parsed = parse_title(xe.get('title', '') or '')
                 disp = parsed.display_title
-                subj = parsed.subject_name
+                subj = parsed.subject
             except Exception:
                 disp = xe.get('title')
                 subj = ''
@@ -1155,7 +1197,13 @@ def departures_view():
     if str(tools_dir) not in sys.path:
         sys.path.insert(0, str(tools_dir))
     
-    from subject_parser import parse_location, parse_title, get_parser, learn_from_events, get_all_buildings
+    try:
+        from event_parser import parse_location, parse_title, parse_event
+    except ImportError:
+        from tools.event_parser import parse_location, parse_title, parse_event
+    
+    # Building list for the dropdown
+    BUILDINGS = ['Baritiu', 'DAIC', 'Dorobantilor', 'Observatorului', 'Memorandumului']
     
     # Get selected building from query params (default: show all)
     selected_building = request.args.get('building', '').lower()
@@ -1165,7 +1213,7 @@ def departures_view():
     if not events_file.exists():
         return render_template('departures.html', 
                              events_by_day={}, 
-                             buildings=get_all_buildings(),
+                             buildings=BUILDINGS,
                              selected_building=selected_building,
                              current_time=datetime.now(),
                              error="No events file found. Please go to Admin to import a calendar.")
@@ -1199,9 +1247,6 @@ def departures_view():
     except Exception:
         # ignore DB errors and continue with file-based events
         pass
-    
-    # Learn subject mappings from events
-    learn_from_events(all_events)
     
     # Get current datetime
     now = datetime.now()
@@ -1247,9 +1292,9 @@ def departures_view():
         # Parse location
         location = ev.get('location') or ''
         parsed_loc = parse_location(location)
-        building_code = parsed_loc.building_code or 'other'
-        building_name = parsed_loc.building_name or 'Other'
-        room = parsed_loc.room_normalized or parsed_loc.room or ''
+        building_name = parsed_loc.get('building', '') or 'Other'
+        building_code = building_name.lower() if building_name else 'other'
+        room = parsed_loc.get('room', '') or ''
         
         # Filter by building if selected
         if selected_building and building_code != selected_building:
@@ -1264,11 +1309,11 @@ def departures_view():
             'start': start_dt,
             'end_str': end_str if 'end_str' in dir() else ev.get('end'),
             'time': start_dt.strftime('%H:%M'),
-            'subject': parsed_title.subject_name,
+            'subject': parsed_title.subject,
             'display_title': parsed_title.display_title,
             'professor': parsed_title.professor or '',
             'room': room,
-            'room_display': parsed_loc.display_name,
+            'room_display': room,
             'building_code': building_code,
             'building_name': building_name,
             'is_now': event_date == today and start_dt <= now,
@@ -1301,7 +1346,7 @@ def departures_view():
     
     return render_template('departures.html',
                          events_by_day=events_by_day,
-                         buildings=get_all_buildings(),
+                         buildings=BUILDINGS,
                          selected_building=selected_building,
                          current_time=now,
                          has_today_events=has_today_events,
@@ -1721,6 +1766,76 @@ def admin_update_calendar_color():
         return jsonify({'success': False, 'message': f'Failed to update color: {e}'}), 500
 
 
+@app.route('/admin/update_calendar', methods=['POST'])
+@require_admin
+def admin_update_calendar():
+    """Update a calendar's name, color, and enabled status (returns JSON)."""
+    try:
+        cal_id = int(request.form.get('id', -1))
+        name = request.form.get('name', '').strip()
+        color = request.form.get('color', '').strip()
+        enabled = request.form.get('enabled', '1')
+        enabled_bool = enabled in ('1', 'true', 'on', 'True')
+    except Exception:
+        return jsonify({'success': False, 'message': 'Invalid parameters'}), 400
+
+    try:
+        init_db()
+        with get_db_connection() as conn:
+            cur = conn.cursor()
+            # Get the URL for this calendar
+            cur.execute('SELECT url FROM calendars WHERE id = ?', (cal_id,))
+            row = cur.fetchone()
+            if not row:
+                return jsonify({'success': False, 'message': 'Calendar not found'}), 404
+            url = row['url']
+            
+            # Update the calendar
+            cur.execute('UPDATE calendars SET name = ?, color = ?, enabled = ? WHERE id = ?', 
+                       (name, color or None, 1 if enabled_bool else 0, cal_id))
+            conn.commit()
+        
+        # Also update calendar_map.json
+        h = hashlib.sha1(url.encode('utf-8')).hexdigest()[:8]
+        map_path = pathlib.Path('playwright_captures') / 'calendar_map.json'
+        if map_path.exists():
+            try:
+                with open(map_path, 'r', encoding='utf-8') as f:
+                    cmap = json.load(f)
+                if h in cmap:
+                    cmap[h]['name'] = name
+                    cmap[h]['color'] = color
+                    with open(map_path, 'w', encoding='utf-8') as f:
+                        json.dump(cmap, f, indent=2, ensure_ascii=False)
+            except Exception:
+                pass
+        
+        # Update events in events_{h}.json with new color
+        if color:
+            events_file = pathlib.Path('playwright_captures') / f'events_{h}.json'
+            if events_file.exists():
+                try:
+                    with open(events_file, 'r', encoding='utf-8') as f:
+                        events = json.load(f)
+                    for ev in events:
+                        ev['color'] = color
+                    with open(events_file, 'w', encoding='utf-8') as f:
+                        json.dump(events, f, indent=2, ensure_ascii=False, default=str)
+                except Exception:
+                    pass
+            
+            # Regenerate merged events.json
+            try:
+                today = date.today()
+                ensure_schedule(today, today + timedelta(days=7))
+            except Exception:
+                pass
+        
+        return jsonify({'success': True, 'message': 'Calendar updated'})
+    except Exception as e:
+        return jsonify({'success': False, 'message': f'Failed to update calendar: {e}'}), 500
+
+
 @app.route('/admin/delete_manual', methods=['POST'])
 @require_admin
 def admin_delete_manual():
@@ -1774,12 +1889,12 @@ def extracurricular_events_view():
     
     # Parse titles so UI shows cleaned/display titles (apply subject parsing rules)
     try:
-        from tools.subject_parser import parse_title
+        from tools.event_parser import parse_title
         for ev in events:
             try:
                 parsed = parse_title(ev.get('title', '') or '')
                 ev['display_title'] = parsed.display_title
-                ev['subject'] = parsed.subject_name
+                ev['subject'] = parsed.subject
             except Exception:
                 ev['display_title'] = ev.get('title')
                 ev['subject'] = ev.get('subject', '')
@@ -1878,30 +1993,6 @@ def delete_extracurricular_event():
 # ─────────────────────────────────────────────────────────────────────────────
 # React SPA frontend routes
 # ─────────────────────────────────────────────────────────────────────────────
-
-@app.route('/app')
-def spa_index():
-    """Serve the React SPA frontend."""
-    frontend_dist = pathlib.Path(__file__).parent / 'frontend' / 'dist' / 'index.html'
-    if frontend_dist.exists():
-        return send_file(frontend_dist)
-    return """
-    <html>
-    <head><title>Frontend Not Built</title></head>
-    <body style="font-family: sans-serif; padding: 2rem; text-align: center;">
-        <h1>Frontend not built</h1>
-        <p>Run the following commands to build the frontend:</p>
-        <pre style="background: #f3f4f6; padding: 1rem; border-radius: 8px; display: inline-block; text-align: left;">
-cd frontend
-npm install
-npm run build
-        </pre>
-        <p>Then refresh this page.</p>
-        <p><a href="/schedule">Go to legacy schedule view</a></p>
-    </body>
-    </html>
-    """, 200
-
 
 @app.route('/frontend/<path:filename>')
 def frontend_static(filename):
