@@ -482,22 +482,24 @@ export default function Schedule() {
               <span className="event-count">{groupedByDate[date].length} events</span>
             </div>
             <div className="events-table">
-              <div className="table-header">
-                <span className="col-time">Time</span>
-                <span className="col-title">Event</span>
-                <span className="col-location">Location</span>
-                <span className="col-professor">Professor</span>
-              </div>
-              {groupedByDate[date].sort((a, b) => (a.start || '').localeCompare(b.start || '')).map((ev, idx) => (
-                <div key={idx} className="table-row" style={{ borderLeftColor: ev.color || '#003366' }}>
-                  <span className="col-time">{formatTime(ev.start)}<small>{formatTime(ev.end)}</small></span>
-                  <span className="col-title"><strong>{ev.display_title || ev.title}</strong>
-                    {ev.subject && ev.subject !== ev.display_title && <small>{ev.subject}</small>}
-                  </span>
-                  <span className="col-location">{ev.room || ev.location || '-'}</span>
-                  <span className="col-professor">{ev.professor || '-'}</span>
+              <div className="events-table-inner">
+                <div className="table-header">
+                  <span className="col-time">Time</span>
+                  <span className="col-title">Event</span>
+                  <span className="col-location">Location</span>
+                  <span className="col-professor">Professor</span>
                 </div>
-              ))}
+                {groupedByDate[date].sort((a, b) => (a.start || '').localeCompare(b.start || '')).map((ev, idx) => (
+                  <div key={idx} className="table-row" style={{ borderLeftColor: ev.color || '#003366' }}>
+                    <span className="col-time">{formatTime(ev.start)}<small>{formatTime(ev.end)}</small></span>
+                    <span className="col-title"><strong>{ev.display_title || ev.title}</strong>
+                      {ev.subject && ev.subject !== ev.display_title && <small>{ev.subject}</small>}
+                    </span>
+                    <span className="col-location">{ev.room || ev.location || '-'}</span>
+                    <span className="col-professor">{ev.professor || '-'}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         ))}

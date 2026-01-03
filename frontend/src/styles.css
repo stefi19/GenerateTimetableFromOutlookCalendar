@@ -384,7 +384,11 @@ body {
   border: 1px solid var(--gray-200);
   border-top: none;
   border-radius: 0 0 8px 8px;
-  overflow: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.events-table-inner {
+  min-width: 500px;
 }
 .table-header {
   display: grid;
@@ -717,8 +721,9 @@ body {
   .schedule-grid, .departures-grid { padding: 8px; }
   .day-header { padding: 10px 12px; }
   .day-header h3 { font-size: 0.9rem; }
-  .table-header, .table-row { grid-template-columns: 60px 1fr; padding: 8px 10px; }
+  .table-header, .table-row { grid-template-columns: 80px 1fr 120px 120px; padding: 8px 10px; }
   .col-time { font-size: 0.8rem; }
+  .col-location, .col-professor { font-size: 0.8rem; }
   .section-header { padding: 10px 12px; }
   .section-header h3 { font-size: 0.9rem; }
   .board-header, .board-row { grid-template-columns: 55px 1fr 60px; padding: 8px 10px; }
