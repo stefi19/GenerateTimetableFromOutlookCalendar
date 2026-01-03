@@ -2103,6 +2103,35 @@ def departures_json():
     # Improved deduplication: prefer events with more populated fields when duplicates
     deduped = []
     seen_map = {}  # map key_start_loc -> index in deduped
+    import re
+
+    def _normalize_location_for_key(ev: dict) -> str:
+        """Return a compact location token suitable for dedupe keys.
+
+        Prefer structured 'room' when present. Otherwise try to extract a
+        reasonable room token from the free-form 'location' string (e.g.
+        'Sala 40', 'Room 40', last numeric token). Fall back to the raw
+        location trimmed.
+        """
+        room = (ev.get('room') or '').strip()
+        if room:
+            return room
+        loc = (ev.get('location') or '').strip()
+        if not loc:
+            return ''
+        # try common patterns
+        m = re.search(r'sala\s*([A-Za-z0-9\-]+)', loc, flags=re.IGNORECASE)
+        if m:
+            return m.group(1)
+        m = re.search(r'room\s*([A-Za-z0-9\-]+)', loc, flags=re.IGNORECASE)
+        if m:
+            return m.group(1)
+        # last numeric token
+        nums = re.findall(r'(\d+[A-Za-z\-]?)', loc)
+        if nums:
+            return nums[-1]
+        # fallback: use trimmed, lowercased location (shortened)
+        return loc.lower()
     for ev in filtered:
         try:
             raw = ev.get('raw') or {}
@@ -2130,7 +2159,7 @@ def departures_json():
                 continue
 
             start = str(ev.get('start') or '').strip()
-            loc = str(ev.get('location') or ev.get('room') or '').strip()
+            loc = _normalize_location_for_key(ev)
             norm_title = str(ev.get('title') or '').strip().lower()
             key_start_loc = f'SL:{start}|{loc}'
 
