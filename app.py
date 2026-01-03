@@ -307,6 +307,9 @@ extractor_state = {
     'last_started': None,
     'stdout_path': None,
     'stderr_path': None,
+    'current_calendar': None,
+    'progress_message': None,
+    'events_extracted': 0,
 }
 
 # Scheduler control
@@ -565,13 +568,19 @@ def _run_extractor_background():
         extractor_state['running'] = False
 
 
-def _run_extractor_for_url(url: str) -> int:
+def _run_extractor_for_url(url: str, calendar_name: str = None) -> int:
     """Run the extractor script for a specific URL (uses CLI arg). Returns returncode."""
     out_dir = pathlib.Path('playwright_captures')
     out_dir.mkdir(exist_ok=True)
     h = hashlib.sha1(url.encode('utf-8')).hexdigest()[:8]
     stdout_path = out_dir / f'extract_{h}.stdout.txt'
     stderr_path = out_dir / f'extract_{h}.stderr.txt'
+    
+    # Update progress state
+    extractor_state['current_calendar'] = calendar_name or url[:50]
+    extractor_state['progress_message'] = f'Extracting events from {calendar_name or "calendar"}...'
+    extractor_state['events_extracted'] = 0
+    
     cmd = [sys.executable, str(pathlib.Path('tools') / 'extract_published_events.py'), url]
     try:
         # force UTF-8 for child process to avoid Windows cp1252 / OEM codepage problems
@@ -598,6 +607,10 @@ def _run_extractor_for_url(url: str) -> int:
                     data = json.load(f)
             except Exception:
                 data = []
+
+            # Update progress with event count
+            extractor_state['events_extracted'] = len(data)
+            extractor_state['progress_message'] = f'Extracted {len(data)} events from {calendar_name or "calendar"}'
 
             # Get the color from DB for this calendar
             cal_color = None
@@ -680,25 +693,25 @@ def periodic_fetcher(interval_minutes: int = 60):
             periodic_fetch_state['last_run'] = datetime.utcnow().isoformat()
 
             # Read URLs from DB
-            urls = []
+            urls_with_names = []
             try:
                 rows = list_calendar_urls()
                 for r in rows:
                     if r.get('enabled') and r.get('url'):
-                        urls.append(r.get('url'))
+                        urls_with_names.append((r.get('url'), r.get('name')))
             except Exception:
-                urls = []
+                urls_with_names = []
 
             # If no URLs configured, skip
-            if not urls:
+            if not urls_with_names:
                 periodic_fetch_state['running'] = False
                 _periodic_lock.release()
                 continue
 
             # Run extractor for each URL sequentially
             any_success = False
-            for u in urls:
-                rc = _run_extractor_for_url(u)
+            for u, name in urls_with_names:
+                rc = _run_extractor_for_url(u, name)
                 if rc == 0:
                     any_success = True
 
@@ -1354,6 +1367,11 @@ def admin_api_status():
         'events_count': events_count,
         'last_import': last_import,
         'extractor_running': extractor_state.get('running', False),
+        'extractor_progress': {
+            'current_calendar': extractor_state.get('current_calendar'),
+            'message': extractor_state.get('progress_message'),
+            'events_extracted': extractor_state.get('events_extracted', 0),
+        },
         'periodic_fetcher': {
             'started': _periodic_fetcher_started,
             'running': periodic_fetch_state.get('running', False),
@@ -1472,9 +1490,15 @@ def admin_import_calendar():
     if extractor_state.get('running'):
         return jsonify({'success': False, 'message': 'Import already in progress'}), 200
 
+    # Update extractor state to show we're starting
+    extractor_state['running'] = True
+    extractor_state['progress_message'] = 'Starting import...'
+    extractor_state['events_extracted'] = 0
+    extractor_state['current_calendar'] = name or 'calendar'
+
     # Start extractor in background - use URL if provided, else default
     if url:
-        t = threading.Thread(target=_run_extractor_for_url, args=(url,), daemon=True)
+        t = threading.Thread(target=_run_extractor_for_url, args=(url, name), daemon=True)
     else:
         t = threading.Thread(target=_run_extractor_background, daemon=True)
     t.start()

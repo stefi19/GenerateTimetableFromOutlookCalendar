@@ -67,6 +67,7 @@
             const [loading, setLoading] = React.useState(true)
             const [importing, setImporting] = React.useState(false)
             const [extractorRunning, setExtractorRunning] = React.useState(false)
+            const [extractorProgress, setExtractorProgress] = React.useState(null)
             const [message, setMessage] = React.useState(null)
             const [newCalendar, setNewCalendar] = React.useState({ url: '', name: '', color: '#003366' })
             const [newEvent, setNewEvent] = React.useState({ title: '', start_date: '', start_time: '', end_time: '', location: '' })
@@ -83,6 +84,22 @@
                         setManualEvents(data.manual_events || [])
                         setStats({ events_count: data.events_count || 0, last_import: data.last_import })
                         setExtractorRunning(data.extractor_running || false)
+                        setExtractorProgress(data.extractor_progress || null)
+                        
+                        // Auto-add progress messages to log
+                        if (data.extractor_progress && data.extractor_progress.message) {
+                            setImportLog(prev => {
+                                const lastMsg = prev.length > 0 ? prev[prev.length - 1].msg : ''
+                                if (lastMsg !== data.extractor_progress.message) {
+                                    return [...prev, { 
+                                        time: new Date().toLocaleTimeString(), 
+                                        msg: data.extractor_progress.message, 
+                                        type: 'info' 
+                                    }]
+                                }
+                                return prev
+                            })
+                        }
                     }
                 } catch (e) {
                     console.error(e)
@@ -252,12 +269,38 @@
                 },
                     React.createElement('div', { style: { display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }},
                         React.createElement('h3', { style: { margin: 0, color: extractorRunning ? '#856404' : '#2e7d32', display: 'flex', alignItems: 'center', gap: '0.5rem' }}, 
-                            extractorRunning ? '⏳ Import in Progress...' : '✓ Import Status'
+                            extractorRunning ? '⏳ Import in Progress...' : '✓ Import Complete'
                         ),
                         !extractorRunning && importLog.length > 0 && React.createElement('button', {
                             onClick: () => setImportLog([]),
                             style: { background: 'transparent', border: 'none', cursor: 'pointer', color: '#666', fontSize: '0.8rem' }
                         }, 'Clear')
+                    ),
+                    // Show current progress details
+                    extractorRunning && extractorProgress && React.createElement('div', {
+                        style: { 
+                            display: 'flex', 
+                            justifyContent: 'space-between', 
+                            alignItems: 'center',
+                            marginBottom: '0.5rem',
+                            padding: '0.5rem',
+                            background: 'rgba(255,255,255,0.5)',
+                            borderRadius: '4px'
+                        }
+                    },
+                        React.createElement('span', { style: { fontWeight: '500' }}, 
+                            extractorProgress.current_calendar || 'Processing...'
+                        ),
+                        extractorProgress.events_extracted > 0 && React.createElement('span', { 
+                            style: { 
+                                background: '#28a745', 
+                                color: 'white', 
+                                padding: '0.25rem 0.5rem', 
+                                borderRadius: '12px',
+                                fontSize: '0.85rem',
+                                fontWeight: 'bold'
+                            }
+                        }, `${extractorProgress.events_extracted} events`)
                     ),
                     extractorRunning && React.createElement('div', { 
                         style: { 
