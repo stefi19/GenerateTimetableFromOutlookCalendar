@@ -529,17 +529,78 @@ body {
 .text-muted { color: var(--gray-600); font-size: 0.9rem; }
 
 /* Responsive */
+@media (max-width: 1024px) {
+  .main { padding: 16px; }
+  .week-label { min-width: 200px; font-size: 0.9rem; }
+  .table-header, .table-row { grid-template-columns: 90px 1fr 120px 120px; }
+}
+
 @media (max-width: 768px) {
-  .header-content { flex-direction: column; gap: 12px; text-align: center; }
-  .nav { flex-wrap: wrap; justify-content: center; }
-  .toolbar { flex-direction: column; }
-  .filters-bar { flex-direction: column; align-items: stretch; }
+  .top-bar-content { flex-direction: column; gap: 4px; text-align: center; padding: 6px 16px; }
+  .header-content { flex-direction: column; gap: 12px; text-align: center; padding: 12px 16px; }
+  .logo-text h1 { font-size: 1.25rem; }
+  .subtitle { font-size: 0.8rem; }
+  .nav { flex-wrap: wrap; justify-content: center; gap: 6px; }
+  .nav-btn { padding: 8px 14px; font-size: 0.85rem; }
+  .main { padding: 12px; }
+  .toolbar { flex-direction: column; padding: 12px 16px; }
+  .toolbar h2 { font-size: 1.1rem; margin-right: 0; margin-bottom: 8px; }
+  .toolbar-left, .toolbar-right { width: 100%; justify-content: center; }
+  .view-toggle { flex-wrap: wrap; }
+  .week-navigation { flex-wrap: wrap; padding: 10px 16px; gap: 10px; }
+  .week-label { min-width: 100%; order: -1; }
+  .btn-nav { padding: 6px 12px; font-size: 0.85rem; }
+  .filters-bar { flex-direction: column; align-items: stretch; padding: 12px 16px; }
   .filter-group { flex-direction: column; align-items: stretch; }
-  .filter-group input, .filter-group select { width: 100%; }
-  .table-header, .table-row { grid-template-columns: 80px 1fr; }
+  .filter-group input, .filter-group select { width: 100%; min-width: unset; }
+  .calendar-legend { justify-content: center; }
+  .schedule-grid { padding: 12px; }
+  .day-section { margin-bottom: 16px; }
+  .table-header, .table-row { grid-template-columns: 70px 1fr; font-size: 0.85rem; padding: 10px 12px; }
   .col-location, .col-professor { display: none; }
-  .board-header, .board-row { grid-template-columns: 70px 1fr 80px; }
+  .departures-grid { padding: 12px; }
+  .board-header, .board-row { grid-template-columns: 65px 1fr 70px; font-size: 0.8rem; padding: 10px 12px; }
   .board-row .col-status { display: none; }
   .admin-grid { grid-template-columns: 1fr; }
+  .admin-section { padding: 16px; }
   .stats-grid { grid-template-columns: 1fr; }
+  .stat-card { padding: 12px; }
+  .stat-value { font-size: 1.5rem; }
+  .form-row { flex-direction: column; }
+  .alert { margin: 12px; }
 }
+
+@media (max-width: 480px) {
+  .top-bar { font-size: 0.75rem; }
+  .header-content { padding: 10px 12px; }
+  .logo-text h1 { font-size: 1.1rem; }
+  .subtitle { display: none; }
+  .nav-btn { padding: 6px 10px; font-size: 0.8rem; }
+  .main { padding: 8px; }
+  .toolbar { padding: 10px 12px; }
+  .toolbar h2 { font-size: 1rem; }
+  .view-toggle button { padding: 5px 10px; font-size: 0.75rem; }
+  .btn-refresh { padding: 6px 12px; font-size: 0.8rem; }
+  .week-navigation { padding: 8px 12px; }
+  .btn-nav { padding: 5px 10px; font-size: 0.8rem; }
+  .btn-today { padding: 5px 10px; font-size: 0.75rem; }
+  .filters-bar { padding: 10px 12px; gap: 10px; }
+  .schedule-grid, .departures-grid { padding: 8px; }
+  .day-header { padding: 10px 12px; }
+  .day-header h3 { font-size: 0.9rem; }
+  .table-header, .table-row { grid-template-columns: 60px 1fr; padding: 8px 10px; }
+  .col-time { font-size: 0.8rem; }
+  .section-header { padding: 10px 12px; }
+  .section-header h3 { font-size: 0.9rem; }
+  .board-header, .board-row { grid-template-columns: 55px 1fr 60px; padding: 8px 10px; }
+  .board-header { font-size: 0.65rem; }
+  .admin-section { padding: 12px; }
+  .admin-section .section-header { margin: -12px -12px 12px -12px; }
+  .form-add { padding: 12px; }
+  .form-add input { padding: 8px 10px; }
+  .btn-primary { padding: 10px; font-size: 0.85rem; }
+  .empty-state, .loading-state { padding: 32px 16px; }
+  .empty-icon { font-size: 2rem; }
+  .footer { padding: 12px; font-size: 0.8rem; }
+}
+

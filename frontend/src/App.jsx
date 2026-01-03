@@ -41,10 +41,9 @@ export default function App() {
         <div className="header-content">
           <div className="header-brand">
             <div className="logo">
-              <span className="logo-icon">🎓</span>
               <div className="logo-text">
                 <h1>AC UTCN</h1>
-                <span className="subtitle">Automation & Computer Science • Schedule</span>
+                <span className="subtitle">Automation & Computer Science</span>
               </div>
             </div>
           </div>
@@ -53,13 +52,13 @@ export default function App() {
               onClick={() => setTab('schedule')} 
               className={"nav-btn " + (tab === 'schedule' ? 'active' : '')}
             >
-              📅 Schedule
+              Schedule
             </button>
             <button 
               onClick={() => setTab('departures')} 
               className={"nav-btn " + (tab === 'departures' ? 'active' : '')}
             >
-              🚀 Departures
+              Departures
             </button>
           </nav>
         </div>

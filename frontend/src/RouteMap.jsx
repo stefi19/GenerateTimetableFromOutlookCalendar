@@ -3,7 +3,7 @@ import React from 'react'
 export default function RouteMap() {
   return (
     <div className="route-map-container">
-      <h2>🗺️ Cluj Route Map</h2>
+      <h2>Cluj Route Map</h2>
       <svg 
         id="Cluj-Route-TLights" 
         width="100%" 
@@ -136,7 +136,7 @@ export default function RouteMap() {
       </svg>
 
       <div className="map-legend">
-        <p>🏥 <strong>Heart Institute</strong> → 🏛️ <strong>Tailors' Bastion</strong></p>
+        <p><strong>Heart Institute</strong> → <strong>Tailors' Bastion</strong></p>
         <p>Route through Unirii Square and Babeș-Bolyai University</p>
       </div>
     </div>

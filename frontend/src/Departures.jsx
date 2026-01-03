@@ -98,7 +98,7 @@ export default function Departures() {
         <span className="event-count">{evts.length} events</span>
       </div>
       {evts.length === 0 ? (
-        <div className="no-events"><span>📭</span> No scheduled events</div>
+        <div className="no-events">No scheduled events</div>
       ) : (
         <div className="departure-board">
           <div className="board-header">
@@ -139,7 +139,7 @@ export default function Departures() {
             </select>
           </div>
           <button onClick={fetchDepartures} className="btn-refresh" disabled={loading}>
-            {loading ? '⏳' : '🔄'} Refresh
+            {loading ? 'Loading...' : 'Refresh'}
           </button>
         </div>
       </div>
@@ -149,8 +149,8 @@ export default function Departures() {
 
       {!loading && !error && (
         <div className="departures-grid">
-          <DepartureBoard events={todayEvents} title={'📅 Today (' + today + ')'} isToday={true} />
-          <DepartureBoard events={tomorrowEvents} title={'📅 Tomorrow (' + tomorrow + ')'} isToday={false} />
+          <DepartureBoard events={todayEvents} title={'Today (' + today + ')'} isToday={true} />
+          <DepartureBoard events={tomorrowEvents} title={'Tomorrow (' + tomorrow + ')'} isToday={false} />
         </div>
       )}
 

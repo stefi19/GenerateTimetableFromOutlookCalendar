@@ -258,7 +258,7 @@ export default function Schedule() {
         </div>
         <div className="toolbar-right">
           <button onClick={fetchEvents} className="btn-refresh" disabled={loading}>
-            {loading ? '⏳' : '🔄'} Refresh
+            {loading ? 'Loading...' : 'Refresh'}
           </button>
         </div>
       </div>
@@ -332,7 +332,7 @@ export default function Schedule() {
 
       {nearestDay && (
         <div className="alert alert-info">
-          <strong>📅 No events today/this week.</strong> Showing events starting from{' '}
+          <strong>No events today/this week.</strong> Showing events starting from{' '}
           <strong>{new Date(nearestDay).toLocaleDateString('en-US', { weekday: 'long', day: 'numeric', month: 'long' })}</strong>
           {' '}— the nearest day with scheduled events.
         </div>
@@ -340,7 +340,7 @@ export default function Schedule() {
 
       {!loading && !error && events.length === 0 && !nearestDay && (
         <div className="empty-state">
-          <div className="empty-icon">📭</div>
+          <div className="empty-icon"></div>
           <h3>No events found</h3>
           <p>Go to <strong>Admin</strong> to import a calendar.</p>
         </div>

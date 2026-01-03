@@ -166,9 +166,9 @@ export default function Admin() {
       <div className="admin-grid">
         <div className="admin-section">
           <div className="section-header">
-            <h3>📊 Statistics</h3>
+            <h3>Statistics</h3>
             {stats.extractor_running && (
-              <span className="status-badge importing">⏳ Importing...</span>
+              <span className="status-badge importing">Importing...</span>
             )}
           </div>
           <div className="stats-grid">
@@ -188,7 +188,7 @@ export default function Admin() {
           {stats.periodic_fetcher && (
             <div className="periodic-status">
               <small>
-                🔄 Auto-refresh: every {stats.periodic_fetcher.interval_minutes} min
+                Auto-refresh: every {stats.periodic_fetcher.interval_minutes} min
                 {stats.periodic_fetcher.last_success && (
                   <> | Last: {new Date(stats.periodic_fetcher.last_success).toLocaleTimeString()}</>
                 )}
@@ -196,13 +196,13 @@ export default function Admin() {
             </div>
           )}
           <button onClick={importCalendar} className="btn-primary btn-full" disabled={importing || stats.extractor_running}>
-            {importing || stats.extractor_running ? '⏳ Importing...' : '🔄 Re-import all calendars'}
+            {importing || stats.extractor_running ? 'Importing...' : 'Re-import all calendars'}
           </button>
         </div>
 
         <div className="admin-section">
           <div className="section-header">
-            <h3>📅 Configured Calendars</h3>
+            <h3>Configured Calendars</h3>
           </div>
           {calendars.length === 0 ? (
             <p className="text-muted">No calendars configured.</p>
@@ -226,7 +226,7 @@ export default function Admin() {
                     <strong>{cal.name || 'Calendar ' + (idx + 1)}</strong>
                     <small>{cal.url ? cal.url.substring(0, 50) + '...' : ''}</small>
                   </div>
-                  <button onClick={() => deleteCalendar(cal.id)} className="btn-danger-sm">🗑️</button>
+                  <button onClick={() => deleteCalendar(cal.id)} className="btn-danger-sm">Delete</button>
                 </div>
               ))}
             </div>
@@ -253,7 +253,7 @@ export default function Admin() {
 
         <div className="admin-section">
           <div className="section-header">
-            <h3>✏️ Manual Events</h3>
+            <h3>Manual Events</h3>
           </div>
           {manualEvents.length === 0 ? (
             <p className="text-muted">No manual events.</p>
@@ -265,7 +265,7 @@ export default function Admin() {
                     <strong>{ev.title}</strong>
                     <small>{ev.start} • {ev.location || '-'}</small>
                   </div>
-                  <button onClick={() => deleteManualEvent(ev.id)} className="btn-danger-sm">🗑️</button>
+                  <button onClick={() => deleteManualEvent(ev.id)} className="btn-danger-sm">Delete</button>
                 </div>
               ))}
             </div>
