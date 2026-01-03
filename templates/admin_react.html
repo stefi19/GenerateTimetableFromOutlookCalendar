@@ -39,6 +39,10 @@
             text-align: center;
             font-size: 0.9rem;
         }
+        @keyframes pulse {
+            0%, 100% { width: 30%; margin-left: 0; }
+            50% { width: 50%; margin-left: 25%; }
+        }
     </style>
 </head>
 <body>
@@ -62,29 +66,41 @@
             const [manualEvents, setManualEvents] = React.useState([])
             const [loading, setLoading] = React.useState(true)
             const [importing, setImporting] = React.useState(false)
+            const [extractorRunning, setExtractorRunning] = React.useState(false)
             const [message, setMessage] = React.useState(null)
             const [newCalendar, setNewCalendar] = React.useState({ url: '', name: '', color: '#003366' })
             const [newEvent, setNewEvent] = React.useState({ title: '', start_date: '', start_time: '', end_time: '', location: '' })
             const [stats, setStats] = React.useState({ events_count: 0, last_import: null })
+            const [importLog, setImportLog] = React.useState([])
 
-            const fetchData = React.useCallback(async () => {
+            const fetchData = React.useCallback(async (showLoading = true) => {
                 try {
-                    setLoading(true)
+                    if (showLoading) setLoading(true)
                     const res = await fetch('/admin/api/status')
                     if (res.ok) {
                         const data = await res.json()
                         setCalendars(data.calendars || [])
                         setManualEvents(data.manual_events || [])
                         setStats({ events_count: data.events_count || 0, last_import: data.last_import })
+                        setExtractorRunning(data.extractor_running || false)
                     }
                 } catch (e) {
                     console.error(e)
                 } finally {
-                    setLoading(false)
+                    if (showLoading) setLoading(false)
                 }
             }, [])
 
+            // Initial load
             React.useEffect(() => { fetchData() }, [fetchData])
+            
+            // Poll every 2 seconds when extractor is running
+            React.useEffect(() => {
+                const interval = setInterval(() => {
+                    fetchData(false)
+                }, 2000)
+                return () => clearInterval(interval)
+            }, [fetchData])
 
             const showMessage = (text, type) => {
                 setMessage({ text, type })
@@ -96,6 +112,7 @@
                 if (!newCalendar.url) return showMessage('URL is required', 'error')
                 
                 try {
+                    setImportLog(prev => [...prev, { time: new Date().toLocaleTimeString(), msg: 'Adding calendar...', type: 'info' }])
                     const form = new FormData()
                     form.append('calendar_url', newCalendar.url)
                     form.append('calendar_name', newCalendar.name)
@@ -103,22 +120,27 @@
                     
                     const res = await fetch('/admin/set_calendar_url', { method: 'POST', body: form })
                     if (res.ok) {
-                        showMessage('Calendar added successfully', 'success')
+                        setImportLog(prev => [...prev, { time: new Date().toLocaleTimeString(), msg: 'Calendar added! Starting import...', type: 'success' }])
+                        showMessage('Calendar added - importing events...', 'success')
                         setNewCalendar({ url: '', name: '', color: '#003366' })
-                        fetchData()
+                        fetchData(false)
                     }
                 } catch (e) {
+                    setImportLog(prev => [...prev, { time: new Date().toLocaleTimeString(), msg: 'Error: ' + e.message, type: 'error' }])
                     showMessage('Error adding calendar', 'error')
                 }
             }
 
             const importCalendar = async () => {
                 setImporting(true)
+                setImportLog(prev => [...prev, { time: new Date().toLocaleTimeString(), msg: 'Starting import for all calendars...', type: 'info' }])
                 try {
                     const res = await fetch('/admin/import_calendar', { method: 'POST' })
                     const data = await res.json()
+                    setImportLog(prev => [...prev, { time: new Date().toLocaleTimeString(), msg: data.message || 'Import started', type: 'success' }])
                     showMessage(data.message || 'Import started', 'success')
                 } catch (e) {
+                    setImportLog(prev => [...prev, { time: new Date().toLocaleTimeString(), msg: 'Import error: ' + e.message, type: 'error' }])
                     showMessage('Import error', 'error')
                 } finally {
                     setImporting(false)
@@ -215,6 +237,64 @@
                             stats.last_import ? new Date(stats.last_import * 1000).toLocaleString() : 'Never'
                         ),
                         React.createElement('div', { style: { color: '#666' }}, 'Last Import')
+                    )
+                ),
+
+                // Import Status Panel
+                (extractorRunning || importLog.length > 0) && React.createElement('div', { 
+                    style: { 
+                        background: extractorRunning ? '#fff3cd' : '#e8f5e9', 
+                        border: extractorRunning ? '2px solid #ffc107' : '1px solid #c8e6c9',
+                        padding: '1rem', 
+                        borderRadius: '8px', 
+                        marginBottom: '2rem' 
+                    }
+                },
+                    React.createElement('div', { style: { display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }},
+                        React.createElement('h3', { style: { margin: 0, color: extractorRunning ? '#856404' : '#2e7d32', display: 'flex', alignItems: 'center', gap: '0.5rem' }}, 
+                            extractorRunning ? '⏳ Import in Progress...' : '✓ Import Status'
+                        ),
+                        !extractorRunning && importLog.length > 0 && React.createElement('button', {
+                            onClick: () => setImportLog([]),
+                            style: { background: 'transparent', border: 'none', cursor: 'pointer', color: '#666', fontSize: '0.8rem' }
+                        }, 'Clear')
+                    ),
+                    extractorRunning && React.createElement('div', { 
+                        style: { 
+                            height: '4px', 
+                            background: '#e0e0e0', 
+                            borderRadius: '2px', 
+                            overflow: 'hidden',
+                            marginBottom: '0.5rem'
+                        }
+                    },
+                        React.createElement('div', { 
+                            style: { 
+                                height: '100%', 
+                                background: '#ffc107', 
+                                width: '30%',
+                                animation: 'pulse 1.5s infinite',
+                                borderRadius: '2px'
+                            }
+                        })
+                    ),
+                    importLog.length > 0 && React.createElement('div', { 
+                        style: { 
+                            maxHeight: '150px', 
+                            overflowY: 'auto', 
+                            fontSize: '0.85rem',
+                            fontFamily: 'monospace'
+                        }
+                    },
+                        importLog.slice(-10).map((log, i) => 
+                            React.createElement('div', { 
+                                key: i, 
+                                style: { 
+                                    padding: '0.25rem 0',
+                                    color: log.type === 'error' ? '#c62828' : log.type === 'success' ? '#2e7d32' : '#666'
+                                }
+                            }, `[${log.time}] ${log.msg}`)
+                        )
                     )
                 ),
 
