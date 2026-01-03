@@ -128,7 +128,50 @@ docker compose down
 
 The app will be available at **http://localhost:5000**
 
-### Option 2: Automated Setup (Development)
+### Option 2: VM Deployment (Production Server)
+
+For deploying on a VM with persistent data that survives code updates:
+
+```bash
+# First time setup on VM
+git clone https://github.com/stefi19/GenerateTimetableFromOutlookCalendar.git
+cd GenerateTimetableFromOutlookCalendar
+
+# Set admin password (optional)
+echo "ADMIN_PASSWORD=your-secure-password" > .env
+
+# Start the app
+docker compose up -d --build
+```
+
+**Updating the app without losing data:**
+
+```bash
+# Pull latest code and rebuild
+./deploy.sh
+
+# Or manually:
+git pull origin main
+docker compose down
+docker compose build --no-cache
+docker compose up -d
+```
+
+**Data persistence:** User data (calendars, events) is stored in Docker volumes:
+- `timetable_data` — SQLite database with calendars and manual events
+- `timetable_captures` — Extracted calendar events
+
+These volumes persist across container rebuilds. To backup:
+
+```bash
+# Backup data
+docker run --rm -v timetable_data:/data -v $(pwd):/backup alpine tar czf /backup/data-backup.tar.gz -C /data .
+
+# Restore data
+docker run --rm -v timetable_data:/data -v $(pwd):/backup alpine tar xzf /backup/data-backup.tar.gz -C /data
+```
+
+### Option 3: Automated Setup (Development)
 
 ```bash
 # Clone and setup
