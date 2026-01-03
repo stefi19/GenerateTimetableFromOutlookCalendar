@@ -800,7 +800,11 @@ def events_json():
     try:
         jpath, cpath = ensure_schedule(from_date, to_date)
     except Exception:
-        return jsonify({'error': 'schedule not available'}), 500
+        # No schedule available yet - return empty array (not 500 error)
+        return jsonify([])
+
+    if not jpath or not os.path.exists(jpath):
+        return jsonify([])
 
     with open(jpath, 'r', encoding='utf-8') as f:
         schedule = json.load(f)
