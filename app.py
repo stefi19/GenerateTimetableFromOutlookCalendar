@@ -2031,7 +2031,15 @@ def departures_json():
     
     if events_file.exists():
         with open(events_file, 'r', encoding='utf-8') as f:
-            all_events = json.load(f)
+            try:
+                loaded = json.load(f)
+            except Exception:
+                loaded = []
+            # mark origin for debugging
+            for it in loaded:
+                if isinstance(it, dict):
+                    it.setdefault('_origin', 'events_json')
+            all_events = loaded
     
     # Also load from schedule_by_room.json if available
     schedule_file = pathlib.Path('playwright_captures/schedule_by_room.json')
@@ -2042,6 +2050,9 @@ def departures_json():
             for day, evs in days.items():
                 for e in evs:
                     e['room'] = room
+                    # mark origin for debugging
+                    if isinstance(e, dict):
+                        e.setdefault('_origin', 'schedule_by_room')
                     all_events.append(e)
     
     # Add extracurricular events from DB
@@ -2062,6 +2073,7 @@ def departures_json():
                 'room': xe.get('location') or '',
                 'color': '#7c3aed',
                 'extracurricular': True,
+                '_origin': 'extracurricular',
             }
             all_events.append(evt)
     except Exception:
@@ -2079,6 +2091,7 @@ def departures_json():
                 'room': me.get('location') or '',
                 'color': '#004080',
                 'manual': True,
+                '_origin': 'manual',
             }
             all_events.append(evt)
     except Exception:
@@ -2103,6 +2116,40 @@ def departures_json():
     # Improved deduplication: prefer events with more populated fields when duplicates
     deduped = []
     seen_map = {}  # map key_start_loc -> index in deduped
+    # Prepare duplicates debug file
+    try:
+        debug_out_dir = pathlib.Path('playwright_captures')
+        debug_out_dir.mkdir(parents=True, exist_ok=True)
+        dup_log_path = debug_out_dir / 'duplicates_debug.jsonl'
+    except Exception:
+        dup_log_path = None
+
+    def _log_duplicate(existing, incoming, key, reason=''):
+        try:
+            if not dup_log_path:
+                return
+            import time, json
+            rec = {
+                'ts': datetime.utcnow().isoformat(),
+                'key': key,
+                'reason': reason,
+                'existing': {
+                    'title': existing.get('title'),
+                    'start': existing.get('start'),
+                    'room': existing.get('room'),
+                    'origin': existing.get('_origin') if isinstance(existing, dict) else None,
+                },
+                'incoming': {
+                    'title': incoming.get('title'),
+                    'start': incoming.get('start'),
+                    'room': incoming.get('room'),
+                    'origin': incoming.get('_origin') if isinstance(incoming, dict) else None,
+                }
+            }
+            with open(dup_log_path, 'a', encoding='utf-8') as df:
+                df.write(json.dumps(rec, ensure_ascii=False) + '\n')
+        except Exception:
+            pass
     import re
 
     def _normalize_location_for_key(ev: dict) -> str:
@@ -2152,6 +2199,7 @@ def departures_json():
                     def score(x):
                         return int(bool(x.get('room'))) + int(bool(x.get('professor'))) + int(bool(x.get('calendar_name'))) + int(bool(x.get('subject')))
                     if score(ev) > score(existing):
+                        _log_duplicate(existing, ev, pkey, reason='iid_better_score')
                         deduped[idx] = ev
                 else:
                     seen_map[pkey] = len(deduped)
@@ -2169,6 +2217,7 @@ def departures_json():
                 def score(x):
                     return int(bool(x.get('room'))) + int(bool(x.get('professor'))) + int(bool(x.get('calendar_name'))) + int(bool(x.get('subject')))
                 if score(ev) > score(existing):
+                    _log_duplicate(existing, ev, key_start_loc, reason='sl_better_score')
                     deduped[idx] = ev
                 # else keep existing
             else:
