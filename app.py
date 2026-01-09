@@ -264,59 +264,97 @@ def ensure_schedule(from_date: date, to_date: date):
                         items = json.load(f)
                 except Exception:
                     items = []
-                for it in items:
-                    # dedupe by raw ItemId if available, otherwise by title+start
-                    key = None
-                    try:
-                        raw = it.get('raw') or {}
-                        iid = None
-                        if isinstance(raw, dict):
-                            iid = raw.get('ItemId', {}).get('Id') if raw.get('ItemId') else None
-                        key = iid or (str(it.get('title','')) + '|' + str(it.get('start') or ''))
-                    except Exception:
-                        key = (str(it.get('title','')) + '|' + str(it.get('start') or ''))
-                    if key in seen:
-                        continue
-                    seen.add(key)
-                    # attempt to enrich with calendar color from calendar_map.json
-                    try:
-                        map_path = out_dir / 'calendar_map.json'
-                        if map_path.exists() and it.get('source'):
-                            with open(map_path, 'r', encoding='utf-8') as mf:
-                                cmap = json.load(mf)
-                            meta = cmap.get(it.get('source')) or {}
-                            col = meta.get('color')
-                            if col:
-                                it['color'] = col
-                            # Enrich with building/room from calendar metadata if present
-                            bld = meta.get('building')
-                            room_meta = meta.get('room')
-                            if bld and not it.get('building'):
-                                it['building'] = bld
-                            if room_meta and not it.get('location') and not it.get('room'):
-                                # prefer explicit room field (room) but many events use 'location'
-                                it['room'] = room_meta
-                                # also set location to room if missing so downstream parsers have something
-                                it['location'] = room_meta
-                    except Exception:
-                        pass
-                    # fill missing fields with placeholder " - " to avoid UNKNOWN/None
-                    try:
-                        if not it.get('title'):
-                            it['title'] = ' - '
-                        if not it.get('location'):
-                            it['location'] = ' - '
-                        if not it.get('start'):
-                            it['start'] = ' - '
-                        # room and building may be set above; default to ' - '
-                        if not it.get('room'):
-                            it['room'] = it.get('location') or ' - '
-                        if not it.get('building'):
-                            it['building'] = ' - '
-                    except Exception:
-                        pass
+                    for it in items:
+                        # dedupe by raw ItemId if available, otherwise by title+start
+                        try:
+                            raw = it.get('raw') or {}
+                            iid = None
+                            if isinstance(raw, dict):
+                                iid = raw.get('ItemId', {}).get('Id') if raw.get('ItemId') else None
+                            key = iid or (str(it.get('title','')) + '|' + str(it.get('start') or ''))
+                        except Exception:
+                            key = (str(it.get('title','')) + '|' + str(it.get('start') or ''))
 
-                    merged.append(it)
+                        # attempt to enrich with calendar color and metadata from calendar_map.json
+                        try:
+                            map_path = out_dir / 'calendar_map.json'
+                            if map_path.exists() and it.get('source'):
+                                with open(map_path, 'r', encoding='utf-8') as mf:
+                                    cmap = json.load(mf)
+                                meta = cmap.get(it.get('source')) or {}
+                                col = meta.get('color')
+                                if col:
+                                    it['color'] = col
+                                bld = meta.get('building')
+                                room_meta = meta.get('room')
+                                if bld and not it.get('building'):
+                                    it['building'] = bld
+                                if room_meta and not it.get('location') and not it.get('room'):
+                                    it['room'] = room_meta
+                                    it['location'] = room_meta
+                        except Exception:
+                            pass
+
+                        # fill missing fields with placeholder " - " to avoid UNKNOWN/None
+                        try:
+                            if not it.get('title'):
+                                it['title'] = ' - '
+                            if not it.get('location'):
+                                it['location'] = ' - '
+                            if not it.get('start'):
+                                it['start'] = ' - '
+                            if not it.get('room'):
+                                it['room'] = it.get('location') or ' - '
+                            if not it.get('building'):
+                                it['building'] = ' - '
+                        except Exception:
+                            pass
+
+                        # Deduplication with preference: if a duplicate key exists, pick the event
+                        # with more useful metadata (room present, end time present, professor, color).
+                        def score_event(e):
+                            s = 0
+                            r = (e.get('room') or '').strip()
+                            if r and r not in ('', ' - ', 'UNKNOWN'):
+                                s += 50
+                            # end presence
+                            if e.get('end'):
+                                s += 20
+                            # professor
+                            if e.get('professor'):
+                                s += 5
+                            # color
+                            if e.get('color'):
+                                s += 2
+                            return s
+
+                        if key in seen:
+                            # check if new one is better than stored
+                            prev = None
+                            # find previous in merged (linear search - merged small)
+                            for idx, existing in enumerate(merged):
+                                try:
+                                    raw_ex = existing.get('raw') or {}
+                                    iid_ex = None
+                                    if isinstance(raw_ex, dict):
+                                        iid_ex = raw_ex.get('ItemId', {}).get('Id') if raw_ex.get('ItemId') else None
+                                    key_ex = iid_ex or (str(existing.get('title','')) + '|' + str(existing.get('start') or ''))
+                                except Exception:
+                                    key_ex = (str(existing.get('title','')) + '|' + str(existing.get('start') or ''))
+                                if key_ex == key:
+                                    prev = (idx, existing)
+                                    break
+                            if prev is None:
+                                # shouldn't happen, but append as safe fallback
+                                merged.append(it)
+                            else:
+                                idx, existing = prev
+                                if score_event(it) > score_event(existing):
+                                    merged[idx] = it
+                            continue
+
+                        seen.add(key)
+                        merged.append(it)
         # ALWAYS save merged file (even if empty, to clear old events)
         try:
             out_dir.mkdir(parents=True, exist_ok=True)

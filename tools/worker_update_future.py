@@ -97,9 +97,24 @@ def merge_future_events(url: str):
 
     # Merge: keep past, append new_future, dedupe by (ItemId or title+start)
     merged = past + new_future
+    merged_candidates = past + new_future
     seen = set()
     deduped = []
-    for ev in merged:
+
+    def score_event(e):
+        s = 0
+        r = (e.get('room') or e.get('location') or '').strip()
+        if r and r not in ('', ' - ', 'UNKNOWN'):
+            s += 50
+        if e.get('end'):
+            s += 20
+        if e.get('professor'):
+            s += 5
+        if e.get('color'):
+            s += 2
+        return s
+
+    for ev in merged_candidates:
         raw = ev.get('raw') or {}
         iid = None
         if isinstance(raw, dict):
@@ -109,6 +124,18 @@ def merge_future_events(url: str):
                 iid = None
         key = iid or ((ev.get('title') or '') + '|' + (ev.get('start') or ''))
         if key in seen:
+            # find previous and replace if current has a better score
+            for i, existing in enumerate(deduped):
+                try:
+                    raw_ex = existing.get('raw') or {}
+                    iid_ex = raw_ex.get('ItemId', {}).get('Id') if raw_ex.get('ItemId') else None
+                except Exception:
+                    iid_ex = None
+                key_ex = iid_ex or ((existing.get('title') or '') + '|' + (existing.get('start') or ''))
+                if key_ex == key:
+                    if score_event(ev) > score_event(existing):
+                        deduped[i] = ev
+                    break
             continue
         seen.add(key)
         deduped.append(ev)
