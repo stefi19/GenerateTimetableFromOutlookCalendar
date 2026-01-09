@@ -1,4 +1,4 @@
-Using PLAYWRIGHT_USER_DATA_DIR: /home/appuser/.playwright_profile
+Using PLAYWRIGHT_USER_DATA_DIR: /Users/stefi/.playwright_profile
 Extracting URL: https://outlook.office365.com/calendar/published/173862b98010453296f2a697e45f3b1e@campus.utcluj.ro/daeb64d4bd994c52b4f54d04ba1940ca2236386271423118770/calendar.html
 Navigating to page...
 Captured: https://outlook.office365.com/owa/published/173862b98010453296f2a697e45f3b1e@campus.utcluj.ro/daeb64d4bd994c52b4f54d04ba1940ca2236386271423118770/service.svc?action=GetAnonymousCalendarSessionData&app=PublishedCalendar&n=0 -> playwright_captures/json_capture_0.json

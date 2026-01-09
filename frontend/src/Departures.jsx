@@ -132,15 +132,6 @@ export default function Departures() {
     return () => clearInterval(interval)
   }, [fetchDepartures])
 
-  // When calendar metadata (colors) are fetched, apply colors to loaded events
-  useEffect(() => {
-    if (!calendarsMap || Object.keys(calendarsMap).length === 0) return
-    setEvents(prev => prev.map(ev => ({
-      ...ev,
-      color: ev.color || (calendarsMap[ev.source] && calendarsMap[ev.source].color) || ev.color
-    })))
-  }, [calendarsMap])
-
   const now = new Date()
   const today = now.toISOString().split('T')[0]
   const tomorrow = new Date(Date.now() + 86400000).toISOString().split('T')[0]

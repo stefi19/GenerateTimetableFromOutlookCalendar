@@ -4,12 +4,12 @@ const COLORS = ['#003366', '#0066cc', '#28a745', '#dc3545', '#fd7e14', '#6f42c1'
 
 export default function Admin() {
   const [calendars, setCalendars] = useState([])
-  // manual events feature removed: manual events are no longer supported
+  const [manualEvents, setManualEvents] = useState([])
   const [loading, setLoading] = useState(true)
   const [importing, setImporting] = useState(false)
   const [message, setMessage] = useState(null)
   const [newCalendar, setNewCalendar] = useState({ url: '', name: '', color: '#003366' })
-  // removed newEvent state (manual add event removed)
+  const [newEvent, setNewEvent] = useState({ title: '', start_date: '', start_time: '', end_time: '', location: '' })
   const [stats, setStats] = useState({ events_count: 0, last_import: null, extractor_running: false })
   const pollingRef = useRef(null)
 
@@ -19,7 +19,8 @@ export default function Admin() {
       const res = await fetch('/admin/api/status')
       if (res.ok) {
         const data = await res.json()
-  setCalendars(data.calendars || [])
+        setCalendars(data.calendars || [])
+        setManualEvents(data.manual_events || [])
         setStats({ 
           events_count: data.events_count || 0, 
           last_import: data.last_import,
@@ -104,7 +105,42 @@ export default function Admin() {
     }
   }
 
-  // manual event add/delete removed
+  const addEvent = async (e) => {
+    e.preventDefault()
+    if (!newEvent.title || !newEvent.start_date || !newEvent.start_time) {
+      return showMessage('Please fill in required fields', 'error')
+    }
+    try {
+      const form = new FormData()
+      Object.entries(newEvent).forEach(([k, v]) => form.append(k, v))
+      const res = await fetch('/admin/add_event', { method: 'POST', body: form })
+      const data = await res.json()
+      if (data.success) {
+        showMessage('Event added', 'success')
+        setNewEvent({ title: '', start_date: '', start_time: '', end_time: '', location: '' })
+        fetchData()
+      } else {
+        showMessage(data.message || 'Error', 'error')
+      }
+    } catch (e) {
+      showMessage('Error adding event', 'error')
+    }
+  }
+
+  const deleteManualEvent = async (id) => {
+    if (!confirm('Are you sure you want to delete this event?')) return
+    try {
+      const form = new FormData()
+      form.append('id', id)
+      const res = await fetch('/admin/delete_manual', { method: 'POST', body: form })
+      if (res.ok) {
+        showMessage('Event deleted', 'success')
+        fetchData()
+      }
+    } catch (e) {
+      showMessage('Error deleting', 'error')
+    }
+  }
 
   const updateCalendarColor = async (id, color) => {
     try {
@@ -118,24 +154,6 @@ export default function Admin() {
       }
     } catch (e) {
       showMessage('Error updating color', 'error')
-    }
-  }
-
-  const updateCalendarEnabled = async (id, enabled) => {
-    try {
-      const form = new FormData()
-      form.append('id', id)
-      form.append('enabled', enabled ? '1' : '0')
-      const res = await fetch('/admin/update_calendar', { method: 'POST', body: form })
-      if (res.ok) {
-        showMessage(enabled ? 'Calendar enabled' : 'Calendar disabled', 'success')
-        // update local state
-        setCalendars(cals => cals.map(c => c.id === id ? { ...c, enabled: enabled ? 1 : 0 } : c))
-      } else {
-        showMessage('Error updating calendar', 'error')
-      }
-    } catch (e) {
-      showMessage('Error updating calendar', 'error')
     }
   }
 
@@ -205,20 +223,8 @@ export default function Admin() {
                     ))}
                   </div>
                   <div className="calendar-info">
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                      <strong>{cal.name || 'Calendar ' + (idx + 1)}</strong>
-                      {cal.enabled ? <span className="badge badge-success">Imported</span> : <span className="badge badge-muted">Imported (disabled)</span>}
-                    </div>
-                    <div className="calendar-meta">
-                      <span className="calendar-upn">{(function(u){ try{ const m = (u||'').match(/([\w.+-]+@[\w.-]+\.[A-Za-z]{2,})/); return m ? m[1] : '' }catch(e){return ''}})(cal.url)}</span>
-                      <span className="calendar-link">{cal.url ? (<a href={cal.url} target="_blank" rel="noreferrer">Open calendar</a>) : null}</span>
-                    </div>
-                  </div>
-                  <div className="calendar-actions">
-                    <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                      <input type="checkbox" checked={!!cal.enabled} onChange={(e) => updateCalendarEnabled(cal.id, e.target.checked)} />
-                      <small>Enabled</small>
-                    </label>
+                    <strong>{cal.name || 'Calendar ' + (idx + 1)}</strong>
+                    <small>{cal.url ? cal.url.substring(0, 50) + '...' : ''}</small>
                   </div>
                   <button onClick={() => deleteCalendar(cal.id)} className="btn-danger-sm">Delete</button>
                 </div>
@@ -245,7 +251,43 @@ export default function Admin() {
           </form>
         </div>
 
-          {/* Manual events feature removed */}
+        <div className="admin-section">
+          <div className="section-header">
+            <h3>Manual Events</h3>
+          </div>
+          {manualEvents.length === 0 ? (
+            <p className="text-muted">No manual events.</p>
+          ) : (
+            <div className="events-list-admin">
+              {manualEvents.map((ev, idx) => (
+                <div key={ev.id || idx} className="event-item-admin">
+                  <div className="event-info-admin">
+                    <strong>{ev.title}</strong>
+                    <small>{ev.start} • {ev.location || '-'}</small>
+                  </div>
+                  <button onClick={() => deleteManualEvent(ev.id)} className="btn-danger-sm">Delete</button>
+                </div>
+              ))}
+            </div>
+          )}
+
+          <form onSubmit={addEvent} className="form-add">
+            <h4>Add Manual Event</h4>
+            <input type="text" placeholder="Event Title *" value={newEvent.title}
+              onChange={(e) => setNewEvent(ev => ({ ...ev, title: e.target.value }))} required />
+            <div className="form-row">
+              <input type="date" value={newEvent.start_date}
+                onChange={(e) => setNewEvent(ev => ({ ...ev, start_date: e.target.value }))} required />
+              <input type="time" value={newEvent.start_time} placeholder="Start Time"
+                onChange={(e) => setNewEvent(ev => ({ ...ev, start_time: e.target.value }))} required />
+              <input type="time" value={newEvent.end_time} placeholder="End Time"
+                onChange={(e) => setNewEvent(ev => ({ ...ev, end_time: e.target.value }))} />
+            </div>
+            <input type="text" placeholder="Location/Room" value={newEvent.location}
+              onChange={(e) => setNewEvent(ev => ({ ...ev, location: e.target.value }))} />
+            <button type="submit" className="btn-primary">+ Add Event</button>
+          </form>
+        </div>
       </div>
     </div>
   )

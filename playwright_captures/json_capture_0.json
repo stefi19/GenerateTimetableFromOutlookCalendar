@@ -3,8 +3,8 @@
     "ServerVersionInfo": {
       "MajorVersion": 15,
       "MinorVersion": 20,
-      "MajorBuildNumber": 9499,
-      "MinorBuildNumber": 2,
+      "MajorBuildNumber": 9478,
+      "MinorBuildNumber": 4,
       "Version": "V2018_01_18"
     }
   },
@@ -13,12 +13,12 @@
       "__type": "CalendarFolder:#Exchange",
       "FolderId": {
         "__type": "FolderId:#Exchange",
-        "Id": "AAMkADdlYWU3NzAyLWRkZmYtNDE4ZC1iZjlhLWEwZTgwMmQ5NDNmNAAuAAAAAAAqaN7mkKeeQIShS3M8ztuEAQAevbZTnpOlSYOkK90O01zvAAuK3lTtAAA=",
+        "Id": "AAMkADdlYWU3NzAyLWRkZmYtNDE4ZC1iZjlhLWEwZTgwMmQ5NDNmNAAuAAAAAAAqaN7mkKeeQIShS3M8ztuEAQAevbZTnpOlSYOkK90O01zvAAuK3lThAAA=",
         "ChangeKey": "AgAAAA=="
       },
       "Charm": "None",
       "FolderClass": "IPF.Appointment",
-      "DisplayName": "Test calendar",
+      "DisplayName": "2025-2026 Fall Session AC Computer Science",
       "ChildFolderCount": 0,
       "EffectiveRights": {
         "CreateAssociated": false,
@@ -301,8 +301,7 @@
         "IsTopicHighlightsEnabled": true,
         "HasYammerLicense": false,
         "FolderPaneBitFlags": 0,
-        "IsSenderScreeningSettingEnabled": false,
-        "BlockSCDoNotAskAgain": false
+        "IsSenderScreeningSettingEnabled": false
       },
       "SessionSettings": {
         "AadSessionId": null,
@@ -345,7 +344,7 @@
         "DefaultFolderIds": [
           {
             "__type": "FolderId:#Exchange",
-            "Id": "AAMkADdlYWU3NzAyLWRkZmYtNDE4ZC1iZjlhLWEwZTgwMmQ5NDNmNAAuAAAAAAAqaN7mkKeeQIShS3M8ztuEAQAevbZTnpOlSYOkK90O01zvAAuK3lTtAAA=",
+            "Id": "AAMkADdlYWU3NzAyLWRkZmYtNDE4ZC1iZjlhLWEwZTgwMmQ5NDNmNAAuAAAAAAAqaN7mkKeeQIShS3M8ztuEAQAevbZTnpOlSYOkK90O01zvAAuK3lThAAA=",
             "ChangeKey": "AgAAAA=="
           }
         ],
