@@ -378,17 +378,7 @@ def init_db():
                 created_at TEXT
             )
         ''')
-        cur.execute('''
-            CREATE TABLE IF NOT EXISTS manual_events (
-                id INTEGER PRIMARY KEY,
-                start TEXT,
-                end TEXT,
-                title TEXT,
-                location TEXT,
-                raw TEXT,
-                created_at TEXT
-            )
-        ''')
+        # manual_events table removed - manual event feature deprecated
         conn.commit()
     # ensure older DBs have the color column
     try:
@@ -503,34 +493,6 @@ def add_extracurricular_db(ev: dict):
             cur.execute('DELETE FROM calendars WHERE id = ?', (cal_id,))
             conn.commit()
 
-    def delete_manual_db(man_id: int):
-        with get_db_connection() as conn:
-            cur = conn.cursor()
-            cur.execute('DELETE FROM manual_events WHERE id = ?', (man_id,))
-            conn.commit()
-
-def add_manual_event_db(ev: dict):
-    with get_db_connection() as conn:
-        cur = conn.cursor()
-        cur.execute('''INSERT INTO manual_events (start, end, title, location, raw, created_at)
-                       VALUES (?, ?, ?, ?, ?, ?)''',
-                    (ev.get('start'), ev.get('end'), ev.get('title'), ev.get('location'), json.dumps(ev.get('raw') or {}), ev.get('created_at')))
-        conn.commit()
-        return cur.lastrowid
-
-def list_manual_events_db():
-    with get_db_connection() as conn:
-        cur = conn.cursor()
-        cur.execute('SELECT * FROM manual_events ORDER BY start')
-        rows = [dict(r) for r in cur.fetchall()]
-        # parse raw json
-        for r in rows:
-            try:
-                r['raw'] = json.loads(r.get('raw') or '{}')
-            except Exception:
-                r['raw'] = {}
-        return rows
-
 def list_extracurricular_db():
     with get_db_connection() as conn:
         cur = conn.cursor()
@@ -551,11 +513,7 @@ def delete_calendar_db(cal_id: int):
         conn.commit()
 
 
-def delete_manual_db(man_id: int):
-    with get_db_connection() as conn:
-        cur = conn.cursor()
-        cur.execute('DELETE FROM manual_events WHERE id = ?', (man_id,))
-        conn.commit()
+## manual events removed: delete_manual_db no longer provided
 
 
 def _run_extractor_background():
@@ -770,8 +728,15 @@ def start_periodic_fetcher_if_needed(interval_minutes: int = 60):
 
 
 # Start the periodic fetcher on module import (works with Gunicorn)
-# This runs once when the app is loaded
-start_periodic_fetcher_if_needed(60)
+# Interval (minutes) can be configured via environment variable FETCH_INTERVAL_MINUTES.
+# Default: 60 minutes.
+try:
+    interval_min = int(os.environ.get('FETCH_INTERVAL_MINUTES', '60'))
+    if interval_min < 1:
+        interval_min = 60
+except Exception:
+    interval_min = 60
+start_periodic_fetcher_if_needed(interval_min)
 
 
 # OLD FRONTEND ROUTE - DISABLED (use /app for React SPA)
@@ -943,40 +908,7 @@ def events_json():
 
                 events.append(ev)
 
-    # Append manual admin events from DB
-    try:
-        init_db()
-        manual = list_manual_events_db()
-        from dateutil import parser as dtparser
-        for me in manual:
-            try:
-                if not me.get('start'):
-                    continue
-                start_dt = me.get('start')
-                # filter by range (string ISO)
-                try:
-                    d = dtparser.parse(start_dt).date()
-                except Exception:
-                    continue
-                if d < from_date or d > to_date:
-                    continue
-                ev_obj = {
-                    'title': me.get('title'),
-                    'display_title': me.get('title'),
-                    'start': me.get('start'),
-                    'end': me.get('end'),
-                    'room': me.get('location') or '',
-                    'subject': '',
-                    'professor': '',
-                    'location': me.get('location') or '',
-                    'color': '#004080',
-                    'manual': True,
-                }
-                events.append(ev_obj)
-            except Exception:
-                continue
-    except Exception:
-        pass
+    # Manual events feature removed; no admin manual events are appended
 
     # Append extracurricular events from DB so they appear in the calendar with a distinct color
     try:
@@ -1385,14 +1317,12 @@ def admin_view():
 def admin_api_status():
     """API endpoint returning admin status for React frontend."""
     calendars = []
-    manual_events = []
     events_count = 0
     last_import = None
     
     try:
         init_db()
         calendars = list_calendar_urls()
-        manual_events = list_manual_events_db()
         
         # Get events count from all events_*.json files
         out_dir = pathlib.Path('playwright_captures')
@@ -1424,7 +1354,6 @@ def admin_api_status():
     
     return jsonify({
         'calendars': calendars,
-        'manual_events': manual_events,
         'events_count': events_count,
         'last_import': last_import,
         'extractor_running': extractor_state.get('running', False),
@@ -1567,109 +1496,10 @@ def admin_import_calendar():
     return jsonify({'success': True, 'message': 'Import started', 'url': url}), 202
 
 
-@app.route('/admin/add_event', methods=['POST'])
-@require_admin
-def admin_add_event():
-    """Manually add an event."""
-    from dateutil import parser as dtparser
-    
-    title = request.form.get('title', '').strip()
-    start_date = request.form.get('start_date', '')
-    start_time = request.form.get('start_time', '')
-    end_time = request.form.get('end_time', '')
-    location = request.form.get('location', '').strip()
-    building = request.form.get('building', '').strip()
-    room = request.form.get('room', '').strip()
-    
-    if not title or not start_date or not start_time:
-        return jsonify({'success': False, 'message': 'Missing required fields'}), 400
-    
-    # Build location string if building/room provided
-    if building and room and not location:
-        location = f"utcn_room_ac_{building}_{room}@campus.utcluj.ro"
-    
-    # Parse datetime
-    try:
-        start_str = f"{start_date}T{start_time}:00+02:00"
-        end_str = f"{start_date}T{end_time}:00+02:00" if end_time else None
-    except Exception as e:
-        return jsonify({'success': False, 'message': f'Invalid date/time: {e}'}), 400
-    
-    # Store manual event in DB and also append to playwright_captures/events.json for compatibility
-    try:
-        init_db()
-        new_event = {
-            'start': start_str,
-            'end': end_str,
-            'title': title,
-            'location': location,
-            'raw': {'manual': True},
-            'created_at': datetime.now().isoformat()
-        }
-        ev_id = add_manual_event_db(new_event)
-        # Append to playwright_captures/events.json as before
-        events_file = pathlib.Path('playwright_captures/events.json')
-        events = []
-        if events_file.exists():
-            try:
-                with open(events_file, 'r', encoding='utf-8') as f:
-                    events = json.load(f)
-            except Exception:
-                events = []
-        events.append(new_event)
-        events_file.parent.mkdir(exist_ok=True)
-        with open(events_file, 'w', encoding='utf-8') as f:
-            json.dump(events, f, indent=2, ensure_ascii=False)
-        return jsonify({'success': True, 'message': 'Event added successfully', 'id': ev_id})
-    except Exception:
-        # fallback to previous file-only behavior
-        events_file = pathlib.Path('playwright_captures/events.json')
-        events = []
-        if events_file.exists():
-            try:
-                with open(events_file, 'r', encoding='utf-8') as f:
-                    events = json.load(f)
-            except Exception:
-                events = []
-        new_event = {
-            'start': start_str,
-            'end': end_str,
-            'title': title,
-            'location': location,
-            'raw': {'manual': True}
-        }
-        events.append(new_event)
-        events_file.parent.mkdir(exist_ok=True)
-        with open(events_file, 'w', encoding='utf-8') as f:
-            json.dump(events, f, indent=2, ensure_ascii=False)
-        return jsonify({'success': True, 'message': 'Event added successfully'})
+# Manual event creation endpoint removed
 
 
-@app.route('/admin/delete_event', methods=['POST'])
-@require_admin
-def admin_delete_event():
-    """Delete an event by index."""
-    try:
-        index = int(request.form.get('index', -1))
-    except ValueError:
-        return jsonify({'success': False, 'message': 'Invalid index'}), 400
-    
-    events_file = pathlib.Path('playwright_captures/events.json')
-    if not events_file.exists():
-        return jsonify({'success': False, 'message': 'No events file'}), 404
-    
-    with open(events_file, 'r', encoding='utf-8') as f:
-        events = json.load(f)
-    
-    if index < 0 or index >= len(events):
-        return jsonify({'success': False, 'message': 'Index out of range'}), 400
-    
-    events.pop(index)
-    
-    with open(events_file, 'w', encoding='utf-8') as f:
-        json.dump(events, f, indent=2, ensure_ascii=False)
-    
-    return jsonify({'success': True, 'message': 'Event deleted'})
+# Manual event deletion by index removed
 
 
 @app.route('/admin/delete_calendar', methods=['POST'])
@@ -1852,21 +1682,7 @@ def admin_update_calendar():
         return jsonify({'success': False, 'message': f'Failed to update calendar: {e}'}), 500
 
 
-@app.route('/admin/delete_manual', methods=['POST'])
-@require_admin
-def admin_delete_manual():
-    """Delete a manual event by id (returns JSON)."""
-    try:
-        man_id = int(request.form.get('id', -1))
-    except Exception:
-        return jsonify({'success': False, 'message': 'Invalid event id'}), 400
-
-    try:
-        init_db()
-        delete_manual_db(man_id)
-        return jsonify({'success': True, 'message': 'Manual event deleted'})
-    except Exception as e:
-        return jsonify({'success': False, 'message': f'Failed to delete manual event: {e}'}), 500
+# Manual event delete-by-id endpoint removed
 
 
 # =============================================================================
@@ -2079,23 +1895,7 @@ def departures_json():
     except Exception:
         pass
     
-    # Add manual events from DB
-    try:
-        manual = list_manual_events_db()
-        for me in manual:
-            evt = {
-                'title': me.get('title'),
-                'start': me.get('start'),
-                'end': me.get('end'),
-                'location': me.get('location') or '',
-                'room': me.get('location') or '',
-                'color': '#004080',
-                'manual': True,
-                '_origin': 'manual',
-            }
-            all_events.append(evt)
-    except Exception:
-        pass
+    # Manual events removed — admin manual events are no longer included in merged events
     
     # Filter for today and tomorrow
     filtered = []

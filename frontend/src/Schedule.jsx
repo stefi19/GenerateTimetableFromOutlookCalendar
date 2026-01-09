@@ -83,6 +83,19 @@ export default function Schedule() {
     fetchCalendarList()
   }, [fetchCalendarList])
 
+  // When calendars (from /calendars.json) change, ensure events already loaded pick up their calendar colors
+  useEffect(() => {
+    if (!calendars || Object.keys(calendars).length === 0) return
+    setEvents(prev => prev.map(ev => ({
+      ...ev,
+      color: ev.color || (calendars[ev.source] && calendars[ev.source].color) || ev.color
+    })))
+    setAllEvents(prev => prev.map(ev => ({
+      ...ev,
+      color: ev.color || (calendars[ev.source] && calendars[ev.source].color) || ev.color
+    })))
+  }, [calendars])
+
   // Find the nearest day with events from today onwards
   const findNearestDayWithEvents = useCallback((allEvts) => {
     if (!allEvts || allEvts.length === 0) return null
@@ -170,9 +183,9 @@ export default function Schedule() {
         setNearestDay(null)
       }
       
-      // Build calendar map from ALL events (2 months) so dropdown shows all calendars
-      const calendarMap = {}
-      let colorIndex = 0
+      // Build calendar map preferring DB-provided calendars (from /calendars.json); fall back to event-derived colors
+      const calendarMap = { ...calendars }
+      let colorIndex = Object.keys(calendarMap).length || 0
       allEvts.forEach(ev => {
         const source = ev.source || 'default'
         if (!calendarMap[source]) {
@@ -181,13 +194,18 @@ export default function Schedule() {
             name: ev.calendar_name || source
           }
           colorIndex++
+        } else {
+          // fill missing metadata from events when possible
+          if (!calendarMap[source].name) calendarMap[source].name = ev.calendar_name || source
+          if (!calendarMap[source].color && ev.color) calendarMap[source].color = ev.color
         }
       })
-      
-      // Also ensure current view events have colors
+
+      // Ensure events in the current view get a color (prefer event.color, then calendarMap color)
       evts.forEach(ev => {
-        if (!ev.color && calendarMap[ev.source]) {
-          ev.color = calendarMap[ev.source].color
+        if (!ev.color) {
+          const src = ev.source || 'default'
+          if (calendarMap[src] && calendarMap[src].color) ev.color = calendarMap[src].color
         }
       })
       

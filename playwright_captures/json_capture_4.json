@@ -3,8 +3,8 @@
     "ServerVersionInfo": {
       "MajorVersion": 15,
       "MinorVersion": 20,
-      "MajorBuildNumber": 9478,
-      "MinorBuildNumber": 4,
+      "MajorBuildNumber": 9499,
+      "MinorBuildNumber": 2,
       "Version": "V2018_01_18"
     }
   },
@@ -16,9 +16,45 @@
           "__type": "FindItemResponseMessage:#Exchange",
           "RootFolder": {
             "__type": "FindItemParentWrapper:#Exchange",
-            "Items": [],
+            "Items": [
+              {
+                "__type": "CalendarItem:#Exchange",
+                "ItemId": {
+                  "__type": "ItemId:#Exchange",
+                  "ChangeKey": "DwAAABYAAAAevbZTnpOlSYOkK90O01zvAAuIe267",
+                  "Id": "AAMkADdlYWU3NzAyLWRkZmYtNDE4ZC1iZjlhLWEwZTgwMmQ5NDNmNABGAAAAAAAqaN7mkKeeQIShS3M8ztuEBwAevbZTnpOlSYOkK90O01zvAAuK3lTtAAAevbZTnpOlSYOkK90O01zvAAuK4ByUAAA="
+                },
+                "ParentFolderId": {
+                  "__type": "FolderId:#Exchange",
+                  "Id": "AAMkADdlYWU3NzAyLWRkZmYtNDE4ZC1iZjlhLWEwZTgwMmQ5NDNmNAAuAAAAAAAqaN7mkKeeQIShS3M8ztuEAQAevbZTnpOlSYOkK90O01zvAAuK3lTtAAA=",
+                  "ChangeKey": "AQAAAA=="
+                },
+                "Start": "2026-01-03T16:00:00+02:00",
+                "End": "2026-01-03T17:00:00+02:00",
+                "Subject": "First event [In-person]",
+                "Sensitivity": "Normal",
+                "FreeBusyType": "Busy",
+                "CalendarItemType": "Single",
+                "Location": {
+                  "DisplayName": "UTCN - AC Bar - Sala 40 (Cluj-Napoca, RO)",
+                  "PostalAddress": {
+                    "Street": null,
+                    "City": null,
+                    "State": null,
+                    "Country": null,
+                    "PostalCode": null,
+                    "PostOfficeBox": null,
+                    "Type": "Home",
+                    "LocationSource": "None"
+                  },
+                  "IdType": "Unknown",
+                  "LocationType": "Unknown"
+                },
+                "Charm": "None"
+              }
+            ],
             "Groups": null,
-            "TotalItemsInView": 0,
+            "TotalItemsInView": 1,
             "IncludesLastItemInRange": true
           },
           "HighlightTerms": null,
