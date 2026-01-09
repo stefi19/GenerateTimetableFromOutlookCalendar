@@ -1342,8 +1342,13 @@ def departures_view():
         
         try:
             start_dt = dtparser.parse(start_str)
-            if start_dt.tzinfo:
-                start_dt = start_dt.replace(tzinfo=None)
+            # If the parsed datetime is timezone-aware, convert to local timezone then drop tzinfo
+            if getattr(start_dt, 'tzinfo', None) is not None:
+                try:
+                    start_dt = start_dt.astimezone().replace(tzinfo=None)
+                except Exception:
+                    # fallback to naive removal if astimezone not available
+                    start_dt = start_dt.replace(tzinfo=None)
         except Exception:
             continue
         
@@ -1359,16 +1364,26 @@ def departures_view():
         if end_str:
             try:
                 end_dt = dtparser.parse(end_str)
-                if end_dt.tzinfo:
-                    end_dt = end_dt.replace(tzinfo=None)
+                if getattr(end_dt, 'tzinfo', None) is not None:
+                    try:
+                        end_dt = end_dt.astimezone().replace(tzinfo=None)
+                    except Exception:
+                        end_dt = end_dt.replace(tzinfo=None)
             except Exception:
                 end_dt = None
 
-        # For today, only include events that haven't ended yet (if end time available)
-        if event_date == today and end_dt is not None:
+        # For today, only include events that haven't ended yet.
+        # If an event has an explicit end time, require now < end.
+        # If an event has no end time, only include it if it hasn't started yet (start >= now).
+        if event_date == today:
             try:
-                if end_dt < now:
-                    continue
+                if end_dt is not None:
+                    if end_dt < now:
+                        continue
+                else:
+                    # no end time: skip events that already started to avoid perpetual "in progress"
+                    if start_dt < now:
+                        continue
             except Exception:
                 pass
         
@@ -1400,7 +1415,8 @@ def departures_view():
             'room_display': room,
             'building_code': building_code,
             'building_name': building_name,
-            'is_now': event_date == today and (start_dt <= now and (end_dt is None or end_dt >= now)),
+            # Consider an event "in progress" only when we have a parsed end time and now is between start and end.
+            'is_now': event_date == today and (start_dt <= now and (end_dt is not None and end_dt >= now)),
             'date': event_date,
             'color': ev.get('color') if isinstance(ev, dict) else None,
         }
