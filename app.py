@@ -1250,6 +1250,28 @@ def departures_view():
     with open(events_file, 'r', encoding='utf-8') as f:
         all_events = json.load(f)
 
+    # Deduplicate loaded events by ItemId or title+start to avoid duplicates showing in Live
+    try:
+        deduped = []
+        seen = set()
+        for ev in all_events:
+            try:
+                raw = ev.get('raw') or {}
+                iid = None
+                if isinstance(raw, dict):
+                    iid = raw.get('ItemId', {}).get('Id') if raw.get('ItemId') else None
+            except Exception:
+                iid = None
+            key = iid or (str(ev.get('title','')) + '|' + str(ev.get('start') or ''))
+            if key in seen:
+                continue
+            seen.add(key)
+            deduped.append(ev)
+        all_events = deduped
+    except Exception:
+        # if dedupe fails for any reason, fallback to original list
+        pass
+
     # Also append extracurricular events persisted in DB so they appear on the departure board
     try:
         init_db()
@@ -1305,18 +1327,24 @@ def departures_view():
         if event_date not in (today, tomorrow):
             continue
         
-        # For today, only events that haven't ended yet
-        if event_date == today:
-            end_str = ev.get('end')
-            if end_str:
-                try:
-                    end_dt = dtparser.parse(end_str)
-                    if end_dt.tzinfo:
-                        end_dt = end_dt.replace(tzinfo=None)
-                    if end_dt < now:
-                        continue  # Already ended
-                except Exception:
-                    pass
+        # Parse end time consistently and for today filter out events that already ended
+        end_str = ev.get('end')
+        end_dt = None
+        if end_str:
+            try:
+                end_dt = dtparser.parse(end_str)
+                if end_dt.tzinfo:
+                    end_dt = end_dt.replace(tzinfo=None)
+            except Exception:
+                end_dt = None
+
+        # For today, only include events that haven't ended yet (if end time available)
+        if event_date == today and end_dt is not None:
+            try:
+                if end_dt < now:
+                    continue
+            except Exception:
+                pass
         
         # Parse location
         location = ev.get('location') or ''
@@ -1336,7 +1364,8 @@ def departures_view():
         # Build event info
         event_info = {
             'start': start_dt,
-            'end_str': end_str if 'end_str' in dir() else ev.get('end'),
+            'end_str': end_str,
+            'end_dt': end_dt,
             'time': start_dt.strftime('%H:%M'),
             'subject': parsed_title.subject,
             'display_title': parsed_title.display_title,
@@ -1345,7 +1374,7 @@ def departures_view():
             'room_display': room,
             'building_code': building_code,
             'building_name': building_name,
-            'is_now': event_date == today and start_dt <= now,
+            'is_now': event_date == today and (start_dt <= now and (end_dt is None or end_dt >= now)),
             'date': event_date,
             'color': ev.get('color') if isinstance(ev, dict) else None,
         }
