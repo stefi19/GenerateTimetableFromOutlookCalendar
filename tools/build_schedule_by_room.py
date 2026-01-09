@@ -202,11 +202,39 @@ def extract_professor(title: str, raw: dict | None):
             return True
         return False
 
-    # First, split title by separators and look for name-like segments
-    parts = [p.strip() for p in re.split(r"\s+-\s+|\(|\)|,|;", title or "") if p.strip()]
-    for p in reversed(parts):
-        if looks_like_name(p):
-            return p
+    # First, prefer explicit attendees/organizer from raw JSON (most reliable)
+    try:
+        if isinstance(raw, dict):
+            # RequiredAttendees or Attendees lists
+            for key in ('RequiredAttendees', 'Attendees', 'AttendeesList', 'RequiredAttendee', 'Attendee'):
+                val = raw.get(key)
+                if isinstance(val, list) and val:
+                    for a in val:
+                        if isinstance(a, dict):
+                            name = a.get('Name') or a.get('DisplayName') or a.get('Email') or a.get('EmailAddress')
+                            if name and looks_like_name(name):
+                                return name
+                        elif isinstance(a, str):
+                            if looks_like_name(a):
+                                return a
+            # Organizer may be present
+            org = raw.get('Organizer') or raw.get('OrganizerName') or raw.get('OrganizerEmail')
+            if isinstance(org, dict):
+                name = org.get('Name') or org.get('DisplayName')
+                if name and looks_like_name(name):
+                    return name
+            if isinstance(org, str) and looks_like_name(org):
+                return org
+    except Exception:
+        pass
+
+    # Next, look for explicit 'prof' markers in title (Romanian forms: 'Prof.', 'prof', 'Profesor')
+    try:
+        m = re.search(r'(?i)(?:prof(?:esor)?\.?\s+([A-Z][A-Za-z\-]+(?:\s+[A-Z][A-Za-z\-]+)?))', title or '')
+        if m:
+            return m.group(1).strip()
+    except Exception:
+        pass
 
     # also try splitting on ' - ' and take middle/right segment heuristics
     # common pattern: "Subject - Prof - Room" or "Subject - Prof"
@@ -255,7 +283,7 @@ def extract_professor(title: str, raw: dict | None):
     except Exception:
         pass
 
-    # final regex heuristics in the whole title
+    # final regex heuristics in the whole title (e.g., "A. Groza")
     m = re.search(r"([A-Z]\.[A-Z]?\.?\s?[A-Z][a-z\-]+)", title or "")
     if m:
         return m.group(1).strip()
@@ -274,6 +302,7 @@ def extract_professor(title: str, raw: dict | None):
     except Exception:
         pass
 
+    # If nothing found, return None here and let callers default to ' - '
     return None
 
 

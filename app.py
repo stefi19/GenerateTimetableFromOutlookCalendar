@@ -288,8 +288,34 @@ def ensure_schedule(from_date: date, to_date: date):
                             col = meta.get('color')
                             if col:
                                 it['color'] = col
+                            # Enrich with building/room from calendar metadata if present
+                            bld = meta.get('building')
+                            room_meta = meta.get('room')
+                            if bld and not it.get('building'):
+                                it['building'] = bld
+                            if room_meta and not it.get('location') and not it.get('room'):
+                                # prefer explicit room field (room) but many events use 'location'
+                                it['room'] = room_meta
+                                # also set location to room if missing so downstream parsers have something
+                                it['location'] = room_meta
                     except Exception:
                         pass
+                    # fill missing fields with placeholder " - " to avoid UNKNOWN/None
+                    try:
+                        if not it.get('title'):
+                            it['title'] = ' - '
+                        if not it.get('location'):
+                            it['location'] = ' - '
+                        if not it.get('start'):
+                            it['start'] = ' - '
+                        # room and building may be set above; default to ' - '
+                        if not it.get('room'):
+                            it['room'] = it.get('location') or ' - '
+                        if not it.get('building'):
+                            it['building'] = ' - '
+                    except Exception:
+                        pass
+
                     merged.append(it)
         # ALWAYS save merged file (even if empty, to clear old events)
         try:
