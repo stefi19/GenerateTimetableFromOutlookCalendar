@@ -5,8 +5,7 @@ export default function Departures() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
   const [selectedBuilding, setSelectedBuilding] = useState('')
-  const [selectedYear, setSelectedYear] = useState('')
-  const [selectedGroup, setSelectedGroup] = useState('')
+  // Year/Group filtering removed for Live board per request
   const [buildings, setBuildings] = useState([])
   const [calendarsMap, setCalendarsMap] = useState({})
   const [lastUpdate, setLastUpdate] = useState(null)
@@ -40,23 +39,34 @@ export default function Departures() {
     try {
       const txt = s.toString()
       const l = txt.toLowerCase()
-      // common patterns: 'Year 3', 'year 3', 'Grupa A', 'Group A', '3A', '3 A', 'Engl 3'
-      // Year
-      let m = l.match(/\byear\s*(\d)\b/) || l.match(/\b(1|2|3|4)\s*year\b/)
-      if (m) return 'Year ' + (m[1] || m[0])
-      // Group (Grupa/Group)
-      m = l.match(/\bgrup[ai]\s*([A-Za-z0-9]+)\b/) || l.match(/\bgroup\s*([A-Za-z0-9]+)\b/)
-      if (m) return 'Group ' + m[1].toUpperCase()
-      // Patterns like '3A' or '3 A'
-      m = l.match(/\b([1-4])\s*([A-Za-z])\b/) || l.match(/\b([1-4][A-Za-z])\b/)
-      if (m) {
-        const year = m[1]
-        const grp = m[2] ? m[2].toUpperCase() : (m[1].slice ? m[1].slice(1).toUpperCase() : '')
-        return 'Year ' + year + ' • Group ' + grp
+      // Look for Romanian keywords as well: 'seria', 'serie', 'an', 'anul'
+      let year = null
+      let grp = null
+
+      // year patterns: 'an 3', 'anul 3', 'year 3', or trailing digit
+      let m = l.match(/\ban(?:ul)?\s*(?:[:\-]?\s*)?(\d)\b/) || l.match(/\byear\s*(\d)\b/)
+      if (m) year = m[1]
+      if (!year) {
+        m = l.match(/(\b[1-4]\b)(?!.*\d)/)
+        if (m) year = m[1]
       }
-      // trailing year token e.g. 'Engl 3' or ends with digit
-      m = l.match(/(\b[1-4]\b)(?!.*\d)/)
-      if (m) return 'Year ' + m[1]
+
+      // group/series patterns: 'seria B', 'serie B', 'grupa A', 'group A'
+      m = l.match(/\bseri[ae]\s*([A-Za-z0-9]+)\b/) || l.match(/\bgrup[ai]\s*([A-Za-z0-9]+)\b/) || l.match(/\bgroup\s*([A-Za-z0-9]+)\b/)
+      if (m) grp = m[1].toUpperCase()
+
+      // Patterns like '3A' or '3 A' where first token is year and letter is group
+      if (!year || !grp) {
+        m = l.match(/\b([1-4])\s*([A-Za-z])\b/) || l.match(/\b([1-4])([A-Za-z])\b/)
+        if (m) {
+          if (!year) year = m[1]
+          if (!grp) grp = (m[2] || '').toUpperCase()
+        }
+      }
+
+      if (year && grp) return 'Year ' + year + ' • Group ' + grp
+      if (year) return 'Year ' + year
+      if (grp) return 'Group ' + grp
     } catch (e) {}
     return ''
   }
@@ -216,26 +226,7 @@ export default function Departures() {
       <div className="toolbar">
         <div className="toolbar-left"><h2>Live Board</h2></div>
         <div className="toolbar-right">
-          <div className="filter-group">
-            <label>Year:</label>
-            <select value={selectedYear} onChange={(e) => setSelectedYear(e.target.value)}>
-              <option value="">All</option>
-              <option value="1">Year 1</option>
-              <option value="2">Year 2</option>
-              <option value="3">Year 3</option>
-              <option value="4">Year 4</option>
-            </select>
-          </div>
-          <div className="filter-group">
-            <label>Group:</label>
-            <select value={selectedGroup} onChange={(e) => setSelectedGroup(e.target.value)}>
-              <option value="">All</option>
-              <option value="A">Group A</option>
-              <option value="B">Group B</option>
-              <option value="C">Group C</option>
-              <option value="Eng">English</option>
-            </select>
-          </div>
+            {/* Year/Group filters removed from Live board */}
           <div className="filter-group">
             <label>Building:</label>
             <select value={selectedBuilding} onChange={(e) => setSelectedBuilding(e.target.value)}>

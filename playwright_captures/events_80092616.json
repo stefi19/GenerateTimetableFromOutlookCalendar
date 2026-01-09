@@ -1,0 +1,781 @@
+[
+  {
+    "start": "2026-01-12T08:00:00+02:00",
+    "end": "2026-01-12T10:00:00+02:00",
+    "title": "Lab Ira1 1/2",
+    "location": "UTCN - AC Observatorului 2 - Sala 305",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAD3iLBaujITR7pY6jCNfCrpAADQeC3m",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQFRAAgI3lFth4NAAEYAAAAAqAj/LJLhk0uatwErpyicJAcA94iwWroyE0e6WOowjXwq6QAAAAABDQAA94iwWroyE0e6WOowjXwq6QAAr8r/RQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQAuAAAAAACoCP8skuGTS5q3ASunKJwkAQD3iLBaujITR7pY6jCNfCrpAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-12T08:00:00+02:00",
+      "End": "2026-01-12T10:00:00+02:00",
+      "Subject": "Lab IRA1 1/2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Observatorului 2 - Sala 305",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-12T10:00:00+02:00",
+    "end": "2026-01-12T12:00:00+02:00",
+    "title": "Lab Ira1 1/1",
+    "location": "UTCN - AC Observatorului 2 - Sala 305",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAD3iLBaujITR7pY6jCNfCrpAADQeC3n",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQFRAAgI3lFth4NAAEYAAAAAqAj/LJLhk0uatwErpyicJAcA94iwWroyE0e6WOowjXwq6QAAAAABDQAA94iwWroyE0e6WOowjXwq6QAAr8r/RgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQAuAAAAAACoCP8skuGTS5q3ASunKJwkAQD3iLBaujITR7pY6jCNfCrpAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-12T10:00:00+02:00",
+      "End": "2026-01-12T12:00:00+02:00",
+      "Subject": "Lab IRA1 1/1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Observatorului 2 - Sala 305",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-13T08:00:00+02:00",
+    "end": "2026-01-13T10:00:00+02:00",
+    "title": "Lab Ira1 2/2",
+    "location": "UTCN - AC Observatorului 2 - Sala 305",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAD3iLBaujITR7pY6jCNfCrpAACv0ogn",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQFRAAgI3lI2se0AAEYAAAAAqAj/LJLhk0uatwErpyicJAcA94iwWroyE0e6WOowjXwq6QAAAAABDQAA94iwWroyE0e6WOowjXwq6QAAr8r/RwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQAuAAAAAACoCP8skuGTS5q3ASunKJwkAQD3iLBaujITR7pY6jCNfCrpAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-13T08:00:00+02:00",
+      "End": "2026-01-13T10:00:00+02:00",
+      "Subject": "Lab IRA1 2/2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Observatorului 2 - Sala 305",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-13T10:00:00+02:00",
+    "end": "2026-01-13T12:00:00+02:00",
+    "title": "Lab Ira1 5/2",
+    "location": "UTCN - AC Observatorului 2 - Sala 305",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAD3iLBaujITR7pY6jCNfCrpAACv0ogz",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQFRAAgI3lI2se0AAEYAAAAAqAj/LJLhk0uatwErpyicJAcA94iwWroyE0e6WOowjXwq6QAAAAABDQAA94iwWroyE0e6WOowjXwq6QAAr8r/SAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQAuAAAAAACoCP8skuGTS5q3ASunKJwkAQD3iLBaujITR7pY6jCNfCrpAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-13T10:00:00+02:00",
+      "End": "2026-01-13T12:00:00+02:00",
+      "Subject": "Lab IRA1 5/2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Observatorului 2 - Sala 305",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-19T08:00:00+02:00",
+    "end": "2026-01-19T10:00:00+02:00",
+    "title": "Lab Ira1 1/2",
+    "location": "UTCN - AC Observatorului 2 - Sala 305",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAD3iLBaujITR7pY6jCNfCrpAADQeC3m",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQFRAAgI3lbtsGeAAEYAAAAAqAj/LJLhk0uatwErpyicJAcA94iwWroyE0e6WOowjXwq6QAAAAABDQAA94iwWroyE0e6WOowjXwq6QAAr8r/RQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQAuAAAAAACoCP8skuGTS5q3ASunKJwkAQD3iLBaujITR7pY6jCNfCrpAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-19T08:00:00+02:00",
+      "End": "2026-01-19T10:00:00+02:00",
+      "Subject": "Lab IRA1 1/2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Observatorului 2 - Sala 305",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-19T10:00:00+02:00",
+    "end": "2026-01-19T12:00:00+02:00",
+    "title": "Lab Ira1 1/1",
+    "location": "UTCN - AC Observatorului 2 - Sala 305",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAD3iLBaujITR7pY6jCNfCrpAADQeC3n",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQFRAAgI3lbtsGeAAEYAAAAAqAj/LJLhk0uatwErpyicJAcA94iwWroyE0e6WOowjXwq6QAAAAABDQAA94iwWroyE0e6WOowjXwq6QAAr8r/RgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQAuAAAAAACoCP8skuGTS5q3ASunKJwkAQD3iLBaujITR7pY6jCNfCrpAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-19T10:00:00+02:00",
+      "End": "2026-01-19T12:00:00+02:00",
+      "Subject": "Lab IRA1 1/1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Observatorului 2 - Sala 305",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-20T08:00:00+02:00",
+    "end": "2026-01-20T10:00:00+02:00",
+    "title": "Lab Ira1 2/2",
+    "location": "UTCN - AC Observatorului 2 - Sala 305",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAD3iLBaujITR7pY6jCNfCrpAACv0ogn",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQFRAAgI3le22tFAAEYAAAAAqAj/LJLhk0uatwErpyicJAcA94iwWroyE0e6WOowjXwq6QAAAAABDQAA94iwWroyE0e6WOowjXwq6QAAr8r/RwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQAuAAAAAACoCP8skuGTS5q3ASunKJwkAQD3iLBaujITR7pY6jCNfCrpAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-20T08:00:00+02:00",
+      "End": "2026-01-20T10:00:00+02:00",
+      "Subject": "Lab IRA1 2/2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Observatorului 2 - Sala 305",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-20T10:00:00+02:00",
+    "end": "2026-01-20T12:00:00+02:00",
+    "title": "Lab Ira1 5/2",
+    "location": "UTCN - AC Observatorului 2 - Sala 305",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAD3iLBaujITR7pY6jCNfCrpAACv0ogz",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQFRAAgI3le22tFAAEYAAAAAqAj/LJLhk0uatwErpyicJAcA94iwWroyE0e6WOowjXwq6QAAAAABDQAA94iwWroyE0e6WOowjXwq6QAAr8r/SAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQAuAAAAAACoCP8skuGTS5q3ASunKJwkAQD3iLBaujITR7pY6jCNfCrpAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-20T10:00:00+02:00",
+      "End": "2026-01-20T12:00:00+02:00",
+      "Subject": "Lab IRA1 5/2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Observatorului 2 - Sala 305",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-02T08:00:00+02:00",
+    "end": "2025-12-02T10:00:00+02:00",
+    "title": "Lab Ira1 2/2",
+    "location": "UTCN - AC Observatorului 2 - Sala 305",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAD3iLBaujITR7pY6jCNfCrpAACv0ogn",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQFRAAgI3jE1vJOAAEYAAAAAqAj/LJLhk0uatwErpyicJAcA94iwWroyE0e6WOowjXwq6QAAAAABDQAA94iwWroyE0e6WOowjXwq6QAAr8r/RwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQAuAAAAAACoCP8skuGTS5q3ASunKJwkAQD3iLBaujITR7pY6jCNfCrpAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-02T08:00:00+02:00",
+      "End": "2025-12-02T10:00:00+02:00",
+      "Subject": "Lab IRA1 2/2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Observatorului 2 - Sala 305",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-02T10:00:00+02:00",
+    "end": "2025-12-02T12:00:00+02:00",
+    "title": "Lab Ira1 5/2",
+    "location": "UTCN - AC Observatorului 2 - Sala 305",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAD3iLBaujITR7pY6jCNfCrpAACv0ogz",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQFRAAgI3jE1vJOAAEYAAAAAqAj/LJLhk0uatwErpyicJAcA94iwWroyE0e6WOowjXwq6QAAAAABDQAA94iwWroyE0e6WOowjXwq6QAAr8r/SAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQAuAAAAAACoCP8skuGTS5q3ASunKJwkAQD3iLBaujITR7pY6jCNfCrpAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-02T10:00:00+02:00",
+      "End": "2025-12-02T12:00:00+02:00",
+      "Subject": "Lab IRA1 5/2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Observatorului 2 - Sala 305",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-08T08:00:00+02:00",
+    "end": "2025-12-08T10:00:00+02:00",
+    "title": "Lab Ira1 1/2",
+    "location": "UTCN - AC Observatorului 2 - Sala 305",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAD3iLBaujITR7pY6jCNfCrpAADQeC3m",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQFRAAgI3jXsuw4AAEYAAAAAqAj/LJLhk0uatwErpyicJAcA94iwWroyE0e6WOowjXwq6QAAAAABDQAA94iwWroyE0e6WOowjXwq6QAAr8r/RQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQAuAAAAAACoCP8skuGTS5q3ASunKJwkAQD3iLBaujITR7pY6jCNfCrpAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-08T08:00:00+02:00",
+      "End": "2025-12-08T10:00:00+02:00",
+      "Subject": "Lab IRA1 1/2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Observatorului 2 - Sala 305",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-08T10:00:00+02:00",
+    "end": "2025-12-08T12:00:00+02:00",
+    "title": "Lab Ira1 1/1",
+    "location": "UTCN - AC Observatorului 2 - Sala 305",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAD3iLBaujITR7pY6jCNfCrpAADQeC3n",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQFRAAgI3jXsuw4AAEYAAAAAqAj/LJLhk0uatwErpyicJAcA94iwWroyE0e6WOowjXwq6QAAAAABDQAA94iwWroyE0e6WOowjXwq6QAAr8r/RgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQAuAAAAAACoCP8skuGTS5q3ASunKJwkAQD3iLBaujITR7pY6jCNfCrpAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-08T10:00:00+02:00",
+      "End": "2025-12-08T12:00:00+02:00",
+      "Subject": "Lab IRA1 1/1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Observatorului 2 - Sala 305",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-09T08:00:00+02:00",
+    "end": "2025-12-09T10:00:00+02:00",
+    "title": "Lab Ira1 2/2",
+    "location": "UTCN - AC Observatorului 2 - Sala 305",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAD3iLBaujITR7pY6jCNfCrpAACv0ogn",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQFRAAgI3ja15XfAAEYAAAAAqAj/LJLhk0uatwErpyicJAcA94iwWroyE0e6WOowjXwq6QAAAAABDQAA94iwWroyE0e6WOowjXwq6QAAr8r/RwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQAuAAAAAACoCP8skuGTS5q3ASunKJwkAQD3iLBaujITR7pY6jCNfCrpAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-09T08:00:00+02:00",
+      "End": "2025-12-09T10:00:00+02:00",
+      "Subject": "Lab IRA1 2/2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Observatorului 2 - Sala 305",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-09T10:00:00+02:00",
+    "end": "2025-12-09T12:00:00+02:00",
+    "title": "Lab Ira1 5/2",
+    "location": "UTCN - AC Observatorului 2 - Sala 305",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAD3iLBaujITR7pY6jCNfCrpAACv0ogz",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQFRAAgI3ja15XfAAEYAAAAAqAj/LJLhk0uatwErpyicJAcA94iwWroyE0e6WOowjXwq6QAAAAABDQAA94iwWroyE0e6WOowjXwq6QAAr8r/SAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQAuAAAAAACoCP8skuGTS5q3ASunKJwkAQD3iLBaujITR7pY6jCNfCrpAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-09T10:00:00+02:00",
+      "End": "2025-12-09T12:00:00+02:00",
+      "Subject": "Lab IRA1 5/2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Observatorului 2 - Sala 305",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-15T08:00:00+02:00",
+    "end": "2025-12-15T10:00:00+02:00",
+    "title": "Lab Ira1 1/2",
+    "location": "UTCN - AC Observatorului 2 - Sala 305",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAD3iLBaujITR7pY6jCNfCrpAADQeC3m",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQFRAAgI3jts4/JAAEYAAAAAqAj/LJLhk0uatwErpyicJAcA94iwWroyE0e6WOowjXwq6QAAAAABDQAA94iwWroyE0e6WOowjXwq6QAAr8r/RQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQAuAAAAAACoCP8skuGTS5q3ASunKJwkAQD3iLBaujITR7pY6jCNfCrpAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-15T08:00:00+02:00",
+      "End": "2025-12-15T10:00:00+02:00",
+      "Subject": "Lab IRA1 1/2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Observatorului 2 - Sala 305",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-15T10:00:00+02:00",
+    "end": "2025-12-15T12:00:00+02:00",
+    "title": "Lab Ira1 1/1",
+    "location": "UTCN - AC Observatorului 2 - Sala 305",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAD3iLBaujITR7pY6jCNfCrpAADQeC3n",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQFRAAgI3jts4/JAAEYAAAAAqAj/LJLhk0uatwErpyicJAcA94iwWroyE0e6WOowjXwq6QAAAAABDQAA94iwWroyE0e6WOowjXwq6QAAr8r/RgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQAuAAAAAACoCP8skuGTS5q3ASunKJwkAQD3iLBaujITR7pY6jCNfCrpAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-15T10:00:00+02:00",
+      "End": "2025-12-15T12:00:00+02:00",
+      "Subject": "Lab IRA1 1/1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Observatorului 2 - Sala 305",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-16T08:00:00+02:00",
+    "end": "2025-12-16T10:00:00+02:00",
+    "title": "Lab Ira1 2/2",
+    "location": "UTCN - AC Observatorului 2 - Sala 305",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAD3iLBaujITR7pY6jCNfCrpAACv0ogn",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQFRAAgI3jw2DlwAAEYAAAAAqAj/LJLhk0uatwErpyicJAcA94iwWroyE0e6WOowjXwq6QAAAAABDQAA94iwWroyE0e6WOowjXwq6QAAr8r/RwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQAuAAAAAACoCP8skuGTS5q3ASunKJwkAQD3iLBaujITR7pY6jCNfCrpAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-16T08:00:00+02:00",
+      "End": "2025-12-16T10:00:00+02:00",
+      "Subject": "Lab IRA1 2/2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Observatorului 2 - Sala 305",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-16T10:00:00+02:00",
+    "end": "2025-12-16T12:00:00+02:00",
+    "title": "Lab Ira1 5/2",
+    "location": "UTCN - AC Observatorului 2 - Sala 305",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAD3iLBaujITR7pY6jCNfCrpAACv0ogz",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQFRAAgI3jw2DlwAAEYAAAAAqAj/LJLhk0uatwErpyicJAcA94iwWroyE0e6WOowjXwq6QAAAAABDQAA94iwWroyE0e6WOowjXwq6QAAr8r/SAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQAuAAAAAACoCP8skuGTS5q3ASunKJwkAQD3iLBaujITR7pY6jCNfCrpAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-16T10:00:00+02:00",
+      "End": "2025-12-16T12:00:00+02:00",
+      "Subject": "Lab IRA1 5/2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Observatorului 2 - Sala 305",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-16T18:00:00+02:00",
+    "end": "2025-12-16T20:00:00+02:00",
+    "title": "Laborator L9",
+    "location": "Microsoft Teams Meeting; UTCN - AC Observatorului 2 - Sala 305",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAD3iLBaujITR7pY6jCNfCrpAADZ77yb",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQBGAAAAAACoCP8skuGTS5q3ASunKJwkBwD3iLBaujITR7pY6jCNfCrpAAAAAAENAAD3iLBaujITR7pY6jCNfCrpAADZ5HNNAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ4NWE2NzdkLTk4YzAtNDA5MS1iMGM3LWMxZjliNTE1ZmY5MQAuAAAAAACoCP8skuGTS5q3ASunKJwkAQD3iLBaujITR7pY6jCNfCrpAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-16T18:00:00+02:00",
+      "End": "2025-12-16T20:00:00+02:00",
+      "Subject": "Laborator L9",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - AC Observatorului 2 - Sala 305",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  }
+]

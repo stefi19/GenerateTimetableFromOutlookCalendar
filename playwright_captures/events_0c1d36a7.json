@@ -1,0 +1,43 @@
+[
+  {
+    "start": "2025-12-15T15:34:42+02:00",
+    "end": "2025-12-15T15:45:00+02:00",
+    "title": "Reserved",
+    "location": "Microsoft Teams Meeting",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAL03jj9ivPSYxIQm8Ubak3AADYtGiO",
+        "Id": "AAMkAGQ3OGFmNDEwLTc0ZTgtNGNhMy1hMjkzLTEwZTdhZDY2YTU3MQBGAAAAAADn2CYBO2HQQ5nTg9sn08kOBwAL03jj9ivPSYxIQm8Ubak3AAAAAAENAAAL03jj9ivPSYxIQm8Ubak3AADYpgqmAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkAGQ3OGFmNDEwLTc0ZTgtNGNhMy1hMjkzLTEwZTdhZDY2AGE1NzEALgAAA+fYJgE7YdBDmdOD2yfTyQ4BAAvTeOP2K89JjEhCbxRtqTcAAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-15T15:34:42+02:00",
+      "End": "2025-12-15T15:45:00+02:00",
+      "Subject": "Reserved",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  }
+]

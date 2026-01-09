@@ -1,0 +1,330 @@
+[
+  {
+    "start": "2025-12-29T18:00:00+02:00",
+    "end": "2025-12-29T20:00:00+02:00",
+    "title": "CURS - Room CIIA",
+    "location": "UTCN - ETTI Bar - Sala BT 102",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABVXCVhwdxBTrXzBY4cC65nAACoa5eT",
+        "Id": "AAMkADA5ZWM1ZTA5LWQ4NjQtNDFhOC1hMmE4LWRlZDY0NmVhZTk3NAFRAAgI3kZtNbrAAEYAAAAASPtnc/4aakavUzVAG/3PjgcAVVwlYcHcQU618wWOHAuuZwAAAAABDQAAVVwlYcHcQU618wWOHAuuZwAAqGTsuQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADA5ZWM1ZTA5LWQ4NjQtNDFhOC1hMmE4LWRlZDY0NmVhZTk3NAAuAAADSPtnc/4aakavUzVAG/3PjgEAVVwlYcHcQU618wWOHAuuZwAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-29T18:00:00+02:00",
+      "End": "2025-12-29T20:00:00+02:00",
+      "Subject": "Curs CIIA",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Bar - Sala BT 102",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-02T14:00:00+02:00",
+    "end": "2026-01-02T16:00:00+02:00",
+    "title": "Laborator Sciaa",
+    "location": "UTCN - ETTI Bar - Sala BT 102",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABVXCVhwdxBTrXzBY4cC65nAADaJ1fI",
+        "Id": "AAMkADA5ZWM1ZTA5LWQ4NjQtNDFhOC1hMmE4LWRlZDY0NmVhZTk3NAFRAAgI3kmR32HAAEYAAAAASPtnc/4aakavUzVAG/3PjgcAVVwlYcHcQU618wWOHAuuZwAAAAABDQAAVVwlYcHcQU618wWOHAuuZwAAteA+EwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADA5ZWM1ZTA5LWQ4NjQtNDFhOC1hMmE4LWRlZDY0NmVhZTk3NAAuAAADSPtnc/4aakavUzVAG/3PjgEAVVwlYcHcQU618wWOHAuuZwAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-02T14:00:00+02:00",
+      "End": "2026-01-02T16:00:00+02:00",
+      "Subject": "laborator SCIAA - sala BT102",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Bar - Sala BT 102",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-05T18:00:00+02:00",
+    "end": "2026-01-05T20:00:00+02:00",
+    "title": "CURS - Room CIIA",
+    "location": "UTCN - ETTI Bar - Sala BT 102",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABVXCVhwdxBTrXzBY4cC65nAACoa5eT",
+        "Id": "AAMkADA5ZWM1ZTA5LWQ4NjQtNDFhOC1hMmE4LWRlZDY0NmVhZTk3NAFRAAgI3kvtXp8AAEYAAAAASPtnc/4aakavUzVAG/3PjgcAVVwlYcHcQU618wWOHAuuZwAAAAABDQAAVVwlYcHcQU618wWOHAuuZwAAqGTsuQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADA5ZWM1ZTA5LWQ4NjQtNDFhOC1hMmE4LWRlZDY0NmVhZTk3NAAuAAADSPtnc/4aakavUzVAG/3PjgEAVVwlYcHcQU618wWOHAuuZwAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-05T18:00:00+02:00",
+      "End": "2026-01-05T20:00:00+02:00",
+      "Subject": "Curs CIIA",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Bar - Sala BT 102",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-09T14:00:00+02:00",
+    "end": "2026-01-09T16:00:00+02:00",
+    "title": "Laborator Sciaa",
+    "location": "UTCN - ETTI Bar - Sala BT 102",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABVXCVhwdxBTrXzBY4cC65nAADaJ1fI",
+        "Id": "AAMkADA5ZWM1ZTA5LWQ4NjQtNDFhOC1hMmE4LWRlZDY0NmVhZTk3NAFRAAgI3k8SCEYAAEYAAAAASPtnc/4aakavUzVAG/3PjgcAVVwlYcHcQU618wWOHAuuZwAAAAABDQAAVVwlYcHcQU618wWOHAuuZwAAteA+EwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADA5ZWM1ZTA5LWQ4NjQtNDFhOC1hMmE4LWRlZDY0NmVhZTk3NAAuAAADSPtnc/4aakavUzVAG/3PjgEAVVwlYcHcQU618wWOHAuuZwAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-09T14:00:00+02:00",
+      "End": "2026-01-09T16:00:00+02:00",
+      "Subject": "laborator SCIAA - sala BT102",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Bar - Sala BT 102",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-12T18:00:00+02:00",
+    "end": "2026-01-12T20:00:00+02:00",
+    "title": "CURS - Room CIIA",
+    "location": "UTCN - ETTI Bar - Sala BT 102",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABVXCVhwdxBTrXzBY4cC65nAACoa5eT",
+        "Id": "AAMkADA5ZWM1ZTA5LWQ4NjQtNDFhOC1hMmE4LWRlZDY0NmVhZTk3NAFRAAgI3lFth4NAAEYAAAAASPtnc/4aakavUzVAG/3PjgcAVVwlYcHcQU618wWOHAuuZwAAAAABDQAAVVwlYcHcQU618wWOHAuuZwAAqGTsuQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADA5ZWM1ZTA5LWQ4NjQtNDFhOC1hMmE4LWRlZDY0NmVhZTk3NAAuAAADSPtnc/4aakavUzVAG/3PjgEAVVwlYcHcQU618wWOHAuuZwAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-12T18:00:00+02:00",
+      "End": "2026-01-12T20:00:00+02:00",
+      "Subject": "Curs CIIA",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Bar - Sala BT 102",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-16T14:00:00+02:00",
+    "end": "2026-01-16T16:00:00+02:00",
+    "title": "Laborator Sciaa",
+    "location": "UTCN - ETTI Bar - Sala BT 102",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABVXCVhwdxBTrXzBY4cC65nAADaJ1fI",
+        "Id": "AAMkADA5ZWM1ZTA5LWQ4NjQtNDFhOC1hMmE4LWRlZDY0NmVhZTk3NAFRAAgI3lSSMSpAAEYAAAAASPtnc/4aakavUzVAG/3PjgcAVVwlYcHcQU618wWOHAuuZwAAAAABDQAAVVwlYcHcQU618wWOHAuuZwAAteA+EwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADA5ZWM1ZTA5LWQ4NjQtNDFhOC1hMmE4LWRlZDY0NmVhZTk3NAAuAAADSPtnc/4aakavUzVAG/3PjgEAVVwlYcHcQU618wWOHAuuZwAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-16T14:00:00+02:00",
+      "End": "2026-01-16T16:00:00+02:00",
+      "Subject": "laborator SCIAA - sala BT102",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Bar - Sala BT 102",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-19T18:00:00+02:00",
+    "end": "2026-01-19T20:00:00+02:00",
+    "title": "CURS - Room CIIA",
+    "location": "UTCN - ETTI Bar - Sala BT 102",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABVXCVhwdxBTrXzBY4cC65nAACoa5eT",
+        "Id": "AAMkADA5ZWM1ZTA5LWQ4NjQtNDFhOC1hMmE4LWRlZDY0NmVhZTk3NAFRAAgI3lbtsGeAAEYAAAAASPtnc/4aakavUzVAG/3PjgcAVVwlYcHcQU618wWOHAuuZwAAAAABDQAAVVwlYcHcQU618wWOHAuuZwAAqGTsuQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADA5ZWM1ZTA5LWQ4NjQtNDFhOC1hMmE4LWRlZDY0NmVhZTk3NAAuAAADSPtnc/4aakavUzVAG/3PjgEAVVwlYcHcQU618wWOHAuuZwAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-19T18:00:00+02:00",
+      "End": "2026-01-19T20:00:00+02:00",
+      "Subject": "Curs CIIA",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Bar - Sala BT 102",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-26T18:00:00+02:00",
+    "end": "2026-01-26T20:00:00+02:00",
+    "title": "CURS - Room CIIA",
+    "location": "UTCN - ETTI Bar - Sala BT 102",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABVXCVhwdxBTrXzBY4cC65nAACoa5eT",
+        "Id": "AAMkADA5ZWM1ZTA5LWQ4NjQtNDFhOC1hMmE4LWRlZDY0NmVhZTk3NAFRAAgI3lxt2UvAAEYAAAAASPtnc/4aakavUzVAG/3PjgcAVVwlYcHcQU618wWOHAuuZwAAAAABDQAAVVwlYcHcQU618wWOHAuuZwAAqGTsuQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADA5ZWM1ZTA5LWQ4NjQtNDFhOC1hMmE4LWRlZDY0NmVhZTk3NAAuAAADSPtnc/4aakavUzVAG/3PjgEAVVwlYcHcQU618wWOHAuuZwAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-26T18:00:00+02:00",
+      "End": "2026-01-26T20:00:00+02:00",
+      "Subject": "Curs CIIA",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Bar - Sala BT 102",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  }
+]

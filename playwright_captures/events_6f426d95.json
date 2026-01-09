@@ -1,0 +1,904 @@
+[
+  {
+    "start": "2026-01-07T14:00:00+02:00",
+    "end": "2026-01-07T16:00:00+02:00",
+    "title": "Des Lab (gr. 1 / S1)",
+    "location": "UTCN - AC Bar - Sala BT 604",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAKIgJ2vzz7Q6bOpVi3nA4sAADLvQFa",
+        "Id": "AAMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgFRAAgI3k1/s3KAAEYAAAAA3yxvSDjIlEqCo4c8h1sdCwcACiICdr88+0OmzqVYt5wOLAAAAAABDQAACiICdr88+0OmzqVYt5wOLAAAy6HJVgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgAuAAAD3yxvSDjIlEqCo4c8h1sdCwEACiICdr88+0OmzqVYt5wOLAAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-07T14:00:00+02:00",
+      "End": "2026-01-07T16:00:00+02:00",
+      "Subject": "DES Lab (gr. 1 / s1)",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 604",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-07T16:00:00+02:00",
+    "end": "2026-01-07T18:00:00+02:00",
+    "title": "Des Lab (gr. 2/ S2)",
+    "location": "UTCN - AC Bar - Sala BT 604",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAKIgJ2vzz7Q6bOpVi3nA4sAADLvQFb",
+        "Id": "AAMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgFRAAgI3k1/s3KAAEYAAAAA3yxvSDjIlEqCo4c8h1sdCwcACiICdr88+0OmzqVYt5wOLAAAAAABDQAACiICdr88+0OmzqVYt5wOLAAAy6HJWAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgAuAAAD3yxvSDjIlEqCo4c8h1sdCwEACiICdr88+0OmzqVYt5wOLAAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-07T16:00:00+02:00",
+      "End": "2026-01-07T18:00:00+02:00",
+      "Subject": "DES Lab (gr. 2/ s2)",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 604",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-13T18:00:00+02:00",
+    "end": "2026-01-13T22:00:00+02:00",
+    "title": "Curs Mp Ia",
+    "location": "UTCN - AC Bar - Sala BT 604 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAKIgJ2vzz7Q6bOpVi3nA4sAAChvxBO",
+        "Id": "AAMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgBGAAAAAADfLG9IOMiUSoKjhzyHWx0LBwAKIgJ2vzz7Q6bOpVi3nA4sAAAAAAENAAAKIgJ2vzz7Q6bOpVi3nA4sAAChrwDGAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgAuAAAD3yxvSDjIlEqCo4c8h1sdCwEACiICdr88+0OmzqVYt5wOLAAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-13T18:00:00+02:00",
+      "End": "2026-01-13T22:00:00+02:00",
+      "Subject": "curs MP IA",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 604 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-14T14:00:00+02:00",
+    "end": "2026-01-14T16:00:00+02:00",
+    "title": "Des Lab (gr. 1 / S1)",
+    "location": "UTCN - AC Bar - Sala BT 604",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAKIgJ2vzz7Q6bOpVi3nA4sAADLvQFa",
+        "Id": "AAMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgFRAAgI3lL/3FbAAEYAAAAA3yxvSDjIlEqCo4c8h1sdCwcACiICdr88+0OmzqVYt5wOLAAAAAABDQAACiICdr88+0OmzqVYt5wOLAAAy6HJVgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgAuAAAD3yxvSDjIlEqCo4c8h1sdCwEACiICdr88+0OmzqVYt5wOLAAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-14T14:00:00+02:00",
+      "End": "2026-01-14T16:00:00+02:00",
+      "Subject": "DES Lab (gr. 1 / s1)",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 604",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-14T16:00:00+02:00",
+    "end": "2026-01-14T18:00:00+02:00",
+    "title": "Des Lab (gr. 2/ S2)",
+    "location": "UTCN - AC Bar - Sala BT 604",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAKIgJ2vzz7Q6bOpVi3nA4sAADLvQFb",
+        "Id": "AAMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgFRAAgI3lL/3FbAAEYAAAAA3yxvSDjIlEqCo4c8h1sdCwcACiICdr88+0OmzqVYt5wOLAAAAAABDQAACiICdr88+0OmzqVYt5wOLAAAy6HJWAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgAuAAAD3yxvSDjIlEqCo4c8h1sdCwEACiICdr88+0OmzqVYt5wOLAAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-14T16:00:00+02:00",
+      "End": "2026-01-14T18:00:00+02:00",
+      "Subject": "DES Lab (gr. 2/ s2)",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 604",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-21T18:00:00+02:00",
+    "end": "2026-01-21T20:00:00+02:00",
+    "title": "Lab Mp Ia 31461 (1)",
+    "location": "UTCN - AC Bar - Sala BT 604 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAKIgJ2vzz7Q6bOpVi3nA4sAAChvxEU",
+        "Id": "AAMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgBGAAAAAADfLG9IOMiUSoKjhzyHWx0LBwAKIgJ2vzz7Q6bOpVi3nA4sAAAAAAENAAAKIgJ2vzz7Q6bOpVi3nA4sAAChrwDIAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgAuAAAD3yxvSDjIlEqCo4c8h1sdCwEACiICdr88+0OmzqVYt5wOLAAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-21T18:00:00+02:00",
+      "End": "2026-01-21T20:00:00+02:00",
+      "Subject": "Lab MP IA  31461 (1)",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 604 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-21T20:00:00+02:00",
+    "end": "2026-01-21T22:00:00+02:00",
+    "title": "Lab Mp Ia 31461 (2)",
+    "location": "UTCN - AC Bar - Sala BT 604 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAKIgJ2vzz7Q6bOpVi3nA4sAAChvxHY",
+        "Id": "AAMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgBGAAAAAADfLG9IOMiUSoKjhzyHWx0LBwAKIgJ2vzz7Q6bOpVi3nA4sAAAAAAENAAAKIgJ2vzz7Q6bOpVi3nA4sAAChrwDKAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgAuAAAD3yxvSDjIlEqCo4c8h1sdCwEACiICdr88+0OmzqVYt5wOLAAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-21T20:00:00+02:00",
+      "End": "2026-01-21T22:00:00+02:00",
+      "Subject": "Lab MP IA  31461 (2)",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 604 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-22T18:00:00+02:00",
+    "end": "2026-01-22T20:00:00+02:00",
+    "title": "Lab Mp Ia 31462 (1)",
+    "location": "UTCN - AC Bar - Sala BT 604 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAKIgJ2vzz7Q6bOpVi3nA4sAAChvxKh",
+        "Id": "AAMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgBGAAAAAADfLG9IOMiUSoKjhzyHWx0LBwAKIgJ2vzz7Q6bOpVi3nA4sAAAAAAENAAAKIgJ2vzz7Q6bOpVi3nA4sAAChrwDMAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgAuAAAD3yxvSDjIlEqCo4c8h1sdCwEACiICdr88+0OmzqVYt5wOLAAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-22T18:00:00+02:00",
+      "End": "2026-01-22T20:00:00+02:00",
+      "Subject": "Lab MP IA  31462 (1)",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 604 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-03T14:00:00+02:00",
+    "end": "2025-12-03T16:00:00+02:00",
+    "title": "Des Lab (gr. 1 / S1)",
+    "location": "UTCN - AC Bar - Sala BT 604",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAKIgJ2vzz7Q6bOpVi3nA4sAADLvQFa",
+        "Id": "AAMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgFRAAgI3jH+5v1AAEYAAAAA3yxvSDjIlEqCo4c8h1sdCwcACiICdr88+0OmzqVYt5wOLAAAAAABDQAACiICdr88+0OmzqVYt5wOLAAAy6HJVgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgAuAAAD3yxvSDjIlEqCo4c8h1sdCwEACiICdr88+0OmzqVYt5wOLAAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-03T14:00:00+02:00",
+      "End": "2025-12-03T16:00:00+02:00",
+      "Subject": "DES Lab (gr. 1 / s1)",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 604",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-03T16:00:00+02:00",
+    "end": "2025-12-03T18:00:00+02:00",
+    "title": "Des Lab (gr. 2/ S2)",
+    "location": "UTCN - AC Bar - Sala BT 604",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAKIgJ2vzz7Q6bOpVi3nA4sAADLvQFb",
+        "Id": "AAMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgFRAAgI3jH+5v1AAEYAAAAA3yxvSDjIlEqCo4c8h1sdCwcACiICdr88+0OmzqVYt5wOLAAAAAABDQAACiICdr88+0OmzqVYt5wOLAAAy6HJWAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgAuAAAD3yxvSDjIlEqCo4c8h1sdCwEACiICdr88+0OmzqVYt5wOLAAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-03T16:00:00+02:00",
+      "End": "2025-12-03T18:00:00+02:00",
+      "Subject": "DES Lab (gr. 2/ s2)",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 604",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-03T18:00:00+02:00",
+    "end": "2025-12-03T22:00:00+02:00",
+    "title": "Da",
+    "location": "UTCN - AC Bar - Sala BT 604 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAKIgJ2vzz7Q6bOpVi3nA4sAADKbmfB",
+        "Id": "AAMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgFRAAgI3jH+5v1AAEYAAAAA3yxvSDjIlEqCo4c8h1sdCwcACiICdr88+0OmzqVYt5wOLAAAAAABDQAACiICdr88+0OmzqVYt5wOLAAAoa8AxwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgAuAAAD3yxvSDjIlEqCo4c8h1sdCwEACiICdr88+0OmzqVYt5wOLAAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-03T18:00:00+02:00",
+      "End": "2025-12-03T22:00:00+02:00",
+      "Subject": "DA - Lab MP IA  31461 (1)",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Exception",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 604 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-04T14:00:00+02:00",
+    "end": "2025-12-04T18:00:00+02:00",
+    "title": "LAB - Room Work",
+    "location": "UTCN - AC Bar - Sala BT 604 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAKIgJ2vzz7Q6bOpVi3nA4sAADU3aHp",
+        "Id": "AAMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgBGAAAAAADfLG9IOMiUSoKjhzyHWx0LBwAKIgJ2vzz7Q6bOpVi3nA4sAAAAAAENAAAKIgJ2vzz7Q6bOpVi3nA4sAADUwAQ0AAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgAuAAAD3yxvSDjIlEqCo4c8h1sdCwEACiICdr88+0OmzqVYt5wOLAAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-04T14:00:00+02:00",
+      "End": "2025-12-04T18:00:00+02:00",
+      "Subject": "Lab Work",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 604 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-04T18:00:00+02:00",
+    "end": "2025-12-04T22:00:00+02:00",
+    "title": "Lab Mp Ia 31462 (1)",
+    "location": "UTCN - AC Bar - Sala BT 604 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAKIgJ2vzz7Q6bOpVi3nA4sAAChvxKX",
+        "Id": "AAMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgFRAAgI3jLIEWcAAEYAAAAA3yxvSDjIlEqCo4c8h1sdCwcACiICdr88+0OmzqVYt5wOLAAAAAABDQAACiICdr88+0OmzqVYt5wOLAAAoa8AywAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgAuAAAD3yxvSDjIlEqCo4c8h1sdCwEACiICdr88+0OmzqVYt5wOLAAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-04T18:00:00+02:00",
+      "End": "2025-12-04T22:00:00+02:00",
+      "Subject": "Lab MP IA  31462 (1)",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 604 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-05T09:00:00+02:00",
+    "end": "2025-12-05T16:00:00+02:00",
+    "title": "LAB - Room Work",
+    "location": "UTCN - AC Bar - Sala BT 604 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAKIgJ2vzz7Q6bOpVi3nA4sAADU3aJL",
+        "Id": "AAMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgBGAAAAAADfLG9IOMiUSoKjhzyHWx0LBwAKIgJ2vzz7Q6bOpVi3nA4sAAAAAAENAAAKIgJ2vzz7Q6bOpVi3nA4sAADUwAQ1AAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgAuAAAD3yxvSDjIlEqCo4c8h1sdCwEACiICdr88+0OmzqVYt5wOLAAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-05T09:00:00+02:00",
+      "End": "2025-12-05T16:00:00+02:00",
+      "Subject": "Lab Work",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 604 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-09T18:00:00+02:00",
+    "end": "2025-12-09T22:00:00+02:00",
+    "title": "Curs Mp Ia",
+    "location": "UTCN - AC Bar - Sala BT 604 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAKIgJ2vzz7Q6bOpVi3nA4sAAChvxBE",
+        "Id": "AAMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgFRAAgI3ja15XfAAEYAAAAA3yxvSDjIlEqCo4c8h1sdCwcACiICdr88+0OmzqVYt5wOLAAAAAABDQAACiICdr88+0OmzqVYt5wOLAAAoa8AxQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgAuAAAD3yxvSDjIlEqCo4c8h1sdCwEACiICdr88+0OmzqVYt5wOLAAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-09T18:00:00+02:00",
+      "End": "2025-12-09T22:00:00+02:00",
+      "Subject": "curs MP IA",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 604 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-10T14:00:00+02:00",
+    "end": "2025-12-10T16:00:00+02:00",
+    "title": "Des Lab (gr. 1 / S1)",
+    "location": "UTCN - AC Bar - Sala BT 604",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAKIgJ2vzz7Q6bOpVi3nA4sAADLvQFa",
+        "Id": "AAMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgFRAAgI3jd/D+GAAEYAAAAA3yxvSDjIlEqCo4c8h1sdCwcACiICdr88+0OmzqVYt5wOLAAAAAABDQAACiICdr88+0OmzqVYt5wOLAAAy6HJVgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgAuAAAD3yxvSDjIlEqCo4c8h1sdCwEACiICdr88+0OmzqVYt5wOLAAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-10T14:00:00+02:00",
+      "End": "2025-12-10T16:00:00+02:00",
+      "Subject": "DES Lab (gr. 1 / s1)",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 604",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-10T16:00:00+02:00",
+    "end": "2025-12-10T18:00:00+02:00",
+    "title": "Des Lab (gr. 2/ S2)",
+    "location": "UTCN - AC Bar - Sala BT 604",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAKIgJ2vzz7Q6bOpVi3nA4sAADLvQFb",
+        "Id": "AAMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgFRAAgI3jd/D+GAAEYAAAAA3yxvSDjIlEqCo4c8h1sdCwcACiICdr88+0OmzqVYt5wOLAAAAAABDQAACiICdr88+0OmzqVYt5wOLAAAy6HJWAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgAuAAAD3yxvSDjIlEqCo4c8h1sdCwEACiICdr88+0OmzqVYt5wOLAAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-10T16:00:00+02:00",
+      "End": "2025-12-10T18:00:00+02:00",
+      "Subject": "DES Lab (gr. 2/ s2)",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 604",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-11T09:00:00+02:00",
+    "end": "2025-12-11T15:30:00+02:00",
+    "title": "LAB - Room Work",
+    "location": "UTCN - AC Bar - Sala BT 604",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAKIgJ2vzz7Q6bOpVi3nA4sAADXUO4E",
+        "Id": "AAMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgBGAAAAAADfLG9IOMiUSoKjhzyHWx0LBwAKIgJ2vzz7Q6bOpVi3nA4sAAAAAAENAAAKIgJ2vzz7Q6bOpVi3nA4sAADXM0BLAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgAuAAAD3yxvSDjIlEqCo4c8h1sdCwEACiICdr88+0OmzqVYt5wOLAAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-11T09:00:00+02:00",
+      "End": "2025-12-11T15:30:00+02:00",
+      "Subject": "Lab Work",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 604",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-17T14:00:00+02:00",
+    "end": "2025-12-17T16:00:00+02:00",
+    "title": "Des Lab (gr. 1 / S1)",
+    "location": "UTCN - AC Bar - Sala BT 604",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAKIgJ2vzz7Q6bOpVi3nA4sAADLvQFa",
+        "Id": "AAMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgFRAAgI3jz/OMXAAEYAAAAA3yxvSDjIlEqCo4c8h1sdCwcACiICdr88+0OmzqVYt5wOLAAAAAABDQAACiICdr88+0OmzqVYt5wOLAAAy6HJVgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgAuAAAD3yxvSDjIlEqCo4c8h1sdCwEACiICdr88+0OmzqVYt5wOLAAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-17T14:00:00+02:00",
+      "End": "2025-12-17T16:00:00+02:00",
+      "Subject": "DES Lab (gr. 1 / s1)",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 604",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-17T16:00:00+02:00",
+    "end": "2025-12-17T18:00:00+02:00",
+    "title": "Des Lab (gr. 2/ S2)",
+    "location": "UTCN - AC Bar - Sala BT 604",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAKIgJ2vzz7Q6bOpVi3nA4sAADLvQFb",
+        "Id": "AAMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgFRAAgI3jz/OMXAAEYAAAAA3yxvSDjIlEqCo4c8h1sdCwcACiICdr88+0OmzqVYt5wOLAAAAAABDQAACiICdr88+0OmzqVYt5wOLAAAy6HJWAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgAuAAAD3yxvSDjIlEqCo4c8h1sdCwEACiICdr88+0OmzqVYt5wOLAAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-17T16:00:00+02:00",
+      "End": "2025-12-17T18:00:00+02:00",
+      "Subject": "DES Lab (gr. 2/ s2)",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 604",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-17T18:00:00+02:00",
+    "end": "2025-12-17T22:00:00+02:00",
+    "title": "Lab Mp Ia 31461 (2)",
+    "location": "UTCN - AC Bar - Sala BT 604 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAKIgJ2vzz7Q6bOpVi3nA4sAAChvxHT",
+        "Id": "AAMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgFRAAgI3jz/OMXAAEYAAAAA3yxvSDjIlEqCo4c8h1sdCwcACiICdr88+0OmzqVYt5wOLAAAAAABDQAACiICdr88+0OmzqVYt5wOLAAAoa8AyQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgAuAAAD3yxvSDjIlEqCo4c8h1sdCwEACiICdr88+0OmzqVYt5wOLAAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-17T18:00:00+02:00",
+      "End": "2025-12-17T22:00:00+02:00",
+      "Subject": "Lab MP IA  31461 (2)",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 604 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-19T09:30:00+02:00",
+    "end": "2025-12-19T16:00:00+02:00",
+    "title": "LAB - Room Work",
+    "location": "Microsoft Teams Meeting; UTCN - AC Bar - Sala BT 604",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAKIgJ2vzz7Q6bOpVi3nA4sAADe32z+",
+        "Id": "AAMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgBGAAAAAADfLG9IOMiUSoKjhzyHWx0LBwAKIgJ2vzz7Q6bOpVi3nA4sAAAAAAENAAAKIgJ2vzz7Q6bOpVi3nA4sAADdg1RVAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADdmNWUxNjk3LTlkNTAtNDY1YS1iMzI2LTNjOWVkZWE1NmU4MgAuAAAD3yxvSDjIlEqCo4c8h1sdCwEACiICdr88+0OmzqVYt5wOLAAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-19T09:30:00+02:00",
+      "End": "2025-12-19T16:00:00+02:00",
+      "Subject": "Lab Work",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - AC Bar - Sala BT 604",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  }
+]

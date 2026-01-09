@@ -1,0 +1,43 @@
+[
+  {
+    "start": "2025-12-10T19:00:00+02:00",
+    "end": "2025-12-10T19:30:00+02:00",
+    "title": "CURS",
+    "location": "UTCN - CUNBM Victor Babes 62A - Sala A1",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAB02E/RRPKtQ693PyQ0lCvpAADIL0n5",
+        "Id": "AAMkADQ1MzYyYTZkLTExZGYtNGZiOC05NGIwLTViYTJmYTRjYWZkZABGAAAAAAAtqrgtN9maTJxP64K3q7HhBwB02E/RRPKtQ693PyQ0lCvpAAAAAAENAAB02E/RRPKtQ693PyQ0lCvpAADIFpDrAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADQ1MzYyYTZkLTExZGYtNGZiOC05NGIwLTViYTJmYTRjYWZkZAAuAAAAAAAtqrgtN9maTJxP64K3q7HhAQB02E/RRPKtQ693PyQ0lCvpAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-10T19:00:00+02:00",
+      "End": "2025-12-10T19:30:00+02:00",
+      "Subject": "Curs",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - CUNBM Victor Babes 62A - Sala A1",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  }
+]

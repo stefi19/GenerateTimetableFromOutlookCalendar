@@ -1,0 +1,3405 @@
+[
+  {
+    "start": "2025-12-30T16:00:00+02:00",
+    "end": "2025-12-30T18:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LXt",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3kc2YCSAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQjgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-30T16:00:00+02:00",
+      "End": "2025-12-30T18:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR2 SG2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-30T18:00:00+02:00",
+    "end": "2025-12-30T20:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LX9",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3kc2YCSAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQkAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-30T18:00:00+02:00",
+      "End": "2025-12-30T20:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR3 SG2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-01T08:00:00+02:00",
+    "end": "2026-01-01T10:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LXp",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3kjItPgAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQkgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-01T08:00:00+02:00",
+      "End": "2026-01-01T10:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR1 SG1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-01T10:00:00+02:00",
+    "end": "2026-01-01T12:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LXv",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3kjItPgAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQkwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-01T10:00:00+02:00",
+      "End": "2026-01-01T12:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR2 SG1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-01T12:00:00+02:00",
+    "end": "2026-01-01T14:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LYA",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3kjItPgAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQlAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-01T12:00:00+02:00",
+      "End": "2026-01-01T14:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR3 SG1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-01T14:00:00+02:00",
+    "end": "2026-01-01T16:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LX7",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3kjItPgAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQlQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-01T14:00:00+02:00",
+      "End": "2026-01-01T16:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR1 SG2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-06T16:00:00+02:00",
+    "end": "2026-01-06T18:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LXt",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3ky2iQjAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQjgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-06T16:00:00+02:00",
+      "End": "2026-01-06T18:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR2 SG2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-06T18:00:00+02:00",
+    "end": "2026-01-06T20:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LX9",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3ky2iQjAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQkAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-06T18:00:00+02:00",
+      "End": "2026-01-06T20:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR3 SG2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-08T08:00:00+02:00",
+    "end": "2026-01-08T10:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LXp",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3k5I3dxAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQkgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-08T08:00:00+02:00",
+      "End": "2026-01-08T10:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR1 SG1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-08T10:00:00+02:00",
+    "end": "2026-01-08T12:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LXv",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3k5I3dxAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQkwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-08T10:00:00+02:00",
+      "End": "2026-01-08T12:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR2 SG1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-08T12:00:00+02:00",
+    "end": "2026-01-08T14:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LYA",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3k5I3dxAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQlAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-08T12:00:00+02:00",
+      "End": "2026-01-08T14:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR3 SG1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-08T14:00:00+02:00",
+    "end": "2026-01-08T16:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LX7",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3k5I3dxAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQlQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-08T14:00:00+02:00",
+      "End": "2026-01-08T16:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR1 SG2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-13T16:00:00+02:00",
+    "end": "2026-01-13T18:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LXt",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3lI2se0AAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQjgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-13T16:00:00+02:00",
+      "End": "2026-01-13T18:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR2 SG2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-13T18:00:00+02:00",
+    "end": "2026-01-13T20:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LX9",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3lI2se0AAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQkAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-13T18:00:00+02:00",
+      "End": "2026-01-13T20:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR3 SG2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-15T08:00:00+02:00",
+    "end": "2026-01-15T10:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LXp",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3lPJBsCAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQkgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-15T08:00:00+02:00",
+      "End": "2026-01-15T10:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR1 SG1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-15T10:00:00+02:00",
+    "end": "2026-01-15T12:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LXv",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3lPJBsCAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQkwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-15T10:00:00+02:00",
+      "End": "2026-01-15T12:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR2 SG1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-15T12:00:00+02:00",
+    "end": "2026-01-15T14:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LYA",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3lPJBsCAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQlAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-15T12:00:00+02:00",
+      "End": "2026-01-15T14:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR3 SG1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-15T14:00:00+02:00",
+    "end": "2026-01-15T16:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LX7",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3lPJBsCAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQlQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-15T14:00:00+02:00",
+      "End": "2026-01-15T16:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR1 SG2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-20T16:00:00+02:00",
+    "end": "2026-01-20T18:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LXt",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3le22tFAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQjgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-20T16:00:00+02:00",
+      "End": "2026-01-20T18:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR2 SG2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-20T18:00:00+02:00",
+    "end": "2026-01-20T20:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LX9",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3le22tFAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQkAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-20T18:00:00+02:00",
+      "End": "2026-01-20T20:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR3 SG2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-22T08:00:00+02:00",
+    "end": "2026-01-22T10:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LXp",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3llJL6TAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQkgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-22T08:00:00+02:00",
+      "End": "2026-01-22T10:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR1 SG1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-22T10:00:00+02:00",
+    "end": "2026-01-22T12:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LXv",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3llJL6TAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQkwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-22T10:00:00+02:00",
+      "End": "2026-01-22T12:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR2 SG1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-22T12:00:00+02:00",
+    "end": "2026-01-22T14:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LYA",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3llJL6TAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQlAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-22T12:00:00+02:00",
+      "End": "2026-01-22T14:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR3 SG1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-22T14:00:00+02:00",
+    "end": "2026-01-22T16:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LX7",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3llJL6TAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQlQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-22T14:00:00+02:00",
+      "End": "2026-01-22T16:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR1 SG2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-01T08:00:00+02:00",
+    "end": "2025-12-01T10:00:00+02:00",
+    "title": "Fw: Televiziune Iv Ea",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAICMxxc",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3jBskinAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB3cUgIQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-01T08:00:00+02:00",
+      "End": "2025-12-01T10:00:00+02:00",
+      "Subject": "FW: Televiziune IV EA - Gr3 Sg2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Free",
+      "CalendarItemType": "Exception",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-01T10:00:00+02:00",
+    "end": "2025-12-01T12:00:00+02:00",
+    "title": "Fw: Televiziune Iv Ea",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAICMxxe",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3jBskinAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB3cUgIgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-01T10:00:00+02:00",
+      "End": "2025-12-01T12:00:00+02:00",
+      "Subject": "FW: Televiziune IV EA - Gr1 Sg1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Free",
+      "CalendarItemType": "Exception",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-02T08:00:00+02:00",
+    "end": "2025-12-02T10:00:00+02:00",
+    "title": "Televiziune Iv Ea",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAHlPbaB",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3jE1vJOAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB3cUgIwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-02T08:00:00+02:00",
+      "End": "2025-12-02T10:00:00+02:00",
+      "Subject": "Televiziune IV EA - Gr3 Sg1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-02T10:00:00+02:00",
+    "end": "2025-12-02T12:00:00+02:00",
+    "title": "Televiziune Iv Ea",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAHlPbaG",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3jE1vJOAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB3cUgJAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-02T10:00:00+02:00",
+      "End": "2025-12-02T12:00:00+02:00",
+      "Subject": "Televiziune IV EA - Gr1 Sg2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-02T12:00:00+02:00",
+    "end": "2025-12-02T14:00:00+02:00",
+    "title": "Televiziune Iv Ea",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAHlPbaQ",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3jE1vJOAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB3cUgJQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-02T12:00:00+02:00",
+      "End": "2025-12-02T14:00:00+02:00",
+      "Subject": "Televiziune IV EA - Gr2 Sg1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-02T14:00:00+02:00",
+    "end": "2025-12-02T16:00:00+02:00",
+    "title": "Televiziune Iv Ea",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAHlPbaS",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3jE1vJOAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB3cUgJgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-02T14:00:00+02:00",
+      "End": "2025-12-02T16:00:00+02:00",
+      "Subject": "Televiziune IV EA - Gr2 Sg2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-02T16:00:00+02:00",
+    "end": "2025-12-02T18:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LXt",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3jE1vJOAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQjgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-02T16:00:00+02:00",
+      "End": "2025-12-02T18:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR2 SG2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-02T18:00:00+02:00",
+    "end": "2025-12-02T20:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LX9",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3jE1vJOAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQkAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-02T18:00:00+02:00",
+      "End": "2025-12-02T20:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR3 SG2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-03T08:00:00+02:00",
+    "end": "2025-12-03T10:00:00+02:00",
+    "title": "[etti",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIFikP5",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOABGAAAAAABoms/4O5kES5f6d8/vwn3nBwCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAACM3LRYOCHcSqeq2aYQ4taqAAIFTm9pAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-03T08:00:00+02:00",
+      "End": "2025-12-03T10:00:00+02:00",
+      "Subject": "[ETTI-anIV-TST-GR1SG1EN]DMI - P4",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-03T10:00:00+02:00",
+    "end": "2025-12-03T12:00:00+02:00",
+    "title": "[etti",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIFikXQ",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOABGAAAAAABoms/4O5kES5f6d8/vwn3nBwCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAACM3LRYOCHcSqeq2aYQ4taqAAIFTm9qAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-03T10:00:00+02:00",
+      "End": "2025-12-03T12:00:00+02:00",
+      "Subject": "[ETTI-anIV-TST-GR1SG2]DMI - P4",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-03T17:00:00+02:00",
+    "end": "2025-12-03T20:30:00+02:00",
+    "title": "M3",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAICMxZd",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOABGAAAAAABoms/4O5kES5f6d8/vwn3nBwCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAACM3LRYOCHcSqeq2aYQ4taqAAIB9/s9AAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-03T17:00:00+02:00",
+      "End": "2025-12-03T20:30:00+02:00",
+      "Subject": "M3 - hibrid - Sg1+2 Ingineria Datelor în Cloud - II TM",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-03T17:00:00+02:00",
+    "end": "2025-12-03T20:30:00+02:00",
+    "title": "Fw: M1 Sg",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAILjHyl",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3jH+5v1AAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB4ZY9xgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-03T17:00:00+02:00",
+      "End": "2025-12-03T20:30:00+02:00",
+      "Subject": "FW: M1 Sg-1 Ingineria Datelor în Cloud - II TM",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Free",
+      "CalendarItemType": "Exception",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-04T08:00:00+02:00",
+    "end": "2025-12-04T10:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LXp",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3jLIEWcAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQkgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-04T08:00:00+02:00",
+      "End": "2025-12-04T10:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR1 SG1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-04T10:00:00+02:00",
+    "end": "2025-12-04T12:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LXv",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3jLIEWcAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQkwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-04T10:00:00+02:00",
+      "End": "2025-12-04T12:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR2 SG1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-04T12:00:00+02:00",
+    "end": "2025-12-04T14:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LYA",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3jLIEWcAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQlAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-04T12:00:00+02:00",
+      "End": "2025-12-04T14:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR3 SG1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-04T14:00:00+02:00",
+    "end": "2025-12-04T16:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LX7",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3jLIEWcAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQlQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-04T14:00:00+02:00",
+      "End": "2025-12-04T16:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR1 SG2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-04T17:00:00+02:00",
+    "end": "2025-12-04T20:30:00+02:00",
+    "title": "Fw: M1 Sg",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAILjHym",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3jLIEWcAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB4ZY9xwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-04T17:00:00+02:00",
+      "End": "2025-12-04T20:30:00+02:00",
+      "Subject": "FW: M1 Sg-1 Ingineria Datelor în Cloud - II TM",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Free",
+      "CalendarItemType": "Exception",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-04T17:00:00+02:00",
+    "end": "2025-12-04T20:30:00+02:00",
+    "title": "M3",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIFigaY",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOABGAAAAAABoms/4O5kES5f6d8/vwn3nBwCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAACM3LRYOCHcSqeq2aYQ4taqAAIB9/s+AAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-04T17:00:00+02:00",
+      "End": "2025-12-04T20:30:00+02:00",
+      "Subject": "M3 - hibrid - Sg1+2 Ingineria Datelor în Cloud - I TSAeA",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-08T08:00:00+02:00",
+    "end": "2025-12-08T10:00:00+02:00",
+    "title": "Televiziune Iv Ea",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAICMxxc",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3jXsuw4AAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB3cUgIQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-08T08:00:00+02:00",
+      "End": "2025-12-08T10:00:00+02:00",
+      "Subject": "Televiziune IV EA - Gr3 Sg2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-08T10:00:00+02:00",
+    "end": "2025-12-08T12:00:00+02:00",
+    "title": "Televiziune Iv Ea",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAICMxxe",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3jXsuw4AAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB3cUgIgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-08T10:00:00+02:00",
+      "End": "2025-12-08T12:00:00+02:00",
+      "Subject": "Televiziune IV EA - Gr1 Sg1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-09T08:00:00+02:00",
+    "end": "2025-12-09T10:00:00+02:00",
+    "title": "Televiziune Iv Ea",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAHlPbaB",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3ja15XfAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB3cUgIwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-09T08:00:00+02:00",
+      "End": "2025-12-09T10:00:00+02:00",
+      "Subject": "Televiziune IV EA - Gr3 Sg1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-09T10:00:00+02:00",
+    "end": "2025-12-09T12:00:00+02:00",
+    "title": "Televiziune Iv Ea",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAHlPbaG",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3ja15XfAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB3cUgJAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-09T10:00:00+02:00",
+      "End": "2025-12-09T12:00:00+02:00",
+      "Subject": "Televiziune IV EA - Gr1 Sg2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-09T12:00:00+02:00",
+    "end": "2025-12-09T14:00:00+02:00",
+    "title": "Televiziune Iv Ea",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAHlPbaQ",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3ja15XfAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB3cUgJQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-09T12:00:00+02:00",
+      "End": "2025-12-09T14:00:00+02:00",
+      "Subject": "Televiziune IV EA - Gr2 Sg1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-09T14:00:00+02:00",
+    "end": "2025-12-09T16:00:00+02:00",
+    "title": "Televiziune Iv Ea",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAHlPbaS",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3ja15XfAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB3cUgJgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-09T14:00:00+02:00",
+      "End": "2025-12-09T16:00:00+02:00",
+      "Subject": "Televiziune IV EA - Gr2 Sg2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-09T16:00:00+02:00",
+    "end": "2025-12-09T18:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LXt",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3ja15XfAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQjgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-09T16:00:00+02:00",
+      "End": "2025-12-09T18:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR2 SG2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-09T18:00:00+02:00",
+    "end": "2025-12-09T20:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LX9",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3ja15XfAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQkAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-09T18:00:00+02:00",
+      "End": "2025-12-09T20:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR3 SG2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-10T08:00:00+02:00",
+    "end": "2025-12-10T10:00:00+02:00",
+    "title": "[etti",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAILjHRs",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOABGAAAAAABoms/4O5kES5f6d8/vwn3nBwCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAACM3LRYOCHcSqeq2aYQ4taqAAILUPS+AAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-10T08:00:00+02:00",
+      "End": "2025-12-10T10:00:00+02:00",
+      "Subject": "[ETTI-anIV-TST-GR1SG1EN]DMI - P5",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-10T12:00:00+02:00",
+    "end": "2025-12-10T14:00:00+02:00",
+    "title": "[etti",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAILjHR2",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOABGAAAAAABoms/4O5kES5f6d8/vwn3nBwCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAACM3LRYOCHcSqeq2aYQ4taqAAILUPTAAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-10T12:00:00+02:00",
+      "End": "2025-12-10T14:00:00+02:00",
+      "Subject": "[ETTI-anIV-TST-GR1SG1]DMI - P5",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-10T14:00:00+02:00",
+    "end": "2025-12-10T16:00:00+02:00",
+    "title": "[etti",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAILjHVL",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOABGAAAAAABoms/4O5kES5f6d8/vwn3nBwCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAACM3LRYOCHcSqeq2aYQ4taqAAILUPTBAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-10T14:00:00+02:00",
+      "End": "2025-12-10T16:00:00+02:00",
+      "Subject": "[ETTI-anIV-TST-GR2SG1]DMI - P5",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-10T17:00:00+02:00",
+    "end": "2025-12-10T20:30:00+02:00",
+    "title": "Fw: M1 Sg",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIJ1Ajo",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3jd/D+GAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5iFxYQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-10T17:00:00+02:00",
+      "End": "2025-12-10T20:30:00+02:00",
+      "Subject": "FW: M1 Sg-2 Ingineria Datelor în Cloud - II TM",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Free",
+      "CalendarItemType": "Exception",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-11T08:00:00+02:00",
+    "end": "2025-12-11T10:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LXp",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3jhIOktAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQkgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-11T08:00:00+02:00",
+      "End": "2025-12-11T10:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR1 SG1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-11T10:00:00+02:00",
+    "end": "2025-12-11T12:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LXv",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3jhIOktAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQkwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-11T10:00:00+02:00",
+      "End": "2025-12-11T12:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR2 SG1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-11T12:00:00+02:00",
+    "end": "2025-12-11T14:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LYA",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3jhIOktAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQlAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-11T12:00:00+02:00",
+      "End": "2025-12-11T14:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR3 SG1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-11T14:00:00+02:00",
+    "end": "2025-12-11T16:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LX7",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3jhIOktAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQlQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-11T14:00:00+02:00",
+      "End": "2025-12-11T16:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR1 SG2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-11T17:00:00+02:00",
+    "end": "2025-12-11T20:30:00+02:00",
+    "title": "Fw: M1 Sg",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIJ1Ajq",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3jhIOktAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB+MJQQwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-11T17:00:00+02:00",
+      "End": "2025-12-11T20:30:00+02:00",
+      "Subject": "FW: M1 Sg-2 Ingineria Datelor în Cloud - II TM",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Free",
+      "CalendarItemType": "Exception",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-12T08:00:00+02:00",
+    "end": "2025-12-12T10:00:00+02:00",
+    "title": "Tv",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIMJhk5",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOABGAAAAAABoms/4O5kES5f6d8/vwn3nBwCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAACM3LRYOCHcSqeq2aYQ4taqAAIL6sVCAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-12T08:00:00+02:00",
+      "End": "2025-12-12T10:00:00+02:00",
+      "Subject": "TV - Unit 3 - Equipment",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-12T10:00:00+02:00",
+    "end": "2025-12-12T12:00:00+02:00",
+    "title": "Tv",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIMJhp6",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOABGAAAAAABoms/4O5kES5f6d8/vwn3nBwCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAACM3LRYOCHcSqeq2aYQ4taqAAIL6sVDAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-12T10:00:00+02:00",
+      "End": "2025-12-12T12:00:00+02:00",
+      "Subject": "TV - Unit 3 - Equipment",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-12T12:00:00+02:00",
+    "end": "2025-12-12T14:00:00+02:00",
+    "title": "Tv",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIMJhqB",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOABGAAAAAABoms/4O5kES5f6d8/vwn3nBwCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAACM3LRYOCHcSqeq2aYQ4taqAAIL6sVEAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-12T12:00:00+02:00",
+      "End": "2025-12-12T14:00:00+02:00",
+      "Subject": "TV - Unit 3 - Equipment",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-15T08:00:00+02:00",
+    "end": "2025-12-15T10:00:00+02:00",
+    "title": "Televiziune Iv Ea",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAICMxxc",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3jts4/JAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB3cUgIQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-15T08:00:00+02:00",
+      "End": "2025-12-15T10:00:00+02:00",
+      "Subject": "Televiziune IV EA - Gr3 Sg2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-15T10:00:00+02:00",
+    "end": "2025-12-15T12:00:00+02:00",
+    "title": "Televiziune Iv Ea",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAICMxxe",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3jts4/JAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB3cUgIgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-15T10:00:00+02:00",
+      "End": "2025-12-15T12:00:00+02:00",
+      "Subject": "Televiziune IV EA - Gr1 Sg1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-16T08:00:00+02:00",
+    "end": "2025-12-16T10:00:00+02:00",
+    "title": "Televiziune Iv Ea",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAHlPbaB",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3jw2DlwAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB3cUgIwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-16T08:00:00+02:00",
+      "End": "2025-12-16T10:00:00+02:00",
+      "Subject": "Televiziune IV EA - Gr3 Sg1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-16T10:00:00+02:00",
+    "end": "2025-12-16T12:00:00+02:00",
+    "title": "Televiziune Iv Ea",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAHlPbaG",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3jw2DlwAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB3cUgJAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-16T10:00:00+02:00",
+      "End": "2025-12-16T12:00:00+02:00",
+      "Subject": "Televiziune IV EA - Gr1 Sg2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-16T12:00:00+02:00",
+    "end": "2025-12-16T14:00:00+02:00",
+    "title": "Televiziune Iv Ea",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAHlPbaQ",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3jw2DlwAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB3cUgJQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-16T12:00:00+02:00",
+      "End": "2025-12-16T14:00:00+02:00",
+      "Subject": "Televiziune IV EA - Gr2 Sg1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-16T14:00:00+02:00",
+    "end": "2025-12-16T16:00:00+02:00",
+    "title": "Televiziune Iv Ea",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAHlPbaS",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3jw2DlwAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB3cUgJgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-16T14:00:00+02:00",
+      "End": "2025-12-16T16:00:00+02:00",
+      "Subject": "Televiziune IV EA - Gr2 Sg2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-16T16:00:00+02:00",
+    "end": "2025-12-16T18:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LXt",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3jw2DlwAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQjgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-16T16:00:00+02:00",
+      "End": "2025-12-16T18:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR2 SG2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-16T18:00:00+02:00",
+    "end": "2025-12-16T20:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LX9",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3jw2DlwAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQkAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-16T18:00:00+02:00",
+      "End": "2025-12-16T20:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR3 SG2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-17T17:00:00+02:00",
+    "end": "2025-12-17T20:30:00+02:00",
+    "title": "M3",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAILjJYs",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOABGAAAAAABoms/4O5kES5f6d8/vwn3nBwCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAACM3LRYOCHcSqeq2aYQ4taqAAIIbSlDAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-17T17:00:00+02:00",
+      "End": "2025-12-17T20:30:00+02:00",
+      "Subject": "M3 - hibrid - Sg1+2 Ingineria Datelor în Cloud - II TM",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-18T08:00:00+02:00",
+    "end": "2025-12-18T10:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LXp",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3j3IYy+AAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQkgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-18T08:00:00+02:00",
+      "End": "2025-12-18T10:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR1 SG1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-18T10:00:00+02:00",
+    "end": "2025-12-18T12:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LXv",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3j3IYy+AAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQkwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-18T10:00:00+02:00",
+      "End": "2025-12-18T12:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR2 SG1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-18T12:00:00+02:00",
+    "end": "2025-12-18T14:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LYA",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3j3IYy+AAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQlAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-18T12:00:00+02:00",
+      "End": "2025-12-18T14:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR3 SG1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-18T14:00:00+02:00",
+    "end": "2025-12-18T16:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LX7",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3j3IYy+AAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQlQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-18T14:00:00+02:00",
+      "End": "2025-12-18T16:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR1 SG2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-19T10:00:00+02:00",
+    "end": "2025-12-19T12:00:00+02:00",
+    "title": "Tv",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIRIlkf",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOABGAAAAAABoms/4O5kES5f6d8/vwn3nBwCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAACM3LRYOCHcSqeq2aYQ4taqAAIQ5r+LAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-19T10:00:00+02:00",
+      "End": "2025-12-19T12:00:00+02:00",
+      "Subject": "TV - Unit 3 - Equipment",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-19T12:00:00+02:00",
+    "end": "2025-12-19T14:00:00+02:00",
+    "title": "Tv",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIRIlnA",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOABGAAAAAABoms/4O5kES5f6d8/vwn3nBwCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAACM3LRYOCHcSqeq2aYQ4taqAAIQ5r+MAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-19T12:00:00+02:00",
+      "End": "2025-12-19T14:00:00+02:00",
+      "Subject": "TV - Unit 3 - Equipment",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-23T16:00:00+02:00",
+    "end": "2025-12-23T18:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LXt",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3kG2N0BAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQjgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-23T16:00:00+02:00",
+      "End": "2025-12-23T18:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR2 SG2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-23T18:00:00+02:00",
+    "end": "2025-12-23T20:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LX9",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3kG2N0BAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQkAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-23T18:00:00+02:00",
+      "End": "2025-12-23T20:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR3 SG2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-25T08:00:00+02:00",
+    "end": "2025-12-25T10:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LXp",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3kNIjBPAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQkgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-25T08:00:00+02:00",
+      "End": "2025-12-25T10:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR1 SG1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-25T10:00:00+02:00",
+    "end": "2025-12-25T12:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LXv",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3kNIjBPAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQkwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-25T10:00:00+02:00",
+      "End": "2025-12-25T12:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR2 SG1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-25T12:00:00+02:00",
+    "end": "2025-12-25T14:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LYA",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3kNIjBPAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQlAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-25T12:00:00+02:00",
+      "End": "2025-12-25T14:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR3 SG1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-25T14:00:00+02:00",
+    "end": "2025-12-25T16:00:00+02:00",
+    "title": "Fw: Televiziune",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACM3LRYOCHcSqeq2aYQ4taqAAIA8LX7",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAFRAAgI3kNIjBPAAEYAAAAAaJrP+DuZBEuX+nfP78J95wcAjNy0WDgh3EqnqtmmEOLWqgAAAAABDQAAjNy0WDgh3EqnqtmmEOLWqgAB5QcQlQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADExN2IxYTZiLTQ5OTgtNGZhYy1iNDdiLWM0MmRkMGU1NzFhOAAuAAAAAABoms/4O5kES5f6d8/vwn3nAQCM3LRYOCHcSqeq2aYQ4taqAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-25T14:00:00+02:00",
+      "End": "2025-12-25T16:00:00+02:00",
+      "Subject": "FW: Televiziune - [TSTanIVro] - GR1 SG2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  }
+]

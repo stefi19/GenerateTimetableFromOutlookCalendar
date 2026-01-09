@@ -1,0 +1,43 @@
+[
+  {
+    "start": "2025-12-15T11:00:00+00:00",
+    "end": "2025-12-15T13:00:00+00:00",
+    "title": "Sala 120",
+    "location": "UTCN - RECTORAT - Sala 120",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABLNVklnIhwQYJUKEz3qDUHAAH+m0NN",
+        "Id": "AAMkADU2MjE2YzNjLWJlZmEtNDFjMi1hZWUzLTYwNDE2OWFjY2FhMgBGAAAAAABMtrXujS2kTK9EWhj6hPOXBwBLNVklnIhwQYJUKEz3qDUHAAAAAAENAABLNVklnIhwQYJUKEz3qDUHAAH+iAv3AAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADU2MjE2YzNjLWJlZmEtNDFjMi1hZWUzLTYwNDE2OWFjY2FhMgAuAAAAAABMtrXujS2kTK9EWhj6hPOXAQBLNVklnIhwQYJUKEz3qDUHAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-15T11:00:00Z",
+      "End": "2025-12-15T13:00:00Z",
+      "Subject": "Sala 120 - Ședință - CRMSE & MURMSE",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - RECTORAT - Sala 120",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  }
+]

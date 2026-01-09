@@ -1,0 +1,84 @@
+[
+  {
+    "start": "2025-12-11T10:00:00+00:00",
+    "end": "2025-12-11T13:00:00+00:00",
+    "title": "Sandu Traian Cimponeriu",
+    "location": "UTCN - Aula Domsa; UTCN - CUNBM Victor Babes 62A - Sala A4",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABJ0/hKaquyS5TtKGnLMEulAAIGvHae",
+        "Id": "AAMkADZlYmQ2OTVmLTJkZTUtNDRjNC05ZDZmLTk2MjAyZGYwZTBjNgBGAAAAAAAILkeeYy5EQrHg98+sLfHhBwBJ0/hKaquyS5TtKGnLMEulAAAAAAENAABJ0/hKaquyS5TtKGnLMEulAAIGqFPuAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADZlYmQ2OTVmLTJkZTUtNDQAYzQtOWQ2Zi05NjIwMmRmMGUwYzYALgAAAwguR55jLkRCseD3z6wt8eEBAEnT+Epqq7JLlO0oacswS6UAAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-11T10:00:00Z",
+      "End": "2025-12-11T13:00:00Z",
+      "Subject": "Sandu Traian Cimponeriu ",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - Aula Domsa; UTCN - CUNBM Victor Babes 62A - Sala A4",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-12T09:00:00+00:00",
+    "end": "2025-12-12T11:00:00+00:00",
+    "title": "Fw: Teza Abilitare Hegyi",
+    "location": "",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABJ0/hKaquyS5TtKGnLMEulAAHysKmT",
+        "Id": "AAMkADZlYmQ2OTVmLTJkZTUtNDRjNC05ZDZmLTk2MjAyZGYwZTBjNgBGAAAAAAAILkeeYy5EQrHg98+sLfHhBwBJ0/hKaquyS5TtKGnLMEulAAAAAAENAABJ0/hKaquyS5TtKGnLMEulAAHynp/WAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADZlYmQ2OTVmLTJkZTUtNDQAYzQtOWQ2Zi05NjIwMmRmMGUwYzYALgAAAwguR55jLkRCseD3z6wt8eEBAEnT+Epqq7JLlO0oacswS6UAAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-12T09:00:00Z",
+      "End": "2025-12-12T11:00:00Z",
+      "Subject": "FW: Teza Abilitare Hegyi",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Free",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  }
+]

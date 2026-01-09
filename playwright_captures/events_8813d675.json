@@ -1,0 +1,2339 @@
+[
+  {
+    "start": "2025-12-29T10:00:00+02:00",
+    "end": "2025-12-29T16:00:00+02:00",
+    "title": "Radiocomunicații Celulare (l)",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNis",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3kZtNbrAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobvAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-29T10:00:00+02:00",
+      "End": "2025-12-29T16:00:00+02:00",
+      "Subject": "Radiocomunicații Celulare (L) - an IV TST-RO",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-30T08:00:00+02:00",
+    "end": "2025-12-30T14:00:00+02:00",
+    "title": "Sisteme De Comunicații (l)",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNim",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3kc2YCSAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobuwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-30T08:00:00+02:00",
+      "End": "2025-12-30T14:00:00+02:00",
+      "Subject": "Sisteme de comunicații (L) - an III IEDEEE ",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-31T10:00:00+02:00",
+    "end": "2025-12-31T12:00:00+02:00",
+    "title": "Sisteme De Comunicații",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNi0",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3kf/io5AAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobvgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-31T10:00:00+02:00",
+      "End": "2025-12-31T12:00:00+02:00",
+      "Subject": "Sisteme de comunicații (P) - an III IEDEEE",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-31T17:00:00+02:00",
+    "end": "2025-12-31T19:00:00+02:00",
+    "title": "Proiectarea Rețelelor Radio",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNjs",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3kf/io5AAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobwwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-31T17:00:00+02:00",
+      "End": "2025-12-31T19:00:00+02:00",
+      "Subject": "Proiectarea rețelelor radio - TC II",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-01T10:00:00+02:00",
+    "end": "2026-01-01T14:00:00+02:00",
+    "title": "Cellular Radiocommunications",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNi/",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3kjItPgAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobvwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-01T10:00:00+02:00",
+      "End": "2026-01-01T14:00:00+02:00",
+      "Subject": "Cellular Radiocommunications - IV TST-ENG",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-01T14:00:00+02:00",
+    "end": "2026-01-01T16:00:00+02:00",
+    "title": "Iot Project",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNjH",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3kjItPgAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobwAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-01T14:00:00+02:00",
+      "End": "2026-01-01T16:00:00+02:00",
+      "Subject": "IoT Project - IV TST-ENG",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-01T16:00:00+02:00",
+    "end": "2026-01-01T18:00:00+02:00",
+    "title": "Sisteme Wireless",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNjQ",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3kjItPgAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobwQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-01T16:00:00+02:00",
+      "End": "2026-01-01T18:00:00+02:00",
+      "Subject": "Sisteme Wireless - TC I",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-01T18:00:00+02:00",
+    "end": "2026-01-01T19:00:00+02:00",
+    "title": "Proiect Cercetare",
+    "location": "",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNjX",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3kjItPgAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobwgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-01T18:00:00+02:00",
+      "End": "2026-01-01T19:00:00+02:00",
+      "Subject": "Proiect cercetare - TC I",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-05T10:00:00+02:00",
+    "end": "2026-01-05T16:00:00+02:00",
+    "title": "Radiocomunicații Celulare (l)",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNis",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3kvtXp8AAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobvAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-05T10:00:00+02:00",
+      "End": "2026-01-05T16:00:00+02:00",
+      "Subject": "Radiocomunicații Celulare (L) - an IV TST-RO",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-06T08:00:00+02:00",
+    "end": "2026-01-06T14:00:00+02:00",
+    "title": "Sisteme De Comunicații (l)",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNim",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3ky2iQjAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobuwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-06T08:00:00+02:00",
+      "End": "2026-01-06T14:00:00+02:00",
+      "Subject": "Sisteme de comunicații (L) - an III IEDEEE ",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-07T08:00:00+02:00",
+    "end": "2026-01-07T12:00:00+02:00",
+    "title": "Sisteme De Comunicații",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNie",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3k1/s3KAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobvQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-07T08:00:00+02:00",
+      "End": "2026-01-07T12:00:00+02:00",
+      "Subject": "Sisteme de comunicații (P) - an III IEDEEE",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-07T17:00:00+02:00",
+    "end": "2026-01-07T19:00:00+02:00",
+    "title": "Proiectarea Rețelelor Radio",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNjs",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3k1/s3KAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobwwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-07T17:00:00+02:00",
+      "End": "2026-01-07T19:00:00+02:00",
+      "Subject": "Proiectarea rețelelor radio - TC II",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-08T10:00:00+02:00",
+    "end": "2026-01-08T14:00:00+02:00",
+    "title": "Cellular Radiocommunications",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNi/",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3k5I3dxAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobvwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-08T10:00:00+02:00",
+      "End": "2026-01-08T14:00:00+02:00",
+      "Subject": "Cellular Radiocommunications - IV TST-ENG",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-08T14:00:00+02:00",
+    "end": "2026-01-08T16:00:00+02:00",
+    "title": "Iot Project",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNjH",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3k5I3dxAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobwAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-08T14:00:00+02:00",
+      "End": "2026-01-08T16:00:00+02:00",
+      "Subject": "IoT Project - IV TST-ENG",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-08T16:00:00+02:00",
+    "end": "2026-01-08T18:00:00+02:00",
+    "title": "Sisteme Wireless",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNjQ",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3k5I3dxAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobwQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-08T16:00:00+02:00",
+      "End": "2026-01-08T18:00:00+02:00",
+      "Subject": "Sisteme Wireless - TC I",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-08T18:00:00+02:00",
+    "end": "2026-01-08T19:00:00+02:00",
+    "title": "Proiect Cercetare",
+    "location": "",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNjX",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3k5I3dxAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobwgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-08T18:00:00+02:00",
+      "End": "2026-01-08T19:00:00+02:00",
+      "Subject": "Proiect cercetare - TC I",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-12T10:00:00+02:00",
+    "end": "2026-01-12T16:00:00+02:00",
+    "title": "Radiocomunicații Celulare (l)",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNis",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3lFth4NAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobvAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-12T10:00:00+02:00",
+      "End": "2026-01-12T16:00:00+02:00",
+      "Subject": "Radiocomunicații Celulare (L) - an IV TST-RO",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-12T14:00:00+02:00",
+    "end": "2026-01-12T16:00:00+02:00",
+    "title": "Rcc",
+    "location": "",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNhG",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3lFth4NAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobugAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-12T14:00:00+02:00",
+      "End": "2026-01-12T16:00:00+02:00",
+      "Subject": "RCC - 2242-2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-13T08:00:00+02:00",
+    "end": "2026-01-13T14:00:00+02:00",
+    "title": "Sisteme De Comunicații (l)",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNim",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3lI2se0AAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobuwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-13T08:00:00+02:00",
+      "End": "2026-01-13T14:00:00+02:00",
+      "Subject": "Sisteme de comunicații (L) - an III IEDEEE ",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-14T10:00:00+02:00",
+    "end": "2026-01-14T12:00:00+02:00",
+    "title": "Sisteme De Comunicații",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNi0",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3lL/3FbAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobvgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-14T10:00:00+02:00",
+      "End": "2026-01-14T12:00:00+02:00",
+      "Subject": "Sisteme de comunicații (P) - an III IEDEEE",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-14T17:00:00+02:00",
+    "end": "2026-01-14T19:00:00+02:00",
+    "title": "Proiectarea Rețelelor Radio",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNjs",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3lL/3FbAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobwwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-14T17:00:00+02:00",
+      "End": "2026-01-14T19:00:00+02:00",
+      "Subject": "Proiectarea rețelelor radio - TC II",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-15T10:00:00+02:00",
+    "end": "2026-01-15T14:00:00+02:00",
+    "title": "Cellular Radiocommunications",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNi/",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3lPJBsCAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobvwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-15T10:00:00+02:00",
+      "End": "2026-01-15T14:00:00+02:00",
+      "Subject": "Cellular Radiocommunications - IV TST-ENG",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-15T14:00:00+02:00",
+    "end": "2026-01-15T16:00:00+02:00",
+    "title": "Iot Project",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNjH",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3lPJBsCAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobwAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-15T14:00:00+02:00",
+      "End": "2026-01-15T16:00:00+02:00",
+      "Subject": "IoT Project - IV TST-ENG",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-15T16:00:00+02:00",
+    "end": "2026-01-15T18:00:00+02:00",
+    "title": "Sisteme Wireless",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNjQ",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3lPJBsCAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobwQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-15T16:00:00+02:00",
+      "End": "2026-01-15T18:00:00+02:00",
+      "Subject": "Sisteme Wireless - TC I",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-15T18:00:00+02:00",
+    "end": "2026-01-15T19:00:00+02:00",
+    "title": "Proiect Cercetare",
+    "location": "",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNjX",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3lPJBsCAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobwgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-15T18:00:00+02:00",
+      "End": "2026-01-15T19:00:00+02:00",
+      "Subject": "Proiect cercetare - TC I",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-01T10:00:00+02:00",
+    "end": "2025-12-01T16:00:00+02:00",
+    "title": "Radiocomunicații Celulare (l)",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNis",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3jBskinAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobvAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-01T10:00:00+02:00",
+      "End": "2025-12-01T16:00:00+02:00",
+      "Subject": "Radiocomunicații Celulare (L) - an IV TST-RO",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-02T08:00:00+02:00",
+    "end": "2025-12-02T14:00:00+02:00",
+    "title": "Sisteme De Comunicații (l)",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNim",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3jE1vJOAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobuwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-02T08:00:00+02:00",
+      "End": "2025-12-02T14:00:00+02:00",
+      "Subject": "Sisteme de comunicații (L) - an III IEDEEE ",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-03T10:00:00+02:00",
+    "end": "2025-12-03T12:00:00+02:00",
+    "title": "Sisteme De Comunicații",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNi0",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3jH+5v1AAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobvgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-03T10:00:00+02:00",
+      "End": "2025-12-03T12:00:00+02:00",
+      "Subject": "Sisteme de comunicații (P) - an III IEDEEE",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-03T17:00:00+02:00",
+    "end": "2025-12-03T19:00:00+02:00",
+    "title": "Proiectarea Rețelelor Radio",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNjs",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3jH+5v1AAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobwwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-03T17:00:00+02:00",
+      "End": "2025-12-03T19:00:00+02:00",
+      "Subject": "Proiectarea rețelelor radio - TC II",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-04T10:00:00+02:00",
+    "end": "2025-12-04T14:00:00+02:00",
+    "title": "Cellular Radiocommunications",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNi/",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3jLIEWcAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobvwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-04T10:00:00+02:00",
+      "End": "2025-12-04T14:00:00+02:00",
+      "Subject": "Cellular Radiocommunications - IV TST-ENG",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-04T14:00:00+02:00",
+    "end": "2025-12-04T16:00:00+02:00",
+    "title": "Iot Project",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNjH",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3jLIEWcAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobwAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-04T14:00:00+02:00",
+      "End": "2025-12-04T16:00:00+02:00",
+      "Subject": "IoT Project - IV TST-ENG",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-04T16:00:00+02:00",
+    "end": "2025-12-04T18:00:00+02:00",
+    "title": "Sisteme Wireless",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNjQ",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3jLIEWcAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobwQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-04T16:00:00+02:00",
+      "End": "2025-12-04T18:00:00+02:00",
+      "Subject": "Sisteme Wireless - TC I",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-04T18:00:00+02:00",
+    "end": "2025-12-04T19:00:00+02:00",
+    "title": "Proiect Cercetare",
+    "location": "",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNjX",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3jLIEWcAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobwgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-04T18:00:00+02:00",
+      "End": "2025-12-04T19:00:00+02:00",
+      "Subject": "Proiect cercetare - TC I",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-08T10:00:00+02:00",
+    "end": "2025-12-08T16:00:00+02:00",
+    "title": "Radiocomunicații Celulare (l)",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNis",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3jXsuw4AAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobvAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-08T10:00:00+02:00",
+      "End": "2025-12-08T16:00:00+02:00",
+      "Subject": "Radiocomunicații Celulare (L) - an IV TST-RO",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-09T08:00:00+02:00",
+    "end": "2025-12-09T14:00:00+02:00",
+    "title": "Sisteme De Comunicații (l)",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNim",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3ja15XfAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobuwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-09T08:00:00+02:00",
+      "End": "2025-12-09T14:00:00+02:00",
+      "Subject": "Sisteme de comunicații (L) - an III IEDEEE ",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-10T08:00:00+02:00",
+    "end": "2025-12-10T12:00:00+02:00",
+    "title": "Sisteme De Comunicații",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNie",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3jd/D+GAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobvQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-10T08:00:00+02:00",
+      "End": "2025-12-10T12:00:00+02:00",
+      "Subject": "Sisteme de comunicații (P) - an III IEDEEE",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-10T17:00:00+02:00",
+    "end": "2025-12-10T19:00:00+02:00",
+    "title": "Proiectarea Rețelelor Radio",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNjs",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3jd/D+GAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobwwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-10T17:00:00+02:00",
+      "End": "2025-12-10T19:00:00+02:00",
+      "Subject": "Proiectarea rețelelor radio - TC II",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-11T10:00:00+02:00",
+    "end": "2025-12-11T14:00:00+02:00",
+    "title": "Cellular Radiocommunications",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNi/",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3jhIOktAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobvwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-11T10:00:00+02:00",
+      "End": "2025-12-11T14:00:00+02:00",
+      "Subject": "Cellular Radiocommunications - IV TST-ENG",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-11T14:00:00+02:00",
+    "end": "2025-12-11T16:00:00+02:00",
+    "title": "Iot Project",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNjH",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3jhIOktAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobwAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-11T14:00:00+02:00",
+      "End": "2025-12-11T16:00:00+02:00",
+      "Subject": "IoT Project - IV TST-ENG",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-11T16:00:00+02:00",
+    "end": "2025-12-11T18:00:00+02:00",
+    "title": "Sisteme Wireless",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNjQ",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3jhIOktAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobwQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-11T16:00:00+02:00",
+      "End": "2025-12-11T18:00:00+02:00",
+      "Subject": "Sisteme Wireless - TC I",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-11T18:00:00+02:00",
+    "end": "2025-12-11T19:00:00+02:00",
+    "title": "Proiect Cercetare",
+    "location": "",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNjX",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3jhIOktAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobwgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-11T18:00:00+02:00",
+      "End": "2025-12-11T19:00:00+02:00",
+      "Subject": "Proiect cercetare - TC I",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-15T10:00:00+02:00",
+    "end": "2025-12-15T16:00:00+02:00",
+    "title": "Radiocomunicații Celulare (l)",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNis",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3jts4/JAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobvAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-15T10:00:00+02:00",
+      "End": "2025-12-15T16:00:00+02:00",
+      "Subject": "Radiocomunicații Celulare (L) - an IV TST-RO",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-16T08:00:00+02:00",
+    "end": "2025-12-16T14:00:00+02:00",
+    "title": "Sisteme De Comunicații (l)",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNim",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3jw2DlwAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobuwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-16T08:00:00+02:00",
+      "End": "2025-12-16T14:00:00+02:00",
+      "Subject": "Sisteme de comunicații (L) - an III IEDEEE ",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-17T10:00:00+02:00",
+    "end": "2025-12-17T12:00:00+02:00",
+    "title": "Sisteme De Comunicații",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNi0",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3jz/OMXAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobvgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-17T10:00:00+02:00",
+      "End": "2025-12-17T12:00:00+02:00",
+      "Subject": "Sisteme de comunicații (P) - an III IEDEEE",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-17T17:00:00+02:00",
+    "end": "2025-12-17T19:00:00+02:00",
+    "title": "Proiectarea Rețelelor Radio",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNjs",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3jz/OMXAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobwwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-17T17:00:00+02:00",
+      "End": "2025-12-17T19:00:00+02:00",
+      "Subject": "Proiectarea rețelelor radio - TC II",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-18T10:00:00+02:00",
+    "end": "2025-12-18T14:00:00+02:00",
+    "title": "Cellular Radiocommunications",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNi/",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3j3IYy+AAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobvwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-18T10:00:00+02:00",
+      "End": "2025-12-18T14:00:00+02:00",
+      "Subject": "Cellular Radiocommunications - IV TST-ENG",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-18T14:00:00+02:00",
+    "end": "2025-12-18T16:00:00+02:00",
+    "title": "Iot Project",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNjH",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3j3IYy+AAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobwAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-18T14:00:00+02:00",
+      "End": "2025-12-18T16:00:00+02:00",
+      "Subject": "IoT Project - IV TST-ENG",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-18T16:00:00+02:00",
+    "end": "2025-12-18T18:00:00+02:00",
+    "title": "Sisteme Wireless",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNjQ",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3j3IYy+AAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobwQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-18T16:00:00+02:00",
+      "End": "2025-12-18T18:00:00+02:00",
+      "Subject": "Sisteme Wireless - TC I",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-18T18:00:00+02:00",
+    "end": "2025-12-18T19:00:00+02:00",
+    "title": "Proiect Cercetare",
+    "location": "",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNjX",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3j3IYy+AAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobwgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-18T18:00:00+02:00",
+      "End": "2025-12-18T19:00:00+02:00",
+      "Subject": "Proiect cercetare - TC I",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-22T10:00:00+02:00",
+    "end": "2025-12-22T16:00:00+02:00",
+    "title": "Radiocomunicații Celulare (l)",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNis",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3kDtDNaAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobvAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-22T10:00:00+02:00",
+      "End": "2025-12-22T16:00:00+02:00",
+      "Subject": "Radiocomunicații Celulare (L) - an IV TST-RO",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-23T08:00:00+02:00",
+    "end": "2025-12-23T14:00:00+02:00",
+    "title": "Sisteme De Comunicații (l)",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNim",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3kG2N0BAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobuwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-23T08:00:00+02:00",
+      "End": "2025-12-23T14:00:00+02:00",
+      "Subject": "Sisteme de comunicații (L) - an III IEDEEE ",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-24T08:00:00+02:00",
+    "end": "2025-12-24T12:00:00+02:00",
+    "title": "Sisteme De Comunicații",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNie",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3kJ/YaoAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobvQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-24T08:00:00+02:00",
+      "End": "2025-12-24T12:00:00+02:00",
+      "Subject": "Sisteme de comunicații (P) - an III IEDEEE",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-24T17:00:00+02:00",
+    "end": "2025-12-24T19:00:00+02:00",
+    "title": "Proiectarea Rețelelor Radio",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNjs",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3kJ/YaoAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobwwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-24T17:00:00+02:00",
+      "End": "2025-12-24T19:00:00+02:00",
+      "Subject": "Proiectarea rețelelor radio - TC II",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-25T10:00:00+02:00",
+    "end": "2025-12-25T14:00:00+02:00",
+    "title": "Cellular Radiocommunications",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNi/",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3kNIjBPAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobvwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-25T10:00:00+02:00",
+      "End": "2025-12-25T14:00:00+02:00",
+      "Subject": "Cellular Radiocommunications - IV TST-ENG",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-25T14:00:00+02:00",
+    "end": "2025-12-25T16:00:00+02:00",
+    "title": "Iot Project",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNjH",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3kNIjBPAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobwAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-25T14:00:00+02:00",
+      "End": "2025-12-25T16:00:00+02:00",
+      "Subject": "IoT Project - IV TST-ENG",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-25T16:00:00+02:00",
+    "end": "2025-12-25T18:00:00+02:00",
+    "title": "Sisteme Wireless",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNjQ",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3kNIjBPAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobwQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-25T16:00:00+02:00",
+      "End": "2025-12-25T18:00:00+02:00",
+      "Subject": "Sisteme Wireless - TC I",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-25T18:00:00+02:00",
+    "end": "2025-12-25T19:00:00+02:00",
+    "title": "Proiect Cercetare",
+    "location": "",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACHeWQkFedHR7fG98QQLjwkAAC1lNjX",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQFRAAgI3kNIjBPAAEYAAAAANWPAfxC+aEybfSTRtwpRxgcAh3lkJBXnR0e3xvfEEC48JAAAAAABDQAAh3lkJBXnR0e3xvfEEC48JAAAtXobwgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmMTBkNmYwLTJjNjktNDE1NS05ZTA0LWM2NmVmNmM2NjIzNQAuAAAAAAA1Y8B/EL5oTJt9JNG3ClHGAQCHeWQkFedHR7fG98QQLjwkAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-25T18:00:00+02:00",
+      "End": "2025-12-25T19:00:00+02:00",
+      "Subject": "Proiect cercetare - TC I",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  }
+]

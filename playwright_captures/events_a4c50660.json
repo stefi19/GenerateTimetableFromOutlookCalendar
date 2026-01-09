@@ -1,0 +1,330 @@
+[
+  {
+    "start": "2025-12-09T22:00:00+00:00",
+    "end": "2025-12-10T22:00:00+00:00",
+    "title": "Închidere Proiect Erasmus ( Călin Neamțu)",
+    "location": "UTCN - Aula Centenar",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABi08+gh2WBQozrH5oY/UoKAAHxAMh4",
+        "Id": "AAMkAGZmNzFmNWQ0LWVmNzgtNDg0ZC1iODJiLTdjZDRlMjAzYWE5NwBGAAAAAACrkk8LBZRPTpXCNRR91RONBwBi08+gh2WBQozrH5oY/UoKAAAAAAENAABi08+gh2WBQozrH5oY/UoKAAHwpGIVAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmNzFmNWQ0LWVmNzgtNDg0ZC1iODJiLTdjZDRlMjAzYWE5NwAuAAAAAACrkk8LBZRPTpXCNRR91RONAQBi08+gh2WBQozrH5oY/UoKAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-09T22:00:00Z",
+      "End": "2025-12-10T22:00:00Z",
+      "Subject": "Închidere proiect Erasmus ( Călin Neamțu)",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Free",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - Aula Centenar",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-11T09:00:00+00:00",
+    "end": "2025-12-11T11:00:00+00:00",
+    "title": "Teza Abilitare Andreea Hegyi",
+    "location": "",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABi08+gh2WBQozrH5oY/UoKAAHxAI3c",
+        "Id": "AAMkAGZmNzFmNWQ0LWVmNzgtNDg0ZC1iODJiLTdjZDRlMjAzYWE5NwBGAAAAAACrkk8LBZRPTpXCNRR91RONBwBi08+gh2WBQozrH5oY/UoKAAAAAAENAABi08+gh2WBQozrH5oY/UoKAAHwpGITAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmNzFmNWQ0LWVmNzgtNDg0ZC1iODJiLTdjZDRlMjAzYWE5NwAuAAAAAACrkk8LBZRPTpXCNRR91RONAQBi08+gh2WBQozrH5oY/UoKAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-11T09:00:00Z",
+      "End": "2025-12-11T11:00:00Z",
+      "Subject": "Teza abilitare Andreea Hegyi",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-12T07:00:00+00:00",
+    "end": "2025-12-12T11:00:00+00:00",
+    "title": "Nicolae Grumazescu",
+    "location": "UTCN - Aula Centenar",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABi08+gh2WBQozrH5oY/UoKAAHxAIoL",
+        "Id": "AAMkAGZmNzFmNWQ0LWVmNzgtNDg0ZC1iODJiLTdjZDRlMjAzYWE5NwBGAAAAAACrkk8LBZRPTpXCNRR91RONBwBi08+gh2WBQozrH5oY/UoKAAAAAAENAABi08+gh2WBQozrH5oY/UoKAAHwpGIRAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmNzFmNWQ0LWVmNzgtNDg0ZC1iODJiLTdjZDRlMjAzYWE5NwAuAAAAAACrkk8LBZRPTpXCNRR91RONAQBi08+gh2WBQozrH5oY/UoKAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-12T07:00:00Z",
+      "End": "2025-12-12T11:00:00Z",
+      "Subject": "Nicolae Grumazescu ",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - Aula Centenar",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-12T11:00:00+00:00",
+    "end": "2025-12-12T13:00:00+00:00",
+    "title": "ANDREI - Room Rusu",
+    "location": "",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABi08+gh2WBQozrH5oY/UoKAAHxAI3i",
+        "Id": "AAMkAGZmNzFmNWQ0LWVmNzgtNDg0ZC1iODJiLTdjZDRlMjAzYWE5NwBGAAAAAACrkk8LBZRPTpXCNRR91RONBwBi08+gh2WBQozrH5oY/UoKAAAAAAENAABi08+gh2WBQozrH5oY/UoKAAHwpGIUAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmNzFmNWQ0LWVmNzgtNDg0ZC1iODJiLTdjZDRlMjAzYWE5NwAuAAAAAACrkk8LBZRPTpXCNRR91RONAQBi08+gh2WBQozrH5oY/UoKAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-12T11:00:00Z",
+      "End": "2025-12-12T13:00:00Z",
+      "Subject": "Andrei Rusu",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-15T08:00:00+00:00",
+    "end": "2025-12-15T10:00:00+00:00",
+    "title": "Horatiu Vermesan",
+    "location": "UTCN - Aula Centenar",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABi08+gh2WBQozrH5oY/UoKAAHxAMab",
+        "Id": "AAMkAGZmNzFmNWQ0LWVmNzgtNDg0ZC1iODJiLTdjZDRlMjAzYWE5NwBGAAAAAACrkk8LBZRPTpXCNRR91RONBwBi08+gh2WBQozrH5oY/UoKAAAAAAENAABi08+gh2WBQozrH5oY/UoKAAHwpGINAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmNzFmNWQ0LWVmNzgtNDg0ZC1iODJiLTdjZDRlMjAzYWE5NwAuAAAAAACrkk8LBZRPTpXCNRR91RONAQBi08+gh2WBQozrH5oY/UoKAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-15T08:00:00Z",
+      "End": "2025-12-15T10:00:00Z",
+      "Subject": "Horatiu Vermesan ",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - Aula Centenar",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-15T10:30:00+00:00",
+    "end": "2025-12-15T14:00:00+00:00",
+    "title": "Susținere Teză Doctorat",
+    "location": "UTCN - Aula Centenar",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABi08+gh2WBQozrH5oY/UoKAAH6iGol",
+        "Id": "AAMkAGZmNzFmNWQ0LWVmNzgtNDg0ZC1iODJiLTdjZDRlMjAzYWE5NwBGAAAAAACrkk8LBZRPTpXCNRR91RONBwBi08+gh2WBQozrH5oY/UoKAAAAAAENAABi08+gh2WBQozrH5oY/UoKAAH6KwviAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmNzFmNWQ0LWVmNzgtNDg0ZC1iODJiLTdjZDRlMjAzYWE5NwAuAAAAAACrkk8LBZRPTpXCNRR91RONAQBi08+gh2WBQozrH5oY/UoKAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-15T10:30:00Z",
+      "End": "2025-12-15T14:00:00Z",
+      "Subject": "Susținere Teză Doctorat - Drd. Suleiman",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - Aula Centenar",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-15T22:00:00+00:00",
+    "end": "2025-12-16T22:00:00+00:00",
+    "title": "Eveniment Comun",
+    "location": "UTCN - Aula Centenar",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABi08+gh2WBQozrH5oY/UoKAAH/f8TM",
+        "Id": "AAMkAGZmNzFmNWQ0LWVmNzgtNDg0ZC1iODJiLTdjZDRlMjAzYWE5NwBGAAAAAACrkk8LBZRPTpXCNRR91RONBwBi08+gh2WBQozrH5oY/UoKAAAAAAENAABi08+gh2WBQozrH5oY/UoKAAH/ISo8AAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmNzFmNWQ0LWVmNzgtNDg0ZC1iODJiLTdjZDRlMjAzYWE5NwAuAAAAAACrkk8LBZRPTpXCNRR91RONAQBi08+gh2WBQozrH5oY/UoKAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-15T22:00:00Z",
+      "End": "2025-12-16T22:00:00Z",
+      "Subject": "Eveniment comun - IIRMP/ARMM/IMM",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Free",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - Aula Centenar",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-17T08:00:00+00:00",
+    "end": "2025-12-17T13:00:00+00:00",
+    "title": "Susținere Teză Doctorat",
+    "location": "UTCN - Aula Centenar",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABi08+gh2WBQozrH5oY/UoKAAHw/zQw",
+        "Id": "AAMkAGZmNzFmNWQ0LWVmNzgtNDg0ZC1iODJiLTdjZDRlMjAzYWE5NwBGAAAAAACrkk8LBZRPTpXCNRR91RONBwBi08+gh2WBQozrH5oY/UoKAAAAAAENAABi08+gh2WBQozrH5oY/UoKAAHwpGIOAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGZmNzFmNWQ0LWVmNzgtNDg0ZC1iODJiLTdjZDRlMjAzYWE5NwAuAAAAAACrkk8LBZRPTpXCNRR91RONAQBi08+gh2WBQozrH5oY/UoKAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-17T08:00:00Z",
+      "End": "2025-12-17T13:00:00Z",
+      "Subject": "Susținere Teză doctorat- drd. Dresan Cristina",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - Aula Centenar",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  }
+]

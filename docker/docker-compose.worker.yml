@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  calendar-worker:
+    build:
+      context: ..
+      dockerfile: docker/Worker.Dockerfile
+    container_name: outlook_calendar_worker
+    restart: unless-stopped
+    volumes:
+      - ..:/app:rw
+    environment:
+      - INTERVAL_SECONDS=3600
+      - RUN_ONCE=0
+    # If you need to run with a persistent Playwright profile for authenticated calendars,
+    # set PLAYWRIGHT_USER_DATA_DIR to a bind mount path here.
+    # volumes:
+    #   - /path/on/host/playwright-profile:/data/playwright-profile

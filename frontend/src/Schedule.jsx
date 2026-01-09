@@ -12,7 +12,7 @@ export default function Schedule() {
   const [enabledCalendars, setEnabledCalendars] = useState({}) // Which calendars are checked
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
-  const [filters, setFilters] = useState({ subject: '', professor: '', room: '' })
+  const [filters, setFilters] = useState({ subject: '', professor: '', room: '', group: '' })
   const [searchQuery, setSearchQuery] = useState('') // Search input
   const [searchSuggestions, setSearchSuggestions] = useState([]) // Autocomplete suggestions
   const [showSuggestions, setShowSuggestions] = useState(false)
@@ -125,9 +125,10 @@ export default function Schedule() {
       const twoMonthsEnd = new Date(Date.now() + 60 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
       
       const params = new URLSearchParams({ from: fromDate, to: toDate })
-      if (filters.subject) params.set('subject', filters.subject)
-      if (filters.professor) params.set('professor', filters.professor)
-      if (filters.room) params.set('room', filters.room)
+  if (filters.subject) params.set('subject', filters.subject)
+  if (filters.professor) params.set('professor', filters.professor)
+  if (filters.room) params.set('room', filters.room)
+  if (filters.group) params.set('group', filters.group)
 
       // Fetch current view events
       const res = await fetch('/events.json?' + params.toString())
@@ -159,6 +160,7 @@ export default function Schedule() {
           if (filters.subject) nearestParams.set('subject', filters.subject)
           if (filters.professor) nearestParams.set('professor', filters.professor)
           if (filters.room) nearestParams.set('room', filters.room)
+          if (filters.group) nearestParams.set('group', filters.group)
           
           const nearestRes = await fetch('/events.json?' + nearestParams.toString())
           if (nearestRes.ok) {
@@ -327,18 +329,33 @@ export default function Schedule() {
     try {
       const txt = s.toString()
       const l = txt.toLowerCase()
-      let m = l.match(/\byear\s*(\d)\b/) || l.match(/\b(1|2|3|4)\s*year\b/)
-      if (m) return 'Year ' + (m[1] || m[0])
-      m = l.match(/\bgrup[ai]\s*([A-Za-z0-9]+)\b/) || l.match(/\bgroup\s*([A-Za-z0-9]+)\b/)
-      if (m) return 'Group ' + m[1].toUpperCase()
-      m = l.match(/\b([1-4])\s*([A-Za-z])\b/) || l.match(/\b([1-4][A-Za-z])\b/)
-      if (m) {
-        const year = m[1]
-        const grp = m[2] ? m[2].toUpperCase() : (m[1].slice ? m[1].slice(1).toUpperCase() : '')
-        return 'Year ' + year + ' • Group ' + grp
+      let year = null
+      let grp = null
+
+      // year patterns: 'an 3', 'anul 3', 'year 3', or trailing digit
+      let m = l.match(/\ban(?:ul)?\s*(?:[:\-]?\s*)?(\d)\b/) || l.match(/\byear\s*(\d)\b/)
+      if (m) year = m[1]
+      if (!year) {
+        m = l.match(/(\b[1-4]\b)(?!.*\d)/)
+        if (m) year = m[1]
       }
-      m = l.match(/(\b[1-4]\b)(?!.*\d)/)
-      if (m) return 'Year ' + m[1]
+
+      // group/series patterns: 'seria B', 'serie B', 'grupa A', 'group A'
+      m = l.match(/\bseri[ae]\s*([A-Za-z0-9]+)\b/) || l.match(/\bgrup[ai]\s*([A-Za-z0-9]+)\b/) || l.match(/\bgroup\s*([A-Za-z0-9]+)\b/)
+      if (m) grp = m[1].toUpperCase()
+
+      // Patterns like '3A' or '3 A'
+      if (!year || !grp) {
+        m = l.match(/\b([1-4])\s*([A-Za-z])\b/) || l.match(/\b([1-4])([A-Za-z])\b/)
+        if (m) {
+          if (!year) year = m[1]
+          if (!grp) grp = (m[2] || '').toUpperCase()
+        }
+      }
+
+      if (year && grp) return 'Year ' + year + ' • Group ' + grp
+      if (year) return 'Year ' + year
+      if (grp) return 'Group ' + grp
     } catch (e) {}
     return ''
   }
@@ -358,14 +375,14 @@ export default function Schedule() {
   }
 
   const clearFilters = () => {
-    setFilters({ subject: '', professor: '', room: '' })
+    setFilters({ subject: '', professor: '', room: '', group: '' })
     setSearchQuery('')
     setSearchSuggestions([])
     toggleAllCalendars(true)
   }
 
   const someCalendarsDisabled = Object.values(enabledCalendars).some(v => v === false)
-  const hasActiveFilters = filters.subject || filters.professor || filters.room || searchQuery || someCalendarsDisabled
+  const hasActiveFilters = filters.subject || filters.professor || filters.room || filters.group || searchQuery || someCalendarsDisabled
 
   return (
     <div className="schedule-container">
@@ -444,6 +461,11 @@ export default function Schedule() {
           <label>Room:</label>
           <input type="text" placeholder="e.g. A101" value={filters.room}
             onChange={(e) => setFilters(f => ({ ...f, room: e.target.value }))} />
+        </div>
+        <div className="filter-group">
+          <label>Group:</label>
+          <input type="text" placeholder="e.g. A or 3A" value={filters.group}
+            onChange={(e) => setFilters(f => ({ ...f, group: e.target.value }))} />
         </div>
         {hasActiveFilters && (
           <button onClick={clearFilters} className="btn-clear">Clear filters</button>

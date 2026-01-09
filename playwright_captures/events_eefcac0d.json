@@ -1,0 +1,125 @@
+[
+  {
+    "start": "2025-12-04T12:30:00+02:00",
+    "end": "2025-12-04T14:00:00+02:00",
+    "title": "Intalnire Test Geoheco",
+    "location": "UTCN - IE Bar - Sala BT 401",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACr9vbwDeo8S5XAwIWZDmTuAADI6a0a",
+        "Id": "AAMkAGE5MjkwM2MxLWI0ZTEtNDgzMy1hYzcxLTkyNDg3YTJlZWY1MgBGAAAAAACTcbGr65aVQq3wxmz/g+V2BwCr9vbwDeo8S5XAwIWZDmTuAAAAAAENAACr9vbwDeo8S5XAwIWZDmTuAADI5A6sAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGE5MjkwM2MxLWI0ZTEtNDgzMy1hYzcxLTkyNDg3YTJlZWY1MgAuAAAAAACTcbGr65aVQq3wxmz/g+V2AQCr9vbwDeo8S5XAwIWZDmTuAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-04T12:30:00+02:00",
+      "End": "2025-12-04T14:00:00+02:00",
+      "Subject": "Intalnire Test GeoHECO",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - IE Bar - Sala BT 401",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-10T00:00:00+02:00",
+    "end": "2025-12-11T00:00:00+02:00",
+    "title": "Danube Geoheco",
+    "location": "UTCN - IE Bar - Sala BT 401",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACr9vbwDeo8S5XAwIWZDmTuAADMtdlR",
+        "Id": "AAMkAGE5MjkwM2MxLWI0ZTEtNDgzMy1hYzcxLTkyNDg3YTJlZWY1MgBGAAAAAACTcbGr65aVQq3wxmz/g+V2BwCr9vbwDeo8S5XAwIWZDmTuAAAAAAENAACr9vbwDeo8S5XAwIWZDmTuAADMsHbzAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGE5MjkwM2MxLWI0ZTEtNDgzMy1hYzcxLTkyNDg3YTJlZWY1MgAuAAAAAACTcbGr65aVQq3wxmz/g+V2AQCr9vbwDeo8S5XAwIWZDmTuAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-10T00:00:00+02:00",
+      "End": "2025-12-11T00:00:00+02:00",
+      "Subject": "Danube GeoHeCo - 4th PP and SCOM meeting ",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - IE Bar - Sala BT 401",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-11T00:00:00+02:00",
+    "end": "2025-12-12T00:00:00+02:00",
+    "title": "Danube Geoheco",
+    "location": "UTCN - IE Bar - Sala BT 401",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACr9vbwDeo8S5XAwIWZDmTuAADMtdla",
+        "Id": "AAMkAGE5MjkwM2MxLWI0ZTEtNDgzMy1hYzcxLTkyNDg3YTJlZWY1MgBGAAAAAACTcbGr65aVQq3wxmz/g+V2BwCr9vbwDeo8S5XAwIWZDmTuAAAAAAENAACr9vbwDeo8S5XAwIWZDmTuAADMsHb0AAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGE5MjkwM2MxLWI0ZTEtNDgzMy1hYzcxLTkyNDg3YTJlZWY1MgAuAAAAAACTcbGr65aVQq3wxmz/g+V2AQCr9vbwDeo8S5XAwIWZDmTuAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-11T00:00:00+02:00",
+      "End": "2025-12-12T00:00:00+02:00",
+      "Subject": "Danube GeoHeCo - 4th PP and SCOM meeting ",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - IE Bar - Sala BT 401",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  }
+]

@@ -485,7 +485,8 @@ def update_calendar_metadata(url: str, name: str = None, color: str = None):
 def list_calendar_urls():
     with get_db_connection() as conn:
         cur = conn.cursor()
-        cur.execute('SELECT id, url, name, color, enabled, created_at, last_fetched FROM calendars ORDER BY id')
+        # include building and room so callers can access metadata
+        cur.execute('SELECT id, url, name, color, enabled, created_at, last_fetched, building, room FROM calendars ORDER BY id')
         return [dict(row) for row in cur.fetchall()]
 
 def add_extracurricular_db(ev: dict):
@@ -678,7 +679,16 @@ def _run_extractor_for_url(url: str, calendar_name: str = None) -> int:
                             break
                 except Exception:
                     pass
-                cmap[h] = {'url': url, 'name': name or '', 'color': color}
+                cmap[h] = {'url': url, 'name': name or '', 'color': color, 'building': name and None or None}
+                # attempt to include building/room from DB if available
+                try:
+                    for r in rows:
+                        if r.get('url') == url:
+                            cmap[h]['building'] = r.get('building')
+                            cmap[h]['room'] = r.get('room')
+                            break
+                except Exception:
+                    pass
                 with open(map_path, 'w', encoding='utf-8') as f:
                     json.dump(cmap, f, indent=2, ensure_ascii=False)
             except Exception:
@@ -793,7 +803,10 @@ def calendars_json():
             result[url_hash] = {
                 'name': cal.get('name') or f"Calendar {cal.get('id')}",
                 'color': cal.get('color'),
-                'url': url
+                'url': url,
+                'building': cal.get('building') or None,
+                'room': cal.get('room') or None,
+                'enabled': cal.get('enabled')
             }
         return jsonify(result)
     except Exception:

@@ -1,0 +1,4102 @@
+[
+  {
+    "start": "2026-01-12T08:00:00+02:00",
+    "end": "2026-01-12T10:00:00+02:00",
+    "title": "Analiza Matematica I (calcul Diferential) Cti Ro I / Gr 3",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAO1",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3lFth4NAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAezwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-12T08:00:00+02:00",
+      "End": "2026-01-12T10:00:00+02:00",
+      "Subject": "Analiza matematica I (Calcul diferential) CTI ro I / GR 3 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-12T10:00:00+02:00",
+    "end": "2026-01-12T12:00:00+02:00",
+    "title": "Analiza Matematica I (calcul Diferential) Cti Ro I / Gr 2",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAO6",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3lFth4NAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe0AAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-12T10:00:00+02:00",
+      "End": "2026-01-12T12:00:00+02:00",
+      "Subject": "Analiza matematica I (Calcul diferential) CTI ro I / GR 2 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-12T12:00:00+02:00",
+    "end": "2026-01-12T16:00:00+02:00",
+    "title": "Limbi Straine Cti Ro I / Gr 2",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAO/",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3lFth4NAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe0QAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-12T12:00:00+02:00",
+      "End": "2026-01-12T16:00:00+02:00",
+      "Subject": "Limbi Straine CTI ro I / GR 2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-12T18:00:00+02:00",
+    "end": "2026-01-12T20:00:00+02:00",
+    "title": "Distributed Systems Aiv I (mas) Salomie",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAPK",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3lFth4NAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe0wAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-12T18:00:00+02:00",
+      "End": "2026-01-12T20:00:00+02:00",
+      "Subject": "Distributed Systems AIV I (mas) Salomie [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-12T20:00:00+02:00",
+    "end": "2026-01-12T22:00:00+02:00",
+    "title": "Distributed Systems Aiv I (mas) Gr1 / Gr2",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAPV",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3lFth4NAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe1QAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-12T20:00:00+02:00",
+      "End": "2026-01-12T22:00:00+02:00",
+      "Subject": "Distributed Systems AIV I (mas)  GR1 / GR2  [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-13T08:00:00+02:00",
+    "end": "2026-01-13T10:00:00+02:00",
+    "title": "Database Systems (db)",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAARN",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3lI2se0AAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe1gAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-13T08:00:00+02:00",
+      "End": "2026-01-13T10:00:00+02:00",
+      "Subject": "Database Systems (DB)  - DS I ( mas) [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-13T10:00:00+02:00",
+    "end": "2026-01-13T12:00:00+02:00",
+    "title": "Database Systems (db)",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAZH",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3lI2se0AAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe2AAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-13T10:00:00+02:00",
+      "End": "2026-01-13T12:00:00+02:00",
+      "Subject": "Database Systems (DB)  - DS I ( mas) Gr 1 / Gr 2 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-13T16:00:00+02:00",
+    "end": "2026-01-13T18:00:00+02:00",
+    "title": "Intelligent Agent Systems Aiv I (mas) Gr1 / Gr2",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAZS",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3lI2se0AAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe2gAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-13T16:00:00+02:00",
+      "End": "2026-01-13T18:00:00+02:00",
+      "Subject": "Intelligent Agent Systems AIV I (mas)  GR1 / GR2 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-13T18:00:00+02:00",
+    "end": "2026-01-13T20:00:00+02:00",
+    "title": "Intelligent Agent Systems Aiv I (mas) R. Slavescu",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAZd",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3lI2se0AAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe3AAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-13T18:00:00+02:00",
+      "End": "2026-01-13T20:00:00+02:00",
+      "Subject": "Intelligent Agent Systems AIV I (mas) R. Slavescu [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-14T08:00:00+02:00",
+    "end": "2026-01-14T10:00:00+02:00",
+    "title": "Algorithms (alg) Ds I (mas) Potolea Rodica",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAbO",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3lL/3FbAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe3gAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-14T08:00:00+02:00",
+      "End": "2026-01-14T10:00:00+02:00",
+      "Subject": "Algorithms (Alg) DS I (mas) Potolea Rodica [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-14T10:00:00+02:00",
+    "end": "2026-01-14T12:00:00+02:00",
+    "title": "Algorithms (alg)(l+p) Ds I (mas) Gr 1",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAbZ",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3lL/3FbAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe4AAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-14T10:00:00+02:00",
+      "End": "2026-01-14T12:00:00+02:00",
+      "Subject": "Algorithms (Alg)(L+P) DS I (mas) GR 1 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-14T12:00:00+02:00",
+    "end": "2026-01-14T14:00:00+02:00",
+    "title": "Algorithms (alg)(l+p) Ds I (mas) Gr 2",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAbk",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3lL/3FbAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe4gAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-14T12:00:00+02:00",
+      "End": "2026-01-14T14:00:00+02:00",
+      "Subject": "Algorithms (Alg)(L+P) DS I (mas) GR 2 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-14T16:00:00+02:00",
+    "end": "2026-01-14T18:00:00+02:00",
+    "title": "Computer Networks (cn)",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAbv",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3lL/3FbAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe5AAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-14T16:00:00+02:00",
+      "End": "2026-01-14T18:00:00+02:00",
+      "Subject": "Computer Networks (CN) - AIV (mas) GR1/GR2   [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-14T18:00:00+02:00",
+    "end": "2026-01-14T20:00:00+02:00",
+    "title": "Computer Networks (cn)",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAb6",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3lL/3FbAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe5gAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-14T18:00:00+02:00",
+      "End": "2026-01-14T20:00:00+02:00",
+      "Subject": "Computer Networks (CN) - AIV (mas) V. Dadarlat [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-15T08:00:00+02:00",
+    "end": "2026-01-15T10:00:00+02:00",
+    "title": "Machine Learning 1 (ml1) Ds I (mas) Brehar Raluca",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAcF",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3lPJBsCAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe6AAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-15T08:00:00+02:00",
+      "End": "2026-01-15T10:00:00+02:00",
+      "Subject": "Machine Learning 1 (ML1) DS I (mas) Brehar Raluca [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-15T10:00:00+02:00",
+    "end": "2026-01-15T12:00:00+02:00",
+    "title": "Machine Learning 1 (ml1) Ds I (mas) Gr1 / Gr2",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAc7",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3lPJBsCAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe6gAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-15T10:00:00+02:00",
+      "End": "2026-01-15T12:00:00+02:00",
+      "Subject": "Machine Learning 1 (ML1) DS I (mas) GR1 / GR2 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-15T14:00:00+02:00",
+    "end": "2026-01-15T16:00:00+02:00",
+    "title": "Limbi Straine Cti Ro I / Gr 7",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAdG",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3lPJBsCAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe7AAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-15T14:00:00+02:00",
+      "End": "2026-01-15T16:00:00+02:00",
+      "Subject": "Limbi Straine CTI ro I / GR 7 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-15T16:00:00+02:00",
+    "end": "2026-01-15T18:00:00+02:00",
+    "title": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Gr2 / Gr1",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAdR",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3lPJBsCAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe7gAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-15T16:00:00+02:00",
+      "End": "2026-01-15T18:00:00+02:00",
+      "Subject": "Deep Learning Based Computer Vision (DLCV)  AIV I (mas) GR2 / GR1 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-15T18:00:00+02:00",
+    "end": "2026-01-15T20:00:00+02:00",
+    "title": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Nedevschi",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAdc",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3lPJBsCAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe8AAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-15T18:00:00+02:00",
+      "End": "2026-01-15T20:00:00+02:00",
+      "Subject": "Deep Learning Based Computer Vision (DLCV)  AIV I (mas) Nedevschi [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-16T10:00:00+02:00",
+    "end": "2026-01-16T12:00:00+02:00",
+    "title": "Limbi Straine Cti Ro I Gr 1",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAdn",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3lSSMSpAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe8gAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-16T10:00:00+02:00",
+      "End": "2026-01-16T12:00:00+02:00",
+      "Subject": "Limbi straine CTI ro I GR 1 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-19T08:00:00+02:00",
+    "end": "2026-01-19T10:00:00+02:00",
+    "title": "Analiza Matematica I (calcul Diferential) Cti Ro I / Gr 3",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAO1",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3lbtsGeAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAezwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-19T08:00:00+02:00",
+      "End": "2026-01-19T10:00:00+02:00",
+      "Subject": "Analiza matematica I (Calcul diferential) CTI ro I / GR 3 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-19T10:00:00+02:00",
+    "end": "2026-01-19T12:00:00+02:00",
+    "title": "Analiza Matematica I (calcul Diferential) Cti Ro I / Gr 2",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAO6",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3lbtsGeAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe0AAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-19T10:00:00+02:00",
+      "End": "2026-01-19T12:00:00+02:00",
+      "Subject": "Analiza matematica I (Calcul diferential) CTI ro I / GR 2 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-19T12:00:00+02:00",
+    "end": "2026-01-19T16:00:00+02:00",
+    "title": "Limbi Straine Cti Ro I / Gr 2",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAO/",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3lbtsGeAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe0QAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-19T12:00:00+02:00",
+      "End": "2026-01-19T16:00:00+02:00",
+      "Subject": "Limbi Straine CTI ro I / GR 2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-19T18:00:00+02:00",
+    "end": "2026-01-19T20:00:00+02:00",
+    "title": "Distributed Systems Aiv I (mas) Salomie",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAPK",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3lbtsGeAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe0wAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-19T18:00:00+02:00",
+      "End": "2026-01-19T20:00:00+02:00",
+      "Subject": "Distributed Systems AIV I (mas) Salomie [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-19T20:00:00+02:00",
+    "end": "2026-01-19T22:00:00+02:00",
+    "title": "Distributed Systems Aiv I (mas) Gr1 / Gr2",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAPV",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3lbtsGeAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe1QAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-19T20:00:00+02:00",
+      "End": "2026-01-19T22:00:00+02:00",
+      "Subject": "Distributed Systems AIV I (mas)  GR1 / GR2  [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-20T08:00:00+02:00",
+    "end": "2026-01-20T10:00:00+02:00",
+    "title": "Database Systems (db)",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAARN",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3le22tFAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe1gAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-20T08:00:00+02:00",
+      "End": "2026-01-20T10:00:00+02:00",
+      "Subject": "Database Systems (DB)  - DS I ( mas) [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-20T10:00:00+02:00",
+    "end": "2026-01-20T12:00:00+02:00",
+    "title": "Database Systems (db)",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAZH",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3le22tFAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe2AAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-20T10:00:00+02:00",
+      "End": "2026-01-20T12:00:00+02:00",
+      "Subject": "Database Systems (DB)  - DS I ( mas) Gr 1 / Gr 2 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-20T16:00:00+02:00",
+    "end": "2026-01-20T18:00:00+02:00",
+    "title": "Intelligent Agent Systems Aiv I (mas) Gr1 / Gr2",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAZS",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3le22tFAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe2gAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-20T16:00:00+02:00",
+      "End": "2026-01-20T18:00:00+02:00",
+      "Subject": "Intelligent Agent Systems AIV I (mas)  GR1 / GR2 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-20T18:00:00+02:00",
+    "end": "2026-01-20T20:00:00+02:00",
+    "title": "Intelligent Agent Systems Aiv I (mas) R. Slavescu",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAZd",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3le22tFAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe3AAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-20T18:00:00+02:00",
+      "End": "2026-01-20T20:00:00+02:00",
+      "Subject": "Intelligent Agent Systems AIV I (mas) R. Slavescu [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-21T08:00:00+02:00",
+    "end": "2026-01-21T10:00:00+02:00",
+    "title": "Algorithms (alg) Ds I (mas) Potolea Rodica",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAbO",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3liABTsAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe3gAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-21T08:00:00+02:00",
+      "End": "2026-01-21T10:00:00+02:00",
+      "Subject": "Algorithms (Alg) DS I (mas) Potolea Rodica [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-21T10:00:00+02:00",
+    "end": "2026-01-21T12:00:00+02:00",
+    "title": "Algorithms (alg)(l+p) Ds I (mas) Gr 1",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAbZ",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3liABTsAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe4AAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-21T10:00:00+02:00",
+      "End": "2026-01-21T12:00:00+02:00",
+      "Subject": "Algorithms (Alg)(L+P) DS I (mas) GR 1 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-21T12:00:00+02:00",
+    "end": "2026-01-21T14:00:00+02:00",
+    "title": "Algorithms (alg)(l+p) Ds I (mas) Gr 2",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAbk",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3liABTsAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe4gAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-21T12:00:00+02:00",
+      "End": "2026-01-21T14:00:00+02:00",
+      "Subject": "Algorithms (Alg)(L+P) DS I (mas) GR 2 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-21T16:00:00+02:00",
+    "end": "2026-01-21T18:00:00+02:00",
+    "title": "Computer Networks (cn)",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAbv",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3liABTsAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe5AAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-21T16:00:00+02:00",
+      "End": "2026-01-21T18:00:00+02:00",
+      "Subject": "Computer Networks (CN) - AIV (mas) GR1/GR2   [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-21T18:00:00+02:00",
+    "end": "2026-01-21T20:00:00+02:00",
+    "title": "Computer Networks (cn)",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAb6",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3liABTsAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe5gAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-21T18:00:00+02:00",
+      "End": "2026-01-21T20:00:00+02:00",
+      "Subject": "Computer Networks (CN) - AIV (mas) V. Dadarlat [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-22T08:00:00+02:00",
+    "end": "2026-01-22T10:00:00+02:00",
+    "title": "Machine Learning 1 (ml1) Ds I (mas) Brehar Raluca",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAcF",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3llJL6TAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe6AAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-22T08:00:00+02:00",
+      "End": "2026-01-22T10:00:00+02:00",
+      "Subject": "Machine Learning 1 (ML1) DS I (mas) Brehar Raluca [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-22T10:00:00+02:00",
+    "end": "2026-01-22T12:00:00+02:00",
+    "title": "Machine Learning 1 (ml1) Ds I (mas) Gr1 / Gr2",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAc7",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3llJL6TAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe6gAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-22T10:00:00+02:00",
+      "End": "2026-01-22T12:00:00+02:00",
+      "Subject": "Machine Learning 1 (ML1) DS I (mas) GR1 / GR2 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-22T14:00:00+02:00",
+    "end": "2026-01-22T16:00:00+02:00",
+    "title": "Limbi Straine Cti Ro I / Gr 7",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAdG",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3llJL6TAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe7AAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-22T14:00:00+02:00",
+      "End": "2026-01-22T16:00:00+02:00",
+      "Subject": "Limbi Straine CTI ro I / GR 7 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-22T16:00:00+02:00",
+    "end": "2026-01-22T18:00:00+02:00",
+    "title": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Gr2 / Gr1",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAdR",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3llJL6TAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe7gAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-22T16:00:00+02:00",
+      "End": "2026-01-22T18:00:00+02:00",
+      "Subject": "Deep Learning Based Computer Vision (DLCV)  AIV I (mas) GR2 / GR1 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-22T18:00:00+02:00",
+    "end": "2026-01-22T20:00:00+02:00",
+    "title": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Nedevschi",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAdc",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3llJL6TAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe8AAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-22T18:00:00+02:00",
+      "End": "2026-01-22T20:00:00+02:00",
+      "Subject": "Deep Learning Based Computer Vision (DLCV)  AIV I (mas) Nedevschi [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-23T10:00:00+02:00",
+    "end": "2026-01-23T12:00:00+02:00",
+    "title": "Limbi Straine Cti Ro I Gr 1",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAdn",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3loSWg6AAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe8gAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-23T10:00:00+02:00",
+      "End": "2026-01-23T12:00:00+02:00",
+      "Subject": "Limbi straine CTI ro I GR 1 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-01T08:00:00+02:00",
+    "end": "2025-12-01T10:00:00+02:00",
+    "title": "Analiza Matematica I (calcul Diferential) Cti Ro I / Gr 3",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAANc",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jBskinAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAexAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-01T08:00:00+02:00",
+      "End": "2025-12-01T10:00:00+02:00",
+      "Subject": "Analiza matematica I (Calcul diferential) CTI ro I / GR 3 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-01T10:00:00+02:00",
+    "end": "2025-12-01T12:00:00+02:00",
+    "title": "Analiza Matematica I (calcul Diferential) Cti Ro I / Gr 2",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAANj",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jBskinAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAexgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-01T10:00:00+02:00",
+      "End": "2025-12-01T12:00:00+02:00",
+      "Subject": "Analiza matematica I (Calcul diferential) CTI ro I / GR 2 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-01T12:00:00+02:00",
+    "end": "2025-12-01T16:00:00+02:00",
+    "title": "Limbi Straine Cti Ro I / Gr 2",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAOS",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jBskinAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAexwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-01T12:00:00+02:00",
+      "End": "2025-12-01T16:00:00+02:00",
+      "Subject": "Limbi Straine CTI ro I / GR 2 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-01T18:00:00+02:00",
+    "end": "2025-12-01T20:00:00+02:00",
+    "title": "Distributed Systems Aiv I (mas) Salomie",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAPE",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jBskinAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe0gAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-01T18:00:00+02:00",
+      "End": "2025-12-01T20:00:00+02:00",
+      "Subject": "Distributed Systems AIV I (mas) Salomie [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-01T20:00:00+02:00",
+    "end": "2025-12-01T22:00:00+02:00",
+    "title": "Distributed Systems Aiv I (mas) Gr1 / Gr2",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAPP",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jBskinAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe1AAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-01T20:00:00+02:00",
+      "End": "2025-12-01T22:00:00+02:00",
+      "Subject": "Distributed Systems AIV I (mas)  GR1 / GR2  [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-02T08:00:00+02:00",
+    "end": "2025-12-02T10:00:00+02:00",
+    "title": "Database Systems (db)",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAPa",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jE1vJOAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAeyAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-02T08:00:00+02:00",
+      "End": "2025-12-02T10:00:00+02:00",
+      "Subject": "Database Systems (DB)  - DS I ( mas)  [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-02T10:00:00+02:00",
+    "end": "2025-12-02T12:00:00+02:00",
+    "title": "Database Systems (db)",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAZB",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jE1vJOAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe1wAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-02T10:00:00+02:00",
+      "End": "2025-12-02T12:00:00+02:00",
+      "Subject": "Database Systems (DB)  - DS I ( mas) Gr 1 / Gr 2 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-02T16:00:00+02:00",
+    "end": "2025-12-02T18:00:00+02:00",
+    "title": "Intelligent Agent Systems Aiv I (mas) Gr1 / Gr2",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAZM",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jE1vJOAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe2QAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-02T16:00:00+02:00",
+      "End": "2025-12-02T18:00:00+02:00",
+      "Subject": "Intelligent Agent Systems AIV I (mas)  GR1 / GR2 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-02T18:00:00+02:00",
+    "end": "2025-12-02T20:00:00+02:00",
+    "title": "Intelligent Agent Systems Aiv I (mas) R. Slavescu",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAZX",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jE1vJOAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe2wAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-02T18:00:00+02:00",
+      "End": "2025-12-02T20:00:00+02:00",
+      "Subject": "Intelligent Agent Systems AIV I (mas) R. Slavescu [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-03T08:00:00+02:00",
+    "end": "2025-12-03T10:00:00+02:00",
+    "title": "Algorithms (alg) Ds I (mas) Potolea Rodica",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAbI",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jH+5v1AAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe3QAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-03T08:00:00+02:00",
+      "End": "2025-12-03T10:00:00+02:00",
+      "Subject": "Algorithms (Alg) DS I (mas) Potolea Rodica [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-03T10:00:00+02:00",
+    "end": "2025-12-03T12:00:00+02:00",
+    "title": "Algorithms (alg)(l+p) Ds I (mas) Gr 1",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAbT",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jH+5v1AAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe3wAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-03T10:00:00+02:00",
+      "End": "2025-12-03T12:00:00+02:00",
+      "Subject": "Algorithms (Alg)(L+P) DS I (mas)  GR 1 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-03T12:00:00+02:00",
+    "end": "2025-12-03T14:00:00+02:00",
+    "title": "Algorithms (alg)(l+p) Ds I (mas) Gr 2",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAACUp",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jH+5v1AAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe4QAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-03T12:00:00+02:00",
+      "End": "2025-12-03T14:00:00+02:00",
+      "Subject": "Algorithms (Alg)(L+P) DS I (mas)  GR 2 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-03T16:00:00+02:00",
+    "end": "2025-12-03T18:00:00+02:00",
+    "title": "Computer Networks (cn)",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAbp",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jH+5v1AAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe4wAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-03T16:00:00+02:00",
+      "End": "2025-12-03T18:00:00+02:00",
+      "Subject": "Computer Networks (CN) - AIV (mas) GR1/GR2   [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-03T18:00:00+02:00",
+    "end": "2025-12-03T20:00:00+02:00",
+    "title": "Computer Networks (cn)",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAb0",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jH+5v1AAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe5QAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-03T18:00:00+02:00",
+      "End": "2025-12-03T20:00:00+02:00",
+      "Subject": "Computer Networks (CN) - AIV (mas) V. Dadarlat [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-04T08:00:00+02:00",
+    "end": "2025-12-04T10:00:00+02:00",
+    "title": "Machine Learning 1 (ml1) Ds I (mas) Brehar Raluca",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAb/",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jLIEWcAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe5wAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-04T08:00:00+02:00",
+      "End": "2025-12-04T10:00:00+02:00",
+      "Subject": "Machine Learning 1 (ML1)   DS I (mas) Brehar Raluca [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-04T10:00:00+02:00",
+    "end": "2025-12-04T12:00:00+02:00",
+    "title": "Machine Learning 1 (ml1) Ds I (mas) Gr1 / Gr2",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAcr",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jLIEWcAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe6QAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-04T10:00:00+02:00",
+      "End": "2025-12-04T12:00:00+02:00",
+      "Subject": "Machine Learning 1 (ML1) DS I (mas) GR1 / GR2 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-04T14:00:00+02:00",
+    "end": "2025-12-04T16:00:00+02:00",
+    "title": "Limbi Straine Cti Ro I / Gr 7",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAdA",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jLIEWcAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe6wAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-04T14:00:00+02:00",
+      "End": "2025-12-04T16:00:00+02:00",
+      "Subject": "Limbi Straine CTI ro I / GR 7 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-04T16:00:00+02:00",
+    "end": "2025-12-04T18:00:00+02:00",
+    "title": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Gr2 / Gr1",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAdL",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jLIEWcAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe7QAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-04T16:00:00+02:00",
+      "End": "2025-12-04T18:00:00+02:00",
+      "Subject": "Deep Learning Based Computer Vision (DLCV)  AIV I (mas) GR2 / GR1 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-04T18:00:00+02:00",
+    "end": "2025-12-04T20:00:00+02:00",
+    "title": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Nedevschi",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAdW",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jLIEWcAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe7wAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-04T18:00:00+02:00",
+      "End": "2025-12-04T20:00:00+02:00",
+      "Subject": "Deep Learning Based Computer Vision (DLCV)  AIV I (mas) Nedevschi [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-05T10:00:00+02:00",
+    "end": "2025-12-05T12:00:00+02:00",
+    "title": "Limbi Straine Cti Ro I Gr 1",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAdh",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jORO9DAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe8QAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-05T10:00:00+02:00",
+      "End": "2025-12-05T12:00:00+02:00",
+      "Subject": "Limbi straine CTI ro I GR 1 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-08T08:00:00+02:00",
+    "end": "2025-12-08T10:00:00+02:00",
+    "title": "Analiza Matematica I (calcul Diferential) Cti Ro I / Gr 3",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAANc",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jXsuw4AAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAexAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-08T08:00:00+02:00",
+      "End": "2025-12-08T10:00:00+02:00",
+      "Subject": "Analiza matematica I (Calcul diferential) CTI ro I / GR 3 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-08T10:00:00+02:00",
+    "end": "2025-12-08T12:00:00+02:00",
+    "title": "Analiza Matematica I (calcul Diferential) Cti Ro I / Gr 2",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAANj",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jXsuw4AAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAexgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-08T10:00:00+02:00",
+      "End": "2025-12-08T12:00:00+02:00",
+      "Subject": "Analiza matematica I (Calcul diferential) CTI ro I / GR 2 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-08T12:00:00+02:00",
+    "end": "2025-12-08T16:00:00+02:00",
+    "title": "Limbi Straine Cti Ro I / Gr 2",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAOS",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jXsuw4AAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAexwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-08T12:00:00+02:00",
+      "End": "2025-12-08T16:00:00+02:00",
+      "Subject": "Limbi Straine CTI ro I / GR 2 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-08T18:00:00+02:00",
+    "end": "2025-12-08T20:00:00+02:00",
+    "title": "Distributed Systems Aiv I (mas) Salomie",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAPE",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jXsuw4AAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe0gAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-08T18:00:00+02:00",
+      "End": "2025-12-08T20:00:00+02:00",
+      "Subject": "Distributed Systems AIV I (mas) Salomie [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-08T20:00:00+02:00",
+    "end": "2025-12-08T22:00:00+02:00",
+    "title": "Distributed Systems Aiv I (mas) Gr1 / Gr2",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAPP",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jXsuw4AAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe1AAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-08T20:00:00+02:00",
+      "End": "2025-12-08T22:00:00+02:00",
+      "Subject": "Distributed Systems AIV I (mas)  GR1 / GR2  [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-09T08:00:00+02:00",
+    "end": "2025-12-09T10:00:00+02:00",
+    "title": "Database Systems (db)",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAPa",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3ja15XfAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAeyAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-09T08:00:00+02:00",
+      "End": "2025-12-09T10:00:00+02:00",
+      "Subject": "Database Systems (DB)  - DS I ( mas)  [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-09T10:00:00+02:00",
+    "end": "2025-12-09T12:00:00+02:00",
+    "title": "Database Systems (db)",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAZB",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3ja15XfAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe1wAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-09T10:00:00+02:00",
+      "End": "2025-12-09T12:00:00+02:00",
+      "Subject": "Database Systems (DB)  - DS I ( mas) Gr 1 / Gr 2 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-09T16:00:00+02:00",
+    "end": "2025-12-09T18:00:00+02:00",
+    "title": "Intelligent Agent Systems Aiv I (mas) Gr1 / Gr2",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAZM",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3ja15XfAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe2QAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-09T16:00:00+02:00",
+      "End": "2025-12-09T18:00:00+02:00",
+      "Subject": "Intelligent Agent Systems AIV I (mas)  GR1 / GR2 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-09T18:00:00+02:00",
+    "end": "2025-12-09T20:00:00+02:00",
+    "title": "Intelligent Agent Systems Aiv I (mas) R. Slavescu",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAZX",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3ja15XfAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe2wAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-09T18:00:00+02:00",
+      "End": "2025-12-09T20:00:00+02:00",
+      "Subject": "Intelligent Agent Systems AIV I (mas) R. Slavescu [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-10T08:00:00+02:00",
+    "end": "2025-12-10T10:00:00+02:00",
+    "title": "Algorithms (alg) Ds I (mas) Potolea Rodica",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAbI",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jd/D+GAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe3QAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-10T08:00:00+02:00",
+      "End": "2025-12-10T10:00:00+02:00",
+      "Subject": "Algorithms (Alg) DS I (mas) Potolea Rodica [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-10T10:00:00+02:00",
+    "end": "2025-12-10T12:00:00+02:00",
+    "title": "Algorithms (alg)(l+p) Ds I (mas) Gr 1",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAbT",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jd/D+GAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe3wAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-10T10:00:00+02:00",
+      "End": "2025-12-10T12:00:00+02:00",
+      "Subject": "Algorithms (Alg)(L+P) DS I (mas)  GR 1 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-10T12:00:00+02:00",
+    "end": "2025-12-10T14:00:00+02:00",
+    "title": "Algorithms (alg)(l+p) Ds I (mas) Gr 2",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAACUp",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jd/D+GAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe4QAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-10T12:00:00+02:00",
+      "End": "2025-12-10T14:00:00+02:00",
+      "Subject": "Algorithms (Alg)(L+P) DS I (mas)  GR 2 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-10T16:00:00+02:00",
+    "end": "2025-12-10T18:00:00+02:00",
+    "title": "Computer Networks (cn)",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAbp",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jd/D+GAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe4wAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-10T16:00:00+02:00",
+      "End": "2025-12-10T18:00:00+02:00",
+      "Subject": "Computer Networks (CN) - AIV (mas) GR1/GR2   [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-10T18:00:00+02:00",
+    "end": "2025-12-10T20:00:00+02:00",
+    "title": "Computer Networks (cn)",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAb0",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jd/D+GAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe5QAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-10T18:00:00+02:00",
+      "End": "2025-12-10T20:00:00+02:00",
+      "Subject": "Computer Networks (CN) - AIV (mas) V. Dadarlat [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-11T08:00:00+02:00",
+    "end": "2025-12-11T10:00:00+02:00",
+    "title": "Machine Learning 1 (ml1) Ds I (mas) Brehar Raluca",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAb/",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jhIOktAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe5wAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-11T08:00:00+02:00",
+      "End": "2025-12-11T10:00:00+02:00",
+      "Subject": "Machine Learning 1 (ML1)   DS I (mas) Brehar Raluca [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-11T10:00:00+02:00",
+    "end": "2025-12-11T12:00:00+02:00",
+    "title": "Machine Learning 1 (ml1) Ds I (mas) Gr1 / Gr2",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAcr",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jhIOktAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe6QAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-11T10:00:00+02:00",
+      "End": "2025-12-11T12:00:00+02:00",
+      "Subject": "Machine Learning 1 (ML1) DS I (mas) GR1 / GR2 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-11T14:00:00+02:00",
+    "end": "2025-12-11T16:00:00+02:00",
+    "title": "Limbi Straine Cti Ro I / Gr 7",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAdA",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jhIOktAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe6wAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-11T14:00:00+02:00",
+      "End": "2025-12-11T16:00:00+02:00",
+      "Subject": "Limbi Straine CTI ro I / GR 7 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-11T16:00:00+02:00",
+    "end": "2025-12-11T18:00:00+02:00",
+    "title": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Gr2 / Gr1",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAdL",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jhIOktAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe7QAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-11T16:00:00+02:00",
+      "End": "2025-12-11T18:00:00+02:00",
+      "Subject": "Deep Learning Based Computer Vision (DLCV)  AIV I (mas) GR2 / GR1 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-11T18:00:00+02:00",
+    "end": "2025-12-11T20:00:00+02:00",
+    "title": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Nedevschi",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAdW",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jhIOktAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe7wAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-11T18:00:00+02:00",
+      "End": "2025-12-11T20:00:00+02:00",
+      "Subject": "Deep Learning Based Computer Vision (DLCV)  AIV I (mas) Nedevschi [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-12T10:00:00+02:00",
+    "end": "2025-12-12T12:00:00+02:00",
+    "title": "Limbi Straine Cti Ro I Gr 1",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAdh",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jkRZLUAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe8QAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-12T10:00:00+02:00",
+      "End": "2025-12-12T12:00:00+02:00",
+      "Subject": "Limbi straine CTI ro I GR 1 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-15T08:00:00+02:00",
+    "end": "2025-12-15T10:00:00+02:00",
+    "title": "Analiza Matematica I (calcul Diferential) Cti Ro I / Gr 3",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAANc",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jts4/JAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAexAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-15T08:00:00+02:00",
+      "End": "2025-12-15T10:00:00+02:00",
+      "Subject": "Analiza matematica I (Calcul diferential) CTI ro I / GR 3 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-15T10:00:00+02:00",
+    "end": "2025-12-15T12:00:00+02:00",
+    "title": "Analiza Matematica I (calcul Diferential) Cti Ro I / Gr 2",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAANj",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jts4/JAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAexgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-15T10:00:00+02:00",
+      "End": "2025-12-15T12:00:00+02:00",
+      "Subject": "Analiza matematica I (Calcul diferential) CTI ro I / GR 2 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-15T12:00:00+02:00",
+    "end": "2025-12-15T16:00:00+02:00",
+    "title": "Limbi Straine Cti Ro I / Gr 2",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAOS",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jts4/JAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAexwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-15T12:00:00+02:00",
+      "End": "2025-12-15T16:00:00+02:00",
+      "Subject": "Limbi Straine CTI ro I / GR 2 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-15T18:00:00+02:00",
+    "end": "2025-12-15T20:00:00+02:00",
+    "title": "Distributed Systems Aiv I (mas) Salomie",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAPE",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jts4/JAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe0gAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-15T18:00:00+02:00",
+      "End": "2025-12-15T20:00:00+02:00",
+      "Subject": "Distributed Systems AIV I (mas) Salomie [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-15T20:00:00+02:00",
+    "end": "2025-12-15T22:00:00+02:00",
+    "title": "Distributed Systems Aiv I (mas) Gr1 / Gr2",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAPP",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jts4/JAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe1AAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-15T20:00:00+02:00",
+      "End": "2025-12-15T22:00:00+02:00",
+      "Subject": "Distributed Systems AIV I (mas)  GR1 / GR2  [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-16T08:00:00+02:00",
+    "end": "2025-12-16T10:00:00+02:00",
+    "title": "Database Systems (db)",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAPa",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jw2DlwAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAeyAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-16T08:00:00+02:00",
+      "End": "2025-12-16T10:00:00+02:00",
+      "Subject": "Database Systems (DB)  - DS I ( mas)  [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-16T10:00:00+02:00",
+    "end": "2025-12-16T12:00:00+02:00",
+    "title": "Database Systems (db)",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAZB",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jw2DlwAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe1wAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-16T10:00:00+02:00",
+      "End": "2025-12-16T12:00:00+02:00",
+      "Subject": "Database Systems (DB)  - DS I ( mas) Gr 1 / Gr 2 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-16T16:00:00+02:00",
+    "end": "2025-12-16T18:00:00+02:00",
+    "title": "Intelligent Agent Systems Aiv I (mas) Gr1 / Gr2",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAZM",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jw2DlwAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe2QAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-16T16:00:00+02:00",
+      "End": "2025-12-16T18:00:00+02:00",
+      "Subject": "Intelligent Agent Systems AIV I (mas)  GR1 / GR2 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-16T18:00:00+02:00",
+    "end": "2025-12-16T20:00:00+02:00",
+    "title": "Intelligent Agent Systems Aiv I (mas) R. Slavescu",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAZX",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jw2DlwAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe2wAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-16T18:00:00+02:00",
+      "End": "2025-12-16T20:00:00+02:00",
+      "Subject": "Intelligent Agent Systems AIV I (mas) R. Slavescu [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-17T08:00:00+02:00",
+    "end": "2025-12-17T10:00:00+02:00",
+    "title": "Algorithms (alg) Ds I (mas) Potolea Rodica",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAbI",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jz/OMXAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe3QAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-17T08:00:00+02:00",
+      "End": "2025-12-17T10:00:00+02:00",
+      "Subject": "Algorithms (Alg) DS I (mas) Potolea Rodica [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-17T10:00:00+02:00",
+    "end": "2025-12-17T12:00:00+02:00",
+    "title": "Algorithms (alg)(l+p) Ds I (mas) Gr 1",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAbT",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jz/OMXAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe3wAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-17T10:00:00+02:00",
+      "End": "2025-12-17T12:00:00+02:00",
+      "Subject": "Algorithms (Alg)(L+P) DS I (mas)  GR 1 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-17T12:00:00+02:00",
+    "end": "2025-12-17T14:00:00+02:00",
+    "title": "Algorithms (alg)(l+p) Ds I (mas) Gr 2",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAACUp",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jz/OMXAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe4QAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-17T12:00:00+02:00",
+      "End": "2025-12-17T14:00:00+02:00",
+      "Subject": "Algorithms (Alg)(L+P) DS I (mas)  GR 2 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-17T16:00:00+02:00",
+    "end": "2025-12-17T18:00:00+02:00",
+    "title": "Computer Networks (cn)",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAbp",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jz/OMXAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe4wAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-17T16:00:00+02:00",
+      "End": "2025-12-17T18:00:00+02:00",
+      "Subject": "Computer Networks (CN) - AIV (mas) GR1/GR2   [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-17T18:00:00+02:00",
+    "end": "2025-12-17T20:00:00+02:00",
+    "title": "Computer Networks (cn)",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAb0",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3jz/OMXAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe5QAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-17T18:00:00+02:00",
+      "End": "2025-12-17T20:00:00+02:00",
+      "Subject": "Computer Networks (CN) - AIV (mas) V. Dadarlat [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-18T08:00:00+02:00",
+    "end": "2025-12-18T10:00:00+02:00",
+    "title": "Machine Learning 1 (ml1) Ds I (mas) Brehar Raluca",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAb/",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3j3IYy+AAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe5wAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-18T08:00:00+02:00",
+      "End": "2025-12-18T10:00:00+02:00",
+      "Subject": "Machine Learning 1 (ML1)   DS I (mas) Brehar Raluca [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-18T10:00:00+02:00",
+    "end": "2025-12-18T12:00:00+02:00",
+    "title": "Machine Learning 1 (ml1) Ds I (mas) Gr1 / Gr2",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAcr",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3j3IYy+AAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe6QAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-18T10:00:00+02:00",
+      "End": "2025-12-18T12:00:00+02:00",
+      "Subject": "Machine Learning 1 (ML1) DS I (mas) GR1 / GR2 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-18T14:00:00+02:00",
+    "end": "2025-12-18T16:00:00+02:00",
+    "title": "Limbi Straine Cti Ro I / Gr 7",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAdA",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3j3IYy+AAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe6wAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-18T14:00:00+02:00",
+      "End": "2025-12-18T16:00:00+02:00",
+      "Subject": "Limbi Straine CTI ro I / GR 7 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-18T16:00:00+02:00",
+    "end": "2025-12-18T18:00:00+02:00",
+    "title": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Gr2 / Gr1",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAdL",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3j3IYy+AAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe7QAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-18T16:00:00+02:00",
+      "End": "2025-12-18T18:00:00+02:00",
+      "Subject": "Deep Learning Based Computer Vision (DLCV)  AIV I (mas) GR2 / GR1 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-18T18:00:00+02:00",
+    "end": "2025-12-18T20:00:00+02:00",
+    "title": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Nedevschi",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAdW",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3j3IYy+AAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe7wAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-18T18:00:00+02:00",
+      "End": "2025-12-18T20:00:00+02:00",
+      "Subject": "Deep Learning Based Computer Vision (DLCV)  AIV I (mas) Nedevschi [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-19T10:00:00+02:00",
+    "end": "2025-12-19T12:00:00+02:00",
+    "title": "Limbi Straine Cti Ro I Gr 1",
+    "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADaQLaikBj3TakMfMtXwqpNAAAAAAdh",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgFRAAgI3j6RjZlAAEYAAAAAu8sWyQGlHUS6snPqS5HqlwcA2kC2opAY902pDHzLV8KqTQAAAAABDQAA2kC2opAY902pDHzLV8KqTQAAAAAe8QAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ2ZTY5YjYyLTM4N2EtNGM4Yi04ODU2LTQ3Nzg2MDcxYzY1YgAuAAAAAAC7yxbJAaUdRLqyc+pLkeqXAQDaQLaikBj3TakMfMtXwqpNAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-19T10:00:00+02:00",
+      "End": "2025-12-19T12:00:00+02:00",
+      "Subject": "Limbi straine CTI ro I GR 1 [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  }
+]

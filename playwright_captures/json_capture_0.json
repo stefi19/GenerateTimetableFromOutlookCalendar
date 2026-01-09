@@ -3,7 +3,7 @@
     "ServerVersionInfo": {
       "MajorVersion": 15,
       "MinorVersion": 20,
-      "MajorBuildNumber": 9478,
+      "MajorBuildNumber": 9499,
       "MinorBuildNumber": 4,
       "Version": "V2018_01_18"
     }
@@ -13,12 +13,12 @@
       "__type": "CalendarFolder:#Exchange",
       "FolderId": {
         "__type": "FolderId:#Exchange",
-        "Id": "AAMkADdlYWU3NzAyLWRkZmYtNDE4ZC1iZjlhLWEwZTgwMmQ5NDNmNAAuAAAAAAAqaN7mkKeeQIShS3M8ztuEAQAevbZTnpOlSYOkK90O01zvAAuK3lThAAA=",
+        "Id": "AAMkADllNTJiZDE4LThkYzktNDkyMy05OGFhLTc2YTk2MjNhYTI0NQAuAAAAAADBlCo2sWfxRJ9de2sEkDzvAQCLuutE5u+fRJjwCUM0tDuYAAAAAAENAAA=",
         "ChangeKey": "AgAAAA=="
       },
       "Charm": "None",
       "FolderClass": "IPF.Appointment",
-      "DisplayName": "2025-2026 Fall Session AC Computer Science",
+      "DisplayName": "Calendar",
       "ChildFolderCount": 0,
       "EffectiveRights": {
         "CreateAssociated": false,
@@ -301,7 +301,8 @@
         "IsTopicHighlightsEnabled": true,
         "HasYammerLicense": false,
         "FolderPaneBitFlags": 0,
-        "IsSenderScreeningSettingEnabled": false
+        "IsSenderScreeningSettingEnabled": false,
+        "BlockSCDoNotAskAgain": false
       },
       "SessionSettings": {
         "AadSessionId": null,
@@ -319,7 +320,7 @@
         "BirthdayPrecision": null,
         "BposCompanyName": null,
         "CompanyName": null,
-        "UserDisplayName": "Adrian Petru Groza",
+        "UserDisplayName": "UTCN - Aula UTCN HUB",
         "UserPrincipalName": null,
         "UserEmailAddress": null,
         "UserLegacyExchangeDN": null,
@@ -344,7 +345,7 @@
         "DefaultFolderIds": [
           {
             "__type": "FolderId:#Exchange",
-            "Id": "AAMkADdlYWU3NzAyLWRkZmYtNDE4ZC1iZjlhLWEwZTgwMmQ5NDNmNAAuAAAAAAAqaN7mkKeeQIShS3M8ztuEAQAevbZTnpOlSYOkK90O01zvAAuK3lThAAA=",
+            "Id": "AAMkADllNTJiZDE4LThkYzktNDkyMy05OGFhLTc2YTk2MjNhYTI0NQAuAAAAAADBlCo2sWfxRJ9de2sEkDzvAQCLuutE5u+fRJjwCUM0tDuYAAAAAAENAAA=",
             "ChangeKey": "AgAAAA=="
           }
         ],

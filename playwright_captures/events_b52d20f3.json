@@ -1,0 +1,43 @@
+[
+  {
+    "start": "2025-12-12T10:00:00+02:00",
+    "end": "2025-12-12T11:30:00+02:00",
+    "title": "Invitație Întâlnire Proiect Eut+ Accelerate",
+    "location": "UTCN - ROOM CONFERENCE 1 UTCN HUB (G. Baritiu 4-6, Cluj-Napoca, Cluj, RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAmYfmocmroTpetYWsnabN7AAGmJsz0",
+        "Id": "AAMkADZkZjBiNDg3LWRiZWQtNDZhZC1iYjg5LTNiNzA5ZTBhZWM2YgBGAAAAAACdkfHjIKP7SpkhjvODCR2UBwAmYfmocmroTpetYWsnabN7AAAAAAENAAAmYfmocmroTpetYWsnabN7AAGip3oeAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADZkZjBiNDg3LWRiZWQtNDZhZC1iYgA4OS0zYjcwOWUwYWVjNmIALgAAA52R8eMgo/tKmSGO84MJHZQBACZh+ahyauhOl61haydps3sAAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-12T10:00:00+02:00",
+      "End": "2025-12-12T11:30:00+02:00",
+      "Subject": "Invitație întâlnire proiect EUt+ Accelerate - Vineri 12.12.2025, ora 10:00",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Tentative",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ROOM CONFERENCE 1 UTCN HUB (G. Baritiu 4-6, Cluj-Napoca, Cluj, RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  }
+]

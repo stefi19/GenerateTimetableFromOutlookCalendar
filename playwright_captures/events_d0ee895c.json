@@ -1,0 +1,84 @@
+[
+  {
+    "start": "2025-12-12T11:00:00+02:00",
+    "end": "2025-12-12T11:30:00+02:00",
+    "title": "Test Sala 206",
+    "location": "UTCN - HUB UT - Sala 2-6 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA8yogjkDz0SLfd1deAsxs8AADURGF2",
+        "Id": "AAMkADAyZTBlNGU1LTk4ODUtNDFiZS1iMzdkLTFkMzExMDIxZDU5MQBGAAAAAAAVo3YUB3NETqCq54YiaJ0lBwA8yogjkDz0SLfd1deAsxs8AAAAAAENAAA8yogjkDz0SLfd1deAsxs8AADUP6o/AAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADAyZTBlNGU1LTk4ODUtNDFiZS1iMzdkLTFkMzExMDIxZDU5MQAuAAAAAAAVo3YUB3NETqCq54YiaJ0lAQA8yogjkDz0SLfd1deAsxs8AAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-12T11:00:00+02:00",
+      "End": "2025-12-12T11:30:00+02:00",
+      "Subject": "Test sala 206",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - HUB UT - Sala 2-6 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-12T12:30:00+02:00",
+    "end": "2025-12-12T13:00:00+02:00",
+    "title": "Rezervare",
+    "location": "UTCN - HUB UT - Sala 2-6 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA8yogjkDz0SLfd1deAsxs8AADURGHz",
+        "Id": "AAMkADAyZTBlNGU1LTk4ODUtNDFiZS1iMzdkLTFkMzExMDIxZDU5MQBGAAAAAAAVo3YUB3NETqCq54YiaJ0lBwA8yogjkDz0SLfd1deAsxs8AAAAAAENAAA8yogjkDz0SLfd1deAsxs8AADUP6pAAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADAyZTBlNGU1LTk4ODUtNDFiZS1iMzdkLTFkMzExMDIxZDU5MQAuAAAAAAAVo3YUB3NETqCq54YiaJ0lAQA8yogjkDz0SLfd1deAsxs8AAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-12T12:30:00+02:00",
+      "End": "2025-12-12T13:00:00+02:00",
+      "Subject": "Rezervare",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - HUB UT - Sala 2-6 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  }
+]

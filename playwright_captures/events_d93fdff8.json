@@ -1,0 +1,84 @@
+[
+  {
+    "start": "2025-12-03T11:30:00+02:00",
+    "end": "2025-12-03T13:00:00+02:00",
+    "title": "Ședință Consiliu Farmm",
+    "location": "UTCN - ARMM Muncii 103-105 - Sala A13",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABdCKNoaJk/Tr2gDiqnYFXmAADFl6SY",
+        "Id": "AAMkADQ1NWRiZTU1LTliZTktNDBkYy04YzRiLTBiYzk0N2U1ZTljYgBGAAAAAAA9SsJh6QRNT5eRnhgCaFBPBwBdCKNoaJk/Tr2gDiqnYFXmAAAAAAENAABdCKNoaJk/Tr2gDiqnYFXmAADFihKCAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADQ1NWRiZTU1LTliZTktNDBkYy04YzRiLTBiYzk0N2U1ZTljYgAuAAAAAAA9SsJh6QRNT5eRnhgCaFBPAQBdCKNoaJk/Tr2gDiqnYFXmAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-03T11:30:00+02:00",
+      "End": "2025-12-03T13:00:00+02:00",
+      "Subject": "Ședință Consiliu FARMM",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ARMM Muncii 103-105 - Sala A13",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-12T00:00:00+02:00",
+    "end": "2025-12-13T00:00:00+02:00",
+    "title": "Teze Doctorat",
+    "location": "UTCN - ARMM Muncii 103-105 - Sala A13",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABdCKNoaJk/Tr2gDiqnYFXmAAC4qrG5",
+        "Id": "AAMkADQ1NWRiZTU1LTliZTktNDBkYy04YzRiLTBiYzk0N2U1ZTljYgBGAAAAAAA9SsJh6QRNT5eRnhgCaFBPBwBdCKNoaJk/Tr2gDiqnYFXmAAAAAAENAABdCKNoaJk/Tr2gDiqnYFXmAAC4n/o7AAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADQ1NWRiZTU1LTliZTktNDBkYy04YzRiLTBiYzk0N2U1ZTljYgAuAAAAAAA9SsJh6QRNT5eRnhgCaFBPAQBdCKNoaJk/Tr2gDiqnYFXmAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-12T00:00:00+02:00",
+      "End": "2025-12-13T00:00:00+02:00",
+      "Subject": "Teze doctorat - indrumatori Prof.dr.ing. Mandru Dan si Prof.dr.ing. Dudescu Mircea",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ARMM Muncii 103-105 - Sala A13",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  }
+]

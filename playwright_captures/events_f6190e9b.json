@@ -1,0 +1,43 @@
+[
+  {
+    "start": "2025-12-18T10:00:00+02:00",
+    "end": "2025-12-18T10:30:00+02:00",
+    "title": "Interviu Ecros",
+    "location": "UTCN - DAICOVICIU 15 - DMCDI",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABdFlLJRrxpS7HuC06slYlQAADTjqe3",
+        "Id": "AAMkADc3YTYxOTBhLWNlMDQtNGVmYy05NmRjLTkyYzA0MjRiNWRiMwBGAAAAAABmEx+HZa5sQL3Su49O8lJPBwBdFlLJRrxpS7HuC06slYlQAAAAAAENAABdFlLJRrxpS7HuC06slYlQAADTfPNWAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADc3AGE2MTkwYS1jZTA0LTRlZmMtOTZkYy05MmMwNDI0YjVkYjMALgAAA2YTH4dlrmxAvdK7j07yUk8BAF0WUslGvGlLse4LTqyViVAAAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-18T10:00:00+02:00",
+      "End": "2025-12-18T10:30:00+02:00",
+      "Subject": "Interviu ECROS",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - DAICOVICIU 15 - DMCDI",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  }
+]

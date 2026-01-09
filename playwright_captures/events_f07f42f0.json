@@ -1,0 +1,166 @@
+[
+  {
+    "start": "2025-12-02T18:00:00+02:00",
+    "end": "2025-12-02T20:00:00+02:00",
+    "title": "Iac",
+    "location": "UTCN - CUNBM Victor Babes 62A - Sala A2",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABOwcqpqYMhTYjIw43pBXrYAADN90SP",
+        "Id": "AAMkAGM5NGM5MTMyLTI3MTgtNGYxMS1iYjg5LTFmZjFjMTRmZWQ4YgBGAAAAAACyJw6+wjTZQ720w4dKIlHYBwBOwcqpqYMhTYjIw43pBXrYAAAAAAENAABOwcqpqYMhTYjIw43pBXrYAADN7f/NAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGM5NGM5MTMyLTI3MTgtNGYxMS1iYjg5LTFmZjFjMTRmZWQ4YgAuAAAAAACyJw6+wjTZQ720w4dKIlHYAQBOwcqpqYMhTYjIw43pBXrYAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-02T18:00:00+02:00",
+      "End": "2025-12-02T20:00:00+02:00",
+      "Subject": "IAC-L (Ing + Șt. db.sp.)",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - CUNBM Victor Babes 62A - Sala A2",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-04T16:00:00+02:00",
+    "end": "2025-12-04T18:00:00+02:00",
+    "title": "Iac",
+    "location": "UTCN - CUNBM Victor Babes 62A - Sala A2",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABOwcqpqYMhTYjIw43pBXrYAADN97XX",
+        "Id": "AAMkAGM5NGM5MTMyLTI3MTgtNGYxMS1iYjg5LTFmZjFjMTRmZWQ4YgBGAAAAAACyJw6+wjTZQ720w4dKIlHYBwBOwcqpqYMhTYjIw43pBXrYAAAAAAENAABOwcqpqYMhTYjIw43pBXrYAADN7f/OAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGM5NGM5MTMyLTI3MTgtNGYxMS1iYjg5LTFmZjFjMTRmZWQ4YgAuAAAAAACyJw6+wjTZQ720w4dKIlHYAQBOwcqpqYMhTYjIw43pBXrYAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-04T16:00:00+02:00",
+      "End": "2025-12-04T18:00:00+02:00",
+      "Subject": "IAC-L (Lit. mono sp.)",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - CUNBM Victor Babes 62A - Sala A2",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-09T18:00:00+02:00",
+    "end": "2025-12-09T20:00:00+02:00",
+    "title": "Iac",
+    "location": "UTCN - CUNBM Victor Babes 62A - Sala A2",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABOwcqpqYMhTYjIw43pBXrYAADRZ+nN",
+        "Id": "AAMkAGM5NGM5MTMyLTI3MTgtNGYxMS1iYjg5LTFmZjFjMTRmZWQ4YgBGAAAAAACyJw6+wjTZQ720w4dKIlHYBwBOwcqpqYMhTYjIw43pBXrYAAAAAAENAABOwcqpqYMhTYjIw43pBXrYAADRXk8AAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGM5NGM5MTMyLTI3MTgtNGYxMS1iYjg5LTFmZjFjMTRmZWQ4YgAuAAAAAACyJw6+wjTZQ720w4dKIlHYAQBOwcqpqYMhTYjIw43pBXrYAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-09T18:00:00+02:00",
+      "End": "2025-12-09T20:00:00+02:00",
+      "Subject": "IAC - L (Șt. mono)",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - CUNBM Victor Babes 62A - Sala A2",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-11T16:00:00+02:00",
+    "end": "2025-12-11T18:00:00+02:00",
+    "title": "Iac",
+    "location": "UTCN - CUNBM Victor Babes 62A - Sala A2",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABOwcqpqYMhTYjIw43pBXrYAADRZ+oo",
+        "Id": "AAMkAGM5NGM5MTMyLTI3MTgtNGYxMS1iYjg5LTFmZjFjMTRmZWQ4YgBGAAAAAACyJw6+wjTZQ720w4dKIlHYBwBOwcqpqYMhTYjIw43pBXrYAAAAAAENAABOwcqpqYMhTYjIw43pBXrYAADRXk8BAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGM5NGM5MTMyLTI3MTgtNGYxMS1iYjg5LTFmZjFjMTRmZWQ4YgAuAAAAAACyJw6+wjTZQ720w4dKIlHYAQBOwcqpqYMhTYjIw43pBXrYAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-11T16:00:00+02:00",
+      "End": "2025-12-11T18:00:00+02:00",
+      "Subject": "IAC - L (Lit - mono sp.)",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - CUNBM Victor Babes 62A - Sala A2",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  }
+]

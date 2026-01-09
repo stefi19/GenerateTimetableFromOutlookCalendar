@@ -1,0 +1,699 @@
+[
+  {
+    "start": "2025-12-03T16:00:00+02:00",
+    "end": "2025-12-03T18:00:00+02:00",
+    "title": "Recuperări",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 404",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAznXw18iPQRb0y4dt0jPBxAADMko/h",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgBGAAAAAABJMUVU6QoiS7QZ6ETP7tO0BwAznXw18iPQRb0y4dt0jPBxAAAAAAENAAAznXw18iPQRb0y4dt0jPBxAADMf+GXAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgAuAAAAAABJMUVU6QoiS7QZ6ETP7tO0AQAznXw18iPQRb0y4dt0jPBxAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-03T16:00:00+02:00",
+      "End": "2025-12-03T18:00:00+02:00",
+      "Subject": "Recuperări",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 404",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-03T18:00:00+02:00",
+    "end": "2025-12-03T20:00:00+02:00",
+    "title": "Recuperări",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 404",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAznXw18iPQRb0y4dt0jPBxAADMko/m",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgBGAAAAAABJMUVU6QoiS7QZ6ETP7tO0BwAznXw18iPQRb0y4dt0jPBxAAAAAAENAAAznXw18iPQRb0y4dt0jPBxAADMf+GYAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgAuAAAAAABJMUVU6QoiS7QZ6ETP7tO0AQAznXw18iPQRb0y4dt0jPBxAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-03T18:00:00+02:00",
+      "End": "2025-12-03T20:00:00+02:00",
+      "Subject": "Recuperări",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 404",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-10T10:00:00+02:00",
+    "end": "2025-12-10T12:00:00+02:00",
+    "title": "L9 Gr5sg2(evaluare 3)",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 404",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAznXw18iPQRb0y4dt0jPBxAADU2q1z",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgBGAAAAAABJMUVU6QoiS7QZ6ETP7tO0BwAznXw18iPQRb0y4dt0jPBxAAAAAAENAAAznXw18iPQRb0y4dt0jPBxAADUx8B1AAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgAuAAAAAABJMUVU6QoiS7QZ6ETP7tO0AQAznXw18iPQRb0y4dt0jPBxAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-10T10:00:00+02:00",
+      "End": "2025-12-10T12:00:00+02:00",
+      "Subject": "L9 gr5sg2(Evaluare 3)",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 404",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-10T16:00:00+02:00",
+    "end": "2025-12-10T18:00:00+02:00",
+    "title": "L9 / Evaluare 3",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 404",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAznXw18iPQRb0y4dt0jPBxAADU2rOp",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgBGAAAAAABJMUVU6QoiS7QZ6ETP7tO0BwAznXw18iPQRb0y4dt0jPBxAAAAAAENAAAznXw18iPQRb0y4dt0jPBxAADUx8B2AAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgAuAAAAAABJMUVU6QoiS7QZ6ETP7tO0AQAznXw18iPQRb0y4dt0jPBxAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-10T16:00:00+02:00",
+      "End": "2025-12-10T18:00:00+02:00",
+      "Subject": "L9 / Evaluare 3 - Specificatii Software",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 404",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-10T18:00:00+02:00",
+    "end": "2025-12-10T20:00:00+02:00",
+    "title": "L9 / Evaluare 3",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 404",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAznXw18iPQRb0y4dt0jPBxAADU2rRb",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgBGAAAAAABJMUVU6QoiS7QZ6ETP7tO0BwAznXw18iPQRb0y4dt0jPBxAAAAAAENAAAznXw18iPQRb0y4dt0jPBxAADUx8B3AAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgAuAAAAAABJMUVU6QoiS7QZ6ETP7tO0AQAznXw18iPQRb0y4dt0jPBxAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-10T18:00:00+02:00",
+      "End": "2025-12-10T20:00:00+02:00",
+      "Subject": "L9 / Evaluare 3 - Specificatii Software",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 404",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-11T12:00:00+02:00",
+    "end": "2025-12-11T14:00:00+02:00",
+    "title": "L9 / Evaluare 3",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 404",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAznXw18iPQRb0y4dt0jPBxAADV7+qU",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgBGAAAAAABJMUVU6QoiS7QZ6ETP7tO0BwAznXw18iPQRb0y4dt0jPBxAAAAAAENAAAznXw18iPQRb0y4dt0jPBxAADUx8B4AAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgAuAAAAAABJMUVU6QoiS7QZ6ETP7tO0AQAznXw18iPQRb0y4dt0jPBxAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-11T12:00:00+02:00",
+      "End": "2025-12-11T14:00:00+02:00",
+      "Subject": "L9 / Evaluare 3 - Specificatii Software",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 404",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-11T14:00:00+02:00",
+    "end": "2025-12-11T16:00:00+02:00",
+    "title": "L9 / Evaluare 3",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 404",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAznXw18iPQRb0y4dt0jPBxAADV7+qV",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgBGAAAAAABJMUVU6QoiS7QZ6ETP7tO0BwAznXw18iPQRb0y4dt0jPBxAAAAAAENAAAznXw18iPQRb0y4dt0jPBxAADUx8B5AAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgAuAAAAAABJMUVU6QoiS7QZ6ETP7tO0AQAznXw18iPQRb0y4dt0jPBxAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-11T14:00:00+02:00",
+      "End": "2025-12-11T16:00:00+02:00",
+      "Subject": "L9 / Evaluare 3 - Specificatii Software",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 404",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-11T16:00:00+02:00",
+    "end": "2025-12-11T18:00:00+02:00",
+    "title": "L9 / Evaluare 3",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 404",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAznXw18iPQRb0y4dt0jPBxAADV7+qX",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgBGAAAAAABJMUVU6QoiS7QZ6ETP7tO0BwAznXw18iPQRb0y4dt0jPBxAAAAAAENAAAznXw18iPQRb0y4dt0jPBxAADUx8B6AAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgAuAAAAAABJMUVU6QoiS7QZ6ETP7tO0AQAznXw18iPQRb0y4dt0jPBxAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-11T16:00:00+02:00",
+      "End": "2025-12-11T18:00:00+02:00",
+      "Subject": "L9 / Evaluare 3 - Specificatii Software",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 404",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-16T08:00:00+02:00",
+    "end": "2025-12-16T10:00:00+02:00",
+    "title": "L10 Modelare Software",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 404",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAznXw18iPQRb0y4dt0jPBxAADZYjKx",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgBGAAAAAABJMUVU6QoiS7QZ6ETP7tO0BwAznXw18iPQRb0y4dt0jPBxAAAAAAENAAAznXw18iPQRb0y4dt0jPBxAADZT2dgAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgAuAAAAAABJMUVU6QoiS7QZ6ETP7tO0AQAznXw18iPQRb0y4dt0jPBxAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-16T08:00:00+02:00",
+      "End": "2025-12-16T10:00:00+02:00",
+      "Subject": "L10 Modelare Software",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 404",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-16T10:00:00+02:00",
+    "end": "2025-12-16T12:00:00+02:00",
+    "title": "L10 Modelare Software",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 404",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAznXw18iPQRb0y4dt0jPBxAADZYjMQ",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgBGAAAAAABJMUVU6QoiS7QZ6ETP7tO0BwAznXw18iPQRb0y4dt0jPBxAAAAAAENAAAznXw18iPQRb0y4dt0jPBxAADZT2dhAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgAuAAAAAABJMUVU6QoiS7QZ6ETP7tO0AQAznXw18iPQRb0y4dt0jPBxAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-16T10:00:00+02:00",
+      "End": "2025-12-16T12:00:00+02:00",
+      "Subject": "L10 Modelare Software",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 404",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-17T08:00:00+02:00",
+    "end": "2025-12-17T10:00:00+02:00",
+    "title": "L10 Gr7sg1 (modelare Software)",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 404",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAznXw18iPQRb0y4dt0jPBxAADZYmdk",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgBGAAAAAABJMUVU6QoiS7QZ6ETP7tO0BwAznXw18iPQRb0y4dt0jPBxAAAAAAENAAAznXw18iPQRb0y4dt0jPBxAADZT2diAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgAuAAAAAABJMUVU6QoiS7QZ6ETP7tO0AQAznXw18iPQRb0y4dt0jPBxAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-17T08:00:00+02:00",
+      "End": "2025-12-17T10:00:00+02:00",
+      "Subject": "L10 gr7sg1 (Modelare Software)",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 404",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-17T10:00:00+02:00",
+    "end": "2025-12-17T12:00:00+02:00",
+    "title": "L10 Gr5sg2 (modelare Software)",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 404",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAznXw18iPQRb0y4dt0jPBxAADZYmfD",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgBGAAAAAABJMUVU6QoiS7QZ6ETP7tO0BwAznXw18iPQRb0y4dt0jPBxAAAAAAENAAAznXw18iPQRb0y4dt0jPBxAADZT2djAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgAuAAAAAABJMUVU6QoiS7QZ6ETP7tO0AQAznXw18iPQRb0y4dt0jPBxAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-17T10:00:00+02:00",
+      "End": "2025-12-17T12:00:00+02:00",
+      "Subject": "L10 gr5sg2 (Modelare Software)",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 404",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-17T16:00:00+02:00",
+    "end": "2025-12-17T18:00:00+02:00",
+    "title": "L10",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 404",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAznXw18iPQRb0y4dt0jPBxAADZYmlY",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgBGAAAAAABJMUVU6QoiS7QZ6ETP7tO0BwAznXw18iPQRb0y4dt0jPBxAAAAAAENAAAznXw18iPQRb0y4dt0jPBxAADZT2dkAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgAuAAAAAABJMUVU6QoiS7QZ6ETP7tO0AQAznXw18iPQRb0y4dt0jPBxAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-17T16:00:00+02:00",
+      "End": "2025-12-17T18:00:00+02:00",
+      "Subject": "L10 - Modelare Software",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 404",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-17T18:00:00+02:00",
+    "end": "2025-12-17T20:00:00+02:00",
+    "title": "L10",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 404",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAznXw18iPQRb0y4dt0jPBxAADZYmm3",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgBGAAAAAABJMUVU6QoiS7QZ6ETP7tO0BwAznXw18iPQRb0y4dt0jPBxAAAAAAENAAAznXw18iPQRb0y4dt0jPBxAADZT2dlAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgAuAAAAAABJMUVU6QoiS7QZ6ETP7tO0AQAznXw18iPQRb0y4dt0jPBxAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-17T18:00:00+02:00",
+      "End": "2025-12-17T20:00:00+02:00",
+      "Subject": "L10 - Modelare Software",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 404",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-18T12:00:00+02:00",
+    "end": "2025-12-18T14:00:00+02:00",
+    "title": "L10",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 404",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAznXw18iPQRb0y4dt0jPBxAADasgNl",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgBGAAAAAABJMUVU6QoiS7QZ6ETP7tO0BwAznXw18iPQRb0y4dt0jPBxAAAAAAENAAAznXw18iPQRb0y4dt0jPBxAADan0+lAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgAuAAAAAABJMUVU6QoiS7QZ6ETP7tO0AQAznXw18iPQRb0y4dt0jPBxAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-18T12:00:00+02:00",
+      "End": "2025-12-18T14:00:00+02:00",
+      "Subject": "L10 - Modelare Software",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 404",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-18T14:00:00+02:00",
+    "end": "2025-12-18T16:00:00+02:00",
+    "title": "L10",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 404",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAznXw18iPQRb0y4dt0jPBxAADasgQe",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgBGAAAAAABJMUVU6QoiS7QZ6ETP7tO0BwAznXw18iPQRb0y4dt0jPBxAAAAAAENAAAznXw18iPQRb0y4dt0jPBxAADan0+mAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgAuAAAAAABJMUVU6QoiS7QZ6ETP7tO0AQAznXw18iPQRb0y4dt0jPBxAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-18T14:00:00+02:00",
+      "End": "2025-12-18T16:00:00+02:00",
+      "Subject": "L10 - Modelare Software",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 404",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-18T16:00:00+02:00",
+    "end": "2025-12-18T18:00:00+02:00",
+    "title": "L10",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 404",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAznXw18iPQRb0y4dt0jPBxAADasgQf",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgBGAAAAAABJMUVU6QoiS7QZ6ETP7tO0BwAznXw18iPQRb0y4dt0jPBxAAAAAAENAAAznXw18iPQRb0y4dt0jPBxAADan0+nAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgAuAAAAAABJMUVU6QoiS7QZ6ETP7tO0AQAznXw18iPQRb0y4dt0jPBxAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-18T16:00:00+02:00",
+      "End": "2025-12-18T18:00:00+02:00",
+      "Subject": "L10 - Modelare Software",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 404",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  }
+]

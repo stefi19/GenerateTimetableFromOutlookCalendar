@@ -38,9 +38,7 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    },
-    "source": "f33d2fb6",
-    "color": "#fd7e14"
+    }
   },
   {
     "start": "2026-01-31T08:00:00+02:00",
@@ -81,8 +79,6 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    },
-    "source": "f33d2fb6",
-    "color": "#fd7e14"
+    }
   }
 ]

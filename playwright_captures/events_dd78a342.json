@@ -1,0 +1,453 @@
+[
+  {
+    "start": "2026-01-12T08:00:00+02:00",
+    "end": "2026-01-12T12:00:00+02:00",
+    "title": "Lab Ai",
+    "location": "UTCN - AC Bar - Sala 26B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABB1WRftcfpR7prAmyIyJRXAADRHCi2",
+        "Id": "AAMkADE4MmJhY2RhLTRjYzUtNGM4Mi04ZjZiLTliZTlmYTFiZjU0OQBGAAAAAABu6A8/IGz2RJuEmzAZHr4XBwBB1WRftcfpR7prAmyIyJRXAAAAAAENAABB1WRftcfpR7prAmyIyJRXAADRDiEpAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADE4MmJhY2RhLTRjYwA1LTRjODItOGY2Yi05YmU5ZmExYmY1NDkALgAAA27oDz8gbPZEm4SbMBkevhcBAEHVZF+1x+lHumsCbIjIlFcAAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-12T08:00:00+02:00",
+      "End": "2026-01-12T12:00:00+02:00",
+      "Subject": "Lab AI - Marius Stoica",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala 26B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-12T14:00:00+02:00",
+    "end": "2026-01-12T16:00:00+02:00",
+    "title": "Artificial Intelligence",
+    "location": "UTCN - AC Bar - Sala 26B (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABB1WRftcfpR7prAmyIyJRXAADhj/iM",
+        "Id": "AAMkADE4MmJhY2RhLTRjYzUtNGM4Mi04ZjZiLTliZTlmYTFiZjU0OQBGAAAAAABu6A8/IGz2RJuEmzAZHr4XBwBB1WRftcfpR7prAmyIyJRXAAAAAAENAABB1WRftcfpR7prAmyIyJRXAADhgNnBAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADE4MmJhY2RhLTRjYwA1LTRjODItOGY2Yi05YmU5ZmExYmY1NDkALgAAA27oDz8gbPZEm4SbMBkevhcBAEHVZF+1x+lHumsCbIjIlFcAAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-12T14:00:00+02:00",
+      "End": "2026-01-12T16:00:00+02:00",
+      "Subject": "Artificial Intelligence",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala 26B (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-14T16:00:00+02:00",
+    "end": "2026-01-14T18:00:00+02:00",
+    "title": "Lab Ai",
+    "location": "UTCN - AC Bar - Sala 26B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABB1WRftcfpR7prAmyIyJRXAADRHCjR",
+        "Id": "AAMkADE4MmJhY2RhLTRjYzUtNGM4Mi04ZjZiLTliZTlmYTFiZjU0OQBGAAAAAABu6A8/IGz2RJuEmzAZHr4XBwBB1WRftcfpR7prAmyIyJRXAAAAAAENAABB1WRftcfpR7prAmyIyJRXAADRDiEqAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADE4MmJhY2RhLTRjYwA1LTRjODItOGY2Yi05YmU5ZmExYmY1NDkALgAAA27oDz8gbPZEm4SbMBkevhcBAEHVZF+1x+lHumsCbIjIlFcAAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-14T16:00:00+02:00",
+      "End": "2026-01-14T18:00:00+02:00",
+      "Subject": "Lab AI - Marius Stoica",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala 26B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-16T10:00:00+02:00",
+    "end": "2026-01-16T14:00:00+02:00",
+    "title": "Lab Ai 30435",
+    "location": "UTCN - AC Bar - Sala 26B (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABB1WRftcfpR7prAmyIyJRXAADRHB5G",
+        "Id": "AAMkADE4MmJhY2RhLTRjYzUtNGM4Mi04ZjZiLTliZTlmYTFiZjU0OQFRAAgI3lSSMSpAAEYAAAAAbugPPyBs9kSbhJswGR6+FwcAQdVkX7XH6Ue6awJsiMiUVwAAAAABDQAAQdVkX7XH6Ue6awJsiMiUVwAA0Q4hJgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADE4MmJhY2RhLTRjYwA1LTRjODItOGY2Yi05YmU5ZmExYmY1NDkALgAAA27oDz8gbPZEm4SbMBkevhcBAEHVZF+1x+lHumsCbIjIlFcAAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-16T10:00:00+02:00",
+      "End": "2026-01-16T14:00:00+02:00",
+      "Subject": "Lab AI 30435",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Exception",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala 26B (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-19T08:00:00+02:00",
+    "end": "2026-01-19T12:00:00+02:00",
+    "title": "Lab Ai",
+    "location": "UTCN - AC Bar - Sala 26B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABB1WRftcfpR7prAmyIyJRXAADRHCl9",
+        "Id": "AAMkADE4MmJhY2RhLTRjYzUtNGM4Mi04ZjZiLTliZTlmYTFiZjU0OQBGAAAAAABu6A8/IGz2RJuEmzAZHr4XBwBB1WRftcfpR7prAmyIyJRXAAAAAAENAABB1WRftcfpR7prAmyIyJRXAADRDiErAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADE4MmJhY2RhLTRjYwA1LTRjODItOGY2Yi05YmU5ZmExYmY1NDkALgAAA27oDz8gbPZEm4SbMBkevhcBAEHVZF+1x+lHumsCbIjIlFcAAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-19T08:00:00+02:00",
+      "End": "2026-01-19T12:00:00+02:00",
+      "Subject": "Lab AI - Marius Stoica",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala 26B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-21T16:00:00+02:00",
+    "end": "2026-01-21T18:00:00+02:00",
+    "title": "Lab Ai",
+    "location": "UTCN - AC Bar - Sala 26B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABB1WRftcfpR7prAmyIyJRXAADRHCmM",
+        "Id": "AAMkADE4MmJhY2RhLTRjYzUtNGM4Mi04ZjZiLTliZTlmYTFiZjU0OQBGAAAAAABu6A8/IGz2RJuEmzAZHr4XBwBB1WRftcfpR7prAmyIyJRXAAAAAAENAABB1WRftcfpR7prAmyIyJRXAADRDiEsAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADE4MmJhY2RhLTRjYwA1LTRjODItOGY2Yi05YmU5ZmExYmY1NDkALgAAA27oDz8gbPZEm4SbMBkevhcBAEHVZF+1x+lHumsCbIjIlFcAAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-21T16:00:00+02:00",
+      "End": "2026-01-21T18:00:00+02:00",
+      "Subject": "Lab AI - Marius Stoica",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala 26B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-23T14:30:00+02:00",
+    "end": "2026-01-23T15:00:00+02:00",
+    "title": "Lab Ai 30435",
+    "location": "UTCN - AC Bar - Sala 26B (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABB1WRftcfpR7prAmyIyJRXAADRHB5G",
+        "Id": "AAMkADE4MmJhY2RhLTRjYzUtNGM4Mi04ZjZiLTliZTlmYTFiZjU0OQFRAAgI3loSWg6AAEYAAAAAbugPPyBs9kSbhJswGR6+FwcAQdVkX7XH6Ue6awJsiMiUVwAAAAABDQAAQdVkX7XH6Ue6awJsiMiUVwAA0Q4hJgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADE4MmJhY2RhLTRjYwA1LTRjODItOGY2Yi05YmU5ZmExYmY1NDkALgAAA27oDz8gbPZEm4SbMBkevhcBAEHVZF+1x+lHumsCbIjIlFcAAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-23T14:30:00+02:00",
+      "End": "2026-01-23T15:00:00+02:00",
+      "Subject": "Lab AI 30435",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala 26B (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-12T10:00:00+02:00",
+    "end": "2025-12-12T14:00:00+02:00",
+    "title": "Lab Ai 30435",
+    "location": "UTCN - AC Bar - Sala 26B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABB1WRftcfpR7prAmyIyJRXAADRHB1s",
+        "Id": "AAMkADE4MmJhY2RhLTRjYzUtNGM4Mi04ZjZiLTliZTlmYTFiZjU0OQFRAAgI3jkRZLUAAEYAAAAAbugPPyBs9kSbhJswGR6+FwcAQdVkX7XH6Ue6awJsiMiUVwAAAAABDQAAQdVkX7XH6Ue6awJsiMiUVwAA0Q4hJAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADE4MmJhY2RhLTRjYwA1LTRjODItOGY2Yi05YmU5ZmExYmY1NDkALgAAA27oDz8gbPZEm4SbMBkevhcBAEHVZF+1x+lHumsCbIjIlFcAAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-12T10:00:00+02:00",
+      "End": "2025-12-12T14:00:00+02:00",
+      "Subject": "Lab AI 30435",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala 26B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-15T08:00:00+02:00",
+    "end": "2025-12-15T12:00:00+02:00",
+    "title": "Lab Ai",
+    "location": "UTCN - AC Bar - Sala 26B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABB1WRftcfpR7prAmyIyJRXAADRHCeG",
+        "Id": "AAMkADE4MmJhY2RhLTRjYzUtNGM4Mi04ZjZiLTliZTlmYTFiZjU0OQBGAAAAAABu6A8/IGz2RJuEmzAZHr4XBwBB1WRftcfpR7prAmyIyJRXAAAAAAENAABB1WRftcfpR7prAmyIyJRXAADRDiEnAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADE4MmJhY2RhLTRjYwA1LTRjODItOGY2Yi05YmU5ZmExYmY1NDkALgAAA27oDz8gbPZEm4SbMBkevhcBAEHVZF+1x+lHumsCbIjIlFcAAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-15T08:00:00+02:00",
+      "End": "2025-12-15T12:00:00+02:00",
+      "Subject": "Lab AI - Marius Stoica",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala 26B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-17T16:00:00+02:00",
+    "end": "2025-12-17T18:00:00+02:00",
+    "title": "Lab Ai",
+    "location": "UTCN - AC Bar - Sala 26B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABB1WRftcfpR7prAmyIyJRXAADRHCfx",
+        "Id": "AAMkADE4MmJhY2RhLTRjYzUtNGM4Mi04ZjZiLTliZTlmYTFiZjU0OQBGAAAAAABu6A8/IGz2RJuEmzAZHr4XBwBB1WRftcfpR7prAmyIyJRXAAAAAAENAABB1WRftcfpR7prAmyIyJRXAADRDiEoAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADE4MmJhY2RhLTRjYwA1LTRjODItOGY2Yi05YmU5ZmExYmY1NDkALgAAA27oDz8gbPZEm4SbMBkevhcBAEHVZF+1x+lHumsCbIjIlFcAAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-17T16:00:00+02:00",
+      "End": "2025-12-17T18:00:00+02:00",
+      "Subject": "Lab AI - Marius Stoica",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala 26B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-19T10:00:00+02:00",
+    "end": "2025-12-19T14:00:00+02:00",
+    "title": "Lab Ai 30435",
+    "location": "UTCN - AC Bar - Sala 26B",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABB1WRftcfpR7prAmyIyJRXAADRHB1s",
+        "Id": "AAMkADE4MmJhY2RhLTRjYzUtNGM4Mi04ZjZiLTliZTlmYTFiZjU0OQFRAAgI3j6RjZlAAEYAAAAAbugPPyBs9kSbhJswGR6+FwcAQdVkX7XH6Ue6awJsiMiUVwAAAAABDQAAQdVkX7XH6Ue6awJsiMiUVwAA0Q4hJAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADE4MmJhY2RhLTRjYwA1LTRjODItOGY2Yi05YmU5ZmExYmY1NDkALgAAA27oDz8gbPZEm4SbMBkevhcBAEHVZF+1x+lHumsCbIjIlFcAAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-19T10:00:00+02:00",
+      "End": "2025-12-19T14:00:00+02:00",
+      "Subject": "Lab AI 30435",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala 26B",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  }
+]

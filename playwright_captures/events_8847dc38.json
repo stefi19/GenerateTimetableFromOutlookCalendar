@@ -1,0 +1,330 @@
+[
+  {
+    "start": "2025-12-30T18:00:00+02:00",
+    "end": "2025-12-30T20:00:00+02:00",
+    "title": "Curs+aplicati",
+    "location": "UTCN - CONS Bar - Sala 115",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAnpcgijp6VSIZS0pFiY+YwAACrB5A8",
+        "Id": "AAMkAGVhNzFkMGJiLTQzY2EtNGVlOC05YmFiLTI1NjdlNDQxNDI4NQFRAAgI3kc2YCSAAEYAAAAAUbgPjF/a+EqMsxKE8htYHAcAJ6XIIo6elUiGUtKRYmPmMAAAAAABDQAAJ6XIIo6elUiGUtKRYmPmMAAAqFKTMQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGVhNzFkMGJiLTQzY2EtNGVlOC05YmFiLTI1NjdlNDQxNDI4NQAuAAAAAABRuA+MX9r4SoyzEoTyG1gcAQAnpcgijp6VSIZS0pFiY+YwAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-30T18:00:00+02:00",
+      "End": "2025-12-30T20:00:00+02:00",
+      "Subject": "Curs+Aplicati",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - CONS Bar - Sala 115",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-06T18:00:00+02:00",
+    "end": "2026-01-06T20:00:00+02:00",
+    "title": "Curs+aplicati",
+    "location": "UTCN - CONS Bar - Sala 115",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAnpcgijp6VSIZS0pFiY+YwAACrB5A8",
+        "Id": "AAMkAGVhNzFkMGJiLTQzY2EtNGVlOC05YmFiLTI1NjdlNDQxNDI4NQFRAAgI3ky2iQjAAEYAAAAAUbgPjF/a+EqMsxKE8htYHAcAJ6XIIo6elUiGUtKRYmPmMAAAAAABDQAAJ6XIIo6elUiGUtKRYmPmMAAAqFKTMQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGVhNzFkMGJiLTQzY2EtNGVlOC05YmFiLTI1NjdlNDQxNDI4NQAuAAAAAABRuA+MX9r4SoyzEoTyG1gcAQAnpcgijp6VSIZS0pFiY+YwAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-06T18:00:00+02:00",
+      "End": "2026-01-06T20:00:00+02:00",
+      "Subject": "Curs+Aplicati",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - CONS Bar - Sala 115",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-13T18:00:00+02:00",
+    "end": "2026-01-13T20:00:00+02:00",
+    "title": "Curs+aplicati",
+    "location": "UTCN - CONS Bar - Sala 115",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAnpcgijp6VSIZS0pFiY+YwAACrB5A8",
+        "Id": "AAMkAGVhNzFkMGJiLTQzY2EtNGVlOC05YmFiLTI1NjdlNDQxNDI4NQFRAAgI3lI2se0AAEYAAAAAUbgPjF/a+EqMsxKE8htYHAcAJ6XIIo6elUiGUtKRYmPmMAAAAAABDQAAJ6XIIo6elUiGUtKRYmPmMAAAqFKTMQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGVhNzFkMGJiLTQzY2EtNGVlOC05YmFiLTI1NjdlNDQxNDI4NQAuAAAAAABRuA+MX9r4SoyzEoTyG1gcAQAnpcgijp6VSIZS0pFiY+YwAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-13T18:00:00+02:00",
+      "End": "2026-01-13T20:00:00+02:00",
+      "Subject": "Curs+Aplicati",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - CONS Bar - Sala 115",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-20T18:00:00+02:00",
+    "end": "2026-01-20T20:00:00+02:00",
+    "title": "Curs+aplicati",
+    "location": "UTCN - CONS Bar - Sala 115",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAnpcgijp6VSIZS0pFiY+YwAACrB5A8",
+        "Id": "AAMkAGVhNzFkMGJiLTQzY2EtNGVlOC05YmFiLTI1NjdlNDQxNDI4NQFRAAgI3le22tFAAEYAAAAAUbgPjF/a+EqMsxKE8htYHAcAJ6XIIo6elUiGUtKRYmPmMAAAAAABDQAAJ6XIIo6elUiGUtKRYmPmMAAAqFKTMQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGVhNzFkMGJiLTQzY2EtNGVlOC05YmFiLTI1NjdlNDQxNDI4NQAuAAAAAABRuA+MX9r4SoyzEoTyG1gcAQAnpcgijp6VSIZS0pFiY+YwAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-20T18:00:00+02:00",
+      "End": "2026-01-20T20:00:00+02:00",
+      "Subject": "Curs+Aplicati",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - CONS Bar - Sala 115",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-02T18:00:00+02:00",
+    "end": "2025-12-02T20:00:00+02:00",
+    "title": "Curs+aplicati",
+    "location": "UTCN - CONS Bar - Sala 115",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAnpcgijp6VSIZS0pFiY+YwAACrB5A8",
+        "Id": "AAMkAGVhNzFkMGJiLTQzY2EtNGVlOC05YmFiLTI1NjdlNDQxNDI4NQFRAAgI3jE1vJOAAEYAAAAAUbgPjF/a+EqMsxKE8htYHAcAJ6XIIo6elUiGUtKRYmPmMAAAAAABDQAAJ6XIIo6elUiGUtKRYmPmMAAAqFKTMQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGVhNzFkMGJiLTQzY2EtNGVlOC05YmFiLTI1NjdlNDQxNDI4NQAuAAAAAABRuA+MX9r4SoyzEoTyG1gcAQAnpcgijp6VSIZS0pFiY+YwAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-02T18:00:00+02:00",
+      "End": "2025-12-02T20:00:00+02:00",
+      "Subject": "Curs+Aplicati",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - CONS Bar - Sala 115",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-09T18:00:00+02:00",
+    "end": "2025-12-09T20:00:00+02:00",
+    "title": "Curs+aplicati",
+    "location": "UTCN - CONS Bar - Sala 115",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAnpcgijp6VSIZS0pFiY+YwAACrB5A8",
+        "Id": "AAMkAGVhNzFkMGJiLTQzY2EtNGVlOC05YmFiLTI1NjdlNDQxNDI4NQFRAAgI3ja15XfAAEYAAAAAUbgPjF/a+EqMsxKE8htYHAcAJ6XIIo6elUiGUtKRYmPmMAAAAAABDQAAJ6XIIo6elUiGUtKRYmPmMAAAqFKTMQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGVhNzFkMGJiLTQzY2EtNGVlOC05YmFiLTI1NjdlNDQxNDI4NQAuAAAAAABRuA+MX9r4SoyzEoTyG1gcAQAnpcgijp6VSIZS0pFiY+YwAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-09T18:00:00+02:00",
+      "End": "2025-12-09T20:00:00+02:00",
+      "Subject": "Curs+Aplicati",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - CONS Bar - Sala 115",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-16T18:00:00+02:00",
+    "end": "2025-12-16T20:00:00+02:00",
+    "title": "Curs+aplicati",
+    "location": "UTCN - CONS Bar - Sala 115",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAnpcgijp6VSIZS0pFiY+YwAACrB5A8",
+        "Id": "AAMkAGVhNzFkMGJiLTQzY2EtNGVlOC05YmFiLTI1NjdlNDQxNDI4NQFRAAgI3jw2DlwAAEYAAAAAUbgPjF/a+EqMsxKE8htYHAcAJ6XIIo6elUiGUtKRYmPmMAAAAAABDQAAJ6XIIo6elUiGUtKRYmPmMAAAqFKTMQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGVhNzFkMGJiLTQzY2EtNGVlOC05YmFiLTI1NjdlNDQxNDI4NQAuAAAAAABRuA+MX9r4SoyzEoTyG1gcAQAnpcgijp6VSIZS0pFiY+YwAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-16T18:00:00+02:00",
+      "End": "2025-12-16T20:00:00+02:00",
+      "Subject": "Curs+Aplicati",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - CONS Bar - Sala 115",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-23T18:00:00+02:00",
+    "end": "2025-12-23T20:00:00+02:00",
+    "title": "Curs+aplicati",
+    "location": "UTCN - CONS Bar - Sala 115",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAnpcgijp6VSIZS0pFiY+YwAACrB5A8",
+        "Id": "AAMkAGVhNzFkMGJiLTQzY2EtNGVlOC05YmFiLTI1NjdlNDQxNDI4NQFRAAgI3kG2N0BAAEYAAAAAUbgPjF/a+EqMsxKE8htYHAcAJ6XIIo6elUiGUtKRYmPmMAAAAAABDQAAJ6XIIo6elUiGUtKRYmPmMAAAqFKTMQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGVhNzFkMGJiLTQzY2EtNGVlOC05YmFiLTI1NjdlNDQxNDI4NQAuAAAAAABRuA+MX9r4SoyzEoTyG1gcAQAnpcgijp6VSIZS0pFiY+YwAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-23T18:00:00+02:00",
+      "End": "2025-12-23T20:00:00+02:00",
+      "Subject": "Curs+Aplicati",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - CONS Bar - Sala 115",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  }
+]

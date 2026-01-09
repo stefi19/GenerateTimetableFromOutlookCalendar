@@ -1,0 +1,43 @@
+[
+  {
+    "start": "2025-12-11T12:00:00+02:00",
+    "end": "2025-12-11T15:00:00+02:00",
+    "title": "Sedinta Senat 11 Decembrie",
+    "location": "UTCN - Aula Domsa; UTCN - CUNBM Victor Babes 62A - Sala A4",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADlLC0agWmYRpvc3RxoNmGpAADXiaci",
+        "Id": "AAMkADA2ZDU4YmI2LWM1OGMtNDJjZC05MmIyLTJiYzcwMDg5ZTZjOQBGAAAAAAA9YdUT3CNcQ5KQxY5HplSiBwDlLC0agWmYRpvc3RxoNmGpAAAAAAENAADlLC0agWmYRpvc3RxoNmGpAADXfoDKAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADA2ZDU4YmI2LWM1OGMtNDJjZC05MmIyLTJiYzcwMDg5ZTZjOQAuAAAAAAA9YdUT3CNcQ5KQxY5HplSiAQDlLC0agWmYRpvc3RxoNmGpAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-11T12:00:00+02:00",
+      "End": "2025-12-11T15:00:00+02:00",
+      "Subject": "Sedinta Senat 11 decembrie",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - Aula Domsa; UTCN - CUNBM Victor Babes 62A - Sala A4",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  }
+]

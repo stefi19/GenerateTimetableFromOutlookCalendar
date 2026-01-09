@@ -1,0 +1,1314 @@
+[
+  {
+    "start": "2025-12-29T08:00:00+02:00",
+    "end": "2025-12-29T12:00:00+02:00",
+    "title": "EMD - Room laboratory",
+    "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA9Me6pPkBbRqffL069OasHAADYiy+U",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAFRAAgI3kZtNbrAAEYAAAAAVMRKxGvmJkqi5bI1lqvQygcAPTHuqT5AW0an3y9OvTmrBwAAAAABDQAAPTHuqT5AW0an3y9OvTmrBwAAsO4dbwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAAuAAAAAABUxErEa+YmSqLlsjWWq9DKAQA9Me6pPkBbRqffL069OasHAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-29T08:00:00+02:00",
+      "End": "2025-12-29T12:00:00+02:00",
+      "Subject": "EMD laboratory",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-29T12:00:00+02:00",
+    "end": "2025-12-29T16:00:00+02:00",
+    "title": "Me Ii, 1431",
+    "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA9Me6pPkBbRqffL069OasHAADYiy+V",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAFRAAgI3kZtNbrAAEYAAAAAVMRKxGvmJkqi5bI1lqvQygcAPTHuqT5AW0an3y9OvTmrBwAAAAABDQAAPTHuqT5AW0an3y9OvTmrBwAAsO4dcAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAAuAAAAAABUxErEa+YmSqLlsjWWq9DKAQA9Me6pPkBbRqffL069OasHAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-29T12:00:00+02:00",
+      "End": "2025-12-29T16:00:00+02:00",
+      "Subject": "ME II, 1431",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-01T08:00:00+02:00",
+    "end": "2026-01-01T12:00:00+02:00",
+    "title": "Me Ii",
+    "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA9Me6pPkBbRqffL069OasHAADYiy/5",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAFRAAgI3kjItPgAAEYAAAAAVMRKxGvmJkqi5bI1lqvQygcAPTHuqT5AW0an3y9OvTmrBwAAAAABDQAAPTHuqT5AW0an3y9OvTmrBwAAsO4dcQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAAuAAAAAABUxErEa+YmSqLlsjWWq9DKAQA9Me6pPkBbRqffL069OasHAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-01T08:00:00+02:00",
+      "End": "2026-01-01T12:00:00+02:00",
+      "Subject": "ME II- 1131",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-01T12:00:00+02:00",
+    "end": "2026-01-01T16:00:00+02:00",
+    "title": "Me Ii",
+    "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA9Me6pPkBbRqffL069OasHAADYiy/6",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAFRAAgI3kjItPgAAEYAAAAAVMRKxGvmJkqi5bI1lqvQygcAPTHuqT5AW0an3y9OvTmrBwAAAAABDQAAPTHuqT5AW0an3y9OvTmrBwAAsO4dcgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAAuAAAAAABUxErEa+YmSqLlsjWWq9DKAQA9Me6pPkBbRqffL069OasHAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-01T12:00:00+02:00",
+      "End": "2026-01-01T16:00:00+02:00",
+      "Subject": "ME II- 1331",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-05T08:00:00+02:00",
+    "end": "2026-01-05T12:00:00+02:00",
+    "title": "EMD - Room laboratory",
+    "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA9Me6pPkBbRqffL069OasHAADYiy+U",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAFRAAgI3kvtXp8AAEYAAAAAVMRKxGvmJkqi5bI1lqvQygcAPTHuqT5AW0an3y9OvTmrBwAAAAABDQAAPTHuqT5AW0an3y9OvTmrBwAAsO4dbwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAAuAAAAAABUxErEa+YmSqLlsjWWq9DKAQA9Me6pPkBbRqffL069OasHAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-05T08:00:00+02:00",
+      "End": "2026-01-05T12:00:00+02:00",
+      "Subject": "EMD laboratory",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-05T12:00:00+02:00",
+    "end": "2026-01-05T16:00:00+02:00",
+    "title": "Me Ii, 1431",
+    "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA9Me6pPkBbRqffL069OasHAADYiy+V",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAFRAAgI3kvtXp8AAEYAAAAAVMRKxGvmJkqi5bI1lqvQygcAPTHuqT5AW0an3y9OvTmrBwAAAAABDQAAPTHuqT5AW0an3y9OvTmrBwAAsO4dcAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAAuAAAAAABUxErEa+YmSqLlsjWWq9DKAQA9Me6pPkBbRqffL069OasHAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-05T12:00:00+02:00",
+      "End": "2026-01-05T16:00:00+02:00",
+      "Subject": "ME II, 1431",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-08T08:00:00+02:00",
+    "end": "2026-01-08T12:00:00+02:00",
+    "title": "Me Ii",
+    "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA9Me6pPkBbRqffL069OasHAADYiy/5",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAFRAAgI3k5I3dxAAEYAAAAAVMRKxGvmJkqi5bI1lqvQygcAPTHuqT5AW0an3y9OvTmrBwAAAAABDQAAPTHuqT5AW0an3y9OvTmrBwAAsO4dcQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAAuAAAAAABUxErEa+YmSqLlsjWWq9DKAQA9Me6pPkBbRqffL069OasHAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-08T08:00:00+02:00",
+      "End": "2026-01-08T12:00:00+02:00",
+      "Subject": "ME II- 1131",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-08T12:00:00+02:00",
+    "end": "2026-01-08T16:00:00+02:00",
+    "title": "Me Ii",
+    "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA9Me6pPkBbRqffL069OasHAADYiy/6",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAFRAAgI3k5I3dxAAEYAAAAAVMRKxGvmJkqi5bI1lqvQygcAPTHuqT5AW0an3y9OvTmrBwAAAAABDQAAPTHuqT5AW0an3y9OvTmrBwAAsO4dcgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAAuAAAAAABUxErEa+YmSqLlsjWWq9DKAQA9Me6pPkBbRqffL069OasHAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-08T12:00:00+02:00",
+      "End": "2026-01-08T16:00:00+02:00",
+      "Subject": "ME II- 1331",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-12T08:00:00+02:00",
+    "end": "2026-01-12T12:00:00+02:00",
+    "title": "EMD - Room laboratory",
+    "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA9Me6pPkBbRqffL069OasHAADYiy+U",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAFRAAgI3lFth4NAAEYAAAAAVMRKxGvmJkqi5bI1lqvQygcAPTHuqT5AW0an3y9OvTmrBwAAAAABDQAAPTHuqT5AW0an3y9OvTmrBwAAsO4dbwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAAuAAAAAABUxErEa+YmSqLlsjWWq9DKAQA9Me6pPkBbRqffL069OasHAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-12T08:00:00+02:00",
+      "End": "2026-01-12T12:00:00+02:00",
+      "Subject": "EMD laboratory",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-12T12:00:00+02:00",
+    "end": "2026-01-12T16:00:00+02:00",
+    "title": "Me Ii, 1431",
+    "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA9Me6pPkBbRqffL069OasHAADYiy+V",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAFRAAgI3lFth4NAAEYAAAAAVMRKxGvmJkqi5bI1lqvQygcAPTHuqT5AW0an3y9OvTmrBwAAAAABDQAAPTHuqT5AW0an3y9OvTmrBwAAsO4dcAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAAuAAAAAABUxErEa+YmSqLlsjWWq9DKAQA9Me6pPkBbRqffL069OasHAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-12T12:00:00+02:00",
+      "End": "2026-01-12T16:00:00+02:00",
+      "Subject": "ME II, 1431",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-15T08:00:00+02:00",
+    "end": "2026-01-15T12:00:00+02:00",
+    "title": "Me Ii",
+    "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA9Me6pPkBbRqffL069OasHAADYiy/5",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAFRAAgI3lPJBsCAAEYAAAAAVMRKxGvmJkqi5bI1lqvQygcAPTHuqT5AW0an3y9OvTmrBwAAAAABDQAAPTHuqT5AW0an3y9OvTmrBwAAsO4dcQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAAuAAAAAABUxErEa+YmSqLlsjWWq9DKAQA9Me6pPkBbRqffL069OasHAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-15T08:00:00+02:00",
+      "End": "2026-01-15T12:00:00+02:00",
+      "Subject": "ME II- 1131",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-15T12:00:00+02:00",
+    "end": "2026-01-15T16:00:00+02:00",
+    "title": "Me Ii",
+    "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA9Me6pPkBbRqffL069OasHAADYiy/6",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAFRAAgI3lPJBsCAAEYAAAAAVMRKxGvmJkqi5bI1lqvQygcAPTHuqT5AW0an3y9OvTmrBwAAAAABDQAAPTHuqT5AW0an3y9OvTmrBwAAsO4dcgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAAuAAAAAABUxErEa+YmSqLlsjWWq9DKAQA9Me6pPkBbRqffL069OasHAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-15T12:00:00+02:00",
+      "End": "2026-01-15T16:00:00+02:00",
+      "Subject": "ME II- 1331",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-19T08:00:00+02:00",
+    "end": "2026-01-19T12:00:00+02:00",
+    "title": "EMD - Room laboratory",
+    "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA9Me6pPkBbRqffL069OasHAADYiy+U",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAFRAAgI3lbtsGeAAEYAAAAAVMRKxGvmJkqi5bI1lqvQygcAPTHuqT5AW0an3y9OvTmrBwAAAAABDQAAPTHuqT5AW0an3y9OvTmrBwAAsO4dbwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAAuAAAAAABUxErEa+YmSqLlsjWWq9DKAQA9Me6pPkBbRqffL069OasHAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-19T08:00:00+02:00",
+      "End": "2026-01-19T12:00:00+02:00",
+      "Subject": "EMD laboratory",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-19T12:00:00+02:00",
+    "end": "2026-01-19T16:00:00+02:00",
+    "title": "Me Ii, 1431",
+    "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA9Me6pPkBbRqffL069OasHAADYiy+V",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAFRAAgI3lbtsGeAAEYAAAAAVMRKxGvmJkqi5bI1lqvQygcAPTHuqT5AW0an3y9OvTmrBwAAAAABDQAAPTHuqT5AW0an3y9OvTmrBwAAsO4dcAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAAuAAAAAABUxErEa+YmSqLlsjWWq9DKAQA9Me6pPkBbRqffL069OasHAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-19T12:00:00+02:00",
+      "End": "2026-01-19T16:00:00+02:00",
+      "Subject": "ME II, 1431",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-22T08:00:00+02:00",
+    "end": "2026-01-22T12:00:00+02:00",
+    "title": "Me Ii",
+    "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA9Me6pPkBbRqffL069OasHAADYiy/5",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAFRAAgI3llJL6TAAEYAAAAAVMRKxGvmJkqi5bI1lqvQygcAPTHuqT5AW0an3y9OvTmrBwAAAAABDQAAPTHuqT5AW0an3y9OvTmrBwAAsO4dcQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAAuAAAAAABUxErEa+YmSqLlsjWWq9DKAQA9Me6pPkBbRqffL069OasHAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-22T08:00:00+02:00",
+      "End": "2026-01-22T12:00:00+02:00",
+      "Subject": "ME II- 1131",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-22T12:00:00+02:00",
+    "end": "2026-01-22T16:00:00+02:00",
+    "title": "Me Ii",
+    "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA9Me6pPkBbRqffL069OasHAADYiy/6",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAFRAAgI3llJL6TAAEYAAAAAVMRKxGvmJkqi5bI1lqvQygcAPTHuqT5AW0an3y9OvTmrBwAAAAABDQAAPTHuqT5AW0an3y9OvTmrBwAAsO4dcgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAAuAAAAAABUxErEa+YmSqLlsjWWq9DKAQA9Me6pPkBbRqffL069OasHAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-22T12:00:00+02:00",
+      "End": "2026-01-22T16:00:00+02:00",
+      "Subject": "ME II- 1331",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-26T08:00:00+02:00",
+    "end": "2026-01-26T12:00:00+02:00",
+    "title": "EMD - Room laboratory",
+    "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA9Me6pPkBbRqffL069OasHAADYiy+U",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAFRAAgI3lxt2UvAAEYAAAAAVMRKxGvmJkqi5bI1lqvQygcAPTHuqT5AW0an3y9OvTmrBwAAAAABDQAAPTHuqT5AW0an3y9OvTmrBwAAsO4dbwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAAuAAAAAABUxErEa+YmSqLlsjWWq9DKAQA9Me6pPkBbRqffL069OasHAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-26T08:00:00+02:00",
+      "End": "2026-01-26T12:00:00+02:00",
+      "Subject": "EMD laboratory",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-26T12:00:00+02:00",
+    "end": "2026-01-26T16:00:00+02:00",
+    "title": "Me Ii, 1431",
+    "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA9Me6pPkBbRqffL069OasHAADYiy+V",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAFRAAgI3lxt2UvAAEYAAAAAVMRKxGvmJkqi5bI1lqvQygcAPTHuqT5AW0an3y9OvTmrBwAAAAABDQAAPTHuqT5AW0an3y9OvTmrBwAAsO4dcAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAAuAAAAAABUxErEa+YmSqLlsjWWq9DKAQA9Me6pPkBbRqffL069OasHAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-26T12:00:00+02:00",
+      "End": "2026-01-26T16:00:00+02:00",
+      "Subject": "ME II, 1431",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-29T08:00:00+02:00",
+    "end": "2026-01-29T12:00:00+02:00",
+    "title": "Me Ii",
+    "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA9Me6pPkBbRqffL069OasHAADYiy/5",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAFRAAgI3l7JWIkAAEYAAAAAVMRKxGvmJkqi5bI1lqvQygcAPTHuqT5AW0an3y9OvTmrBwAAAAABDQAAPTHuqT5AW0an3y9OvTmrBwAAsO4dcQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAAuAAAAAABUxErEa+YmSqLlsjWWq9DKAQA9Me6pPkBbRqffL069OasHAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-29T08:00:00+02:00",
+      "End": "2026-01-29T12:00:00+02:00",
+      "Subject": "ME II- 1131",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-29T12:00:00+02:00",
+    "end": "2026-01-29T16:00:00+02:00",
+    "title": "Me Ii",
+    "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA9Me6pPkBbRqffL069OasHAADYiy/6",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAFRAAgI3l7JWIkAAEYAAAAAVMRKxGvmJkqi5bI1lqvQygcAPTHuqT5AW0an3y9OvTmrBwAAAAABDQAAPTHuqT5AW0an3y9OvTmrBwAAsO4dcgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAAuAAAAAABUxErEa+YmSqLlsjWWq9DKAQA9Me6pPkBbRqffL069OasHAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-29T12:00:00+02:00",
+      "End": "2026-01-29T16:00:00+02:00",
+      "Subject": "ME II- 1331",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-01T08:00:00+02:00",
+    "end": "2025-12-01T12:00:00+02:00",
+    "title": "EMD - Room laboratory",
+    "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA9Me6pPkBbRqffL069OasHAADYiy+U",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAFRAAgI3jBskinAAEYAAAAAVMRKxGvmJkqi5bI1lqvQygcAPTHuqT5AW0an3y9OvTmrBwAAAAABDQAAPTHuqT5AW0an3y9OvTmrBwAAsO4dbwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAAuAAAAAABUxErEa+YmSqLlsjWWq9DKAQA9Me6pPkBbRqffL069OasHAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-01T08:00:00+02:00",
+      "End": "2025-12-01T12:00:00+02:00",
+      "Subject": "EMD laboratory",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-01T12:00:00+02:00",
+    "end": "2025-12-01T16:00:00+02:00",
+    "title": "Me Ii, 1431",
+    "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA9Me6pPkBbRqffL069OasHAADYiy+V",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAFRAAgI3jBskinAAEYAAAAAVMRKxGvmJkqi5bI1lqvQygcAPTHuqT5AW0an3y9OvTmrBwAAAAABDQAAPTHuqT5AW0an3y9OvTmrBwAAsO4dcAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAAuAAAAAABUxErEa+YmSqLlsjWWq9DKAQA9Me6pPkBbRqffL069OasHAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-01T12:00:00+02:00",
+      "End": "2025-12-01T16:00:00+02:00",
+      "Subject": "ME II, 1431",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-04T08:00:00+02:00",
+    "end": "2025-12-04T12:00:00+02:00",
+    "title": "Me Ii",
+    "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA9Me6pPkBbRqffL069OasHAADYiy/5",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAFRAAgI3jLIEWcAAEYAAAAAVMRKxGvmJkqi5bI1lqvQygcAPTHuqT5AW0an3y9OvTmrBwAAAAABDQAAPTHuqT5AW0an3y9OvTmrBwAAsO4dcQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAAuAAAAAABUxErEa+YmSqLlsjWWq9DKAQA9Me6pPkBbRqffL069OasHAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-04T08:00:00+02:00",
+      "End": "2025-12-04T12:00:00+02:00",
+      "Subject": "ME II- 1131",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-04T12:00:00+02:00",
+    "end": "2025-12-04T16:00:00+02:00",
+    "title": "Me Ii",
+    "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA9Me6pPkBbRqffL069OasHAADYiy/6",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAFRAAgI3jLIEWcAAEYAAAAAVMRKxGvmJkqi5bI1lqvQygcAPTHuqT5AW0an3y9OvTmrBwAAAAABDQAAPTHuqT5AW0an3y9OvTmrBwAAsO4dcgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAAuAAAAAABUxErEa+YmSqLlsjWWq9DKAQA9Me6pPkBbRqffL069OasHAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-04T12:00:00+02:00",
+      "End": "2025-12-04T16:00:00+02:00",
+      "Subject": "ME II- 1331",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-08T08:00:00+02:00",
+    "end": "2025-12-08T12:00:00+02:00",
+    "title": "EMD - Room laboratory",
+    "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA9Me6pPkBbRqffL069OasHAADYiy+U",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAFRAAgI3jXsuw4AAEYAAAAAVMRKxGvmJkqi5bI1lqvQygcAPTHuqT5AW0an3y9OvTmrBwAAAAABDQAAPTHuqT5AW0an3y9OvTmrBwAAsO4dbwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAAuAAAAAABUxErEa+YmSqLlsjWWq9DKAQA9Me6pPkBbRqffL069OasHAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-08T08:00:00+02:00",
+      "End": "2025-12-08T12:00:00+02:00",
+      "Subject": "EMD laboratory",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-08T12:00:00+02:00",
+    "end": "2025-12-08T16:00:00+02:00",
+    "title": "Me Ii, 1431",
+    "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA9Me6pPkBbRqffL069OasHAADYiy+V",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAFRAAgI3jXsuw4AAEYAAAAAVMRKxGvmJkqi5bI1lqvQygcAPTHuqT5AW0an3y9OvTmrBwAAAAABDQAAPTHuqT5AW0an3y9OvTmrBwAAsO4dcAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAAuAAAAAABUxErEa+YmSqLlsjWWq9DKAQA9Me6pPkBbRqffL069OasHAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-08T12:00:00+02:00",
+      "End": "2025-12-08T16:00:00+02:00",
+      "Subject": "ME II, 1431",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-11T08:00:00+02:00",
+    "end": "2025-12-11T12:00:00+02:00",
+    "title": "Me Ii",
+    "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA9Me6pPkBbRqffL069OasHAADYiy/5",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAFRAAgI3jhIOktAAEYAAAAAVMRKxGvmJkqi5bI1lqvQygcAPTHuqT5AW0an3y9OvTmrBwAAAAABDQAAPTHuqT5AW0an3y9OvTmrBwAAsO4dcQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAAuAAAAAABUxErEa+YmSqLlsjWWq9DKAQA9Me6pPkBbRqffL069OasHAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-11T08:00:00+02:00",
+      "End": "2025-12-11T12:00:00+02:00",
+      "Subject": "ME II- 1131",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-11T12:00:00+02:00",
+    "end": "2025-12-11T16:00:00+02:00",
+    "title": "Me Ii",
+    "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA9Me6pPkBbRqffL069OasHAADYiy/6",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAFRAAgI3jhIOktAAEYAAAAAVMRKxGvmJkqi5bI1lqvQygcAPTHuqT5AW0an3y9OvTmrBwAAAAABDQAAPTHuqT5AW0an3y9OvTmrBwAAsO4dcgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAAuAAAAAABUxErEa+YmSqLlsjWWq9DKAQA9Me6pPkBbRqffL069OasHAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-11T12:00:00+02:00",
+      "End": "2025-12-11T16:00:00+02:00",
+      "Subject": "ME II- 1331",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-15T08:00:00+02:00",
+    "end": "2025-12-15T12:00:00+02:00",
+    "title": "EMD - Room laboratory",
+    "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA9Me6pPkBbRqffL069OasHAADYiy+U",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAFRAAgI3jts4/JAAEYAAAAAVMRKxGvmJkqi5bI1lqvQygcAPTHuqT5AW0an3y9OvTmrBwAAAAABDQAAPTHuqT5AW0an3y9OvTmrBwAAsO4dbwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAAuAAAAAABUxErEa+YmSqLlsjWWq9DKAQA9Me6pPkBbRqffL069OasHAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-15T08:00:00+02:00",
+      "End": "2025-12-15T12:00:00+02:00",
+      "Subject": "EMD laboratory",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-15T12:00:00+02:00",
+    "end": "2025-12-15T16:00:00+02:00",
+    "title": "Me Ii, 1431",
+    "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA9Me6pPkBbRqffL069OasHAADYiy+V",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAFRAAgI3jts4/JAAEYAAAAAVMRKxGvmJkqi5bI1lqvQygcAPTHuqT5AW0an3y9OvTmrBwAAAAABDQAAPTHuqT5AW0an3y9OvTmrBwAAsO4dcAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAAuAAAAAABUxErEa+YmSqLlsjWWq9DKAQA9Me6pPkBbRqffL069OasHAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-15T12:00:00+02:00",
+      "End": "2025-12-15T16:00:00+02:00",
+      "Subject": "ME II, 1431",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-18T08:00:00+02:00",
+    "end": "2025-12-18T12:00:00+02:00",
+    "title": "Me Ii",
+    "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA9Me6pPkBbRqffL069OasHAADYiy/5",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAFRAAgI3j3IYy+AAEYAAAAAVMRKxGvmJkqi5bI1lqvQygcAPTHuqT5AW0an3y9OvTmrBwAAAAABDQAAPTHuqT5AW0an3y9OvTmrBwAAsO4dcQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAAuAAAAAABUxErEa+YmSqLlsjWWq9DKAQA9Me6pPkBbRqffL069OasHAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-18T08:00:00+02:00",
+      "End": "2025-12-18T12:00:00+02:00",
+      "Subject": "ME II- 1131",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-18T12:00:00+02:00",
+    "end": "2025-12-18T16:00:00+02:00",
+    "title": "Me Ii",
+    "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA9Me6pPkBbRqffL069OasHAADYiy/6",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAFRAAgI3j3IYy+AAEYAAAAAVMRKxGvmJkqi5bI1lqvQygcAPTHuqT5AW0an3y9OvTmrBwAAAAABDQAAPTHuqT5AW0an3y9OvTmrBwAAsO4dcgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGU0ODBkYmMxLTEwNmYtNDE2Yy04ODlmLWJiNTM5OGY3OTZkOAAuAAAAAABUxErEa+YmSqLlsjWWq9DKAQA9Me6pPkBbRqffL069OasHAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-18T12:00:00+02:00",
+      "End": "2025-12-18T16:00:00+02:00",
+      "Subject": "ME II- 1331",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  }
+]

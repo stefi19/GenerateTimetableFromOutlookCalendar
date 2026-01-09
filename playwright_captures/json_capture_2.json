@@ -3,7 +3,7 @@
     "ServerVersionInfo": {
       "MajorVersion": 15,
       "MinorVersion": 20,
-      "MajorBuildNumber": 9478,
+      "MajorBuildNumber": 9499,
       "MinorBuildNumber": 4,
       "Version": "V2018_01_18"
     }
@@ -16,80 +16,9 @@
           "__type": "FindItemResponseMessage:#Exchange",
           "RootFolder": {
             "__type": "FindItemParentWrapper:#Exchange",
-            "Items": [
-              {
-                "__type": "CalendarItem:#Exchange",
-                "ItemId": {
-                  "__type": "ItemId:#Exchange",
-                  "ChangeKey": "DwAAABYAAAAevbZTnpOlSYOkK90O01zvAAuIeys0",
-                  "Id": "AAMkADdlYWU3NzAyLWRkZmYtNDE4ZC1iZjlhLWEwZTgwMmQ5NDNmNABGAAAAAAAqaN7mkKeeQIShS3M8ztuEBwAevbZTnpOlSYOkK90O01zvAAuK3lThAAAevbZTnpOlSYOkK90O01zvAAuK36H5AAA="
-                },
-                "ParentFolderId": {
-                  "__type": "FolderId:#Exchange",
-                  "Id": "AAMkADdlYWU3NzAyLWRkZmYtNDE4ZC1iZjlhLWEwZTgwMmQ5NDNmNAAuAAAAAAAqaN7mkKeeQIShS3M8ztuEAQAevbZTnpOlSYOkK90O01zvAAuK3lThAAA=",
-                  "ChangeKey": "AQAAAA=="
-                },
-                "Start": "2026-01-26T08:00:00+02:00",
-                "End": "2026-01-26T11:00:00+02:00",
-                "Subject": "Computer Programming",
-                "Sensitivity": "Normal",
-                "FreeBusyType": "Busy",
-                "CalendarItemType": "Single",
-                "Location": {
-                  "DisplayName": "Microsoft Teams Meeting",
-                  "PostalAddress": {
-                    "Street": null,
-                    "City": null,
-                    "State": null,
-                    "Country": null,
-                    "PostalCode": null,
-                    "PostOfficeBox": null,
-                    "Type": "Home",
-                    "LocationSource": "None"
-                  },
-                  "IdType": "Unknown",
-                  "LocationType": "Unknown"
-                },
-                "Charm": "None"
-              },
-              {
-                "__type": "CalendarItem:#Exchange",
-                "ItemId": {
-                  "__type": "ItemId:#Exchange",
-                  "ChangeKey": "DwAAABYAAAAevbZTnpOlSYOkK90O01zvAAuIeyrF",
-                  "Id": "AAMkADdlYWU3NzAyLWRkZmYtNDE4ZC1iZjlhLWEwZTgwMmQ5NDNmNABGAAAAAAAqaN7mkKeeQIShS3M8ztuEBwAevbZTnpOlSYOkK90O01zvAAuK3lThAAAevbZTnpOlSYOkK90O01zvAAuK36H0AAA="
-                },
-                "ParentFolderId": {
-                  "__type": "FolderId:#Exchange",
-                  "Id": "AAMkADdlYWU3NzAyLWRkZmYtNDE4ZC1iZjlhLWEwZTgwMmQ5NDNmNAAuAAAAAAAqaN7mkKeeQIShS3M8ztuEAQAevbZTnpOlSYOkK90O01zvAAuK3lThAAA=",
-                  "ChangeKey": "AQAAAA=="
-                },
-                "Start": "2026-01-31T08:00:00+02:00",
-                "End": "2026-01-31T11:00:00+02:00",
-                "Subject": "Mathematical Analysis I [In-person]",
-                "Sensitivity": "Normal",
-                "FreeBusyType": "Busy",
-                "CalendarItemType": "Single",
-                "Location": {
-                  "DisplayName": "UTCN - AC BAR - SALA 40",
-                  "PostalAddress": {
-                    "Street": null,
-                    "City": null,
-                    "State": null,
-                    "Country": null,
-                    "PostalCode": null,
-                    "PostOfficeBox": null,
-                    "Type": "Home",
-                    "LocationSource": "None"
-                  },
-                  "IdType": "Unknown",
-                  "LocationType": "Unknown"
-                },
-                "Charm": "None"
-              }
-            ],
+            "Items": [],
             "Groups": null,
-            "TotalItemsInView": 2,
+            "TotalItemsInView": 0,
             "IncludesLastItemInRange": true
           },
           "HighlightTerms": null,

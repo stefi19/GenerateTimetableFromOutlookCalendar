@@ -1,0 +1,125 @@
+[
+  {
+    "start": "2025-12-02T16:00:00+02:00",
+    "end": "2025-12-02T18:00:00+02:00",
+    "title": "[etti",
+    "location": "UTCN - IE Bar - Sala D22",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAClLTiW8MUuToQH8H6NWZzYAADL+0FJ",
+        "Id": "AAMkAGJjNjI5M2RjLWYyYWMtNDk0Yi04OTE5LTEwZThiMjkwMzEwMABGAAAAAACurkyetVwtSrufJ5YQi6ahBwClLTiW8MUuToQH8H6NWZzYAAAAAAENAAClLTiW8MUuToQH8H6NWZzYAADL52LgAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGJjNjI5M2RjLWYyYWMtNDk0Yi04OTE5LTEwZThiMjkwMzEwMAAuAAAAAACurkyetVwtSrufJ5YQi6ahAQClLTiW8MUuToQH8H6NWZzYAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-02T16:00:00+02:00",
+      "End": "2025-12-02T18:00:00+02:00",
+      "Subject": "[ETTI-anIV-TST]DMI - C5",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - IE Bar - Sala D22",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-09T16:00:00+02:00",
+    "end": "2025-12-09T18:00:00+02:00",
+    "title": "[etti",
+    "location": "UTCN - IE Bar - Sala D22",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAClLTiW8MUuToQH8H6NWZzYAADRztFT",
+        "Id": "AAMkAGJjNjI5M2RjLWYyYWMtNDk0Yi04OTE5LTEwZThiMjkwMzEwMABGAAAAAACurkyetVwtSrufJ5YQi6ahBwClLTiW8MUuToQH8H6NWZzYAAAAAAENAAClLTiW8MUuToQH8H6NWZzYAADRuvrYAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGJjNjI5M2RjLWYyYWMtNDk0Yi04OTE5LTEwZThiMjkwMzEwMAAuAAAAAACurkyetVwtSrufJ5YQi6ahAQClLTiW8MUuToQH8H6NWZzYAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-09T16:00:00+02:00",
+      "End": "2025-12-09T18:00:00+02:00",
+      "Subject": "[ETTI-anIV-TST]DMI - C5.2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - IE Bar - Sala D22",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2025-12-16T16:30:00+02:00",
+    "end": "2025-12-16T18:00:00+02:00",
+    "title": "[etti",
+    "location": "UTCN - IE Bar - Sala D22",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAClLTiW8MUuToQH8H6NWZzYAADV9+lh",
+        "Id": "AAMkAGJjNjI5M2RjLWYyYWMtNDk0Yi04OTE5LTEwZThiMjkwMzEwMABGAAAAAACurkyetVwtSrufJ5YQi6ahBwClLTiW8MUuToQH8H6NWZzYAAAAAAENAAClLTiW8MUuToQH8H6NWZzYAADV5BTwAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGJjNjI5M2RjLWYyYWMtNDk0Yi04OTE5LTEwZThiMjkwMzEwMAAuAAAAAACurkyetVwtSrufJ5YQi6ahAQClLTiW8MUuToQH8H6NWZzYAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2025-12-16T16:30:00+02:00",
+      "End": "2025-12-16T18:00:00+02:00",
+      "Subject": "[ETTI-anIV-TST]DMI - C6",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - IE Bar - Sala D22",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  }
+]
