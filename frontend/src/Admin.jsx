@@ -4,6 +4,7 @@ const COLORS = ['#003366', '#0066cc', '#28a745', '#dc3545', '#fd7e14', '#6f42c1'
 
 export default function Admin() {
   const [calendars, setCalendars] = useState([])
+  const [editingCalendar, setEditingCalendar] = useState(null)
   // manual events UI removed per request
   const [loading, setLoading] = useState(true)
   const [importing, setImporting] = useState(false)
@@ -184,13 +185,54 @@ export default function Admin() {
                     ))}
                   </div>
                   <div className="calendar-info">
-                        <strong>{cal.name || 'Calendar ' + (idx + 1)}</strong>
-                        <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
-                          <small style={{ color: '#444' }}>{cal.upn || ''}</small>
-                          <small style={{ color: '#666' }}>{cal.url ? cal.url.substring(0, 50) + '...' : ''}</small>
-                        </div>
+                        {editingCalendar && editingCalendar.id === cal.id ? (
+                          <form onSubmit={async (e) => {
+                              e.preventDefault()
+                              // submit updated calendar (url, name, color, enabled)
+                              const form = new FormData()
+                              form.append('id', editingCalendar.id)
+                              form.append('url', editingCalendar.url || '')
+                              form.append('name', editingCalendar.name || '')
+                              form.append('color', editingCalendar.color || '')
+                              form.append('enabled', editingCalendar.enabled ? '1' : '0')
+                              try {
+                                const res = await fetch('/admin/update_calendar', { method: 'POST', body: form })
+                                if (res.ok) {
+                                  showMessage('Calendar updated', 'success')
+                                  setEditingCalendar(null)
+                                  fetchData()
+                                } else {
+                                  showMessage('Update failed', 'error')
+                                }
+                              } catch (e) {
+                                showMessage('Update error', 'error')
+                              }
+                            }} style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
+                            <input type="url" value={editingCalendar.url || ''} onChange={(e)=>setEditingCalendar(c=>({...c, url: e.target.value}))} style={{ padding: '0.35rem' }} />
+                            <input type="text" value={editingCalendar.name || ''} onChange={(e)=>setEditingCalendar(c=>({...c, name: e.target.value}))} style={{ padding: '0.35rem' }} />
+                            <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+                              <input type="color" value={editingCalendar.color || '#003366'} onChange={(e)=>setEditingCalendar(c=>({...c, color: e.target.value}))} />
+                              <label style={{ fontSize: '0.85rem' }}><input type="checkbox" checked={!!editingCalendar.enabled} onChange={(e)=>setEditingCalendar(c=>({...c, enabled: e.target.checked}))} /> Enabled</label>
+                            </div>
+                            <div style={{ display: 'flex', gap: '0.5rem' }}>
+                              <button type="submit" className="btn-primary">Save</button>
+                              <button type="button" onClick={()=>setEditingCalendar(null)} className="btn-secondary">Cancel</button>
+                            </div>
+                          </form>
+                        ) : (
+                          <>
+                            <strong>{cal.name || cal.email_address || 'Calendar ' + (idx + 1)}</strong>
+                            <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+                              <small style={{ color: '#444' }}>{cal.name || cal.email_address || cal.upn || ''}</small>
+                              <small style={{ color: '#666' }}>{cal.url ? cal.url.substring(0, 50) + '...' : ''}</small>
+                            </div>
+                          </>
+                        )}
                   </div>
-                  <button onClick={() => deleteCalendar(cal.id)} className="btn-danger-sm">Delete</button>
+                  <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+                    <button onClick={() => setEditingCalendar(cal)} className="btn-secondary">Edit</button>
+                    <button onClick={() => deleteCalendar(cal.id)} className="btn-danger-sm">Delete</button>
+                  </div>
                 </div>
               ))}
             </div>

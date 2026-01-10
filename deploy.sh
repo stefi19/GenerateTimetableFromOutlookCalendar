@@ -14,8 +14,13 @@ echo "=== UTCN Timetable Full Deploy ==="
 
 # Configurable flags (export or edit if you want to change defaults)
 DO_PRUNE=${DO_PRUNE:-false}                 # set true to prune unused images
-RUN_FULL_EXTRACTION=${RUN_FULL_EXTRACTION:-true}
+# By default do NOT run the long Playwright full extraction during deploy since
+# it can take a long time for many calendars. Use the systemd timer (below)
+# to run imports hourly in background. You can still force a one-off run by
+# exporting RUN_FULL_EXTRACTION=true when invoking this script.
+RUN_FULL_EXTRACTION=${RUN_FULL_EXTRACTION:-false}
 RUN_WORKER_ONCE=${RUN_WORKER_ONCE:-true}
+INSTALL_SYSTEMD_TIMER=${INSTALL_SYSTEMD_TIMER:-false} # set true to install systemd timer (must run as root)
 WAIT_FOR_HEALTH=${WAIT_FOR_HEALTH:-true}
 HEALTH_WAIT_SECONDS=${HEALTH_WAIT_SECONDS:-60}
 
@@ -82,3 +87,50 @@ echo ""
 echo "✅ Deployment script finished. Visit: http://localhost:5000/"
 echo "Admin panel (legacy/React): http://localhost:5000/admin (protected by ADMIN_PASSWORD)"
 echo "" 
+
+if [ "$INSTALL_SYSTEMD_TIMER" = "true" ]; then
+	echo "\n🕒 Installing systemd service + timer to run imports hourly (requires root)"
+	if [ "$(id -u)" -ne 0 ]; then
+		echo "⚠️ Not running as root. Please run this script as root to install the timer, or run the commands printed below manually."
+		echo "To install manually, run as root the unit files shown in the repository or re-run deploy.sh as root with INSTALL_SYSTEMD_TIMER=true"
+	else
+		SERVICE_PATH=/etc/systemd/system/utcn-timetable-import.service
+		TIMER_PATH=/etc/systemd/system/utcn-timetable-import.timer
+		echo "Writing $SERVICE_PATH and $TIMER_PATH"
+		cat > "$SERVICE_PATH" <<'UNIT'
+[Unit]
+Description=UTCN Timetable Playwright full import (one-shot)
+After=docker.service
+Requires=docker.service
+
+[Service]
+Type=oneshot
+WorkingDirectory=%ROOT_DIR%
+ExecStart=/usr/bin/env bash -c 'flock -n /tmp/utcn_timetable_import.lock docker compose exec -T timetable sh -c "export PYTHONUTF8=1; python3 tools/run_full_extraction.py"'
+User=root
+
+[Install]
+WantedBy=multi-user.target
+UNIT
+
+		cat > "$TIMER_PATH" <<'TIMER'
+[Unit]
+Description=Run UTCN Timetable full import hourly
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=1h
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+TIMER
+
+		# Replace %ROOT_DIR% with the actual path of the repo root
+		sed -i.bak "s|%ROOT_DIR%|${ROOT_DIR}|g" "$SERVICE_PATH"
+
+		systemctl daemon-reload
+		systemctl enable --now utcn-timetable-import.timer
+		echo "✅ systemd timer installed and started (utcn-timetable-import.timer). Use 'journalctl -u utcn-timetable-import.service' to see logs."
+	fi
+fi

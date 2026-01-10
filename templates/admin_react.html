@@ -343,10 +343,10 @@
                         }),
                         React.createElement('input', {
                             type: 'text',
-                            placeholder: 'Name (optional)',
+                            placeholder: 'e.g., AC - Year 3 - CTI English (or utcn_room_airi_obs_204@...)',
                             value: newCalendar.name,
                             onChange: (e) => setNewCalendar({...newCalendar, name: e.target.value}),
-                            style: { width: '150px', padding: '0.5rem', border: '1px solid #ddd', borderRadius: '4px' }
+                            style: { width: '220px', padding: '0.5rem', border: '1px solid #ddd', borderRadius: '4px' }
                         }),
                         React.createElement('input', {
                             type: 'color',
@@ -392,7 +392,7 @@
                                     },
                                         React.createElement('input', {
                                             type: 'text',
-                                            placeholder: 'Calendar name',
+                                            placeholder: 'e.g., AC - Year 3 - CTI English',
                                             value: editingCalendar.name || '',
                                             onChange: (e) => setEditingCalendar({...editingCalendar, name: e.target.value}),
                                             style: { flex: '1', minWidth: '150px', padding: '0.4rem', border: '1px solid #90caf9', borderRadius: '4px' }
@@ -435,9 +435,8 @@
                                             opacity: cal.enabled === 0 ? 0.6 : 1
                                         }
                                     },
-                                        React.createElement('span', { style: { flex: 1, fontWeight: '500' }}, cal.name || 'Unnamed'),
-                                        // show UPN (if available) and link separately for clarity
-                                        React.createElement('span', { style: { color: '#444', fontSize: '0.85rem', marginRight: '0.75rem' }}, cal.upn || ''),
+                                            React.createElement('span', { style: { flex: 1, fontWeight: '500' }}, cal.name || cal.email_address || cal.upn || 'Unnamed'),
+                                            React.createElement('span', { style: { color: '#444', fontSize: '0.85rem', marginRight: '0.75rem' }}, cal.email_address || cal.upn || ''),
                                         React.createElement('span', { style: { color: '#666', fontSize: '0.85rem', maxWidth: '300px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}, cal.url),
                                         cal.enabled === 0 && React.createElement('span', { style: { fontSize: '0.75rem', color: '#999', fontStyle: 'italic' }}, 'disabled'),
                                         React.createElement('button', {

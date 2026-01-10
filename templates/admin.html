@@ -307,7 +307,7 @@
                                value="{{ calendar_url }}"
                                placeholder="https://outlook.office365.com/owa/calendar/...">
                         <p class="help-text">Optional: give this calendar a friendly name</p>
-                        <input type="text" id="calendar_name" name="calendar_name" placeholder="e.g., AC Year 2 - Group A" value="{{ calendar_name }}">
+                        <input type="text" id="calendar_name" name="calendar_name" placeholder="e.g., AC - Year 3 - CTI English or utcn_room_airi_obs_204@campus.utcluj.ro" value="{{ calendar_name }}">
                         <p class="help-text">Optional: choose a color to represent this calendar in the UI</p>
                         <input type="color" id="calendar_color" name="calendar_color" value="{{ calendar_color or '#0066cc' }}">
                         <p class="help-text">Enter the complete URL of the published Outlook calendar</p>
@@ -329,13 +329,13 @@
             <div class="section-body">
                 {% if calendars %}
                 <table class="building-table">
-                    <thead><tr><th>ID</th><th>Color</th><th>UPN</th><th>URL / Name</th><th>Enabled</th><th>Added</th><th>Actions</th></tr></thead>
+                    <thead><tr><th>ID</th><th>Color</th><th>UPN / Email</th><th>URL / Name</th><th>Enabled</th><th>Added</th><th>Actions</th></tr></thead>
                     <tbody>
                         {% for cal in calendars %}
                         <tr>
                             <td>{{ cal.id }}</td>
                             <td><span class="cal-swatch" data-color="{{ cal.color or '#bbbbbb' }}" style="display:inline-block;width:20px;height:14px;border-radius:3px;border:1px solid #ddd"></span></td>
-                            <td style="max-width:200px;word-break:break-all">{{ cal.upn or '' }}</td>
+                            <td style="max-width:200px;word-break:break-all">{{ cal.name or cal.email_address or cal.upn or '' }}</td>
                             <td style="max-width:600px;word-break:break-all">{{ cal.url }}{% if cal.name %}<div style="font-size:0.85rem;color:var(--gray-600)">{{ cal.name }}</div>{% endif %}</td>
                             <td>{{ 'Yes' if cal.enabled else 'No' }}</td>
                             <td>{{ cal.created_at }}</td>

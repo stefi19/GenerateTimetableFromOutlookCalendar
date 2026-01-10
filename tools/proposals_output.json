@@ -1,0 +1,3153 @@
+{
+  "stats": {
+    "total_db": 393,
+    "owner_only_matches": 22,
+    "owner_hash_matches": 0
+  },
+  "proposals": [
+    {
+      "id": 12,
+      "url": "http://outlook.office365.com/owa/calendar/00b52e72598f4084baf350119c38789a@campus.utcluj.ro/6d2cbd9a8ffd478c874ddb0e230db1ea12006300986932300667/calendar.html",
+      "strategy": "owner_only",
+      "proposed_email": "utcn_room_airi_obs_526@campus.utcluj.ro",
+      "csv_candidates": 1,
+      "ambiguous": false
+    },
+    {
+      "id": 207,
+      "url": "http://outlook.office365.com/owa/calendar/00b52e72598f4084baf350119c38789a@campus.utcluj.ro/6d2cbd9a8ffd478c874ddb0e230db1ea12006300986932300667/calendar.ics",
+      "strategy": "owner_only",
+      "proposed_email": "utcn_room_airi_obs_526@campus.utcluj.ro",
+      "csv_candidates": 1,
+      "ambiguous": false
+    },
+    {
+      "id": 5,
+      "url": "http://outlook.office365.com/owa/calendar/027c0f803ceb4e31a8856f79f27fbbd4@campus.utcluj.ro/010c02f6bc364b3398ed39220c813bff18176434378820300293/calendar.html",
+      "strategy": "owner_only",
+      "proposed_email": "utcn_room_airi_obs_205@campus.utcluj.ro",
+      "csv_candidates": 1,
+      "ambiguous": false
+    },
+    {
+      "id": 200,
+      "url": "http://outlook.office365.com/owa/calendar/027c0f803ceb4e31a8856f79f27fbbd4@campus.utcluj.ro/010c02f6bc364b3398ed39220c813bff18176434378820300293/calendar.ics",
+      "strategy": "owner_only",
+      "proposed_email": "utcn_room_airi_obs_205@campus.utcluj.ro",
+      "csv_candidates": 1,
+      "ambiguous": false
+    },
+    {
+      "id": 45,
+      "url": "http://outlook.office365.com/owa/calendar/02883c38b26e480b99f8cc76c0e7b19a@campus.utcluj.ro/4c1aa433da6e4624935bb97ecefe4d656980291791111468005/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 240,
+      "url": "http://outlook.office365.com/owa/calendar/02883c38b26e480b99f8cc76c0e7b19a@campus.utcluj.ro/4c1aa433da6e4624935bb97ecefe4d656980291791111468005/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 28,
+      "url": "http://outlook.office365.com/owa/calendar/05025b15ab884719a8774aaaace118c2@campus.utcluj.ro/f9388964800f47c7a64b10730006129816237767699205134861/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 223,
+      "url": "http://outlook.office365.com/owa/calendar/05025b15ab884719a8774aaaace118c2@campus.utcluj.ro/f9388964800f47c7a64b10730006129816237767699205134861/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 187,
+      "url": "http://outlook.office365.com/owa/calendar/05effa6a5a20475db5db039dc6e32bbc@campus.utcluj.ro/ffad23a3e4fa478b936b0459b14d71f76818501080686338516/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 382,
+      "url": "http://outlook.office365.com/owa/calendar/05effa6a5a20475db5db039dc6e32bbc@campus.utcluj.ro/ffad23a3e4fa478b936b0459b14d71f76818501080686338516/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 43,
+      "url": "http://outlook.office365.com/owa/calendar/081396c8271b4f7ebc1fe5c347499f39@campus.utcluj.ro/8bd87950ebaa411bbeb1cfe7458f41f01842029406743451474/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 238,
+      "url": "http://outlook.office365.com/owa/calendar/081396c8271b4f7ebc1fe5c347499f39@campus.utcluj.ro/8bd87950ebaa411bbeb1cfe7458f41f01842029406743451474/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 58,
+      "url": "http://outlook.office365.com/owa/calendar/08a22b78bf03475e9595bf5079bc6fc9@campus.utcluj.ro/14ac599657d84b7bbb79286c5bd119637554613537923573716/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 253,
+      "url": "http://outlook.office365.com/owa/calendar/08a22b78bf03475e9595bf5079bc6fc9@campus.utcluj.ro/14ac599657d84b7bbb79286c5bd119637554613537923573716/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 115,
+      "url": "http://outlook.office365.com/owa/calendar/0b019e161e524c84ab96678b51f02374@campus.utcluj.ro/671c337f220b4e0e869babcd71f8f7813648205003871415572/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 310,
+      "url": "http://outlook.office365.com/owa/calendar/0b019e161e524c84ab96678b51f02374@campus.utcluj.ro/671c337f220b4e0e869babcd71f8f7813648205003871415572/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 10,
+      "url": "http://outlook.office365.com/owa/calendar/0ce6184fa1ca4a82a3ad937cb6f36ec0@campus.utcluj.ro/da9f398f78474101a74296575fefbafe2842329952109476403/calendar.html",
+      "strategy": "owner_only",
+      "proposed_email": "utcn_room_airi_obs_516@campus.utcluj.ro",
+      "csv_candidates": 1,
+      "ambiguous": false
+    },
+    {
+      "id": 205,
+      "url": "http://outlook.office365.com/owa/calendar/0ce6184fa1ca4a82a3ad937cb6f36ec0@campus.utcluj.ro/da9f398f78474101a74296575fefbafe2842329952109476403/calendar.ics",
+      "strategy": "owner_only",
+      "proposed_email": "utcn_room_airi_obs_516@campus.utcluj.ro",
+      "csv_candidates": 1,
+      "ambiguous": false
+    },
+    {
+      "id": 55,
+      "url": "http://outlook.office365.com/owa/calendar/106015d409ff47a7b6c1e916825d9fcc@campus.utcluj.ro/1cbe95069049479eaae3bb9a7d6b6ce115651159477365913006/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 250,
+      "url": "http://outlook.office365.com/owa/calendar/106015d409ff47a7b6c1e916825d9fcc@campus.utcluj.ro/1cbe95069049479eaae3bb9a7d6b6ce115651159477365913006/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 15,
+      "url": "http://outlook.office365.com/owa/calendar/14a11fe870d74947b22558caca6e8b68@campus.utcluj.ro/9a1acde9550b4ec9afc9fc0fffa3298313521416865616354597/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 210,
+      "url": "http://outlook.office365.com/owa/calendar/14a11fe870d74947b22558caca6e8b68@campus.utcluj.ro/9a1acde9550b4ec9afc9fc0fffa3298313521416865616354597/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 20,
+      "url": "http://outlook.office365.com/owa/calendar/18b4fac381db4a6f9678d114edac04ea@campus.utcluj.ro/e0a27bc44f0a44d89bf1b408cfb310b316852531619586622916/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 215,
+      "url": "http://outlook.office365.com/owa/calendar/18b4fac381db4a6f9678d114edac04ea@campus.utcluj.ro/e0a27bc44f0a44d89bf1b408cfb310b316852531619586622916/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 36,
+      "url": "http://outlook.office365.com/owa/calendar/18c6148ee0c6495880672ef9c270b9dd@campus.utcluj.ro/5ff0bdb8734d4e18b0ba6bc65a8028d19411086372293245115/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 231,
+      "url": "http://outlook.office365.com/owa/calendar/18c6148ee0c6495880672ef9c270b9dd@campus.utcluj.ro/5ff0bdb8734d4e18b0ba6bc65a8028d19411086372293245115/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 14,
+      "url": "http://outlook.office365.com/owa/calendar/23220f192ce440789801285500f63bbf@campus.utcluj.ro/05ee9648ab6c456b99c39c808f735d6d910544300020796397/calendar.html",
+      "strategy": "owner_only",
+      "proposed_email": "utcn_room_airi_obs_524@campus.utcluj.ro",
+      "csv_candidates": 1,
+      "ambiguous": false
+    },
+    {
+      "id": 209,
+      "url": "http://outlook.office365.com/owa/calendar/23220f192ce440789801285500f63bbf@campus.utcluj.ro/05ee9648ab6c456b99c39c808f735d6d910544300020796397/calendar.ics",
+      "strategy": "owner_only",
+      "proposed_email": "utcn_room_airi_obs_524@campus.utcluj.ro",
+      "csv_candidates": 1,
+      "ambiguous": false
+    },
+    {
+      "id": 27,
+      "url": "http://outlook.office365.com/owa/calendar/271f31d815d849489edaed33959bcfb8@campus.utcluj.ro/74d38c0b89d34adcba15278b66ff64949656482739591566560/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 222,
+      "url": "http://outlook.office365.com/owa/calendar/271f31d815d849489edaed33959bcfb8@campus.utcluj.ro/74d38c0b89d34adcba15278b66ff64949656482739591566560/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 61,
+      "url": "http://outlook.office365.com/owa/calendar/2bc351c815b049bf875b03bdc3de5d2a@campus.utcluj.ro/5ddccd6b9b044e9e9a0b769dcc64cb0d16011798825208155521/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 256,
+      "url": "http://outlook.office365.com/owa/calendar/2bc351c815b049bf875b03bdc3de5d2a@campus.utcluj.ro/5ddccd6b9b044e9e9a0b769dcc64cb0d16011798825208155521/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 34,
+      "url": "http://outlook.office365.com/owa/calendar/3b3968253057473895627a9f5db39626@campus.utcluj.ro/bae9585786094b46879a1da0239df6997006178516024745136/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 229,
+      "url": "http://outlook.office365.com/owa/calendar/3b3968253057473895627a9f5db39626@campus.utcluj.ro/bae9585786094b46879a1da0239df6997006178516024745136/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 11,
+      "url": "http://outlook.office365.com/owa/calendar/3cac35010fdf4a12991cedacffbe5d46@campus.utcluj.ro/8f65b6059b28493c93f8e0cc796d25e916111206743021714118/calendar.html",
+      "strategy": "owner_only",
+      "proposed_email": "utcn_room_airi_obs_515@campus.utcluj.ro",
+      "csv_candidates": 1,
+      "ambiguous": false
+    },
+    {
+      "id": 206,
+      "url": "http://outlook.office365.com/owa/calendar/3cac35010fdf4a12991cedacffbe5d46@campus.utcluj.ro/8f65b6059b28493c93f8e0cc796d25e916111206743021714118/calendar.ics",
+      "strategy": "owner_only",
+      "proposed_email": "utcn_room_airi_obs_515@campus.utcluj.ro",
+      "csv_candidates": 1,
+      "ambiguous": false
+    },
+    {
+      "id": 183,
+      "url": "http://outlook.office365.com/owa/calendar/3eb52ce938624e7790ab81361f0ac3f1@campus.utcluj.ro/f2859edaf4ce476f97484247b77472122623979707452980535/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 378,
+      "url": "http://outlook.office365.com/owa/calendar/3eb52ce938624e7790ab81361f0ac3f1@campus.utcluj.ro/f2859edaf4ce476f97484247b77472122623979707452980535/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 48,
+      "url": "http://outlook.office365.com/owa/calendar/4054c857d5f44b9fa0faf4efe738e9b9@campus.utcluj.ro/81538571cd8d46cbbdbc81efef3703eb17892466298974091612/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 243,
+      "url": "http://outlook.office365.com/owa/calendar/4054c857d5f44b9fa0faf4efe738e9b9@campus.utcluj.ro/81538571cd8d46cbbdbc81efef3703eb17892466298974091612/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 25,
+      "url": "http://outlook.office365.com/owa/calendar/4299286d9ffe441c828b648b9eb8e557@campus.utcluj.ro/2d81e659c48749178bd91a2cde27932d4778800432436374368/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 220,
+      "url": "http://outlook.office365.com/owa/calendar/4299286d9ffe441c828b648b9eb8e557@campus.utcluj.ro/2d81e659c48749178bd91a2cde27932d4778800432436374368/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 23,
+      "url": "http://outlook.office365.com/owa/calendar/47b4d56ec58d4939b3476e271565deab@campus.utcluj.ro/f290e5581c204704829e1e3eb89f1f5c752879054332011073/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 218,
+      "url": "http://outlook.office365.com/owa/calendar/47b4d56ec58d4939b3476e271565deab@campus.utcluj.ro/f290e5581c204704829e1e3eb89f1f5c752879054332011073/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 170,
+      "url": "http://outlook.office365.com/owa/calendar/481562ae30c345b8a0417a7e24f175c8@campus.utcluj.ro/b1bfb5292a334e229712e9a61129faef1724955221381497856/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 365,
+      "url": "http://outlook.office365.com/owa/calendar/481562ae30c345b8a0417a7e24f175c8@campus.utcluj.ro/b1bfb5292a334e229712e9a61129faef1724955221381497856/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 184,
+      "url": "http://outlook.office365.com/owa/calendar/49fb6e315a3c4c17915b29835bad42ea@campus.utcluj.ro/0afef4a5189641deb4464f790f3465351672912736610294354/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 379,
+      "url": "http://outlook.office365.com/owa/calendar/49fb6e315a3c4c17915b29835bad42ea@campus.utcluj.ro/0afef4a5189641deb4464f790f3465351672912736610294354/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 138,
+      "url": "http://outlook.office365.com/owa/calendar/4a1867f2c69f453884eb1155e82b819b@campus.utcluj.ro/8bf273e8cbb743fca1b659985c844b891415857042006572232/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 333,
+      "url": "http://outlook.office365.com/owa/calendar/4a1867f2c69f453884eb1155e82b819b@campus.utcluj.ro/8bf273e8cbb743fca1b659985c844b891415857042006572232/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 33,
+      "url": "http://outlook.office365.com/owa/calendar/4b78a489438d4397ab065237c2fb9909@campus.utcluj.ro/76d2c2302d5c49b0944d7cdbfb34bbe32620730198017950932/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 228,
+      "url": "http://outlook.office365.com/owa/calendar/4b78a489438d4397ab065237c2fb9909@campus.utcluj.ro/76d2c2302d5c49b0944d7cdbfb34bbe32620730198017950932/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 56,
+      "url": "http://outlook.office365.com/owa/calendar/4d9a87d7362d4855a1834580b7c7274f@campus.utcluj.ro/b07cd6ecb1f64f3f996c13c867509ef413579619657383683114/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 251,
+      "url": "http://outlook.office365.com/owa/calendar/4d9a87d7362d4855a1834580b7c7274f@campus.utcluj.ro/b07cd6ecb1f64f3f996c13c867509ef413579619657383683114/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 39,
+      "url": "http://outlook.office365.com/owa/calendar/4dc72dc502bf48c7aa7ac9e1bae22890@campus.utcluj.ro/27bb5513ef4c48a39ea4a0c4b178905011184734623697262653/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 234,
+      "url": "http://outlook.office365.com/owa/calendar/4dc72dc502bf48c7aa7ac9e1bae22890@campus.utcluj.ro/27bb5513ef4c48a39ea4a0c4b178905011184734623697262653/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 51,
+      "url": "http://outlook.office365.com/owa/calendar/53bd84fa68424b629e35e70225dcec43@campus.utcluj.ro/b0a28103fccb43168eec808a53d9d67c2703605951016120367/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 246,
+      "url": "http://outlook.office365.com/owa/calendar/53bd84fa68424b629e35e70225dcec43@campus.utcluj.ro/b0a28103fccb43168eec808a53d9d67c2703605951016120367/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 188,
+      "url": "http://outlook.office365.com/owa/calendar/56216c3cbefa41c2aee3604169accaa2@campus.utcluj.ro/cdd100f4c5ca40718a14c399ce19bdc8334032730094602152/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 383,
+      "url": "http://outlook.office365.com/owa/calendar/56216c3cbefa41c2aee3604169accaa2@campus.utcluj.ro/cdd100f4c5ca40718a14c399ce19bdc8334032730094602152/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 32,
+      "url": "http://outlook.office365.com/owa/calendar/5ecb7337eab142969de1b1f007c243ff@campus.utcluj.ro/7c081caae42e47319465504554426af610499018764481135174/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 227,
+      "url": "http://outlook.office365.com/owa/calendar/5ecb7337eab142969de1b1f007c243ff@campus.utcluj.ro/7c081caae42e47319465504554426af610499018764481135174/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 54,
+      "url": "http://outlook.office365.com/owa/calendar/622c44881dfc460390e946285970578a@campus.utcluj.ro/001c4f0627f2474e9ea5ea005b7ba55c15289366763008537379/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 249,
+      "url": "http://outlook.office365.com/owa/calendar/622c44881dfc460390e946285970578a@campus.utcluj.ro/001c4f0627f2474e9ea5ea005b7ba55c15289366763008537379/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 168,
+      "url": "http://outlook.office365.com/owa/calendar/64b2fcaf131443b5a60ec50cd5f756e7@campus.utcluj.ro/467a58c015164b66af9579ab17eea26b654117146146300478/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 363,
+      "url": "http://outlook.office365.com/owa/calendar/64b2fcaf131443b5a60ec50cd5f756e7@campus.utcluj.ro/467a58c015164b66af9579ab17eea26b654117146146300478/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 50,
+      "url": "http://outlook.office365.com/owa/calendar/69e99a33c2514784bbc900e15111c433@campus.utcluj.ro/d60311c129b54da4bbc8fea3b529d84710190988020130014919/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 245,
+      "url": "http://outlook.office365.com/owa/calendar/69e99a33c2514784bbc900e15111c433@campus.utcluj.ro/d60311c129b54da4bbc8fea3b529d84710190988020130014919/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 18,
+      "url": "http://outlook.office365.com/owa/calendar/6abb029c2ef04b27a582646abbfc4c08@campus.utcluj.ro/6d89a5f0ea8042cc8b78d7f5a5c8d8508743044546396921248/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 213,
+      "url": "http://outlook.office365.com/owa/calendar/6abb029c2ef04b27a582646abbfc4c08@campus.utcluj.ro/6d89a5f0ea8042cc8b78d7f5a5c8d8508743044546396921248/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 57,
+      "url": "http://outlook.office365.com/owa/calendar/6c8a613c92e54dd382428e24b1605d00@campus.utcluj.ro/dbb34bcc6e0b470b8d304c1538e5c25a17227850326186938536/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 252,
+      "url": "http://outlook.office365.com/owa/calendar/6c8a613c92e54dd382428e24b1605d00@campus.utcluj.ro/dbb34bcc6e0b470b8d304c1538e5c25a17227850326186938536/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 169,
+      "url": "http://outlook.office365.com/owa/calendar/6ebd695f2de544c49d6f96202df0e0c6@campus.utcluj.ro/b6112630e7da4ea39f11b094aac25df14620102040852371902/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 364,
+      "url": "http://outlook.office365.com/owa/calendar/6ebd695f2de544c49d6f96202df0e0c6@campus.utcluj.ro/b6112630e7da4ea39f11b094aac25df14620102040852371902/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 49,
+      "url": "http://outlook.office365.com/owa/calendar/6f2c8e895dd846efb7d87abb91964070@campus.utcluj.ro/733970e55a024e42b2af8e5c7e2770a25138278416839213454/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 244,
+      "url": "http://outlook.office365.com/owa/calendar/6f2c8e895dd846efb7d87abb91964070@campus.utcluj.ro/733970e55a024e42b2af8e5c7e2770a25138278416839213454/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 189,
+      "url": "http://outlook.office365.com/owa/calendar/77857393c8934d239e4e26df70ccf49c@campus.utcluj.ro/bb71035b168c40069300bfffdba2ca5517879324408226661536/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 384,
+      "url": "http://outlook.office365.com/owa/calendar/77857393c8934d239e4e26df70ccf49c@campus.utcluj.ro/bb71035b168c40069300bfffdba2ca5517879324408226661536/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 13,
+      "url": "http://outlook.office365.com/owa/calendar/7e7abeafb13d41a99adc8916f450ee7b@campus.utcluj.ro/65a06113a888408ab894d3c5ccb5b83c9322553329796288940/calendar.html",
+      "strategy": "owner_only",
+      "proposed_email": "utcn_room_airi_obs_525@campus.utcluj.ro",
+      "csv_candidates": 1,
+      "ambiguous": false
+    },
+    {
+      "id": 208,
+      "url": "http://outlook.office365.com/owa/calendar/7e7abeafb13d41a99adc8916f450ee7b@campus.utcluj.ro/65a06113a888408ab894d3c5ccb5b83c9322553329796288940/calendar.ics",
+      "strategy": "owner_only",
+      "proposed_email": "utcn_room_airi_obs_525@campus.utcluj.ro",
+      "csv_candidates": 1,
+      "ambiguous": false
+    },
+    {
+      "id": 137,
+      "url": "http://outlook.office365.com/owa/calendar/7e7fe18985ba46a7be5c18309b308e49@campus.utcluj.ro/371ca5a3dd944102bc64a27884cd768a4538921717912516099/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 332,
+      "url": "http://outlook.office365.com/owa/calendar/7e7fe18985ba46a7be5c18309b308e49@campus.utcluj.ro/371ca5a3dd944102bc64a27884cd768a4538921717912516099/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 72,
+      "url": "http://outlook.office365.com/owa/calendar/7f1cb018afc24f588fc852aabb103a18@campus.utcluj.ro/24882d3e0c7749108c25398b50d9eda417957349680396930251/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 267,
+      "url": "http://outlook.office365.com/owa/calendar/7f1cb018afc24f588fc852aabb103a18@campus.utcluj.ro/24882d3e0c7749108c25398b50d9eda417957349680396930251/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 53,
+      "url": "http://outlook.office365.com/owa/calendar/801c604a62684a7ca913a76cc11d268d@campus.utcluj.ro/5c22c7e9aca24765a74d5e5ca7cf732610082240032892117517/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 248,
+      "url": "http://outlook.office365.com/owa/calendar/801c604a62684a7ca913a76cc11d268d@campus.utcluj.ro/5c22c7e9aca24765a74d5e5ca7cf732610082240032892117517/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 24,
+      "url": "http://outlook.office365.com/owa/calendar/80273a4ccae14c26a3afcb85eae4cc31@campus.utcluj.ro/d73e7e94438e4691b9893451cb66365511413093477986834969/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 219,
+      "url": "http://outlook.office365.com/owa/calendar/80273a4ccae14c26a3afcb85eae4cc31@campus.utcluj.ro/d73e7e94438e4691b9893451cb66365511413093477986834969/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 112,
+      "url": "http://outlook.office365.com/owa/calendar/828381f1cbe74cb08fd6969cc2147cb5@campus.utcluj.ro/f10453bc9e914abc981110b24d58650e6530057062271799879/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 307,
+      "url": "http://outlook.office365.com/owa/calendar/828381f1cbe74cb08fd6969cc2147cb5@campus.utcluj.ro/f10453bc9e914abc981110b24d58650e6530057062271799879/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 7,
+      "url": "http://outlook.office365.com/owa/calendar/83ea4f20b7d448dfb295418dd094b521@campus.utcluj.ro/1793524b065942a5932c60845833e7036226699877863089493/calendar.html",
+      "strategy": "owner_only",
+      "proposed_email": "utcn_room_airi_obs_405@campus.utcluj.ro",
+      "csv_candidates": 1,
+      "ambiguous": false
+    },
+    {
+      "id": 202,
+      "url": "http://outlook.office365.com/owa/calendar/83ea4f20b7d448dfb295418dd094b521@campus.utcluj.ro/1793524b065942a5932c60845833e7036226699877863089493/calendar.ics",
+      "strategy": "owner_only",
+      "proposed_email": "utcn_room_airi_obs_405@campus.utcluj.ro",
+      "csv_candidates": 1,
+      "ambiguous": false
+    },
+    {
+      "id": 60,
+      "url": "http://outlook.office365.com/owa/calendar/883fbf0567fc467284d1b494997c1547@campus.utcluj.ro/bb35b193c61448ccb3db30bf683f682c8843270077753930078/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 255,
+      "url": "http://outlook.office365.com/owa/calendar/883fbf0567fc467284d1b494997c1547@campus.utcluj.ro/bb35b193c61448ccb3db30bf683f682c8843270077753930078/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 16,
+      "url": "http://outlook.office365.com/owa/calendar/8dd21f7aea0b48a18a70dc29213115f1@campus.utcluj.ro/ec395041033c48f887be68046d3976313481444369486133191/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 211,
+      "url": "http://outlook.office365.com/owa/calendar/8dd21f7aea0b48a18a70dc29213115f1@campus.utcluj.ro/ec395041033c48f887be68046d3976313481444369486133191/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 6,
+      "url": "http://outlook.office365.com/owa/calendar/8e2057bb15c9406a8ab61221107d9d25@campus.utcluj.ro/c4a2adc3626e4aad8b13d780d3d009fa9069223347745240968/calendar.html",
+      "strategy": "owner_only",
+      "proposed_email": "utcn_room_airi_obs_204@campus.utcluj.ro",
+      "csv_candidates": 1,
+      "ambiguous": false
+    },
+    {
+      "id": 201,
+      "url": "http://outlook.office365.com/owa/calendar/8e2057bb15c9406a8ab61221107d9d25@campus.utcluj.ro/c4a2adc3626e4aad8b13d780d3d009fa9069223347745240968/calendar.ics",
+      "strategy": "owner_only",
+      "proposed_email": "utcn_room_airi_obs_204@campus.utcluj.ro",
+      "csv_candidates": 1,
+      "ambiguous": false
+    },
+    {
+      "id": 42,
+      "url": "http://outlook.office365.com/owa/calendar/8e9034c7ae0a48c2a411bfd7db8c0ec3@campus.utcluj.ro/374b7bfaa90b4c6fb01b742853e3b3357617600720402185189/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 237,
+      "url": "http://outlook.office365.com/owa/calendar/8e9034c7ae0a48c2a411bfd7db8c0ec3@campus.utcluj.ro/374b7bfaa90b4c6fb01b742853e3b3357617600720402185189/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 70,
+      "url": "http://outlook.office365.com/owa/calendar/92feaa1d822e4aebb3c98ddf8c9526b9@campus.utcluj.ro/cfc06c1a41784ada975f5394ee41dbb11023914862198793708/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 265,
+      "url": "http://outlook.office365.com/owa/calendar/92feaa1d822e4aebb3c98ddf8c9526b9@campus.utcluj.ro/cfc06c1a41784ada975f5394ee41dbb11023914862198793708/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 167,
+      "url": "http://outlook.office365.com/owa/calendar/988fba4a3ed0405f81e82fd99028c052@campus.utcluj.ro/b5d0b2ad681c4441beb7fb0d00691e08397613310085276986/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 362,
+      "url": "http://outlook.office365.com/owa/calendar/988fba4a3ed0405f81e82fd99028c052@campus.utcluj.ro/b5d0b2ad681c4441beb7fb0d00691e08397613310085276986/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 62,
+      "url": "http://outlook.office365.com/owa/calendar/9935f801b7b24d999c524ea6930e4504@campus.utcluj.ro/db637218c81449efbef2df3868512521937266732662103744/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 257,
+      "url": "http://outlook.office365.com/owa/calendar/9935f801b7b24d999c524ea6930e4504@campus.utcluj.ro/db637218c81449efbef2df3868512521937266732662103744/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 65,
+      "url": "http://outlook.office365.com/owa/calendar/9ab2cf70588d412689a741ac27c7dc7c@campus.utcluj.ro/da94019ff9b54cbe8eca7f8942a8d6da5728733752158713661/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 260,
+      "url": "http://outlook.office365.com/owa/calendar/9ab2cf70588d412689a741ac27c7dc7c@campus.utcluj.ro/da94019ff9b54cbe8eca7f8942a8d6da5728733752158713661/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 94,
+      "url": "http://outlook.office365.com/owa/calendar/a07a282863d9413fabc111be7eca0226@campus.utcluj.ro/7add44a72c0a4f30b25683827f4afb7216622138307942613875/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 289,
+      "url": "http://outlook.office365.com/owa/calendar/a07a282863d9413fabc111be7eca0226@campus.utcluj.ro/7add44a72c0a4f30b25683827f4afb7216622138307942613875/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 26,
+      "url": "http://outlook.office365.com/owa/calendar/a07b74a31e1443539656b0afba60042b@campus.utcluj.ro/e954315ffc27462f9a6619638dd181a73198420335934627107/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 221,
+      "url": "http://outlook.office365.com/owa/calendar/a07b74a31e1443539656b0afba60042b@campus.utcluj.ro/e954315ffc27462f9a6619638dd181a73198420335934627107/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 4,
+      "url": "http://outlook.office365.com/owa/calendar/a356924d5c2141debf9da6abdd01e81c@campus.utcluj.ro/28a60600f75a4a1daee5ef6be818074e3569903772639482002/calendar.html",
+      "strategy": "owner_only",
+      "proposed_email": "utcn_room_airi_obs_11@campus.utcluj.ro",
+      "csv_candidates": 1,
+      "ambiguous": false
+    },
+    {
+      "id": 199,
+      "url": "http://outlook.office365.com/owa/calendar/a356924d5c2141debf9da6abdd01e81c@campus.utcluj.ro/28a60600f75a4a1daee5ef6be818074e3569903772639482002/calendar.ics",
+      "strategy": "owner_only",
+      "proposed_email": "utcn_room_airi_obs_11@campus.utcluj.ro",
+      "csv_candidates": 1,
+      "ambiguous": false
+    },
+    {
+      "id": 113,
+      "url": "http://outlook.office365.com/owa/calendar/a4e166f84cd1408b841072ea82e5ed4c@campus.utcluj.ro/b3b5393ad30a4d6b99329263d589e96e14289065892614941807/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 308,
+      "url": "http://outlook.office365.com/owa/calendar/a4e166f84cd1408b841072ea82e5ed4c@campus.utcluj.ro/b3b5393ad30a4d6b99329263d589e96e14289065892614941807/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 37,
+      "url": "http://outlook.office365.com/owa/calendar/a6859459497a4c1c9c1e184cc78ae012@campus.utcluj.ro/71e93be74e104973adfa9af3ae72f00c14499971520356935215/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 232,
+      "url": "http://outlook.office365.com/owa/calendar/a6859459497a4c1c9c1e184cc78ae012@campus.utcluj.ro/71e93be74e104973adfa9af3ae72f00c14499971520356935215/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 71,
+      "url": "http://outlook.office365.com/owa/calendar/a68be421dafb4a33bdbb0dbaa7634a50@campus.utcluj.ro/d5f49a072b6d44618f26ac720123c8098882989012024069063/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 266,
+      "url": "http://outlook.office365.com/owa/calendar/a68be421dafb4a33bdbb0dbaa7634a50@campus.utcluj.ro/d5f49a072b6d44618f26ac720123c8098882989012024069063/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 30,
+      "url": "http://outlook.office365.com/owa/calendar/b357254bb24647f78ffc8aa69f596823@campus.utcluj.ro/0176e4b0ea47443f83bcf007002a9f1613362169572306228119/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 225,
+      "url": "http://outlook.office365.com/owa/calendar/b357254bb24647f78ffc8aa69f596823@campus.utcluj.ro/0176e4b0ea47443f83bcf007002a9f1613362169572306228119/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 68,
+      "url": "http://outlook.office365.com/owa/calendar/b4815828fa98487d91c39ddf454163c7@campus.utcluj.ro/fb1fa4d4a2f143e488e77df5fbc19a5817308164875996803353/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 263,
+      "url": "http://outlook.office365.com/owa/calendar/b4815828fa98487d91c39ddf454163c7@campus.utcluj.ro/fb1fa4d4a2f143e488e77df5fbc19a5817308164875996803353/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 135,
+      "url": "http://outlook.office365.com/owa/calendar/b704aa7ac4304e98ad8207eb362bfa99@campus.utcluj.ro/b3c5709ebdaa4e5da359178588a8565810299257685696895984/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 330,
+      "url": "http://outlook.office365.com/owa/calendar/b704aa7ac4304e98ad8207eb362bfa99@campus.utcluj.ro/b3c5709ebdaa4e5da359178588a8565810299257685696895984/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 8,
+      "url": "http://outlook.office365.com/owa/calendar/b81d6241994b49f3ae54cfa91436edb4@campus.utcluj.ro/bd166368701d45fbb04f0e35535c965a12508232011876248634/calendar.html",
+      "strategy": "owner_only",
+      "proposed_email": "utcn_room_airi_obs_417@campus.utcluj.ro",
+      "csv_candidates": 1,
+      "ambiguous": false
+    },
+    {
+      "id": 203,
+      "url": "http://outlook.office365.com/owa/calendar/b81d6241994b49f3ae54cfa91436edb4@campus.utcluj.ro/bd166368701d45fbb04f0e35535c965a12508232011876248634/calendar.ics",
+      "strategy": "owner_only",
+      "proposed_email": "utcn_room_airi_obs_417@campus.utcluj.ro",
+      "csv_candidates": 1,
+      "ambiguous": false
+    },
+    {
+      "id": 114,
+      "url": "http://outlook.office365.com/owa/calendar/bcca9970db0c46349ed6f28c8176c2f8@campus.utcluj.ro/b498d20f6c1345daaac0a695706d284815991736931980221487/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 309,
+      "url": "http://outlook.office365.com/owa/calendar/bcca9970db0c46349ed6f28c8176c2f8@campus.utcluj.ro/b498d20f6c1345daaac0a695706d284815991736931980221487/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 161,
+      "url": "http://outlook.office365.com/owa/calendar/c0a00ab1e5504a7b832dfe89c70259f8@campus.utcluj.ro/a8db06972e204c5e912b4a9a12c5956213786006386065359395/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 356,
+      "url": "http://outlook.office365.com/owa/calendar/c0a00ab1e5504a7b832dfe89c70259f8@campus.utcluj.ro/a8db06972e204c5e912b4a9a12c5956213786006386065359395/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 44,
+      "url": "http://outlook.office365.com/owa/calendar/c3c788db3c5444e3be8cbe21907ed306@campus.utcluj.ro/64c4824290724eec8590ea208143738a17241629958252910651/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 239,
+      "url": "http://outlook.office365.com/owa/calendar/c3c788db3c5444e3be8cbe21907ed306@campus.utcluj.ro/64c4824290724eec8590ea208143738a17241629958252910651/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 46,
+      "url": "http://outlook.office365.com/owa/calendar/c5ffb7c601bb4252b70be47baf796b95@campus.utcluj.ro/4bf721c315d641a2a79c46089c03ae811091158201220480126/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 241,
+      "url": "http://outlook.office365.com/owa/calendar/c5ffb7c601bb4252b70be47baf796b95@campus.utcluj.ro/4bf721c315d641a2a79c46089c03ae811091158201220480126/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 96,
+      "url": "http://outlook.office365.com/owa/calendar/c96aedd3f76544c7837466fd6e0e9474@campus.utcluj.ro/23e6aec566f34a0585d0f25833155a1a2957858414771048870/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 291,
+      "url": "http://outlook.office365.com/owa/calendar/c96aedd3f76544c7837466fd6e0e9474@campus.utcluj.ro/23e6aec566f34a0585d0f25833155a1a2957858414771048870/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 47,
+      "url": "http://outlook.office365.com/owa/calendar/cea15869e6fe4eca81409b71c2566cee@campus.utcluj.ro/2e2abf3425a24b518ba4e902e420d61b3790923002459984107/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 242,
+      "url": "http://outlook.office365.com/owa/calendar/cea15869e6fe4eca81409b71c2566cee@campus.utcluj.ro/2e2abf3425a24b518ba4e902e420d61b3790923002459984107/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 185,
+      "url": "http://outlook.office365.com/owa/calendar/d2c5d28f172d4394bc45de79551dae9f@campus.utcluj.ro/ff4feaecf1e64be4ac70921ba3c7e4813224001752777747891/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 380,
+      "url": "http://outlook.office365.com/owa/calendar/d2c5d28f172d4394bc45de79551dae9f@campus.utcluj.ro/ff4feaecf1e64be4ac70921ba3c7e4813224001752777747891/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 136,
+      "url": "http://outlook.office365.com/owa/calendar/d6b58657f5f34b20b9be182bdee42a58@campus.utcluj.ro/e6be9487c6aa48b4a44c933bf7a2606612113108404090667895/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 331,
+      "url": "http://outlook.office365.com/owa/calendar/d6b58657f5f34b20b9be182bdee42a58@campus.utcluj.ro/e6be9487c6aa48b4a44c933bf7a2606612113108404090667895/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 21,
+      "url": "http://outlook.office365.com/owa/calendar/d721f5c7267c4f44896c25e53a2df898@campus.utcluj.ro/00909defe6104fc783169b6c120108743889436417842858006/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 216,
+      "url": "http://outlook.office365.com/owa/calendar/d721f5c7267c4f44896c25e53a2df898@campus.utcluj.ro/00909defe6104fc783169b6c120108743889436417842858006/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 17,
+      "url": "http://outlook.office365.com/owa/calendar/db4a8fbccc7d46bfb19113400da2f458@campus.utcluj.ro/26958b12e0e941cf85d64d7d14bac0ef9859296705225930443/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 212,
+      "url": "http://outlook.office365.com/owa/calendar/db4a8fbccc7d46bfb19113400da2f458@campus.utcluj.ro/26958b12e0e941cf85d64d7d14bac0ef9859296705225930443/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 41,
+      "url": "http://outlook.office365.com/owa/calendar/dc14b392dac24271bc48304776ca25a6@campus.utcluj.ro/a92e7f17627f487080a6672d6e6fe7e94527843340417364429/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 236,
+      "url": "http://outlook.office365.com/owa/calendar/dc14b392dac24271bc48304776ca25a6@campus.utcluj.ro/a92e7f17627f487080a6672d6e6fe7e94527843340417364429/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 74,
+      "url": "http://outlook.office365.com/owa/calendar/ddebbc43ab104b90a2ebc0c0fea65351@campus.utcluj.ro/7c775a0ded654450bef79f719dd4253111117431312280053111/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 269,
+      "url": "http://outlook.office365.com/owa/calendar/ddebbc43ab104b90a2ebc0c0fea65351@campus.utcluj.ro/7c775a0ded654450bef79f719dd4253111117431312280053111/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 95,
+      "url": "http://outlook.office365.com/owa/calendar/de05dbcdc8d34d2ca80c61512463cbc0@campus.utcluj.ro/eb704a924cc74565a8198cf077751b4313158737863952741809/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 290,
+      "url": "http://outlook.office365.com/owa/calendar/de05dbcdc8d34d2ca80c61512463cbc0@campus.utcluj.ro/eb704a924cc74565a8198cf077751b4313158737863952741809/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 40,
+      "url": "http://outlook.office365.com/owa/calendar/e182e6d6341f452f8c96818578c52ef6@campus.utcluj.ro/9df27367bf214dafb233da092bc233598181410381887938532/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 235,
+      "url": "http://outlook.office365.com/owa/calendar/e182e6d6341f452f8c96818578c52ef6@campus.utcluj.ro/9df27367bf214dafb233da092bc233598181410381887938532/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 69,
+      "url": "http://outlook.office365.com/owa/calendar/e3582b29c0174f8a9d80d42e342cf0aa@campus.utcluj.ro/af59a2d546a4420f93a503edbfd160f816075394973509184635/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 264,
+      "url": "http://outlook.office365.com/owa/calendar/e3582b29c0174f8a9d80d42e342cf0aa@campus.utcluj.ro/af59a2d546a4420f93a503edbfd160f816075394973509184635/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 52,
+      "url": "http://outlook.office365.com/owa/calendar/ea43b46f436d480da6a6b0f83f42bef5@campus.utcluj.ro/8592bca6b8294873bcdd4c0beb65fbe211083143506326222116/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 247,
+      "url": "http://outlook.office365.com/owa/calendar/ea43b46f436d480da6a6b0f83f42bef5@campus.utcluj.ro/8592bca6b8294873bcdd4c0beb65fbe211083143506326222116/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 162,
+      "url": "http://outlook.office365.com/owa/calendar/ebf584296e27451f881f299f81cd0baf@campus.utcluj.ro/4710edc002644e5a88e04267673fae1c7227915822595955757/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 357,
+      "url": "http://outlook.office365.com/owa/calendar/ebf584296e27451f881f299f81cd0baf@campus.utcluj.ro/4710edc002644e5a88e04267673fae1c7227915822595955757/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 35,
+      "url": "http://outlook.office365.com/owa/calendar/edf3d71e91d54f698c309b8564a68c84@campus.utcluj.ro/233719a8802f4b738dbd57a3c677321410364370949032218393/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 230,
+      "url": "http://outlook.office365.com/owa/calendar/edf3d71e91d54f698c309b8564a68c84@campus.utcluj.ro/233719a8802f4b738dbd57a3c677321410364370949032218393/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 67,
+      "url": "http://outlook.office365.com/owa/calendar/f142a265f5c24c25b7848d89dcbc62f5@campus.utcluj.ro/24506af7380041828845b4f4a0d9545b17632199253210550300/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 262,
+      "url": "http://outlook.office365.com/owa/calendar/f142a265f5c24c25b7848d89dcbc62f5@campus.utcluj.ro/24506af7380041828845b4f4a0d9545b17632199253210550300/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 163,
+      "url": "http://outlook.office365.com/owa/calendar/f22dd6bbe42945e08e89c1516a82b0b7@campus.utcluj.ro/499763e8015e4c3590fbebff61c4244b5745281987689689452/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 358,
+      "url": "http://outlook.office365.com/owa/calendar/f22dd6bbe42945e08e89c1516a82b0b7@campus.utcluj.ro/499763e8015e4c3590fbebff61c4244b5745281987689689452/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 22,
+      "url": "http://outlook.office365.com/owa/calendar/f493fa31634a40cd9574240089393298@campus.utcluj.ro/f3c2b78fdb644f96b25c96644d5fa8d013244098106707257210/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 217,
+      "url": "http://outlook.office365.com/owa/calendar/f493fa31634a40cd9574240089393298@campus.utcluj.ro/f3c2b78fdb644f96b25c96644d5fa8d013244098106707257210/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 31,
+      "url": "http://outlook.office365.com/owa/calendar/f4b409928a4c4124b3a7e0e1e45af815@campus.utcluj.ro/9fd34b1a5aac43f4b2af0e2e6420256112725172051649695618/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 226,
+      "url": "http://outlook.office365.com/owa/calendar/f4b409928a4c4124b3a7e0e1e45af815@campus.utcluj.ro/9fd34b1a5aac43f4b2af0e2e6420256112725172051649695618/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 29,
+      "url": "http://outlook.office365.com/owa/calendar/fa0b415e678142029941285487511baf@campus.utcluj.ro/99d9f537aa4247e98cdc3b67fa3f5f593331518140728516756/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 224,
+      "url": "http://outlook.office365.com/owa/calendar/fa0b415e678142029941285487511baf@campus.utcluj.ro/99d9f537aa4247e98cdc3b67fa3f5f593331518140728516756/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 38,
+      "url": "http://outlook.office365.com/owa/calendar/fa41af113df74f92b55ce09eb15a50df@campus.utcluj.ro/926ab04e83b24881a44551bc7267e1ea9771455757049915068/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 233,
+      "url": "http://outlook.office365.com/owa/calendar/fa41af113df74f92b55ce09eb15a50df@campus.utcluj.ro/926ab04e83b24881a44551bc7267e1ea9771455757049915068/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 19,
+      "url": "http://outlook.office365.com/owa/calendar/ff1e19f2286a40129b32dc57b269e97c@campus.utcluj.ro/628337056fbb42bd99d83ed394de9a2812415035872309508805/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 214,
+      "url": "http://outlook.office365.com/owa/calendar/ff1e19f2286a40129b32dc57b269e97c@campus.utcluj.ro/628337056fbb42bd99d83ed394de9a2812415035872309508805/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 182,
+      "url": "http://outlook.office365.com/owa/calendar/ff71f5d4ef78484db82b7cd4e203aa97@campus.utcluj.ro/3b75cdd247414b89a255bd92026cbcc410810192519064393375/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 377,
+      "url": "http://outlook.office365.com/owa/calendar/ff71f5d4ef78484db82b7cd4e203aa97@campus.utcluj.ro/3b75cdd247414b89a255bd92026cbcc410810192519064393375/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 1,
+      "url": "https://outlook.office365.com/calendar/published/173862b98010453296f2a697e45f3b1e@campus.utcluj.ro/daeb64d4bd994c52b4f54d04ba1940ca2236386271423118770/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 3,
+      "url": "https://outlook.office365.com/calendar/published/7eae7702ddff418dbf9aa0e802d943f4@campus.utcluj.ro/a37daf9617ab452398e637c86d821e6817645637133223191431/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 107,
+      "url": "https://outlook.office365.com/owa/calendar/011ed1e0e2254bd788ffa5f271afa398@campus.utcluj.ro/7a36518756f841a1bf2ea23c8704b8519633424276481403873/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 302,
+      "url": "https://outlook.office365.com/owa/calendar/011ed1e0e2254bd788ffa5f271afa398@campus.utcluj.ro/7a36518756f841a1bf2ea23c8704b8519633424276481403873/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 63,
+      "url": "https://outlook.office365.com/owa/calendar/01f5f3dbf48d4edcb5026190c7a40041@campus.utcluj.ro/ec3b79c57cc04d9f9c02bdc260cddaf84711760262349721871/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 258,
+      "url": "https://outlook.office365.com/owa/calendar/01f5f3dbf48d4edcb5026190c7a40041@campus.utcluj.ro/ec3b79c57cc04d9f9c02bdc260cddaf84711760262349721871/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 130,
+      "url": "https://outlook.office365.com/owa/calendar/022a23e0fa0f423cb7f640a87bd89977@campus.utcluj.ro/376d8d4fa359477a9e8ab64786d65a096683573902960169448/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 325,
+      "url": "https://outlook.office365.com/owa/calendar/022a23e0fa0f423cb7f640a87bd89977@campus.utcluj.ro/376d8d4fa359477a9e8ab64786d65a096683573902960169448/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 190,
+      "url": "https://outlook.office365.com/owa/calendar/02e0e4e5988541beb37d1d311021d591@campus.utcluj.ro/f165bdbe4cd8463aab29d6b2c6dde8811376436817678416584/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 385,
+      "url": "https://outlook.office365.com/owa/calendar/02e0e4e5988541beb37d1d311021d591@campus.utcluj.ro/f165bdbe4cd8463aab29d6b2c6dde8811376436817678416584/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 106,
+      "url": "https://outlook.office365.com/owa/calendar/03a0c9b436de47c7b2d160f0694c11e0@campus.utcluj.ro/099b8f2802044c0a9c49d1eca1a4e7079780360619601604971/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 301,
+      "url": "https://outlook.office365.com/owa/calendar/03a0c9b436de47c7b2d160f0694c11e0@campus.utcluj.ro/099b8f2802044c0a9c49d1eca1a4e7079780360619601604971/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 99,
+      "url": "https://outlook.office365.com/owa/calendar/03e9c3eb51804b2a8ddf57efde942640@campus.utcluj.ro/e98d6eaa46e64a22afe82e9233e073635307254572847619666/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 294,
+      "url": "https://outlook.office365.com/owa/calendar/03e9c3eb51804b2a8ddf57efde942640@campus.utcluj.ro/e98d6eaa46e64a22afe82e9233e073635307254572847619666/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 195,
+      "url": "https://outlook.office365.com/owa/calendar/05aff2c7ffcc4387bd94806ad10bb84c@campus.utcluj.ro/eb562ba9edf64fb3b5cf121970264d8e16272913970701890711/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 390,
+      "url": "https://outlook.office365.com/owa/calendar/05aff2c7ffcc4387bd94806ad10bb84c@campus.utcluj.ro/eb562ba9edf64fb3b5cf121970264d8e16272913970701890711/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 81,
+      "url": "https://outlook.office365.com/owa/calendar/06d58bb6c58c42cd92b22bc70089e6c9@campus.utcluj.ro/96b88d8a68e047feac83bf7ba7009a7243862708895849135/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 276,
+      "url": "https://outlook.office365.com/owa/calendar/06d58bb6c58c42cd92b22bc70089e6c9@campus.utcluj.ro/96b88d8a68e047feac83bf7ba7009a7243862708895849135/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 64,
+      "url": "https://outlook.office365.com/owa/calendar/087032b12e3e475980fecb9249a4e87f@campus.utcluj.ro/d8f6456f18634f8588ee8bbe1c43540716901539822885786769/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 259,
+      "url": "https://outlook.office365.com/owa/calendar/087032b12e3e475980fecb9249a4e87f@campus.utcluj.ro/d8f6456f18634f8588ee8bbe1c43540716901539822885786769/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 133,
+      "url": "https://outlook.office365.com/owa/calendar/09ec5e09d86441a8a2a8ded646eae974@campus.utcluj.ro/f5db505bb83242f797678ee506e2b5e83846760642172240321/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 328,
+      "url": "https://outlook.office365.com/owa/calendar/09ec5e09d86441a8a2a8ded646eae974@campus.utcluj.ro/f5db505bb83242f797678ee506e2b5e83846760642172240321/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 131,
+      "url": "https://outlook.office365.com/owa/calendar/0d0d20baeacc4ea282d91c117cdd9b96@campus.utcluj.ro/11b4a02bcdca44fdbf252554a80c95691043377668700617147/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 326,
+      "url": "https://outlook.office365.com/owa/calendar/0d0d20baeacc4ea282d91c117cdd9b96@campus.utcluj.ro/11b4a02bcdca44fdbf252554a80c95691043377668700617147/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 194,
+      "url": "https://outlook.office365.com/owa/calendar/0e3c1061ace94209820fe5b97ba430fb@campus.utcluj.ro/578a66b13684439596e7e6727bd83b1d3831380052953128501/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 389,
+      "url": "https://outlook.office365.com/owa/calendar/0e3c1061ace94209820fe5b97ba430fb@campus.utcluj.ro/578a66b13684439596e7e6727bd83b1d3831380052953128501/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 158,
+      "url": "https://outlook.office365.com/owa/calendar/117b1a6b49984facb47bc42dd0e571a8@campus.utcluj.ro/ace23963db6f4d7891f3d2f20072b06515111776838913045133/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 353,
+      "url": "https://outlook.office365.com/owa/calendar/117b1a6b49984facb47bc42dd0e571a8@campus.utcluj.ro/ace23963db6f4d7891f3d2f20072b06515111776838913045133/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 120,
+      "url": "https://outlook.office365.com/owa/calendar/142b9e9b5cd143e8b3ff531473171841@campus.utcluj.ro/65c5de55e57746559688d26c46bf74838749769534200103753/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 315,
+      "url": "https://outlook.office365.com/owa/calendar/142b9e9b5cd143e8b3ff531473171841@campus.utcluj.ro/65c5de55e57746559688d26c46bf74838749769534200103753/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 78,
+      "url": "https://outlook.office365.com/owa/calendar/153bf4b8c0514aa8a56417ed8992d914@campus.utcluj.ro/64d134fdfe354eac8cf255ad2fdf57b09151124291925953497/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 273,
+      "url": "https://outlook.office365.com/owa/calendar/153bf4b8c0514aa8a56417ed8992d914@campus.utcluj.ro/64d134fdfe354eac8cf255ad2fdf57b09151124291925953497/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 111,
+      "url": "https://outlook.office365.com/owa/calendar/182bacda4cc54c828f6b9be9fa1bf549@campus.utcluj.ro/d943d49375fc44489ffc9f890e3e0ff91330299505588086582/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 306,
+      "url": "https://outlook.office365.com/owa/calendar/182bacda4cc54c828f6b9be9fa1bf549@campus.utcluj.ro/d943d49375fc44489ffc9f890e3e0ff91330299505588086582/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 85,
+      "url": "https://outlook.office365.com/owa/calendar/1c778e9274974187826f2b2dd0447660@campus.utcluj.ro/c518b66497434a0d8f18e0a89d01f81111248740627744967659/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 280,
+      "url": "https://outlook.office365.com/owa/calendar/1c778e9274974187826f2b2dd0447660@campus.utcluj.ro/c518b66497434a0d8f18e0a89d01f81111248740627744967659/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 180,
+      "url": "https://outlook.office365.com/owa/calendar/1ccbaf0082d944249b35f9cf1f981f68@campus.utcluj.ro/ac05a87de03e4c4faea6e2bc4a938d1f15540254936049703717/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 375,
+      "url": "https://outlook.office365.com/owa/calendar/1ccbaf0082d944249b35f9cf1f981f68@campus.utcluj.ro/ac05a87de03e4c4faea6e2bc4a938d1f15540254936049703717/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 101,
+      "url": "https://outlook.office365.com/owa/calendar/1e3132d45e8e42138bdfbd1f2d00cc3f@campus.utcluj.ro/0b99fcb8743b43199331f66c6ea291033113260389161843545/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 296,
+      "url": "https://outlook.office365.com/owa/calendar/1e3132d45e8e42138bdfbd1f2d00cc3f@campus.utcluj.ro/0b99fcb8743b43199331f66c6ea291033113260389161843545/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 160,
+      "url": "https://outlook.office365.com/owa/calendar/1e7c10dc9597406a962f7730381ea5d5@campus.utcluj.ro/07834ed22493412dbee0af199ada20a1679606469189881503/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 355,
+      "url": "https://outlook.office365.com/owa/calendar/1e7c10dc9597406a962f7730381ea5d5@campus.utcluj.ro/07834ed22493412dbee0af199ada20a1679606469189881503/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 110,
+      "url": "https://outlook.office365.com/owa/calendar/20696cd038544cf0b95725c9bd6ad434@campus.utcluj.ro/87d073e386af42ca867ff9e12d6b521f2545483240802485141/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 305,
+      "url": "https://outlook.office365.com/owa/calendar/20696cd038544cf0b95725c9bd6ad434@campus.utcluj.ro/87d073e386af42ca867ff9e12d6b521f2545483240802485141/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 93,
+      "url": "https://outlook.office365.com/owa/calendar/22b6bc2b144045449131ab73dc1be374@campus.utcluj.ro/b9a28372266a41479730f193e4f548357293333472514865693/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 288,
+      "url": "https://outlook.office365.com/owa/calendar/22b6bc2b144045449131ab73dc1be374@campus.utcluj.ro/b9a28372266a41479730f193e4f548357293333472514865693/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 89,
+      "url": "https://outlook.office365.com/owa/calendar/22d4a472d9874cf7873a1bd1939ad55e@campus.utcluj.ro/d181897156c2414d8d6ab196c42d1e3210418329460054209394/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 284,
+      "url": "https://outlook.office365.com/owa/calendar/22d4a472d9874cf7873a1bd1939ad55e@campus.utcluj.ro/d181897156c2414d8d6ab196c42d1e3210418329460054209394/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 165,
+      "url": "https://outlook.office365.com/owa/calendar/2558b0263ce545e0bfda02b1474e5c5d@campus.utcluj.ro/8b0e18910794455dbd4ab23812110d53998087074370350586/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 360,
+      "url": "https://outlook.office365.com/owa/calendar/2558b0263ce545e0bfda02b1474e5c5d@campus.utcluj.ro/8b0e18910794455dbd4ab23812110d53998087074370350586/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 193,
+      "url": "https://outlook.office365.com/owa/calendar/260f699a7e7741edb73e8d7a8c8dade6@campus.utcluj.ro/6b3866ef98ee4bfeacc36917abdd6efe18317677392087118261/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 388,
+      "url": "https://outlook.office365.com/owa/calendar/260f699a7e7741edb73e8d7a8c8dade6@campus.utcluj.ro/6b3866ef98ee4bfeacc36917abdd6efe18317677392087118261/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 117,
+      "url": "https://outlook.office365.com/owa/calendar/2973e1925d27439fba6128347d68b65f@campus.utcluj.ro/982915e601d54a318b9120c4e4b9e74d16005272970557829414/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 312,
+      "url": "https://outlook.office365.com/owa/calendar/2973e1925d27439fba6128347d68b65f@campus.utcluj.ro/982915e601d54a318b9120c4e4b9e74d16005272970557829414/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 155,
+      "url": "https://outlook.office365.com/owa/calendar/2c9ba45a0eae40cbb73858356013e4f2@campus.utcluj.ro/55d9d056e2684f75bd87b1d2479f4e14948866029227653928/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 350,
+      "url": "https://outlook.office365.com/owa/calendar/2c9ba45a0eae40cbb73858356013e4f2@campus.utcluj.ro/55d9d056e2684f75bd87b1d2479f4e14948866029227653928/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 179,
+      "url": "https://outlook.office365.com/owa/calendar/2d2d5b3da1504367a9cfa37e1434c576@campus.utcluj.ro/f3d60380a5334890967e69f61f5bd6b01504847312403637086/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 374,
+      "url": "https://outlook.office365.com/owa/calendar/2d2d5b3da1504367a9cfa37e1434c576@campus.utcluj.ro/f3d60380a5334890967e69f61f5bd6b01504847312403637086/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 73,
+      "url": "https://outlook.office365.com/owa/calendar/33c4b61348b74baa98da486245a22f69@campus.utcluj.ro/fc3d8b215ef74385b0b43f89224423e616163807469309657084/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 268,
+      "url": "https://outlook.office365.com/owa/calendar/33c4b61348b74baa98da486245a22f69@campus.utcluj.ro/fc3d8b215ef74385b0b43f89224423e616163807469309657084/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 171,
+      "url": "https://outlook.office365.com/owa/calendar/3c5ad3405ca84364becb83e752e83465@campus.utcluj.ro/3f291a1b605549389487cbf5581a6cee15690257524447050243/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 366,
+      "url": "https://outlook.office365.com/owa/calendar/3c5ad3405ca84364becb83e752e83465@campus.utcluj.ro/3f291a1b605549389487cbf5581a6cee15690257524447050243/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 105,
+      "url": "https://outlook.office365.com/owa/calendar/426a2c020f5e4d179aa78bd943ee9a8f@campus.utcluj.ro/e27df06a04d4460e9ed404c8b87c63a413946056066639156367/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 300,
+      "url": "https://outlook.office365.com/owa/calendar/426a2c020f5e4d179aa78bd943ee9a8f@campus.utcluj.ro/e27df06a04d4460e9ed404c8b87c63a413946056066639156367/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 82,
+      "url": "https://outlook.office365.com/owa/calendar/45362a6d11df4fb894b05ba2fa4cafdd@campus.utcluj.ro/266e9a0c863240bfa8cc5e4dc0d89af36807275624616540967/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 277,
+      "url": "https://outlook.office365.com/owa/calendar/45362a6d11df4fb894b05ba2fa4cafdd@campus.utcluj.ro/266e9a0c863240bfa8cc5e4dc0d89af36807275624616540967/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 174,
+      "url": "https://outlook.office365.com/owa/calendar/455dbe559be940dc8c4b0bc947e5e9cb@campus.utcluj.ro/474cf801e6af4da288e9771d7010dc4f16360615254874367374/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 369,
+      "url": "https://outlook.office365.com/owa/calendar/455dbe559be940dc8c4b0bc947e5e9cb@campus.utcluj.ro/474cf801e6af4da288e9771d7010dc4f16360615254874367374/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 102,
+      "url": "https://outlook.office365.com/owa/calendar/482dbad4b0c8489b9693279447140a0a@campus.utcluj.ro/d825137571a349ba8287adedab2cdfb514627582738429928726/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 297,
+      "url": "https://outlook.office365.com/owa/calendar/482dbad4b0c8489b9693279447140a0a@campus.utcluj.ro/d825137571a349ba8287adedab2cdfb514627582738429928726/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 118,
+      "url": "https://outlook.office365.com/owa/calendar/4a3b092ea38345d88404d0bac0db7702@campus.utcluj.ro/c75ea176103b431bb9bff5b7044f872514552350120730701095/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 313,
+      "url": "https://outlook.office365.com/owa/calendar/4a3b092ea38345d88404d0bac0db7702@campus.utcluj.ro/c75ea176103b431bb9bff5b7044f872514552350120730701095/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 152,
+      "url": "https://outlook.office365.com/owa/calendar/4a40a038c6224320aa8e6a5960ba622a@campus.utcluj.ro/794b46d8cf504c3f907b867d8ef0ab3713675293087331874768/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 347,
+      "url": "https://outlook.office365.com/owa/calendar/4a40a038c6224320aa8e6a5960ba622a@campus.utcluj.ro/794b46d8cf504c3f907b867d8ef0ab3713675293087331874768/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 144,
+      "url": "https://outlook.office365.com/owa/calendar/4baf85b9d23e444fab45018954ba1d13@campus.utcluj.ro/64b1ecbb89c64d7091aad8608a8ceaa35524098022047501136/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 339,
+      "url": "https://outlook.office365.com/owa/calendar/4baf85b9d23e444fab45018954ba1d13@campus.utcluj.ro/64b1ecbb89c64d7091aad8608a8ceaa35524098022047501136/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 119,
+      "url": "https://outlook.office365.com/owa/calendar/4d3571651d464a1a944fbe672ba62b84@campus.utcluj.ro/4aff3e6cda544d4eb9854a91168d673216398369614859241660/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 314,
+      "url": "https://outlook.office365.com/owa/calendar/4d3571651d464a1a944fbe672ba62b84@campus.utcluj.ro/4aff3e6cda544d4eb9854a91168d673216398369614859241660/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 132,
+      "url": "https://outlook.office365.com/owa/calendar/4f4147e3ce974902a359f5113b51a447@campus.utcluj.ro/d163a8c733904feb97c5187a4d9b8c0d6895965863866313083/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 327,
+      "url": "https://outlook.office365.com/owa/calendar/4f4147e3ce974902a359f5113b51a447@campus.utcluj.ro/d163a8c733904feb97c5187a4d9b8c0d6895965863866313083/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 142,
+      "url": "https://outlook.office365.com/owa/calendar/5248e1e6a9ac4381b5ba30fe5bc81a99@campus.utcluj.ro/7701769fb1964a8c92c109b331413c454139217445827280509/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 337,
+      "url": "https://outlook.office365.com/owa/calendar/5248e1e6a9ac4381b5ba30fe5bc81a99@campus.utcluj.ro/7701769fb1964a8c92c109b331413c454139217445827280509/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 109,
+      "url": "https://outlook.office365.com/owa/calendar/52a73b4f189d4c0eb5f2549b9be382f0@campus.utcluj.ro/1ae56296cae841b29a3bf729346c4f1a10638459542953233954/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 304,
+      "url": "https://outlook.office365.com/owa/calendar/52a73b4f189d4c0eb5f2549b9be382f0@campus.utcluj.ro/1ae56296cae841b29a3bf729346c4f1a10638459542953233954/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 121,
+      "url": "https://outlook.office365.com/owa/calendar/6196aa57de3a46ffbeee282efefb2d62@campus.utcluj.ro/580a4ba1a0394c4ab1caad906cf7cf287269409148282756483/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 316,
+      "url": "https://outlook.office365.com/owa/calendar/6196aa57de3a46ffbeee282efefb2d62@campus.utcluj.ro/580a4ba1a0394c4ab1caad906cf7cf287269409148282756483/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 125,
+      "url": "https://outlook.office365.com/owa/calendar/62da40fb72624e6cb29e8f3148a3a380@campus.utcluj.ro/1f4f2a9ee6804b0e921e9274d5308a2a18215479473383923325/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 320,
+      "url": "https://outlook.office365.com/owa/calendar/62da40fb72624e6cb29e8f3148a3a380@campus.utcluj.ro/1f4f2a9ee6804b0e921e9274d5308a2a18215479473383923325/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 108,
+      "url": "https://outlook.office365.com/owa/calendar/6b0531287d01410da35d454404a4b3de@campus.utcluj.ro/f42a1ce02fea4765b68aed2ca3531e9016230198696104586443/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 303,
+      "url": "https://outlook.office365.com/owa/calendar/6b0531287d01410da35d454404a4b3de@campus.utcluj.ro/f42a1ce02fea4765b68aed2ca3531e9016230198696104586443/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 196,
+      "url": "https://outlook.office365.com/owa/calendar/6df0b487dbed46adbb893b709e0aec6b@campus.utcluj.ro/d0583e2ff6ae4b7c821414fdbab614726486838255886964362/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 391,
+      "url": "https://outlook.office365.com/owa/calendar/6df0b487dbed46adbb893b709e0aec6b@campus.utcluj.ro/d0583e2ff6ae4b7c821414fdbab614726486838255886964362/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 86,
+      "url": "https://outlook.office365.com/owa/calendar/6f27e2305bf442f2bb08c0b5dc1d1f42@campus.utcluj.ro/b0f3b6270db04618b106576602fea47b14647381725133957102/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 281,
+      "url": "https://outlook.office365.com/owa/calendar/6f27e2305bf442f2bb08c0b5dc1d1f42@campus.utcluj.ro/b0f3b6270db04618b106576602fea47b14647381725133957102/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 145,
+      "url": "https://outlook.office365.com/owa/calendar/71d07328ece04443a3faa0a9d6319f11@campus.utcluj.ro/b3660146216e486a9427965dcd5c596f8411651768609147697/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 340,
+      "url": "https://outlook.office365.com/owa/calendar/71d07328ece04443a3faa0a9d6319f11@campus.utcluj.ro/b3660146216e486a9427965dcd5c596f8411651768609147697/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 176,
+      "url": "https://outlook.office365.com/owa/calendar/723c71913f5440d88557a91d760a3a8f@campus.utcluj.ro/ea86c7c8eb6e43ac98f8407665f04c9a11921888838287585885/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 371,
+      "url": "https://outlook.office365.com/owa/calendar/723c71913f5440d88557a91d760a3a8f@campus.utcluj.ro/ea86c7c8eb6e43ac98f8407665f04c9a11921888838287585885/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 173,
+      "url": "https://outlook.office365.com/owa/calendar/742030df9a1145f79f246266d16aaa19@campus.utcluj.ro/33e837f8bfb946d7bdb0c23a9e9784438094491037190444825/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 368,
+      "url": "https://outlook.office365.com/owa/calendar/742030df9a1145f79f246266d16aaa19@campus.utcluj.ro/33e837f8bfb946d7bdb0c23a9e9784438094491037190444825/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 159,
+      "url": "https://outlook.office365.com/owa/calendar/7433551d8a9f4a39b97d1d7cdae27076@campus.utcluj.ro/daf46b3cb58940f7b866bb17ac302afa16936313465599088916/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 354,
+      "url": "https://outlook.office365.com/owa/calendar/7433551d8a9f4a39b97d1d7cdae27076@campus.utcluj.ro/daf46b3cb58940f7b866bb17ac302afa16936313465599088916/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 97,
+      "url": "https://outlook.office365.com/owa/calendar/767ecccc757d4d1cb06e69cfc5859a99@campus.utcluj.ro/9d027f91b69a47c8ac3abeaf8f1616cb2599555293167064219/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 292,
+      "url": "https://outlook.office365.com/owa/calendar/767ecccc757d4d1cb06e69cfc5859a99@campus.utcluj.ro/9d027f91b69a47c8ac3abeaf8f1616cb2599555293167064219/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 164,
+      "url": "https://outlook.office365.com/owa/calendar/77a6190ace044efc96dc92c0424b5db3@campus.utcluj.ro/1ed3071ef5ba4a8a82fd7525b41d97d75123532789196401377/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 359,
+      "url": "https://outlook.office365.com/owa/calendar/77a6190ace044efc96dc92c0424b5db3@campus.utcluj.ro/1ed3071ef5ba4a8a82fd7525b41d97d75123532789196401377/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 104,
+      "url": "https://outlook.office365.com/owa/calendar/783cb511ce3146a19f529cc46461a138@campus.utcluj.ro/2cdb617778cd43d1bb06710dc527517d1165772283573533856/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 299,
+      "url": "https://outlook.office365.com/owa/calendar/783cb511ce3146a19f529cc46461a138@campus.utcluj.ro/2cdb617778cd43d1bb06710dc527517d1165772283573533856/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 84,
+      "url": "https://outlook.office365.com/owa/calendar/78d6258c48304d1b999bea11beae256c@campus.utcluj.ro/593fa5a1c33043748756c7f5f8ecb36811682836993177368435/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 279,
+      "url": "https://outlook.office365.com/owa/calendar/78d6258c48304d1b999bea11beae256c@campus.utcluj.ro/593fa5a1c33043748756c7f5f8ecb36811682836993177368435/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 2,
+      "url": "https://outlook.office365.com/owa/calendar/7eae7702ddff418dbf9aa0e802d943f4@campus.utcluj.ro/f121b4583f9c4fc48d98b75d700eca0811508330940505534286/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 127,
+      "url": "https://outlook.office365.com/owa/calendar/7f5e16979d50465ab3263c9edea56e82@campus.utcluj.ro/73c08b081d4f4cd58c451b5ad1c2cfeb3940275610148253028/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 322,
+      "url": "https://outlook.office365.com/owa/calendar/7f5e16979d50465ab3263c9edea56e82@campus.utcluj.ro/73c08b081d4f4cd58c451b5ad1c2cfeb3940275610148253028/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 143,
+      "url": "https://outlook.office365.com/owa/calendar/804fc2e4bd91440abd3cf141e1b38425@campus.utcluj.ro/a4f7d97ee8584f879fe228c8d05edcec7873654453925511696/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 338,
+      "url": "https://outlook.office365.com/owa/calendar/804fc2e4bd91440abd3cf141e1b38425@campus.utcluj.ro/a4f7d97ee8584f879fe228c8d05edcec7873654453925511696/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 141,
+      "url": "https://outlook.office365.com/owa/calendar/833fe045f7824a5381fbae924429297b@campus.utcluj.ro/ab2168240db94129b3e95c3f539fd46a14939052852893932707/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 336,
+      "url": "https://outlook.office365.com/owa/calendar/833fe045f7824a5381fbae924429297b@campus.utcluj.ro/ab2168240db94129b3e95c3f539fd46a14939052852893932707/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 166,
+      "url": "https://outlook.office365.com/owa/calendar/83f45e59772d4628b03cc9d21654ad23@campus.utcluj.ro/3cd72cc579d14626a7aa08d7d5bde12d14504394438333080978/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 361,
+      "url": "https://outlook.office365.com/owa/calendar/83f45e59772d4628b03cc9d21654ad23@campus.utcluj.ro/3cd72cc579d14626a7aa08d7d5bde12d14504394438333080978/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 172,
+      "url": "https://outlook.office365.com/owa/calendar/86800cd4d26b451fa3ddc195163b8d41@campus.utcluj.ro/044347e72cf748189aab9eb96193d4d516109088026048608113/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 367,
+      "url": "https://outlook.office365.com/owa/calendar/86800cd4d26b451fa3ddc195163b8d41@campus.utcluj.ro/044347e72cf748189aab9eb96193d4d516109088026048608113/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 88,
+      "url": "https://outlook.office365.com/owa/calendar/8ba9c96221d44eeea0f7b4f112f92ca6@campus.utcluj.ro/0bddb9b17d0146eda74fcde920af7411594666909497130246/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 283,
+      "url": "https://outlook.office365.com/owa/calendar/8ba9c96221d44eeea0f7b4f112f92ca6@campus.utcluj.ro/0bddb9b17d0146eda74fcde920af7411594666909497130246/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 181,
+      "url": "https://outlook.office365.com/owa/calendar/8bbc3b13cd2545ac95b2ee9772a3b82e@campus.utcluj.ro/c2f6cc38a1da4501bdb275d5e7fdc3b014913443233045095865/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 376,
+      "url": "https://outlook.office365.com/owa/calendar/8bbc3b13cd2545ac95b2ee9772a3b82e@campus.utcluj.ro/c2f6cc38a1da4501bdb275d5e7fdc3b014913443233045095865/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 175,
+      "url": "https://outlook.office365.com/owa/calendar/8c56645debb6439190cf2002c35b607f@campus.utcluj.ro/77cfe4966bb142278591fa9c189308a110950812604967119849/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 370,
+      "url": "https://outlook.office365.com/owa/calendar/8c56645debb6439190cf2002c35b607f@campus.utcluj.ro/77cfe4966bb142278591fa9c189308a110950812604967119849/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 87,
+      "url": "https://outlook.office365.com/owa/calendar/921663b8852a4b59bd0fcb557e8fb3e3@campus.utcluj.ro/b2e08a02ba4542a3b27d063b57ece4cd14305712522080967695/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 282,
+      "url": "https://outlook.office365.com/owa/calendar/921663b8852a4b59bd0fcb557e8fb3e3@campus.utcluj.ro/b2e08a02ba4542a3b27d063b57ece4cd14305712522080967695/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 147,
+      "url": "https://outlook.office365.com/owa/calendar/95f690a654674da994ed82c955991615@campus.utcluj.ro/080c2199c7834f2a989bc2cda63ba69615012402782938320572/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 342,
+      "url": "https://outlook.office365.com/owa/calendar/95f690a654674da994ed82c955991615@campus.utcluj.ro/080c2199c7834f2a989bc2cda63ba69615012402782938320572/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 139,
+      "url": "https://outlook.office365.com/owa/calendar/9d21134480d8460ea778ed65de7b289c@campus.utcluj.ro/1d4753b5145e42eb89f6ec30e0aaa4835459575961504388940/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 334,
+      "url": "https://outlook.office365.com/owa/calendar/9d21134480d8460ea778ed65de7b289c@campus.utcluj.ro/1d4753b5145e42eb89f6ec30e0aaa4835459575961504388940/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 177,
+      "url": "https://outlook.office365.com/owa/calendar/9dc810a9f6eb4711a4c212237b0f3827@campus.utcluj.ro/7395956760d94c78bff5b90bfd6cd7ad13457112995751914361/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 372,
+      "url": "https://outlook.office365.com/owa/calendar/9dc810a9f6eb4711a4c212237b0f3827@campus.utcluj.ro/7395956760d94c78bff5b90bfd6cd7ad13457112995751914361/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 198,
+      "url": "https://outlook.office365.com/owa/calendar/9e52bd188dc9492398aa76a9623aa245@campus.utcluj.ro/11f8b9fb43e84ed3b6850dc84db423b16997328360830985704/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 393,
+      "url": "https://outlook.office365.com/owa/calendar/9e52bd188dc9492398aa76a9623aa245@campus.utcluj.ro/11f8b9fb43e84ed3b6850dc84db423b16997328360830985704/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 122,
+      "url": "https://outlook.office365.com/owa/calendar/a298b9929f4847478d01a555120ab01e@campus.utcluj.ro/c36332c746974507b164570e73f5ccac17345435354118711566/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 317,
+      "url": "https://outlook.office365.com/owa/calendar/a298b9929f4847478d01a555120ab01e@campus.utcluj.ro/c36332c746974507b164570e73f5ccac17345435354118711566/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 103,
+      "url": "https://outlook.office365.com/owa/calendar/a3f3f7dd873a40c398bd9728d26da3be@campus.utcluj.ro/b5f56c85fefb4b70b763ce745bc1f04a13354822966997054726/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 298,
+      "url": "https://outlook.office365.com/owa/calendar/a3f3f7dd873a40c398bd9728d26da3be@campus.utcluj.ro/b5f56c85fefb4b70b763ce745bc1f04a13354822966997054726/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 157,
+      "url": "https://outlook.office365.com/owa/calendar/a46021aab69c45e2aa9d988922d54248@campus.utcluj.ro/896339b9754f471e87779495b8d98a2510080477572535811922/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 352,
+      "url": "https://outlook.office365.com/owa/calendar/a46021aab69c45e2aa9d988922d54248@campus.utcluj.ro/896339b9754f471e87779495b8d98a2510080477572535811922/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 128,
+      "url": "https://outlook.office365.com/owa/calendar/a57e6216dc2b46cf9221080cb62f5673@campus.utcluj.ro/2f0d3e8664b84ccd8c5678fac130aad55152205670997262503/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 323,
+      "url": "https://outlook.office365.com/owa/calendar/a57e6216dc2b46cf9221080cb62f5673@campus.utcluj.ro/2f0d3e8664b84ccd8c5678fac130aad55152205670997262503/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 124,
+      "url": "https://outlook.office365.com/owa/calendar/a92903c1b4e14833ac7192487a2eef52@campus.utcluj.ro/1742195f66c54cbeabd54919984d6c2d12816494198183711770/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 319,
+      "url": "https://outlook.office365.com/owa/calendar/a92903c1b4e14833ac7192487a2eef52@campus.utcluj.ro/1742195f66c54cbeabd54919984d6c2d12816494198183711770/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 151,
+      "url": "https://outlook.office365.com/owa/calendar/a9b573722ad94f45b682e1bed165550f@campus.utcluj.ro/d4b040e49ce44871bc8fc4a793e9112d17227538003445982370/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 346,
+      "url": "https://outlook.office365.com/owa/calendar/a9b573722ad94f45b682e1bed165550f@campus.utcluj.ro/d4b040e49ce44871bc8fc4a793e9112d17227538003445982370/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 90,
+      "url": "https://outlook.office365.com/owa/calendar/aa69fd9d8cad49a8bace9555c6c31d8b@campus.utcluj.ro/95bcb6da434048ae86bbd98b0dfbdd6310012641212388466794/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 285,
+      "url": "https://outlook.office365.com/owa/calendar/aa69fd9d8cad49a8bace9555c6c31d8b@campus.utcluj.ro/95bcb6da434048ae86bbd98b0dfbdd6310012641212388466794/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 129,
+      "url": "https://outlook.office365.com/owa/calendar/aadad6128c434cafb70bd0bc9f054a09@campus.utcluj.ro/f304f85c2e064176bce6aa9e760dad9d10051774377936060454/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 324,
+      "url": "https://outlook.office365.com/owa/calendar/aadad6128c434cafb70bd0bc9f054a09@campus.utcluj.ro/f304f85c2e064176bce6aa9e760dad9d10051774377936060454/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 83,
+      "url": "https://outlook.office365.com/owa/calendar/b24c13833e804c5fa3ad11c34edf4016@campus.utcluj.ro/9858ed245ca642869b860baf18870e496921177399726666401/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 278,
+      "url": "https://outlook.office365.com/owa/calendar/b24c13833e804c5fa3ad11c34edf4016@campus.utcluj.ro/9858ed245ca642869b860baf18870e496921177399726666401/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 9,
+      "url": "https://outlook.office365.com/owa/calendar/b4fb55fc02934f6d96997f2f28b32040@campus.utcluj.ro/b6be906df71b457c9dcf49009379de208291682664383960244/calendar.html",
+      "strategy": "owner_only",
+      "proposed_email": "utcn_room_airi_obs_104@campus.utcluj.ro",
+      "csv_candidates": 1,
+      "ambiguous": false
+    },
+    {
+      "id": 204,
+      "url": "https://outlook.office365.com/owa/calendar/b4fb55fc02934f6d96997f2f28b32040@campus.utcluj.ro/b6be906df71b457c9dcf49009379de208291682664383960244/calendar.ics",
+      "strategy": "owner_only",
+      "proposed_email": "utcn_room_airi_obs_104@campus.utcluj.ro",
+      "csv_candidates": 1,
+      "ambiguous": false
+    },
+    {
+      "id": 140,
+      "url": "https://outlook.office365.com/owa/calendar/bab27cd066054184b51850a7bd5b76b5@campus.utcluj.ro/f33f9fbbc55349828d52e4f4dd25593614811630865311000535/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 335,
+      "url": "https://outlook.office365.com/owa/calendar/bab27cd066054184b51850a7bd5b76b5@campus.utcluj.ro/f33f9fbbc55349828d52e4f4dd25593614811630865311000535/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 178,
+      "url": "https://outlook.office365.com/owa/calendar/bbb83c66270a45ea96fcf73caa486597@campus.utcluj.ro/1193feef30e44c978d59d70a744cf4411523870210407175550/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 373,
+      "url": "https://outlook.office365.com/owa/calendar/bbb83c66270a45ea96fcf73caa486597@campus.utcluj.ro/1193feef30e44c978d59d70a744cf4411523870210407175550/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 98,
+      "url": "https://outlook.office365.com/owa/calendar/bc6293dcf2ac494b891910e8b2903100@campus.utcluj.ro/b54861fd15f640ffa9d4a53565c53165838900861736632320/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 293,
+      "url": "https://outlook.office365.com/owa/calendar/bc6293dcf2ac494b891910e8b2903100@campus.utcluj.ro/b54861fd15f640ffa9d4a53565c53165838900861736632320/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 59,
+      "url": "https://outlook.office365.com/owa/calendar/bd544d0e58d04717958bf88a88927976@campus.utcluj.ro/88846a5e6c8a4bbfbb9b9d92f03295586707960592668117762/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 254,
+      "url": "https://outlook.office365.com/owa/calendar/bd544d0e58d04717958bf88a88927976@campus.utcluj.ro/88846a5e6c8a4bbfbb9b9d92f03295586707960592668117762/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 192,
+      "url": "https://outlook.office365.com/owa/calendar/c0ee2bbcd481408fb413a5762bedb22c@campus.utcluj.ro/287dec02b28645929ea88060b9e1f27517626717181307120504/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 387,
+      "url": "https://outlook.office365.com/owa/calendar/c0ee2bbcd481408fb413a5762bedb22c@campus.utcluj.ro/287dec02b28645929ea88060b9e1f27517626717181307120504/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 75,
+      "url": "https://outlook.office365.com/owa/calendar/c1c06730a0d548fc97b51894b5a3d362@campus.utcluj.ro/7ed6d9a964ba4199bf0ecff1b4cbb19712972190088115766043/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 270,
+      "url": "https://outlook.office365.com/owa/calendar/c1c06730a0d548fc97b51894b5a3d362@campus.utcluj.ro/7ed6d9a964ba4199bf0ecff1b4cbb19712972190088115766043/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 66,
+      "url": "https://outlook.office365.com/owa/calendar/c277698c440e4858a2d311bd8a704bca@campus.utcluj.ro/6504d0a30c4f457088dad300f02f3f1214514913813120379700/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 261,
+      "url": "https://outlook.office365.com/owa/calendar/c277698c440e4858a2d311bd8a704bca@campus.utcluj.ro/6504d0a30c4f457088dad300f02f3f1214514913813120379700/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 80,
+      "url": "https://outlook.office365.com/owa/calendar/c94c913227184f11bb891ff1c14fed8b@campus.utcluj.ro/8fcd1b93e2f04056a937046a947facca5487809175895084570/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 275,
+      "url": "https://outlook.office365.com/owa/calendar/c94c913227184f11bb891ff1c14fed8b@campus.utcluj.ro/8fcd1b93e2f04056a937046a947facca5487809175895084570/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 134,
+      "url": "https://outlook.office365.com/owa/calendar/d360dac17ed8482c98ac13e4a255dc47@campus.utcluj.ro/b695b07211b44af2b768e1504e8016ac12033489895368593723/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 329,
+      "url": "https://outlook.office365.com/owa/calendar/d360dac17ed8482c98ac13e4a255dc47@campus.utcluj.ro/b695b07211b44af2b768e1504e8016ac12033489895368593723/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 123,
+      "url": "https://outlook.office365.com/owa/calendar/d55755fed596460ebe7b84aaa06bde18@campus.utcluj.ro/19429297de9947caaa3345bfc5e6f98112186208588121380842/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 318,
+      "url": "https://outlook.office365.com/owa/calendar/d55755fed596460ebe7b84aaa06bde18@campus.utcluj.ro/19429297de9947caaa3345bfc5e6f98112186208588121380842/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 150,
+      "url": "https://outlook.office365.com/owa/calendar/d591f9d8f72d4b5b9b4bcc9e411d56c2@campus.utcluj.ro/f91fa10e28544ecab12772cd851cc45713034270433608247068/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 345,
+      "url": "https://outlook.office365.com/owa/calendar/d591f9d8f72d4b5b9b4bcc9e411d56c2@campus.utcluj.ro/f91fa10e28544ecab12772cd851cc45713034270433608247068/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 148,
+      "url": "https://outlook.office365.com/owa/calendar/d608a38d7af8414b9ff64a8046d0dd27@campus.utcluj.ro/fdb2bc9742b14fab9a140dea6ae0a1196101942199880770194/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 343,
+      "url": "https://outlook.office365.com/owa/calendar/d608a38d7af8414b9ff64a8046d0dd27@campus.utcluj.ro/fdb2bc9742b14fab9a140dea6ae0a1196101942199880770194/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 116,
+      "url": "https://outlook.office365.com/owa/calendar/d6e69b62387a4c8b885647786071c65b@campus.utcluj.ro/46a96d936e5e4e129743235839a9cbb216714085778746247586/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 311,
+      "url": "https://outlook.office365.com/owa/calendar/d6e69b62387a4c8b885647786071c65b@campus.utcluj.ro/46a96d936e5e4e129743235839a9cbb216714085778746247586/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 149,
+      "url": "https://outlook.office365.com/owa/calendar/d78af41074e84ca3a29310e7ad66a571@campus.utcluj.ro/83d0b24456444842a6e3d64f5499a7998355118700802253080/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 344,
+      "url": "https://outlook.office365.com/owa/calendar/d78af41074e84ca3a29310e7ad66a571@campus.utcluj.ro/83d0b24456444842a6e3d64f5499a7998355118700802253080/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 154,
+      "url": "https://outlook.office365.com/owa/calendar/d85a677d98c04091b0c7c1f9b515ff91@campus.utcluj.ro/4cdc8329d62d45b39f990977d8a4963b8409104016693109503/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 349,
+      "url": "https://outlook.office365.com/owa/calendar/d85a677d98c04091b0c7c1f9b515ff91@campus.utcluj.ro/4cdc8329d62d45b39f990977d8a4963b8409104016693109503/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 153,
+      "url": "https://outlook.office365.com/owa/calendar/e480dbc1106f416c889fbb5398f796d8@campus.utcluj.ro/db6c2c93ca1f4e4db3645dc52f7ed5a4157849311530112522/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 348,
+      "url": "https://outlook.office365.com/owa/calendar/e480dbc1106f416c889fbb5398f796d8@campus.utcluj.ro/db6c2c93ca1f4e4db3645dc52f7ed5a4157849311530112522/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 100,
+      "url": "https://outlook.office365.com/owa/calendar/e9babfabef2c41579ba460bb1fb55a5b@campus.utcluj.ro/b684d2820bc747daa6e995c10a497cbb17732842012882639601/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 295,
+      "url": "https://outlook.office365.com/owa/calendar/e9babfabef2c41579ba460bb1fb55a5b@campus.utcluj.ro/b684d2820bc747daa6e995c10a497cbb17732842012882639601/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 197,
+      "url": "https://outlook.office365.com/owa/calendar/ea44e891bdc04f648df9449273c0765e@campus.utcluj.ro/43b69f62bd1d4734889620dc369d3879327021450492865205/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 392,
+      "url": "https://outlook.office365.com/owa/calendar/ea44e891bdc04f648df9449273c0765e@campus.utcluj.ro/43b69f62bd1d4734889620dc369d3879327021450492865205/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 92,
+      "url": "https://outlook.office365.com/owa/calendar/ea71d0bb43ca4ee89bab2567e4414285@campus.utcluj.ro/009b080c1951425eae7fda6d52bceaf116792829138931392885/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 287,
+      "url": "https://outlook.office365.com/owa/calendar/ea71d0bb43ca4ee89bab2567e4414285@campus.utcluj.ro/009b080c1951425eae7fda6d52bceaf116792829138931392885/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 126,
+      "url": "https://outlook.office365.com/owa/calendar/ec7297ce82684077b6e5176bc71ff96d@campus.utcluj.ro/f9e8d3b8196c4dda824580932f952e7b7483364481661616404/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 321,
+      "url": "https://outlook.office365.com/owa/calendar/ec7297ce82684077b6e5176bc71ff96d@campus.utcluj.ro/f9e8d3b8196c4dda824580932f952e7b7483364481661616404/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 191,
+      "url": "https://outlook.office365.com/owa/calendar/efb94cbd6ea54d76a7cb399cc79539ad@campus.utcluj.ro/e659f751f1de4a5cb86a5ae60ecbdb8d10134300954909195052/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 386,
+      "url": "https://outlook.office365.com/owa/calendar/efb94cbd6ea54d76a7cb399cc79539ad@campus.utcluj.ro/e659f751f1de4a5cb86a5ae60ecbdb8d10134300954909195052/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 76,
+      "url": "https://outlook.office365.com/owa/calendar/f05ae83ed135445789062294661a78aa@campus.utcluj.ro/b021062831e748c3bc9e917ba12826c63065508075060337244/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 271,
+      "url": "https://outlook.office365.com/owa/calendar/f05ae83ed135445789062294661a78aa@campus.utcluj.ro/b021062831e748c3bc9e917ba12826c63065508075060337244/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 91,
+      "url": "https://outlook.office365.com/owa/calendar/f3a87447626d46bfb1569c55ad46cbe7@campus.utcluj.ro/0d23b26b42a340edb652b79f27b84aa015050941843672206700/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 286,
+      "url": "https://outlook.office365.com/owa/calendar/f3a87447626d46bfb1569c55ad46cbe7@campus.utcluj.ro/0d23b26b42a340edb652b79f27b84aa015050941843672206700/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 77,
+      "url": "https://outlook.office365.com/owa/calendar/f48173acfc964e25ace4cf8cf2c146f9@campus.utcluj.ro/8fa5c6b1ea3c4a499d168a063a5f227710002910147337353083/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 272,
+      "url": "https://outlook.office365.com/owa/calendar/f48173acfc964e25ace4cf8cf2c146f9@campus.utcluj.ro/8fa5c6b1ea3c4a499d168a063a5f227710002910147337353083/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 79,
+      "url": "https://outlook.office365.com/owa/calendar/fb8d4b3a62ae44248252d6005c113a7e@campus.utcluj.ro/9894c08922e8446f9e2f5cb2d96c3d6f3217632174702891255/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 274,
+      "url": "https://outlook.office365.com/owa/calendar/fb8d4b3a62ae44248252d6005c113a7e@campus.utcluj.ro/9894c08922e8446f9e2f5cb2d96c3d6f3217632174702891255/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 186,
+      "url": "https://outlook.office365.com/owa/calendar/fc0ab40298e64caeaa14be996036a807@campus.utcluj.ro/dcf727857fe04d56b4ca8516d4b8ff2a16887609845941625406/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 381,
+      "url": "https://outlook.office365.com/owa/calendar/fc0ab40298e64caeaa14be996036a807@campus.utcluj.ro/dcf727857fe04d56b4ca8516d4b8ff2a16887609845941625406/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 156,
+      "url": "https://outlook.office365.com/owa/calendar/fd64f8b694d440f692c66fd7fc2c74be@campus.utcluj.ro/c6c7f6b28be9493089a4ac8beb54d1663326784373175118471/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 351,
+      "url": "https://outlook.office365.com/owa/calendar/fd64f8b694d440f692c66fd7fc2c74be@campus.utcluj.ro/c6c7f6b28be9493089a4ac8beb54d1663326784373175118471/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 146,
+      "url": "https://outlook.office365.com/owa/calendar/ff10d6f02c6941559e04c66ef6c66235@campus.utcluj.ro/37afa8e6c9cc4c239de985c68af8629d18189057379114182970/calendar.html",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    },
+    {
+      "id": 341,
+      "url": "https://outlook.office365.com/owa/calendar/ff10d6f02c6941559e04c66ef6c66235@campus.utcluj.ro/37afa8e6c9cc4c239de985c68af8629d18189057379114182970/calendar.ics",
+      "strategy": "none",
+      "proposed_email": null,
+      "csv_candidates": 0,
+      "ambiguous": false
+    }
+  ]
+}

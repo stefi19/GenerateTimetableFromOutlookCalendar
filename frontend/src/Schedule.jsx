@@ -449,22 +449,22 @@ export default function Schedule() {
         </div>
         <div className="filter-group">
           <label>Subject:</label>
-          <input type="text" placeholder="e.g. Algorithms" value={filters.subject}
+          <input type="text" placeholder="e.g. Fundamental Algorithms" value={filters.subject}
             onChange={(e) => setFilters(f => ({ ...f, subject: e.target.value }))} />
         </div>
         <div className="filter-group">
           <label>Professor:</label>
-          <input type="text" placeholder="e.g. Smith" value={filters.professor}
+          <input type="text" placeholder="e.g. Professor Rodica Potolea" value={filters.professor}
             onChange={(e) => setFilters(f => ({ ...f, professor: e.target.value }))} />
         </div>
         <div className="filter-group">
           <label>Room:</label>
-          <input type="text" placeholder="e.g. A101" value={filters.room}
+          <input type="text" placeholder="e.g. Room 40" value={filters.room}
             onChange={(e) => setFilters(f => ({ ...f, room: e.target.value }))} />
         </div>
         <div className="filter-group">
           <label>Group:</label>
-          <input type="text" placeholder="e.g. A or 3A" value={filters.group}
+          <input type="text" placeholder="e.g. 30434" value={filters.group}
             onChange={(e) => setFilters(f => ({ ...f, group: e.target.value }))} />
         </div>
         {hasActiveFilters && (
