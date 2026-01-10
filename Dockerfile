@@ -75,13 +75,15 @@ COPY templates/ templates/
 COPY tools/ tools/
 COPY config/ config/
 COPY static/ static/
+COPY entrypoint.sh ./
 
 # Copy built frontend from Stage 1
 COPY --from=frontend-builder /app/frontend/dist/ frontend/dist/
 
 # Create data directories and set ownership
 RUN mkdir -p data playwright_captures \
-    && chown -R appuser:appuser /app
+    && chown -R appuser:appuser /app \
+    && chmod +x entrypoint.sh
 
 USER appuser
 
@@ -93,4 +95,5 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
     CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:5000/health')" || exit 1
 
 # Run with Gunicorn for production
+ENTRYPOINT ["./entrypoint.sh"]
 CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--workers", "2", "--threads", "4", "--timeout", "120", "app:app"]
