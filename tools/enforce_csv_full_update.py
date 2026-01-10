@@ -19,12 +19,13 @@ def main():
     # Find the CSV file
     csv_filename = 'Rooms_PUBLISHER_HTML-ICS(in).csv'
     csv_paths = [
-        pathlib.Path(__file__).parent / 'config' / csv_filename,
-        pathlib.Path(__file__).parent / csv_filename,
+        pathlib.Path(__file__).parent.parent / 'config' / csv_filename,
+        pathlib.Path(__file__).parent.parent / csv_filename,
         pathlib.Path(csv_filename),
     ]
     csv_path = None
     for p in csv_paths:
+        print(f"Checking CSV path: {p}")
         if p.exists():
             csv_path = p
             break
