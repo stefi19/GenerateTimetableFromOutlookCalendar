@@ -33,25 +33,16 @@ def main():
     urls = set()
     with open(csv_path, 'r', encoding='utf-8') as f:
         reader = csv.reader(f)
-        header = next(reader, None)  # Skip header
-        print(f"CSV header: {header}")
-        total_rows = 0
-        valid_rows = 0
+        next(reader, None)  # Skip header
         for row in reader:
-            total_rows += 1
             if len(row) >= 5:
-                valid_rows += 1
                 html_url = row[3].strip()
                 ics_url = row[4].strip() if len(row) > 4 else ''
                 if html_url:
                     urls.add(html_url)
                 if ics_url:
                     urls.add(ics_url)
-            else:
-                print(f"Skipping row {total_rows}: only {len(row)} columns")
 
-    print(f"Total CSV rows: {total_rows}")
-    print(f"Valid rows (>=5 columns): {valid_rows}")
     print(f"Found {len(urls)} unique URLs")
 
     # Connect to DB
