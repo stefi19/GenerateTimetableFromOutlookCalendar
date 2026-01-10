@@ -41,20 +41,32 @@ def main():
     with open(csv_path, 'r', encoding='utf-8') as f:
         reader = csv.reader(f)
         header = next(reader, None)  # Skip header
+        print(f"CSV header: {header}")
+        total_rows = 0
+        valid_rows = 0
         for row in reader:
+            total_rows += 1
             if len(row) < 5:
+                print(f"Skipping row {total_rows}: only {len(row)} columns")
                 continue
+            valid_rows += 1
             name = row[0].strip()
             email = row[1].strip()
             building = row[2].strip() if len(row) > 2 else ''
             html_url = row[3].strip() if len(row) > 3 else ''
             ics_url = row[4].strip() if len(row) > 4 else ''
             
+            urls_added = 0
             for url in (html_url, ics_url):
                 if url:
                     key = normalize_url(url)
                     csv_map[key] = (email, name, building)
+                    urls_added += 1
+            if urls_added == 0:
+                print(f"Row {total_rows}: no URLs found - HTML: '{html_url}', ICS: '{ics_url}'")
 
+    print(f"Total CSV rows: {total_rows}")
+    print(f"Valid rows (>=5 columns): {valid_rows}")
     print(f"CSV keys: {len(csv_map)}")
 
     # Connect to DB
