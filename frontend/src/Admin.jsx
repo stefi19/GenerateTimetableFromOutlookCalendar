@@ -184,8 +184,11 @@ export default function Admin() {
                     ))}
                   </div>
                   <div className="calendar-info">
-                    <strong>{cal.name || 'Calendar ' + (idx + 1)}</strong>
-                    <small>{cal.url ? cal.url.substring(0, 50) + '...' : ''}</small>
+                        <strong>{cal.name || 'Calendar ' + (idx + 1)}</strong>
+                        <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+                          <small style={{ color: '#444' }}>{cal.upn || ''}</small>
+                          <small style={{ color: '#666' }}>{cal.url ? cal.url.substring(0, 50) + '...' : ''}</small>
+                        </div>
                   </div>
                   <button onClick={() => deleteCalendar(cal.id)} className="btn-danger-sm">Delete</button>
                 </div>

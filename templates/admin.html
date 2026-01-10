@@ -329,12 +329,13 @@
             <div class="section-body">
                 {% if calendars %}
                 <table class="building-table">
-                    <thead><tr><th>ID</th><th>Color</th><th>URL / Name</th><th>Enabled</th><th>Added</th><th>Actions</th></tr></thead>
+                    <thead><tr><th>ID</th><th>Color</th><th>UPN</th><th>URL / Name</th><th>Enabled</th><th>Added</th><th>Actions</th></tr></thead>
                     <tbody>
                         {% for cal in calendars %}
                         <tr>
                             <td>{{ cal.id }}</td>
                             <td><span class="cal-swatch" data-color="{{ cal.color or '#bbbbbb' }}" style="display:inline-block;width:20px;height:14px;border-radius:3px;border:1px solid #ddd"></span></td>
+                            <td style="max-width:200px;word-break:break-all">{{ cal.upn or '' }}</td>
                             <td style="max-width:600px;word-break:break-all">{{ cal.url }}{% if cal.name %}<div style="font-size:0.85rem;color:var(--gray-600)">{{ cal.name }}</div>{% endif %}</td>
                             <td>{{ 'Yes' if cal.enabled else 'No' }}</td>
                             <td>{{ cal.created_at }}</td>
@@ -351,31 +352,7 @@
             </div>
         </div>
 
-        <div class="section">
-            <div class="section-header">Manual Events (Admin)</div>
-            <div class="section-body">
-                {% if manual_events %}
-                <table class="building-table">
-                    <thead><tr><th>ID</th><th>Start</th><th>Title</th><th>Location</th><th>Actions</th></tr></thead>
-                    <tbody>
-                        {% for me in manual_events %}
-                        <tr>
-                            <td>{{ me.id }}</td>
-                            <td>{{ me.start }}</td>
-                            <td>{{ me.title }}</td>
-                            <td>{{ me.location }}</td>
-                            <td>
-                                <button class="btn btn-secondary btn-delete-manual" type="button" data-id="{{ me.id }}">Delete</button>
-                            </td>
-                        </tr>
-                        {% endfor %}
-                    </tbody>
-                </table>
-                {% else %}
-                <p class="help-text">No manual events added.</p>
-                {% endif %}
-            </div>
-        </div>
+        <!-- Manual events section removed from Admin UI -->
 
         <div class="section">
             <div class="section-header">Extracurricular Events</div>
@@ -406,54 +383,7 @@
             </div>
         </div>
         
-        <div class="section">
-            <div class="section-header">Add Event Manually</div>
-            <div class="section-body">
-                <form id="addEventForm" onsubmit="return addEvent(event)">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="title">Title / Subject *</label>
-                            <input type="text" id="title" name="title" required placeholder="e.g., Functional Programming">
-                        </div>
-                        <div class="form-group">
-                            <label for="start_date">Date *</label>
-                            <input type="date" id="start_date" name="start_date" required>
-                        </div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="start_time">Start Time *</label>
-                            <input type="time" id="start_time" name="start_time" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="end_time">End Time</label>
-                            <input type="time" id="end_time" name="end_time">
-                        </div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="building">Building</label>
-                            <select id="building" name="building">
-                                <option value="">-- Select --</option>
-                                <option value="bar">Baritiu</option>
-                                <option value="doro">Dorobantilor</option>
-                                <option value="daic">Daicoviciu</option>
-                                <option value="obs">Observatorului</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="room">Room</label>
-                            <input type="text" id="room" name="room" placeholder="e.g., 107, BT5.03">
-                        </div>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-success">Add Event</button>
-                </form>
-                <div id="addEventStatus" style="margin-top: 15px;"></div>
-            </div>
-        </div>
+        <!-- Manual event creation removed from Admin UI -->
         
         <div class="section">
             <div class="section-header">Reference Information</div>
@@ -537,36 +467,7 @@
         
         function checkStatus() { pollStatus(); }
         
-        function addEvent(e) {
-            e.preventDefault();
-            const form = document.getElementById('addEventForm');
-            const status = document.getElementById('addEventStatus');
-            const formData = new FormData(form);
-            
-            status.textContent = 'Adding event...';
-            status.style.color = 'var(--utcn-blue)';
-            
-            fetch('/admin/add_event', { method: 'POST', body: formData })
-            .then(r => r.json())
-            .then(data => {
-                if (data.success) {
-                    status.textContent = data.message;
-                    status.style.color = 'var(--success)';
-                    form.reset();
-                    document.getElementById('start_date').valueAsDate = new Date();
-                } else {
-                    status.textContent = data.message || 'Error';
-                    status.style.color = 'var(--danger)';
-                }
-            })
-            .catch(err => {
-                status.textContent = 'Error: ' + err;
-                status.style.color = 'var(--danger)';
-            });
-            return false;
-        }
-        
-        document.getElementById('start_date').valueAsDate = new Date();
+        // Manual event creation handler removed from this admin page
         
         // JS helpers to POST deletes via fetch and reload the page
         function postForm(url, data) {
@@ -582,14 +483,7 @@
                 .catch(err => alert('Error deleting calendar: ' + err));
         }
 
-        function deleteManual(id) {
-            if (!confirm('Ștergeți acest eveniment manual?')) return;
-            const fd = new FormData();
-            fd.append('id', id);
-            postForm('/admin/delete_manual', fd)
-                .then(() => window.location.reload())
-                .catch(err => alert('Error deleting manual event: ' + err));
-        }
+        // deleteManual removed (manual events not managed via this UI)
 
         function deleteExtracurricular(id) {
             if (!confirm('Ștergeți acest eveniment?')) return;
@@ -608,12 +502,7 @@
                     deleteCalendar(id);
                 });
             });
-            document.querySelectorAll('.btn-delete-manual').forEach(btn => {
-                btn.addEventListener('click', () => {
-                    const id = btn.dataset.id;
-                    deleteManual(id);
-                });
-            });
+            // manual event delete buttons removed from the DOM; nothing to attach here
             document.querySelectorAll('.btn-delete-extracurricular').forEach(btn => {
                 btn.addEventListener('click', () => {
                     const id = btn.dataset.id;

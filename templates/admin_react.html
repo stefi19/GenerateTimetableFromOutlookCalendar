@@ -63,14 +63,12 @@
 
         function Admin() {
             const [calendars, setCalendars] = React.useState([])
-            const [manualEvents, setManualEvents] = React.useState([])
             const [loading, setLoading] = React.useState(true)
             const [importing, setImporting] = React.useState(false)
             const [extractorRunning, setExtractorRunning] = React.useState(false)
             const [extractorProgress, setExtractorProgress] = React.useState(null)
             const [message, setMessage] = React.useState(null)
             const [newCalendar, setNewCalendar] = React.useState({ url: '', name: '', color: '#003366' })
-            const [newEvent, setNewEvent] = React.useState({ title: '', start_date: '', start_time: '', end_time: '', location: '' })
             const [editingCalendar, setEditingCalendar] = React.useState(null)
             const [stats, setStats] = React.useState({ events_count: 0, last_import: null })
             const [importLog, setImportLog] = React.useState([])
@@ -82,7 +80,7 @@
                     if (res.ok) {
                         const data = await res.json()
                         setCalendars(data.calendars || [])
-                        setManualEvents(data.manual_events || [])
+                        // manual events are intentionally excluded from this admin UI
                         setStats({ events_count: data.events_count || 0, last_import: data.last_import })
                         setExtractorRunning(data.extractor_running || false)
                         setExtractorProgress(data.extractor_progress || null)
@@ -180,40 +178,7 @@
                 }
             }
 
-            const addEvent = async (e) => {
-                e.preventDefault()
-                if (!newEvent.title || !newEvent.start_date || !newEvent.start_time) {
-                    return showMessage('Please fill in required fields', 'error')
-                }
-                try {
-                    const form = new FormData()
-                    Object.entries(newEvent).forEach(([k, v]) => form.append(k, v))
-                    const res = await fetch('/admin/add_event', { method: 'POST', body: form })
-                    const data = await res.json()
-                    if (data.success) {
-                        showMessage('Event added', 'success')
-                        setNewEvent({ title: '', start_date: '', start_time: '', end_time: '', location: '' })
-                        fetchData()
-                    } else {
-                        showMessage(data.message || 'Error', 'error')
-                    }
-                } catch (e) {
-                    showMessage('Error adding event', 'error')
-                }
-            }
-
-            const deleteManual = async (id) => {
-                if (!confirm('Delete this event?')) return
-                try {
-                    const form = new FormData()
-                    form.append('id', id)
-                    await fetch('/admin/delete_manual', { method: 'POST', body: form })
-                    showMessage('Event deleted', 'success')
-                    fetchData()
-                } catch (e) {
-                    showMessage('Error', 'error')
-                }
-            }
+            // Manual event creation/deletion handlers removed from this admin UI
 
             const updateCalendar = async (e) => {
                 e.preventDefault()
@@ -471,6 +436,8 @@
                                         }
                                     },
                                         React.createElement('span', { style: { flex: 1, fontWeight: '500' }}, cal.name || 'Unnamed'),
+                                        // show UPN (if available) and link separately for clarity
+                                        React.createElement('span', { style: { color: '#444', fontSize: '0.85rem', marginRight: '0.75rem' }}, cal.upn || ''),
                                         React.createElement('span', { style: { color: '#666', fontSize: '0.85rem', maxWidth: '300px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}, cal.url),
                                         cal.enabled === 0 && React.createElement('span', { style: { fontSize: '0.75rem', color: '#999', fontStyle: 'italic' }}, 'disabled'),
                                         React.createElement('button', {
@@ -486,81 +453,7 @@
                         )
                 ),
 
-                // Add Event Form
-                React.createElement('div', { style: { background: 'white', padding: '1.5rem', borderRadius: '8px', marginBottom: '2rem', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }},
-                    React.createElement('h2', { style: { marginBottom: '1rem', color: '#003366' }}, 'Add Manual Event'),
-                    React.createElement('form', { onSubmit: addEvent, style: { display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '0.75rem' }},
-                        React.createElement('input', {
-                            type: 'text',
-                            placeholder: 'Event Title *',
-                            value: newEvent.title,
-                            onChange: (e) => setNewEvent({...newEvent, title: e.target.value}),
-                            required: true,
-                            style: { padding: '0.5rem', border: '1px solid #ddd', borderRadius: '4px' }
-                        }),
-                        React.createElement('input', {
-                            type: 'date',
-                            value: newEvent.start_date,
-                            onChange: (e) => setNewEvent({...newEvent, start_date: e.target.value}),
-                            required: true,
-                            style: { padding: '0.5rem', border: '1px solid #ddd', borderRadius: '4px' }
-                        }),
-                        React.createElement('input', {
-                            type: 'time',
-                            placeholder: 'Start Time *',
-                            value: newEvent.start_time,
-                            onChange: (e) => setNewEvent({...newEvent, start_time: e.target.value}),
-                            required: true,
-                            style: { padding: '0.5rem', border: '1px solid #ddd', borderRadius: '4px' }
-                        }),
-                        React.createElement('input', {
-                            type: 'time',
-                            placeholder: 'End Time',
-                            value: newEvent.end_time,
-                            onChange: (e) => setNewEvent({...newEvent, end_time: e.target.value}),
-                            style: { padding: '0.5rem', border: '1px solid #ddd', borderRadius: '4px' }
-                        }),
-                        React.createElement('input', {
-                            type: 'text',
-                            placeholder: 'Location',
-                            value: newEvent.location,
-                            onChange: (e) => setNewEvent({...newEvent, location: e.target.value}),
-                            style: { padding: '0.5rem', border: '1px solid #ddd', borderRadius: '4px' }
-                        }),
-                        React.createElement('button', { 
-                            type: 'submit',
-                            style: { padding: '0.5rem 1rem', background: '#003366', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }
-                        }, 'Add Event')
-                    )
-                ),
-
-                // Manual Events List
-                manualEvents.length > 0 && React.createElement('div', { style: { background: 'white', padding: '1.5rem', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }},
-                    React.createElement('h2', { style: { marginBottom: '1rem', color: '#003366' }}, 'Manual Events'),
-                    React.createElement('div', { style: { display: 'flex', flexDirection: 'column', gap: '0.5rem' }},
-                        manualEvents.map((ev) => 
-                            React.createElement('div', { 
-                                key: ev.id,
-                                style: { 
-                                    display: 'flex', 
-                                    alignItems: 'center', 
-                                    gap: '1rem', 
-                                    padding: '0.75rem', 
-                                    background: '#f8f9fa', 
-                                    borderRadius: '4px'
-                                }
-                            },
-                                React.createElement('span', { style: { flex: 1, fontWeight: '500' }}, ev.title),
-                                React.createElement('span', { style: { color: '#666' }}, ev.start),
-                                React.createElement('span', { style: { color: '#666' }}, ev.location),
-                                React.createElement('button', {
-                                    onClick: () => deleteManual(ev.id),
-                                    style: { padding: '0.25rem 0.5rem', background: '#dc3545', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer', fontSize: '0.8rem' }
-                                }, 'X')
-                            )
-                        )
-                    )
-                )
+                // Manual events UI removed from React admin per request
             )
         }
 

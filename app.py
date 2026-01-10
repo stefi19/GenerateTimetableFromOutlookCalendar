@@ -515,6 +515,20 @@ def init_db():
                 conn.commit()
         except Exception:
             pass
+    # ensure older DBs have the upn column (optional user principal name)
+    try:
+        with get_db_connection() as conn:
+            cur = conn.cursor()
+            cur.execute("SELECT upn FROM calendars LIMIT 1")
+            _ = cur.fetchone()
+    except Exception:
+        try:
+            with get_db_connection() as conn:
+                cur = conn.cursor()
+                cur.execute('ALTER TABLE calendars ADD COLUMN upn TEXT')
+                conn.commit()
+        except Exception:
+            pass
 
 def migrate_from_files():
     """Migrate existing JSON configs into the DB if present."""
@@ -596,8 +610,8 @@ def update_calendar_metadata(url: str, name: str = None, color: str = None):
 def list_calendar_urls():
     with get_db_connection() as conn:
         cur = conn.cursor()
-        # include building and room so callers can access metadata
-        cur.execute('SELECT id, url, name, color, enabled, created_at, last_fetched, building, room FROM calendars ORDER BY id')
+        # include building, room and upn so callers can access metadata
+        cur.execute('SELECT id, url, name, color, enabled, created_at, last_fetched, building, room, upn FROM calendars ORDER BY id')
         return [dict(row) for row in cur.fetchall()]
 
 def add_extracurricular_db(ev: dict):
