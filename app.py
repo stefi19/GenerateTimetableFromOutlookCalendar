@@ -13,6 +13,7 @@ import sys
 import subprocess
 import hashlib
 import functools
+import csv
 from datetime import datetime, date, timedelta
 from typing import List, Dict, Optional
 
@@ -610,8 +611,8 @@ def update_calendar_metadata(url: str, name: str = None, color: str = None):
 def list_calendar_urls():
     with get_db_connection() as conn:
         cur = conn.cursor()
-        # include building, room and upn so callers can access metadata
-        cur.execute('SELECT id, url, name, color, enabled, created_at, last_fetched, building, room, upn FROM calendars ORDER BY id')
+        # include building, room, upn and email_address so callers can access metadata
+        cur.execute('SELECT id, url, name, color, enabled, created_at, last_fetched, building, room, email_address FROM calendars ORDER BY id')
         return [dict(row) for row in cur.fetchall()]
 
 def add_extracurricular_db(ev: dict):
@@ -1575,6 +1576,56 @@ def admin_api_status():
     try:
         init_db()
         calendars = list_calendar_urls()
+        # try to enrich calendars with friendly email address from the publisher CSV
+        try:
+            # Try several likely locations for the publisher CSV. In Docker we mount ./config -> /app/config
+            csv_filename = 'Rooms_PUBLISHER_HTML-ICS(in).csv'
+            csv_paths = [
+                pathlib.Path(__file__).parent / 'config' / csv_filename,
+                pathlib.Path(__file__).parent / csv_filename,
+                pathlib.Path(csv_filename),
+            ]
+            csv_path = None
+            for p in csv_paths:
+                try:
+                    if p.exists():
+                        csv_path = p
+                        break
+                except Exception:
+                    continue
+
+            # Strict matching: only attach email_address when the calendar URL exactly matches
+            # the PublishedCalendarUrl or PublishedICalUrl from the CSV (normalized by trimming
+            # trailing slash and lowercasing). This avoids spurious token-based matches.
+            csv_map = {}
+            if csv_path:
+                with open(csv_path, 'r', encoding='utf-8') as f:
+                    rdr = csv.reader(f)
+                    for row in rdr:
+                        if not row or len(row) < 6:
+                            continue
+                        email = row[1].strip()
+                        html = (row[4].strip() if len(row) > 4 else '')
+                        ics = (row[5].strip() if len(row) > 5 else '')
+                        for u in (html, ics):
+                            if not u:
+                                continue
+                            key = u.strip().rstrip('/').lower()
+                            csv_map[key] = email
+
+            for cal in calendars:
+                try:
+                    url = (cal.get('url') or '')
+                    key = url.strip().rstrip('/').lower() if url else ''
+                    # prefer existing DB value (if present), otherwise fall back to CSV map
+                    existing = cal.get('email_address') or None
+                    if not existing:
+                        cal['email_address'] = csv_map.get(key) or None
+                except Exception:
+                    cal['email_address'] = None
+        except Exception:
+            # fail quietly if CSV isn't present or parse fails
+            pass
         manual_events = list_manual_events_db()
         
         # Get events count from all events_*.json files
@@ -1975,6 +2026,8 @@ def admin_update_calendar():
         color = request.form.get('color', '').strip()
         enabled = request.form.get('enabled', '1')
         enabled_bool = enabled in ('1', 'true', 'on', 'True')
+        # optional: update URL as well
+        new_url = request.form.get('url', '').strip()
     except Exception:
         return jsonify({'success': False, 'message': 'Invalid parameters'}), 400
 
@@ -1988,8 +2041,17 @@ def admin_update_calendar():
             if not row:
                 return jsonify({'success': False, 'message': 'Calendar not found'}), 404
             url = row['url']
-            
-            # Update the calendar
+
+            # If a new URL was provided and is different, update url and try to extract upn
+            if new_url and new_url != url:
+                # extract upn-like substring from URL if present
+                import re
+                m = re.search(r'([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,})', new_url)
+                upn_val = m.group(1) if m else None
+                cur.execute('UPDATE calendars SET url = ?, upn = ? WHERE id = ?', (new_url, upn_val, cal_id))
+                url = new_url
+
+            # Update the calendar name/color/enabled
             cur.execute('UPDATE calendars SET name = ?, color = ?, enabled = ? WHERE id = ?', 
                        (name, color or None, 1 if enabled_bool else 0, cal_id))
             conn.commit()
