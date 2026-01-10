@@ -36,8 +36,8 @@ def main():
         next(reader, None)  # Skip header
         for row in reader:
             if len(row) >= 5:
-                html_url = row[4].strip()
-                ics_url = row[5].strip() if len(row) > 5 else ''
+                html_url = row[3].strip()
+                ics_url = row[4].strip() if len(row) > 4 else ''
                 if html_url:
                     urls.add(html_url)
                 if ics_url:
