@@ -530,6 +530,48 @@ def init_db():
                 conn.commit()
         except Exception:
             pass
+    # ensure older DBs have the building column
+    try:
+        with get_db_connection() as conn:
+            cur = conn.cursor()
+            cur.execute("SELECT building FROM calendars LIMIT 1")
+            _ = cur.fetchone()
+    except Exception:
+        try:
+            with get_db_connection() as conn:
+                cur = conn.cursor()
+                cur.execute('ALTER TABLE calendars ADD COLUMN building TEXT')
+                conn.commit()
+        except Exception:
+            pass
+    # ensure older DBs have the room column
+    try:
+        with get_db_connection() as conn:
+            cur = conn.cursor()
+            cur.execute("SELECT room FROM calendars LIMIT 1")
+            _ = cur.fetchone()
+    except Exception:
+        try:
+            with get_db_connection() as conn:
+                cur = conn.cursor()
+                cur.execute('ALTER TABLE calendars ADD COLUMN room TEXT')
+                conn.commit()
+        except Exception:
+            pass
+    # ensure older DBs have the email_address column
+    try:
+        with get_db_connection() as conn:
+            cur = conn.cursor()
+            cur.execute("SELECT email_address FROM calendars LIMIT 1")
+            _ = cur.fetchone()
+    except Exception:
+        try:
+            with get_db_connection() as conn:
+                cur = conn.cursor()
+                cur.execute('ALTER TABLE calendars ADD COLUMN email_address TEXT')
+                conn.commit()
+        except Exception:
+            pass
 
 def migrate_from_files():
     """Migrate existing JSON configs into the DB if present."""
