@@ -18,19 +18,11 @@ print('DB initialized')
 
 # Populate calendars from CSV
 echo "Populating calendars from CSV..."
-python -c "
-import sys
-sys.path.insert(0, '/app')
-exec(open('tools/populate_calendars_from_csv.py').read())
-"
+cd /app && python tools/populate_calendars_from_csv.py
 
 # Update with emails, names, buildings
 echo "Updating calendars with CSV data..."
-python -c "
-import sys
-sys.path.insert(0, '/app')
-exec(open('tools/enforce_csv_full_update.py').read())
-"
+cd /app && python tools/enforce_csv_full_update.py
 
 echo "Setup complete"
 
