@@ -253,6 +253,29 @@ def ensure_schedule(from_date: date, to_date: date):
         merged_path = out_dir / 'events.json'
         # find per-calendar files
         parts = list(out_dir.glob('events_*.json'))
+        # load existing calendar_map and supplement from DB (so we can enrich events with calendar name/room)
+        cmap = {}
+        try:
+            map_path = out_dir / 'calendar_map.json'
+            if map_path.exists():
+                with open(map_path, 'r', encoding='utf-8') as mf:
+                    cmap = json.load(mf)
+        except Exception:
+            cmap = {}
+        # supplement with DB rows if some hashes are missing
+        try:
+            init_db()
+            rows = list_calendar_urls()
+            import hashlib
+            for r in rows:
+                url = r.get('url') or ''
+                if not url:
+                    continue
+                h = hashlib.sha1(url.encode('utf-8')).hexdigest()[:8]
+                if h not in cmap:
+                    cmap[h] = {'url': url, 'name': r.get('name') or '', 'color': r.get('color'), 'building': r.get('building'), 'room': r.get('room')}
+        except Exception:
+            pass
         # DON'T include the generic events.json as it's the output file
         # and processing it first would prevent newer events with colors from being added
         merged = []
@@ -264,7 +287,31 @@ def ensure_schedule(from_date: date, to_date: date):
                         items = json.load(f)
                 except Exception:
                     items = []
-                    for it in items:
+                for it in items:
+                    # If event lacks location, try to enrich from calendar_map/db using file hash or source
+                    try:
+                        src = it.get('source')
+                        meta = None
+                        if src and str(src) in cmap:
+                            meta = cmap.get(str(src))
+                        else:
+                            # derive hash from filename like events_<hash>.json
+                            name = p.stem
+                            if name.startswith('events_'):
+                                h = name.split('_',1)[1]
+                                meta = cmap.get(h)
+                        if meta and (not it.get('location') or it.get('location') in ('', ' - ')):
+                            # prefer explicit room then name
+                            room_meta = meta.get('room') if isinstance(meta, dict) else None
+                            name_meta = meta.get('name') if isinstance(meta, dict) else None
+                            if room_meta:
+                                it['room'] = room_meta
+                                it['location'] = room_meta
+                            elif name_meta:
+                                # set location to name so downstream parsers can extract room
+                                it['location'] = name_meta
+                    except Exception:
+                        pass
                         # dedupe by raw ItemId if available, otherwise by title+start
                         try:
                             raw = it.get('raw') or {}

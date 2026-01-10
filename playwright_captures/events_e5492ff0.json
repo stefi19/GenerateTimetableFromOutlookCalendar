@@ -1,579 +1,5 @@
 [
   {
-    "start": "2026-01-14T08:00:00+02:00",
-    "end": "2026-01-14T10:00:00+02:00",
-    "title": "Sensors",
-    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADlFREG",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3lL/3FbAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAz/jzDQAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-14T08:00:00+02:00",
-      "End": "2026-01-14T10:00:00+02:00",
-      "Subject": "Sensors - Lab 2041/1",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2026-01-14T10:00:00+02:00",
-    "end": "2026-01-14T12:00:00+02:00",
-    "title": "Bsad",
-    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADlFREJ",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3lL/3FbAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAz/jzDgAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-14T10:00:00+02:00",
-      "End": "2026-01-14T12:00:00+02:00",
-      "Subject": "BSAD - Lab 2133/2",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2026-01-15T08:00:00+02:00",
-    "end": "2026-01-15T10:00:00+02:00",
-    "title": "Bsad",
-    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADmQy+G",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3lPJBsCAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAz/jzDwAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-15T08:00:00+02:00",
-      "End": "2026-01-15T10:00:00+02:00",
-      "Subject": "BSAD - Lab 2133/3",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2026-01-15T10:00:00+02:00",
-    "end": "2026-01-15T12:00:00+02:00",
-    "title": "Sensors",
-    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADmQy+C",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3lPJBsCAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAz/jzEAAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-15T10:00:00+02:00",
-      "End": "2026-01-15T12:00:00+02:00",
-      "Subject": "Sensors - Lab 2041/2",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2026-01-16T08:00:00+02:00",
-    "end": "2026-01-16T10:00:00+02:00",
-    "title": "Dasf",
-    "location": "Microsoft Teams Meeting",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADQDawV",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3lSSMSpAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAz/jzEQAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-16T08:00:00+02:00",
-      "End": "2026-01-16T10:00:00+02:00",
-      "Subject": "DASF - Lab 2031/3",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "Microsoft Teams Meeting",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2026-01-16T10:00:00+02:00",
-    "end": "2026-01-16T12:00:00+02:00",
-    "title": "Dasf",
-    "location": "Microsoft Teams Meeting",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADQDazL",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3lSSMSpAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAz/jzEgAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-16T10:00:00+02:00",
-      "End": "2026-01-16T12:00:00+02:00",
-      "Subject": "DASF - Lab 2031/2",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "Microsoft Teams Meeting",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2026-01-16T12:00:00+02:00",
-    "end": "2026-01-16T14:00:00+02:00",
-    "title": "Sensors",
-    "location": "Microsoft Teams Meeting",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADQDaza",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3lSSMSpAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAz/jzEwAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-16T12:00:00+02:00",
-      "End": "2026-01-16T14:00:00+02:00",
-      "Subject": "Sensors - Lab 2041/3",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "Microsoft Teams Meeting",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2026-01-21T08:00:00+02:00",
-    "end": "2026-01-21T10:00:00+02:00",
-    "title": "Sensors",
-    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADlFREG",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3liABTsAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAz/jzDQAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-21T08:00:00+02:00",
-      "End": "2026-01-21T10:00:00+02:00",
-      "Subject": "Sensors - Lab 2041/1",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2026-01-21T10:00:00+02:00",
-    "end": "2026-01-21T12:00:00+02:00",
-    "title": "Bsad",
-    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADlFREJ",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3liABTsAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAz/jzDgAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-21T10:00:00+02:00",
-      "End": "2026-01-21T12:00:00+02:00",
-      "Subject": "BSAD - Lab 2133/2",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2026-01-22T08:00:00+02:00",
-    "end": "2026-01-22T10:00:00+02:00",
-    "title": "Bsad",
-    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADmQy+G",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3llJL6TAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAz/jzDwAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-22T08:00:00+02:00",
-      "End": "2026-01-22T10:00:00+02:00",
-      "Subject": "BSAD - Lab 2133/3",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2026-01-22T10:00:00+02:00",
-    "end": "2026-01-22T12:00:00+02:00",
-    "title": "Sensors",
-    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADmQy+C",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3llJL6TAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAz/jzEAAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-22T10:00:00+02:00",
-      "End": "2026-01-22T12:00:00+02:00",
-      "Subject": "Sensors - Lab 2041/2",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2026-01-23T08:00:00+02:00",
-    "end": "2026-01-23T10:00:00+02:00",
-    "title": "Dasf",
-    "location": "Microsoft Teams Meeting",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADQDawV",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3loSWg6AAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAz/jzEQAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-23T08:00:00+02:00",
-      "End": "2026-01-23T10:00:00+02:00",
-      "Subject": "DASF - Lab 2031/3",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "Microsoft Teams Meeting",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2026-01-23T10:00:00+02:00",
-    "end": "2026-01-23T12:00:00+02:00",
-    "title": "Dasf",
-    "location": "Microsoft Teams Meeting",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADQDazL",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3loSWg6AAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAz/jzEgAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-23T10:00:00+02:00",
-      "End": "2026-01-23T12:00:00+02:00",
-      "Subject": "DASF - Lab 2031/2",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "Microsoft Teams Meeting",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2026-01-23T12:00:00+02:00",
-    "end": "2026-01-23T14:00:00+02:00",
-    "title": "Sensors",
-    "location": "Microsoft Teams Meeting",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADQDaza",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3loSWg6AAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAz/jzEwAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-23T12:00:00+02:00",
-      "End": "2026-01-23T14:00:00+02:00",
-      "Subject": "Sensors - Lab 2041/3",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "Microsoft Teams Meeting",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
     "start": "2025-12-03T08:00:00+02:00",
     "end": "2025-12-03T10:00:00+02:00",
     "title": "Sensors",
@@ -1582,6 +1008,580 @@
       "CalendarItemType": "Occurrence",
       "Location": {
         "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 407",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-14T08:00:00+02:00",
+    "end": "2026-01-14T10:00:00+02:00",
+    "title": "Sensors",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADlFREG",
+        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3lL/3FbAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAz/jzDQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-14T08:00:00+02:00",
+      "End": "2026-01-14T10:00:00+02:00",
+      "Subject": "Sensors - Lab 2041/1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-14T10:00:00+02:00",
+    "end": "2026-01-14T12:00:00+02:00",
+    "title": "Bsad",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADlFREJ",
+        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3lL/3FbAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAz/jzDgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-14T10:00:00+02:00",
+      "End": "2026-01-14T12:00:00+02:00",
+      "Subject": "BSAD - Lab 2133/2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-15T08:00:00+02:00",
+    "end": "2026-01-15T10:00:00+02:00",
+    "title": "Bsad",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADmQy+G",
+        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3lPJBsCAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAz/jzDwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-15T08:00:00+02:00",
+      "End": "2026-01-15T10:00:00+02:00",
+      "Subject": "BSAD - Lab 2133/3",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-15T10:00:00+02:00",
+    "end": "2026-01-15T12:00:00+02:00",
+    "title": "Sensors",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADmQy+C",
+        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3lPJBsCAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAz/jzEAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-15T10:00:00+02:00",
+      "End": "2026-01-15T12:00:00+02:00",
+      "Subject": "Sensors - Lab 2041/2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-16T08:00:00+02:00",
+    "end": "2026-01-16T10:00:00+02:00",
+    "title": "Dasf",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADmQ6b5",
+        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3lSSMSpAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAz/jzEQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-16T08:00:00+02:00",
+      "End": "2026-01-16T10:00:00+02:00",
+      "Subject": "DASF - Lab 2031/3",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-16T10:00:00+02:00",
+    "end": "2026-01-16T12:00:00+02:00",
+    "title": "Dasf",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADmQ6b0",
+        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3lSSMSpAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAz/jzEgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-16T10:00:00+02:00",
+      "End": "2026-01-16T12:00:00+02:00",
+      "Subject": "DASF - Lab 2031/2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-16T12:00:00+02:00",
+    "end": "2026-01-16T14:00:00+02:00",
+    "title": "Sensors",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADmQ6b9",
+        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3lSSMSpAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAz/jzEwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-16T12:00:00+02:00",
+      "End": "2026-01-16T14:00:00+02:00",
+      "Subject": "Sensors - Lab 2041/3",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-21T08:00:00+02:00",
+    "end": "2026-01-21T10:00:00+02:00",
+    "title": "Sensors",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADlFREG",
+        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3liABTsAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAz/jzDQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-21T08:00:00+02:00",
+      "End": "2026-01-21T10:00:00+02:00",
+      "Subject": "Sensors - Lab 2041/1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-21T10:00:00+02:00",
+    "end": "2026-01-21T12:00:00+02:00",
+    "title": "Bsad",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADlFREJ",
+        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3liABTsAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAz/jzDgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-21T10:00:00+02:00",
+      "End": "2026-01-21T12:00:00+02:00",
+      "Subject": "BSAD - Lab 2133/2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-22T08:00:00+02:00",
+    "end": "2026-01-22T10:00:00+02:00",
+    "title": "Bsad",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADmQy+G",
+        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3llJL6TAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAz/jzDwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-22T08:00:00+02:00",
+      "End": "2026-01-22T10:00:00+02:00",
+      "Subject": "BSAD - Lab 2133/3",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-22T10:00:00+02:00",
+    "end": "2026-01-22T12:00:00+02:00",
+    "title": "Sensors",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADmQy+C",
+        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3llJL6TAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAz/jzEAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-22T10:00:00+02:00",
+      "End": "2026-01-22T12:00:00+02:00",
+      "Subject": "Sensors - Lab 2041/2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-23T08:00:00+02:00",
+    "end": "2026-01-23T10:00:00+02:00",
+    "title": "Dasf",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADmQ6b5",
+        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3loSWg6AAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAz/jzEQAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-23T08:00:00+02:00",
+      "End": "2026-01-23T10:00:00+02:00",
+      "Subject": "DASF - Lab 2031/3",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-23T10:00:00+02:00",
+    "end": "2026-01-23T12:00:00+02:00",
+    "title": "Dasf",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADmQ6b0",
+        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3loSWg6AAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAz/jzEgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-23T10:00:00+02:00",
+      "End": "2026-01-23T12:00:00+02:00",
+      "Subject": "DASF - Lab 2031/2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-23T12:00:00+02:00",
+    "end": "2026-01-23T14:00:00+02:00",
+    "title": "Sensors",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADmQ6b9",
+        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3loSWg6AAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAz/jzEwAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-23T12:00:00+02:00",
+      "End": "2026-01-23T14:00:00+02:00",
+      "Subject": "Sensors - Lab 2041/3",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
         "PostalAddress": {
           "Street": null,
           "City": null,

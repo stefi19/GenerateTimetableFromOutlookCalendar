@@ -4,7 +4,7 @@
       "MajorVersion": 15,
       "MinorVersion": 20,
       "MajorBuildNumber": 9499,
-      "MinorBuildNumber": 4,
+      "MinorBuildNumber": 6,
       "Version": "V2018_01_18"
     }
   },
@@ -16,9 +16,80 @@
           "__type": "FindItemResponseMessage:#Exchange",
           "RootFolder": {
             "__type": "FindItemParentWrapper:#Exchange",
-            "Items": [],
+            "Items": [
+              {
+                "__type": "CalendarItem:#Exchange",
+                "ItemId": {
+                  "__type": "ItemId:#Exchange",
+                  "ChangeKey": "DwAAABYAAACLuutE5u+fRJjwCUM0tDuYAAID0E+6",
+                  "Id": "AAMkADllNTJiZDE4LThkYzktNDkyMy05OGFhLTc2YTk2MjNhYTI0NQBGAAAAAADBlCo2sWfxRJ9de2sEkDzvBwCLuutE5u+fRJjwCUM0tDuYAAAAAAENAACLuutE5u+fRJjwCUM0tDuYAAIDpCveAAA="
+                },
+                "ParentFolderId": {
+                  "__type": "FolderId:#Exchange",
+                  "Id": "AAMkADllNTJiZDE4LThkYzktNDkyMy05OGFhLTc2YTk2MjNhYTI0NQAuAAAAAADBlCo2sWfxRJ9de2sEkDzvAQCLuutE5u+fRJjwCUM0tDuYAAAAAAENAAA=",
+                  "ChangeKey": "AQAAAA=="
+                },
+                "Start": "2025-12-10T14:00:00+02:00",
+                "End": "2025-12-10T19:00:00+02:00",
+                "Subject": "The Future Of Surgery is Now",
+                "Sensitivity": "Normal",
+                "FreeBusyType": "Busy",
+                "CalendarItemType": "Single",
+                "Location": {
+                  "DisplayName": "UTCN - Aula UTCN HUB (RO)",
+                  "PostalAddress": {
+                    "Street": null,
+                    "City": null,
+                    "State": null,
+                    "Country": null,
+                    "PostalCode": null,
+                    "PostOfficeBox": null,
+                    "Type": "Home",
+                    "LocationSource": "None"
+                  },
+                  "IdType": "Unknown",
+                  "LocationType": "Unknown"
+                },
+                "Charm": "None"
+              },
+              {
+                "__type": "CalendarItem:#Exchange",
+                "ItemId": {
+                  "__type": "ItemId:#Exchange",
+                  "ChangeKey": "DwAAABYAAACLuutE5u+fRJjwCUM0tDuYAAIIbErL",
+                  "Id": "AAMkADllNTJiZDE4LThkYzktNDkyMy05OGFhLTc2YTk2MjNhYTI0NQBGAAAAAADBlCo2sWfxRJ9de2sEkDzvBwCLuutE5u+fRJjwCUM0tDuYAAAAAAENAACLuutE5u+fRJjwCUM0tDuYAAIIP5RDAAA="
+                },
+                "ParentFolderId": {
+                  "__type": "FolderId:#Exchange",
+                  "Id": "AAMkADllNTJiZDE4LThkYzktNDkyMy05OGFhLTc2YTk2MjNhYTI0NQAuAAAAAADBlCo2sWfxRJ9de2sEkDzvAQCLuutE5u+fRJjwCUM0tDuYAAAAAAENAAA=",
+                  "ChangeKey": "AQAAAA=="
+                },
+                "Start": "2025-12-17T11:30:00+02:00",
+                "End": "2025-12-17T12:00:00+02:00",
+                "Subject": "SRI",
+                "Sensitivity": "Normal",
+                "FreeBusyType": "Busy",
+                "CalendarItemType": "Single",
+                "Location": {
+                  "DisplayName": "UTCN - Aula UTCN HUB (RO)",
+                  "PostalAddress": {
+                    "Street": null,
+                    "City": null,
+                    "State": null,
+                    "Country": null,
+                    "PostalCode": null,
+                    "PostOfficeBox": null,
+                    "Type": "Home",
+                    "LocationSource": "None"
+                  },
+                  "IdType": "Unknown",
+                  "LocationType": "Unknown"
+                },
+                "Charm": "None"
+              }
+            ],
             "Groups": null,
-            "TotalItemsInView": 0,
+            "TotalItemsInView": 2,
             "IncludesLastItemInRange": true
           },
           "HighlightTerms": null,

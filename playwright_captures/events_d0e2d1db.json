@@ -1,46 +1,5 @@
 [
   {
-    "start": "2026-01-27T11:00:00+02:00",
-    "end": "2026-01-27T14:00:00+02:00",
-    "title": "Examen Programare Functionala Seria B, An 3, Ro",
-    "location": "UTCN - INSTA Blvd. 21 Decembrie 1989 - Aula (RO)",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAAAXPYtmQlGPRKeKY9ftkQ8SAADlQfNQ",
-        "Id": "AAMkADc4ZDYyNThjLTQ4MzAtNGQxYi05OTliLWVhMTFiZWFlMjU2YwBGAAAAAAAQjID9A/p2QocQVaYD9IQkBwAXPYtmQlGPRKeKY9ftkQ8SAAAAAAENAAAXPYtmQlGPRKeKY9ftkQ8SAADlLyIrAAA="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADc4ZDYyNThjLTQ4MzAtNGQxYi05OQFiLWVhMTEAYmVhZTI1NmMALgAAAxCMgP0D+nZChxBVpgP0hCQBABc9i2ZCUY9Ep4pj1+2RDxIAAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-27T11:00:00+02:00",
-      "End": "2026-01-27T14:00:00+02:00",
-      "Subject": "Examen Programare functionala Seria B, An 3, RO",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Single",
-      "Location": {
-        "DisplayName": "UTCN - INSTA Blvd. 21 Decembrie 1989 - Aula (RO)",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
     "start": "2025-12-16T13:50:31+02:00",
     "end": "2025-12-16T14:00:00+02:00",
     "title": "Reserved",
@@ -65,6 +24,47 @@
       "CalendarItemType": "Single",
       "Location": {
         "DisplayName": "Microsoft Teams Meeting",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-27T11:00:00+02:00",
+    "end": "2026-01-27T14:00:00+02:00",
+    "title": "Examen Programare Functionala Seria B, An 3, Ro",
+    "location": "UTCN - INSTA Blvd. 21 Decembrie 1989 - Aula (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAXPYtmQlGPRKeKY9ftkQ8SAADlQfNQ",
+        "Id": "AAMkADc4ZDYyNThjLTQ4MzAtNGQxYi05OTliLWVhMTFiZWFlMjU2YwBGAAAAAAAQjID9A/p2QocQVaYD9IQkBwAXPYtmQlGPRKeKY9ftkQ8SAAAAAAENAAAXPYtmQlGPRKeKY9ftkQ8SAADlLyIrAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADc4ZDYyNThjLTQ4MzAtNGQxYi05OQFiLWVhMTEAYmVhZTI1NmMALgAAAxCMgP0D+nZChxBVpgP0hCQBABc9i2ZCUY9Ep4pj1+2RDxIAAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-27T11:00:00+02:00",
+      "End": "2026-01-27T14:00:00+02:00",
+      "Subject": "Examen Programare functionala Seria B, An 3, RO",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - INSTA Blvd. 21 Decembrie 1989 - Aula (RO)",
         "PostalAddress": {
           "Street": null,
           "City": null,

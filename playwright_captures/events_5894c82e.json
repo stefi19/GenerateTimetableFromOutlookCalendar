@@ -1,87 +1,5 @@
 [
   {
-    "start": "2026-01-12T08:00:00+02:00",
-    "end": "2026-01-12T10:00:00+02:00",
-    "title": "Dasf",
-    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 402",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAACzLbLMKJ9qTa94N6szZAUBAADldZNK",
-        "Id": "AAMkAGZkNjRmOGI2LTk0ZDQtNDBmNi05MmM2LTZmZDdmYzJjNzRiZQFRAAgI3lFth4NAAEYAAAAASZrO/L36M0CZtP5q6HcthgcAsy2yzCifak2veDerM2QFAQAAAAABDQAAsy2yzCifak2veDerM2QFAQAA0YnDRgAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkAGZkNjRmOGI2LTk0ZDQtNDBmNi05MmM2LTZmZDdmYzJjNzRiZQAuAAADSZrO/L36M0CZtP5q6HcthgEAsy2yzCifak2veDerM2QFAQAAAgENAAAA",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-12T08:00:00+02:00",
-      "End": "2026-01-12T10:00:00+02:00",
-      "Subject": "DASF - Lab 2031/1",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 402",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2026-01-19T08:00:00+02:00",
-    "end": "2026-01-19T10:00:00+02:00",
-    "title": "Dasf",
-    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 402",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAACzLbLMKJ9qTa94N6szZAUBAADldZNK",
-        "Id": "AAMkAGZkNjRmOGI2LTk0ZDQtNDBmNi05MmM2LTZmZDdmYzJjNzRiZQFRAAgI3lbtsGeAAEYAAAAASZrO/L36M0CZtP5q6HcthgcAsy2yzCifak2veDerM2QFAQAAAAABDQAAsy2yzCifak2veDerM2QFAQAA0YnDRgAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkAGZkNjRmOGI2LTk0ZDQtNDBmNi05MmM2LTZmZDdmYzJjNzRiZQAuAAADSZrO/L36M0CZtP5q6HcthgEAsy2yzCifak2veDerM2QFAQAAAgENAAAA",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-19T08:00:00+02:00",
-      "End": "2026-01-19T10:00:00+02:00",
-      "Subject": "DASF - Lab 2031/1",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 402",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
     "start": "2025-12-08T08:00:00+02:00",
     "end": "2025-12-08T10:00:00+02:00",
     "title": "Dasf",
@@ -186,6 +104,88 @@
       "Sensitivity": "Normal",
       "FreeBusyType": "Busy",
       "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 402",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-12T08:00:00+02:00",
+    "end": "2026-01-12T10:00:00+02:00",
+    "title": "Dasf",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 402",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACzLbLMKJ9qTa94N6szZAUBAADldZNK",
+        "Id": "AAMkAGZkNjRmOGI2LTk0ZDQtNDBmNi05MmM2LTZmZDdmYzJjNzRiZQFRAAgI3lFth4NAAEYAAAAASZrO/L36M0CZtP5q6HcthgcAsy2yzCifak2veDerM2QFAQAAAAABDQAAsy2yzCifak2veDerM2QFAQAA0YnDRgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkAGZkNjRmOGI2LTk0ZDQtNDBmNi05MmM2LTZmZDdmYzJjNzRiZQAuAAADSZrO/L36M0CZtP5q6HcthgEAsy2yzCifak2veDerM2QFAQAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-12T08:00:00+02:00",
+      "End": "2026-01-12T10:00:00+02:00",
+      "Subject": "DASF - Lab 2031/1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 402",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-19T08:00:00+02:00",
+    "end": "2026-01-19T10:00:00+02:00",
+    "title": "Dasf",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 402",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACzLbLMKJ9qTa94N6szZAUBAADldZNK",
+        "Id": "AAMkAGZkNjRmOGI2LTk0ZDQtNDBmNi05MmM2LTZmZDdmYzJjNzRiZQFRAAgI3lbtsGeAAEYAAAAASZrO/L36M0CZtP5q6HcthgcAsy2yzCifak2veDerM2QFAQAAAAABDQAAsy2yzCifak2veDerM2QFAQAA0YnDRgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkAGZkNjRmOGI2LTk0ZDQtNDBmNi05MmM2LTZmZDdmYzJjNzRiZQAuAAADSZrO/L36M0CZtP5q6HcthgEAsy2yzCifak2veDerM2QFAQAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-19T08:00:00+02:00",
+      "End": "2026-01-19T10:00:00+02:00",
+      "Subject": "DASF - Lab 2031/1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
       "Location": {
         "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 402",
         "PostalAddress": {

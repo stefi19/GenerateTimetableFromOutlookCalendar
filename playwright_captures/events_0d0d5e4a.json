@@ -1,46 +1,5 @@
 [
   {
-    "start": "2026-01-12T09:00:00+00:00",
-    "end": "2026-01-12T12:00:00+00:00",
-    "title": "Sedinta Bca 12 Ianuarie",
-    "location": "UTCN - RECTORAT - Sala 219; UTCN - CUNBM Sala Senatului",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAAA+GYhZa8UiT4AEZRFCjN2WAAB8lSzH",
-        "Id": "AAMkADNlYjUyY2U5LTM4NjItNGU3Ny05MGFiLTgxMzYxZjBhYzNmMQBGAAAAAADRuKxvT7QQRpSnpcEMZ8X/BwA+GYhZa8UiT4AEZRFCjN2WAAAAAAENAAA+GYhZa8UiT4AEZRFCjN2WAAB8i9HSAAA="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADNlYjUyY2U5LTM4NjItNGU3NwAtOTBhYi04MTM2MWYwYWMzZjEALgAAA9G4rG9PtBBGlKelwQxnxf8BAD4ZiFlrxSJPgARlEUKM3ZYAAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-12T09:00:00Z",
-      "End": "2026-01-12T12:00:00Z",
-      "Subject": "Sedinta BCA 12 ianuarie",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Single",
-      "Location": {
-        "DisplayName": "UTCN - RECTORAT - Sala 219; UTCN - CUNBM Sala Senatului",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
     "start": "2025-12-09T12:00:00+00:00",
     "end": "2025-12-09T15:00:00+00:00",
     "title": "Sedinta Ca 09 Noiembrie",
@@ -101,6 +60,47 @@
       "Start": "2025-12-15T08:00:00Z",
       "End": "2025-12-15T10:00:00Z",
       "Subject": "Sedinta BCA 15 decembrie",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - RECTORAT - Sala 219; UTCN - CUNBM Sala Senatului",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-12T09:00:00+00:00",
+    "end": "2026-01-12T12:00:00+00:00",
+    "title": "Sedinta Bca 12 Ianuarie",
+    "location": "UTCN - RECTORAT - Sala 219; UTCN - CUNBM Sala Senatului",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA+GYhZa8UiT4AEZRFCjN2WAAB8lSzH",
+        "Id": "AAMkADNlYjUyY2U5LTM4NjItNGU3Ny05MGFiLTgxMzYxZjBhYzNmMQBGAAAAAADRuKxvT7QQRpSnpcEMZ8X/BwA+GYhZa8UiT4AEZRFCjN2WAAAAAAENAAA+GYhZa8UiT4AEZRFCjN2WAAB8i9HSAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADNlYjUyY2U5LTM4NjItNGU3NwAtOTBhYi04MTM2MWYwYWMzZjEALgAAA9G4rG9PtBBGlKelwQxnxf8BAD4ZiFlrxSJPgARlEUKM3ZYAAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-12T09:00:00Z",
+      "End": "2026-01-12T12:00:00Z",
+      "Subject": "Sedinta BCA 12 ianuarie",
       "Sensitivity": "Normal",
       "FreeBusyType": "Busy",
       "CalendarItemType": "Single",

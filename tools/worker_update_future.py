@@ -35,6 +35,32 @@ OUT = ROOT / 'playwright_captures'
 OUT.mkdir(parents=True, exist_ok=True)
 
 
+def load_calendar_map(db_path: Path, out_dir: Path):
+    cmap = {}
+    map_path = out_dir / 'calendar_map.json'
+    try:
+        if map_path.exists():
+            with map_path.open('r', encoding='utf-8') as f:
+                cmap = json.load(f)
+    except Exception:
+        cmap = {}
+    # supplement from DB rows
+    try:
+        conn = sqlite3.connect(str(db_path))
+        cur = conn.cursor()
+        cur.execute("SELECT url, name, color, building, room FROM calendars WHERE url IS NOT NULL")
+        for url, name, color, building, room in cur.fetchall():
+            if not url:
+                continue
+            h = hashlib.sha1(url.encode('utf-8')).hexdigest()[:8]
+            if h not in cmap:
+                cmap[h] = {'url': url, 'name': name or '', 'color': color, 'building': building, 'room': room}
+        conn.close()
+    except Exception:
+        pass
+    return cmap
+
+
 def sha8(s: str) -> str:
     return hashlib.sha1(s.encode('utf-8')).hexdigest()[:8]
 
@@ -98,6 +124,28 @@ def merge_future_events(url: str):
     # Merge: keep past, append new_future, dedupe by (ItemId or title+start)
     merged = past + new_future
     merged_candidates = past + new_future
+    # try to enrich events missing location from calendar_map or DB
+    cmap = load_calendar_map(DB, OUT)
+    for ev in merged_candidates:
+        try:
+            if not ev.get('location') or ev.get('location') in ('', ' - ', None):
+                meta = None
+                src = ev.get('source')
+                if src and str(src) in cmap:
+                    meta = cmap.get(str(src))
+                else:
+                    # fallback to file hash h
+                    meta = cmap.get(h)
+                if meta:
+                    room_meta = meta.get('room') if isinstance(meta, dict) else None
+                    name_meta = meta.get('name') if isinstance(meta, dict) else None
+                    if room_meta:
+                        ev['room'] = room_meta
+                        ev['location'] = room_meta
+                    elif name_meta:
+                        ev['location'] = name_meta
+        except Exception:
+            pass
     seen = set()
     deduped = []
 

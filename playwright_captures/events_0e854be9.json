@@ -1,702 +1,5 @@
 [
   {
-    "start": "2026-01-13T12:00:00+02:00",
-    "end": "2026-01-13T14:00:00+02:00",
-    "title": "Cppl Lab 30313.1",
-    "location": "UTCN - AC Bar - Sala BT 603",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAAChLb/g",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAFRAAgI3lI2se0AAEYAAAAAPWGzcaSj/k6rqYE4pt0qVAcA60YnwKDh+kmBkpGPjQ14BgAAAAABDQAA60YnwKDh+kmBkpGPjQ14BgAAoSFIfAAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-13T12:00:00+02:00",
-      "End": "2026-01-13T14:00:00+02:00",
-      "Subject": "CPPL Lab 30313.1",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - AC Bar - Sala BT 603",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2026-01-13T14:00:00+02:00",
-    "end": "2026-01-13T16:00:00+02:00",
-    "title": "Cppl Lab 30312.1",
-    "location": "UTCN - AC Bar - Sala BT 603",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAAChLcEm",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAFRAAgI3lI2se0AAEYAAAAAPWGzcaSj/k6rqYE4pt0qVAcA60YnwKDh+kmBkpGPjQ14BgAAAAABDQAA60YnwKDh+kmBkpGPjQ14BgAAoSFIfgAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-13T14:00:00+02:00",
-      "End": "2026-01-13T16:00:00+02:00",
-      "Subject": "CPPL Lab 30312.1",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - AC Bar - Sala BT 603",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2026-01-13T16:00:00+02:00",
-    "end": "2026-01-13T18:00:00+02:00",
-    "title": "Cppl Lab 30312.2",
-    "location": "UTCN - AC Bar - Sala BT 603",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAAChLcIC",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAFRAAgI3lI2se0AAEYAAAAAPWGzcaSj/k6rqYE4pt0qVAcA60YnwKDh+kmBkpGPjQ14BgAAAAABDQAA60YnwKDh+kmBkpGPjQ14BgAAoSFIgAAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-13T16:00:00+02:00",
-      "End": "2026-01-13T18:00:00+02:00",
-      "Subject": "CPPL Lab 30312.2",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - AC Bar - Sala BT 603",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2026-01-14T12:00:00+02:00",
-    "end": "2026-01-14T14:00:00+02:00",
-    "title": "Cppl Lab 30311.1",
-    "location": "UTCN - AC Bar - Sala BT 603",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAAChLcNQ",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAFRAAgI3lL/3FbAAEYAAAAAPWGzcaSj/k6rqYE4pt0qVAcA60YnwKDh+kmBkpGPjQ14BgAAAAABDQAA60YnwKDh+kmBkpGPjQ14BgAAoSFIggAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-14T12:00:00+02:00",
-      "End": "2026-01-14T14:00:00+02:00",
-      "Subject": "CPPL Lab 30311.1",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - AC Bar - Sala BT 603",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2026-01-14T14:00:00+02:00",
-    "end": "2026-01-14T16:00:00+02:00",
-    "title": "Cppl Lab 30311.2",
-    "location": "UTCN - AC Bar - Sala BT 603",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAAChLcP1",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAFRAAgI3lL/3FbAAEYAAAAAPWGzcaSj/k6rqYE4pt0qVAcA60YnwKDh+kmBkpGPjQ14BgAAAAABDQAA60YnwKDh+kmBkpGPjQ14BgAAoSFIhAAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-14T14:00:00+02:00",
-      "End": "2026-01-14T16:00:00+02:00",
-      "Subject": "CPPL Lab 30311.2",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - AC Bar - Sala BT 603",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2026-01-15T16:00:00+02:00",
-    "end": "2026-01-15T18:00:00+02:00",
-    "title": "Cebd Proiect 31421.1",
-    "location": "UTCN - AC Bar - Sala BT 603",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAACqtdvZ",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZABGAAAAAAA9YbNxpKP+TqupgTim3SpUBwDrRifAoOH6SYGSkY+NDXgGAAAAAAENAADrRifAoOH6SYGSkY+NDXgGAACnxJ1qAAA="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-15T16:00:00+02:00",
-      "End": "2026-01-15T18:00:00+02:00",
-      "Subject": "CEBD Proiect 31421.1",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Single",
-      "Location": {
-        "DisplayName": "UTCN - AC Bar - Sala BT 603",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2026-01-19T18:00:00+02:00",
-    "end": "2026-01-19T20:00:00+02:00",
-    "title": "Cebd Lab 31422",
-    "location": "UTCN - AC Bar - Sala BT 603",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAACqtdvh",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZABGAAAAAAA9YbNxpKP+TqupgTim3SpUBwDrRifAoOH6SYGSkY+NDXgGAAAAAAENAADrRifAoOH6SYGSkY+NDXgGAACnxJ1wAAA="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-19T18:00:00+02:00",
-      "End": "2026-01-19T20:00:00+02:00",
-      "Subject": "CEBD Lab 31422",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Single",
-      "Location": {
-        "DisplayName": "UTCN - AC Bar - Sala BT 603",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2026-01-20T12:00:00+02:00",
-    "end": "2026-01-20T14:00:00+02:00",
-    "title": "Cppl Lab 30313.1",
-    "location": "UTCN - AC Bar - Sala BT 603",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAAChLb/g",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAFRAAgI3le22tFAAEYAAAAAPWGzcaSj/k6rqYE4pt0qVAcA60YnwKDh+kmBkpGPjQ14BgAAAAABDQAA60YnwKDh+kmBkpGPjQ14BgAAoSFIfAAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-20T12:00:00+02:00",
-      "End": "2026-01-20T14:00:00+02:00",
-      "Subject": "CPPL Lab 30313.1",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - AC Bar - Sala BT 603",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2026-01-20T14:00:00+02:00",
-    "end": "2026-01-20T16:00:00+02:00",
-    "title": "Cppl Lab 30312.1",
-    "location": "UTCN - AC Bar - Sala BT 603",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAAChLcEm",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAFRAAgI3le22tFAAEYAAAAAPWGzcaSj/k6rqYE4pt0qVAcA60YnwKDh+kmBkpGPjQ14BgAAAAABDQAA60YnwKDh+kmBkpGPjQ14BgAAoSFIfgAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-20T14:00:00+02:00",
-      "End": "2026-01-20T16:00:00+02:00",
-      "Subject": "CPPL Lab 30312.1",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - AC Bar - Sala BT 603",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2026-01-20T16:00:00+02:00",
-    "end": "2026-01-20T18:00:00+02:00",
-    "title": "Cppl Lab 30312.2",
-    "location": "UTCN - AC Bar - Sala BT 603",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAAChLcIC",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAFRAAgI3le22tFAAEYAAAAAPWGzcaSj/k6rqYE4pt0qVAcA60YnwKDh+kmBkpGPjQ14BgAAAAABDQAA60YnwKDh+kmBkpGPjQ14BgAAoSFIgAAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-20T16:00:00+02:00",
-      "End": "2026-01-20T18:00:00+02:00",
-      "Subject": "CPPL Lab 30312.2",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - AC Bar - Sala BT 603",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2026-01-21T12:00:00+02:00",
-    "end": "2026-01-21T14:00:00+02:00",
-    "title": "Cppl Lab 30311.1",
-    "location": "UTCN - AC Bar - Sala BT 603",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAAChLcNQ",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAFRAAgI3liABTsAAEYAAAAAPWGzcaSj/k6rqYE4pt0qVAcA60YnwKDh+kmBkpGPjQ14BgAAAAABDQAA60YnwKDh+kmBkpGPjQ14BgAAoSFIggAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-21T12:00:00+02:00",
-      "End": "2026-01-21T14:00:00+02:00",
-      "Subject": "CPPL Lab 30311.1",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - AC Bar - Sala BT 603",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2026-01-21T14:00:00+02:00",
-    "end": "2026-01-21T16:00:00+02:00",
-    "title": "Cppl Lab 30311.2",
-    "location": "UTCN - AC Bar - Sala BT 603",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAAChLcP1",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAFRAAgI3liABTsAAEYAAAAAPWGzcaSj/k6rqYE4pt0qVAcA60YnwKDh+kmBkpGPjQ14BgAAAAABDQAA60YnwKDh+kmBkpGPjQ14BgAAoSFIhAAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-21T14:00:00+02:00",
-      "End": "2026-01-21T16:00:00+02:00",
-      "Subject": "CPPL Lab 30311.2",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - AC Bar - Sala BT 603",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2026-01-22T14:00:00+02:00",
-    "end": "2026-01-22T16:00:00+02:00",
-    "title": "Cebd Proiect 31422",
-    "location": "UTCN - AC Bar - Sala BT 603",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAACqtdve",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZABGAAAAAAA9YbNxpKP+TqupgTim3SpUBwDrRifAoOH6SYGSkY+NDXgGAAAAAAENAADrRifAoOH6SYGSkY+NDXgGAACnxJ1uAAA="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-22T14:00:00+02:00",
-      "End": "2026-01-22T16:00:00+02:00",
-      "Subject": "CEBD Proiect 31422",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Single",
-      "Location": {
-        "DisplayName": "UTCN - AC Bar - Sala BT 603",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2026-01-22T16:00:00+02:00",
-    "end": "2026-01-22T18:00:00+02:00",
-    "title": "Cebd Proiect 31421.2",
-    "location": "UTCN - AC Bar - Sala BT 603",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAACqtdvs",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZABGAAAAAAA9YbNxpKP+TqupgTim3SpUBwDrRifAoOH6SYGSkY+NDXgGAAAAAAENAADrRifAoOH6SYGSkY+NDXgGAACnxJ1sAAA="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-22T16:00:00+02:00",
-      "End": "2026-01-22T18:00:00+02:00",
-      "Subject": "CEBD Proiect 31421.2",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Single",
-      "Location": {
-        "DisplayName": "UTCN - AC Bar - Sala BT 603",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2026-01-22T18:00:00+02:00",
-    "end": "2026-01-22T20:00:00+02:00",
-    "title": "Cebd Lab 31421.1",
-    "location": "UTCN - AC Bar - Sala BT 603",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAACqtdv7",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZABGAAAAAAA9YbNxpKP+TqupgTim3SpUBwDrRifAoOH6SYGSkY+NDXgGAAAAAAENAADrRifAoOH6SYGSkY+NDXgGAACnxJ1yAAA="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-22T18:00:00+02:00",
-      "End": "2026-01-22T20:00:00+02:00",
-      "Subject": "CEBD Lab 31421.1",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Single",
-      "Location": {
-        "DisplayName": "UTCN - AC Bar - Sala BT 603",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2026-01-22T20:00:00+02:00",
-    "end": "2026-01-22T22:00:00+02:00",
-    "title": "Cebd Lab 31421.2",
-    "location": "UTCN - AC Bar - Sala BT 603",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAACqtdvu",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZABGAAAAAAA9YbNxpKP+TqupgTim3SpUBwDrRifAoOH6SYGSkY+NDXgGAAAAAAENAADrRifAoOH6SYGSkY+NDXgGAACnxJ1zAAA="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-22T20:00:00+02:00",
-      "End": "2026-01-22T22:00:00+02:00",
-      "Subject": "CEBD Lab 31421.2",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Single",
-      "Location": {
-        "DisplayName": "UTCN - AC Bar - Sala BT 603",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2026-01-30T12:00:00+02:00",
-    "end": "2026-01-30T20:00:00+02:00",
-    "title": "EXAMEN - Room CEBD",
-    "location": "UTCN - AC Bar - Sala BT 603",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAADIVI4e",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZABGAAAAAAA9YbNxpKP+TqupgTim3SpUBwDrRifAoOH6SYGSkY+NDXgGAAAAAAENAADrRifAoOH6SYGSkY+NDXgGAADIQa1iAAA="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-30T12:00:00+02:00",
-      "End": "2026-01-30T20:00:00+02:00",
-      "Subject": "Examen CEBD",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Single",
-      "Location": {
-        "DisplayName": "UTCN - AC Bar - Sala BT 603",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
     "start": "2025-12-02T12:00:00+02:00",
     "end": "2025-12-02T14:00:00+02:00",
     "title": "Cppl Lab 30313.1",
@@ -1621,6 +924,703 @@
       "Sensitivity": "Normal",
       "FreeBusyType": "Busy",
       "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 603",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-13T12:00:00+02:00",
+    "end": "2026-01-13T14:00:00+02:00",
+    "title": "Cppl Lab 30313.1",
+    "location": "UTCN - AC Bar - Sala BT 603",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAAChLb/g",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAFRAAgI3lI2se0AAEYAAAAAPWGzcaSj/k6rqYE4pt0qVAcA60YnwKDh+kmBkpGPjQ14BgAAAAABDQAA60YnwKDh+kmBkpGPjQ14BgAAoSFIfAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-13T12:00:00+02:00",
+      "End": "2026-01-13T14:00:00+02:00",
+      "Subject": "CPPL Lab 30313.1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 603",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-13T14:00:00+02:00",
+    "end": "2026-01-13T16:00:00+02:00",
+    "title": "Cppl Lab 30312.1",
+    "location": "UTCN - AC Bar - Sala BT 603",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAAChLcEm",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAFRAAgI3lI2se0AAEYAAAAAPWGzcaSj/k6rqYE4pt0qVAcA60YnwKDh+kmBkpGPjQ14BgAAAAABDQAA60YnwKDh+kmBkpGPjQ14BgAAoSFIfgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-13T14:00:00+02:00",
+      "End": "2026-01-13T16:00:00+02:00",
+      "Subject": "CPPL Lab 30312.1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 603",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-13T16:00:00+02:00",
+    "end": "2026-01-13T18:00:00+02:00",
+    "title": "Cppl Lab 30312.2",
+    "location": "UTCN - AC Bar - Sala BT 603",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAAChLcIC",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAFRAAgI3lI2se0AAEYAAAAAPWGzcaSj/k6rqYE4pt0qVAcA60YnwKDh+kmBkpGPjQ14BgAAAAABDQAA60YnwKDh+kmBkpGPjQ14BgAAoSFIgAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-13T16:00:00+02:00",
+      "End": "2026-01-13T18:00:00+02:00",
+      "Subject": "CPPL Lab 30312.2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 603",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-14T12:00:00+02:00",
+    "end": "2026-01-14T14:00:00+02:00",
+    "title": "Cppl Lab 30311.1",
+    "location": "UTCN - AC Bar - Sala BT 603",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAAChLcNQ",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAFRAAgI3lL/3FbAAEYAAAAAPWGzcaSj/k6rqYE4pt0qVAcA60YnwKDh+kmBkpGPjQ14BgAAAAABDQAA60YnwKDh+kmBkpGPjQ14BgAAoSFIggAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-14T12:00:00+02:00",
+      "End": "2026-01-14T14:00:00+02:00",
+      "Subject": "CPPL Lab 30311.1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 603",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-14T14:00:00+02:00",
+    "end": "2026-01-14T16:00:00+02:00",
+    "title": "Cppl Lab 30311.2",
+    "location": "UTCN - AC Bar - Sala BT 603",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAAChLcP1",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAFRAAgI3lL/3FbAAEYAAAAAPWGzcaSj/k6rqYE4pt0qVAcA60YnwKDh+kmBkpGPjQ14BgAAAAABDQAA60YnwKDh+kmBkpGPjQ14BgAAoSFIhAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-14T14:00:00+02:00",
+      "End": "2026-01-14T16:00:00+02:00",
+      "Subject": "CPPL Lab 30311.2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 603",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-15T16:00:00+02:00",
+    "end": "2026-01-15T18:00:00+02:00",
+    "title": "Cebd Proiect 31421.1",
+    "location": "UTCN - AC Bar - Sala BT 603",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAACqtdvZ",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZABGAAAAAAA9YbNxpKP+TqupgTim3SpUBwDrRifAoOH6SYGSkY+NDXgGAAAAAAENAADrRifAoOH6SYGSkY+NDXgGAACnxJ1qAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-15T16:00:00+02:00",
+      "End": "2026-01-15T18:00:00+02:00",
+      "Subject": "CEBD Proiect 31421.1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 603",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-19T18:00:00+02:00",
+    "end": "2026-01-19T20:00:00+02:00",
+    "title": "Cebd Lab 31422",
+    "location": "UTCN - AC Bar - Sala BT 603",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAACqtdvh",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZABGAAAAAAA9YbNxpKP+TqupgTim3SpUBwDrRifAoOH6SYGSkY+NDXgGAAAAAAENAADrRifAoOH6SYGSkY+NDXgGAACnxJ1wAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-19T18:00:00+02:00",
+      "End": "2026-01-19T20:00:00+02:00",
+      "Subject": "CEBD Lab 31422",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 603",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-20T12:00:00+02:00",
+    "end": "2026-01-20T14:00:00+02:00",
+    "title": "Cppl Lab 30313.1",
+    "location": "UTCN - AC Bar - Sala BT 603",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAAChLb/g",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAFRAAgI3le22tFAAEYAAAAAPWGzcaSj/k6rqYE4pt0qVAcA60YnwKDh+kmBkpGPjQ14BgAAAAABDQAA60YnwKDh+kmBkpGPjQ14BgAAoSFIfAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-20T12:00:00+02:00",
+      "End": "2026-01-20T14:00:00+02:00",
+      "Subject": "CPPL Lab 30313.1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 603",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-20T14:00:00+02:00",
+    "end": "2026-01-20T16:00:00+02:00",
+    "title": "Cppl Lab 30312.1",
+    "location": "UTCN - AC Bar - Sala BT 603",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAAChLcEm",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAFRAAgI3le22tFAAEYAAAAAPWGzcaSj/k6rqYE4pt0qVAcA60YnwKDh+kmBkpGPjQ14BgAAAAABDQAA60YnwKDh+kmBkpGPjQ14BgAAoSFIfgAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-20T14:00:00+02:00",
+      "End": "2026-01-20T16:00:00+02:00",
+      "Subject": "CPPL Lab 30312.1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 603",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-20T16:00:00+02:00",
+    "end": "2026-01-20T18:00:00+02:00",
+    "title": "Cppl Lab 30312.2",
+    "location": "UTCN - AC Bar - Sala BT 603",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAAChLcIC",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAFRAAgI3le22tFAAEYAAAAAPWGzcaSj/k6rqYE4pt0qVAcA60YnwKDh+kmBkpGPjQ14BgAAAAABDQAA60YnwKDh+kmBkpGPjQ14BgAAoSFIgAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-20T16:00:00+02:00",
+      "End": "2026-01-20T18:00:00+02:00",
+      "Subject": "CPPL Lab 30312.2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 603",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-21T12:00:00+02:00",
+    "end": "2026-01-21T14:00:00+02:00",
+    "title": "Cppl Lab 30311.1",
+    "location": "UTCN - AC Bar - Sala BT 603",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAAChLcNQ",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAFRAAgI3liABTsAAEYAAAAAPWGzcaSj/k6rqYE4pt0qVAcA60YnwKDh+kmBkpGPjQ14BgAAAAABDQAA60YnwKDh+kmBkpGPjQ14BgAAoSFIggAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-21T12:00:00+02:00",
+      "End": "2026-01-21T14:00:00+02:00",
+      "Subject": "CPPL Lab 30311.1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 603",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-21T14:00:00+02:00",
+    "end": "2026-01-21T16:00:00+02:00",
+    "title": "Cppl Lab 30311.2",
+    "location": "UTCN - AC Bar - Sala BT 603",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAAChLcP1",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAFRAAgI3liABTsAAEYAAAAAPWGzcaSj/k6rqYE4pt0qVAcA60YnwKDh+kmBkpGPjQ14BgAAAAABDQAA60YnwKDh+kmBkpGPjQ14BgAAoSFIhAAAEA=="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-21T14:00:00+02:00",
+      "End": "2026-01-21T16:00:00+02:00",
+      "Subject": "CPPL Lab 30311.2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Occurrence",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 603",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-22T14:00:00+02:00",
+    "end": "2026-01-22T16:00:00+02:00",
+    "title": "Cebd Proiect 31422",
+    "location": "UTCN - AC Bar - Sala BT 603",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAACqtdve",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZABGAAAAAAA9YbNxpKP+TqupgTim3SpUBwDrRifAoOH6SYGSkY+NDXgGAAAAAAENAADrRifAoOH6SYGSkY+NDXgGAACnxJ1uAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-22T14:00:00+02:00",
+      "End": "2026-01-22T16:00:00+02:00",
+      "Subject": "CEBD Proiect 31422",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 603",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-22T16:00:00+02:00",
+    "end": "2026-01-22T18:00:00+02:00",
+    "title": "Cebd Proiect 31421.2",
+    "location": "UTCN - AC Bar - Sala BT 603",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAACqtdvs",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZABGAAAAAAA9YbNxpKP+TqupgTim3SpUBwDrRifAoOH6SYGSkY+NDXgGAAAAAAENAADrRifAoOH6SYGSkY+NDXgGAACnxJ1sAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-22T16:00:00+02:00",
+      "End": "2026-01-22T18:00:00+02:00",
+      "Subject": "CEBD Proiect 31421.2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 603",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-22T18:00:00+02:00",
+    "end": "2026-01-22T20:00:00+02:00",
+    "title": "Cebd Lab 31421.1",
+    "location": "UTCN - AC Bar - Sala BT 603",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAACqtdv7",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZABGAAAAAAA9YbNxpKP+TqupgTim3SpUBwDrRifAoOH6SYGSkY+NDXgGAAAAAAENAADrRifAoOH6SYGSkY+NDXgGAACnxJ1yAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-22T18:00:00+02:00",
+      "End": "2026-01-22T20:00:00+02:00",
+      "Subject": "CEBD Lab 31421.1",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 603",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-22T20:00:00+02:00",
+    "end": "2026-01-22T22:00:00+02:00",
+    "title": "Cebd Lab 31421.2",
+    "location": "UTCN - AC Bar - Sala BT 603",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAACqtdvu",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZABGAAAAAAA9YbNxpKP+TqupgTim3SpUBwDrRifAoOH6SYGSkY+NDXgGAAAAAAENAADrRifAoOH6SYGSkY+NDXgGAACnxJ1zAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-22T20:00:00+02:00",
+      "End": "2026-01-22T22:00:00+02:00",
+      "Subject": "CEBD Lab 31421.2",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - AC Bar - Sala BT 603",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    }
+  },
+  {
+    "start": "2026-01-30T12:00:00+02:00",
+    "end": "2026-01-30T20:00:00+02:00",
+    "title": "EXAMEN - Room CEBD",
+    "location": "UTCN - AC Bar - Sala BT 603",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADrRifAoOH6SYGSkY+NDXgGAADIVI4e",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZABGAAAAAAA9YbNxpKP+TqupgTim3SpUBwDrRifAoOH6SYGSkY+NDXgGAAAAAAENAADrRifAoOH6SYGSkY+NDXgGAADIQa1iAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGVjNzI5N2NlLTgyNjgtNDA3Ny1iNmU1LTE3NmJjNzFmZjk2ZAAuAAAAAAA9YbNxpKP+TqupgTim3SpUAQDrRifAoOH6SYGSkY+NDXgGAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-30T12:00:00+02:00",
+      "End": "2026-01-30T20:00:00+02:00",
+      "Subject": "Examen CEBD",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
       "Location": {
         "DisplayName": "UTCN - AC Bar - Sala BT 603",
         "PostalAddress": {

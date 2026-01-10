@@ -7,7 +7,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -27,7 +27,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -49,7 +49,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -69,7 +69,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -89,7 +89,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -109,7 +109,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -131,7 +131,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -151,7 +151,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -173,7 +173,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -193,7 +193,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -213,7 +213,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -233,261 +233,13 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
       {
         "start": "2026-01-08T14:00:00+02:00",
         "end": "2026-01-08T16:00:00+02:00",
-        "title": "Fw: Televiziune",
-        "subject": "Fw: Televiziune",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-13": [
-      {
-        "start": "2026-01-13T16:00:00+02:00",
-        "end": "2026-01-13T18:00:00+02:00",
-        "title": "Televiziune",
-        "subject": "Televiziune",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-13T16:00:00+02:00",
-        "end": "2026-01-13T18:00:00+02:00",
-        "title": "Fw: Televiziune",
-        "subject": "Fw: Televiziune",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": null,
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-13T18:00:00+02:00",
-        "end": "2026-01-13T20:00:00+02:00",
-        "title": "Televiziune",
-        "subject": "Televiziune",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-13T18:00:00+02:00",
-        "end": "2026-01-13T20:00:00+02:00",
-        "title": "Fw: Televiziune",
-        "subject": "Fw: Televiziune",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-15": [
-      {
-        "start": "2026-01-15T08:00:00+02:00",
-        "end": "2026-01-15T10:00:00+02:00",
-        "title": "Televiziune",
-        "subject": "Televiziune",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-15T08:00:00+02:00",
-        "end": "2026-01-15T10:00:00+02:00",
-        "title": "Fw: Televiziune",
-        "subject": "Fw: Televiziune",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": null,
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-15T10:00:00+02:00",
-        "end": "2026-01-15T12:00:00+02:00",
-        "title": "Televiziune",
-        "subject": "Televiziune",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-15T10:00:00+02:00",
-        "end": "2026-01-15T12:00:00+02:00",
-        "title": "Fw: Televiziune",
-        "subject": "Fw: Televiziune",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": null,
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-15T12:00:00+02:00",
-        "end": "2026-01-15T14:00:00+02:00",
-        "title": "Televiziune",
-        "subject": "Televiziune",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-15T12:00:00+02:00",
-        "end": "2026-01-15T14:00:00+02:00",
-        "title": "Fw: Televiziune",
-        "subject": "Fw: Televiziune",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": null,
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-15T14:00:00+02:00",
-        "end": "2026-01-15T16:00:00+02:00",
-        "title": "Televiziune",
-        "subject": "Televiziune",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-15T14:00:00+02:00",
-        "end": "2026-01-15T16:00:00+02:00",
-        "title": "Fw: Televiziune",
-        "subject": "Fw: Televiziune",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-20": [
-      {
-        "start": "2026-01-20T16:00:00+02:00",
-        "end": "2026-01-20T18:00:00+02:00",
-        "title": "Televiziune",
-        "subject": "Televiziune",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-20T16:00:00+02:00",
-        "end": "2026-01-20T18:00:00+02:00",
-        "title": "Fw: Televiziune",
-        "subject": "Fw: Televiziune",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": null,
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-20T18:00:00+02:00",
-        "end": "2026-01-20T20:00:00+02:00",
-        "title": "Televiziune",
-        "subject": "Televiziune",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-20T18:00:00+02:00",
-        "end": "2026-01-20T20:00:00+02:00",
-        "title": "Fw: Televiziune",
-        "subject": "Fw: Televiziune",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-22": [
-      {
-        "start": "2026-01-22T08:00:00+02:00",
-        "end": "2026-01-22T10:00:00+02:00",
-        "title": "Televiziune",
-        "subject": "Televiziune",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-22T08:00:00+02:00",
-        "end": "2026-01-22T10:00:00+02:00",
-        "title": "Fw: Televiziune",
-        "subject": "Fw: Televiziune",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": null,
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-22T10:00:00+02:00",
-        "end": "2026-01-22T12:00:00+02:00",
-        "title": "Televiziune",
-        "subject": "Televiziune",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-22T10:00:00+02:00",
-        "end": "2026-01-22T12:00:00+02:00",
-        "title": "Fw: Televiziune",
-        "subject": "Fw: Televiziune",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": null,
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-22T12:00:00+02:00",
-        "end": "2026-01-22T14:00:00+02:00",
-        "title": "Televiziune",
-        "subject": "Televiziune",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-22T12:00:00+02:00",
-        "end": "2026-01-22T14:00:00+02:00",
-        "title": "Fw: Televiziune",
-        "subject": "Fw: Televiziune",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": null,
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-22T14:00:00+02:00",
-        "end": "2026-01-22T16:00:00+02:00",
-        "title": "Televiziune",
-        "subject": "Televiziune",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-22T14:00:00+02:00",
-        "end": "2026-01-22T16:00:00+02:00",
         "title": "Fw: Televiziune",
         "subject": "Fw: Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
@@ -503,7 +255,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -523,7 +275,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -545,7 +297,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -565,7 +317,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -585,7 +337,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -605,7 +357,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -627,7 +379,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -647,7 +399,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -669,7 +421,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -689,7 +441,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -709,7 +461,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -729,7 +481,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -751,7 +503,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -771,7 +523,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -793,7 +545,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -813,7 +565,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -833,7 +585,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -853,7 +605,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -875,7 +627,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -895,7 +647,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -917,7 +669,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -937,7 +689,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -957,7 +709,7 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -977,13 +729,261 @@
         "title": "Televiziune",
         "subject": "Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
-        "professor": "Televiziune",
+        "professor": null,
         "source": null,
         "color": null
       },
       {
         "start": "2025-12-25T14:00:00+02:00",
         "end": "2025-12-25T16:00:00+02:00",
+        "title": "Fw: Televiziune",
+        "subject": "Fw: Televiziune",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-13": [
+      {
+        "start": "2026-01-13T16:00:00+02:00",
+        "end": "2026-01-13T18:00:00+02:00",
+        "title": "Televiziune",
+        "subject": "Televiziune",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-13T16:00:00+02:00",
+        "end": "2026-01-13T18:00:00+02:00",
+        "title": "Fw: Televiziune",
+        "subject": "Fw: Televiziune",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-13T18:00:00+02:00",
+        "end": "2026-01-13T20:00:00+02:00",
+        "title": "Televiziune",
+        "subject": "Televiziune",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-13T18:00:00+02:00",
+        "end": "2026-01-13T20:00:00+02:00",
+        "title": "Fw: Televiziune",
+        "subject": "Fw: Televiziune",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-15": [
+      {
+        "start": "2026-01-15T08:00:00+02:00",
+        "end": "2026-01-15T10:00:00+02:00",
+        "title": "Televiziune",
+        "subject": "Televiziune",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-15T08:00:00+02:00",
+        "end": "2026-01-15T10:00:00+02:00",
+        "title": "Fw: Televiziune",
+        "subject": "Fw: Televiziune",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-15T10:00:00+02:00",
+        "end": "2026-01-15T12:00:00+02:00",
+        "title": "Televiziune",
+        "subject": "Televiziune",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-15T10:00:00+02:00",
+        "end": "2026-01-15T12:00:00+02:00",
+        "title": "Fw: Televiziune",
+        "subject": "Fw: Televiziune",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-15T12:00:00+02:00",
+        "end": "2026-01-15T14:00:00+02:00",
+        "title": "Televiziune",
+        "subject": "Televiziune",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-15T12:00:00+02:00",
+        "end": "2026-01-15T14:00:00+02:00",
+        "title": "Fw: Televiziune",
+        "subject": "Fw: Televiziune",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-15T14:00:00+02:00",
+        "end": "2026-01-15T16:00:00+02:00",
+        "title": "Televiziune",
+        "subject": "Televiziune",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-15T14:00:00+02:00",
+        "end": "2026-01-15T16:00:00+02:00",
+        "title": "Fw: Televiziune",
+        "subject": "Fw: Televiziune",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-20": [
+      {
+        "start": "2026-01-20T16:00:00+02:00",
+        "end": "2026-01-20T18:00:00+02:00",
+        "title": "Televiziune",
+        "subject": "Televiziune",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-20T16:00:00+02:00",
+        "end": "2026-01-20T18:00:00+02:00",
+        "title": "Fw: Televiziune",
+        "subject": "Fw: Televiziune",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-20T18:00:00+02:00",
+        "end": "2026-01-20T20:00:00+02:00",
+        "title": "Televiziune",
+        "subject": "Televiziune",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-20T18:00:00+02:00",
+        "end": "2026-01-20T20:00:00+02:00",
+        "title": "Fw: Televiziune",
+        "subject": "Fw: Televiziune",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-22": [
+      {
+        "start": "2026-01-22T08:00:00+02:00",
+        "end": "2026-01-22T10:00:00+02:00",
+        "title": "Televiziune",
+        "subject": "Televiziune",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-22T08:00:00+02:00",
+        "end": "2026-01-22T10:00:00+02:00",
+        "title": "Fw: Televiziune",
+        "subject": "Fw: Televiziune",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-22T10:00:00+02:00",
+        "end": "2026-01-22T12:00:00+02:00",
+        "title": "Televiziune",
+        "subject": "Televiziune",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-22T10:00:00+02:00",
+        "end": "2026-01-22T12:00:00+02:00",
+        "title": "Fw: Televiziune",
+        "subject": "Fw: Televiziune",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-22T12:00:00+02:00",
+        "end": "2026-01-22T14:00:00+02:00",
+        "title": "Televiziune",
+        "subject": "Televiziune",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-22T12:00:00+02:00",
+        "end": "2026-01-22T14:00:00+02:00",
+        "title": "Fw: Televiziune",
+        "subject": "Fw: Televiziune",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-22T14:00:00+02:00",
+        "end": "2026-01-22T16:00:00+02:00",
+        "title": "Televiziune",
+        "subject": "Televiziune",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-22T14:00:00+02:00",
+        "end": "2026-01-22T16:00:00+02:00",
         "title": "Fw: Televiziune",
         "subject": "Fw: Televiziune",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 506B; UTCN - ETTI Observatorului 2 - Sala 506A",
@@ -1311,7 +1311,7 @@
         "title": "TV",
         "subject": "TV",
         "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
-        "professor": "Tv",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -1321,7 +1321,7 @@
         "title": "TV",
         "subject": "TV",
         "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
-        "professor": "Tv",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -1331,7 +1331,7 @@
         "title": "TV",
         "subject": "TV",
         "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
-        "professor": "Tv",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -1341,7 +1341,7 @@
         "title": "TV",
         "subject": "TV",
         "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
-        "professor": "Tv",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -1351,7 +1351,7 @@
         "title": "TV",
         "subject": "TV",
         "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
-        "professor": "Tv",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -1361,7 +1361,7 @@
         "title": "TV",
         "subject": "TV",
         "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
-        "professor": "Tv",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -1497,7 +1497,7 @@
         "title": "TV",
         "subject": "TV",
         "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
-        "professor": "Tv",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -1507,7 +1507,7 @@
         "title": "TV",
         "subject": "TV",
         "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
-        "professor": "Tv",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -1517,7 +1517,7 @@
         "title": "TV",
         "subject": "TV",
         "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
-        "professor": "Tv",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -1527,7 +1527,7 @@
         "title": "TV",
         "subject": "TV",
         "location": "UTCN - ETTI Observatorului 2 - Sala 506A; UTCN - ETTI Observatorului 2 - Sala 506B",
-        "professor": "Tv",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -1631,7 +1631,7 @@
         "title": "CURS",
         "subject": "CURS",
         "location": "UTCN - CUNBM Victor Babes 62A - Sala A1",
-        "professor": "CURS",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -1776,40 +1776,6 @@
         "color": null
       }
     ],
-    "2026-01-12": [
-      {
-        "start": "2026-01-12T08:00:00+02:00",
-        "end": "2026-01-12T12:00:00+02:00",
-        "title": "Scs",
-        "subject": "Scs",
-        "location": "",
-        "professor": "SCS",
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-12T14:00:00+02:00",
-        "end": "2026-01-12T16:00:00+02:00",
-        "title": "RCC",
-        "subject": "RCC",
-        "location": "",
-        "professor": "Rcc",
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-15": [
-      {
-        "start": "2026-01-15T18:00:00+02:00",
-        "end": "2026-01-15T19:00:00+02:00",
-        "title": "Proiect Cercetare",
-        "subject": "Proiect Cercetare",
-        "location": "",
-        "professor": "Proiect Cercetare",
-        "source": null,
-        "color": null
-      }
-    ],
     "2025-12-04": [
       {
         "start": "2025-12-04T18:00:00+02:00",
@@ -1846,6 +1812,40 @@
         "color": null
       }
     ],
+    "2026-01-12": [
+      {
+        "start": "2026-01-12T08:00:00+02:00",
+        "end": "2026-01-12T12:00:00+02:00",
+        "title": "Scs",
+        "subject": "Scs",
+        "location": "",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-12T14:00:00+02:00",
+        "end": "2026-01-12T16:00:00+02:00",
+        "title": "RCC",
+        "subject": "RCC",
+        "location": "",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-15": [
+      {
+        "start": "2026-01-15T18:00:00+02:00",
+        "end": "2026-01-15T19:00:00+02:00",
+        "title": "Proiect Cercetare",
+        "subject": "Proiect Cercetare",
+        "location": "",
+        "professor": "Proiect Cercetare",
+        "source": null,
+        "color": null
+      }
+    ],
     "2025-12-09": [
       {
         "start": "2025-12-09T09:23:42+02:00",
@@ -1853,7 +1853,7 @@
         "title": "Reserved",
         "subject": "Reserved",
         "location": "",
-        "professor": "Reserved",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -1863,7 +1863,7 @@
         "title": "Reserved",
         "subject": "Reserved",
         "location": "",
-        "professor": "Reserved",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -1875,7 +1875,7 @@
         "title": "Scs",
         "subject": "Scs",
         "location": "",
-        "professor": "SCS",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -1887,7 +1887,7 @@
         "title": "Scs",
         "subject": "Scs",
         "location": "",
-        "professor": "SCS",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -1899,7 +1899,7 @@
         "title": "Scs",
         "subject": "Scs",
         "location": "",
-        "professor": "SCS",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -1911,7 +1911,7 @@
         "title": "Scs",
         "subject": "Scs",
         "location": "",
-        "professor": "SCS",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -1923,7 +1923,7 @@
         "title": "Scs",
         "subject": "Scs",
         "location": "",
-        "professor": "SCS",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -1935,7 +1935,7 @@
         "title": "Scs",
         "subject": "Scs",
         "location": "",
-        "professor": "SCS",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -1947,7 +1947,7 @@
         "title": "Scs",
         "subject": "Scs",
         "location": "",
-        "professor": "SCS",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -1961,7 +1961,7 @@
         "title": "Decidfr",
         "subject": "Decidfr",
         "location": "UTCN - Dorobantilor 71-73 - DECIDFR (RO)",
-        "professor": "Decidfr",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -2029,20 +2029,6 @@
       }
     ]
   },
-  "400020": {
-    "2026-01-23": [
-      {
-        "start": "2026-01-23T08:30:00+02:00",
-        "end": "2026-01-23T09:30:00+02:00",
-        "title": "Discuţie",
-        "subject": "Discuţie",
-        "location": "UTCN - DAICOVICIU 15 - Sala 431 (Daicoviciu 15, Cluj-Napoca, Cluj 400020, RO)",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ]
-  },
   "431": {
     "2025-12-03": [
       {
@@ -2051,7 +2037,7 @@
         "title": "FDI",
         "subject": "FDI",
         "location": "UTCN - DAICOVICIU 15 - Sala 431 (Daicoviciu, Cluj-Napoca, Cluj, RO)",
-        "professor": "Fdi",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -2063,7 +2049,7 @@
         "title": "Bittnet",
         "subject": "Bittnet",
         "location": "Microsoft Teams Meeting; UTCN - DAICOVICIU 15 - Sala 431",
-        "professor": "Bittnet",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -2102,30 +2088,6 @@
         "color": null
       }
     ],
-    "2026-01-15": [
-      {
-        "start": "2026-01-15T14:00:00+02:00",
-        "end": "2026-01-15T16:00:00+02:00",
-        "title": "Limbi Straine Cti Ro I / Gr 7",
-        "subject": "Limbi Straine Cti Ro I / Gr 7",
-        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-22": [
-      {
-        "start": "2026-01-22T14:00:00+02:00",
-        "end": "2026-01-22T16:00:00+02:00",
-        "title": "Limbi Straine Cti Ro I / Gr 7",
-        "subject": "Limbi Straine Cti Ro I / Gr 7",
-        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
     "2025-12-04": [
       {
         "start": "2025-12-04T14:00:00+02:00",
@@ -2157,6 +2119,44 @@
         "title": "Limbi Straine Cti Ro I / Gr 7",
         "subject": "Limbi Straine Cti Ro I / Gr 7",
         "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-15": [
+      {
+        "start": "2026-01-15T14:00:00+02:00",
+        "end": "2026-01-15T16:00:00+02:00",
+        "title": "Limbi Straine Cti Ro I / Gr 7",
+        "subject": "Limbi Straine Cti Ro I / Gr 7",
+        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-22": [
+      {
+        "start": "2026-01-22T14:00:00+02:00",
+        "end": "2026-01-22T16:00:00+02:00",
+        "title": "Limbi Straine Cti Ro I / Gr 7",
+        "subject": "Limbi Straine Cti Ro I / Gr 7",
+        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ]
+  },
+  "400020": {
+    "2026-01-23": [
+      {
+        "start": "2026-01-23T08:30:00+02:00",
+        "end": "2026-01-23T09:30:00+02:00",
+        "title": "Discuţie",
+        "subject": "Discuţie",
+        "location": "UTCN - DAICOVICIU 15 - Sala 431 (Daicoviciu 15, Cluj-Napoca, Cluj 400020, RO)",
         "professor": null,
         "source": null,
         "color": null
@@ -2261,7 +2261,7 @@
         "title": "Rezervare",
         "subject": "Rezervare",
         "location": "UTCN - HUB UT - Sala 2-6 (RO)",
-        "professor": "Rezervare",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -2325,29 +2325,7 @@
         "title": "Des Lab (gr. 1 / S1)",
         "subject": "Des Lab (gr. 1 / S1)",
         "location": "UTCN - AC Bar - Sala BT 604",
-        "professor": "Des Lab",
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-14": [
-      {
-        "start": "2026-01-14T10:00:00+02:00",
-        "end": "2026-01-14T12:00:00+02:00",
-        "title": "Algorithms (alg)(l+p) Ds I (mas) Gr 1",
-        "subject": "Algorithms (alg)(l+p) Ds I (mas) Gr 1",
-        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
         "professor": null,
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-14T14:00:00+02:00",
-        "end": "2026-01-14T16:00:00+02:00",
-        "title": "Des Lab (gr. 1 / S1)",
-        "subject": "Des Lab (gr. 1 / S1)",
-        "location": "UTCN - AC Bar - Sala BT 604",
-        "professor": "Des Lab",
         "source": null,
         "color": null
       }
@@ -2369,7 +2347,7 @@
         "title": "Des Lab (gr. 1 / S1)",
         "subject": "Des Lab (gr. 1 / S1)",
         "location": "UTCN - AC Bar - Sala BT 604",
-        "professor": "Des Lab",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -2391,7 +2369,7 @@
         "title": "Des Lab (gr. 1 / S1)",
         "subject": "Des Lab (gr. 1 / S1)",
         "location": "UTCN - AC Bar - Sala BT 604",
-        "professor": "Des Lab",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -2423,30 +2401,28 @@
         "title": "Des Lab (gr. 1 / S1)",
         "subject": "Des Lab (gr. 1 / S1)",
         "location": "UTCN - AC Bar - Sala BT 604",
-        "professor": "Des Lab",
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-12": [
-      {
-        "start": "2026-01-12T10:00:00+02:00",
-        "end": "2026-01-12T12:00:00+02:00",
-        "title": "Lab Ira1 1/1",
-        "subject": "Lab Ira1 1/1",
-        "location": "UTCN - AC Observatorului 2 - Sala 305",
         "professor": null,
         "source": null,
         "color": null
       }
     ],
-    "2026-01-19": [
+    "2026-01-14": [
       {
-        "start": "2026-01-19T10:00:00+02:00",
-        "end": "2026-01-19T12:00:00+02:00",
-        "title": "Lab Ira1 1/1",
-        "subject": "Lab Ira1 1/1",
-        "location": "UTCN - AC Observatorului 2 - Sala 305",
+        "start": "2026-01-14T10:00:00+02:00",
+        "end": "2026-01-14T12:00:00+02:00",
+        "title": "Algorithms (alg)(l+p) Ds I (mas) Gr 1",
+        "subject": "Algorithms (alg)(l+p) Ds I (mas) Gr 1",
+        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-14T14:00:00+02:00",
+        "end": "2026-01-14T16:00:00+02:00",
+        "title": "Des Lab (gr. 1 / S1)",
+        "subject": "Des Lab (gr. 1 / S1)",
+        "location": "UTCN - AC Bar - Sala BT 604",
         "professor": null,
         "source": null,
         "color": null
@@ -2476,61 +2452,25 @@
         "color": null
       }
     ],
-    "2026-01-15": [
+    "2026-01-12": [
       {
-        "start": "2026-01-15T08:00:00+02:00",
-        "end": "2026-01-15T10:00:00+02:00",
-        "title": "Machine Learning 1 (ml1) Ds I (mas) Brehar Raluca",
-        "subject": "Machine Learning 1 (ml1) Ds I (mas) Brehar Raluca",
-        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
-        "professor": "Brehar Raluca",
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-16": [
-      {
-        "start": "2026-01-16T10:00:00+02:00",
-        "end": "2026-01-16T12:00:00+02:00",
-        "title": "Limbi Straine Cti Ro I Gr 1",
-        "subject": "Limbi Straine Cti Ro I Gr 1",
-        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "start": "2026-01-12T10:00:00+02:00",
+        "end": "2026-01-12T12:00:00+02:00",
+        "title": "Lab Ira1 1/1",
+        "subject": "Lab Ira1 1/1",
+        "location": "UTCN - AC Observatorului 2 - Sala 305",
         "professor": null,
         "source": null,
         "color": null
       }
     ],
-    "2026-01-21": [
+    "2026-01-19": [
       {
-        "start": "2026-01-21T10:00:00+02:00",
-        "end": "2026-01-21T12:00:00+02:00",
-        "title": "Algorithms (alg)(l+p) Ds I (mas) Gr 1",
-        "subject": "Algorithms (alg)(l+p) Ds I (mas) Gr 1",
-        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-22": [
-      {
-        "start": "2026-01-22T08:00:00+02:00",
-        "end": "2026-01-22T10:00:00+02:00",
-        "title": "Machine Learning 1 (ml1) Ds I (mas) Brehar Raluca",
-        "subject": "Machine Learning 1 (ml1) Ds I (mas) Brehar Raluca",
-        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
-        "professor": "Brehar Raluca",
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-23": [
-      {
-        "start": "2026-01-23T10:00:00+02:00",
-        "end": "2026-01-23T12:00:00+02:00",
-        "title": "Limbi Straine Cti Ro I Gr 1",
-        "subject": "Limbi Straine Cti Ro I Gr 1",
-        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "start": "2026-01-19T10:00:00+02:00",
+        "end": "2026-01-19T12:00:00+02:00",
+        "title": "Lab Ira1 1/1",
+        "subject": "Lab Ira1 1/1",
+        "location": "UTCN - AC Observatorului 2 - Sala 305",
         "professor": null,
         "source": null,
         "color": null
@@ -2607,6 +2547,66 @@
         "source": null,
         "color": null
       }
+    ],
+    "2026-01-15": [
+      {
+        "start": "2026-01-15T08:00:00+02:00",
+        "end": "2026-01-15T10:00:00+02:00",
+        "title": "Machine Learning 1 (ml1) Ds I (mas) Brehar Raluca",
+        "subject": "Machine Learning 1 (ml1) Ds I (mas) Brehar Raluca",
+        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "professor": "Brehar Raluca",
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-16": [
+      {
+        "start": "2026-01-16T10:00:00+02:00",
+        "end": "2026-01-16T12:00:00+02:00",
+        "title": "Limbi Straine Cti Ro I Gr 1",
+        "subject": "Limbi Straine Cti Ro I Gr 1",
+        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-21": [
+      {
+        "start": "2026-01-21T10:00:00+02:00",
+        "end": "2026-01-21T12:00:00+02:00",
+        "title": "Algorithms (alg)(l+p) Ds I (mas) Gr 1",
+        "subject": "Algorithms (alg)(l+p) Ds I (mas) Gr 1",
+        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-22": [
+      {
+        "start": "2026-01-22T08:00:00+02:00",
+        "end": "2026-01-22T10:00:00+02:00",
+        "title": "Machine Learning 1 (ml1) Ds I (mas) Brehar Raluca",
+        "subject": "Machine Learning 1 (ml1) Ds I (mas) Brehar Raluca",
+        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "professor": "Brehar Raluca",
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-23": [
+      {
+        "start": "2026-01-23T10:00:00+02:00",
+        "end": "2026-01-23T12:00:00+02:00",
+        "title": "Limbi Straine Cti Ro I Gr 1",
+        "subject": "Limbi Straine Cti Ro I Gr 1",
+        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
     ]
   },
   "2": {
@@ -2617,29 +2617,7 @@
         "title": "Des Lab (gr. 2/ S2)",
         "subject": "Des Lab (gr. 2/ S2)",
         "location": "UTCN - AC Bar - Sala BT 604",
-        "professor": "Des Lab",
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-14": [
-      {
-        "start": "2026-01-14T12:00:00+02:00",
-        "end": "2026-01-14T14:00:00+02:00",
-        "title": "Algorithms (alg)(l+p) Ds I (mas) Gr 2",
-        "subject": "Algorithms (alg)(l+p) Ds I (mas) Gr 2",
-        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
         "professor": null,
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-14T16:00:00+02:00",
-        "end": "2026-01-14T18:00:00+02:00",
-        "title": "Des Lab (gr. 2/ S2)",
-        "subject": "Des Lab (gr. 2/ S2)",
-        "location": "UTCN - AC Bar - Sala BT 604",
-        "professor": "Des Lab",
         "source": null,
         "color": null
       }
@@ -2661,7 +2639,7 @@
         "title": "Des Lab (gr. 2/ S2)",
         "subject": "Des Lab (gr. 2/ S2)",
         "location": "UTCN - AC Bar - Sala BT 604",
-        "professor": "Des Lab",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -2683,7 +2661,7 @@
         "title": "Des Lab (gr. 2/ S2)",
         "subject": "Des Lab (gr. 2/ S2)",
         "location": "UTCN - AC Bar - Sala BT 604",
-        "professor": "Des Lab",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -2715,114 +2693,28 @@
         "title": "Des Lab (gr. 2/ S2)",
         "subject": "Des Lab (gr. 2/ S2)",
         "location": "UTCN - AC Bar - Sala BT 604",
-        "professor": "Des Lab",
+        "professor": null,
         "source": null,
         "color": null
       }
     ],
-    "2026-01-12": [
+    "2026-01-14": [
       {
-        "start": "2026-01-12T08:00:00+02:00",
-        "end": "2026-01-12T10:00:00+02:00",
-        "title": "Lab Ira1 1/2",
-        "subject": "Lab Ira1 1/2",
-        "location": "UTCN - AC Observatorului 2 - Sala 305",
-        "professor": null,
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-12T10:00:00+02:00",
-        "end": "2026-01-12T12:00:00+02:00",
-        "title": "Analiza Matematica I (calcul Diferential) Cti Ro I / Gr 2",
-        "subject": "Analiza Matematica I (calcul Diferential) Cti Ro I / Gr 2",
+        "start": "2026-01-14T12:00:00+02:00",
+        "end": "2026-01-14T14:00:00+02:00",
+        "title": "Algorithms (alg)(l+p) Ds I (mas) Gr 2",
+        "subject": "Algorithms (alg)(l+p) Ds I (mas) Gr 2",
         "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
         "professor": null,
         "source": null,
         "color": null
       },
       {
-        "start": "2026-01-12T12:00:00+02:00",
-        "end": "2026-01-12T16:00:00+02:00",
-        "title": "Limbi Straine Cti Ro I / Gr 2",
-        "subject": "Limbi Straine Cti Ro I / Gr 2",
-        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-13": [
-      {
-        "start": "2026-01-13T08:00:00+02:00",
-        "end": "2026-01-13T10:00:00+02:00",
-        "title": "Lab Ira1 2/2",
-        "subject": "Lab Ira1 2/2",
-        "location": "UTCN - AC Observatorului 2 - Sala 305",
-        "professor": null,
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-13T10:00:00+02:00",
-        "end": "2026-01-13T12:00:00+02:00",
-        "title": "Lab Ira1 5/2",
-        "subject": "Lab Ira1 5/2",
-        "location": "UTCN - AC Observatorului 2 - Sala 305",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-19": [
-      {
-        "start": "2026-01-19T08:00:00+02:00",
-        "end": "2026-01-19T10:00:00+02:00",
-        "title": "Lab Ira1 1/2",
-        "subject": "Lab Ira1 1/2",
-        "location": "UTCN - AC Observatorului 2 - Sala 305",
-        "professor": null,
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-19T10:00:00+02:00",
-        "end": "2026-01-19T12:00:00+02:00",
-        "title": "Analiza Matematica I (calcul Diferential) Cti Ro I / Gr 2",
-        "subject": "Analiza Matematica I (calcul Diferential) Cti Ro I / Gr 2",
-        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
-        "professor": null,
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-19T12:00:00+02:00",
-        "end": "2026-01-19T16:00:00+02:00",
-        "title": "Limbi Straine Cti Ro I / Gr 2",
-        "subject": "Limbi Straine Cti Ro I / Gr 2",
-        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-20": [
-      {
-        "start": "2026-01-20T08:00:00+02:00",
-        "end": "2026-01-20T10:00:00+02:00",
-        "title": "Lab Ira1 2/2",
-        "subject": "Lab Ira1 2/2",
-        "location": "UTCN - AC Observatorului 2 - Sala 305",
-        "professor": null,
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-20T10:00:00+02:00",
-        "end": "2026-01-20T12:00:00+02:00",
-        "title": "Lab Ira1 5/2",
-        "subject": "Lab Ira1 5/2",
-        "location": "UTCN - AC Observatorului 2 - Sala 305",
+        "start": "2026-01-14T16:00:00+02:00",
+        "end": "2026-01-14T18:00:00+02:00",
+        "title": "Des Lab (gr. 2/ S2)",
+        "subject": "Des Lab (gr. 2/ S2)",
+        "location": "UTCN - AC Bar - Sala BT 604",
         "professor": null,
         "source": null,
         "color": null
@@ -2958,13 +2850,109 @@
         "color": null
       }
     ],
-    "2026-01-21": [
+    "2026-01-12": [
       {
-        "start": "2026-01-21T12:00:00+02:00",
-        "end": "2026-01-21T14:00:00+02:00",
-        "title": "Algorithms (alg)(l+p) Ds I (mas) Gr 2",
-        "subject": "Algorithms (alg)(l+p) Ds I (mas) Gr 2",
+        "start": "2026-01-12T08:00:00+02:00",
+        "end": "2026-01-12T10:00:00+02:00",
+        "title": "Lab Ira1 1/2",
+        "subject": "Lab Ira1 1/2",
+        "location": "UTCN - AC Observatorului 2 - Sala 305",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-12T10:00:00+02:00",
+        "end": "2026-01-12T12:00:00+02:00",
+        "title": "Analiza Matematica I (calcul Diferential) Cti Ro I / Gr 2",
+        "subject": "Analiza Matematica I (calcul Diferential) Cti Ro I / Gr 2",
         "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-12T12:00:00+02:00",
+        "end": "2026-01-12T16:00:00+02:00",
+        "title": "Limbi Straine Cti Ro I / Gr 2",
+        "subject": "Limbi Straine Cti Ro I / Gr 2",
+        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-13": [
+      {
+        "start": "2026-01-13T08:00:00+02:00",
+        "end": "2026-01-13T10:00:00+02:00",
+        "title": "Lab Ira1 2/2",
+        "subject": "Lab Ira1 2/2",
+        "location": "UTCN - AC Observatorului 2 - Sala 305",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-13T10:00:00+02:00",
+        "end": "2026-01-13T12:00:00+02:00",
+        "title": "Lab Ira1 5/2",
+        "subject": "Lab Ira1 5/2",
+        "location": "UTCN - AC Observatorului 2 - Sala 305",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-19": [
+      {
+        "start": "2026-01-19T08:00:00+02:00",
+        "end": "2026-01-19T10:00:00+02:00",
+        "title": "Lab Ira1 1/2",
+        "subject": "Lab Ira1 1/2",
+        "location": "UTCN - AC Observatorului 2 - Sala 305",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-19T10:00:00+02:00",
+        "end": "2026-01-19T12:00:00+02:00",
+        "title": "Analiza Matematica I (calcul Diferential) Cti Ro I / Gr 2",
+        "subject": "Analiza Matematica I (calcul Diferential) Cti Ro I / Gr 2",
+        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-19T12:00:00+02:00",
+        "end": "2026-01-19T16:00:00+02:00",
+        "title": "Limbi Straine Cti Ro I / Gr 2",
+        "subject": "Limbi Straine Cti Ro I / Gr 2",
+        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-20": [
+      {
+        "start": "2026-01-20T08:00:00+02:00",
+        "end": "2026-01-20T10:00:00+02:00",
+        "title": "Lab Ira1 2/2",
+        "subject": "Lab Ira1 2/2",
+        "location": "UTCN - AC Observatorului 2 - Sala 305",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-20T10:00:00+02:00",
+        "end": "2026-01-20T12:00:00+02:00",
+        "title": "Lab Ira1 5/2",
+        "subject": "Lab Ira1 5/2",
+        "location": "UTCN - AC Observatorului 2 - Sala 305",
         "professor": null,
         "source": null,
         "color": null
@@ -2991,21 +2979,21 @@
         "source": null,
         "color": null
       }
-    ]
-  },
-  "604": {
-    "2026-01-13": [
+    ],
+    "2026-01-21": [
       {
-        "start": "2026-01-13T18:00:00+02:00",
-        "end": "2026-01-13T22:00:00+02:00",
-        "title": "Curs Mp Ia",
-        "subject": "Curs Mp Ia",
-        "location": "UTCN - AC Bar - Sala BT 604 (RO)",
-        "professor": "Mp Ia",
+        "start": "2026-01-21T12:00:00+02:00",
+        "end": "2026-01-21T14:00:00+02:00",
+        "title": "Algorithms (alg)(l+p) Ds I (mas) Gr 2",
+        "subject": "Algorithms (alg)(l+p) Ds I (mas) Gr 2",
+        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "professor": null,
         "source": null,
         "color": null
       }
-    ],
+    ]
+  },
+  "604": {
     "2025-12-03": [
       {
         "start": "2025-12-03T18:00:00+02:00",
@@ -3013,7 +3001,7 @@
         "title": "DA",
         "subject": "DA",
         "location": "UTCN - AC Bar - Sala BT 604 (RO)",
-        "professor": "Da",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -3077,9 +3065,59 @@
         "source": null,
         "color": null
       }
+    ],
+    "2026-01-13": [
+      {
+        "start": "2026-01-13T18:00:00+02:00",
+        "end": "2026-01-13T22:00:00+02:00",
+        "title": "Curs Mp Ia",
+        "subject": "Curs Mp Ia",
+        "location": "UTCN - AC Bar - Sala BT 604 (RO)",
+        "professor": "Mp Ia",
+        "source": null,
+        "color": null
+      }
+    ]
+  },
+  "31462": {
+    "2025-12-04": [
+      {
+        "start": "2025-12-04T18:00:00+02:00",
+        "end": "2025-12-04T22:00:00+02:00",
+        "title": "Lab Mp Ia 31462 (1)",
+        "subject": "Lab Mp Ia 31462 (1)",
+        "location": "UTCN - AC Bar - Sala BT 604 (RO)",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-22": [
+      {
+        "start": "2026-01-22T18:00:00+02:00",
+        "end": "2026-01-22T20:00:00+02:00",
+        "title": "Lab Mp Ia 31462 (1)",
+        "subject": "Lab Mp Ia 31462 (1)",
+        "location": "UTCN - AC Bar - Sala BT 604 (RO)",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
     ]
   },
   "31461": {
+    "2025-12-17": [
+      {
+        "start": "2025-12-17T18:00:00+02:00",
+        "end": "2025-12-17T22:00:00+02:00",
+        "title": "Lab Mp Ia 31461 (2)",
+        "subject": "Lab Mp Ia 31461 (2)",
+        "location": "UTCN - AC Bar - Sala BT 604 (RO)",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
     "2026-01-21": [
       {
         "start": "2026-01-21T18:00:00+02:00",
@@ -3101,44 +3139,6 @@
         "source": null,
         "color": null
       }
-    ],
-    "2025-12-17": [
-      {
-        "start": "2025-12-17T18:00:00+02:00",
-        "end": "2025-12-17T22:00:00+02:00",
-        "title": "Lab Mp Ia 31461 (2)",
-        "subject": "Lab Mp Ia 31461 (2)",
-        "location": "UTCN - AC Bar - Sala BT 604 (RO)",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ]
-  },
-  "31462": {
-    "2026-01-22": [
-      {
-        "start": "2026-01-22T18:00:00+02:00",
-        "end": "2026-01-22T20:00:00+02:00",
-        "title": "Lab Mp Ia 31462 (1)",
-        "subject": "Lab Mp Ia 31462 (1)",
-        "location": "UTCN - AC Bar - Sala BT 604 (RO)",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
-    "2025-12-04": [
-      {
-        "start": "2025-12-04T18:00:00+02:00",
-        "end": "2025-12-04T22:00:00+02:00",
-        "title": "Lab Mp Ia 31462 (1)",
-        "subject": "Lab Mp Ia 31462 (1)",
-        "location": "UTCN - AC Bar - Sala BT 604 (RO)",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
     ]
   },
   "Microsoft Teams Meeting": {
@@ -3149,7 +3149,7 @@
         "title": "Reserved",
         "subject": "Reserved",
         "location": "Microsoft Teams Meeting",
-        "professor": "Reserved",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -3161,7 +3161,7 @@
         "title": "Reserved",
         "subject": "Reserved",
         "location": "Microsoft Teams Meeting",
-        "professor": "Reserved",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -3190,70 +3190,6 @@
         "color": null
       }
     ],
-    "2026-01-16": [
-      {
-        "start": "2026-01-16T08:00:00+02:00",
-        "end": "2026-01-16T10:00:00+02:00",
-        "title": "DASF",
-        "subject": "DASF",
-        "location": "Microsoft Teams Meeting",
-        "professor": "Dasf",
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-16T10:00:00+02:00",
-        "end": "2026-01-16T12:00:00+02:00",
-        "title": "DASF",
-        "subject": "DASF",
-        "location": "Microsoft Teams Meeting",
-        "professor": "Dasf",
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-16T12:00:00+02:00",
-        "end": "2026-01-16T14:00:00+02:00",
-        "title": "Sensors",
-        "subject": "Sensors",
-        "location": "Microsoft Teams Meeting",
-        "professor": "Sensors",
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-23": [
-      {
-        "start": "2026-01-23T08:00:00+02:00",
-        "end": "2026-01-23T10:00:00+02:00",
-        "title": "DASF",
-        "subject": "DASF",
-        "location": "Microsoft Teams Meeting",
-        "professor": "Dasf",
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-23T10:00:00+02:00",
-        "end": "2026-01-23T12:00:00+02:00",
-        "title": "DASF",
-        "subject": "DASF",
-        "location": "Microsoft Teams Meeting",
-        "professor": "Dasf",
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-23T12:00:00+02:00",
-        "end": "2026-01-23T14:00:00+02:00",
-        "title": "Sensors",
-        "subject": "Sensors",
-        "location": "Microsoft Teams Meeting",
-        "professor": "Sensors",
-        "source": null,
-        "color": null
-      }
-    ],
     "2025-12-09": [
       {
         "start": "2025-12-09T09:32:26+02:00",
@@ -3261,7 +3197,7 @@
         "title": "Reserved",
         "subject": "Reserved",
         "location": "Microsoft Teams Meeting",
-        "professor": "Reserved",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -3273,7 +3209,7 @@
         "title": "Reserved",
         "subject": "Reserved",
         "location": "Microsoft Teams Meeting",
-        "professor": "Reserved",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -3325,7 +3261,7 @@
         "title": "Emd",
         "subject": "Emd",
         "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
-        "professor": "EMD",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -3359,7 +3295,7 @@
         "title": "Emd",
         "subject": "Emd",
         "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
-        "professor": "EMD",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -3386,108 +3322,6 @@
         "color": null
       }
     ],
-    "2026-01-12": [
-      {
-        "start": "2026-01-12T08:00:00+02:00",
-        "end": "2026-01-12T12:00:00+02:00",
-        "title": "Emd",
-        "subject": "Emd",
-        "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
-        "professor": "EMD",
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-15": [
-      {
-        "start": "2026-01-15T08:00:00+02:00",
-        "end": "2026-01-15T12:00:00+02:00",
-        "title": "ME - Room Ii",
-        "subject": "ME",
-        "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
-        "professor": "Me Ii",
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-15T12:00:00+02:00",
-        "end": "2026-01-15T16:00:00+02:00",
-        "title": "ME - Room Ii",
-        "subject": "ME",
-        "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
-        "professor": "Me Ii",
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-19": [
-      {
-        "start": "2026-01-19T08:00:00+02:00",
-        "end": "2026-01-19T12:00:00+02:00",
-        "title": "Emd",
-        "subject": "Emd",
-        "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
-        "professor": "EMD",
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-22": [
-      {
-        "start": "2026-01-22T08:00:00+02:00",
-        "end": "2026-01-22T12:00:00+02:00",
-        "title": "ME - Room Ii",
-        "subject": "ME",
-        "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
-        "professor": "Me Ii",
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-22T12:00:00+02:00",
-        "end": "2026-01-22T16:00:00+02:00",
-        "title": "ME - Room Ii",
-        "subject": "ME",
-        "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
-        "professor": "Me Ii",
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-26": [
-      {
-        "start": "2026-01-26T08:00:00+02:00",
-        "end": "2026-01-26T12:00:00+02:00",
-        "title": "Emd",
-        "subject": "Emd",
-        "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
-        "professor": "EMD",
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-29": [
-      {
-        "start": "2026-01-29T08:00:00+02:00",
-        "end": "2026-01-29T12:00:00+02:00",
-        "title": "ME - Room Ii",
-        "subject": "ME",
-        "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
-        "professor": "Me Ii",
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-29T12:00:00+02:00",
-        "end": "2026-01-29T16:00:00+02:00",
-        "title": "ME - Room Ii",
-        "subject": "ME",
-        "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
-        "professor": "Me Ii",
-        "source": null,
-        "color": null
-      }
-    ],
     "2025-12-01": [
       {
         "start": "2025-12-01T08:00:00+02:00",
@@ -3495,7 +3329,7 @@
         "title": "Emd",
         "subject": "Emd",
         "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
-        "professor": "EMD",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -3529,7 +3363,7 @@
         "title": "Emd",
         "subject": "Emd",
         "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
-        "professor": "EMD",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -3563,7 +3397,7 @@
         "title": "Emd",
         "subject": "Emd",
         "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
-        "professor": "EMD",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -3589,6 +3423,108 @@
         "source": null,
         "color": null
       }
+    ],
+    "2026-01-12": [
+      {
+        "start": "2026-01-12T08:00:00+02:00",
+        "end": "2026-01-12T12:00:00+02:00",
+        "title": "Emd",
+        "subject": "Emd",
+        "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-15": [
+      {
+        "start": "2026-01-15T08:00:00+02:00",
+        "end": "2026-01-15T12:00:00+02:00",
+        "title": "ME - Room Ii",
+        "subject": "ME",
+        "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "professor": "Me Ii",
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-15T12:00:00+02:00",
+        "end": "2026-01-15T16:00:00+02:00",
+        "title": "ME - Room Ii",
+        "subject": "ME",
+        "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "professor": "Me Ii",
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-19": [
+      {
+        "start": "2026-01-19T08:00:00+02:00",
+        "end": "2026-01-19T12:00:00+02:00",
+        "title": "Emd",
+        "subject": "Emd",
+        "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-22": [
+      {
+        "start": "2026-01-22T08:00:00+02:00",
+        "end": "2026-01-22T12:00:00+02:00",
+        "title": "ME - Room Ii",
+        "subject": "ME",
+        "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "professor": "Me Ii",
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-22T12:00:00+02:00",
+        "end": "2026-01-22T16:00:00+02:00",
+        "title": "ME - Room Ii",
+        "subject": "ME",
+        "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "professor": "Me Ii",
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-26": [
+      {
+        "start": "2026-01-26T08:00:00+02:00",
+        "end": "2026-01-26T12:00:00+02:00",
+        "title": "Emd",
+        "subject": "Emd",
+        "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-29": [
+      {
+        "start": "2026-01-29T08:00:00+02:00",
+        "end": "2026-01-29T12:00:00+02:00",
+        "title": "ME - Room Ii",
+        "subject": "ME",
+        "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "professor": "Me Ii",
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-29T12:00:00+02:00",
+        "end": "2026-01-29T16:00:00+02:00",
+        "title": "ME - Room Ii",
+        "subject": "ME",
+        "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "professor": "Me Ii",
+        "source": null,
+        "color": null
+      }
     ]
   },
   "1431": {
@@ -3599,7 +3535,7 @@
         "title": "Me Ii, 1431",
         "subject": "Me Ii, 1431",
         "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
-        "professor": "Me Ii",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -3611,43 +3547,7 @@
         "title": "Me Ii, 1431",
         "subject": "Me Ii, 1431",
         "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
-        "professor": "Me Ii",
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-12": [
-      {
-        "start": "2026-01-12T12:00:00+02:00",
-        "end": "2026-01-12T16:00:00+02:00",
-        "title": "Me Ii, 1431",
-        "subject": "Me Ii, 1431",
-        "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
-        "professor": "Me Ii",
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-19": [
-      {
-        "start": "2026-01-19T12:00:00+02:00",
-        "end": "2026-01-19T16:00:00+02:00",
-        "title": "Me Ii, 1431",
-        "subject": "Me Ii, 1431",
-        "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
-        "professor": "Me Ii",
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-26": [
-      {
-        "start": "2026-01-26T12:00:00+02:00",
-        "end": "2026-01-26T16:00:00+02:00",
-        "title": "Me Ii, 1431",
-        "subject": "Me Ii, 1431",
-        "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
-        "professor": "Me Ii",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -3659,7 +3559,7 @@
         "title": "Me Ii, 1431",
         "subject": "Me Ii, 1431",
         "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
-        "professor": "Me Ii",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -3671,7 +3571,7 @@
         "title": "Me Ii, 1431",
         "subject": "Me Ii, 1431",
         "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
-        "professor": "Me Ii",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -3683,37 +3583,49 @@
         "title": "Me Ii, 1431",
         "subject": "Me Ii, 1431",
         "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
-        "professor": "Me Ii",
+        "professor": null,
         "source": null,
         "color": null
       }
-    ]
-  },
-  "402": {
+    ],
     "2026-01-12": [
       {
-        "start": "2026-01-12T08:00:00+02:00",
-        "end": "2026-01-12T10:00:00+02:00",
-        "title": "DASF",
-        "subject": "DASF",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 402",
-        "professor": "Dasf",
+        "start": "2026-01-12T12:00:00+02:00",
+        "end": "2026-01-12T16:00:00+02:00",
+        "title": "Me Ii, 1431",
+        "subject": "Me Ii, 1431",
+        "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "professor": null,
         "source": null,
         "color": null
       }
     ],
     "2026-01-19": [
       {
-        "start": "2026-01-19T08:00:00+02:00",
-        "end": "2026-01-19T10:00:00+02:00",
-        "title": "DASF",
-        "subject": "DASF",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 402",
-        "professor": "Dasf",
+        "start": "2026-01-19T12:00:00+02:00",
+        "end": "2026-01-19T16:00:00+02:00",
+        "title": "Me Ii, 1431",
+        "subject": "Me Ii, 1431",
+        "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "professor": null,
         "source": null,
         "color": null
       }
     ],
+    "2026-01-26": [
+      {
+        "start": "2026-01-26T12:00:00+02:00",
+        "end": "2026-01-26T16:00:00+02:00",
+        "title": "Me Ii, 1431",
+        "subject": "Me Ii, 1431",
+        "location": "UTCN - IE Observatorului 2 - Sala 7C (RO)",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ]
+  },
+  "402": {
     "2025-12-08": [
       {
         "start": "2025-12-08T08:00:00+02:00",
@@ -3721,7 +3633,7 @@
         "title": "DASF",
         "subject": "DASF",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 402",
-        "professor": "Dasf",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -3733,7 +3645,7 @@
         "title": "DASF",
         "subject": "DASF",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 402",
-        "professor": "Dasf",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -3743,7 +3655,31 @@
         "title": "DASF",
         "subject": "DASF",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 402",
-        "professor": "Dasf",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-12": [
+      {
+        "start": "2026-01-12T08:00:00+02:00",
+        "end": "2026-01-12T10:00:00+02:00",
+        "title": "DASF",
+        "subject": "DASF",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 402",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-19": [
+      {
+        "start": "2026-01-19T08:00:00+02:00",
+        "end": "2026-01-19T10:00:00+02:00",
+        "title": "DASF",
+        "subject": "DASF",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 402",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -3854,30 +3790,6 @@
         "color": null
       }
     ],
-    "2026-01-12": [
-      {
-        "start": "2026-01-12T08:00:00+02:00",
-        "end": "2026-01-12T10:00:00+02:00",
-        "title": "Analiza Matematica I (calcul Diferential) Cti Ro I / Gr 3",
-        "subject": "Analiza Matematica I (calcul Diferential) Cti Ro I / Gr 3",
-        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-19": [
-      {
-        "start": "2026-01-19T08:00:00+02:00",
-        "end": "2026-01-19T10:00:00+02:00",
-        "title": "Analiza Matematica I (calcul Diferential) Cti Ro I / Gr 3",
-        "subject": "Analiza Matematica I (calcul Diferential) Cti Ro I / Gr 3",
-        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
     "2025-12-01": [
       {
         "start": "2025-12-01T08:00:00+02:00",
@@ -3914,6 +3826,30 @@
         "color": null
       }
     ],
+    "2026-01-12": [
+      {
+        "start": "2026-01-12T08:00:00+02:00",
+        "end": "2026-01-12T10:00:00+02:00",
+        "title": "Analiza Matematica I (calcul Diferential) Cti Ro I / Gr 3",
+        "subject": "Analiza Matematica I (calcul Diferential) Cti Ro I / Gr 3",
+        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-19": [
+      {
+        "start": "2026-01-19T08:00:00+02:00",
+        "end": "2026-01-19T10:00:00+02:00",
+        "title": "Analiza Matematica I (calcul Diferential) Cti Ro I / Gr 3",
+        "subject": "Analiza Matematica I (calcul Diferential) Cti Ro I / Gr 3",
+        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
     "2026-01-27": [
       {
         "start": "2026-01-27T11:00:00+02:00",
@@ -3921,7 +3857,7 @@
         "title": "Examen Programare Functionala Seria B, An 3, Ro",
         "subject": "Examen Programare Functionala Seria B, An 3, Ro",
         "location": "UTCN - INSTA Blvd. 21 Decembrie 1989 - Aula (RO)",
-        "professor": "Ro",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -4247,65 +4183,57 @@
       }
     ]
   },
-  "26B": {
-    "2026-01-12": [
+  "30435": {
+    "2025-12-12": [
       {
-        "start": "2026-01-12T08:00:00+02:00",
-        "end": "2026-01-12T12:00:00+02:00",
-        "title": "LAB - Room Ai",
-        "subject": "LAB",
+        "start": "2025-12-12T10:00:00+02:00",
+        "end": "2025-12-12T14:00:00+02:00",
+        "title": "Lab Ai 30435",
+        "subject": "Lab Ai 30435",
         "location": "UTCN - AC Bar - Sala 26B",
-        "professor": "Lab Ai",
+        "professor": null,
         "source": null,
         "color": null
-      },
+      }
+    ],
+    "2025-12-19": [
       {
-        "start": "2026-01-12T14:00:00+02:00",
-        "end": "2026-01-12T16:00:00+02:00",
-        "title": "Artificial Intelligence",
-        "subject": "Artificial Intelligence",
+        "start": "2025-12-19T10:00:00+02:00",
+        "end": "2025-12-19T14:00:00+02:00",
+        "title": "Lab Ai 30435",
+        "subject": "Lab Ai 30435",
+        "location": "UTCN - AC Bar - Sala 26B",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-16": [
+      {
+        "start": "2026-01-16T10:00:00+02:00",
+        "end": "2026-01-16T14:00:00+02:00",
+        "title": "Lab Ai 30435",
+        "subject": "Lab Ai 30435",
         "location": "UTCN - AC Bar - Sala 26B (RO)",
         "professor": null,
         "source": null,
         "color": null
       }
     ],
-    "2026-01-14": [
+    "2026-01-23": [
       {
-        "start": "2026-01-14T16:00:00+02:00",
-        "end": "2026-01-14T18:00:00+02:00",
-        "title": "LAB - Room Ai",
-        "subject": "LAB",
-        "location": "UTCN - AC Bar - Sala 26B",
-        "professor": "Lab Ai",
+        "start": "2026-01-23T14:30:00+02:00",
+        "end": "2026-01-23T15:00:00+02:00",
+        "title": "Lab Ai 30435",
+        "subject": "Lab Ai 30435",
+        "location": "UTCN - AC Bar - Sala 26B (RO)",
+        "professor": null,
         "source": null,
         "color": null
       }
-    ],
-    "2026-01-19": [
-      {
-        "start": "2026-01-19T08:00:00+02:00",
-        "end": "2026-01-19T12:00:00+02:00",
-        "title": "LAB - Room Ai",
-        "subject": "LAB",
-        "location": "UTCN - AC Bar - Sala 26B",
-        "professor": "Lab Ai",
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-21": [
-      {
-        "start": "2026-01-21T16:00:00+02:00",
-        "end": "2026-01-21T18:00:00+02:00",
-        "title": "LAB - Room Ai",
-        "subject": "LAB",
-        "location": "UTCN - AC Bar - Sala 26B",
-        "professor": "Lab Ai",
-        "source": null,
-        "color": null
-      }
-    ],
+    ]
+  },
+  "26B": {
     "2025-12-15": [
       {
         "start": "2025-12-15T08:00:00+02:00",
@@ -4396,6 +4324,64 @@
         "subject": "Artificial Intelligence",
         "location": "utcn_room_ac_bar_26b@campus.utcluj.ro",
         "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-12": [
+      {
+        "start": "2026-01-12T08:00:00+02:00",
+        "end": "2026-01-12T12:00:00+02:00",
+        "title": "LAB - Room Ai",
+        "subject": "LAB",
+        "location": "UTCN - AC Bar - Sala 26B",
+        "professor": "Lab Ai",
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-12T14:00:00+02:00",
+        "end": "2026-01-12T16:00:00+02:00",
+        "title": "Artificial Intelligence",
+        "subject": "Artificial Intelligence",
+        "location": "UTCN - AC Bar - Sala 26B (RO)",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-14": [
+      {
+        "start": "2026-01-14T16:00:00+02:00",
+        "end": "2026-01-14T18:00:00+02:00",
+        "title": "LAB - Room Ai",
+        "subject": "LAB",
+        "location": "UTCN - AC Bar - Sala 26B",
+        "professor": "Lab Ai",
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-19": [
+      {
+        "start": "2026-01-19T08:00:00+02:00",
+        "end": "2026-01-19T12:00:00+02:00",
+        "title": "LAB - Room Ai",
+        "subject": "LAB",
+        "location": "UTCN - AC Bar - Sala 26B",
+        "professor": "Lab Ai",
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-21": [
+      {
+        "start": "2026-01-21T16:00:00+02:00",
+        "end": "2026-01-21T18:00:00+02:00",
+        "title": "LAB - Room Ai",
+        "subject": "LAB",
+        "location": "UTCN - AC Bar - Sala 26B",
+        "professor": "Lab Ai",
         "source": null,
         "color": null
       }
@@ -4639,56 +4625,6 @@
         "title": "Artificial Intelligence",
         "subject": "Artificial Intelligence",
         "location": "utcn_room_ac_bar_26b@campus.utcluj.ro",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ]
-  },
-  "30435": {
-    "2026-01-16": [
-      {
-        "start": "2026-01-16T10:00:00+02:00",
-        "end": "2026-01-16T14:00:00+02:00",
-        "title": "Lab Ai 30435",
-        "subject": "Lab Ai 30435",
-        "location": "UTCN - AC Bar - Sala 26B (RO)",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-23": [
-      {
-        "start": "2026-01-23T14:30:00+02:00",
-        "end": "2026-01-23T15:00:00+02:00",
-        "title": "Lab Ai 30435",
-        "subject": "Lab Ai 30435",
-        "location": "UTCN - AC Bar - Sala 26B (RO)",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
-    "2025-12-12": [
-      {
-        "start": "2025-12-12T10:00:00+02:00",
-        "end": "2025-12-12T14:00:00+02:00",
-        "title": "Lab Ai 30435",
-        "subject": "Lab Ai 30435",
-        "location": "UTCN - AC Bar - Sala 26B",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
-    "2025-12-19": [
-      {
-        "start": "2025-12-19T10:00:00+02:00",
-        "end": "2025-12-19T14:00:00+02:00",
-        "title": "Lab Ai 30435",
-        "subject": "Lab Ai 30435",
-        "location": "UTCN - AC Bar - Sala 26B",
         "professor": null,
         "source": null,
         "color": null
@@ -5373,7 +5309,7 @@
         "title": "Structure Of Computer Systems",
         "subject": "Structure Of Computer Systems",
         "location": "utcn_room_ac_bar_s42@campus.utcluj.ro",
-        "professor": "Practice",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -5383,7 +5319,7 @@
         "title": "Structure Of Computer Systems",
         "subject": "Structure Of Computer Systems",
         "location": "utcn_room_ac_bar_s42@campus.utcluj.ro",
-        "professor": "Practice",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -5427,7 +5363,7 @@
         "title": "Structure Of Computer Systems",
         "subject": "Structure Of Computer Systems",
         "location": "utcn_room_ac_bar_s42@campus.utcluj.ro",
-        "professor": "Practice",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -5481,7 +5417,7 @@
         "title": "Structure Of Computer Systems",
         "subject": "Structure Of Computer Systems",
         "location": "utcn_room_ac_bar_s42@campus.utcluj.ro",
-        "professor": "Practice",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -5491,7 +5427,7 @@
         "title": "Structure Of Computer Systems",
         "subject": "Structure Of Computer Systems",
         "location": "utcn_room_ac_bar_s42@campus.utcluj.ro",
-        "professor": "Practice",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -5535,7 +5471,7 @@
         "title": "Structure Of Computer Systems",
         "subject": "Structure Of Computer Systems",
         "location": "utcn_room_ac_bar_s42@campus.utcluj.ro",
-        "professor": "Practice",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -5589,7 +5525,7 @@
         "title": "Structure Of Computer Systems",
         "subject": "Structure Of Computer Systems",
         "location": "utcn_room_ac_bar_s42@campus.utcluj.ro",
-        "professor": "Practice",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -5599,7 +5535,7 @@
         "title": "Structure Of Computer Systems",
         "subject": "Structure Of Computer Systems",
         "location": "utcn_room_ac_bar_s42@campus.utcluj.ro",
-        "professor": "Practice",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -5643,7 +5579,7 @@
         "title": "Structure Of Computer Systems",
         "subject": "Structure Of Computer Systems",
         "location": "utcn_room_ac_bar_s42@campus.utcluj.ro",
-        "professor": "Practice",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -6179,7 +6115,7 @@
         "title": "First",
         "subject": "First",
         "location": "UTCN - AC Bar - Sala 40 (Cluj-Napoca, RO)",
-        "professor": "FIRST",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -6234,30 +6170,6 @@
         "color": null
       }
     ],
-    "2026-01-12": [
-      {
-        "start": "2026-01-12T14:00:00+02:00",
-        "end": "2026-01-12T16:00:00+02:00",
-        "title": "Cppl",
-        "subject": "Cppl",
-        "location": "UTCN - AC Bar - Sala 356",
-        "professor": "Room Lecture",
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-19": [
-      {
-        "start": "2026-01-19T14:00:00+02:00",
-        "end": "2026-01-19T16:00:00+02:00",
-        "title": "Cppl",
-        "subject": "Cppl",
-        "location": "UTCN - AC Bar - Sala 356",
-        "professor": "Room Lecture",
-        "source": null,
-        "color": null
-      }
-    ],
     "2025-12-08": [
       {
         "start": "2025-12-08T14:00:00+02:00",
@@ -6281,6 +6193,30 @@
         "source": null,
         "color": null
       }
+    ],
+    "2026-01-12": [
+      {
+        "start": "2026-01-12T14:00:00+02:00",
+        "end": "2026-01-12T16:00:00+02:00",
+        "title": "Cppl",
+        "subject": "Cppl",
+        "location": "UTCN - AC Bar - Sala 356",
+        "professor": "Room Lecture",
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-19": [
+      {
+        "start": "2026-01-19T14:00:00+02:00",
+        "end": "2026-01-19T16:00:00+02:00",
+        "title": "Cppl",
+        "subject": "Cppl",
+        "location": "UTCN - AC Bar - Sala 356",
+        "professor": "Room Lecture",
+        "source": null,
+        "color": null
+      }
     ]
   },
   "103": {
@@ -6291,7 +6227,7 @@
         "title": "Structure Of Computer Systems",
         "subject": "Structure Of Computer Systems",
         "location": "utcn_room_ac_doro_103@campus.utcluj.ro",
-        "professor": "Practice",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -6301,7 +6237,7 @@
         "title": "Structure Of Computer Systems",
         "subject": "Structure Of Computer Systems",
         "location": "utcn_room_ac_doro_103@campus.utcluj.ro",
-        "professor": "Practice",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -6357,7 +6293,7 @@
         "title": "Structure Of Computer Systems",
         "subject": "Structure Of Computer Systems",
         "location": "utcn_room_ac_doro_103@campus.utcluj.ro",
-        "professor": "Practice",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -6367,7 +6303,7 @@
         "title": "Structure Of Computer Systems",
         "subject": "Structure Of Computer Systems",
         "location": "utcn_room_ac_doro_103@campus.utcluj.ro",
-        "professor": "Practice",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -6423,7 +6359,7 @@
         "title": "Structure Of Computer Systems",
         "subject": "Structure Of Computer Systems",
         "location": "utcn_room_ac_doro_103@campus.utcluj.ro",
-        "professor": "Practice",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -6433,7 +6369,7 @@
         "title": "Structure Of Computer Systems",
         "subject": "Structure Of Computer Systems",
         "location": "utcn_room_ac_doro_103@campus.utcluj.ro",
-        "professor": "Practice",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -6694,30 +6630,6 @@
         "color": null
       }
     ],
-    "2026-01-13": [
-      {
-        "start": "2026-01-13T18:00:00+02:00",
-        "end": "2026-01-13T20:00:00+02:00",
-        "title": "Curs+aplicati",
-        "subject": "Curs+aplicati",
-        "location": "UTCN - CONS Bar - Sala 115",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-20": [
-      {
-        "start": "2026-01-20T18:00:00+02:00",
-        "end": "2026-01-20T20:00:00+02:00",
-        "title": "Curs+aplicati",
-        "subject": "Curs+aplicati",
-        "location": "UTCN - CONS Bar - Sala 115",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
     "2025-12-02": [
       {
         "start": "2025-12-02T18:00:00+02:00",
@@ -6765,6 +6677,30 @@
         "source": null,
         "color": null
       }
+    ],
+    "2026-01-13": [
+      {
+        "start": "2026-01-13T18:00:00+02:00",
+        "end": "2026-01-13T20:00:00+02:00",
+        "title": "Curs+aplicati",
+        "subject": "Curs+aplicati",
+        "location": "UTCN - CONS Bar - Sala 115",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-20": [
+      {
+        "start": "2026-01-20T18:00:00+02:00",
+        "end": "2026-01-20T20:00:00+02:00",
+        "title": "Curs+aplicati",
+        "subject": "Curs+aplicati",
+        "location": "UTCN - CONS Bar - Sala 115",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
     ]
   },
   "G10": {
@@ -6776,42 +6712,6 @@
         "subject": "Examen Tiram Ii",
         "location": "UTCN - IMM Muncii 103-105 - Sala G10",
         "professor": "Tiram Ii",
-        "source": null,
-        "color": null
-      }
-    ]
-  },
-  "12": {
-    "2026-01-12": [
-      {
-        "start": "2026-01-12T09:00:00+00:00",
-        "end": "2026-01-12T12:00:00+00:00",
-        "title": "Sedinta Bca 12 Ianuarie",
-        "subject": "Sedinta Bca 12 Ianuarie",
-        "location": "UTCN - RECTORAT - Sala 219; UTCN - CUNBM Sala Senatului",
-        "professor": null,
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-12T11:00:00+02:00",
-        "end": "2026-01-12T14:00:00+02:00",
-        "title": "Sedinta Bca 12 Ianuarie",
-        "subject": "Sedinta Bca 12 Ianuarie",
-        "location": "UTCN - RECTORAT - Sala 219; UTCN - CUNBM Sala Senatului",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
-    "2025-12-08": [
-      {
-        "start": "2025-12-08T08:00:00+02:00",
-        "end": "2025-12-08T10:00:00+02:00",
-        "title": "Course 11 + Course 12",
-        "subject": "Course 11 + Course 12",
-        "location": "UTCN - ETTI Bar - Sala 368",
-        "professor": null,
         "source": null,
         "color": null
       }
@@ -6872,6 +6772,42 @@
         "subject": "Interviu Ecros",
         "location": "UTCN - DAICOVICIU 15 - DMCDI",
         "professor": "Interviu Ecros",
+        "source": null,
+        "color": null
+      }
+    ]
+  },
+  "12": {
+    "2026-01-12": [
+      {
+        "start": "2026-01-12T09:00:00+00:00",
+        "end": "2026-01-12T12:00:00+00:00",
+        "title": "Sedinta Bca 12 Ianuarie",
+        "subject": "Sedinta Bca 12 Ianuarie",
+        "location": "UTCN - RECTORAT - Sala 219; UTCN - CUNBM Sala Senatului",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-12T11:00:00+02:00",
+        "end": "2026-01-12T14:00:00+02:00",
+        "title": "Sedinta Bca 12 Ianuarie",
+        "subject": "Sedinta Bca 12 Ianuarie",
+        "location": "UTCN - RECTORAT - Sala 219; UTCN - CUNBM Sala Senatului",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2025-12-08": [
+      {
+        "start": "2025-12-08T08:00:00+02:00",
+        "end": "2025-12-08T10:00:00+02:00",
+        "title": "Course 11 + Course 12",
+        "subject": "Course 11 + Course 12",
+        "location": "UTCN - ETTI Bar - Sala 368",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -7210,182 +7146,6 @@
     ]
   },
   "501": {
-    "2026-01-12": [
-      {
-        "start": "2026-01-12T18:00:00+02:00",
-        "end": "2026-01-12T20:00:00+02:00",
-        "title": "Distributed Systems Aiv I (mas) Salomie",
-        "subject": "Distributed Systems Aiv I (mas) Salomie",
-        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
-        "professor": "Salomie",
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-13": [
-      {
-        "start": "2026-01-13T08:00:00+02:00",
-        "end": "2026-01-13T10:00:00+02:00",
-        "title": "Database Systems",
-        "subject": "Database Systems",
-        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
-        "professor": null,
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-13T10:00:00+02:00",
-        "end": "2026-01-13T12:00:00+02:00",
-        "title": "Database Systems",
-        "subject": "Database Systems",
-        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
-        "professor": null,
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-13T18:00:00+02:00",
-        "end": "2026-01-13T20:00:00+02:00",
-        "title": "Intelligent Agent Systems Aiv I (mas) R. Slavescu",
-        "subject": "Intelligent Agent Systems Aiv I (mas) R. Slavescu",
-        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
-        "professor": "R. Slavescu",
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-14": [
-      {
-        "start": "2026-01-14T08:00:00+02:00",
-        "end": "2026-01-14T10:00:00+02:00",
-        "title": "Algorithms (alg) Ds I (mas) Potolea Rodica",
-        "subject": "Algorithms (alg) Ds I (mas) Potolea Rodica",
-        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
-        "professor": "Potolea Rodica",
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-14T16:00:00+02:00",
-        "end": "2026-01-14T18:00:00+02:00",
-        "title": "Computer Networks",
-        "subject": "Computer Networks",
-        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
-        "professor": null,
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-14T18:00:00+02:00",
-        "end": "2026-01-14T20:00:00+02:00",
-        "title": "Computer Networks",
-        "subject": "Computer Networks",
-        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-15": [
-      {
-        "start": "2026-01-15T18:00:00+02:00",
-        "end": "2026-01-15T20:00:00+02:00",
-        "title": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Nedevschi",
-        "subject": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Nedevschi",
-        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
-        "professor": "Nedevschi",
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-19": [
-      {
-        "start": "2026-01-19T18:00:00+02:00",
-        "end": "2026-01-19T20:00:00+02:00",
-        "title": "Distributed Systems Aiv I (mas) Salomie",
-        "subject": "Distributed Systems Aiv I (mas) Salomie",
-        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
-        "professor": "Salomie",
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-20": [
-      {
-        "start": "2026-01-20T08:00:00+02:00",
-        "end": "2026-01-20T10:00:00+02:00",
-        "title": "Database Systems",
-        "subject": "Database Systems",
-        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
-        "professor": null,
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-20T10:00:00+02:00",
-        "end": "2026-01-20T12:00:00+02:00",
-        "title": "Database Systems",
-        "subject": "Database Systems",
-        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
-        "professor": null,
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-20T18:00:00+02:00",
-        "end": "2026-01-20T20:00:00+02:00",
-        "title": "Intelligent Agent Systems Aiv I (mas) R. Slavescu",
-        "subject": "Intelligent Agent Systems Aiv I (mas) R. Slavescu",
-        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
-        "professor": "R. Slavescu",
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-21": [
-      {
-        "start": "2026-01-21T08:00:00+02:00",
-        "end": "2026-01-21T10:00:00+02:00",
-        "title": "Algorithms (alg) Ds I (mas) Potolea Rodica",
-        "subject": "Algorithms (alg) Ds I (mas) Potolea Rodica",
-        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
-        "professor": "Potolea Rodica",
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-21T16:00:00+02:00",
-        "end": "2026-01-21T18:00:00+02:00",
-        "title": "Computer Networks",
-        "subject": "Computer Networks",
-        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
-        "professor": null,
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-21T18:00:00+02:00",
-        "end": "2026-01-21T20:00:00+02:00",
-        "title": "Computer Networks",
-        "subject": "Computer Networks",
-        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-22": [
-      {
-        "start": "2026-01-22T18:00:00+02:00",
-        "end": "2026-01-22T20:00:00+02:00",
-        "title": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Nedevschi",
-        "subject": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Nedevschi",
-        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
-        "professor": "Nedevschi",
-        "source": null,
-        "color": null
-      }
-    ],
     "2025-12-01": [
       {
         "start": "2025-12-01T18:00:00+02:00",
@@ -7393,7 +7153,7 @@
         "title": "Distributed Systems Aiv I (mas) Salomie",
         "subject": "Distributed Systems Aiv I (mas) Salomie",
         "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
-        "professor": "Salomie",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -7469,7 +7229,7 @@
         "title": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Nedevschi",
         "subject": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Nedevschi",
         "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
-        "professor": "Nedevschi",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -7481,7 +7241,7 @@
         "title": "Distributed Systems Aiv I (mas) Salomie",
         "subject": "Distributed Systems Aiv I (mas) Salomie",
         "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
-        "professor": "Salomie",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -7557,7 +7317,7 @@
         "title": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Nedevschi",
         "subject": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Nedevschi",
         "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
-        "professor": "Nedevschi",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -7569,7 +7329,7 @@
         "title": "Distributed Systems Aiv I (mas) Salomie",
         "subject": "Distributed Systems Aiv I (mas) Salomie",
         "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
-        "professor": "Salomie",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -7645,19 +7405,17 @@
         "title": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Nedevschi",
         "subject": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Nedevschi",
         "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
-        "professor": "Nedevschi",
+        "professor": null,
         "source": null,
         "color": null
       }
-    ]
-  },
-  "GR2": {
+    ],
     "2026-01-12": [
       {
-        "start": "2026-01-12T20:00:00+02:00",
-        "end": "2026-01-12T22:00:00+02:00",
-        "title": "Distributed Systems Aiv I (mas) Gr1 / Gr2",
-        "subject": "Distributed Systems Aiv I (mas) Gr1 / Gr2",
+        "start": "2026-01-12T18:00:00+02:00",
+        "end": "2026-01-12T20:00:00+02:00",
+        "title": "Distributed Systems Aiv I (mas) Salomie",
+        "subject": "Distributed Systems Aiv I (mas) Salomie",
         "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
         "professor": null,
         "source": null,
@@ -7666,10 +7424,62 @@
     ],
     "2026-01-13": [
       {
-        "start": "2026-01-13T16:00:00+02:00",
-        "end": "2026-01-13T18:00:00+02:00",
-        "title": "Intelligent Agent Systems Aiv I (mas) Gr1 / Gr2",
-        "subject": "Intelligent Agent Systems Aiv I (mas) Gr1 / Gr2",
+        "start": "2026-01-13T08:00:00+02:00",
+        "end": "2026-01-13T10:00:00+02:00",
+        "title": "Database Systems",
+        "subject": "Database Systems",
+        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-13T10:00:00+02:00",
+        "end": "2026-01-13T12:00:00+02:00",
+        "title": "Database Systems",
+        "subject": "Database Systems",
+        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-13T18:00:00+02:00",
+        "end": "2026-01-13T20:00:00+02:00",
+        "title": "Intelligent Agent Systems Aiv I (mas) R. Slavescu",
+        "subject": "Intelligent Agent Systems Aiv I (mas) R. Slavescu",
+        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "professor": "R. Slavescu",
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-14": [
+      {
+        "start": "2026-01-14T08:00:00+02:00",
+        "end": "2026-01-14T10:00:00+02:00",
+        "title": "Algorithms (alg) Ds I (mas) Potolea Rodica",
+        "subject": "Algorithms (alg) Ds I (mas) Potolea Rodica",
+        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "professor": "Potolea Rodica",
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-14T16:00:00+02:00",
+        "end": "2026-01-14T18:00:00+02:00",
+        "title": "Computer Networks",
+        "subject": "Computer Networks",
+        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-14T18:00:00+02:00",
+        "end": "2026-01-14T20:00:00+02:00",
+        "title": "Computer Networks",
+        "subject": "Computer Networks",
         "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
         "professor": null,
         "source": null,
@@ -7678,10 +7488,10 @@
     ],
     "2026-01-15": [
       {
-        "start": "2026-01-15T10:00:00+02:00",
-        "end": "2026-01-15T12:00:00+02:00",
-        "title": "Machine Learning 1 (ml1) Ds I (mas) Gr1 / Gr2",
-        "subject": "Machine Learning 1 (ml1) Ds I (mas) Gr1 / Gr2",
+        "start": "2026-01-15T18:00:00+02:00",
+        "end": "2026-01-15T20:00:00+02:00",
+        "title": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Nedevschi",
+        "subject": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Nedevschi",
         "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
         "professor": null,
         "source": null,
@@ -7690,10 +7500,10 @@
     ],
     "2026-01-19": [
       {
-        "start": "2026-01-19T20:00:00+02:00",
-        "end": "2026-01-19T22:00:00+02:00",
-        "title": "Distributed Systems Aiv I (mas) Gr1 / Gr2",
-        "subject": "Distributed Systems Aiv I (mas) Gr1 / Gr2",
+        "start": "2026-01-19T18:00:00+02:00",
+        "end": "2026-01-19T20:00:00+02:00",
+        "title": "Distributed Systems Aiv I (mas) Salomie",
+        "subject": "Distributed Systems Aiv I (mas) Salomie",
         "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
         "professor": null,
         "source": null,
@@ -7702,10 +7512,62 @@
     ],
     "2026-01-20": [
       {
-        "start": "2026-01-20T16:00:00+02:00",
-        "end": "2026-01-20T18:00:00+02:00",
-        "title": "Intelligent Agent Systems Aiv I (mas) Gr1 / Gr2",
-        "subject": "Intelligent Agent Systems Aiv I (mas) Gr1 / Gr2",
+        "start": "2026-01-20T08:00:00+02:00",
+        "end": "2026-01-20T10:00:00+02:00",
+        "title": "Database Systems",
+        "subject": "Database Systems",
+        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-20T10:00:00+02:00",
+        "end": "2026-01-20T12:00:00+02:00",
+        "title": "Database Systems",
+        "subject": "Database Systems",
+        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-20T18:00:00+02:00",
+        "end": "2026-01-20T20:00:00+02:00",
+        "title": "Intelligent Agent Systems Aiv I (mas) R. Slavescu",
+        "subject": "Intelligent Agent Systems Aiv I (mas) R. Slavescu",
+        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "professor": "R. Slavescu",
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-21": [
+      {
+        "start": "2026-01-21T08:00:00+02:00",
+        "end": "2026-01-21T10:00:00+02:00",
+        "title": "Algorithms (alg) Ds I (mas) Potolea Rodica",
+        "subject": "Algorithms (alg) Ds I (mas) Potolea Rodica",
+        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "professor": "Potolea Rodica",
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-21T16:00:00+02:00",
+        "end": "2026-01-21T18:00:00+02:00",
+        "title": "Computer Networks",
+        "subject": "Computer Networks",
+        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-21T18:00:00+02:00",
+        "end": "2026-01-21T20:00:00+02:00",
+        "title": "Computer Networks",
+        "subject": "Computer Networks",
         "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
         "professor": null,
         "source": null,
@@ -7714,16 +7576,18 @@
     ],
     "2026-01-22": [
       {
-        "start": "2026-01-22T10:00:00+02:00",
-        "end": "2026-01-22T12:00:00+02:00",
-        "title": "Machine Learning 1 (ml1) Ds I (mas) Gr1 / Gr2",
-        "subject": "Machine Learning 1 (ml1) Ds I (mas) Gr1 / Gr2",
+        "start": "2026-01-22T18:00:00+02:00",
+        "end": "2026-01-22T20:00:00+02:00",
+        "title": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Nedevschi",
+        "subject": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Nedevschi",
         "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
         "professor": null,
         "source": null,
         "color": null
       }
-    ],
+    ]
+  },
+  "GR2": {
     "2025-12-01": [
       {
         "start": "2025-12-01T20:00:00+02:00",
@@ -7831,15 +7695,61 @@
         "source": null,
         "color": null
       }
-    ]
-  },
-  "GR1": {
+    ],
+    "2026-01-12": [
+      {
+        "start": "2026-01-12T20:00:00+02:00",
+        "end": "2026-01-12T22:00:00+02:00",
+        "title": "Distributed Systems Aiv I (mas) Gr1 / Gr2",
+        "subject": "Distributed Systems Aiv I (mas) Gr1 / Gr2",
+        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-13": [
+      {
+        "start": "2026-01-13T16:00:00+02:00",
+        "end": "2026-01-13T18:00:00+02:00",
+        "title": "Intelligent Agent Systems Aiv I (mas) Gr1 / Gr2",
+        "subject": "Intelligent Agent Systems Aiv I (mas) Gr1 / Gr2",
+        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
     "2026-01-15": [
       {
-        "start": "2026-01-15T16:00:00+02:00",
-        "end": "2026-01-15T18:00:00+02:00",
-        "title": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Gr2 / Gr1",
-        "subject": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Gr2 / Gr1",
+        "start": "2026-01-15T10:00:00+02:00",
+        "end": "2026-01-15T12:00:00+02:00",
+        "title": "Machine Learning 1 (ml1) Ds I (mas) Gr1 / Gr2",
+        "subject": "Machine Learning 1 (ml1) Ds I (mas) Gr1 / Gr2",
+        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-19": [
+      {
+        "start": "2026-01-19T20:00:00+02:00",
+        "end": "2026-01-19T22:00:00+02:00",
+        "title": "Distributed Systems Aiv I (mas) Gr1 / Gr2",
+        "subject": "Distributed Systems Aiv I (mas) Gr1 / Gr2",
+        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-20": [
+      {
+        "start": "2026-01-20T16:00:00+02:00",
+        "end": "2026-01-20T18:00:00+02:00",
+        "title": "Intelligent Agent Systems Aiv I (mas) Gr1 / Gr2",
+        "subject": "Intelligent Agent Systems Aiv I (mas) Gr1 / Gr2",
         "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
         "professor": null,
         "source": null,
@@ -7848,16 +7758,18 @@
     ],
     "2026-01-22": [
       {
-        "start": "2026-01-22T16:00:00+02:00",
-        "end": "2026-01-22T18:00:00+02:00",
-        "title": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Gr2 / Gr1",
-        "subject": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Gr2 / Gr1",
+        "start": "2026-01-22T10:00:00+02:00",
+        "end": "2026-01-22T12:00:00+02:00",
+        "title": "Machine Learning 1 (ml1) Ds I (mas) Gr1 / Gr2",
+        "subject": "Machine Learning 1 (ml1) Ds I (mas) Gr1 / Gr2",
         "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
         "professor": null,
         "source": null,
         "color": null
       }
-    ],
+    ]
+  },
+  "GR1": {
     "2025-12-04": [
       {
         "start": "2025-12-04T16:00:00+02:00",
@@ -7886,6 +7798,30 @@
       {
         "start": "2025-12-18T16:00:00+02:00",
         "end": "2025-12-18T18:00:00+02:00",
+        "title": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Gr2 / Gr1",
+        "subject": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Gr2 / Gr1",
+        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-15": [
+      {
+        "start": "2026-01-15T16:00:00+02:00",
+        "end": "2026-01-15T18:00:00+02:00",
+        "title": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Gr2 / Gr1",
+        "subject": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Gr2 / Gr1",
+        "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-22": [
+      {
+        "start": "2026-01-22T16:00:00+02:00",
+        "end": "2026-01-22T18:00:00+02:00",
         "title": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Gr2 / Gr1",
         "subject": "Deep Learning Based Computer Vision (dlcv) Aiv I (mas) Gr2 / Gr1",
         "location": "utcn_room_ac_bar_bt-501@campus.utcluj.ro",
@@ -8044,84 +7980,6 @@
       {
         "start": "2026-01-08T16:00:00+02:00",
         "end": "2026-01-08T18:00:00+02:00",
-        "title": "Sisteme Wireless",
-        "subject": "Sisteme Wireless",
-        "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
-        "professor": "Sisteme Wireless",
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-12": [
-      {
-        "start": "2026-01-12T10:00:00+02:00",
-        "end": "2026-01-12T16:00:00+02:00",
-        "title": "Radiocomunicații Celulare (l)",
-        "subject": "Radiocomunicații Celulare (l)",
-        "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-13": [
-      {
-        "start": "2026-01-13T08:00:00+02:00",
-        "end": "2026-01-13T14:00:00+02:00",
-        "title": "Sisteme De Comunicații (l)",
-        "subject": "Sisteme De Comunicații (l)",
-        "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-14": [
-      {
-        "start": "2026-01-14T10:00:00+02:00",
-        "end": "2026-01-14T12:00:00+02:00",
-        "title": "Sisteme De Comunicații",
-        "subject": "Sisteme De Comunicații",
-        "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
-        "professor": null,
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-14T17:00:00+02:00",
-        "end": "2026-01-14T19:00:00+02:00",
-        "title": "Proiectarea Rețelelor Radio",
-        "subject": "Proiectarea Rețelelor Radio",
-        "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-15": [
-      {
-        "start": "2026-01-15T10:00:00+02:00",
-        "end": "2026-01-15T14:00:00+02:00",
-        "title": "Cellular Radiocommunications",
-        "subject": "Cellular Radiocommunications",
-        "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
-        "professor": "Cellular Radiocommunications",
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-15T14:00:00+02:00",
-        "end": "2026-01-15T16:00:00+02:00",
-        "title": "IOT - Room Project",
-        "subject": "IOT",
-        "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
-        "professor": "Iot Project",
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-15T16:00:00+02:00",
-        "end": "2026-01-15T18:00:00+02:00",
         "title": "Sisteme Wireless",
         "subject": "Sisteme Wireless",
         "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
@@ -8441,6 +8299,84 @@
         "source": null,
         "color": null
       }
+    ],
+    "2026-01-12": [
+      {
+        "start": "2026-01-12T10:00:00+02:00",
+        "end": "2026-01-12T16:00:00+02:00",
+        "title": "Radiocomunicații Celulare (l)",
+        "subject": "Radiocomunicații Celulare (l)",
+        "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-13": [
+      {
+        "start": "2026-01-13T08:00:00+02:00",
+        "end": "2026-01-13T14:00:00+02:00",
+        "title": "Sisteme De Comunicații (l)",
+        "subject": "Sisteme De Comunicații (l)",
+        "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-14": [
+      {
+        "start": "2026-01-14T10:00:00+02:00",
+        "end": "2026-01-14T12:00:00+02:00",
+        "title": "Sisteme De Comunicații",
+        "subject": "Sisteme De Comunicații",
+        "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-14T17:00:00+02:00",
+        "end": "2026-01-14T19:00:00+02:00",
+        "title": "Proiectarea Rețelelor Radio",
+        "subject": "Proiectarea Rețelelor Radio",
+        "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-15": [
+      {
+        "start": "2026-01-15T10:00:00+02:00",
+        "end": "2026-01-15T14:00:00+02:00",
+        "title": "Cellular Radiocommunications",
+        "subject": "Cellular Radiocommunications",
+        "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "professor": "Cellular Radiocommunications",
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-15T14:00:00+02:00",
+        "end": "2026-01-15T16:00:00+02:00",
+        "title": "IOT - Room Project",
+        "subject": "IOT",
+        "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "professor": "Iot Project",
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-15T16:00:00+02:00",
+        "end": "2026-01-15T18:00:00+02:00",
+        "title": "Sisteme Wireless",
+        "subject": "Sisteme Wireless",
+        "location": "UTCN - ETTI Observatorului 2 - Sala 410 (RO)",
+        "professor": "Sisteme Wireless",
+        "source": null,
+        "color": null
+      }
     ]
   },
   "102": {
@@ -8451,7 +8387,7 @@
         "title": "Curs",
         "subject": "Curs",
         "location": "UTCN - ETTI Bar - Sala BT 102",
-        "professor": "CURS",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -8475,7 +8411,7 @@
         "title": "Curs",
         "subject": "Curs",
         "location": "UTCN - ETTI Bar - Sala BT 102",
-        "professor": "CURS",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -8499,7 +8435,7 @@
         "title": "Curs",
         "subject": "Curs",
         "location": "UTCN - ETTI Bar - Sala BT 102",
-        "professor": "CURS",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -8523,7 +8459,7 @@
         "title": "Curs",
         "subject": "Curs",
         "location": "UTCN - ETTI Bar - Sala BT 102",
-        "professor": "CURS",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -8535,7 +8471,7 @@
         "title": "Curs",
         "subject": "Curs",
         "location": "UTCN - ETTI Bar - Sala BT 102",
-        "professor": "CURS",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -8556,94 +8492,6 @@
     ]
   },
   "407": {
-    "2026-01-14": [
-      {
-        "start": "2026-01-14T08:00:00+02:00",
-        "end": "2026-01-14T10:00:00+02:00",
-        "title": "Sensors",
-        "subject": "Sensors",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
-        "professor": "Sensors",
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-14T10:00:00+02:00",
-        "end": "2026-01-14T12:00:00+02:00",
-        "title": "BSAD",
-        "subject": "BSAD",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
-        "professor": "Bsad",
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-15": [
-      {
-        "start": "2026-01-15T08:00:00+02:00",
-        "end": "2026-01-15T10:00:00+02:00",
-        "title": "BSAD",
-        "subject": "BSAD",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
-        "professor": "Bsad",
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-15T10:00:00+02:00",
-        "end": "2026-01-15T12:00:00+02:00",
-        "title": "Sensors",
-        "subject": "Sensors",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
-        "professor": "Sensors",
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-21": [
-      {
-        "start": "2026-01-21T08:00:00+02:00",
-        "end": "2026-01-21T10:00:00+02:00",
-        "title": "Sensors",
-        "subject": "Sensors",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
-        "professor": "Sensors",
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-21T10:00:00+02:00",
-        "end": "2026-01-21T12:00:00+02:00",
-        "title": "BSAD",
-        "subject": "BSAD",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
-        "professor": "Bsad",
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-22": [
-      {
-        "start": "2026-01-22T08:00:00+02:00",
-        "end": "2026-01-22T10:00:00+02:00",
-        "title": "BSAD",
-        "subject": "BSAD",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
-        "professor": "Bsad",
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-22T10:00:00+02:00",
-        "end": "2026-01-22T12:00:00+02:00",
-        "title": "Sensors",
-        "subject": "Sensors",
-        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
-        "professor": "Sensors",
-        "source": null,
-        "color": null
-      }
-    ],
     "2025-12-03": [
       {
         "start": "2025-12-03T08:00:00+02:00",
@@ -8651,7 +8499,7 @@
         "title": "Sensors",
         "subject": "Sensors",
         "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "professor": "Sensors",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -8661,7 +8509,7 @@
         "title": "BSAD",
         "subject": "BSAD",
         "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "professor": "Bsad",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -8683,7 +8531,7 @@
         "title": "BSAD",
         "subject": "BSAD",
         "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "professor": "Bsad",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -8693,7 +8541,7 @@
         "title": "Sensors",
         "subject": "Sensors",
         "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "professor": "Sensors",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -8715,7 +8563,7 @@
         "title": "DASF",
         "subject": "DASF",
         "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "professor": "Dasf",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -8725,7 +8573,7 @@
         "title": "DASF",
         "subject": "DASF",
         "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "professor": "Dasf",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -8735,7 +8583,7 @@
         "title": "Sensors",
         "subject": "Sensors",
         "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "professor": "Sensors",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -8747,7 +8595,7 @@
         "title": "Sensors",
         "subject": "Sensors",
         "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "professor": "Sensors",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -8757,7 +8605,7 @@
         "title": "BSAD",
         "subject": "BSAD",
         "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "professor": "Bsad",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -8779,7 +8627,7 @@
         "title": "BSAD",
         "subject": "BSAD",
         "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "professor": "Bsad",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -8789,7 +8637,7 @@
         "title": "Sensors",
         "subject": "Sensors",
         "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "professor": "Sensors",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -8811,7 +8659,7 @@
         "title": "DASF",
         "subject": "DASF",
         "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "professor": "Dasf",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -8821,7 +8669,7 @@
         "title": "DASF",
         "subject": "DASF",
         "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "professor": "Dasf",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -8831,7 +8679,7 @@
         "title": "Sensors",
         "subject": "Sensors",
         "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "professor": "Sensors",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -8843,7 +8691,7 @@
         "title": "DASF",
         "subject": "DASF",
         "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
-        "professor": "Dasf",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -8855,7 +8703,7 @@
         "title": "Sensors",
         "subject": "Sensors",
         "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "professor": "Sensors",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -8865,7 +8713,7 @@
         "title": "BSAD",
         "subject": "BSAD",
         "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "professor": "Bsad",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -8887,7 +8735,7 @@
         "title": "BSAD",
         "subject": "BSAD",
         "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "professor": "Bsad",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -8897,7 +8745,7 @@
         "title": "Sensors",
         "subject": "Sensors",
         "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "professor": "Sensors",
+        "professor": null,
         "source": null,
         "color": null
       },
@@ -8908,6 +8756,158 @@
         "subject": "Laborator Bsad",
         "location": "UTCN - ETTI Observatorului 2 - Sala 407",
         "professor": "Laborator Bsad",
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-14": [
+      {
+        "start": "2026-01-14T08:00:00+02:00",
+        "end": "2026-01-14T10:00:00+02:00",
+        "title": "Sensors",
+        "subject": "Sensors",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-14T10:00:00+02:00",
+        "end": "2026-01-14T12:00:00+02:00",
+        "title": "BSAD",
+        "subject": "BSAD",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-15": [
+      {
+        "start": "2026-01-15T08:00:00+02:00",
+        "end": "2026-01-15T10:00:00+02:00",
+        "title": "BSAD",
+        "subject": "BSAD",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-15T10:00:00+02:00",
+        "end": "2026-01-15T12:00:00+02:00",
+        "title": "Sensors",
+        "subject": "Sensors",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-16": [
+      {
+        "start": "2026-01-16T08:00:00+02:00",
+        "end": "2026-01-16T10:00:00+02:00",
+        "title": "DASF",
+        "subject": "DASF",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-16T10:00:00+02:00",
+        "end": "2026-01-16T12:00:00+02:00",
+        "title": "DASF",
+        "subject": "DASF",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-16T12:00:00+02:00",
+        "end": "2026-01-16T14:00:00+02:00",
+        "title": "Sensors",
+        "subject": "Sensors",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-21": [
+      {
+        "start": "2026-01-21T08:00:00+02:00",
+        "end": "2026-01-21T10:00:00+02:00",
+        "title": "Sensors",
+        "subject": "Sensors",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-21T10:00:00+02:00",
+        "end": "2026-01-21T12:00:00+02:00",
+        "title": "BSAD",
+        "subject": "BSAD",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-22": [
+      {
+        "start": "2026-01-22T08:00:00+02:00",
+        "end": "2026-01-22T10:00:00+02:00",
+        "title": "BSAD",
+        "subject": "BSAD",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-22T10:00:00+02:00",
+        "end": "2026-01-22T12:00:00+02:00",
+        "title": "Sensors",
+        "subject": "Sensors",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-23": [
+      {
+        "start": "2026-01-23T08:00:00+02:00",
+        "end": "2026-01-23T10:00:00+02:00",
+        "title": "DASF",
+        "subject": "DASF",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-23T10:00:00+02:00",
+        "end": "2026-01-23T12:00:00+02:00",
+        "title": "DASF",
+        "subject": "DASF",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-23T12:00:00+02:00",
+        "end": "2026-01-23T14:00:00+02:00",
+        "title": "Sensors",
+        "subject": "Sensors",
+        "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -8973,7 +8973,7 @@
         "title": "Curs",
         "subject": "Curs",
         "location": "UTCN - ETTI Observatorului 2 - Sala 507",
-        "professor": "CURS",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -8985,19 +8985,7 @@
         "title": "Curs",
         "subject": "Curs",
         "location": "UTCN - ETTI Observatorului 2 - Sala 507",
-        "professor": "CURS",
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-12": [
-      {
-        "start": "2026-01-12T16:00:00+02:00",
-        "end": "2026-01-12T18:00:00+02:00",
-        "title": "Curs",
-        "subject": "Curs",
-        "location": "UTCN - ETTI Observatorului 2 - Sala 507",
-        "professor": "CURS",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -9009,7 +8997,7 @@
         "title": "Curs",
         "subject": "Curs",
         "location": "UTCN - ETTI Observatorului 2 - Sala 507",
-        "professor": "CURS",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -9021,7 +9009,7 @@
         "title": "Curs",
         "subject": "Curs",
         "location": "UTCN - ETTI Observatorului 2 - Sala 507",
-        "professor": "CURS",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -9033,7 +9021,7 @@
         "title": "Curs",
         "subject": "Curs",
         "location": "UTCN - ETTI Observatorului 2 - Sala 507",
-        "professor": "CURS",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -9045,7 +9033,19 @@
         "title": "Curs",
         "subject": "Curs",
         "location": "UTCN - ETTI Observatorului 2 - Sala 507",
-        "professor": "CURS",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-12": [
+      {
+        "start": "2026-01-12T16:00:00+02:00",
+        "end": "2026-01-12T18:00:00+02:00",
+        "title": "Curs",
+        "subject": "Curs",
+        "location": "UTCN - ETTI Observatorului 2 - Sala 507",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -9059,7 +9059,7 @@
         "title": "Lab Informatica Industriala, An 4, Ti",
         "subject": "Lab Informatica Industriala, An 4, Ti",
         "location": "UTCN - AC Bar - Sala S42",
-        "professor": "Ti",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -9071,7 +9071,7 @@
         "title": "Lab Informatica Industriala, An 4, Ti",
         "subject": "Lab Informatica Industriala, An 4, Ti",
         "location": "UTCN - AC Bar - Sala S42",
-        "professor": "Ti",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -9083,7 +9083,7 @@
         "title": "Lab Informatica Industriala, An 4, Ti",
         "subject": "Lab Informatica Industriala, An 4, Ti",
         "location": "UTCN - AC Bar - Sala S42",
-        "professor": "Ti",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -9095,19 +9095,7 @@
         "title": "Lab Informatica Industriala, An 4, Ti",
         "subject": "Lab Informatica Industriala, An 4, Ti",
         "location": "UTCN - AC Bar - Sala S42",
-        "professor": "Ti",
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-16": [
-      {
-        "start": "2026-01-16T10:00:00+02:00",
-        "end": "2026-01-16T16:30:00+02:00",
-        "title": "Persist Project",
-        "subject": "Persist Project",
-        "location": "UTCN - HUB UT - Sala 2-4",
-        "professor": "Persist Project",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -9116,6 +9104,18 @@
       {
         "start": "2025-12-05T10:00:00+02:00",
         "end": "2025-12-05T16:30:00+02:00",
+        "title": "Persist Project",
+        "subject": "Persist Project",
+        "location": "UTCN - HUB UT - Sala 2-4",
+        "professor": "Persist Project",
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-16": [
+      {
+        "start": "2026-01-16T10:00:00+02:00",
+        "end": "2026-01-16T16:30:00+02:00",
         "title": "Persist Project",
         "subject": "Persist Project",
         "location": "UTCN - HUB UT - Sala 2-4",
@@ -9145,7 +9145,7 @@
         "title": "SRI",
         "subject": "SRI",
         "location": "UTCN - Aula UTCN HUB (RO)",
-        "professor": "SRI",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -9258,42 +9258,6 @@
         "color": null
       }
     ],
-    "2026-01-13": [
-      {
-        "start": "2026-01-13T18:00:00+02:00",
-        "end": "2026-01-13T20:00:00+02:00",
-        "title": "Întâlnire Grup Licență",
-        "subject": "Întâlnire Grup Licență",
-        "location": "Microsoft Teams Meeting; UTCN - CONS Bar - Sala 161",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-20": [
-      {
-        "start": "2026-01-20T18:00:00+02:00",
-        "end": "2026-01-20T20:00:00+02:00",
-        "title": "Întâlnire Grup Licență",
-        "subject": "Întâlnire Grup Licență",
-        "location": "Microsoft Teams Meeting; UTCN - CONS Bar - Sala 161",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-27": [
-      {
-        "start": "2026-01-27T18:00:00+02:00",
-        "end": "2026-01-27T20:00:00+02:00",
-        "title": "Întâlnire Grup Licență",
-        "subject": "Întâlnire Grup Licență",
-        "location": "Microsoft Teams Meeting; UTCN - CONS Bar - Sala 161",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
     "2025-12-02": [
       {
         "start": "2025-12-02T18:00:00+02:00",
@@ -9341,6 +9305,42 @@
         "source": null,
         "color": null
       }
+    ],
+    "2026-01-13": [
+      {
+        "start": "2026-01-13T18:00:00+02:00",
+        "end": "2026-01-13T20:00:00+02:00",
+        "title": "Întâlnire Grup Licență",
+        "subject": "Întâlnire Grup Licență",
+        "location": "Microsoft Teams Meeting; UTCN - CONS Bar - Sala 161",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-20": [
+      {
+        "start": "2026-01-20T18:00:00+02:00",
+        "end": "2026-01-20T20:00:00+02:00",
+        "title": "Întâlnire Grup Licență",
+        "subject": "Întâlnire Grup Licență",
+        "location": "Microsoft Teams Meeting; UTCN - CONS Bar - Sala 161",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-27": [
+      {
+        "start": "2026-01-27T18:00:00+02:00",
+        "end": "2026-01-27T20:00:00+02:00",
+        "title": "Întâlnire Grup Licență",
+        "subject": "Întâlnire Grup Licență",
+        "location": "Microsoft Teams Meeting; UTCN - CONS Bar - Sala 161",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
     ]
   },
   "120": {
@@ -9351,20 +9351,6 @@
         "title": "SALA - Room 120",
         "subject": "SALA",
         "location": "UTCN - RECTORAT - Sala 120",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ]
-  },
-  "368": {
-    "2026-01-13": [
-      {
-        "start": "2026-01-13T10:00:00+02:00",
-        "end": "2026-01-13T12:00:00+02:00",
-        "title": "Tehn. Web",
-        "subject": "Tehn. Web",
-        "location": "UTCN - ETTI Bar - Sala 368 (RO)",
         "professor": null,
         "source": null,
         "color": null
@@ -9413,6 +9399,20 @@
       }
     ]
   },
+  "368": {
+    "2026-01-13": [
+      {
+        "start": "2026-01-13T10:00:00+02:00",
+        "end": "2026-01-13T12:00:00+02:00",
+        "title": "Tehn. Web",
+        "subject": "Tehn. Web",
+        "location": "UTCN - ETTI Bar - Sala 368 (RO)",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ]
+  },
   "A2": {
     "2025-12-02": [
       {
@@ -9421,7 +9421,7 @@
         "title": "IAC",
         "subject": "IAC",
         "location": "UTCN - CUNBM Victor Babes 62A - Sala A2",
-        "professor": "Iac",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -9433,7 +9433,7 @@
         "title": "IAC",
         "subject": "IAC",
         "location": "UTCN - CUNBM Victor Babes 62A - Sala A2",
-        "professor": "Iac",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -9445,7 +9445,7 @@
         "title": "IAC",
         "subject": "IAC",
         "location": "UTCN - CUNBM Victor Babes 62A - Sala A2",
-        "professor": "Iac",
+        "professor": null,
         "source": null,
         "color": null
       }
@@ -9457,37 +9457,13 @@
         "title": "IAC",
         "subject": "IAC",
         "location": "UTCN - CUNBM Victor Babes 62A - Sala A2",
-        "professor": "Iac",
+        "professor": null,
         "source": null,
         "color": null
       }
     ]
   },
   "313": {
-    "2026-01-13": [
-      {
-        "start": "2026-01-13T12:00:00+02:00",
-        "end": "2026-01-13T14:00:00+02:00",
-        "title": "Cppl Lab 30313.1",
-        "subject": "Cppl Lab 30313.1",
-        "location": "UTCN - AC Bar - Sala BT 603",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-20": [
-      {
-        "start": "2026-01-20T12:00:00+02:00",
-        "end": "2026-01-20T14:00:00+02:00",
-        "title": "Cppl Lab 30313.1",
-        "subject": "Cppl Lab 30313.1",
-        "location": "UTCN - AC Bar - Sala BT 603",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
     "2025-12-02": [
       {
         "start": "2025-12-02T12:00:00+02:00",
@@ -9523,25 +9499,13 @@
         "source": null,
         "color": null
       }
-    ]
-  },
-  "312": {
+    ],
     "2026-01-13": [
       {
-        "start": "2026-01-13T14:00:00+02:00",
-        "end": "2026-01-13T16:00:00+02:00",
-        "title": "Cppl Lab 30312.1",
-        "subject": "Cppl Lab 30312.1",
-        "location": "UTCN - AC Bar - Sala BT 603",
-        "professor": null,
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-13T16:00:00+02:00",
-        "end": "2026-01-13T18:00:00+02:00",
-        "title": "Cppl Lab 30312.2",
-        "subject": "Cppl Lab 30312.2",
+        "start": "2026-01-13T12:00:00+02:00",
+        "end": "2026-01-13T14:00:00+02:00",
+        "title": "Cppl Lab 30313.1",
+        "subject": "Cppl Lab 30313.1",
         "location": "UTCN - AC Bar - Sala BT 603",
         "professor": null,
         "source": null,
@@ -9550,26 +9514,18 @@
     ],
     "2026-01-20": [
       {
-        "start": "2026-01-20T14:00:00+02:00",
-        "end": "2026-01-20T16:00:00+02:00",
-        "title": "Cppl Lab 30312.1",
-        "subject": "Cppl Lab 30312.1",
-        "location": "UTCN - AC Bar - Sala BT 603",
-        "professor": null,
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-20T16:00:00+02:00",
-        "end": "2026-01-20T18:00:00+02:00",
-        "title": "Cppl Lab 30312.2",
-        "subject": "Cppl Lab 30312.2",
+        "start": "2026-01-20T12:00:00+02:00",
+        "end": "2026-01-20T14:00:00+02:00",
+        "title": "Cppl Lab 30313.1",
+        "subject": "Cppl Lab 30313.1",
         "location": "UTCN - AC Bar - Sala BT 603",
         "professor": null,
         "source": null,
         "color": null
       }
-    ],
+    ]
+  },
+  "312": {
     "2025-12-02": [
       {
         "start": "2025-12-02T14:00:00+02:00",
@@ -9635,53 +9591,79 @@
         "source": null,
         "color": null
       }
+    ],
+    "2026-01-13": [
+      {
+        "start": "2026-01-13T14:00:00+02:00",
+        "end": "2026-01-13T16:00:00+02:00",
+        "title": "Cppl Lab 30312.1",
+        "subject": "Cppl Lab 30312.1",
+        "location": "UTCN - AC Bar - Sala BT 603",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-13T16:00:00+02:00",
+        "end": "2026-01-13T18:00:00+02:00",
+        "title": "Cppl Lab 30312.2",
+        "subject": "Cppl Lab 30312.2",
+        "location": "UTCN - AC Bar - Sala BT 603",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-20": [
+      {
+        "start": "2026-01-20T14:00:00+02:00",
+        "end": "2026-01-20T16:00:00+02:00",
+        "title": "Cppl Lab 30312.1",
+        "subject": "Cppl Lab 30312.1",
+        "location": "UTCN - AC Bar - Sala BT 603",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-20T16:00:00+02:00",
+        "end": "2026-01-20T18:00:00+02:00",
+        "title": "Cppl Lab 30312.2",
+        "subject": "Cppl Lab 30312.2",
+        "location": "UTCN - AC Bar - Sala BT 603",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ]
+  },
+  "603": {
+    "2025-12-02": [
+      {
+        "start": "2025-12-02T18:00:00+02:00",
+        "end": "2025-12-02T22:00:00+02:00",
+        "title": "Cebd",
+        "subject": "Cebd",
+        "location": "UTCN - AC Bar - Sala BT 603",
+        "professor": "Room Curs",
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-30": [
+      {
+        "start": "2026-01-30T12:00:00+02:00",
+        "end": "2026-01-30T20:00:00+02:00",
+        "title": "Examen",
+        "subject": "Examen",
+        "location": "UTCN - AC Bar - Sala BT 603",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
     ]
   },
   "311": {
-    "2026-01-14": [
-      {
-        "start": "2026-01-14T12:00:00+02:00",
-        "end": "2026-01-14T14:00:00+02:00",
-        "title": "Cppl Lab 30311.1",
-        "subject": "Cppl Lab 30311.1",
-        "location": "UTCN - AC Bar - Sala BT 603",
-        "professor": null,
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-14T14:00:00+02:00",
-        "end": "2026-01-14T16:00:00+02:00",
-        "title": "Cppl Lab 30311.2",
-        "subject": "Cppl Lab 30311.2",
-        "location": "UTCN - AC Bar - Sala BT 603",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-21": [
-      {
-        "start": "2026-01-21T12:00:00+02:00",
-        "end": "2026-01-21T14:00:00+02:00",
-        "title": "Cppl Lab 30311.1",
-        "subject": "Cppl Lab 30311.1",
-        "location": "UTCN - AC Bar - Sala BT 603",
-        "professor": null,
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-21T14:00:00+02:00",
-        "end": "2026-01-21T16:00:00+02:00",
-        "title": "Cppl Lab 30311.2",
-        "subject": "Cppl Lab 30311.2",
-        "location": "UTCN - AC Bar - Sala BT 603",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
     "2025-12-03": [
       {
         "start": "2025-12-03T12:00:00+02:00",
@@ -9747,15 +9729,83 @@
         "source": null,
         "color": null
       }
+    ],
+    "2026-01-14": [
+      {
+        "start": "2026-01-14T12:00:00+02:00",
+        "end": "2026-01-14T14:00:00+02:00",
+        "title": "Cppl Lab 30311.1",
+        "subject": "Cppl Lab 30311.1",
+        "location": "UTCN - AC Bar - Sala BT 603",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-14T14:00:00+02:00",
+        "end": "2026-01-14T16:00:00+02:00",
+        "title": "Cppl Lab 30311.2",
+        "subject": "Cppl Lab 30311.2",
+        "location": "UTCN - AC Bar - Sala BT 603",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-21": [
+      {
+        "start": "2026-01-21T12:00:00+02:00",
+        "end": "2026-01-21T14:00:00+02:00",
+        "title": "Cppl Lab 30311.1",
+        "subject": "Cppl Lab 30311.1",
+        "location": "UTCN - AC Bar - Sala BT 603",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-21T14:00:00+02:00",
+        "end": "2026-01-21T16:00:00+02:00",
+        "title": "Cppl Lab 30311.2",
+        "subject": "Cppl Lab 30311.2",
+        "location": "UTCN - AC Bar - Sala BT 603",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
     ]
   },
-  "421": {
-    "2026-01-15": [
+  "31422": {
+    "2025-12-04": [
       {
-        "start": "2026-01-15T16:00:00+02:00",
-        "end": "2026-01-15T18:00:00+02:00",
-        "title": "Cebd Proiect 31421.1",
-        "subject": "Cebd Proiect 31421.1",
+        "start": "2025-12-04T14:00:00+02:00",
+        "end": "2025-12-04T16:00:00+02:00",
+        "title": "Cebd Proiect 31422",
+        "subject": "Cebd Proiect 31422",
+        "location": "UTCN - AC Bar - Sala BT 603",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2025-12-18": [
+      {
+        "start": "2025-12-18T14:00:00+02:00",
+        "end": "2025-12-18T16:00:00+02:00",
+        "title": "Cebd Proiect 31422",
+        "subject": "Cebd Proiect 31422",
+        "location": "UTCN - AC Bar - Sala BT 603",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-19": [
+      {
+        "start": "2026-01-19T18:00:00+02:00",
+        "end": "2026-01-19T20:00:00+02:00",
+        "title": "Cebd Lab 31422",
+        "subject": "Cebd Lab 31422",
         "location": "UTCN - AC Bar - Sala BT 603",
         "professor": null,
         "source": null,
@@ -9764,36 +9814,18 @@
     ],
     "2026-01-22": [
       {
-        "start": "2026-01-22T16:00:00+02:00",
-        "end": "2026-01-22T18:00:00+02:00",
-        "title": "Cebd Proiect 31421.2",
-        "subject": "Cebd Proiect 31421.2",
-        "location": "UTCN - AC Bar - Sala BT 603",
-        "professor": null,
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-22T18:00:00+02:00",
-        "end": "2026-01-22T20:00:00+02:00",
-        "title": "Cebd Lab 31421.1",
-        "subject": "Cebd Lab 31421.1",
-        "location": "UTCN - AC Bar - Sala BT 603",
-        "professor": null,
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-22T20:00:00+02:00",
-        "end": "2026-01-22T22:00:00+02:00",
-        "title": "Cebd Lab 31421.2",
-        "subject": "Cebd Lab 31421.2",
+        "start": "2026-01-22T14:00:00+02:00",
+        "end": "2026-01-22T16:00:00+02:00",
+        "title": "Cebd Proiect 31422",
+        "subject": "Cebd Proiect 31422",
         "location": "UTCN - AC Bar - Sala BT 603",
         "professor": null,
         "source": null,
         "color": null
       }
-    ],
+    ]
+  },
+  "421": {
     "2025-12-04": [
       {
         "start": "2025-12-04T16:00:00+02:00",
@@ -9849,15 +9881,13 @@
         "source": null,
         "color": null
       }
-    ]
-  },
-  "31422": {
-    "2026-01-19": [
+    ],
+    "2026-01-15": [
       {
-        "start": "2026-01-19T18:00:00+02:00",
-        "end": "2026-01-19T20:00:00+02:00",
-        "title": "Cebd Lab 31422",
-        "subject": "Cebd Lab 31422",
+        "start": "2026-01-15T16:00:00+02:00",
+        "end": "2026-01-15T18:00:00+02:00",
+        "title": "Cebd Proiect 31421.1",
+        "subject": "Cebd Proiect 31421.1",
         "location": "UTCN - AC Bar - Sala BT 603",
         "professor": null,
         "source": null,
@@ -9866,124 +9896,38 @@
     ],
     "2026-01-22": [
       {
-        "start": "2026-01-22T14:00:00+02:00",
-        "end": "2026-01-22T16:00:00+02:00",
-        "title": "Cebd Proiect 31422",
-        "subject": "Cebd Proiect 31422",
+        "start": "2026-01-22T16:00:00+02:00",
+        "end": "2026-01-22T18:00:00+02:00",
+        "title": "Cebd Proiect 31421.2",
+        "subject": "Cebd Proiect 31421.2",
         "location": "UTCN - AC Bar - Sala BT 603",
         "professor": null,
         "source": null,
         "color": null
-      }
-    ],
-    "2025-12-04": [
+      },
       {
-        "start": "2025-12-04T14:00:00+02:00",
-        "end": "2025-12-04T16:00:00+02:00",
-        "title": "Cebd Proiect 31422",
-        "subject": "Cebd Proiect 31422",
+        "start": "2026-01-22T18:00:00+02:00",
+        "end": "2026-01-22T20:00:00+02:00",
+        "title": "Cebd Lab 31421.1",
+        "subject": "Cebd Lab 31421.1",
         "location": "UTCN - AC Bar - Sala BT 603",
         "professor": null,
         "source": null,
         "color": null
-      }
-    ],
-    "2025-12-18": [
+      },
       {
-        "start": "2025-12-18T14:00:00+02:00",
-        "end": "2025-12-18T16:00:00+02:00",
-        "title": "Cebd Proiect 31422",
-        "subject": "Cebd Proiect 31422",
+        "start": "2026-01-22T20:00:00+02:00",
+        "end": "2026-01-22T22:00:00+02:00",
+        "title": "Cebd Lab 31421.2",
+        "subject": "Cebd Lab 31421.2",
         "location": "UTCN - AC Bar - Sala BT 603",
         "professor": null,
-        "source": null,
-        "color": null
-      }
-    ]
-  },
-  "603": {
-    "2026-01-30": [
-      {
-        "start": "2026-01-30T12:00:00+02:00",
-        "end": "2026-01-30T20:00:00+02:00",
-        "title": "Examen",
-        "subject": "Examen",
-        "location": "UTCN - AC Bar - Sala BT 603",
-        "professor": "EXAMEN",
-        "source": null,
-        "color": null
-      }
-    ],
-    "2025-12-02": [
-      {
-        "start": "2025-12-02T18:00:00+02:00",
-        "end": "2025-12-02T22:00:00+02:00",
-        "title": "Cebd",
-        "subject": "Cebd",
-        "location": "UTCN - AC Bar - Sala BT 603",
-        "professor": "Room Curs",
         "source": null,
         "color": null
       }
     ]
   },
   "E04": {
-    "2026-01-13": [
-      {
-        "start": "2026-01-13T14:00:00+02:00",
-        "end": "2026-01-13T16:00:00+02:00",
-        "title": "Tehn. Web",
-        "subject": "Tehn. Web",
-        "location": "UTCN - ETTI Bar - Sala E04 (RO)",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-14": [
-      {
-        "start": "2026-01-14T14:00:00+02:00",
-        "end": "2026-01-14T16:00:00+02:00",
-        "title": "Tehn. Web",
-        "subject": "Tehn. Web",
-        "location": "UTCN - ETTI Bar - Sala E04 (RO)",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
-    "2026-01-15": [
-      {
-        "start": "2026-01-15T12:00:00+02:00",
-        "end": "2026-01-15T14:00:00+02:00",
-        "title": "Tehn. Web",
-        "subject": "Tehn. Web",
-        "location": "UTCN - ETTI Bar - Sala E04 (RO)",
-        "professor": null,
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-15T14:00:00+02:00",
-        "end": "2026-01-15T16:00:00+02:00",
-        "title": "Tehn. Web",
-        "subject": "Tehn. Web",
-        "location": "UTCN - ETTI Bar - Sala E04 (RO)",
-        "professor": null,
-        "source": null,
-        "color": null
-      },
-      {
-        "start": "2026-01-15T16:00:00+02:00",
-        "end": "2026-01-15T18:00:00+02:00",
-        "title": "Tehn. Web",
-        "subject": "Tehn. Web",
-        "location": "UTCN - ETTI Bar - Sala E04 (RO)",
-        "professor": null,
-        "source": null,
-        "color": null
-      }
-    ],
     "2025-12-02": [
       {
         "start": "2025-12-02T14:00:00+02:00",
@@ -10144,6 +10088,62 @@
       {
         "start": "2025-12-18T16:00:00+02:00",
         "end": "2025-12-18T18:00:00+02:00",
+        "title": "Tehn. Web",
+        "subject": "Tehn. Web",
+        "location": "UTCN - ETTI Bar - Sala E04 (RO)",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-13": [
+      {
+        "start": "2026-01-13T14:00:00+02:00",
+        "end": "2026-01-13T16:00:00+02:00",
+        "title": "Tehn. Web",
+        "subject": "Tehn. Web",
+        "location": "UTCN - ETTI Bar - Sala E04 (RO)",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-14": [
+      {
+        "start": "2026-01-14T14:00:00+02:00",
+        "end": "2026-01-14T16:00:00+02:00",
+        "title": "Tehn. Web",
+        "subject": "Tehn. Web",
+        "location": "UTCN - ETTI Bar - Sala E04 (RO)",
+        "professor": null,
+        "source": null,
+        "color": null
+      }
+    ],
+    "2026-01-15": [
+      {
+        "start": "2026-01-15T12:00:00+02:00",
+        "end": "2026-01-15T14:00:00+02:00",
+        "title": "Tehn. Web",
+        "subject": "Tehn. Web",
+        "location": "UTCN - ETTI Bar - Sala E04 (RO)",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-15T14:00:00+02:00",
+        "end": "2026-01-15T16:00:00+02:00",
+        "title": "Tehn. Web",
+        "subject": "Tehn. Web",
+        "location": "UTCN - ETTI Bar - Sala E04 (RO)",
+        "professor": null,
+        "source": null,
+        "color": null
+      },
+      {
+        "start": "2026-01-15T16:00:00+02:00",
+        "end": "2026-01-15T18:00:00+02:00",
         "title": "Tehn. Web",
         "subject": "Tehn. Web",
         "location": "UTCN - ETTI Bar - Sala E04 (RO)",
