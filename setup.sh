@@ -28,4 +28,10 @@ echo "Initializing application database and migrating any existing configs..."
 mkdir -p data
 "$PY_VENV_DIR/bin/python" -c "from app import init_db, migrate_from_files; init_db(); migrate_from_files(); print('DB initialized')"
 
+echo "Populating calendars from CSV..."
+"$PY_VENV_DIR/bin/python" tools/populate_calendars_from_csv.py
+
+echo "Updating calendars with email addresses, names, and buildings from CSV..."
+"$PY_VENV_DIR/bin/python" tools/enforce_csv_full_update.py
+
 echo "Setup complete. Activate with: source $PY_VENV_DIR/bin/activate"
