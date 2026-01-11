@@ -487,6 +487,8 @@ body {
 .board-row .col-status { font-size: 0.85rem; }
 .board-row.status-active { background: rgba(40,167,69,0.15); }
 .board-row.status-active .col-status { color: var(--success); font-weight: 600; }
+.board-row.status-finished { background: rgba(108,117,125,0.15); }
+.board-row.status-finished .col-status { color: var(--gray-600); }
 .board-row.status-soon { background: rgba(253,126,20,0.15); }
 .board-row.status-soon .col-status { color: var(--warning); }
 .board-row.status-upcoming .col-status { color: #60a5fa; }

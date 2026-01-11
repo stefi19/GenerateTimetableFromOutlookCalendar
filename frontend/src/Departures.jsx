@@ -154,7 +154,15 @@ export default function Departures() {
     return true
   })
 
-  const todayEvents = filteredEvents.filter(ev => ev.start && ev.start.startsWith(today))
+  const todayEvents = filteredEvents.filter(ev => {
+    if (!ev.start || !ev.start.startsWith(today)) return false
+    // For live board, exclude events that have already ended
+    if (ev.end) {
+      const endTime = new Date(ev.end)
+      if (endTime < new Date()) return false
+    }
+    return true
+  })
   const tomorrowEvents = filteredEvents.filter(ev => ev.start && ev.start.startsWith(tomorrow))
 
   const formatTime = (isoString) => {
@@ -166,12 +174,25 @@ export default function Departures() {
     }
   }
 
-  const getTimeStatus = (isoString) => {
-    if (!isoString) return { text: '', className: '' }
+  const getTimeStatus = (ev) => {
+    if (!ev.start) return { text: '', className: '' }
     try {
-      const eventTime = new Date(isoString)
-      const diff = eventTime - now
-      if (diff < 0) return { text: 'In progress', className: 'status-active' }
+      const now = new Date()
+      const startTime = new Date(ev.start)
+      const endTime = ev.end ? new Date(ev.end) : null
+      
+      // If we have end time and current time is past end time, shouldn't happen due to filtering
+      if (endTime && now > endTime) {
+        return { text: 'Finished', className: 'status-finished' }
+      }
+      
+      // If current time is past start time, it's in progress
+      if (now >= startTime) {
+        return { text: 'In progress', className: 'status-active' }
+      }
+      
+      // Calculate time until start
+      const diff = startTime - now
       const mins = Math.floor(diff / 60000)
       if (mins < 15) return { text: 'in ' + mins + ' min', className: 'status-soon' }
       if (mins < 60) return { text: 'in ' + mins + ' min', className: 'status-upcoming' }
@@ -201,10 +222,13 @@ export default function Departures() {
             <span className="col-status">Status</span>
           </div>
           {evts.sort((a, b) => (a.start || '').localeCompare(b.start || '')).slice(0, 20).map((ev, idx) => {
-            const status = isToday ? getTimeStatus(ev.start) : { text: '', className: '' }
+            const status = isToday ? getTimeStatus(ev) : { text: '', className: '' }
             return (
               <div key={idx} className={'board-row ' + status.className} style={{ borderLeftColor: ev.color || '#003366' }}>
-                <span className="col-time">{formatTime(ev.start)}</span>
+                <span className="col-time">
+                  {formatTime(ev.start)}
+                  {ev.end && formatTime(ev.end) !== '--:--' ? ` - ${formatTime(ev.end)}` : ''}
+                </span>
                 <span className="col-event">
                   <span className="event-title">{ev.display_title || ev.title}</span>
                   <span className="event-meta">{ev.calendar_name || ev.subject || ''}</span>
