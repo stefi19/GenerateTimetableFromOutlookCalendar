@@ -146,15 +146,20 @@ export default function Departures() {
     const rl = r.toLowerCase()
     const ll = (loc || '').toString().toLowerCase()
 
-    // 1) Direct canonical substring match
+    // 1) If the location/room clearly indicates BT, prefer BT (even if raw
+    //    mentions 'Baritiu'). This fixes cases where ev.building is 'Baritiu'
+    //    but the room name is 'BT101' and should be classified as BT.
+    if (/(^|[^a-z0-9])b[\W_]*t(?=[^a-z]|$)/.test(ll)) return 'BT Electro Cluj'
+
+    // 2) Direct canonical substring match
     for (const c of CANONICAL_BUILDINGS) {
       if (r && rl.indexOf(c.toLowerCase()) !== -1) return c
     }
 
-    // 2) If raw mentions 'baritiu' but lacks qualifier, attempt to disambiguate
+    // 3) If raw mentions 'baritiu' but lacks qualifier, attempt to disambiguate
     if (rl.indexOf('baritiu') !== -1) {
-      // If location/room hints at Electro (AC/IE/ETTI/IE/AC/ELECTRO/BT)
-      if (/\bac\b/.test(ll) || /\bie\b/.test(ll) || /\bett?ti\b/.test(ll) || ll.indexOf('electro') !== -1 || /(^|[^a-z0-9])b[\W_]*t(?=[^a-z]|$)/.test(ll)) {
+      // If location/room hints at Electro (AC/IE/ETTI/IE/AC/ELECTRO)
+      if (/\bac\b/.test(ll) || /\bie\b/.test(ll) || /\bett?ti\b/.test(ll) || ll.indexOf('electro') !== -1) {
         return 'Baritiu Electro Cluj'
       }
       // If location/room hints at Constructii
