@@ -86,6 +86,12 @@ export default function Departures() {
   const inferBuildingFromLocation = (loc) => {
     if (!loc) return ''
     const l = loc.toLowerCase()
+    
+    // Priority-based Baritiu parsing
+    if (l.includes('bt')) return 'BT Electro Cluj'
+    if (l.includes('ac bar')) return 'Baritiu Electro Cluj'
+    if (l.includes('cons bar')) return 'Baritiu Constructii Cluj'
+    
     // Comprehensive building mapping
     const mapping = [
       { keys: ['rectorat'], val: 'Rectorat' },
