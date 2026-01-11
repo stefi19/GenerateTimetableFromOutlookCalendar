@@ -26,7 +26,6 @@ export default function Departures() {
     'CUNBM VICTORIEI': 'CUNBM Victoriei',
     'CUNBM BABES': 'CUNBM Babes',
     'UTCN AIRI': 'UTCN AIRI',
-    'Baritiu': 'Bariţiu',
     'DAIC': 'DAIC',
     'Dorobantilor': 'Dorobanţilor', 
     'Observatorului': 'Observatorului',
@@ -105,7 +104,7 @@ export default function Departures() {
       { keys: ['cunbm babes', 'babes'], val: 'CUNBM BABES' },
       { keys: ['utcn airi', 'airi'], val: 'UTCN AIRI' },
       // Fallbacks for existing mappings
-      { keys: ['ac bar', 'acbar', 'baritiu', 'bar -', 'baritiu', 'bar'], val: 'Baritiu' },
+      { keys: ['ac bar', 'acbar'], val: 'Baritiu' },
       { keys: ['daic'], val: 'DAIC' },
       { keys: ['doroban', 'dorobantilor'], val: 'Dorobantilor' },
       { keys: ['observator'], val: 'Observatorului' },
