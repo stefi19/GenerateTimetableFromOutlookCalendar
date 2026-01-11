@@ -214,6 +214,9 @@ export default function Departures() {
         const b = normalizeBuilding(ev.building, combinedLoc)
         if (b) buildingSet.add(b)
       })
+      // Ensure the dropdown shows all canonical buildings even if there are
+      // no events for them today so the user can always select any building.
+      CANONICAL_BUILDINGS.forEach(b => buildingSet.add(b))
       setBuildings(Array.from(buildingSet).sort())
       setLastUpdate(new Date())
       setError(null)
