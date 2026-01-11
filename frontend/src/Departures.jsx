@@ -12,6 +12,20 @@ export default function Departures() {
 
   // UTCN Buildings
   const BUILDING_NAMES = {
+    'Rectorat': 'Rectorat',
+    'HUB Cluj': 'HUB Cluj',
+    'BT Electro Cluj': 'BT Electro Cluj',
+    'Daicoviciu Cluj': 'Daicoviciu Cluj',
+    'Baritiu Electro Cluj': 'Baritiu Electro Cluj',
+    'Baritiu Constructii Cluj': 'Baritiu Constructii Cluj',
+    'Dorobantilor DECIDFR CLUJ': 'Dorobantilor DECIDFR CLUJ',
+    'OBSERVATOR CONSTRUCTII CLUJ': 'Observator Constructii Cluj',
+    'OBSERVATOR ELECTRO CLUJ': 'Observator Electro Cluj',
+    '21 DECEMBRIE INSTALATII CLUJ': '21 Decembrie Instalatii Cluj',
+    'MUNCII CLUJ': 'Muncii Cluj',
+    'CUNBM VICTORIEI': 'CUNBM Victoriei',
+    'CUNBM BABES': 'CUNBM Babes',
+    'UTCN AIRI': 'UTCN AIRI',
     'Baritiu': 'Bariţiu',
     'DAIC': 'DAIC',
     'Dorobantilor': 'Dorobanţilor', 
@@ -74,8 +88,23 @@ export default function Departures() {
   const inferBuildingFromLocation = (loc) => {
     if (!loc) return ''
     const l = loc.toLowerCase()
-    // Simple keyword mapping - extend as needed
+    // Comprehensive building mapping
     const mapping = [
+      { keys: ['rectorat'], val: 'Rectorat' },
+      { keys: ['hub cluj', 'hub'], val: 'HUB Cluj' },
+      { keys: ['bt electro cluj', 'bt electro'], val: 'BT Electro Cluj' },
+      { keys: ['daicoviciu cluj', 'daicoviciu'], val: 'Daicoviciu Cluj' },
+      { keys: ['baritiu electro cluj', 'baritiu electro'], val: 'Baritiu Electro Cluj' },
+      { keys: ['baritiu constructii cluj', 'baritiu constructii'], val: 'Baritiu Constructii Cluj' },
+      { keys: ['dorobantilor decidfr cluj', 'decidfr', 'dorobantilor decidfr'], val: 'Dorobantilor DECIDFR CLUJ' },
+      { keys: ['observator constructii cluj', 'observator constructii'], val: 'OBSERVATOR CONSTRUCTII CLUJ' },
+      { keys: ['observator electro cluj', 'observator electro'], val: 'OBSERVATOR ELECTRO CLUJ' },
+      { keys: ['21 decembrie instalatii cluj', '21 decembrie', 'decembrie instalatii'], val: '21 DECEMBRIE INSTALATII CLUJ' },
+      { keys: ['muncII cluj', 'muncII'], val: 'MUNCII CLUJ' },
+      { keys: ['cunbm victoriei', 'victoriei'], val: 'CUNBM VICTORIEI' },
+      { keys: ['cunbm babes', 'babes'], val: 'CUNBM BABES' },
+      { keys: ['utcn airi', 'airi'], val: 'UTCN AIRI' },
+      // Fallbacks for existing mappings
       { keys: ['ac bar', 'acbar', 'baritiu', 'bar -', 'baritiu', 'bar'], val: 'Baritiu' },
       { keys: ['daic'], val: 'DAIC' },
       { keys: ['doroban', 'dorobantilor'], val: 'Dorobantilor' },
