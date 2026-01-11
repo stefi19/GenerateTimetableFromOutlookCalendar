@@ -86,12 +86,20 @@ export default function Departures() {
   const inferBuildingFromLocation = (loc) => {
     if (!loc) return ''
     const l = loc.toLowerCase()
-    
-    // Priority-based Baritiu parsing
-    if (l.includes('bt')) return 'BT Electro Cluj'
-    if (l.includes('ac bar')) return 'Baritiu Electro Cluj'
-    if (l.includes('cons bar')) return 'Baritiu Constructii Cluj'
-    
+
+    // Priority-based Baritiu parsing using token/word matches
+    // Match 'BT' as a whole word (e.g. 'BT', 'BT ', ' BT-')
+    if (/\bbt\b/.test(l)) return 'BT Electro Cluj'
+    // Match variations like 'AC Bar', 'ACBar', etc.
+    if (/\bac\s*bar\b/.test(l) || /acbar/.test(l)) return 'Baritiu Electro Cluj'
+    // Match variations for construction building -> 'Cons Bar', 'ConsBar', or both 'cons' and 'bar'
+    if (/\bcons\s*bar\b/.test(l) || (/\bcons\b/.test(l) && /\bbar\b/.test(l))) return 'Baritiu Constructii Cluj'
+
+    // If string mentions plain 'baritiu' but no qualifier, treat as unknown (avoid general 'Baritiu')
+    if (l.indexOf('baritiu') !== -1 && !l.match(/electro|construct/i) && !l.match(/bt|ac|cons/i)) {
+      return ''
+    }
+
     // Comprehensive building mapping
     const mapping = [
       { keys: ['rectorat'], val: 'Rectorat' },
