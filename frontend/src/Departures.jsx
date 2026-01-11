@@ -19,17 +19,21 @@ export default function Departures() {
     'Baritiu Electro Cluj': 'Baritiu Electro Cluj',
     'Baritiu Constructii Cluj': 'Baritiu Constructii Cluj',
     'Dorobantilor DECIDFR CLUJ': 'Dorobantilor DECIDFR CLUJ',
-    'OBSERVATOR CONSTRUCTII CLUJ': 'Observator Constructii Cluj',
-    'OBSERVATOR ELECTRO CLUJ': 'Observator Electro Cluj',
-    '21 DECEMBRIE INSTALATII CLUJ': '21 Decembrie Instalatii Cluj',
-    'MUNCII CLUJ': 'Muncii Cluj',
-    'CUNBM VICTORIEI': 'CUNBM Victoriei',
-    'CUNBM BABES': 'CUNBM Babes',
+    'OBSERVATOR CONSTRUCTII CLUJ': 'OBSERVATOR CONSTRUCTII CLUJ',
+    'OBSERVATOR ELECTRO CLUJ': 'OBSERVATOR ELECTRO CLUJ',
+    '21 DECEMBRIE INSTALATII CLUJ': '21 DECEMBRIE INSTALATII CLUJ',
+    'MUNCII CLUJ': 'MUNCII CLUJ',
+    'CUNBM VICTORIEI': 'CUNBM VICTORIEI',
+    'CUNBM BABES': 'CUNBM BABES',
     'UTCN AIRI': 'UTCN AIRI',
-    'DAIC': 'DAIC',
-    'Dorobantilor': 'Dorobanţilor', 
-    'Memorandumului': 'Memorandumului',
   }
+
+  const CANONICAL_BUILDINGS = [
+    'Rectorat', 'HUB Cluj', 'BT Electro Cluj', 'Daicoviciu Cluj',
+    'Baritiu Electro Cluj', 'Baritiu Constructii Cluj', 'Dorobantilor DECIDFR CLUJ',
+    'OBSERVATOR CONSTRUCTII CLUJ', 'OBSERVATOR ELECTRO CLUJ', '21 DECEMBRIE INSTALATII CLUJ',
+    'MUNCII CLUJ', 'CUNBM VICTORIEI', 'CUNBM BABES', 'UTCN AIRI'
+  ]
 
   // Helpers to extract room/building from free-form location strings when parser
   // didn't provide structured values from the backend.
@@ -129,6 +133,20 @@ export default function Departures() {
     return ''
   }
 
+  // Normalize a raw building string (from backend) into one of the canonical building names
+  const normalizeBuilding = (raw, loc) => {
+    if (!raw && !loc) return ''
+    const r = (raw || '').toString().trim()
+    // Check raw string against canonical names (case-insensitive substring)
+    for (const c of CANONICAL_BUILDINGS) {
+      if (r && r.toLowerCase().indexOf(c.toLowerCase()) !== -1) return c
+    }
+    // Fallback to infer from location/room
+    const inferred = inferBuildingFromLocation(loc || '')
+    if (CANONICAL_BUILDINGS.includes(inferred)) return inferred
+    return ''
+  }
+
   const fetchDepartures = useCallback(async () => {
     try {
       setLoading(true)
@@ -162,8 +180,8 @@ export default function Departures() {
       // didn't provide one). This powers the Building select dropdown.
       const buildingSet = new Set()
       evts.forEach(ev => {
-        const b = (ev.building && ev.building.trim()) || inferBuildingFromLocation(ev.location || ev.room || '')
-        if (b && b !== 'Baritiu') buildingSet.add(b)
+        const b = normalizeBuilding(ev.building, ev.location || ev.room)
+        if (b) buildingSet.add(b)
       })
       setBuildings(Array.from(buildingSet).sort())
       setLastUpdate(new Date())
