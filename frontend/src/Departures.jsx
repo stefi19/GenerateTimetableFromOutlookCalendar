@@ -137,14 +137,34 @@ export default function Departures() {
   }
 
   // Normalize a raw building string (from backend) into one of the canonical building names
+  // We try (in order): direct canonical substring match, disambiguation for ambiguous
+  // 'Baritiu' values by inspecting location/room, then falling back to inference.
   const normalizeBuilding = (raw, loc) => {
     if (!raw && !loc) return ''
     const r = (raw || '').toString().trim()
-    // Check raw string against canonical names (case-insensitive substring)
+    const rl = r.toLowerCase()
+    const ll = (loc || '').toString().toLowerCase()
+
+    // 1) Direct canonical substring match
     for (const c of CANONICAL_BUILDINGS) {
-      if (r && r.toLowerCase().indexOf(c.toLowerCase()) !== -1) return c
+      if (r && rl.indexOf(c.toLowerCase()) !== -1) return c
     }
-    // Fallback to infer from location/room
+
+    // 2) If raw mentions 'baritiu' but lacks qualifier, attempt to disambiguate
+    if (rl.indexOf('baritiu') !== -1) {
+      // If location/room hints at Electro (AC/IE/ETTI/IE/AC/ELECTRO/BT)
+      if (/\bac\b/.test(ll) || /\bie\b/.test(ll) || /\bett?ti\b/.test(ll) || ll.indexOf('electro') !== -1 || /(^|\W)bt(?=[^a-z]|$)/.test(ll)) {
+        return 'Baritiu Electro Cluj'
+      }
+      // If location/room hints at Constructii
+      if (ll.indexOf('construct') !== -1 || ll.indexOf('constructii') !== -1 || (ll.indexOf('cons') !== -1 && (ll.indexOf('bar') !== -1 || ll.indexOf('baritiu') !== -1))) {
+        return 'Baritiu Constructii Cluj'
+      }
+      // Default pragmatic mapping for bare 'Baritiu' -> Baritiu Electro
+      return 'Baritiu Electro Cluj'
+    }
+
+    // 3) Fallback to infer from location/room
     const inferred = inferBuildingFromLocation(loc || '')
     if (CANONICAL_BUILDINGS.includes(inferred)) return inferred
     return ''
@@ -208,7 +228,9 @@ export default function Departures() {
 
   const filteredEvents = events.filter(ev => {
     if (selectedBuilding) {
-      const evBuilding = (ev.building && ev.building.trim()) || inferBuildingFromLocation(ev.location || ev.room || '')
+      // Use normalized building for comparison so raw DB values and inferred
+      // values match the canonical list used in the dropdown.
+      const evBuilding = normalizeBuilding(ev.building, ev.location || ev.room || '')
       if (evBuilding !== selectedBuilding) return false
     }
     return true
