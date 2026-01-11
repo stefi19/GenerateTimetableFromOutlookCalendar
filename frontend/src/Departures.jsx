@@ -103,7 +103,6 @@ export default function Departures() {
       { keys: ['cunbm babes', 'babes'], val: 'CUNBM BABES' },
       { keys: ['utcn airi', 'airi'], val: 'UTCN AIRI' },
       // Fallbacks for existing mappings
-      { keys: ['ac bar', 'acbar'], val: 'Baritiu' },
       { keys: ['daic'], val: 'DAIC' },
       { keys: ['doroban', 'dorobantilor'], val: 'Dorobantilor' },
       { keys: ['memorandum'], val: 'Memorandumului' },
