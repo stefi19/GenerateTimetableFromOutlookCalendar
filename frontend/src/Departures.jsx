@@ -347,9 +347,9 @@ export default function Departures() {
           <div className="filter-group">
             <label>Building:</label>
             <select value={selectedBuilding} onChange={(e) => setSelectedBuilding(e.target.value)}>
-              <option value="" style={{ fontWeight: 'bold' }}>All Buildings</option>
+              <option value="" style={{ fontWeight: 'bold' }}>{'All Buildings'.toUpperCase()}</option>
               {buildings.map(b => (
-                <option key={b} value={b} style={{ fontWeight: 'bold' }}>{BUILDING_NAMES[b] || b}</option>
+                <option key={b} value={b} style={{ fontWeight: 'bold' }}>{(BUILDING_NAMES[b] || b).toUpperCase()}</option>
               ))}
             </select>
           </div>
