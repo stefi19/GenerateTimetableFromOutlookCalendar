@@ -155,7 +155,7 @@ export default function Departures() {
       const buildingSet = new Set()
       evts.forEach(ev => {
         const b = (ev.building && ev.building.trim()) || inferBuildingFromLocation(ev.location || ev.room || '')
-        if (b) buildingSet.add(b)
+        if (b && b !== 'Baritiu') buildingSet.add(b)
       })
       setBuildings(Array.from(buildingSet).sort())
       setLastUpdate(new Date())
