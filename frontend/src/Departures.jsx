@@ -91,13 +91,14 @@ export default function Departures() {
     if (!loc) return ''
     const l = loc.toLowerCase()
 
-    // Priority-based Baritiu parsing using token/word matches
-    // Match 'BT' as a whole word (e.g. 'BT', 'BT ', ' BT-')
-    if (/\bbt\b/.test(l)) return 'BT Electro Cluj'
-    // Match variations like 'AC Bar', 'ACBar', etc.
-    if (/\bac\s*bar\b/.test(l) || /acbar/.test(l)) return 'Baritiu Electro Cluj'
-    // Match variations for construction building -> 'Cons Bar', 'ConsBar', or both 'cons' and 'bar'
-    if (/\bcons\s*bar\b/.test(l) || (/\bcons\b/.test(l) && /\bbar\b/.test(l))) return 'Baritiu Constructii Cluj'
+  // Priority-based Baritiu parsing using token/word matches
+  // Match 'BT' as a whole word (e.g. 'BT', 'BT ', ' BT-')
+  if (/\bbt\b/.test(l)) return 'BT Electro Cluj'
+  // Match variations that should map to Baritiu Electro: AC Bar, ACBar, IE Bar, IEBar, ETTI Bar, etc.
+  // Examples: 'UTCN - AC Bar - Sala S42', 'IE BAr', 'ETTI Bar'
+  if (/\bac\s*bar\b/.test(l) || /acbar/.test(l) || /\bie\s*bar\b/.test(l) || /iebar/.test(l) || /\bett?ti\s*bar\b/.test(l) || /etti?bar/.test(l)) return 'Baritiu Electro Cluj'
+  // Match variations for construction building -> 'Cons Bar', 'ConsBar', or both 'cons' and 'bar'
+  if (/\bcons\s*bar\b/.test(l) || (/\bcons\b/.test(l) && /\bbar\b/.test(l))) return 'Baritiu Constructii Cluj'
 
     // If string mentions plain 'baritiu' but no qualifier, treat as unknown (avoid general 'Baritiu')
     if (l.indexOf('baritiu') !== -1 && !l.match(/electro|construct/i) && !l.match(/bt|ac|cons/i)) {
