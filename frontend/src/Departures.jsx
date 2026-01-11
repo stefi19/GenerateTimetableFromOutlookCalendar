@@ -28,7 +28,6 @@ export default function Departures() {
     'UTCN AIRI': 'UTCN AIRI',
     'DAIC': 'DAIC',
     'Dorobantilor': 'Dorobanţilor', 
-    'Observatorului': 'Observatorului',
     'Memorandumului': 'Memorandumului',
   }
 
@@ -107,7 +106,6 @@ export default function Departures() {
       { keys: ['ac bar', 'acbar'], val: 'Baritiu' },
       { keys: ['daic'], val: 'DAIC' },
       { keys: ['doroban', 'dorobantilor'], val: 'Dorobantilor' },
-      { keys: ['observator'], val: 'Observatorului' },
       { keys: ['memorandum'], val: 'Memorandumului' },
     ]
     for (const m of mapping) {
