@@ -92,13 +92,15 @@ export default function Departures() {
     const l = loc.toLowerCase()
 
   // Priority-based Baritiu parsing using token/word matches
-  // Match 'BT' as a whole word (e.g. 'BT', 'BT ', ' BT-')
-  if (/\bbt\b/.test(l)) return 'BT Electro Cluj'
+  // Match BT as a standalone token or as a prefix like 'BT123', 'BT-101', 'BT_101'
+  // We check for BT followed by a non-letter (digit, dash, underscore) or end-of-string so BT1/BT-1 match too.
+  if (/(^|\W)bt(?=[^a-z]|$)/.test(l)) return 'BT Electro Cluj'
   // Match variations that should map to Baritiu Electro: AC Bar, ACBar, IE Bar, IEBar, ETTI Bar, etc.
   // Examples: 'UTCN - AC Bar - Sala S42', 'IE BAr', 'ETTI Bar'
   if (/\bac\s*bar\b/.test(l) || /acbar/.test(l) || /\bie\s*bar\b/.test(l) || /iebar/.test(l) || /\bett?ti\s*bar\b/.test(l) || /etti?bar/.test(l)) return 'Baritiu Electro Cluj'
-  // Match variations for construction building -> 'Cons Bar', 'ConsBar', or both 'cons' and 'bar'
-  if (/\bcons\s*bar\b/.test(l) || (/\bcons\b/.test(l) && /\bbar\b/.test(l))) return 'Baritiu Constructii Cluj'
+  // Match variations for construction building -> detect explicit 'construct' or 'constructii',
+  // or patterns like 'cons' together with 'bar'/'baritiu' (e.g. 'Cons Bar', 'ConsBar', 'Cons Baritiu')
+  if (/\bconstruct/i.test(l) || /\bconstructii\b/.test(l) || (/\bcons\b/.test(l) && (/\bbar\b/.test(l) || /\bbaritiu\b/.test(l)))) return 'Baritiu Constructii Cluj'
 
     // If string mentions plain 'baritiu' but no qualifier, treat as unknown (avoid general 'Baritiu')
     if (l.indexOf('baritiu') !== -1 && !l.match(/electro|construct/i) && !l.match(/bt|ac|cons/i)) {
