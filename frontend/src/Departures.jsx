@@ -347,8 +347,10 @@ export default function Departures() {
           <div className="filter-group">
             <label>Building:</label>
             <select value={selectedBuilding} onChange={(e) => setSelectedBuilding(e.target.value)}>
-              <option value="">All Buildings</option>
-              {buildings.map(b => <option key={b} value={b}>{BUILDING_NAMES[b] || b}</option>)}
+              <option value="" style={{ fontWeight: 'bold' }}>All Buildings</option>
+              {buildings.map(b => (
+                <option key={b} value={b} style={{ fontWeight: 'bold' }}>{BUILDING_NAMES[b] || b}</option>
+              ))}
             </select>
           </div>
           <button onClick={fetchDepartures} className="btn-refresh" disabled={loading}>
