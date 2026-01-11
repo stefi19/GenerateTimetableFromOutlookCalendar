@@ -92,9 +92,10 @@ export default function Departures() {
     const l = loc.toLowerCase()
 
   // Priority-based Baritiu parsing using token/word matches
-  // Match BT as a standalone token or as a prefix like 'BT123', 'BT-101', 'BT_101'
-  // We check for BT followed by a non-letter (digit, dash, underscore) or end-of-string so BT1/BT-1 match too.
-  if (/(^|\W)bt(?=[^a-z]|$)/.test(l)) return 'BT Electro Cluj'
+  // Match BT as a standalone token or as a prefix like 'BT123', 'BT-101', 'BT_101',
+  // or dotted forms like 'B.T.'. Allow non-letter separators between B and T.
+  // This catches variants like 'BT101', 'BT-101', 'B.T.101', 'b_t101', 'Sala B.T. 12'.
+  if (/(^|[^a-z0-9])b[\W_]*t(?=[^a-z]|$)/.test(l)) return 'BT Electro Cluj'
   // Match variations that should map to Baritiu Electro: AC Bar, ACBar, IE Bar, IEBar, ETTI Bar, etc.
   // Examples: 'UTCN - AC Bar - Sala S42', 'IE BAr', 'ETTI Bar'
   if (/\bac\s*bar\b/.test(l) || /acbar/.test(l) || /\bie\s*bar\b/.test(l) || /iebar/.test(l) || /\bett?ti\s*bar\b/.test(l) || /etti?bar/.test(l)) return 'Baritiu Electro Cluj'
@@ -153,7 +154,7 @@ export default function Departures() {
     // 2) If raw mentions 'baritiu' but lacks qualifier, attempt to disambiguate
     if (rl.indexOf('baritiu') !== -1) {
       // If location/room hints at Electro (AC/IE/ETTI/IE/AC/ELECTRO/BT)
-      if (/\bac\b/.test(ll) || /\bie\b/.test(ll) || /\bett?ti\b/.test(ll) || ll.indexOf('electro') !== -1 || /(^|\W)bt(?=[^a-z]|$)/.test(ll)) {
+      if (/\bac\b/.test(ll) || /\bie\b/.test(ll) || /\bett?ti\b/.test(ll) || ll.indexOf('electro') !== -1 || /(^|[^a-z0-9])b[\W_]*t(?=[^a-z]|$)/.test(ll)) {
         return 'Baritiu Electro Cluj'
       }
       // If location/room hints at Constructii
