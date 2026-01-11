@@ -548,10 +548,7 @@ export default function Schedule() {
                 </div>
                 {groupedByDate[date].sort((a, b) => (a.start || '').localeCompare(b.start || '')).map((ev, idx) => (
                   <div key={idx} className="table-row" style={{ borderLeftColor: ev.color || '#003366' }}>
-                    <span className="col-time">
-                      {formatTime(ev.start)}
-                      {ev.end && formatTime(ev.end) !== '--:--' ? ` - ${formatTime(ev.end)}` : ''}
-                    </span>
+                    <span className="col-time">{formatTime(ev.start)}<small>{formatTime(ev.end)}</small></span>
                     <span className="col-title"><strong>{ev.display_title || ev.title}</strong>
                       {ev.subject && ev.subject !== ev.display_title && <small className="event-meta">{ev.subject}</small>}
                     </span>
