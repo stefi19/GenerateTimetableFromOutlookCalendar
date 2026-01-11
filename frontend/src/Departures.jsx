@@ -225,10 +225,7 @@ export default function Departures() {
             const status = isToday ? getTimeStatus(ev) : { text: '', className: '' }
             return (
               <div key={idx} className={'board-row ' + status.className} style={{ borderLeftColor: ev.color || '#003366' }}>
-                <span className="col-time">
-                  {formatTime(ev.start)}
-                  {ev.end && formatTime(ev.end) !== '--:--' ? ` - ${formatTime(ev.end)}` : ''}
-                </span>
+                <span className="col-time">{formatTime(ev.start)}<small>{formatTime(ev.end)}</small></span>
                 <span className="col-event">
                   <span className="event-title">{ev.display_title || ev.title}</span>
                   <span className="event-meta">{ev.calendar_name || ev.subject || ''}</span>
