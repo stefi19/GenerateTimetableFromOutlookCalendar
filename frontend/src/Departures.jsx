@@ -203,7 +203,9 @@ export default function Departures() {
       // didn't provide one). This powers the Building select dropdown.
       const buildingSet = new Set()
       evts.forEach(ev => {
-        const b = normalizeBuilding(ev.building, ev.location || ev.room)
+        // Combine location and room so clues in either field are considered
+        const combinedLoc = ((ev.location || '') + ' ' + (ev.room || '')).trim()
+        const b = normalizeBuilding(ev.building, combinedLoc)
         if (b) buildingSet.add(b)
       })
       setBuildings(Array.from(buildingSet).sort())
@@ -229,8 +231,11 @@ export default function Departures() {
   const filteredEvents = events.filter(ev => {
     if (selectedBuilding) {
       // Use normalized building for comparison so raw DB values and inferred
-      // values match the canonical list used in the dropdown.
-      const evBuilding = normalizeBuilding(ev.building, ev.location || ev.room || '')
+      // values match the canonical list used in the dropdown. Consider both
+      // location and room fields when normalizing so 'BT' in room names is
+      // detected.
+      const combinedLoc = ((ev.location || '') + ' ' + (ev.room || '')).trim()
+      const evBuilding = normalizeBuilding(ev.building, combinedLoc)
       if (evBuilding !== selectedBuilding) return false
     }
     return true
