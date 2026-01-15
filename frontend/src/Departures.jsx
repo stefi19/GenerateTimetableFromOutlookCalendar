@@ -10,6 +10,10 @@ export default function Departures() {
   const [calendarsMap, setCalendarsMap] = useState({})
   const [lastUpdate, setLastUpdate] = useState(null)
 
+  // Stage controls which subset of today's events to show on the Live board.
+  // 'now' = show in-progress events (or fallback few), 'upcoming' = show upcoming ones.
+  const [stage, setStage] = useState('now')
+
   // UTCN Buildings
   const BUILDING_NAMES = {
     'Rectorat': 'Rectorat',
@@ -233,6 +237,16 @@ export default function Departures() {
     return () => clearInterval(interval)
   }, [fetchDepartures])
 
+  // Toggle the display stage every 5 seconds: now <-> upcoming (reduced from 10s)
+  useEffect(() => {
+    const t = setInterval(() => {
+      setStage((s) => (s === 'now' ? 'upcoming' : 'now'))
+    }, 5000)
+    return () => clearInterval(t)
+  }, [])
+
+  // (Cycling behavior removed — restoring previous stable behavior per user request)
+
   // Refresh live board on midnight so 'Today' / 'Tomorrow' sections update
   useEffect(() => {
     const onMidnight = () => {
@@ -308,44 +322,65 @@ export default function Departures() {
     }
   }
 
-  const DepartureBoard = ({ events: evts, title, isToday }) => (
-    <div className="departure-section">
-      <div className="section-header">
-        <h3>{title}</h3>
-        <span className="event-count">{evts.length} events</span>
-      </div>
-      {evts.length === 0 ? (
-        <div className="no-events">No scheduled events</div>
-      ) : (
-        <div className="departure-board">
-          <div className="board-header">
-            <span className="col-time">Time</span>
-            <span className="col-event">Event</span>
-            <span className="col-prof">Professor</span>
-            <span className="col-room">Room</span>
-            <span className="col-group">Group/Year</span>
-            <span className="col-status">Status</span>
-          </div>
-          {evts.sort((a, b) => (a.start || '').localeCompare(b.start || '')).slice(0, 20).map((ev, idx) => {
-            const status = isToday ? getTimeStatus(ev) : { text: '', className: '' }
-            return (
-              <div key={idx} className={'board-row ' + status.className} style={{ borderLeftColor: ev.color || '#003366' }}>
-                <span className="col-time">{formatTime(ev.start)}<small>{formatTime(ev.end)}</small></span>
-                <span className="col-event">
-                  <span className="event-title">{ev.display_title || ev.title}</span>
-                  <span className="event-meta">{ev.calendar_name || ev.subject || ''}</span>
-                </span>
-                <span className="col-prof">{ev.professor || '-'}</span>
-                <span className="col-room">{ev.room || parseRoomFromLocation(ev.location) || '-'}</span>
-                <span className="col-group">{ev.group_display || parseGroupFromString((calendarsMap[ev.source] && (calendarsMap[ev.source].name)) || ev.calendar_name || ev.subject || ev.title) || '-'}</span>
-                <span className={'col-status ' + status.className}>{status.text}</span>
-              </div>
-            )
-          })}
+  const DepartureBoard = ({ events: evts, title, isToday }) => {
+    // Work on a sorted copy to avoid mutating props
+    const sorted = (evts || []).slice().sort((a, b) => (a.start || '').localeCompare(b.start || ''))
+
+    // Decide which events to display depending on the current stage
+    let displayList = sorted
+    if (isToday) {
+      if (stage === 'now') {
+        const nowList = sorted.filter(ev => getTimeStatus(ev).className === 'status-active')
+        if (nowList.length > 0) displayList = nowList
+        else displayList = sorted.slice(0, Math.min(4, sorted.length))
+      } else {
+        // upcoming stage: show first few upcoming (non-active)
+        const upcoming = sorted.filter(ev => getTimeStatus(ev).className !== 'status-active')
+        displayList = upcoming.slice(0, Math.min(6, upcoming.length))
+      }
+    } else {
+      displayList = sorted.slice(0, 20)
+    }
+
+    return (
+      <div className="departure-section">
+        <div className="section-header">
+          <h3>{title}</h3>
+          <span className="event-count">{(evts || []).length} events</span>
         </div>
-      )}
-    </div>
-  )
+        {displayList.length === 0 ? (
+          <div className="no-events">No scheduled events</div>
+        ) : (
+          <div className="departure-board">
+            <div className="board-header">
+              <span className="col-time">Time</span>
+              <span className="col-event">Event</span>
+              <span className="col-prof">Professor</span>
+              <span className="col-room">Room</span>
+              <span className="col-group">Group/Year</span>
+              <span className="col-status">Status</span>
+            </div>
+            {displayList.map((ev, idx) => {
+              const status = isToday ? getTimeStatus(ev) : { text: '', className: '' }
+              return (
+                <div key={idx} className={'board-row ' + status.className} style={{ borderLeftColor: ev.color || '#003366' }}>
+                  <span className="col-time">{formatTime(ev.start)}<small>{formatTime(ev.end)}</small></span>
+                  <span className="col-event">
+                    <span className="event-title">{ev.display_title || ev.title}</span>
+                    <span className="event-meta">{ev.calendar_name || ev.subject || ''}</span>
+                  </span>
+                  <span className="col-prof">{ev.professor || '-'}</span>
+                  <span className="col-room">{ev.room || parseRoomFromLocation(ev.location) || '-'}</span>
+                  <span className="col-group">{ev.group_display || parseGroupFromString((calendarsMap[ev.source] && (calendarsMap[ev.source].name)) || ev.calendar_name || ev.subject || ev.title) || '-'}</span>
+                  <span className={'col-status ' + status.className}>{status.text}</span>
+                </div>
+              )
+            })}
+          </div>
+        )}
+      </div>
+    )
+  }
 
   return (
     <div className="departures-container">

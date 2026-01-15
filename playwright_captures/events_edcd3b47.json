@@ -1,5 +1,48 @@
 [
   {
+    "start": "2026-01-20T10:00:00+02:00",
+    "end": "2026-01-20T12:00:00+02:00",
+    "title": "Colocviu Bsad Ea3",
+    "location": "UTCN - CUNBM Victor Babes 62A - Sala A4 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADlLC0agWmYRpvc3RxoNmGpAADs6aSV",
+        "Id": "AAMkADA2ZDU4YmI2LWM1OGMtNDJjZC05MmIyLTJiYzcwMDg5ZTZjOQBGAAAAAAA9YdUT3CNcQ5KQxY5HplSiBwDlLC0agWmYRpvc3RxoNmGpAAAAAAENAADlLC0agWmYRpvc3RxoNmGpAADs3JB5AAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADA2ZDU4YmI2LWM1OGMtNDJjZC05MmIyLTJiYzcwMDg5ZTZjOQAuAAAAAAA9YdUT3CNcQ5KQxY5HplSiAQDlLC0agWmYRpvc3RxoNmGpAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-20T10:00:00+02:00",
+      "End": "2026-01-20T12:00:00+02:00",
+      "Subject": "Colocviu BSAD EA3",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - CUNBM Victor Babes 62A - Sala A4 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    },
+    "source": "edcd3b47",
+    "color": "#6f42c1"
+  },
+  {
     "start": "2025-12-11T12:00:00+02:00",
     "end": "2025-12-11T15:00:00+02:00",
     "title": "Sedinta Senat 11 Decembrie",
@@ -38,6 +81,8 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "edcd3b47",
+    "color": "#6f42c1"
   }
 ]

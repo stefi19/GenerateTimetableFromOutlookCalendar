@@ -1,5 +1,177 @@
 [
   {
+    "start": "2026-01-13T08:00:00+02:00",
+    "end": "2026-01-13T10:00:00+02:00",
+    "title": "L11 Informatica Aplicata",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 404",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAznXw18iPQRb0y4dt0jPBxAADq4qEn",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgBGAAAAAABJMUVU6QoiS7QZ6ETP7tO0BwAznXw18iPQRb0y4dt0jPBxAAAAAAENAAAznXw18iPQRb0y4dt0jPBxAADqzJ4UAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgAuAAAAAABJMUVU6QoiS7QZ6ETP7tO0AQAznXw18iPQRb0y4dt0jPBxAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-13T08:00:00+02:00",
+      "End": "2026-01-13T10:00:00+02:00",
+      "Subject": "L11 Informatica Aplicata",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 404",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    },
+    "source": "41adc1ad",
+    "color": "#28a745"
+  },
+  {
+    "start": "2026-01-13T10:00:00+02:00",
+    "end": "2026-01-13T12:00:00+02:00",
+    "title": "L11 Informatica Aplicata",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 404",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAznXw18iPQRb0y4dt0jPBxAADq4qGG",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgBGAAAAAABJMUVU6QoiS7QZ6ETP7tO0BwAznXw18iPQRb0y4dt0jPBxAAAAAAENAAAznXw18iPQRb0y4dt0jPBxAADqzJ4VAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgAuAAAAAABJMUVU6QoiS7QZ6ETP7tO0AQAznXw18iPQRb0y4dt0jPBxAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-13T10:00:00+02:00",
+      "End": "2026-01-13T12:00:00+02:00",
+      "Subject": "L11 Informatica Aplicata",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 404",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    },
+    "source": "41adc1ad",
+    "color": "#28a745"
+  },
+  {
+    "start": "2026-01-14T08:00:00+02:00",
+    "end": "2026-01-14T10:00:00+02:00",
+    "title": "L11 Informatica Aplicata",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 404",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAznXw18iPQRb0y4dt0jPBxAADq4tWG",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgBGAAAAAABJMUVU6QoiS7QZ6ETP7tO0BwAznXw18iPQRb0y4dt0jPBxAAAAAAENAAAznXw18iPQRb0y4dt0jPBxAADqzJ4WAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgAuAAAAAABJMUVU6QoiS7QZ6ETP7tO0AQAznXw18iPQRb0y4dt0jPBxAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-14T08:00:00+02:00",
+      "End": "2026-01-14T10:00:00+02:00",
+      "Subject": "L11 Informatica Aplicata",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 404",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    },
+    "source": "41adc1ad",
+    "color": "#28a745"
+  },
+  {
+    "start": "2026-01-14T10:00:00+02:00",
+    "end": "2026-01-14T12:00:00+02:00",
+    "title": "L11 Informatica Aplicata",
+    "location": "UTCN - ETTI Observatorului 2 - Sala 404",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAznXw18iPQRb0y4dt0jPBxAADq4tWK",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgBGAAAAAABJMUVU6QoiS7QZ6ETP7tO0BwAznXw18iPQRb0y4dt0jPBxAAAAAAENAAAznXw18iPQRb0y4dt0jPBxAADqzJ4XAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkAGQ1OTFmOWQ4LWY3MmQtNGI1Yi05YjRiLWNjOWU0MTFkNTZjMgAuAAAAAABJMUVU6QoiS7QZ6ETP7tO0AQAznXw18iPQRb0y4dt0jPBxAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-14T10:00:00+02:00",
+      "End": "2026-01-14T12:00:00+02:00",
+      "Subject": "L11 Informatica Aplicata",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 404",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    },
+    "source": "41adc1ad",
+    "color": "#28a745"
+  },
+  {
     "start": "2025-12-03T16:00:00+02:00",
     "end": "2025-12-03T18:00:00+02:00",
     "title": "Recuperări",
@@ -38,7 +210,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "41adc1ad",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-03T18:00:00+02:00",
@@ -79,7 +253,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "41adc1ad",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-10T10:00:00+02:00",
@@ -120,7 +296,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "41adc1ad",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-10T16:00:00+02:00",
@@ -161,7 +339,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "41adc1ad",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-10T18:00:00+02:00",
@@ -202,7 +382,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "41adc1ad",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-11T12:00:00+02:00",
@@ -243,7 +425,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "41adc1ad",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-11T14:00:00+02:00",
@@ -284,7 +468,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "41adc1ad",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-11T16:00:00+02:00",
@@ -325,7 +511,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "41adc1ad",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-16T08:00:00+02:00",
@@ -366,7 +554,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "41adc1ad",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-16T10:00:00+02:00",
@@ -407,7 +597,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "41adc1ad",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-17T08:00:00+02:00",
@@ -448,7 +640,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "41adc1ad",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-17T10:00:00+02:00",
@@ -489,7 +683,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "41adc1ad",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-17T16:00:00+02:00",
@@ -530,7 +726,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "41adc1ad",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-17T18:00:00+02:00",
@@ -571,7 +769,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "41adc1ad",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-18T12:00:00+02:00",
@@ -612,7 +812,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "41adc1ad",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-18T14:00:00+02:00",
@@ -653,7 +855,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "41adc1ad",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-18T16:00:00+02:00",
@@ -694,6 +898,8 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "41adc1ad",
+    "color": "#28a745"
   }
 ]

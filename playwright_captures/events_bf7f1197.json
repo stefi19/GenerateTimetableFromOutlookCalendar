@@ -1,1 +1,88 @@
-[]
+[
+  {
+    "start": "2026-01-14T13:55:00+02:00",
+    "end": "2026-01-14T14:00:00+02:00",
+    "title": "Eu Si Nicu",
+    "location": "Microsoft Teams Meeting",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACTqyM0Ci//SKTGpXXkt53FAADSI4Tz",
+        "Id": "AAMkADBkMGQyMGJhLWVhY2MtNGVhMi04MmQ5LTFjMTE3Y2RkOWI5NgBGAAAAAAAPku+t8/ivRqs93uzKKuKDBwCTqyM0Ci//SKTGpXXkt53FAAAAAAENAACTqyM0Ci//SKTGpXXkt53FAADSCOD0AAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADBkMGQyMGJhLWVhY2MtNGVhMi04MmQ5LTFjMTE3Y2RkOWI5NgAuAAAAAAAPku+t8/ivRqs93uzKKuKDAQCTqyM0Ci//SKTGpXXkt53FAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-14T13:55:00+02:00",
+      "End": "2026-01-14T14:00:00+02:00",
+      "Subject": "Eu si nicu",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    },
+    "source": "bf7f1197",
+    "color": "#e83e8c"
+  },
+  {
+    "start": "2026-01-14T14:00:00+02:00",
+    "end": "2026-01-14T14:30:00+02:00",
+    "title": "CEVA",
+    "location": "Microsoft Teams Meeting",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAACTqyM0Ci//SKTGpXXkt53FAADSI4SS",
+        "Id": "AAMkADBkMGQyMGJhLWVhY2MtNGVhMi04MmQ5LTFjMTE3Y2RkOWI5NgBGAAAAAAAPku+t8/ivRqs93uzKKuKDBwCTqyM0Ci//SKTGpXXkt53FAAAAAAENAACTqyM0Ci//SKTGpXXkt53FAADSCODzAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADBkMGQyMGJhLWVhY2MtNGVhMi04MmQ5LTFjMTE3Y2RkOWI5NgAuAAAAAAAPku+t8/ivRqs93uzKKuKDAQCTqyM0Ci//SKTGpXXkt53FAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-14T14:00:00+02:00",
+      "End": "2026-01-14T14:30:00+02:00",
+      "Subject": "Ceva",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    },
+    "source": "bf7f1197",
+    "color": "#e83e8c"
+  }
+]

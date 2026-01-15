@@ -1,1030 +1,5 @@
 [
   {
-    "start": "2025-12-03T08:00:00+02:00",
-    "end": "2025-12-03T10:00:00+02:00",
-    "title": "Sensors",
-    "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADDW8/B",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3jH+5v1AAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAnQuM1QAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2025-12-03T08:00:00+02:00",
-      "End": "2025-12-03T10:00:00+02:00",
-      "Subject": "Sensors - Lab 2041/1",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2025-12-03T10:00:00+02:00",
-    "end": "2025-12-03T12:00:00+02:00",
-    "title": "Bsad",
-    "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADDW8/G",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3jH+5v1AAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAnQuM1gAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2025-12-03T10:00:00+02:00",
-      "End": "2025-12-03T12:00:00+02:00",
-      "Subject": "BSAD - Lab 2133/2",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2025-12-03T12:00:00+02:00",
-    "end": "2025-12-03T14:00:00+02:00",
-    "title": "Laborator Bsad",
-    "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAACkr4Yb",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3jH+5v1AAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAApJ99OwAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2025-12-03T12:00:00+02:00",
-      "End": "2025-12-03T14:00:00+02:00",
-      "Subject": "Laborator BSAD - gr. 2132/1",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2025-12-04T08:00:00+02:00",
-    "end": "2025-12-04T10:00:00+02:00",
-    "title": "Bsad",
-    "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAACdG5sC",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3jLIEWcAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAnQuM1wAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2025-12-04T08:00:00+02:00",
-      "End": "2025-12-04T10:00:00+02:00",
-      "Subject": "BSAD - Lab 2133/3",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2025-12-04T10:00:00+02:00",
-    "end": "2025-12-04T12:00:00+02:00",
-    "title": "Sensors",
-    "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAACdG5uC",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3jLIEWcAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAnQuM2AAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2025-12-04T10:00:00+02:00",
-      "End": "2025-12-04T12:00:00+02:00",
-      "Subject": "Sensors - Lab 2041/2",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2025-12-04T12:00:00+02:00",
-    "end": "2025-12-04T14:00:00+02:00",
-    "title": "Laborator Bsad",
-    "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAACkr4Z9",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3jLIEWcAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAApJ99PAAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2025-12-04T12:00:00+02:00",
-      "End": "2025-12-04T14:00:00+02:00",
-      "Subject": "Laborator BSAD - Gr. 2131/1",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2025-12-05T08:00:00+02:00",
-    "end": "2025-12-05T10:00:00+02:00",
-    "title": "Dasf",
-    "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADPWQwI",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3jORO9DAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAnQuM2QAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2025-12-05T08:00:00+02:00",
-      "End": "2025-12-05T10:00:00+02:00",
-      "Subject": "DASF - Lab 2031/3",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2025-12-05T10:00:00+02:00",
-    "end": "2025-12-05T12:00:00+02:00",
-    "title": "Dasf",
-    "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADPWQwJ",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3jORO9DAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAnQuM2gAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2025-12-05T10:00:00+02:00",
-      "End": "2025-12-05T12:00:00+02:00",
-      "Subject": "DASF - Lab 2031/2",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2025-12-05T12:00:00+02:00",
-    "end": "2025-12-05T14:00:00+02:00",
-    "title": "Sensors",
-    "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADPWQyc",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3jORO9DAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAnQuM2wAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2025-12-05T12:00:00+02:00",
-      "End": "2025-12-05T14:00:00+02:00",
-      "Subject": "Sensors - Lab 2041/3",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2025-12-10T08:00:00+02:00",
-    "end": "2025-12-10T10:00:00+02:00",
-    "title": "Sensors",
-    "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADDW8/B",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3jd/D+GAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAnQuM1QAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2025-12-10T08:00:00+02:00",
-      "End": "2025-12-10T10:00:00+02:00",
-      "Subject": "Sensors - Lab 2041/1",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2025-12-10T10:00:00+02:00",
-    "end": "2025-12-10T12:00:00+02:00",
-    "title": "Bsad",
-    "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADDW8/G",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3jd/D+GAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAnQuM1gAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2025-12-10T10:00:00+02:00",
-      "End": "2025-12-10T12:00:00+02:00",
-      "Subject": "BSAD - Lab 2133/2",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2025-12-10T12:00:00+02:00",
-    "end": "2025-12-10T14:00:00+02:00",
-    "title": "Laborator Bsad",
-    "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAACkr4Yb",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3jd/D+GAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAApJ99OwAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2025-12-10T12:00:00+02:00",
-      "End": "2025-12-10T14:00:00+02:00",
-      "Subject": "Laborator BSAD - gr. 2132/1",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2025-12-11T08:00:00+02:00",
-    "end": "2025-12-11T10:00:00+02:00",
-    "title": "Bsad",
-    "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAACdG5sC",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3jhIOktAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAnQuM1wAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2025-12-11T08:00:00+02:00",
-      "End": "2025-12-11T10:00:00+02:00",
-      "Subject": "BSAD - Lab 2133/3",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2025-12-11T10:00:00+02:00",
-    "end": "2025-12-11T12:00:00+02:00",
-    "title": "Sensors",
-    "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAACdG5uC",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3jhIOktAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAnQuM2AAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2025-12-11T10:00:00+02:00",
-      "End": "2025-12-11T12:00:00+02:00",
-      "Subject": "Sensors - Lab 2041/2",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2025-12-11T12:00:00+02:00",
-    "end": "2025-12-11T14:00:00+02:00",
-    "title": "Laborator Bsad",
-    "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAACkr4Z9",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3jhIOktAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAApJ99PAAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2025-12-11T12:00:00+02:00",
-      "End": "2025-12-11T14:00:00+02:00",
-      "Subject": "Laborator BSAD - Gr. 2131/1",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2025-12-12T08:00:00+02:00",
-    "end": "2025-12-12T10:00:00+02:00",
-    "title": "Dasf",
-    "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADPWQwI",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3jkRZLUAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAnQuM2QAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2025-12-12T08:00:00+02:00",
-      "End": "2025-12-12T10:00:00+02:00",
-      "Subject": "DASF - Lab 2031/3",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2025-12-12T10:00:00+02:00",
-    "end": "2025-12-12T12:00:00+02:00",
-    "title": "Dasf",
-    "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADPWQwJ",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3jkRZLUAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAnQuM2gAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2025-12-12T10:00:00+02:00",
-      "End": "2025-12-12T12:00:00+02:00",
-      "Subject": "DASF - Lab 2031/2",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2025-12-12T12:00:00+02:00",
-    "end": "2025-12-12T14:00:00+02:00",
-    "title": "Sensors",
-    "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADPWQyc",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3jkRZLUAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAnQuM2wAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2025-12-12T12:00:00+02:00",
-      "End": "2025-12-12T14:00:00+02:00",
-      "Subject": "Sensors - Lab 2041/3",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2025-12-15T14:00:00+02:00",
-    "end": "2025-12-15T16:00:00+02:00",
-    "title": "Dasf",
-    "location": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADR/tir",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgBGAAAAAAAofrjLIdfiSL8aOKdK0OdyBwBeTSQztUGpTbk4OKx7O/WdAAAAAAENAABeTSQztUGpTbk4OKx7O/WdAADPRGIsAAA="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2025-12-15T14:00:00+02:00",
-      "End": "2025-12-15T16:00:00+02:00",
-      "Subject": "DASF - Lab 2031/2",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Single",
-      "Location": {
-        "DisplayName": "Microsoft Teams Meeting; UTCN - ETTI Observatorului 2 - Sala 407",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2025-12-17T08:00:00+02:00",
-    "end": "2025-12-17T10:00:00+02:00",
-    "title": "Sensors",
-    "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADDW8/B",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3jz/OMXAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAnQuM1QAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2025-12-17T08:00:00+02:00",
-      "End": "2025-12-17T10:00:00+02:00",
-      "Subject": "Sensors - Lab 2041/1",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2025-12-17T10:00:00+02:00",
-    "end": "2025-12-17T12:00:00+02:00",
-    "title": "Bsad",
-    "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAADDW8/G",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3jz/OMXAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAnQuM1gAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2025-12-17T10:00:00+02:00",
-      "End": "2025-12-17T12:00:00+02:00",
-      "Subject": "BSAD - Lab 2133/2",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2025-12-17T12:00:00+02:00",
-    "end": "2025-12-17T14:00:00+02:00",
-    "title": "Laborator Bsad",
-    "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAACkr4Yb",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3jz/OMXAAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAApJ99OwAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2025-12-17T12:00:00+02:00",
-      "End": "2025-12-17T14:00:00+02:00",
-      "Subject": "Laborator BSAD - gr. 2132/1",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2025-12-18T08:00:00+02:00",
-    "end": "2025-12-18T10:00:00+02:00",
-    "title": "Bsad",
-    "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAACdG5sC",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3j3IYy+AAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAnQuM1wAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2025-12-18T08:00:00+02:00",
-      "End": "2025-12-18T10:00:00+02:00",
-      "Subject": "BSAD - Lab 2133/3",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2025-12-18T10:00:00+02:00",
-    "end": "2025-12-18T12:00:00+02:00",
-    "title": "Sensors",
-    "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAACdG5uC",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3j3IYy+AAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAAnQuM2AAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2025-12-18T10:00:00+02:00",
-      "End": "2025-12-18T12:00:00+02:00",
-      "Subject": "Sensors - Lab 2041/2",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2025-12-18T12:00:00+02:00",
-    "end": "2025-12-18T14:00:00+02:00",
-    "title": "Laborator Bsad",
-    "location": "UTCN - ETTI Observatorului 2 - Sala 407",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABeTSQztUGpTbk4OKx7O/WdAACkr4Z9",
-        "Id": "AAMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgFRAAgI3j3IYy+AAEYAAAAAKH64yyHX4ki/GjinStDncgcAXk0kM7VBqU25ODisezv1nQAAAAABDQAAXk0kM7VBqU25ODisezv1nQAApJ99PAAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADJjOWJhNDVhLTBlYWUtNDBjYi1iNzM4LTU4MzU2MDEzZTRmMgAuAAADKH64yyHX4ki/GjinStDncgEAXk0kM7VBqU25ODgArHs79Z0AAAIBDQAAAA==",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2025-12-18T12:00:00+02:00",
-      "End": "2025-12-18T14:00:00+02:00",
-      "Subject": "Laborator BSAD - Gr. 2131/1",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - ETTI Observatorului 2 - Sala 407",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
     "start": "2026-01-14T08:00:00+02:00",
     "end": "2026-01-14T10:00:00+02:00",
     "title": "Sensors",
@@ -1063,7 +38,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "e5492ff0",
+    "color": "#e83e8c"
   },
   {
     "start": "2026-01-14T10:00:00+02:00",
@@ -1104,7 +81,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "e5492ff0",
+    "color": "#e83e8c"
   },
   {
     "start": "2026-01-15T08:00:00+02:00",
@@ -1145,7 +124,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "e5492ff0",
+    "color": "#e83e8c"
   },
   {
     "start": "2026-01-15T10:00:00+02:00",
@@ -1186,7 +167,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "e5492ff0",
+    "color": "#e83e8c"
   },
   {
     "start": "2026-01-16T08:00:00+02:00",
@@ -1227,7 +210,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "e5492ff0",
+    "color": "#e83e8c"
   },
   {
     "start": "2026-01-16T10:00:00+02:00",
@@ -1268,7 +253,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "e5492ff0",
+    "color": "#e83e8c"
   },
   {
     "start": "2026-01-16T12:00:00+02:00",
@@ -1309,7 +296,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "e5492ff0",
+    "color": "#e83e8c"
   },
   {
     "start": "2026-01-21T08:00:00+02:00",
@@ -1350,7 +339,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "e5492ff0",
+    "color": "#e83e8c"
   },
   {
     "start": "2026-01-21T10:00:00+02:00",
@@ -1391,7 +382,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "e5492ff0",
+    "color": "#e83e8c"
   },
   {
     "start": "2026-01-22T08:00:00+02:00",
@@ -1432,7 +425,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "e5492ff0",
+    "color": "#e83e8c"
   },
   {
     "start": "2026-01-22T10:00:00+02:00",
@@ -1473,7 +468,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "e5492ff0",
+    "color": "#e83e8c"
   },
   {
     "start": "2026-01-23T08:00:00+02:00",
@@ -1514,7 +511,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "e5492ff0",
+    "color": "#e83e8c"
   },
   {
     "start": "2026-01-23T10:00:00+02:00",
@@ -1555,7 +554,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "e5492ff0",
+    "color": "#e83e8c"
   },
   {
     "start": "2026-01-23T12:00:00+02:00",
@@ -1596,6 +597,8 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "e5492ff0",
+    "color": "#e83e8c"
   }
 ]

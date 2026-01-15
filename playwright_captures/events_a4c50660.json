@@ -1,105 +1,23 @@
 [
   {
-    "start": "2025-12-09T22:00:00+00:00",
-    "end": "2025-12-10T22:00:00+00:00",
-    "title": "Închidere Proiect Erasmus ( Călin Neamțu)",
-    "location": "UTCN - Aula Centenar",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABi08+gh2WBQozrH5oY/UoKAAHxAMh4",
-        "Id": "AAMkAGZmNzFmNWQ0LWVmNzgtNDg0ZC1iODJiLTdjZDRlMjAzYWE5NwBGAAAAAACrkk8LBZRPTpXCNRR91RONBwBi08+gh2WBQozrH5oY/UoKAAAAAAENAABi08+gh2WBQozrH5oY/UoKAAHwpGIVAAA="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AAMkAGZmNzFmNWQ0LWVmNzgtNDg0ZC1iODJiLTdjZDRlMjAzYWE5NwAuAAAAAACrkk8LBZRPTpXCNRR91RONAQBi08+gh2WBQozrH5oY/UoKAAAAAAENAAA=",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2025-12-09T22:00:00Z",
-      "End": "2025-12-10T22:00:00Z",
-      "Subject": "Închidere proiect Erasmus ( Călin Neamțu)",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Free",
-      "CalendarItemType": "Single",
-      "Location": {
-        "DisplayName": "UTCN - Aula Centenar",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2025-12-11T09:00:00+00:00",
-    "end": "2025-12-11T11:00:00+00:00",
-    "title": "Teza Abilitare Andreea Hegyi",
-    "location": "",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABi08+gh2WBQozrH5oY/UoKAAHxAI3c",
-        "Id": "AAMkAGZmNzFmNWQ0LWVmNzgtNDg0ZC1iODJiLTdjZDRlMjAzYWE5NwBGAAAAAACrkk8LBZRPTpXCNRR91RONBwBi08+gh2WBQozrH5oY/UoKAAAAAAENAABi08+gh2WBQozrH5oY/UoKAAHwpGITAAA="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AAMkAGZmNzFmNWQ0LWVmNzgtNDg0ZC1iODJiLTdjZDRlMjAzYWE5NwAuAAAAAACrkk8LBZRPTpXCNRR91RONAQBi08+gh2WBQozrH5oY/UoKAAAAAAENAAA=",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2025-12-11T09:00:00Z",
-      "End": "2025-12-11T11:00:00Z",
-      "Subject": "Teza abilitare Andreea Hegyi",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Single",
-      "Location": {
-        "DisplayName": "",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2025-12-12T07:00:00+00:00",
-    "end": "2025-12-12T11:00:00+00:00",
+    "start": "2026-01-20T09:00:00+00:00",
+    "end": "2026-01-20T11:00:00+00:00",
     "title": "Nicolae Grumazescu",
     "location": "UTCN - Aula Centenar",
     "raw": {
       "__type": "CalendarItem:#Exchange",
       "ItemId": {
         "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABi08+gh2WBQozrH5oY/UoKAAHxAIoL",
-        "Id": "AAMkAGZmNzFmNWQ0LWVmNzgtNDg0ZC1iODJiLTdjZDRlMjAzYWE5NwBGAAAAAACrkk8LBZRPTpXCNRR91RONBwBi08+gh2WBQozrH5oY/UoKAAAAAAENAABi08+gh2WBQozrH5oY/UoKAAHwpGIRAAA="
+        "ChangeKey": "DwAAABYAAABi08+gh2WBQozrH5oY/UoKAAIeYLRt",
+        "Id": "AAMkAGZmNzFmNWQ0LWVmNzgtNDg0ZC1iODJiLTdjZDRlMjAzYWE5NwBGAAAAAACrkk8LBZRPTpXCNRR91RONBwBi08+gh2WBQozrH5oY/UoKAAAAAAENAABi08+gh2WBQozrH5oY/UoKAAId+BfjAAA="
       },
       "ParentFolderId": {
         "__type": "FolderId:#Exchange",
         "Id": "AAMkAGZmNzFmNWQ0LWVmNzgtNDg0ZC1iODJiLTdjZDRlMjAzYWE5NwAuAAAAAACrkk8LBZRPTpXCNRR91RONAQBi08+gh2WBQozrH5oY/UoKAAAAAAENAAA=",
         "ChangeKey": "AQAAAA=="
       },
-      "Start": "2025-12-12T07:00:00Z",
-      "End": "2025-12-12T11:00:00Z",
+      "Start": "2026-01-20T09:00:00Z",
+      "End": "2026-01-20T11:00:00Z",
       "Subject": "Nicolae Grumazescu ",
       "Sensitivity": "Normal",
       "FreeBusyType": "Busy",
@@ -120,33 +38,35 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "a4c50660",
+    "color": "#28a745"
   },
   {
-    "start": "2025-12-12T11:00:00+00:00",
-    "end": "2025-12-12T13:00:00+00:00",
-    "title": "ANDREI - Room Rusu",
-    "location": "",
+    "start": "2026-01-23T07:00:00+00:00",
+    "end": "2026-01-23T12:00:00+00:00",
+    "title": "Bogdan George Gherman",
+    "location": "UTCN - Aula Centenar",
     "raw": {
       "__type": "CalendarItem:#Exchange",
       "ItemId": {
         "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAABi08+gh2WBQozrH5oY/UoKAAHxAI3i",
-        "Id": "AAMkAGZmNzFmNWQ0LWVmNzgtNDg0ZC1iODJiLTdjZDRlMjAzYWE5NwBGAAAAAACrkk8LBZRPTpXCNRR91RONBwBi08+gh2WBQozrH5oY/UoKAAAAAAENAABi08+gh2WBQozrH5oY/UoKAAHwpGIUAAA="
+        "ChangeKey": "DwAAABYAAABi08+gh2WBQozrH5oY/UoKAAIeYFz5",
+        "Id": "AAMkAGZmNzFmNWQ0LWVmNzgtNDg0ZC1iODJiLTdjZDRlMjAzYWE5NwBGAAAAAACrkk8LBZRPTpXCNRR91RONBwBi08+gh2WBQozrH5oY/UoKAAAAAAENAABi08+gh2WBQozrH5oY/UoKAAId+BfgAAA="
       },
       "ParentFolderId": {
         "__type": "FolderId:#Exchange",
         "Id": "AAMkAGZmNzFmNWQ0LWVmNzgtNDg0ZC1iODJiLTdjZDRlMjAzYWE5NwAuAAAAAACrkk8LBZRPTpXCNRR91RONAQBi08+gh2WBQozrH5oY/UoKAAAAAAENAAA=",
         "ChangeKey": "AQAAAA=="
       },
-      "Start": "2025-12-12T11:00:00Z",
-      "End": "2025-12-12T13:00:00Z",
-      "Subject": "Andrei Rusu",
+      "Start": "2026-01-23T07:00:00Z",
+      "End": "2026-01-23T12:00:00Z",
+      "Subject": "Bogdan George Gherman ",
       "Sensitivity": "Normal",
       "FreeBusyType": "Busy",
       "CalendarItemType": "Single",
       "Location": {
-        "DisplayName": "",
+        "DisplayName": "UTCN - Aula Centenar",
         "PostalAddress": {
           "Street": null,
           "City": null,
@@ -161,7 +81,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "a4c50660",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-15T08:00:00+00:00",
@@ -202,7 +124,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "a4c50660",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-15T10:30:00+00:00",
@@ -243,7 +167,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "a4c50660",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-15T22:00:00+00:00",
@@ -284,7 +210,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "a4c50660",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-17T08:00:00+00:00",
@@ -325,6 +253,8 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "a4c50660",
+    "color": "#28a745"
   }
 ]

@@ -1,1 +1,45 @@
-[]
+[
+  {
+    "start": "2026-01-15T09:00:00+00:00",
+    "end": "2026-01-15T09:30:00+00:00",
+    "title": "Digitalisation (meeting) A. Ciupe",
+    "location": "UTCN - RECTORAT - Sala 115",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAA8jsvWJacOT62W+TbeGDmEAADdrNHa",
+        "Id": "AAMkAGQyYzVkMjhmLTE3MmQtNDM5NC1iYzQ1LWRlNzk1NTFkYWU5ZgBGAAAAAADPpyNNjWObSbEOwGE63BHBBwA8jsvWJacOT62W+TbeGDmEAAAAAAENAAA8jsvWJacOT62W+TbeGDmEAADdnWQGAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkAGQyYzVkMjhmLTE3MmQtNDM5NC1iYzQ1LWRlNzk1NQAxZGFlOWYALgAAA8+nI02NY5tJsQ7AYTrcEcEBADyOy9Ylpw5PrZb5Nt4YOYQAAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-15T09:00:00Z",
+      "End": "2026-01-15T09:30:00Z",
+      "Subject": "Digitalisation (meeting) A. Ciupe",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - RECTORAT - Sala 115",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    },
+    "source": "cc6f0acc",
+    "color": "#6f42c1"
+  }
+]

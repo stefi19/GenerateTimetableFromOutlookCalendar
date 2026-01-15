@@ -369,6 +369,31 @@ def health_check():
     }), 200
 
 
+@app.route('/log_js_error', methods=['POST'])
+def log_js_error():
+    """Receive JS error reports from the frontend for debugging.
+
+    This endpoint is intentionally minimal and only used during development
+    to capture client-side exceptions. It logs the JSON payload at ERROR
+    level and returns 204 No Content.
+    """
+    try:
+        payload = request.get_json(silent=True)
+    except Exception:
+        payload = None
+    if payload is None:
+        # If JSON parsing failed (common when navigator.sendBeacon was used
+        # without an application/json content-type), log the raw body as text
+        try:
+            raw = request.get_data(as_text=True)
+        except Exception:
+            raw = None
+        app.logger.error('JS CLIENT ERROR: payload_json=NULL, raw_body=%s', raw)
+    else:
+        app.logger.error('JS CLIENT ERROR: %s', json.dumps(payload, ensure_ascii=False))
+    return ('', 204)
+
+
 @app.route("/", methods=["GET"])
 def index():
     """Serve the React SPA frontend directly on root."""
@@ -1943,8 +1968,15 @@ def departures_view():
     except ImportError:
         from tools.event_parser import parse_location, parse_title, parse_event
     
-    # Building list for the dropdown
-    BUILDINGS = ['Baritiu', 'DAIC', 'Dorobantilor', 'Observatorului', 'Memorandumului']
+    # Building map for the dropdown (code -> display name)
+    # Template expects a mapping so it can call `buildings.items()` and `buildings.get()`.
+    BUILDINGS = {
+        'baritiu': 'Baritiu',
+        'daic': 'DAIC',
+        'dorobantilor': 'Dorobantilor',
+        'observatorului': 'Observatorului',
+        'memorandumului': 'Memorandumului',
+    }
     
     # Get selected building from query params (default: show all)
     selected_building = request.args.get('building', '').lower()

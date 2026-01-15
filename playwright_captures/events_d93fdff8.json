@@ -1,5 +1,48 @@
 [
   {
+    "start": "2026-01-23T08:00:00+02:00",
+    "end": "2026-01-23T12:00:00+02:00",
+    "title": "Doctorat Pusca Alexandru",
+    "location": "UTCN - ARMM Muncii 103-105 - Sala A13 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABdCKNoaJk/Tr2gDiqnYFXmAADjyp8P",
+        "Id": "AAMkADQ1NWRiZTU1LTliZTktNDBkYy04YzRiLTBiYzk0N2U1ZTljYgBGAAAAAAA9SsJh6QRNT5eRnhgCaFBPBwBdCKNoaJk/Tr2gDiqnYFXmAAAAAAENAABdCKNoaJk/Tr2gDiqnYFXmAADjuI2iAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADQ1NWRiZTU1LTliZTktNDBkYy04YzRiLTBiYzk0N2U1ZTljYgAuAAAAAAA9SsJh6QRNT5eRnhgCaFBPAQBdCKNoaJk/Tr2gDiqnYFXmAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-23T08:00:00+02:00",
+      "End": "2026-01-23T12:00:00+02:00",
+      "Subject": "Doctorat Pusca Alexandru",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ARMM Muncii 103-105 - Sala A13 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    },
+    "source": "d93fdff8",
+    "color": "#28a745"
+  },
+  {
     "start": "2025-12-03T11:30:00+02:00",
     "end": "2025-12-03T13:00:00+02:00",
     "title": "Ședință Consiliu Farmm",
@@ -38,7 +81,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "d93fdff8",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-12T00:00:00+02:00",
@@ -79,6 +124,8 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "d93fdff8",
+    "color": "#28a745"
   }
 ]

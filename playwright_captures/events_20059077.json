@@ -38,7 +38,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "20059077",
+    "color": "#e83e8c"
   },
   {
     "start": "2025-12-09T09:30:55+02:00",
@@ -79,6 +81,8 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "20059077",
+    "color": "#e83e8c"
   }
 ]

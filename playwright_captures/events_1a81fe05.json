@@ -1,24 +1,24 @@
 [
   {
-    "start": "2025-12-02T10:00:00+02:00",
-    "end": "2025-12-02T12:00:00+02:00",
-    "title": "CURS - Room Materiale",
+    "start": "2026-01-15T12:00:00+02:00",
+    "end": "2026-01-15T14:00:00+02:00",
+    "title": "Colocviu",
     "location": "UTCN - CUNBM Victor Babes 62A - Sala A3 (RO)",
     "raw": {
       "__type": "CalendarItem:#Exchange",
       "ItemId": {
         "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAAAqQiP9U07KR6YQxkZ+t+kNAADI05Go",
-        "Id": "AAMkAGZiOGQ0YjNhLTYyYWUtNDQyNC04MjUyLWQ2MDA1YzExM2E3ZQBGAAAAAABW72WsHD91So2RLvzWuq9bBwAqQiP9U07KR6YQxkZ+t+kNAAAAAAENAAAqQiP9U07KR6YQxkZ+t+kNAADIuiNbAAA="
+        "ChangeKey": "DwAAABYAAAAqQiP9U07KR6YQxkZ+t+kNAADjf/8A",
+        "Id": "AAMkAGZiOGQ0YjNhLTYyYWUtNDQyNC04MjUyLWQ2MDA1YzExM2E3ZQBGAAAAAABW72WsHD91So2RLvzWuq9bBwAqQiP9U07KR6YQxkZ+t+kNAAAAAAENAAAqQiP9U07KR6YQxkZ+t+kNAADjZI+zAAA="
       },
       "ParentFolderId": {
         "__type": "FolderId:#Exchange",
         "Id": "AAMkAGZiOGQ0YjNhLTYyYWUtNDQyNC04MjUyLWQ2MDA1YzExM2E3ZQAuAAAAAABW72WsHD91So2RLvzWuq9bAQAqQiP9U07KR6YQxkZ+t+kNAAAAAAENAAA=",
         "ChangeKey": "AQAAAA=="
       },
-      "Start": "2025-12-02T10:00:00+02:00",
-      "End": "2025-12-02T12:00:00+02:00",
-      "Subject": "Curs Materiale",
+      "Start": "2026-01-15T12:00:00+02:00",
+      "End": "2026-01-15T14:00:00+02:00",
+      "Subject": "Colocviu - Proiectarea bazelor de date",
       "Sensitivity": "Normal",
       "FreeBusyType": "Busy",
       "CalendarItemType": "Single",
@@ -38,88 +38,8 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
-  },
-  {
-    "start": "2025-12-09T10:00:00+02:00",
-    "end": "2025-12-09T12:00:00+02:00",
-    "title": "CURS - Room Materiale",
-    "location": "UTCN - CUNBM Victor Babes 62A - Sala A3",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAAAqQiP9U07KR6YQxkZ+t+kNAADNC7Z7",
-        "Id": "AAMkAGZiOGQ0YjNhLTYyYWUtNDQyNC04MjUyLWQ2MDA1YzExM2E3ZQBGAAAAAABW72WsHD91So2RLvzWuq9bBwAqQiP9U07KR6YQxkZ+t+kNAAAAAAENAAAqQiP9U07KR6YQxkZ+t+kNAADM8ji3AAA="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AAMkAGZiOGQ0YjNhLTYyYWUtNDQyNC04MjUyLWQ2MDA1YzExM2E3ZQAuAAAAAABW72WsHD91So2RLvzWuq9bAQAqQiP9U07KR6YQxkZ+t+kNAAAAAAENAAA=",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2025-12-09T10:00:00+02:00",
-      "End": "2025-12-09T12:00:00+02:00",
-      "Subject": "Curs Materiale",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Single",
-      "Location": {
-        "DisplayName": "UTCN - CUNBM Victor Babes 62A - Sala A3",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
-    "start": "2025-12-16T10:00:00+02:00",
-    "end": "2025-12-16T12:00:00+02:00",
-    "title": "CURS - Room Materiale",
-    "location": "UTCN - CUNBM Victor Babes 62A - Sala A3",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAAAqQiP9U07KR6YQxkZ+t+kNAADP07u+",
-        "Id": "AAMkAGZiOGQ0YjNhLTYyYWUtNDQyNC04MjUyLWQ2MDA1YzExM2E3ZQBGAAAAAABW72WsHD91So2RLvzWuq9bBwAqQiP9U07KR6YQxkZ+t+kNAAAAAAENAAAqQiP9U07KR6YQxkZ+t+kNAADPuiECAAA="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AAMkAGZiOGQ0YjNhLTYyYWUtNDQyNC04MjUyLWQ2MDA1YzExM2E3ZQAuAAAAAABW72WsHD91So2RLvzWuq9bAQAqQiP9U07KR6YQxkZ+t+kNAAAAAAENAAA=",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2025-12-16T10:00:00+02:00",
-      "End": "2025-12-16T12:00:00+02:00",
-      "Subject": "Curs Materiale",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Single",
-      "Location": {
-        "DisplayName": "UTCN - CUNBM Victor Babes 62A - Sala A3",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
+    },
+    "source": "1a81fe05",
+    "color": "#dc3545"
   }
 ]

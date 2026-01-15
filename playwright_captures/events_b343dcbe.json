@@ -1,46 +1,5 @@
 [
   {
-    "start": "2025-12-10T14:00:00+00:00",
-    "end": "2025-12-10T16:00:00+00:00",
-    "title": "Norina Elvira Herki",
-    "location": "UTCN - AC Bar - Sala BT 503",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAACFM8gD5r2YT69y2NnJ5iFRAAAEbZmL",
-        "Id": "AAMkADBiMDE5ZTE2LTFlNTItNGM4NC1hYjk2LTY3OGI1MWYwMjM3NAFRAAgI3jd/D+GAAEYAAAAA8O1kaZPab0yUVxYLFY6PZQcAhTPIA+a9mE+vctjZyeYhUQAAAAABDQAAhTPIA+a9mE+vctjZyeYhUQAABG21vAAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADBiMDE5ZTE2LTFlNTItNGM4NC1hYjk2LTY3OGI1MWYwMjM3NAAuAAAD8O1kaZPab0yUVxYLFY6PZQEAhTPIA+a9mE+vctjZyeYhUQAAAgENAAAA",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2025-12-10T14:00:00Z",
-      "End": "2025-12-10T16:00:00Z",
-      "Subject": "Norina Elvira Herki ",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - AC Bar - Sala BT 503",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
-  },
-  {
     "start": "2025-12-17T14:00:00+00:00",
     "end": "2025-12-17T16:00:00+00:00",
     "title": "Norina Elvira Herki",
@@ -79,6 +38,8 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "b343dcbe",
+    "color": "#e83e8c"
   }
 ]

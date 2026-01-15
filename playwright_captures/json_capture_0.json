@@ -3,8 +3,8 @@
     "ServerVersionInfo": {
       "MajorVersion": 15,
       "MinorVersion": 20,
-      "MajorBuildNumber": 9499,
-      "MinorBuildNumber": 6,
+      "MajorBuildNumber": 9520,
+      "MinorBuildNumber": 4,
       "Version": "V2018_01_18"
     }
   },
@@ -13,7 +13,7 @@
       "__type": "CalendarFolder:#Exchange",
       "FolderId": {
         "__type": "FolderId:#Exchange",
-        "Id": "AAMkADllNTJiZDE4LThkYzktNDkyMy05OGFhLTc2YTk2MjNhYTI0NQAuAAAAAADBlCo2sWfxRJ9de2sEkDzvAQCLuutE5u+fRJjwCUM0tDuYAAAAAAENAAA=",
+        "Id": "AAMkAGI0ZmI1NWZjLTAyOTMtNGY2ZC05Njk5LTdmMmYyOGIzMjA0MAAuAAAAAABzEbfzmEVvTpdFGZWx9hOFAQC8jIzH40jrRLSdcu65cYK2AAAAAAENAAA=",
         "ChangeKey": "AgAAAA=="
       },
       "Charm": "None",
@@ -320,7 +320,7 @@
         "BirthdayPrecision": null,
         "BposCompanyName": null,
         "CompanyName": null,
-        "UserDisplayName": "UTCN - Aula UTCN HUB",
+        "UserDisplayName": "UTCN - AIRI Observatorului 2 - Sala 104",
         "UserPrincipalName": null,
         "UserEmailAddress": null,
         "UserLegacyExchangeDN": null,
@@ -345,7 +345,7 @@
         "DefaultFolderIds": [
           {
             "__type": "FolderId:#Exchange",
-            "Id": "AAMkADllNTJiZDE4LThkYzktNDkyMy05OGFhLTc2YTk2MjNhYTI0NQAuAAAAAADBlCo2sWfxRJ9de2sEkDzvAQCLuutE5u+fRJjwCUM0tDuYAAAAAAENAAA=",
+            "Id": "AAMkAGI0ZmI1NWZjLTAyOTMtNGY2ZC05Njk5LTdmMmYyOGIzMjA0MAAuAAAAAABzEbfzmEVvTpdFGZWx9hOFAQC8jIzH40jrRLSdcu65cYK2AAAAAAENAAA=",
             "ChangeKey": "AgAAAA=="
           }
         ],

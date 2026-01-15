@@ -38,7 +38,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "c1eefcb6",
+    "color": "#e83e8c"
   },
   {
     "start": "2026-01-01T08:00:00+02:00",
@@ -79,7 +81,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "c1eefcb6",
+    "color": "#e83e8c"
   },
   {
     "start": "2026-01-02T12:00:00+02:00",
@@ -120,7 +124,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "c1eefcb6",
+    "color": "#e83e8c"
   },
   {
     "start": "2026-01-05T08:00:00+02:00",
@@ -161,7 +167,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "c1eefcb6",
+    "color": "#e83e8c"
   },
   {
     "start": "2026-01-08T08:00:00+02:00",
@@ -202,7 +210,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "c1eefcb6",
+    "color": "#e83e8c"
   },
   {
     "start": "2026-01-09T12:00:00+02:00",
@@ -243,7 +253,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "c1eefcb6",
+    "color": "#e83e8c"
   },
   {
     "start": "2026-01-12T08:00:00+02:00",
@@ -284,7 +296,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "c1eefcb6",
+    "color": "#e83e8c"
   },
   {
     "start": "2026-01-15T08:00:00+02:00",
@@ -325,7 +339,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "c1eefcb6",
+    "color": "#e83e8c"
   },
   {
     "start": "2026-01-16T12:00:00+02:00",
@@ -366,7 +382,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "c1eefcb6",
+    "color": "#e83e8c"
   },
   {
     "start": "2026-01-19T08:00:00+02:00",
@@ -407,7 +425,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "c1eefcb6",
+    "color": "#e83e8c"
   },
   {
     "start": "2026-01-22T08:00:00+02:00",
@@ -448,7 +468,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "c1eefcb6",
+    "color": "#e83e8c"
   },
   {
     "start": "2026-01-23T12:00:00+02:00",
@@ -489,6 +511,8 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "c1eefcb6",
+    "color": "#e83e8c"
   }
 ]

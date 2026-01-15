@@ -1,1 +1,45 @@
-[]
+[
+  {
+    "start": "2026-01-15T16:00:00+02:00",
+    "end": "2026-01-15T22:00:00+02:00",
+    "title": "CCP - Room S.G.",
+    "location": "Microsoft Teams Meeting; UTCN - AC Bar - Sala BT 605",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAB2yrlL/t3xRoM55YNO4r2BAADrkA3V",
+        "Id": "AAMkADRkMzU3MTY1LTFkNDYtNGExYS05NDRmLWJlNjcyYmE2MmI4NABGAAAAAACmU5zb7MYKS6Uvq+Opwn8xBwB2yrlL/t3xRoM55YNO4r2BAAAAAAENAAB2yrlL/t3xRoM55YNO4r2BAADreeTOAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADRkMzU3MTY1LTFkNDYtNGExYS05NDQAZi1iZTY3MmJhNjJiODQALgAAA6ZTnNvsxgpLpS+r46nCfzEBAHbKuUv+3fFGgznlg07ivYEAAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-15T16:00:00+02:00",
+      "End": "2026-01-15T22:00:00+02:00",
+      "Subject": "CCP S.G.",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "Microsoft Teams Meeting; UTCN - AC Bar - Sala BT 605",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    },
+    "source": "4e36a558",
+    "color": "#dc3545"
+  }
+]

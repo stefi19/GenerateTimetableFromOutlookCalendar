@@ -38,7 +38,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "13452be9",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-01T08:00:00+02:00",
@@ -79,7 +81,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "13452be9",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-01T14:00:00+02:00",
@@ -120,7 +124,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "13452be9",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-01T16:00:00+02:00",
@@ -161,7 +167,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "13452be9",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-02T08:00:00+02:00",
@@ -202,7 +210,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "13452be9",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-03T08:00:00+02:00",
@@ -243,7 +253,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "13452be9",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-03T14:00:00+02:00",
@@ -284,7 +296,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "13452be9",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-04T08:00:00+02:00",
@@ -325,7 +339,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "13452be9",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-05T08:00:00+02:00",
@@ -366,7 +382,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "13452be9",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-06T08:00:00+02:00",
@@ -407,7 +425,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "13452be9",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-07T08:00:00+02:00",
@@ -448,7 +468,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "13452be9",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-08T08:00:00+02:00",
@@ -489,7 +511,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "13452be9",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-08T14:00:00+02:00",
@@ -530,7 +554,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "13452be9",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-08T16:00:00+02:00",
@@ -571,7 +597,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "13452be9",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-09T08:00:00+02:00",
@@ -612,7 +640,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "13452be9",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-10T08:00:00+02:00",
@@ -653,7 +683,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "13452be9",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-10T14:00:00+02:00",
@@ -694,7 +726,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "13452be9",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-11T08:00:00+02:00",
@@ -735,7 +769,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "13452be9",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-12T08:00:00+02:00",
@@ -776,7 +812,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "13452be9",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-13T08:00:00+02:00",
@@ -817,7 +855,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "13452be9",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-14T08:00:00+02:00",
@@ -858,7 +898,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "13452be9",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-15T08:00:00+02:00",
@@ -899,7 +941,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "13452be9",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-15T14:00:00+02:00",
@@ -940,7 +984,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "13452be9",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-15T16:00:00+02:00",
@@ -981,7 +1027,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "13452be9",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-16T08:00:00+02:00",
@@ -1022,7 +1070,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "13452be9",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-17T08:00:00+02:00",
@@ -1063,7 +1113,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "13452be9",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-17T14:00:00+02:00",
@@ -1104,7 +1156,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "13452be9",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-18T08:00:00+02:00",
@@ -1145,7 +1199,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "13452be9",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-19T08:00:00+02:00",
@@ -1186,6 +1242,8 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "13452be9",
+    "color": "#28a745"
   }
 ]

@@ -1,5 +1,91 @@
 [
   {
+    "start": "2026-01-12T08:00:00+02:00",
+    "end": "2026-01-12T10:00:00+02:00",
+    "title": "Course 13 + Course 14",
+    "location": "UTCN - ETTI Bar - Sala 368",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAB7quVMnwMuSrpjqypsvtxHAADlOfFL",
+        "Id": "AAMkADIwNjk2Y2QwLTM4NTQtNGNmMC1iOTU3LTI1YzliZDZhZDQzNABGAAAAAACX/aUNJGLuRJ9NutYI9gBLBwB7quVMnwMuSrpjqypsvtxHAAAAAAENAAB7quVMnwMuSrpjqypsvtxHAADlJYjIAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADIwNjk2Y2QwLTM4NTQtNGNmMC1iOTU3LTI1YzliZDZhZDQzNAAuAAADl/2lDSRi7kSfTbrWCPYASwEAe6rlTJ8DLkq6Y6sqbL7cRwAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-12T08:00:00+02:00",
+      "End": "2026-01-12T10:00:00+02:00",
+      "Subject": "COURSE 13 + COURSE 14",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Bar - Sala 368",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    },
+    "source": "64dde0d0",
+    "color": "#28a745"
+  },
+  {
+    "start": "2026-01-14T14:00:00+02:00",
+    "end": "2026-01-14T16:00:00+02:00",
+    "title": "C13",
+    "location": "UTCN - ETTI Bar - Sala 368",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAB7quVMnwMuSrpjqypsvtxHAADqZl0L",
+        "Id": "AAMkADIwNjk2Y2QwLTM4NTQtNGNmMC1iOTU3LTI1YzliZDZhZDQzNABGAAAAAACX/aUNJGLuRJ9NutYI9gBLBwB7quVMnwMuSrpjqypsvtxHAAAAAAENAAB7quVMnwMuSrpjqypsvtxHAADqUdFyAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADIwNjk2Y2QwLTM4NTQtNGNmMC1iOTU3LTI1YzliZDZhZDQzNAAuAAADl/2lDSRi7kSfTbrWCPYASwEAe6rlTJ8DLkq6Y6sqbL7cRwAAAgENAAAA",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-14T14:00:00+02:00",
+      "End": "2026-01-14T16:00:00+02:00",
+      "Subject": "C13 - TV&Video Expected Future Developments",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - ETTI Bar - Sala 368",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    },
+    "source": "64dde0d0",
+    "color": "#28a745"
+  },
+  {
     "start": "2025-12-03T14:00:00+02:00",
     "end": "2025-12-03T16:00:00+02:00",
     "title": "C10",
@@ -38,7 +124,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "64dde0d0",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-08T08:00:00+02:00",
@@ -79,7 +167,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "64dde0d0",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-10T14:00:00+02:00",
@@ -120,7 +210,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "64dde0d0",
+    "color": "#28a745"
   },
   {
     "start": "2025-12-17T14:00:00+02:00",
@@ -161,47 +253,8 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
-  },
-  {
-    "start": "2026-01-13T10:00:00+02:00",
-    "end": "2026-01-13T12:00:00+02:00",
-    "title": "Tehn. Web",
-    "location": "UTCN - ETTI Bar - Sala 368 (RO)",
-    "raw": {
-      "__type": "CalendarItem:#Exchange",
-      "ItemId": {
-        "__type": "ItemId:#Exchange",
-        "ChangeKey": "DwAAABYAAAB7quVMnwMuSrpjqypsvtxHAADVhzeT",
-        "Id": "AAMkADIwNjk2Y2QwLTM4NTQtNGNmMC1iOTU3LTI1YzliZDZhZDQzNAFRAAgI3lI2se0AAEYAAAAAl/2lDSRi7kSfTbrWCPYASwcAe6rlTJ8DLkq6Y6sqbL7cRwAAAAABDQAAe6rlTJ8DLkq6Y6sqbL7cRwAAoD51OwAAEA=="
-      },
-      "ParentFolderId": {
-        "__type": "FolderId:#Exchange",
-        "Id": "AQMkADIwNjk2Y2QwLTM4NTQtNGNmMC1iOTU3LTI1YzliZDZhZDQzNAAuAAADl/2lDSRi7kSfTbrWCPYASwEAe6rlTJ8DLkq6Y6sqbL7cRwAAAgENAAAA",
-        "ChangeKey": "AQAAAA=="
-      },
-      "Start": "2026-01-13T10:00:00+02:00",
-      "End": "2026-01-13T12:00:00+02:00",
-      "Subject": "Tehn. Web - C",
-      "Sensitivity": "Normal",
-      "FreeBusyType": "Busy",
-      "CalendarItemType": "Occurrence",
-      "Location": {
-        "DisplayName": "UTCN - ETTI Bar - Sala 368 (RO)",
-        "PostalAddress": {
-          "Street": null,
-          "City": null,
-          "State": null,
-          "Country": null,
-          "PostalCode": null,
-          "PostOfficeBox": null,
-          "Type": "Home",
-          "LocationSource": "None"
-        },
-        "IdType": "Unknown",
-        "LocationType": "Unknown"
-      },
-      "Charm": "None"
-    }
+    },
+    "source": "64dde0d0",
+    "color": "#28a745"
   }
 ]

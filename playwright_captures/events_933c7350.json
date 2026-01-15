@@ -1,1 +1,45 @@
-[]
+[
+  {
+    "start": "2026-01-13T11:00:00+02:00",
+    "end": "2026-01-13T11:30:00+02:00",
+    "title": "Test Booking For Timetable.utcluj.ro",
+    "location": "UTCN - BRD HUB (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAABVmwXJI82YTLjQVA+upEBiAAGmsafd",
+        "Id": "AAMkADA1YWZmMmM3LWZmY2MtNDM4Ny1iZDk0LTgwNmFkMTBiYjg0YwBGAAAAAAAzsJiXHk9kQ5tkXGsDX0weBwBVmwXJI82YTLjQVA+upEBiAAAAAAENAABVmwXJI82YTLjQVA+upEBiAAGmkYtcAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AAMkADA1YWZmMmM3LWZmY2MtNDM4Ny1iZDk0LTgwNmFkMTBiYjg0YwAuAAAAAAAzsJiXHk9kQ5tkXGsDX0weAQBVmwXJI82YTLjQVA+upEBiAAAAAAENAAA=",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-13T11:00:00+02:00",
+      "End": "2026-01-13T11:30:00+02:00",
+      "Subject": "test booking for timetable.utcluj.ro",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - BRD HUB (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    },
+    "source": "933c7350",
+    "color": "#e83e8c"
+  }
+]

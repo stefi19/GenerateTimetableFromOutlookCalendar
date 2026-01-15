@@ -1,1 +1,88 @@
-[]
+[
+  {
+    "start": "2026-01-12T14:00:00+02:00",
+    "end": "2026-01-12T16:00:00+02:00",
+    "title": "Artificial Intelligence",
+    "location": "UTCN - INSTA Blvd. 21 Decembrie 1989 - Sala P01 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADUPeEc+gAnSo6KYceAkrVtAADmTPTU",
+        "Id": "AAMkAGIyNGMxMzgzLTNlODAtNGM1Zi1hM2FkLTExYzM0ZWRmNDAxNgBGAAAAAAAm7BXu5bCEQJwcuWAUJzibBwDUPeEc+gAnSo6KYceAkrVtAAAAAAENAADUPeEc+gAnSo6KYceAkrVtAADmLimUAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkAGIyNGMxMzgzLTNlODAtNGM1Zi1hM2FkLTExAGMzNGVkZjQwMTYALgAAAybsFe7lsIRAnBy5YBQnOJsBANQ94Rz6ACdKjophx4CStW0AAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-12T14:00:00+02:00",
+      "End": "2026-01-12T16:00:00+02:00",
+      "Subject": "Artificial Intelligence [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - INSTA Blvd. 21 Decembrie 1989 - Sala P01 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    },
+    "source": "bdce78dd",
+    "color": "#e83e8c"
+  },
+  {
+    "start": "2026-01-19T14:00:00+02:00",
+    "end": "2026-01-19T16:00:00+02:00",
+    "title": "Artificial Intelligence Lecture",
+    "location": "UTCN - INSTA Blvd. 21 Decembrie 1989 - Sala P01 (RO)",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAADUPeEc+gAnSo6KYceAkrVtAADmTPFe",
+        "Id": "AAMkAGIyNGMxMzgzLTNlODAtNGM1Zi1hM2FkLTExYzM0ZWRmNDAxNgBGAAAAAAAm7BXu5bCEQJwcuWAUJzibBwDUPeEc+gAnSo6KYceAkrVtAAAAAAENAADUPeEc+gAnSo6KYceAkrVtAADmLimVAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkAGIyNGMxMzgzLTNlODAtNGM1Zi1hM2FkLTExAGMzNGVkZjQwMTYALgAAAybsFe7lsIRAnBy5YBQnOJsBANQ94Rz6ACdKjophx4CStW0AAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-19T14:00:00+02:00",
+      "End": "2026-01-19T16:00:00+02:00",
+      "Subject": "Artificial Intelligence Lecture [In-person]",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - INSTA Blvd. 21 Decembrie 1989 - Sala P01 (RO)",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    },
+    "source": "bdce78dd",
+    "color": "#e83e8c"
+  }
+]

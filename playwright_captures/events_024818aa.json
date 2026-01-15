@@ -38,7 +38,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "024818aa",
+    "color": "#003366"
   },
   {
     "start": "2025-12-04T09:30:00+02:00",
@@ -79,7 +81,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "024818aa",
+    "color": "#003366"
   },
   {
     "start": "2025-12-11T09:30:00+02:00",
@@ -120,7 +124,9 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "024818aa",
+    "color": "#003366"
   },
   {
     "start": "2025-12-18T09:30:00+02:00",
@@ -161,6 +167,8 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "024818aa",
+    "color": "#003366"
   }
 ]

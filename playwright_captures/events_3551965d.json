@@ -38,6 +38,51 @@
         "LocationType": "Unknown"
       },
       "Charm": "None"
-    }
+    },
+    "source": "3551965d",
+    "color": "#dc3545"
+  },
+  {
+    "start": "2026-01-12T16:00:00+02:00",
+    "end": "2026-01-12T16:00:00+02:00",
+    "title": "Adrian Petru Groza",
+    "location": "UTCN - AIRI Observatorului 2 - Sala 103",
+    "raw": {
+      "__type": "CalendarItem:#Exchange",
+      "ItemId": {
+        "__type": "ItemId:#Exchange",
+        "ChangeKey": "DwAAABYAAAAVGt+DF/vPRJLL1pzeYcRwAAApPAmI",
+        "Id": "AAMkADAxZjVmM2RiLWY0OGQtNGVkYy1iNTAyLTYxOTBjN2E0MDA0MQBGAAAAAACfiglVvcbQQaYfUwGoCj0XBwAVGt+DF/vPRJLL1pzeYcRwAAAAAAENAAAVGt+DF/vPRJLL1pzeYcRwAAApOGQSAAA="
+      },
+      "ParentFolderId": {
+        "__type": "FolderId:#Exchange",
+        "Id": "AQMkADAxZjVmM2RiLWY0OGQtNGVkYy1iNTAyLTYxOTBjN2E0MDAANDEALgAAA5+KCVW9xtBBph9TAagKPRcBABUa34MX+89EksvWnN5hxHAAAAIBDQAAAA==",
+        "ChangeKey": "AQAAAA=="
+      },
+      "Start": "2026-01-12T16:00:00+02:00",
+      "End": "2026-01-12T16:00:00+02:00",
+      "Subject": "Adrian Petru Groza ",
+      "Sensitivity": "Normal",
+      "FreeBusyType": "Busy",
+      "CalendarItemType": "Single",
+      "Location": {
+        "DisplayName": "UTCN - AIRI Observatorului 2 - Sala 103",
+        "PostalAddress": {
+          "Street": null,
+          "City": null,
+          "State": null,
+          "Country": null,
+          "PostalCode": null,
+          "PostOfficeBox": null,
+          "Type": "Home",
+          "LocationSource": "None"
+        },
+        "IdType": "Unknown",
+        "LocationType": "Unknown"
+      },
+      "Charm": "None"
+    },
+    "source": "3551965d",
+    "color": "#dc3545"
   }
 ]
