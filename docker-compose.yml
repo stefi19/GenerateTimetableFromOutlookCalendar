@@ -6,7 +6,8 @@ services:
     container_name: utcn-timetable
     restart: unless-stopped
     ports:
-      - "5000:5000"
+      # Allow overriding the host port via HOST_PORT env var, default to 5000
+      - "${HOST_PORT:-5000}:5000"
     volumes:
       # Persist database and captures
       - timetable_data:/app/data
