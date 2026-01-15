@@ -25,3 +25,8 @@ venv/
 .venv/
 /.venv/
 /venv/
+/.pytest_cache/
+backend.log
+playwright_captures/
+data/
+.DS_Store
