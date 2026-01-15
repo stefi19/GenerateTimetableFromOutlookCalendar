@@ -73,63 +73,74 @@ def variants_for_url(u):
 
 
 # build csv map, but detect ambiguous keys
-csv_map = {}
-ambiguous = set()
-rows_seen = 0
-with open(csv_path, newline='', encoding='utf-8') as f:
-    reader = csv.reader(f)
-    for row in reader:
-        rows_seen += 1
-        if not row or len(row) < 6:
-            continue
-        email = row[1].strip()
-        html = row[4].strip() if len(row) > 4 else ''
-        ics = row[5].strip() if len(row) > 5 else ''
-        for source in (html, ics):
-            if not source:
+def build_csv_map(csv_path):
+    csv_map = {}
+    ambiguous = set()
+    rows_seen = 0
+    with open(csv_path, newline='', encoding='utf-8') as f:
+        reader = csv.reader(f)
+        for row in reader:
+            rows_seen += 1
+            if not row or len(row) < 6:
                 continue
-            for k in variants_for_url(source):
-                if k in csv_map:
-                    if csv_map[k] != email:
-                        ambiguous.add(k)
-                        csv_map[k] = None
-                else:
-                    csv_map[k] = email
+            email = row[1].strip()
+            html = row[4].strip() if len(row) > 4 else ''
+            ics = row[5].strip() if len(row) > 5 else ''
+            for source in (html, ics):
+                if not source:
+                    continue
+                for k in variants_for_url(source):
+                    if k in csv_map:
+                        if csv_map[k] != email:
+                            ambiguous.add(k)
+                            csv_map[k] = None
+                    else:
+                        csv_map[k] = email
+    return csv_map, ambiguous, rows_seen
 
-# now scan DB and update email_address for unambiguous matches
-conn = sqlite3.connect(db_path)
-cur = conn.cursor()
-cur.execute('SELECT id, url, email_address FROM calendars ORDER BY id')
-rows = cur.fetchall()
-updates = []
-matched = 0
-for rid, url, cur_email in rows:
-    if not url:
-        continue
-    found_email = None
-    tried_keys = set()
-    for k in variants_for_url(url):
-        tried_keys.add(k)
-        if k in ambiguous:
-            # skip ambiguous
-            continue
-        if k in csv_map and csv_map[k]:
-            found_email = csv_map[k]
-            break
-    if found_email:
-        # only update if different
-        if (cur_email or '').strip() != found_email:
-            cur.execute('UPDATE calendars SET email_address=? WHERE id=?', (found_email, rid))
-            updates.append({'id': rid, 'old': cur_email, 'new': found_email, 'tried': list(tried_keys)[:6]})
-        matched += 1
 
-conn.commit()
-print(json.dumps({
-    'csv_rows': rows_seen,
-    'csv_keys': len(csv_map),
-    'ambiguous_keys': len(ambiguous),
-    'total_db_calendars': len(rows),
-    'matched_candidates': matched,
-    'updates': updates[:200]
-}, ensure_ascii=False, indent=2))
-conn.close()
+def main():
+    csv_map, ambiguous, rows_seen = build_csv_map(csv_path)
+    # now scan DB and update email_address for unambiguous matches
+    conn = sqlite3.connect(db_path)
+    try:
+        cur = conn.cursor()
+        cur.execute('SELECT id, url, email_address FROM calendars ORDER BY id')
+        rows = cur.fetchall()
+        updates = []
+        matched = 0
+        for rid, url, cur_email in rows:
+            if not url:
+                continue
+            found_email = None
+            tried_keys = set()
+            for k in variants_for_url(url):
+                tried_keys.add(k)
+                if k in ambiguous:
+                    # skip ambiguous
+                    continue
+                if k in csv_map and csv_map[k]:
+                    found_email = csv_map[k]
+                    break
+            if found_email:
+                # only update if different
+                if (cur_email or '').strip() != found_email:
+                    cur.execute('UPDATE calendars SET email_address=? WHERE id=?', (found_email, rid))
+                    updates.append({'id': rid, 'old': cur_email, 'new': found_email, 'tried': list(tried_keys)[:6]})
+                matched += 1
+
+        conn.commit()
+        print(json.dumps({
+            'csv_rows': rows_seen,
+            'csv_keys': len(csv_map),
+            'ambiguous_keys': len(ambiguous),
+            'total_db_calendars': len(rows),
+            'matched_candidates': matched,
+            'updates': updates[:200]
+        }, ensure_ascii=False, indent=2))
+    finally:
+        conn.close()
+
+
+if __name__ == '__main__':
+    main()

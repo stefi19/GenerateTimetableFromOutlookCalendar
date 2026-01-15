@@ -7,8 +7,44 @@ export default function App() {
   const [currentTime, setCurrentTime] = useState(new Date())
 
   useEffect(() => {
-    const timer = setInterval(() => setCurrentTime(new Date()), 1000)
-    return () => clearInterval(timer)
+    // Regular clock tick (updates every second)
+    const tick = () => setCurrentTime(new Date())
+    const timer = setInterval(tick, 1000)
+
+    // Schedule a precise update at the next local midnight (00:00)
+    // and dispatch a `midnight` event so child components can refresh if needed.
+    function scheduleMidnight() {
+      const now = new Date()
+      // Set to next midnight: move to next day at 00:00:00.000
+      const nextMidnight = new Date(now)
+      nextMidnight.setHours(24, 0, 0, 0)
+      const msUntilMidnight = nextMidnight - now
+
+      // Fallback: if computed time is negative or too large, default to 60s
+      const safeMs = msUntilMidnight > 0 && msUntilMidnight < 8.64e7 ? msUntilMidnight : 60000
+
+      const t = setTimeout(() => {
+        // Update the clock state so the UI shows the new day
+        tick()
+        // Notify any listeners (children/components) that midnight occurred
+        try {
+          window.dispatchEvent(new Event('midnight'))
+        } catch (e) {
+          // older browsers may throw; ignore safely
+        }
+        // Schedule the following midnight
+        scheduleMidnight()
+      }, safeMs)
+
+      return t
+    }
+
+    const midnightTimer = scheduleMidnight()
+
+    return () => {
+      clearInterval(timer)
+      clearTimeout(midnightTimer)
+    }
   }, [])
 
   const formatDate = (date) => {
@@ -75,7 +111,7 @@ export default function App() {
 
       <footer className="footer">
         <div className="footer-content">
-          <p>© 2025 Faculty of Automation and Computer Science, UTCN</p>
+          <p>© 2026 Technical University of Cluj-Napoca</p>
           <p className="footer-note">Schedule Management System • Auto-refresh every hour</p>
         </div>
       </footer>

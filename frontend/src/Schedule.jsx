@@ -99,7 +99,7 @@ export default function Schedule() {
     return datesWithEvents.length > 0 ? datesWithEvents[0] : null
   }, [])
 
-  const fetchEvents = useCallback(async () => {
+  const fetchEvents = useCallback(async (opts = {}) => {
     try {
       setLoading(true)
       const today = new Date()
@@ -107,24 +107,50 @@ export default function Schedule() {
       
       let fromDate, toDate
       
-      if (viewMode === 'calendar') {
-        // Calendar mode: use weekOffset to determine which week to show
+      const scope = opts.scope || null
+
+      if (scope === 'currentWeek') {
+        // Force fetch for the currently-selected week regardless of viewMode
         const weekStart = getWeekStart(today, weekOffset)
         const weekEnd = new Date(weekStart)
         weekEnd.setDate(weekEnd.getDate() + 6)
         fromDate = weekStart.toISOString().split('T')[0]
         toDate = weekEnd.toISOString().split('T')[0]
-      } else {
-        // Day/Week mode: start from today
-        const days = viewMode === 'week' ? 7 : 1
+      } else if (scope === 'twoMonthsAll') {
+        // two-month fetch: start from today and go 60 days forward
         fromDate = todayStr
-        toDate = new Date(Date.now() + days * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
+        toDate = new Date(Date.now() + 60 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
+      } else {
+        if (viewMode === 'calendar') {
+          // Calendar mode: use weekOffset to determine which week to show
+          const weekStart = getWeekStart(today, weekOffset)
+          const weekEnd = new Date(weekStart)
+          weekEnd.setDate(weekEnd.getDate() + 6)
+          fromDate = weekStart.toISOString().split('T')[0]
+          toDate = weekEnd.toISOString().split('T')[0]
+        } else {
+          // Day/Week mode: start from today
+          const days = viewMode === 'week' ? 7 : 1
+          fromDate = todayStr
+          toDate = new Date(Date.now() + days * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
+        }
       }
       
-      // Also fetch all events for 2 months to find nearest day and build calendar list
+      // Determine fetchFrom: for automatic refreshes don't fetch past events unless forced
+      const force = opts && opts.force
+      let fetchFrom = fromDate
+      // If not forced and not a week-wide or two-month pull, prevent fetching past
+      if (!force && scope !== 'twoMonthsAll' && scope !== 'currentWeek') {
+        // Never fetch earlier than today for automatic (non-two-month) calls
+        if (new Date(fetchFrom) < new Date(todayStr)) {
+          fetchFrom = todayStr
+        }
+      }
+
+      // Also compute two months end for potential twoMonthsAll scope
       const twoMonthsEnd = new Date(Date.now() + 60 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
       
-      const params = new URLSearchParams({ from: fromDate, to: toDate })
+  const params = new URLSearchParams({ from: fetchFrom, to: toDate })
   if (filters.subject) params.set('subject', filters.subject)
   if (filters.professor) params.set('professor', filters.professor)
   if (filters.room) params.set('room', filters.room)
@@ -137,15 +163,26 @@ export default function Schedule() {
       let data = await res.json()
       let evts = Array.isArray(data) ? data : []
       
-      // Also fetch all events for 2 months (without view filters)
-      const allParams = new URLSearchParams({ from: todayStr, to: twoMonthsEnd })
-      const allRes = await fetch('/events.json?' + allParams.toString())
+      // If asked to fetch the full two-month window, fetch and use it as allEvents
       let allEvts = []
-      if (allRes.ok) {
-        const allData = await allRes.json()
-        allEvts = Array.isArray(allData) ? allData : []
+      if (scope === 'twoMonthsAll') {
+        const allParams = new URLSearchParams({ from: todayStr, to: twoMonthsEnd })
+        const allRes = await fetch('/events.json?' + allParams.toString())
+        if (allRes.ok) {
+          const allData = await allRes.json()
+          allEvts = Array.isArray(allData) ? allData : []
+        }
+        setAllEvents(allEvts)
+      } else {
+        // Also fetch all events for 2 months to find nearest day and build calendar list
+        const allParams = new URLSearchParams({ from: todayStr, to: twoMonthsEnd })
+        const allRes = await fetch('/events.json?' + allParams.toString())
+        if (allRes.ok) {
+          const allData = await allRes.json()
+          allEvts = Array.isArray(allData) ? allData : []
+        }
+        setAllEvents(allEvts)
       }
-      setAllEvents(allEvts)
       
       // If no events in current view (and not in calendar mode), find nearest day and fetch those events
       if (evts.length === 0 && allEvts.length > 0 && viewMode !== 'calendar') {
@@ -205,9 +242,22 @@ export default function Schedule() {
   }, [filters, viewMode, weekOffset, getWeekStart, findNearestDayWithEvents])
 
   useEffect(() => {
-    fetchEvents()
-    const interval = setInterval(fetchEvents, 3600000)
+    // Automatic hourly refresh: fetch all calendars for the currently-selected week
+    // so the hourly fetch is limited to the displayed week's range.
+    fetchEvents({ scope: 'currentWeek' })
+    const interval = setInterval(() => fetchEvents({ scope: 'currentWeek' }), 3600000)
     return () => clearInterval(interval)
+  }, [fetchEvents])
+
+  // Listen for midnight event (dispatched by App) to refresh future events
+  useEffect(() => {
+    const onMidnight = () => {
+      // On midnight, refresh the full two-month window for all calendars so
+      // the calendar cache is up-to-date for the coming weeks.
+      fetchEvents({ scope: 'twoMonthsAll', force: true })
+    }
+    window.addEventListener('midnight', onMidnight)
+    return () => window.removeEventListener('midnight', onMidnight)
   }, [fetchEvents])
 
   // Reset weekOffset when switching away from calendar mode
@@ -396,7 +446,7 @@ export default function Schedule() {
           </div>
         </div>
         <div className="toolbar-right">
-          <button onClick={fetchEvents} className="btn-refresh" disabled={loading}>
+          <button onClick={() => fetchEvents({ force: true })} className="btn-refresh" disabled={loading}>
             {loading ? 'Loading...' : 'Refresh'}
           </button>
         </div>

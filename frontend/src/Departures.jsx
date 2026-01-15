@@ -233,6 +233,15 @@ export default function Departures() {
     return () => clearInterval(interval)
   }, [fetchDepartures])
 
+  // Refresh live board on midnight so 'Today' / 'Tomorrow' sections update
+  useEffect(() => {
+    const onMidnight = () => {
+      fetchDepartures()
+    }
+    window.addEventListener('midnight', onMidnight)
+    return () => window.removeEventListener('midnight', onMidnight)
+  }, [fetchDepartures])
+
   const now = new Date()
   const today = now.toISOString().split('T')[0]
   const tomorrow = new Date(Date.now() + 86400000).toISOString().split('T')[0]

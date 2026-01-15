@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Admin</title>
+  <style>body{font-family:system-ui, Arial;padding:1rem} .warn{color:#b12704}</style>
+</head>
+<body data-remaining="{{ remaining_seconds|default(0) }}">
+  <h1>Admin dashboard</h1>
+  <p>Session expires in <span id="remaining">--</span> seconds.</p>
+  {% if calendars %}
+    <h2>Calendars</h2>
+    <table border="1" cellpadding="6" cellspacing="0">
+      <thead><tr><th>ID</th><th>Name</th><th>URL</th><th>Enabled</th><th>Building</th><th>Room</th></tr></thead>
+      <tbody>
+        {% for cal in calendars %}
+          <tr>
+            <td>{{ cal.id }}</td>
+            <td>{{ cal.name }}</td>
+            <td><a href="{{ cal.url }}" target="_blank">link</a></td>
+            <td>{{ 'Yes' if cal.enabled else 'No' }}</td>
+            <td>{{ cal.building or '' }}</td>
+            <td>{{ cal.room or '' }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <p>No calendars configured.</p>
+  {% endif %}
+  <p id="warning" style="display:none" class="warn">Your session will expire soon. Please save your changes.</p>
+  <form id="logoutForm" method="post" action="/admin/logout">
+    <button type="submit">Logout</button>
+  </form>
+
+  <script>
+    // remaining_seconds is provided as a data attribute to avoid inline
+    // template expressions inside JS (helps editors/static checkers).
+    let remaining = parseInt(document.body.getAttribute('data-remaining') || '0', 10);
+    const warningThreshold = 60; // seconds before expiry to warn
+    const remEl = document.getElementById('remaining');
+    const warnEl = document.getElementById('warning');
+
+    function updateDisplay() {
+      remEl.textContent = Math.max(0, Math.floor(remaining));
+      if (remaining <= warningThreshold) {
+        warnEl.style.display = 'block';
+      } else {
+        warnEl.style.display = 'none';
+      }
+      if (remaining <= 0) {
+        // redirect to login when expired
+        window.location = '/admin/login?expired=1';
+      }
+    }
+
+    updateDisplay();
+
+    // Countdown locally and poll server occasionally to stay in sync
+    setInterval(() => {
+      remaining -= 1;
+      updateDisplay();
+    }, 1000);
+
+    // Poll server every 30s to refresh remaining seconds
+    setInterval(() => {
+      fetch('/admin/session_status').then(r => r.json()).then(j => {
+        if (j && typeof j.remaining_seconds !== 'undefined') {
+          remaining = j.remaining_seconds;
+          updateDisplay();
+        }
+      }).catch(()=>{});
+    }, 30000);
+  </script>
+</body>
+</html>

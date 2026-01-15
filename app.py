@@ -18,6 +18,9 @@ from datetime import datetime, date, timedelta
 from typing import List, Dict, Optional
 
 from flask import Flask, render_template, request, redirect, url_for, send_file, jsonify, session, Response
+import hmac
+import secrets
+from collections import deque
 
 from timetable import (
     Event,
@@ -31,15 +34,77 @@ app = Flask(__name__)
 app.config["SECRET_KEY"] = os.environ.get("FLASK_SECRET", "dev-secret")
 
 # Admin authentication
+# Defaults kept to preserve existing tests; change via env in production
+ADMIN_USERNAME = os.environ.get("ADMIN_USERNAME", "admin")
 ADMIN_PASSWORD = os.environ.get("ADMIN_PASSWORD", "admin123")  # Change in production!
+ADMIN_SESSION_TIMEOUT = int(os.environ.get("ADMIN_SESSION_TIMEOUT", 3600))  # seconds
+
+# Simple in-memory rate limiter for failed admin auth attempts by remote IP.
+# Keeps recent failure timestamps (seconds) and blocks after a threshold.
+_FAILED_ADMIN = {}
+_FAILED_WINDOW_SECONDS = 300  # 5 minutes
+_FAILED_THRESHOLD = 10  # block after 10 failed attempts in window
+
+
+def _is_ip_blocked(ip: str) -> bool:
+    if not ip:
+        return False
+    dq = _FAILED_ADMIN.get(ip)
+    if not dq:
+        return False
+    now = time.time()
+    # purge old
+    while dq and (now - dq[0]) > _FAILED_WINDOW_SECONDS:
+        dq.popleft()
+    return len(dq) >= _FAILED_THRESHOLD
+
+
+def _record_failed(ip: str) -> None:
+    if not ip:
+        return
+    dq = _FAILED_ADMIN.get(ip)
+    if not dq:
+        dq = deque()
+        _FAILED_ADMIN[ip] = dq
+    dq.append(time.time())
 
 
 def check_admin_auth():
-    """Check if request has valid admin authentication."""
+    """Check if request has valid admin authentication.
+
+    Accepts either a valid Basic auth header (username+password) or an
+    active 'admin_authenticated' session flag. Uses timing-safe compare for
+    credentials and enforces a per-IP rate limit on failures.
+    """
+    # Session-based short-circuit with expiry
+    if session.get('admin_authenticated'):
+        ts = session.get('admin_authenticated_at')
+        try:
+            if ts and (time.time() - float(ts)) <= ADMIN_SESSION_TIMEOUT:
+                return True
+        except Exception:
+            pass
+        # expired or invalid timestamp => clear session flags
+        session.pop('admin_authenticated', None)
+        session.pop('admin_authenticated_at', None)
+        return False
+
+    ip = request.remote_addr or request.environ.get('REMOTE_ADDR')
+    # block quickly if IP has too many recent failures
+    if _is_ip_blocked(ip):
+        return False
+
     auth = request.authorization
-    if auth and auth.password == ADMIN_PASSWORD:
-        return True
-    return session.get('admin_authenticated', False)
+    if not auth:
+        return False
+
+    # timing-safe comparison
+    user_ok = hmac.compare_digest(str(auth.username or ''), str(ADMIN_USERNAME))
+    pass_ok = hmac.compare_digest(str(auth.password or ''), str(ADMIN_PASSWORD))
+    ok = user_ok and pass_ok
+    if not ok:
+        _record_failed(ip)
+    return ok
 
 
 def require_admin(f):
@@ -47,14 +112,242 @@ def require_admin(f):
     @functools.wraps(f)
     def decorated(*args, **kwargs):
         if not check_admin_auth():
-            return Response(
-                'Admin authentication required.\n'
-                'Please login with the admin password.',
-                401,
-                {'WWW-Authenticate': 'Basic realm="Admin Area"'}
-            )
+            # If the client appears to be a browser (accepts HTML) and no
+            # Basic Authorization header was provided, redirect to the form
+            # login so the user can re-authenticate after session expiry.
+            if not check_admin_auth():
+                # If session exists but expired, clear it and redirect browser clients
+                ts = session.get('admin_authenticated_at')
+                if ts:
+                    try:
+                        if (time.time() - float(ts)) > ADMIN_SESSION_TIMEOUT:
+                            # expired
+                            session.pop('admin_authenticated', None)
+                            session.pop('admin_authenticated_at', None)
+                            has_basic = bool(request.authorization)
+                            accepts_html = request.accept_mimetypes.accept_html
+                            if (not has_basic) and accepts_html:
+                                return redirect(url_for('admin_login_form', expired=1))
+                    except Exception:
+                        # on parse error, clear and continue to normal auth flow
+                        session.pop('admin_authenticated', None)
+                        session.pop('admin_authenticated_at', None)
+
+            if not check_admin_auth():
+                # If the client appears to be a browser (accepts HTML) and no
+                # Basic Authorization header was provided, redirect to the form
+                # login so the user can re-authenticate after session expiry.
+                has_basic = bool(request.authorization)
+                accepts_html = request.accept_mimetypes.accept_html
+                if (not has_basic) and accepts_html:
+                    # redirect to the GET login form
+                    return redirect(url_for('admin_login_form'))
+
+                # Otherwise, return a 401 challenge for API / Basic auth clients
+                return Response(
+                    'Admin authentication required.\n'
+                    'Please login with the admin credentials.',
+                    401,
+                    {'WWW-Authenticate': 'Basic realm="Admin Area"'}
+                )
         return f(*args, **kwargs)
     return decorated
+
+
+def _validate_credentials(username: str | None, password: str | None) -> bool:
+    """Timing-safe validation of provided username/password."""
+    user_ok = hmac.compare_digest(str(username or ''), str(ADMIN_USERNAME))
+    pass_ok = hmac.compare_digest(str(password or ''), str(ADMIN_PASSWORD))
+    return user_ok and pass_ok
+
+
+@app.route('/admin/login', methods=['GET'])
+def admin_login_form():
+    """Return a small HTML login form with a CSRF token stored in session.
+
+    The form POSTs to the same URL and includes username/password fields.
+    """
+    token = secrets.token_urlsafe(24)
+    session['_admin_csrf'] = token
+    # allow passing expired=1 as query param when redirected after session expiry
+    expired = bool(request.args.get('expired'))
+    return render_template('admin_login.html', csrf_token=token, expired=expired), 200
+
+
+@app.route('/admin/login', methods=['POST'])
+def admin_login():
+    """Process form-based admin login with CSRF protection and set session flag.
+
+    Returns 200 + JSON on success, 400/401 on failure.
+    """
+    ip = request.remote_addr or request.environ.get('REMOTE_ADDR')
+    # check rate-limit first
+    if _is_ip_blocked(ip):
+        return Response('Too many failed attempts; try later.', status=403)
+
+    token = request.form.get('csrf_token') or request.headers.get('X-CSRF-Token')
+    if not token or token != session.get('_admin_csrf'):
+        # record attempt but keep generic message
+        _record_failed(ip)
+        return Response('Invalid CSRF token or session.', status=400)
+
+    username = request.form.get('username')
+    password = request.form.get('password')
+    if not _validate_credentials(username, password):
+        _record_failed(ip)
+        return Response('Invalid credentials.', status=401)
+
+    # success
+    session['admin_authenticated'] = True
+    session['admin_authenticated_at'] = time.time()
+    # clear csrf token
+    session.pop('_admin_csrf', None)
+    # If this was a browser form POST, redirect to the admin dashboard.
+    # If the POST had form data (normal browser form submit), redirect to dashboard.
+    if request.form:
+        return redirect(url_for('admin_index'))
+    accepts_html = request.accept_mimetypes.accept_html
+    # Heuristic: if content-type is form or the client accepts HTML, redirect.
+    content_type = (request.content_type or '').lower()
+    if 'application/x-www-form-urlencoded' in content_type or accepts_html:
+        return redirect(url_for('admin_index'))
+
+    # Otherwise return JSON (for API clients)
+    return jsonify({'ok': True, 'message': 'Authenticated'})
+
+
+@app.route('/admin/logout', methods=['POST'])
+def admin_logout():
+    session.pop('admin_authenticated', None)
+    session.pop('admin_authenticated_at', None)
+    return jsonify({'ok': True, 'message': 'Logged out'})
+
+
+@app.route('/admin')
+def admin_index():
+    """Render the React admin UI, but show the login form inline when not authenticated.
+
+    Previously the `require_admin` decorator redirected browser clients to the
+    login form. To keep the UX tighter we render the login form at the same
+    `/admin` URL for unauthenticated browser visits, and only render the React
+    admin shell when authenticated.
+    """
+    # If not authenticated, render the login form directly so the admin React
+    # UI is only shown after a successful form login.
+    if not check_admin_auth():
+        # Generate CSRF token and show login page (allow expired query forwarded)
+        token = secrets.token_urlsafe(24)
+        session['_admin_csrf'] = token
+        expired = bool(request.args.get('expired'))
+        return render_template('admin_login.html', csrf_token=token, expired=expired), 200
+
+    # Authenticated path continues below
+    # session remaining (for compatibility; the old UI does not rely on it but keep it)
+    ts = session.get('admin_authenticated_at')
+    remaining = 0
+    try:
+        if ts:
+            remaining = max(0, int(ADMIN_SESSION_TIMEOUT - (time.time() - float(ts))))
+    except Exception:
+        remaining = 0
+
+    # gather calendars and related stats (reuse logic similar to the API status endpoint)
+    try:
+        init_db()
+        calendars = list_calendar_urls()
+    except Exception:
+        calendars = []
+
+    # extracurricular events
+    try:
+        extracurricular = list_extracurricular_db()
+    except Exception:
+        extracurricular = []
+
+    # count events and find last import time from playwright_captures
+    events_count = 0
+    last_import = None
+    try:
+        out_dir = pathlib.Path('playwright_captures')
+        event_files = list(out_dir.glob('events_*.json'))
+        for ef in event_files:
+            try:
+                with open(ef, 'r', encoding='utf-8') as f:
+                    events = json.load(f)
+                    events_count += len(events)
+                mtime = ef.stat().st_mtime
+                if last_import is None or mtime > last_import:
+                    last_import = mtime
+            except Exception:
+                pass
+        # fallback to main events.json
+        events_file = out_dir / 'events.json'
+        if events_file.exists() and not event_files:
+            try:
+                with open(events_file, 'r', encoding='utf-8') as f:
+                    events = json.load(f)
+                    events_count = len(events)
+                last_import = events_file.stat().st_mtime
+            except Exception:
+                pass
+    except Exception:
+        pass
+
+    extractor_running = extractor_state.get('running', False)
+
+    # Try to prefill the Add Calendar form using a saved config (if present)
+    calendar_url = ''
+    calendar_name = ''
+    calendar_color = None
+    try:
+        cfg = pathlib.Path('config') / 'calendar_config.json'
+        if cfg.exists():
+            with open(cfg, 'r', encoding='utf-8') as f:
+                cfgd = json.load(f)
+                calendar_url = cfgd.get('calendar_url', '')
+                calendar_name = cfgd.get('calendar_name', '')
+                calendar_color = cfgd.get('calendar_color')
+    except Exception:
+        pass
+
+    # Prefer the React-based admin UI which mounts inside `admin_react.html`.
+    return render_template('admin_react.html',
+                           events_count=events_count,
+                           last_import=datetime.fromtimestamp(last_import) if last_import else None,
+                           extractor_running=extractor_running,
+                           calendars=calendars,
+                           extracurricular=extracurricular,
+                           calendar_url=calendar_url,
+                           calendar_name=calendar_name,
+                           calendar_color=calendar_color)
+
+
+@app.route('/admin/session_status')
+@require_admin
+def admin_session_status():
+    ts = session.get('admin_authenticated_at')
+    remaining = 0
+    try:
+        if ts:
+            remaining = max(0, int(ADMIN_SESSION_TIMEOUT - (time.time() - float(ts))))
+    except Exception:
+        remaining = 0
+    return jsonify({'remaining_seconds': remaining, 'expiry_in': remaining})
+
+
+@app.route('/admin/extend_session', methods=['POST'])
+@require_admin
+def admin_extend_session():
+    """Extend the current admin session by resetting the authenticated timestamp.
+
+    Returns JSON with the new remaining_seconds.
+    """
+    try:
+        session['admin_authenticated_at'] = time.time()
+        remaining = ADMIN_SESSION_TIMEOUT
+        return jsonify({'ok': True, 'remaining_seconds': remaining})
+    except Exception as e:
+        return jsonify({'ok': False, 'error': str(e)}), 500
 
 
 def group_events(events: List[Event], from_date: date, to_date: date):
@@ -456,6 +749,35 @@ _periodic_lock = threading.Lock()
 # --------- Simple SQLite helpers ---------
 DB_PATH = pathlib.Path('data') / 'app.db'
 DB_PATH.parent.mkdir(exist_ok=True)
+
+# Track sqlite3 connections created during runtime so we can close any that
+# accidentally remain open (helps silence ResourceWarning during tests and
+# ensures cleaner shutdown). We still prefer callers to use `with
+# get_db_connection() as conn:` so connections are closed promptly.
+import atexit
+_OPEN_SQLITE_CONNS = []
+_ORIG_SQLITE_CONNECT = sqlite3.connect
+
+def _tracking_sqlite_connect(*args, **kwargs):
+    conn = _ORIG_SQLITE_CONNECT(*args, **kwargs)
+    try:
+        _OPEN_SQLITE_CONNS.append(conn)
+    except Exception:
+        pass
+    return conn
+
+# Monkey-patch sqlite3.connect to track connections created via plain calls.
+sqlite3.connect = _tracking_sqlite_connect
+
+def _close_tracked_connections():
+    for c in list(_OPEN_SQLITE_CONNS):
+        try:
+            c.close()
+        except Exception:
+            pass
+    _OPEN_SQLITE_CONNS.clear()
+
+atexit.register(_close_tracked_connections)
 
 def get_db_connection():
     conn = sqlite3.connect(str(DB_PATH))
@@ -949,7 +1271,229 @@ def start_periodic_fetcher_if_needed(interval_minutes: int = 60):
 
 # Start the periodic fetcher on module import (works with Gunicorn)
 # This runs once when the app is loaded
-start_periodic_fetcher_if_needed(60)
+if os.environ.get('DISABLE_BACKGROUND_TASKS') != '1':
+    # Start the periodic fetcher on module import (works with Gunicorn)
+    # This runs once when the app is loaded
+    start_periodic_fetcher_if_needed(60)
+
+
+# ----------------- Daily DB cleanup -----------------
+_daily_cleanup_started = False
+_daily_cleanup_lock = threading.Lock()
+
+
+def cleanup_old_events(cutoff_days: int = 60, base_dir: str | pathlib.Path | None = None):
+    """Delete events older than cutoff_days from the database and purge lightweight file caches.
+
+    Returns a dict with counts of deleted rows for each table and files.
+    """
+    init_db()
+    cutoff_date = date.today() - timedelta(days=cutoff_days)
+    deleted_manual = 0
+    deleted_extra = 0
+    removed_from_file = 0
+
+    # Clean manual_events by parsing their start timestamps
+    try:
+        with get_db_connection() as conn:
+            cur = conn.cursor()
+            cur.execute('SELECT id, start FROM manual_events')
+            rows = cur.fetchall()
+            ids_to_delete = []
+            for r in rows:
+                sid = r['start'] if r and 'start' in r.keys() else None
+                if not sid:
+                    continue
+                try:
+                    # Prefer built-in ISO parser, fallback to dateutil
+                    try:
+                        dt = datetime.fromisoformat(sid)
+                    except Exception:
+                        from dateutil import parser as dtparser
+                        dt = dtparser.parse(sid)
+                    if dt.date() < cutoff_date:
+                        ids_to_delete.append(r['id'])
+                except Exception:
+                    # skip unparsable rows
+                    continue
+            for mid in ids_to_delete:
+                cur.execute('DELETE FROM manual_events WHERE id = ?', (mid,))
+            deleted_manual = len(ids_to_delete)
+            conn.commit()
+    except Exception:
+        deleted_manual = 0
+
+    # Clean extracurricular_events by date field
+    try:
+        with get_db_connection() as conn:
+            cur = conn.cursor()
+            cur.execute('SELECT id, date FROM extracurricular_events')
+            rows = cur.fetchall()
+            ids_to_delete = []
+            for r in rows:
+                dstr = r['date'] if r and 'date' in r.keys() else None
+                if not dstr:
+                    continue
+                try:
+                    try:
+                        d = date.fromisoformat(dstr)
+                    except Exception:
+                        from dateutil import parser as dtparser
+                        d = dtparser.parse(dstr).date()
+                    if d < cutoff_date:
+                        ids_to_delete.append(r['id'])
+                except Exception:
+                    continue
+            for eid in ids_to_delete:
+                cur.execute('DELETE FROM extracurricular_events WHERE id = ?', (eid,))
+            deleted_extra = len(ids_to_delete)
+            conn.commit()
+    except Exception:
+        deleted_extra = 0
+
+    # Also attempt to prune playwright_captures/events.json (file-backed manual events)
+    try:
+        if base_dir:
+            base = pathlib.Path(base_dir)
+        else:
+            base = pathlib.Path('.')
+        evfile = base / 'playwright_captures' / 'events.json'
+        if evfile.exists():
+            with open(evfile, 'r', encoding='utf-8') as f:
+                items = json.load(f)
+            kept = []
+            for it in items:
+                s = it.get('start')
+                if not s:
+                    kept.append(it)
+                    continue
+                try:
+                    try:
+                        dt = datetime.fromisoformat(s)
+                    except Exception:
+                        from dateutil import parser as dtparser
+                        dt = dtparser.parse(s)
+                    if dt.date() < cutoff_date:
+                        removed_from_file += 1
+                        continue
+                    kept.append(it)
+                except Exception:
+                    kept.append(it)
+            # overwrite file if we removed anything
+            if removed_from_file > 0:
+                evfile.parent.mkdir(parents=True, exist_ok=True)
+                with open(evfile, 'w', encoding='utf-8') as f:
+                    json.dump(kept, f, indent=2, ensure_ascii=False, default=str)
+    except Exception:
+        removed_from_file = 0
+
+    # Also remove per-calendar events files older than cutoff (events_<hash>.json)
+    calendar_files_removed = 0
+    try:
+        captures_dir = base / 'playwright_captures'
+        if captures_dir.exists() and captures_dir.is_dir():
+            for p in captures_dir.glob('events_*.json'):
+                try:
+                    mtime = datetime.fromtimestamp(p.stat().st_mtime).date()
+                    if mtime < cutoff_date:
+                        p.unlink()
+                        calendar_files_removed += 1
+                except Exception:
+                    continue
+    except Exception:
+        calendar_files_removed = 0
+
+    return {
+        'manual_deleted': deleted_manual,
+        'extracurricular_deleted': deleted_extra,
+        'file_removed': removed_from_file,
+        'calendar_files_removed': calendar_files_removed,
+        'cutoff_date': cutoff_date.isoformat(),
+    }
+
+
+def _daily_cleanup_loop(cutoff_days: int = 60):
+    """Run cleanup at local midnight every day."""
+    while True:
+        now = datetime.now()
+        # next local midnight (+5 seconds safe margin)
+        next_mid = (now + timedelta(days=1)).replace(hour=0, minute=0, second=5, microsecond=0)
+        sleep_for = (next_mid - now).total_seconds()
+        if sleep_for > 0:
+            time.sleep(sleep_for)
+        try:
+            res = cleanup_old_events(cutoff_days=cutoff_days)
+            print(f"Daily cleanup executed: {res}")
+        except Exception as e:
+            print(f"Daily cleanup failed: {e}")
+
+        # After cleanup, proactively prefetch two months of events for all calendars.
+        # This helps ensure the server has an up-to-date two-month window available
+        # for API clients even if no browser client is active.
+        try:
+            from_date = date.today()
+            to_date = from_date + timedelta(days=60)
+            # Attempt to acquire the periodic lock so we don't overlap with the hourly
+            # periodic_fetcher (which uses the same lock). If the periodic fetcher is
+            # currently running, skip the prefetch this cycle.
+            got_lock = _periodic_lock.acquire(blocking=False)
+            if not got_lock:
+                print('Daily prefetch skipped because periodic fetcher is running')
+            else:
+                try:
+                    print('Starting daily two-month prefetch for all calendars')
+                    # read calendar URLs from DB
+                    try:
+                        rows = list_calendar_urls()
+                        urls_with_names = [(r.get('url'), r.get('name')) for r in rows if r.get('enabled') and r.get('url')]
+                    except Exception:
+                        urls_with_names = []
+
+                    any_ok = False
+                    for u, name in urls_with_names:
+                        try:
+                            rc = _run_extractor_for_url(u, name)
+                            if rc == 0:
+                                any_ok = True
+                        except Exception:
+                            pass
+
+                    # If any extraction succeeded, rebuild the schedule for the two-month window
+                    if any_ok:
+                        try:
+                            ensure_schedule(from_date, to_date)
+                            print('Daily two-month schedule rebuild completed')
+                        except Exception as e:
+                            print('Daily schedule rebuild failed:', e)
+                finally:
+                    try:
+                        _periodic_lock.release()
+                    except Exception:
+                        pass
+        except Exception as e:
+            print('Daily prefetch failed:', e)
+
+
+def start_daily_cleanup_if_needed(cutoff_days: int = 60):
+    """Start the daily cleanup thread once."""
+    global _daily_cleanup_started
+    with _daily_cleanup_lock:
+        if _daily_cleanup_started:
+            return False
+        _daily_cleanup_started = True
+    try:
+        t = threading.Thread(target=_daily_cleanup_loop, args=(cutoff_days,), daemon=True)
+        t.start()
+        print(f"Started daily DB cleanup thread (removes events older than {cutoff_days} days)")
+        return True
+    except Exception as e:
+        print(f"Failed to start daily cleanup: {e}")
+        return False
+
+
+if os.environ.get('DISABLE_BACKGROUND_TASKS') != '1':
+    # Start the cleanup thread on import
+    start_daily_cleanup_if_needed(60)
 
 
 # OLD FRONTEND ROUTE - DISABLED (use /app for React SPA)
@@ -1604,6 +2148,26 @@ def departures_view():
 def admin_view():
     """Admin page for managing calendar imports and events - React version."""
     return render_template('admin_react.html')
+
+
+@app.route('/admin/cleanup_old_events', methods=['POST'])
+@require_admin
+def admin_cleanup_old_events():
+    """Admin endpoint to trigger the DB/file cleanup on demand.
+
+    Returns JSON with counts e.g. { manual_deleted, extracurricular_deleted, file_removed, cutoff_date }
+    """
+    try:
+        # If DB_PATH is set to a tempdir (tests), use its parent as base_dir so file pruning
+        # operates on the same test workspace. Otherwise default to current working dir.
+        try:
+            base = pathlib.Path(DB_PATH).parent
+        except Exception:
+            base = None
+        res = cleanup_old_events(cutoff_days=60, base_dir=base)
+        return jsonify(res)
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
 
 
 @app.route('/admin/api/status', methods=['GET'])

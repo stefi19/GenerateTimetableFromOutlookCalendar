@@ -47,7 +47,7 @@
 </head>
 <body>
     <div class="admin-header">
-        <h1>Admin Panel</h1>
+        <h1>UTCN Timetable — Admin</h1>
         <a href="/" class="back-link">← Back to Schedule</a>
     </div>
     <div class="admin-notice">
@@ -59,7 +59,8 @@
         import React from 'https://esm.sh/react@18'
         import ReactDOM from 'https://esm.sh/react-dom@18/client'
         
-        const COLORS = ['#003366', '#0066cc', '#28a745', '#dc3545', '#fd7e14', '#6f42c1', '#20c997', '#e83e8c']
+    const COLORS = ['#003366', '#0066cc', '#28a745', '#dc3545', '#fd7e14', '#6f42c1', '#20c997', '#e83e8c']
+    const WARNING_THRESHOLD_SECONDS = 60 // show warning when remaining ≤ this (seconds)
 
         function Admin() {
             const [calendars, setCalendars] = React.useState([])
@@ -72,33 +73,74 @@
             const [editingCalendar, setEditingCalendar] = React.useState(null)
             const [stats, setStats] = React.useState({ events_count: 0, last_import: null })
             const [importLog, setImportLog] = React.useState([])
+            const [sessionRemaining, setSessionRemaining] = React.useState(null)
+            const [warningInfo, setWarningInfo] = React.useState(null)
+
+            const extendSession = async () => {
+                try {
+                    const r = await fetch('/admin/extend_session', { method: 'POST' })
+                    if (r.ok) {
+                        const j = await r.json()
+                        setSessionRemaining(j.remaining_seconds || null)
+                        setWarningInfo(null)
+                        showMessage('Session extended', 'success')
+                    } else {
+                        showMessage('Failed to extend session', 'error')
+                    }
+                } catch (e) {
+                    showMessage('Error extending session', 'error')
+                }
+            }
 
             const fetchData = React.useCallback(async (showLoading = true) => {
                 try {
                     if (showLoading) setLoading(true)
                     const res = await fetch('/admin/api/status')
-                    if (res.ok) {
-                        const data = await res.json()
-                        setCalendars(data.calendars || [])
-                        // manual events are intentionally excluded from this admin UI
-                        setStats({ events_count: data.events_count || 0, last_import: data.last_import })
-                        setExtractorRunning(data.extractor_running || false)
-                        setExtractorProgress(data.extractor_progress || null)
-                        
-                        // Auto-add progress messages to log
-                        if (data.extractor_progress && data.extractor_progress.message) {
-                            setImportLog(prev => {
-                                const lastMsg = prev.length > 0 ? prev[prev.length - 1].msg : ''
-                                if (lastMsg !== data.extractor_progress.message) {
-                                    return [...prev, { 
-                                        time: new Date().toLocaleTimeString(), 
-                                        msg: data.extractor_progress.message, 
-                                        type: 'info' 
-                                    }]
-                                }
-                                return prev
-                            })
+
+                    // If the API returns 401 (unauthenticated) or a login HTML page,
+                    // redirect the browser to the login page with expired flag so the
+                    // server shows the form and the UX is consistent.
+                    if (!res.ok) {
+                        if (res.status === 401) {
+                            // show a notification and wait for user to click to go to login
+                            setMessage({ text: 'Session expired. Click to go to login.', type: 'expired' })
+                            return
                         }
+                        // other non-OK statuses: surface a message
+                        console.error('Admin status fetch failed', res.status)
+                        return
+                    }
+
+                    // Some servers may respond with HTML login form (content-type text/html)
+                    // even with a 200 status if the user is unauthenticated and the
+                    // request followed a redirect. Detect that and treat as expired.
+                    const ct = (res.headers.get('content-type') || '').toLowerCase()
+                    if (ct.includes('text/html')) {
+                        // assume login form; show notification and wait for user click
+                        setMessage({ text: 'Session expired. Click to go to login.', type: 'expired' })
+                        return
+                    }
+
+                    const data = await res.json()
+                    setCalendars(data.calendars || [])
+                    // manual events are intentionally excluded from this admin UI
+                    setStats({ events_count: data.events_count || 0, last_import: data.last_import })
+                    setExtractorRunning(data.extractor_running || false)
+                    setExtractorProgress(data.extractor_progress || null)
+
+                    // Auto-add progress messages to log
+                    if (data.extractor_progress && data.extractor_progress.message) {
+                        setImportLog(prev => {
+                            const lastMsg = prev.length > 0 ? prev[prev.length - 1].msg : ''
+                            if (lastMsg !== data.extractor_progress.message) {
+                                return [...prev, { 
+                                    time: new Date().toLocaleTimeString(), 
+                                    msg: data.extractor_progress.message, 
+                                    type: 'info' 
+                                }]
+                            }
+                            return prev
+                        })
                     }
                 } catch (e) {
                     console.error(e)
@@ -117,6 +159,55 @@
                 }, 2000)
                 return () => clearInterval(interval)
             }, [fetchData])
+
+            // Poll session remaining seconds every 5 seconds and maintain a local
+            // second-by-second decrement for a smooth live countdown.
+            React.useEffect(() => {
+                let mounted = true
+                let localTimer = null
+
+                async function refresh() {
+                    try {
+                        const r = await fetch('/admin/session_status')
+                        if (!r.ok) {
+                            if (r.status === 401) {
+                                // mark expired and wait for user to click login
+                                setMessage({ text: 'Session expired. Click to go to login.', type: 'expired' })
+                                return
+                            }
+                            return
+                        }
+                        const j = await r.json()
+                        if (!mounted) return
+                        setSessionRemaining(j.remaining_seconds || 0)
+                        // show warning when remaining is small but not expired
+                        if (j.remaining_seconds && j.remaining_seconds > 0 && j.remaining_seconds <= WARNING_THRESHOLD_SECONDS) {
+                            setWarningInfo({ secs: j.remaining_seconds })
+                        } else {
+                            setWarningInfo(null)
+                        }
+                        // start local decrement
+                        if (localTimer) clearInterval(localTimer)
+                        localTimer = setInterval(() => {
+                            setSessionRemaining(prev => {
+                                if (typeof prev !== 'number') return prev
+                                if (prev <= 0) {
+                                    clearInterval(localTimer)
+                                    return 0
+                                }
+                                return prev - 1
+                            })
+                        }, 1000)
+                    } catch (e) {
+                        // ignore
+                    }
+                }
+
+                // initial call + periodic refresh every 5s
+                refresh()
+                const perf = setInterval(refresh, 5000)
+                return () => { mounted = false; clearInterval(perf); if (localTimer) clearInterval(localTimer) }
+            }, [])
 
             const showMessage = (text, type) => {
                 setMessage({ text, type })
@@ -212,16 +303,71 @@
 
             return React.createElement('div', { className: 'admin-container', style: { padding: '2rem', maxWidth: '1200px', margin: '0 auto' } },
                 // Message
-                message && React.createElement('div', { 
-                    className: `admin-message ${message.type}`,
-                    style: { 
-                        padding: '1rem', 
-                        marginBottom: '1rem', 
+                message && (message.type === 'expired'
+                    ? React.createElement('div', {
+                        className: 'admin-message expired',
+                        style: {
+                            padding: '1rem',
+                            marginBottom: '1rem',
+                            borderRadius: '8px',
+                            background: '#fff3cd',
+                            color: '#856404',
+                            display: 'flex',
+                            justifyContent: 'space-between',
+                            alignItems: 'center'
+                        }
+                    },
+                        React.createElement('span', null, message.text),
+                        React.createElement('button', {
+                            onClick: () => { window.location = '/admin?expired=1' },
+                            style: { marginLeft: '1rem', padding: '0.5rem 0.75rem', background: '#003366', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }
+                        }, 'Go to login')
+                    )
+                    : React.createElement('div', {
+                        className: `admin-message ${message.type}`,
+                        style: {
+                            padding: '1rem',
+                            marginBottom: '1rem',
+                            borderRadius: '8px',
+                            background: message.type === 'success' ? '#d4edda' : '#f8d7da',
+                            color: message.type === 'success' ? '#155724' : '#721c24'
+                        }
+                    }, message.text)
+                ),
+
+                // Warning banner when session is about to expire (shows before 'expired')
+                warningInfo && (!message || message.type !== 'expired') && React.createElement('div', {
+                    className: 'admin-message warning',
+                    style: {
+                        padding: '1rem',
+                        marginBottom: '1rem',
                         borderRadius: '8px',
-                        background: message.type === 'success' ? '#d4edda' : '#f8d7da',
-                        color: message.type === 'success' ? '#155724' : '#721c24'
+                        background: '#fff3cd',
+                        color: '#856404',
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        alignItems: 'center'
                     }
-                }, message.text),
+                },
+                    React.createElement('span', null, `Session will expire in ${warningInfo.secs} seconds.`),
+                    React.createElement('div', null,
+                        React.createElement('button', {
+                            onClick: extendSession,
+                            style: { marginLeft: '1rem', padding: '0.4rem 0.6rem', background: '#28a745', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }
+                        }, 'Extend session'),
+                        React.createElement('button', {
+                            onClick: () => { window.location = '/admin?expired=1' },
+                            style: { marginLeft: '0.6rem', padding: '0.4rem 0.6rem', background: '#003366', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }
+                        }, 'Go to login')
+                    )
+                ),
+
+                // Session indicator (minutes remaining)
+                React.createElement('div', { style: { textAlign: 'right', marginBottom: '0.5rem', color: '#333', fontSize: '0.95rem' } },
+                    sessionRemaining !== null
+                        ? React.createElement('span', null, `Session: ${Math.max(0, Math.ceil(sessionRemaining / 60))} min${sessionRemaining >= 120 ? 's' : ''} remaining`)
+                        : null
+                ),
 
                 // Stats
                 React.createElement('div', { className: 'admin-stats', style: { 

@@ -50,50 +50,58 @@ with open(csv_path, newline='', encoding='utf-8') as f:
 def norm(u):
     return u.strip().rstrip('/') if u else u
 
-conn = sqlite3.connect(db_path)
-cur = conn.cursor()
-cur.execute('SELECT id, name, upn, url FROM calendars')
-rows = cur.fetchall()
-updated = []
-for rid, name, upn, url in rows:
-    cur_name = name.strip() if name else ''
-    candidates = []
-    # match by url exact (html)
-    if url:
-        nurl = norm(url)
-        if nurl in by_html:
-            candidates.append(by_html[nurl])
-        # try alternate .html/.ics variants
-        if nurl.endswith('.html'):
-            alt = nurl[:-5] + '.ics'
-            if alt in by_ics:
-                candidates.append(by_ics[alt])
-        if nurl.endswith('.ics'):
-            alt = nurl[:-4] + '.html'
-            if alt in by_html:
-                candidates.append(by_html[alt])
-    # match by upn (csv upn keys)
-    if upn and upn in by_upn:
-        candidates.append(by_upn[upn])
-    # remove empty candidates, and dedupe keep first
-    candidates = [c for c in candidates if c]
-    if not candidates:
-        continue
-    new_name = candidates[0]
-    # decide whether to update: if current name empty OR evidently not friendly
-    bad_name = False
-    if not cur_name:
-        bad_name = True
-    else:
-        low = cur_name.lower()
-        if upn and low == upn.lower():
-            bad_name = True
-        if 'utcn_room' in low or '@campus.utcluj.ro' in low or low in ('', 'test'):
-            bad_name = True
-    if bad_name and new_name and new_name != cur_name:
-        cur.execute('UPDATE calendars SET name=? WHERE id=?', (new_name, rid))
-        updated.append({'id': rid, 'old': cur_name, 'new': new_name, 'upn': upn, 'url': url})
 
-conn.commit()
-print(json.dumps({'total_rows': len(rows), 'updated': len(updated), 'samples': updated[:40]}, ensure_ascii=False, indent=2))
-conn.close()
+def main(db_path: str = db_path):
+    conn = sqlite3.connect(db_path)
+    try:
+        cur = conn.cursor()
+        cur.execute('SELECT id, name, upn, url FROM calendars')
+        rows = cur.fetchall()
+        updated = []
+        for rid, name, upn, url in rows:
+            cur_name = name.strip() if name else ''
+            candidates = []
+            # match by url exact (html)
+            if url:
+                nurl = norm(url)
+                if nurl in by_html:
+                    candidates.append(by_html[nurl])
+                # try alternate .html/.ics variants
+                if nurl.endswith('.html'):
+                    alt = nurl[:-5] + '.ics'
+                    if alt in by_ics:
+                        candidates.append(by_ics[alt])
+                if nurl.endswith('.ics'):
+                    alt = nurl[:-4] + '.html'
+                    if alt in by_html:
+                        candidates.append(by_html[alt])
+            # match by upn (csv upn keys)
+            if upn and upn in by_upn:
+                candidates.append(by_upn[upn])
+            # remove empty candidates, and dedupe keep first
+            candidates = [c for c in candidates if c]
+            if not candidates:
+                continue
+            new_name = candidates[0]
+            # decide whether to update: if current name empty OR evidently not friendly
+            bad_name = False
+            if not cur_name:
+                bad_name = True
+            else:
+                low = cur_name.lower()
+                if upn and low == upn.lower():
+                    bad_name = True
+                if 'utcn_room' in low or '@campus.utcluj.ro' in low or low in ('', 'test'):
+                    bad_name = True
+            if bad_name and new_name and new_name != cur_name:
+                cur.execute('UPDATE calendars SET name=? WHERE id=?', (new_name, rid))
+                updated.append({'id': rid, 'old': cur_name, 'new': new_name, 'upn': upn, 'url': url})
+
+        conn.commit()
+        print(json.dumps({'total_rows': len(rows), 'updated': len(updated), 'samples': updated[:40]}, ensure_ascii=False, indent=2))
+    finally:
+        conn.close()
+
+
+if __name__ == '__main__':
+    main()

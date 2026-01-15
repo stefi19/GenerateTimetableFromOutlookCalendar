@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Admin Login</title>
+  <style>
+    body { font-family: system-ui, Arial; padding: 2rem; }
+    .notice { background:#fff3cd; border:1px solid #ffeeba; padding:0.8rem; margin-bottom:1rem }
+    .error { background:#f8d7da; border:1px solid #f5c6cb; padding:0.8rem; margin-bottom:1rem }
+    form { max-width: 420px }
+    label { display:block; margin-bottom:0.5rem }
+  </style>
+</head>
+<body>
+  <h2>Admin sign in</h2>
+  {% if expired %}
+    <div class="notice">Your session expired; please sign in again.</div>
+  {% endif %}
+  {% if message %}
+    <div class="error">{{ message }}</div>
+  {% endif %}
+  <form method="post" action="/admin/login">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token }}" />
+    <label>Username: <input name="username" autocomplete="username" required /></label>
+    <label>Password: <input name="password" type="password" autocomplete="current-password" required/></label>
+    <button type="submit">Login</button>
+  </form>
+</body>
+</html>
