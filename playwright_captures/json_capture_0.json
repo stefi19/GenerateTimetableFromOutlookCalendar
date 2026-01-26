@@ -3,8 +3,8 @@
     "ServerVersionInfo": {
       "MajorVersion": 15,
       "MinorVersion": 20,
-      "MajorBuildNumber": 9520,
-      "MinorBuildNumber": 4,
+      "MajorBuildNumber": 9542,
+      "MinorBuildNumber": 10,
       "Version": "V2018_01_18"
     }
   },
@@ -13,7 +13,7 @@
       "__type": "CalendarFolder:#Exchange",
       "FolderId": {
         "__type": "FolderId:#Exchange",
-        "Id": "AAMkAGI0ZmI1NWZjLTAyOTMtNGY2ZC05Njk5LTdmMmYyOGIzMjA0MAAuAAAAAABzEbfzmEVvTpdFGZWx9hOFAQC8jIzH40jrRLSdcu65cYK2AAAAAAENAAA=",
+        "Id": "AAMkADAyN2MwZjgwLTNjZWItNGUzMS1hODg1LTZmNzlmMjdmYmJkNAAuAAAAAAAHma3caZ4xT7h/dC5IF5cDAQD/yTwKGPC8TIH4uyOcVh6FAAAAAAENAAA=",
         "ChangeKey": "AgAAAA=="
       },
       "Charm": "None",
@@ -31,7 +31,7 @@
     },
     "OwaUserConfiguration": {
       "UserOptions": {
-        "TimeZone": "GTB Standard Time",
+        "TimeZone": "Greenwich Standard Time",
         "WereFirstRunDefaultsPersisted": false,
         "TimeFormat": "h:mm tt",
         "DateFormat": "M/d/yyyy",
@@ -134,72 +134,36 @@
           "WorkHoursStartTimeInMinutes": 0,
           "WorkHoursEndTimeInMinutes": 1440,
           "WorkDays": 127,
-          "WorkingHoursTimeZoneId": "GTB Standard Time"
+          "WorkingHoursTimeZoneId": "Greenwich Standard Time"
         },
         "DefaultReminderTimeInMinutes": 15,
         "MailboxTimeZoneOffset": [
           {
-            "TimeZoneId": "GTB Standard Time",
+            "TimeZoneId": "Greenwich Standard Time",
             "OffsetRanges": [
               {
                 "UtcTime": "2024-01-01T00:00:00Z",
-                "Offset": 120
-              },
-              {
-                "UtcTime": "2024-03-31T01:00:00Z",
-                "Offset": 180
-              },
-              {
-                "UtcTime": "2024-10-27T01:00:00Z",
-                "Offset": 120
-              },
-              {
-                "UtcTime": "2025-03-30T01:00:00Z",
-                "Offset": 180
-              },
-              {
-                "UtcTime": "2025-10-26T01:00:00Z",
-                "Offset": 120
-              },
-              {
-                "UtcTime": "2026-03-29T01:00:00Z",
-                "Offset": 180
-              },
-              {
-                "UtcTime": "2026-10-25T01:00:00Z",
-                "Offset": 120
-              },
-              {
-                "UtcTime": "2027-03-28T01:00:00Z",
-                "Offset": 180
-              },
-              {
-                "UtcTime": "2027-10-31T01:00:00Z",
-                "Offset": 120
-              },
-              {
-                "UtcTime": "2028-03-26T01:00:00Z",
-                "Offset": 180
-              },
-              {
-                "UtcTime": "2028-10-29T01:00:00Z",
-                "Offset": 120
-              },
-              {
-                "UtcTime": "2029-03-25T01:00:00Z",
-                "Offset": 180
-              },
-              {
-                "UtcTime": "2029-10-28T01:00:00Z",
-                "Offset": 120
+                "Offset": 0
               }
             ],
-            "TimeZoneName": "(UTC+02:00) Athens, Bucharest",
+            "TimeZoneName": "(UTC+00:00) Monrovia, Reykjavik",
             "IanaTimeZones": [
-              "Europe/Bucharest",
-              "Asia/Famagusta",
-              "Asia/Nicosia",
-              "Europe/Athens"
+              "Atlantic/Reykjavik",
+              "Africa/Ouagadougou",
+              "Africa/Abidjan",
+              "Africa/Accra",
+              "America/Danmarkshavn",
+              "Africa/Banjul",
+              "Africa/Conakry",
+              "Africa/Bissau",
+              "Africa/Monrovia",
+              "Africa/Bamako",
+              "Africa/Nouakchott",
+              "Atlantic/St_Helena",
+              "Africa/Freetown",
+              "Africa/Dakar",
+              "Africa/Lome",
+              "Africa/Timbuktu"
             ]
           }
         ],
@@ -320,7 +284,7 @@
         "BirthdayPrecision": null,
         "BposCompanyName": null,
         "CompanyName": null,
-        "UserDisplayName": "UTCN - AIRI Observatorului 2 - Sala 104",
+        "UserDisplayName": "UTCN - AIRI Observatorului 2 - Sala 205",
         "UserPrincipalName": null,
         "UserEmailAddress": null,
         "UserLegacyExchangeDN": null,
@@ -345,7 +309,7 @@
         "DefaultFolderIds": [
           {
             "__type": "FolderId:#Exchange",
-            "Id": "AAMkAGI0ZmI1NWZjLTAyOTMtNGY2ZC05Njk5LTdmMmYyOGIzMjA0MAAuAAAAAABzEbfzmEVvTpdFGZWx9hOFAQC8jIzH40jrRLSdcu65cYK2AAAAAAENAAA=",
+            "Id": "AAMkADAyN2MwZjgwLTNjZWItNGUzMS1hODg1LTZmNzlmMjdmYmJkNAAuAAAAAAAHma3caZ4xT7h/dC5IF5cDAQD/yTwKGPC8TIH4uyOcVh6FAAAAAAENAAA=",
             "ChangeKey": "AgAAAA=="
           }
         ],

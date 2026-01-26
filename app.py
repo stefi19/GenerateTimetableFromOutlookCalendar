@@ -399,7 +399,32 @@ def index():
     """Serve the React SPA frontend directly on root."""
     frontend_dist = pathlib.Path(__file__).parent / 'frontend' / 'dist' / 'index.html'
     if frontend_dist.exists():
-        return send_file(frontend_dist)
+                # Read the built index.html and inject a small resilient fallback UI
+                # that links to the server-rendered Live board when the SPA bundle
+                # fails (white screen). This keeps the fallback persistent across
+                # frontend rebuilds without modifying generated assets.
+                try:
+                        content = frontend_dist.read_text(encoding='utf-8')
+                        if 'id="spa-fallback"' not in content:
+                                fallback = '''
+    <!-- SPA runtime fallback: visible when JS errors or white screen -->
+    <div id="spa-fallback" style="position:fixed;right:1rem;bottom:1rem;z-index:9999;display:none;">
+        <a href="/departures" style="display:inline-block;padding:0.5rem 0.75rem;background:#003366;color:white;border-radius:6px;text-decoration:none;font-weight:600;box-shadow:0 2px 6px rgba(0,0,0,0.2);">Open Live (server)</a>
+    </div>
+    <script>
+        (function () {
+            const fallback = document.getElementById('spa-fallback')
+            function showFallback() { if (fallback) fallback.style.display = 'block' }
+            window.addEventListener('error', function (ev) { console.error('SPA error', ev); showFallback() })
+            window.addEventListener('unhandledrejection', function (ev) { console.error('SPA rejection', ev); showFallback() })
+            setTimeout(function () { try { const root = document.getElementById('root'); if (root && root.children.length === 0) showFallback() } catch (e) { showFallback() } }, 2500)
+        })()
+    </script>
+'''
+                                content = content.replace('</body>', fallback + '\n</body>')
+                        return Response(content, mimetype='text/html')
+                except Exception:
+                        return send_file(frontend_dist)
     return """
     <html>
     <head><title>Frontend Not Built</title></head>
@@ -758,6 +783,7 @@ extractor_state = {
     'current_calendar': None,
     'progress_message': None,
     'events_extracted': 0,
+    'log': [],
 }
 
 # Scheduler control
@@ -1084,6 +1110,69 @@ def _run_extractor_background():
     extractor_state['last_started'] = datetime.utcnow().isoformat()
     extractor_state['stdout_path'] = str(stdout_path)
     extractor_state['stderr_path'] = str(stderr_path)
+    # Acquire the periodic fetch lock so we don't overlap with the hourly
+    # periodic_fetcher or the daily prefetch. This serializes all extractor
+    # activity around the same lock so admin-triggered runs reflect CSV order
+    # without interleaving from the periodic background job.
+    try:
+        extractor_state['progress_message'] = 'Waiting to acquire periodic fetch lock...'
+        _periodic_lock.acquire()
+        extractor_state['progress_message'] = 'Acquired periodic fetch lock; starting import.'
+    except Exception:
+        # If lock acquire fails unexpectedly, continue but note it in state
+        extractor_state['progress_message'] = 'Failed to acquire periodic fetch lock; continuing.'
+    # Prefer to run extractor for each URL listed in the Rooms_PUBLISHER CSV
+    # if present. This ensures we only fetch events from the authoritative
+    # publisher list. Fall back to invoking the extractor script with no
+    # args (legacy behaviour) if CSV isn't available.
+    def _read_rooms_publisher():
+        # Try several likely locations for the publisher CSV (config/, project root)
+        csv_filename = 'Rooms_PUBLISHER_HTML-ICS(in).csv'
+        candidates = [pathlib.Path(__file__).parent / 'config' / csv_filename,
+                      pathlib.Path(__file__).parent / csv_filename,
+                      pathlib.Path(csv_filename)]
+        for p in candidates:
+            try:
+                if p.exists():
+                    return p
+            except Exception:
+                continue
+        return None
+
+    urls = read_rooms_publisher_csv()
+    if urls:
+        any_rc = False
+        # Record planned order for debugging/traceability (first 200 chars)
+        try:
+            planned = [n for (_u, n) in urls]
+            extractor_state['planned_order'] = planned[:200]
+            # write a small preamble to stdout so the admin log shows the planned order
+            try:
+                with open(stdout_path, 'a', encoding='utf-8') as out_f:
+                    out_f.write('\nPlanned CSV extraction order:\n')
+                    for i, nm in enumerate(planned, start=1):
+                        out_f.write(f"{i}: {nm}\n")
+                    out_f.write('\n')
+            except Exception:
+                pass
+        except Exception:
+            pass
+        for u, name in urls:
+            try:
+                rc = _run_extractor_for_url(u, name)
+                if rc == 0:
+                    any_rc = True
+            except Exception:
+                continue
+        extractor_state['last_rc'] = 0 if any_rc else 1
+        extractor_state['running'] = False
+        try:
+            _periodic_lock.release()
+        except Exception:
+            pass
+        return
+
+    # Legacy fallback behaviour: invoke extractor script with no args
     script = pathlib.Path('tools') / 'extract_published_events.py'
     cmd = [sys.executable, str(script)]
     try:
@@ -1100,6 +1189,10 @@ def _run_extractor_background():
         extractor_state['last_rc'] = 1
     finally:
         extractor_state['running'] = False
+        try:
+            _periodic_lock.release()
+        except Exception:
+            pass
 
 
 def _run_extractor_for_url(url: str, calendar_name: str = None) -> int:
@@ -1110,10 +1203,21 @@ def _run_extractor_for_url(url: str, calendar_name: str = None) -> int:
     stdout_path = out_dir / f'extract_{h}.stdout.txt'
     stderr_path = out_dir / f'extract_{h}.stderr.txt'
     
-    # Update progress state
+    # Update progress state and server-side log (so fast transitions are visible)
     extractor_state['current_calendar'] = calendar_name or url[:50]
     extractor_state['progress_message'] = f'Extracting events from {calendar_name or "calendar"}...'
     extractor_state['events_extracted'] = 0
+    try:
+        ts = datetime.datetime.now().isoformat()
+        msg = f"{ts} - START: {calendar_name or url}"
+        # keep a short rolling log
+        ll = extractor_state.setdefault('log', [])
+        ll.append(msg)
+        # trim to last 500 entries to avoid unbounded growth
+        if len(ll) > 500:
+            del ll[0:len(ll)-500]
+    except Exception:
+        pass
     
     cmd = [sys.executable, str(pathlib.Path('tools') / 'extract_published_events.py'), url]
     try:
@@ -1218,6 +1322,19 @@ def _run_extractor_for_url(url: str, calendar_name: str = None) -> int:
     except Exception:
         pass
 
+    # append a finish message to the server-side log so UI can show even
+    # very quick runs that a client-side poll might miss
+    try:
+        ts = datetime.datetime.now().isoformat()
+        cnt = extractor_state.get('events_extracted', 0)
+        msg = f"{ts} - DONE: Extracted {cnt} events from {calendar_name or url} (rc={rc})"
+        ll = extractor_state.setdefault('log', [])
+        ll.append(msg)
+        if len(ll) > 500:
+            del ll[0:len(ll)-500]
+    except Exception:
+        pass
+
     return rc
 
 
@@ -1235,15 +1352,17 @@ def periodic_fetcher(interval_minutes: int = 60):
             periodic_fetch_state['running'] = True
             periodic_fetch_state['last_run'] = datetime.utcnow().isoformat()
 
-            # Read URLs from DB
-            urls_with_names = []
-            try:
-                rows = list_calendar_urls()
-                for r in rows:
-                    if r.get('enabled') and r.get('url'):
-                        urls_with_names.append((r.get('url'), r.get('name')))
-            except Exception:
-                urls_with_names = []
+            # Prefer the Rooms_PUBLISHER CSV as authoritative source of calendars.
+            # Use the centralized helper so all fetchers read the CSV consistently.
+            urls_with_names = read_rooms_publisher_csv()
+            if not urls_with_names:
+                try:
+                    rows = list_calendar_urls()
+                    for r in rows:
+                        if r.get('enabled') and r.get('url'):
+                            urls_with_names.append((r.get('url'), r.get('name')))
+                except Exception:
+                    urls_with_names = []
 
             # If no URLs configured, skip
             if not urls_with_names:
@@ -1437,6 +1556,137 @@ def cleanup_old_events(cutoff_days: int = 60, base_dir: str | pathlib.Path | Non
     }
 
 
+def read_rooms_publisher_csv():
+    """Return list of (url, name) from Rooms_PUBLISHER_HTML-ICS(in).csv in file order.
+
+    Prefer the ICS column (index 5) then the HTML column (index 4). If a header
+    row is present (contains 'Published' or 'Nume_Sala'), it will be skipped.
+    Returns an empty list if CSV not found or parse fails.
+    """
+    csv_filename = 'Rooms_PUBLISHER_HTML-ICS(in).csv'
+    csv_candidates = [pathlib.Path(__file__).parent / 'config' / csv_filename,
+                      pathlib.Path(__file__).parent / csv_filename,
+                      pathlib.Path(csv_filename)]
+    csv_path = None
+    for p in csv_candidates:
+        try:
+            if p.exists():
+                csv_path = p
+                break
+        except Exception:
+            continue
+    if not csv_path:
+        return []
+
+    import re
+
+    def _format_email_to_name(email: str) -> str:
+        """Turn publisher email local-part into a human-friendly display name.
+
+        Examples:
+          utcn_room_airi_obs_525@campus.utcluj.ro -> "UTCN AIRI OBS 525"
+        """
+        if not email:
+            return ''
+        try:
+            local = email.split('@', 1)[0]
+        except Exception:
+            local = email
+        # split on non-alnum separators (usually underscores)
+        parts = re.split(r'[^0-9A-Za-z]+', local)
+        parts = [p for p in parts if p]
+        # remove common filler token 'room'
+        parts = [p for p in parts if p.lower() != 'room']
+        if not parts:
+            return local
+        out_parts = []
+        for i, p in enumerate(parts):
+            if p.isdigit():
+                out_parts.append(p)
+            else:
+                # prefer full uppercase for short tokens like 'utcn', 'obs', 'aiei'
+                out_parts.append(p.upper())
+        return ' '.join(out_parts)
+
+    out = []
+    try:
+        with open(csv_path, 'r', encoding='utf-8') as f:
+            rdr = csv.reader(f)
+            first = True
+            for row in rdr:
+                if first:
+                    first = False
+                    # skip header-like first row
+                    hdr = '|'.join(row).lower()
+                    if 'published' in hdr or 'nume_sala' in hdr or 'publishedcalendarurl' in hdr:
+                        continue
+                if not row or len(row) < 6:
+                    continue
+                # Prefer a display name derived from the publisher email (col 1).
+                # Fall back to the CSV human name (col 0) if email absent.
+                email = (row[1] or '').strip() if len(row) > 1 else ''
+                if email:
+                    name = _format_email_to_name(email)
+                else:
+                    name = (row[0] or '').strip()
+                html = (row[4] or '').strip() if len(row) > 4 else ''
+                ics = (row[5] or '').strip() if len(row) > 5 else ''
+                url = ics or html
+                if url:
+                    out.append((url, name))
+    except Exception:
+        return []
+    return out
+
+
+def read_rooms_publisher_csv_map():
+    """Return a dict mapping normalized calendar URL -> publisher email address.
+
+    Normalization: strip trailing slashes and lowercase. Returns empty dict if
+    CSV not found or parse fails. This mirrors the candidate search used by
+    read_rooms_publisher_csv().
+    """
+    csv_filename = 'Rooms_PUBLISHER_HTML-ICS(in).csv'
+    csv_candidates = [pathlib.Path(__file__).parent / 'config' / csv_filename,
+                      pathlib.Path(__file__).parent / csv_filename,
+                      pathlib.Path(csv_filename)]
+    csv_path = None
+    for p in csv_candidates:
+        try:
+            if p.exists():
+                csv_path = p
+                break
+        except Exception:
+            continue
+    if not csv_path:
+        return {}
+
+    out = {}
+    try:
+        with open(csv_path, 'r', encoding='utf-8') as f:
+            rdr = csv.reader(f)
+            first = True
+            for row in rdr:
+                if first:
+                    first = False
+                    hdr = '|'.join(row).lower()
+                    if 'published' in hdr or 'nume_sala' in hdr or 'publishedcalendarurl' in hdr:
+                        continue
+                if not row or len(row) < 6:
+                    continue
+                email = (row[1] or '').strip()
+                html = (row[4] or '').strip() if len(row) > 4 else ''
+                ics = (row[5] or '').strip() if len(row) > 5 else ''
+                for u in (html, ics):
+                    if not u:
+                        continue
+                    key = u.strip().rstrip('/').lower()
+                    out[key] = email
+    except Exception:
+        return {}
+    return out
+
+
 def _daily_cleanup_loop(cutoff_days: int = 60):
     """Run cleanup at local midnight every day."""
     while True:
@@ -1467,12 +1717,14 @@ def _daily_cleanup_loop(cutoff_days: int = 60):
             else:
                 try:
                     print('Starting daily two-month prefetch for all calendars')
-                    # read calendar URLs from DB
-                    try:
-                        rows = list_calendar_urls()
-                        urls_with_names = [(r.get('url'), r.get('name')) for r in rows if r.get('enabled') and r.get('url')]
-                    except Exception:
-                        urls_with_names = []
+                    # Prefer Rooms_PUBLISHER CSV for the authoritative list, fall back to DB
+                    urls_with_names = read_rooms_publisher_csv()
+                    if not urls_with_names:
+                        try:
+                            rows = list_calendar_urls()
+                            urls_with_names = [(r.get('url'), r.get('name')) for r in rows if r.get('enabled') and r.get('url')]
+                        except Exception:
+                            urls_with_names = []
 
                     any_ok = False
                     for u, name in urls_with_names:
@@ -1925,14 +2177,29 @@ def generate_status():
 
 @app.route('/download/<path:filename>')
 def download_file(filename: str):
-    # only allow downloads from playwright_captures
-    safe_dir = pathlib.Path('playwright_captures').resolve()
-    target = (safe_dir / filename).resolve()
-    if not str(target).startswith(str(safe_dir)):
-        return "Not allowed", 403
-    if not target.exists():
-        return "Not found", 404
-    return send_file(str(target), as_attachment=True)
+    # Allow downloads from a few safe locations: playwright_captures, config,
+    # and repository root. This keeps the simple security model while making
+    # it robust to different working-directory/resolve behaviors on macOS.
+    candidates = [
+        pathlib.Path('playwright_captures') / filename,
+        pathlib.Path('config') / filename,
+        pathlib.Path(filename),
+    ]
+    for p in candidates:
+        try:
+            if p.exists() and p.is_file():
+                # ensure file is inside repository (avoid absolute unexpected paths)
+                repo_root = pathlib.Path(__file__).parent.resolve()
+                try:
+                    resolved = p.resolve()
+                except Exception:
+                    # if resolve fails, skip this candidate
+                    continue
+                if str(resolved).startswith(str(repo_root)):
+                    return send_file(str(resolved), as_attachment=True, download_name=p.name)
+        except Exception:
+            continue
+    return "Not found", 404
 
 
 @app.route('/__last_response')
@@ -2216,40 +2483,9 @@ def admin_api_status():
         calendars = list_calendar_urls()
         # try to enrich calendars with friendly email address from the publisher CSV
         try:
-            # Try several likely locations for the publisher CSV. In Docker we mount ./config -> /app/config
-            csv_filename = 'Rooms_PUBLISHER_HTML-ICS(in).csv'
-            csv_paths = [
-                pathlib.Path(__file__).parent / 'config' / csv_filename,
-                pathlib.Path(__file__).parent / csv_filename,
-                pathlib.Path(csv_filename),
-            ]
-            csv_path = None
-            for p in csv_paths:
-                try:
-                    if p.exists():
-                        csv_path = p
-                        break
-                except Exception:
-                    continue
-
-            # Strict matching: only attach email_address when the calendar URL exactly matches
-            # the PublishedCalendarUrl or PublishedICalUrl from the CSV (normalized by trimming
-            # trailing slash and lowercasing). This avoids spurious token-based matches.
-            csv_map = {}
-            if csv_path:
-                with open(csv_path, 'r', encoding='utf-8') as f:
-                    rdr = csv.reader(f)
-                    for row in rdr:
-                        if not row or len(row) < 6:
-                            continue
-                        email = row[1].strip()
-                        html = (row[4].strip() if len(row) > 4 else '')
-                        ics = (row[5].strip() if len(row) > 5 else '')
-                        for u in (html, ics):
-                            if not u:
-                                continue
-                            key = u.strip().rstrip('/').lower()
-                            csv_map[key] = email
+            # Use the centralized CSV helper to build a map from calendar URL -> email
+            # so admin UI enrichment uses the same canonical CSV as the fetchers.
+            csv_map = read_rooms_publisher_csv_map()
 
             for cal in calendars:
                 try:
@@ -2294,6 +2530,18 @@ def admin_api_status():
     except Exception as e:
         pass
     
+    # If extractor_state doesn't yet have a planned_order (no run started),
+    # provide a lightweight CSV preview by reading the canonical publisher CSV
+    # so the admin UI can show the planned extraction order without starting
+    # an extractor run.
+    planned = extractor_state.get('planned_order')
+    if not planned:
+        try:
+            rows = read_rooms_publisher_csv()
+            planned = [name for (_url, name) in rows]
+        except Exception:
+            planned = []
+
     return jsonify({
         'calendars': calendars,
         'manual_events': manual_events,
@@ -2305,6 +2553,8 @@ def admin_api_status():
             'message': extractor_state.get('progress_message'),
             'events_extracted': extractor_state.get('events_extracted', 0),
         },
+        'planned_order': planned or [],
+        'extractor_log': extractor_state.get('log', [])[-200:],
         'periodic_fetcher': {
             'started': _periodic_fetcher_started,
             'running': periodic_fetch_state.get('running', False),
@@ -2377,6 +2627,349 @@ def admin_set_calendar_url():
         })
     
     return redirect(url_for('admin_view'))
+
+
+@app.route('/admin/upload_rooms_publisher', methods=['POST'])
+@require_admin
+def admin_upload_rooms_publisher():
+    """Accept an uploaded CSV and overwrite the canonical Rooms_PUBLISHER CSV in-place.
+
+    The uploaded file will be written to several repository locations where the
+    application looks for the publisher CSV (config/, playwright_captures/ and repo
+    root). Existing files are overwritten.
+    """
+    try:
+        if 'file' not in request.files:
+            return jsonify({'success': False, 'message': 'No file uploaded'}), 400
+        uploaded = request.files['file']
+        if not uploaded or uploaded.filename == '':
+            return jsonify({'success': False, 'message': 'No file selected'}), 400
+
+        content = uploaded.read()
+        csv_filename = 'Rooms_PUBLISHER_HTML-ICS(in).csv'
+        saved = []
+
+        # Try to write into config/
+        try:
+            cfg_dir = pathlib.Path(__file__).parent / 'config'
+            cfg_dir.mkdir(exist_ok=True)
+            target = cfg_dir / csv_filename
+            with open(target, 'wb') as out:
+                out.write(content)
+            saved.append(str(target))
+        except Exception:
+            pass
+
+        # Also save to playwright_captures/ for backward compatibility
+        try:
+            pc_dir = pathlib.Path(__file__).parent / 'playwright_captures'
+            pc_dir.mkdir(exist_ok=True)
+            target2 = pc_dir / csv_filename
+            with open(target2, 'wb') as out:
+                out.write(content)
+            saved.append(str(target2))
+        except Exception:
+            pass
+
+        # And try repo root
+        try:
+            root_target = pathlib.Path(__file__).parent / csv_filename
+            with open(root_target, 'wb') as out:
+                out.write(content)
+            saved.append(str(root_target))
+        except Exception:
+            pass
+
+        if not saved:
+            return jsonify({'success': False, 'message': 'Failed to save uploaded file'}), 500
+
+        # Immediately clear existing extracted events and calendar records so
+        # the upload fully replaces the current state. We remove per-calendar
+        # extracted files and clear DB tables for calendars and manual/extracurricular
+        # events. Any failure here should not prevent the upload, but will be
+        # logged to stderr.
+        try:
+            # ensure DB exists
+            init_db()
+            with get_db_connection() as conn:
+                cur = conn.cursor()
+                try:
+                    cur.execute('DELETE FROM calendars')
+                except Exception:
+                    pass
+                try:
+                    cur.execute('DELETE FROM manual_events')
+                except Exception:
+                    pass
+                try:
+                    cur.execute('DELETE FROM extracurricular_events')
+                except Exception:
+                    pass
+                conn.commit()
+        except Exception:
+            pass
+
+        # Remove extracted per-calendar files and related artifacts so the
+        # freshly uploaded CSV will be the sole source for the next extraction.
+        try:
+            pc_dir = pathlib.Path(__file__).parent / 'playwright_captures'
+            # remove per-calendar event files
+            for p in pc_dir.glob('events_*.json'):
+                try:
+                    p.unlink()
+                except Exception:
+                    pass
+            # remove the generic events.json and mapping/misc files
+            for name in ('events.json', 'calendar_map.json', 'subject_mappings.json', 'page_after_clicks.html', 'schedule_by_room.json'):
+                p = pc_dir / name
+                try:
+                    if p.exists():
+                        p.unlink()
+                except Exception:
+                    pass
+        except Exception:
+            pass
+
+        # Populate the calendars table from the uploaded CSV then run a full
+        # extraction (now -60d .. now +60d) in the background. We run the
+        # existing helper scripts under tools/ to keep behaviour consistent.
+        started_import = False
+        try:
+            def _bg_repopulate_and_extract():
+                    # Populate DB from CSV first so calendar metadata exists
+                    env = os.environ.copy()
+                    env.setdefault('PYTHONUTF8', '1')
+                    base = pathlib.Path(__file__).parent
+                    try:
+                        subprocess.run([sys.executable, str(base / 'tools' / 'populate_calendars_from_csv.py')], check=False, env=env)
+                    except Exception:
+                        pass
+
+                    # Now process the canonical CSV in-order: try ICS parsing first
+                    # and fall back to the Playwright extractor for calendars with
+                    # no usable ICS feed. This ensures the admin UI sees per-calendar
+                    # START/DONE messages and events appear progressively.
+                    csv_candidates = [pathlib.Path(__file__).parent / 'config' / 'Rooms_PUBLISHER_HTML-ICS(in).csv',
+                                      pathlib.Path(__file__).parent / 'Rooms_PUBLISHER_HTML-ICS(in).csv',
+                                      pathlib.Path('Rooms_PUBLISHER_HTML-ICS(in).csv')]
+                    csv_path = None
+                    for p in csv_candidates:
+                        try:
+                            if p.exists():
+                                csv_path = p
+                                break
+                        except Exception:
+                            continue
+
+                    # Acquire the periodic lock to serialize extractor activity
+                    try:
+                        _periodic_lock.acquire()
+                    except Exception:
+                        pass
+
+                    extractor_state['running'] = True
+                    extractor_state['last_started'] = datetime.utcnow().isoformat()
+                    extractor_state['events_extracted'] = 0
+
+                    try:
+                        if not csv_path:
+                            # no CSV found: fallback to previously existing background behaviour
+                            try:
+                                _run_extractor_background()
+                            except Exception:
+                                pass
+                            return
+
+                        # Read CSV rows in file order and process each
+                        processed_any = False
+                        with open(csv_path, 'r', encoding='utf-8') as f:
+                            rdr = csv.reader(f)
+                            first = True
+                            for row in rdr:
+                                if first:
+                                    first = False
+                                    hdr = '|'.join(row).lower()
+                                    if 'published' in hdr or 'nume_sala' in hdr or 'publishedcalendarurl' in hdr:
+                                        continue
+                                if not row or len(row) < 6:
+                                    continue
+                                # columns: 0=name,1=email,2=building,3=delegate,4=html,5=ics
+                                email = (row[1] or '').strip()
+                                name = ''
+                                if email:
+                                    # reuse existing helper formatting
+                                    try:
+                                        # lightweight formatting similar to read_rooms_publisher_csv
+                                        import re
+                                        local = email.split('@',1)[0]
+                                        parts = re.split(r'[^0-9A-Za-z]+', local)
+                                        parts = [p for p in parts if p and p.lower()!='room']
+                                        name = ' '.join([p.upper() if not p.isdigit() else p for p in parts])
+                                    except Exception:
+                                        name = email
+                                else:
+                                    name = (row[0] or '').strip()
+
+                                html_url = (row[4] or '').strip()
+                                ics_url = (row[5] or '').strip()
+                                chosen_url = ics_url or html_url
+                                if not chosen_url:
+                                    continue
+
+                                # Persist calendar row to DB so metadata available
+                                try:
+                                    init_db()
+                                    add_calendar_url(chosen_url, name)
+                                    # also store email where available
+                                    try:
+                                        with get_db_connection() as conn:
+                                            cur = conn.cursor()
+                                            cur.execute('UPDATE calendars SET email_address = ?, name = ? WHERE url = ?', (email or None, name or None, chosen_url))
+                                            conn.commit()
+                                    except Exception:
+                                        pass
+                                except Exception:
+                                    pass
+
+                                # prepare hash and state messages
+                                import hashlib as _hashlib
+                                h = _hashlib.sha1(chosen_url.encode('utf-8')).hexdigest()[:8]
+                                cal_display = name or chosen_url
+
+                                # Announce start in progress_message and server-side log
+                                try:
+                                    extractor_state['progress_message'] = f'Extracting events from {cal_display}...'
+                                except Exception:
+                                    pass
+                                try:
+                                    ts = datetime.utcnow().isoformat()
+                                    # Add a human-friendly progress log entry (same text as progress_message)
+                                    progress_msg = f"{ts} - {extractor_state.get('progress_message', 'Extracting...')}"
+                                    ll = extractor_state.setdefault('log', [])
+                                    ll.append(progress_msg)
+                                    # also keep a START marker for compatibility
+                                    start_msg = f"{ts} - START: {cal_display}"
+                                    ll.append(start_msg)
+                                    if len(ll) > 500:
+                                        del ll[0:len(ll)-500]
+                                except Exception:
+                                    pass
+
+                                # Try ICS parsing first
+                                parsed_ok = False
+                                if ics_url:
+                                    try:
+                                        evs = parse_ics_from_url(ics_url)
+                                        if evs:
+                                            # convert Event objects to dicts compatible with events_{h}.json
+                                            out_events = []
+                                            for e in evs:
+                                                try:
+                                                    out_events.append({
+                                                        'start': e.start.isoformat(),
+                                                        'end': e.end.isoformat() if e.end else None,
+                                                        'title': e.title,
+                                                        'location': e.location,
+                                                        'description': e.description,
+                                                        'source': h,
+                                                    })
+                                                except Exception:
+                                                    continue
+
+                                            out_dir = pathlib.Path(__file__).parent / 'playwright_captures'
+                                            out_dir.mkdir(exist_ok=True)
+                                            ev_out = out_dir / f'events_{h}.json'
+                                            try:
+                                                with open(ev_out, 'w', encoding='utf-8') as fo:
+                                                    json.dump(out_events, fo, indent=2, ensure_ascii=False, default=str)
+                                            except Exception:
+                                                pass
+
+                                            # Update calendar_map.json
+                                            try:
+                                                map_path = out_dir / 'calendar_map.json'
+                                                cmap = {}
+                                                if map_path.exists():
+                                                    with open(map_path, 'r', encoding='utf-8') as mf:
+                                                        cmap = json.load(mf)
+                                                cmap[h] = {'url': chosen_url, 'name': name or '', 'color': None}
+                                                with open(map_path, 'w', encoding='utf-8') as mf:
+                                                    json.dump(cmap, mf, indent=2, ensure_ascii=False)
+                                            except Exception:
+                                                pass
+
+                                            # update extractor_state counts
+                                            try:
+                                                extractor_state['events_extracted'] = extractor_state.get('events_extracted', 0) + len(out_events)
+                                                extractor_state['progress_message'] = f'Parsed {len(out_events)} events from {cal_display} (ICS)'
+                                            except Exception:
+                                                pass
+
+                                            parsed_ok = True
+                                            processed_any = True
+                                    except Exception:
+                                        # parsing failed; fall back to extractor
+                                        parsed_ok = False
+
+                                if not parsed_ok:
+                                    # run Playwright extractor for this calendar URL (html or ics fallback)
+                                    try:
+                                        _run_extractor_for_url(chosen_url, name)
+                                        processed_any = True
+                                    except Exception:
+                                        pass
+
+                                # Append DONE log entry for this calendar
+                                try:
+                                    ts = datetime.utcnow().isoformat()
+                                    cnt = extractor_state.get('events_extracted', 0)
+                                    msg = f"{ts} - DONE: processed {cal_display}"
+                                    ll = extractor_state.setdefault('log', [])
+                                    ll.append(msg)
+                                    if len(ll) > 500:
+                                        del ll[0:len(ll)-500]
+                                except Exception:
+                                    pass
+
+                        # finished iterating rows
+                        # Append final summary messages so the UI shows completion and total events
+                        try:
+                            ts = datetime.utcnow().isoformat()
+                            total = extractor_state.get('events_extracted', 0)
+                            ll = extractor_state.setdefault('log', [])
+                            ll.append(f"{ts} - INFO: Import Complete")
+                            ll.append(f"{ts} - INFO: tot {total} events")
+                            if len(ll) > 500:
+                                del ll[0:len(ll)-500]
+                        except Exception:
+                            pass
+                        try:
+                            extractor_state['last_rc'] = 0 if processed_any else 1
+                        except Exception:
+                            pass
+                    finally:
+                        extractor_state['running'] = False
+                        try:
+                            _periodic_lock.release()
+                        except Exception:
+                            pass
+
+            # start background thread to run the heavy extraction without blocking
+            t = threading.Thread(target=_bg_repopulate_and_extract, daemon=True)
+            t.start()
+            started_import = True
+        except Exception:
+            started_import = False
+
+        # Don't leak file-system save locations back to the UI. Return a concise
+        # status message and let the admin UI refresh its status to pick up the
+        # new planned order / progress.
+        if started_import:
+            return jsonify({'success': True, 'message': 'Uploaded — full import scheduled'}), 202
+        else:
+            return jsonify({'success': True, 'message': 'Uploaded — import not started (error starting background job)'}), 200
+    except Exception as e:
+        return jsonify({'success': False, 'message': str(e)}), 500
 
 
 @app.route('/admin/import_calendar', methods=['POST'])
@@ -2897,7 +3490,41 @@ def delete_extracurricular_event():
 def frontend_static(filename):
     """Serve built frontend assets from frontend/dist."""
     frontend_dist = pathlib.Path(__file__).parent / 'frontend' / 'dist'
-    return send_file(frontend_dist / filename)
+    target = frontend_dist / filename
+    try:
+        if target.exists():
+            return send_file(target)
+    except Exception:
+        # fall through to fallback behaviour
+        pass
+
+    # If the exact file is missing (common when hashes change after rebuild),
+    # attempt graceful fallbacks:
+    # 1. If requesting a JS/CSS asset, try to find a same-kind file under
+    #    frontend/dist/assets with a current hash (e.g., index-*.css).
+    # 2. Otherwise, return the built index.html so the SPA can bootstrap.
+    try:
+        assets_dir = frontend_dist / 'assets'
+        name = pathlib.Path(filename).name
+        if assets_dir.exists() and name.endswith('.css'):
+            # try to find any index-*.css
+            for p in assets_dir.glob('index-*.css'):
+                return send_file(p)
+        if assets_dir.exists() and name.endswith('.js'):
+            for p in assets_dir.glob('index-*.js'):
+                return send_file(p)
+    except Exception:
+        pass
+
+    # Last-resort: serve the SPA index.html so the browser gets a valid page
+    try:
+        idx = frontend_dist / 'index.html'
+        if idx.exists():
+            return send_file(idx)
+    except Exception:
+        pass
+
+    return "Not found", 404
 
 
 @app.route('/departures.json')

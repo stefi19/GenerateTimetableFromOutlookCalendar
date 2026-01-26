@@ -1,1 +1,42 @@
-[]
+[
+  {
+    "start": "2025-11-26T09:00:00",
+    "end": "2025-11-26T13:00:00",
+    "title": "Conferința „25 de ani de filosofie în Baia Mare”",
+    "location": "Microsoft Teams Meeting; UTCN - CUNBM Victor Babes 62A - Sala A4",
+    "description": "",
+    "source": "ecf5e71c"
+  },
+  {
+    "start": "2026-01-20T10:00:00",
+    "end": "2026-01-20T12:00:00",
+    "title": "Colocviu BSAD EA3",
+    "location": "UTCN - CUNBM Victor Babes 62A - Sala A4 (RO)",
+    "description": "",
+    "source": "ecf5e71c"
+  },
+  {
+    "start": "2025-11-25T10:00:00",
+    "end": "2025-11-25T10:30:00",
+    "title": "Test",
+    "location": "UTCN - CUNBM Victor Babes 62A - Sala A4 (RO)",
+    "description": "",
+    "source": "ecf5e71c"
+  },
+  {
+    "start": "2025-12-11T12:00:00",
+    "end": "2025-12-11T15:00:00",
+    "title": "Sedinta Senat 11 decembrie",
+    "location": "UTCN - Aula Domsa; UTCN - CUNBM Victor Babes 62A - Sala A4",
+    "description": "",
+    "source": "ecf5e71c"
+  },
+  {
+    "start": "2025-03-18T13:00:00",
+    "end": "2025-03-18T14:00:00",
+    "title": "Miruna Cont",
+    "location": "Microsoft Teams Meeting",
+    "description": "",
+    "source": "ecf5e71c"
+  }
+]

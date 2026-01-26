@@ -128,6 +128,59 @@ def main():
             except Exception:
                 pass
 
+        # Best-effort: navigate several months back and forward to force the
+        # SPA to request additional date windows. This helps capture events
+        # outside the initial visible month. We try several likely nav
+        # button selectors (aria-label/title/text) and click them.
+        try:
+            nav_prev_selectors = [
+                'button[aria-label*="Previous"]',
+                'button[aria-label*="Prev"]',
+                'button[title*="Previous"]',
+                'button[title*="Prev"]',
+                'text=Previous',
+                'text=Prev'
+            ]
+            nav_next_selectors = [
+                'button[aria-label*="Next"]',
+                'button[aria-label*="Next month"]',
+                'button[title*="Next"]',
+                'button[title*="Next month"]',
+                'text=Next'
+            ]
+
+            def _try_click_any(selectors_list):
+                for s in selectors_list:
+                    try:
+                        el = page.query_selector(s)
+                        if el:
+                            el.click(timeout=1500)
+                            return True
+                    except Exception:
+                        continue
+                return False
+
+            # Click previous 3 times (go back ~3 months)
+            for _ in range(3):
+                if not _try_click_any(nav_prev_selectors):
+                    break
+                # wait for any network activity
+                page.wait_for_timeout(400)
+
+            # Click next 6 times (to go forward past original state)
+            for _ in range(6):
+                if not _try_click_any(nav_next_selectors):
+                    break
+                page.wait_for_timeout(400)
+
+            # Finally, return to original roughly by clicking previous 3 times
+            for _ in range(3):
+                if not _try_click_any(nav_prev_selectors):
+                    break
+                page.wait_for_timeout(300)
+        except Exception:
+            pass
+
         # limit how many elements we try to click
         max_clicks = 40
         clicks = 0

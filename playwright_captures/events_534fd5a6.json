@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "start": "2026-01-30T08:00:00",
+    "end": "2026-01-30T11:00:00",
+    "title": "Daniela Inoan",
+    "location": "UTCN - AC Bar - Sala 40 (Cluj-Napoca, RO)",
+    "description": "",
+    "source": "534fd5a6"
+  },
+  {
+    "start": "2026-01-03T16:00:00",
+    "end": "2026-01-03T17:00:00",
+    "title": "Adrian Petru Groza",
+    "location": "UTCN - AC Bar - Sala 40 (Cluj-Napoca, RO)",
+    "description": "",
+    "source": "534fd5a6"
+  }
+]

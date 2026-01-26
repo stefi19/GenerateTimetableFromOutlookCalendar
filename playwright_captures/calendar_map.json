@@ -1,2732 +1,801 @@
 {
-  "999aae94": {
-    "url": "http://outlook.office365.com/owa/calendar/a356924d5c2141debf9da6abdd01e81c@campus.utcluj.ro/28a60600f75a4a1daee5ef6be818074e3569903772639482002/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 11",
-    "color": "#003366",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
+  "e979be11": {
+    "url": "https://outlook.office365.com/owa/calendar/03a0c9b436de47c7b2d160f0694c11e0@campus.utcluj.ro/099b8f2802044c0a9c49d1eca1a4e7079780360619601604971/calendar.ics",
+    "name": "UTCN ETTI BAR S41",
+    "color": null,
+    "building": null,
     "room": null
-  },
-  "cbd85ca2": {
-    "url": "http://outlook.office365.com/owa/calendar/027c0f803ceb4e31a8856f79f27fbbd4@campus.utcluj.ro/010c02f6bc364b3398ed39220c813bff18176434378820300293/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 205",
-    "color": "#0066cc",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "2780f631": {
-    "url": "http://outlook.office365.com/owa/calendar/8e2057bb15c9406a8ab61221107d9d25@campus.utcluj.ro/c4a2adc3626e4aad8b13d780d3d009fa9069223347745240968/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 204",
-    "color": "#28a745",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "7ff2932d": {
-    "url": "http://outlook.office365.com/owa/calendar/83ea4f20b7d448dfb295418dd094b521@campus.utcluj.ro/1793524b065942a5932c60845833e7036226699877863089493/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 405",
-    "color": "#dc3545",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "b9844ea2": {
-    "url": "http://outlook.office365.com/owa/calendar/b81d6241994b49f3ae54cfa91436edb4@campus.utcluj.ro/bd166368701d45fbb04f0e35535c965a12508232011876248634/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 417",
-    "color": "#fd7e14",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "c2ab9b16": {
-    "url": "https://outlook.office365.com/owa/calendar/b4fb55fc02934f6d96997f2f28b32040@campus.utcluj.ro/b6be906df71b457c9dcf49009379de208291682664383960244/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 104",
-    "color": "#6f42c1",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "91456494": {
-    "url": "http://outlook.office365.com/owa/calendar/0ce6184fa1ca4a82a3ad937cb6f36ec0@campus.utcluj.ro/da9f398f78474101a74296575fefbafe2842329952109476403/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 516",
-    "color": "#20c997",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "db9659b9": {
-    "url": "http://outlook.office365.com/owa/calendar/3cac35010fdf4a12991cedacffbe5d46@campus.utcluj.ro/8f65b6059b28493c93f8e0cc796d25e916111206743021714118/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 515",
-    "color": "#e83e8c",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "2a821353": {
-    "url": "http://outlook.office365.com/owa/calendar/00b52e72598f4084baf350119c38789a@campus.utcluj.ro/6d2cbd9a8ffd478c874ddb0e230db1ea12006300986932300667/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 526",
-    "color": "#003366",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "41df03d0": {
-    "url": "http://outlook.office365.com/owa/calendar/7e7abeafb13d41a99adc8916f450ee7b@campus.utcluj.ro/65a06113a888408ab894d3c5ccb5b83c9322553329796288940/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 525",
-    "color": "#0066cc",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "b8dedd01": {
-    "url": "http://outlook.office365.com/owa/calendar/23220f192ce440789801285500f63bbf@campus.utcluj.ro/05ee9648ab6c456b99c39c808f735d6d910544300020796397/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 524",
-    "color": "#28a745",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "1462d940": {
-    "url": "http://outlook.office365.com/owa/calendar/14a11fe870d74947b22558caca6e8b68@campus.utcluj.ro/9a1acde9550b4ec9afc9fc0fffa3298313521416865616354597/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 504",
-    "color": "#dc3545",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "b2a0a71a": {
-    "url": "http://outlook.office365.com/owa/calendar/8dd21f7aea0b48a18a70dc29213115f1@campus.utcluj.ro/ec395041033c48f887be68046d3976313481444369486133191/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 503",
-    "color": "#fd7e14",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "2be25c1b": {
-    "url": "http://outlook.office365.com/owa/calendar/db4a8fbccc7d46bfb19113400da2f458@campus.utcluj.ro/26958b12e0e941cf85d64d7d14bac0ef9859296705225930443/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 502",
-    "color": "#6f42c1",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "b11ec865": {
-    "url": "http://outlook.office365.com/owa/calendar/6abb029c2ef04b27a582646abbfc4c08@campus.utcluj.ro/6d89a5f0ea8042cc8b78d7f5a5c8d8508743044546396921248/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 523",
-    "color": "#20c997",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "a9e22d8b": {
-    "url": "http://outlook.office365.com/owa/calendar/ff1e19f2286a40129b32dc57b269e97c@campus.utcluj.ro/628337056fbb42bd99d83ed394de9a2812415035872309508805/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 423",
-    "color": "#e83e8c",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "e6c971b5": {
-    "url": "http://outlook.office365.com/owa/calendar/18b4fac381db4a6f9678d114edac04ea@campus.utcluj.ro/e0a27bc44f0a44d89bf1b408cfb310b316852531619586622916/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 418",
-    "color": "#003366",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "111937bc": {
-    "url": "http://outlook.office365.com/owa/calendar/d721f5c7267c4f44896c25e53a2df898@campus.utcluj.ro/00909defe6104fc783169b6c120108743889436417842858006/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 416",
-    "color": "#0066cc",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "8c6d8031": {
-    "url": "http://outlook.office365.com/owa/calendar/f493fa31634a40cd9574240089393298@campus.utcluj.ro/f3c2b78fdb644f96b25c96644d5fa8d013244098106707257210/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 407",
-    "color": "#28a745",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "7647ec82": {
-    "url": "http://outlook.office365.com/owa/calendar/47b4d56ec58d4939b3476e271565deab@campus.utcluj.ro/f290e5581c204704829e1e3eb89f1f5c752879054332011073/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 428",
-    "color": "#dc3545",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "a47f1142": {
-    "url": "http://outlook.office365.com/owa/calendar/80273a4ccae14c26a3afcb85eae4cc31@campus.utcluj.ro/d73e7e94438e4691b9893451cb66365511413093477986834969/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 427",
-    "color": "#fd7e14",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "22754ee6": {
-    "url": "http://outlook.office365.com/owa/calendar/4299286d9ffe441c828b648b9eb8e557@campus.utcluj.ro/2d81e659c48749178bd91a2cde27932d4778800432436374368/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 426",
-    "color": "#6f42c1",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "58a5ebf2": {
-    "url": "http://outlook.office365.com/owa/calendar/a07b74a31e1443539656b0afba60042b@campus.utcluj.ro/e954315ffc27462f9a6619638dd181a73198420335934627107/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 404",
-    "color": "#20c997",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "2aec1071": {
-    "url": "http://outlook.office365.com/owa/calendar/271f31d815d849489edaed33959bcfb8@campus.utcluj.ro/74d38c0b89d34adcba15278b66ff64949656482739591566560/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 403",
-    "color": "#e83e8c",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "92d666f9": {
-    "url": "http://outlook.office365.com/owa/calendar/05025b15ab884719a8774aaaace118c2@campus.utcluj.ro/f9388964800f47c7a64b10730006129816237767699205134861/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 402",
-    "color": "#003366",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "3c3fc7d5": {
-    "url": "http://outlook.office365.com/owa/calendar/fa0b415e678142029941285487511baf@campus.utcluj.ro/99d9f537aa4247e98cdc3b67fa3f5f593331518140728516756/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 425",
-    "color": "#0066cc",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "48c78759": {
-    "url": "http://outlook.office365.com/owa/calendar/b357254bb24647f78ffc8aa69f596823@campus.utcluj.ro/0176e4b0ea47443f83bcf007002a9f1613362169572306228119/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 323",
-    "color": "#28a745",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "1025d4f9": {
-    "url": "http://outlook.office365.com/owa/calendar/f4b409928a4c4124b3a7e0e1e45af815@campus.utcluj.ro/9fd34b1a5aac43f4b2af0e2e6420256112725172051649695618/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 318",
-    "color": "#dc3545",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "d1bf6001": {
-    "url": "http://outlook.office365.com/owa/calendar/5ecb7337eab142969de1b1f007c243ff@campus.utcluj.ro/7c081caae42e47319465504554426af610499018764481135174/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 317",
-    "color": "#fd7e14",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "b9c07b6b": {
-    "url": "http://outlook.office365.com/owa/calendar/4b78a489438d4397ab065237c2fb9909@campus.utcluj.ro/76d2c2302d5c49b0944d7cdbfb34bbe32620730198017950932/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 316",
-    "color": "#6f42c1",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "3dd220aa": {
-    "url": "http://outlook.office365.com/owa/calendar/3b3968253057473895627a9f5db39626@campus.utcluj.ro/bae9585786094b46879a1da0239df6997006178516024745136/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 307",
-    "color": "#20c997",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "f4695ebb": {
-    "url": "http://outlook.office365.com/owa/calendar/edf3d71e91d54f698c309b8564a68c84@campus.utcluj.ro/233719a8802f4b738dbd57a3c677321410364370949032218393/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 328",
-    "color": "#e83e8c",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "83a780c2": {
-    "url": "http://outlook.office365.com/owa/calendar/18c6148ee0c6495880672ef9c270b9dd@campus.utcluj.ro/5ff0bdb8734d4e18b0ba6bc65a8028d19411086372293245115/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 327",
-    "color": "#003366",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "8704caed": {
-    "url": "http://outlook.office365.com/owa/calendar/a6859459497a4c1c9c1e184cc78ae012@campus.utcluj.ro/71e93be74e104973adfa9af3ae72f00c14499971520356935215/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 326",
-    "color": "#0066cc",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "6b2a3ca0": {
-    "url": "http://outlook.office365.com/owa/calendar/fa41af113df74f92b55ce09eb15a50df@campus.utcluj.ro/926ab04e83b24881a44551bc7267e1ea9771455757049915068/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 304",
-    "color": "#28a745",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "bba61ac4": {
-    "url": "http://outlook.office365.com/owa/calendar/4dc72dc502bf48c7aa7ac9e1bae22890@campus.utcluj.ro/27bb5513ef4c48a39ea4a0c4b178905011184734623697262653/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 303",
-    "color": "#dc3545",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "05f57b6f": {
-    "url": "http://outlook.office365.com/owa/calendar/e182e6d6341f452f8c96818578c52ef6@campus.utcluj.ro/9df27367bf214dafb233da092bc233598181410381887938532/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 302",
-    "color": "#fd7e14",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "f45eed2a": {
-    "url": "http://outlook.office365.com/owa/calendar/dc14b392dac24271bc48304776ca25a6@campus.utcluj.ro/a92e7f17627f487080a6672d6e6fe7e94527843340417364429/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 325",
-    "color": "#6f42c1",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "49502a47": {
-    "url": "http://outlook.office365.com/owa/calendar/8e9034c7ae0a48c2a411bfd7db8c0ec3@campus.utcluj.ro/374b7bfaa90b4c6fb01b742853e3b3357617600720402185189/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 305",
-    "color": "#20c997",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "008ae06c": {
-    "url": "http://outlook.office365.com/owa/calendar/081396c8271b4f7ebc1fe5c347499f39@campus.utcluj.ro/8bd87950ebaa411bbeb1cfe7458f41f01842029406743451474/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 223",
-    "color": "#e83e8c",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "5ad4388b": {
-    "url": "http://outlook.office365.com/owa/calendar/c3c788db3c5444e3be8cbe21907ed306@campus.utcluj.ro/64c4824290724eec8590ea208143738a17241629958252910651/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 218",
-    "color": "#003366",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "aa2f649e": {
-    "url": "http://outlook.office365.com/owa/calendar/02883c38b26e480b99f8cc76c0e7b19a@campus.utcluj.ro/4c1aa433da6e4624935bb97ecefe4d656980291791111468005/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 217",
-    "color": "#0066cc",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "583c9fbc": {
-    "url": "http://outlook.office365.com/owa/calendar/c5ffb7c601bb4252b70be47baf796b95@campus.utcluj.ro/4bf721c315d641a2a79c46089c03ae811091158201220480126/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 216",
-    "color": "#28a745",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "2a96132c": {
-    "url": "http://outlook.office365.com/owa/calendar/cea15869e6fe4eca81409b71c2566cee@campus.utcluj.ro/2e2abf3425a24b518ba4e902e420d61b3790923002459984107/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 207",
-    "color": "#dc3545",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "9d3d3c99": {
-    "url": "http://outlook.office365.com/owa/calendar/4054c857d5f44b9fa0faf4efe738e9b9@campus.utcluj.ro/81538571cd8d46cbbdbc81efef3703eb17892466298974091612/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 228",
-    "color": "#fd7e14",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "cba15157": {
-    "url": "http://outlook.office365.com/owa/calendar/6f2c8e895dd846efb7d87abb91964070@campus.utcluj.ro/733970e55a024e42b2af8e5c7e2770a25138278416839213454/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 227",
-    "color": "#6f42c1",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "45a9bb74": {
-    "url": "http://outlook.office365.com/owa/calendar/69e99a33c2514784bbc900e15111c433@campus.utcluj.ro/d60311c129b54da4bbc8fea3b529d84710190988020130014919/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 226",
-    "color": "#20c997",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "cbdf0a59": {
-    "url": "http://outlook.office365.com/owa/calendar/53bd84fa68424b629e35e70225dcec43@campus.utcluj.ro/b0a28103fccb43168eec808a53d9d67c2703605951016120367/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 203",
-    "color": "#e83e8c",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "ee1869c8": {
-    "url": "http://outlook.office365.com/owa/calendar/ea43b46f436d480da6a6b0f83f42bef5@campus.utcluj.ro/8592bca6b8294873bcdd4c0beb65fbe211083143506326222116/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 202",
-    "color": "#003366",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "8d40e3c3": {
-    "url": "http://outlook.office365.com/owa/calendar/801c604a62684a7ca913a76cc11d268d@campus.utcluj.ro/5c22c7e9aca24765a74d5e5ca7cf732610082240032892117517/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 225",
-    "color": "#0066cc",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "e6deed2d": {
-    "url": "http://outlook.office365.com/owa/calendar/622c44881dfc460390e946285970578a@campus.utcluj.ro/001c4f0627f2474e9ea5ea005b7ba55c15289366763008537379/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 16",
-    "color": "#28a745",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "b6889bfd": {
-    "url": "http://outlook.office365.com/owa/calendar/106015d409ff47a7b6c1e916825d9fcc@campus.utcluj.ro/1cbe95069049479eaae3bb9a7d6b6ce115651159477365913006/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 123",
-    "color": "#dc3545",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "b389a9db": {
-    "url": "http://outlook.office365.com/owa/calendar/4d9a87d7362d4855a1834580b7c7274f@campus.utcluj.ro/b07cd6ecb1f64f3f996c13c867509ef413579619657383683114/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 118",
-    "color": "#fd7e14",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "ad0df398": {
-    "url": "http://outlook.office365.com/owa/calendar/6c8a613c92e54dd382428e24b1605d00@campus.utcluj.ro/dbb34bcc6e0b470b8d304c1538e5c25a17227850326186938536/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 117",
-    "color": "#6f42c1",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "8cb4a83e": {
-    "url": "http://outlook.office365.com/owa/calendar/08a22b78bf03475e9595bf5079bc6fc9@campus.utcluj.ro/14ac599657d84b7bbb79286c5bd119637554613537923573716/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 116",
-    "color": "#20c997",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "16e16b3c": {
-    "url": "https://outlook.office365.com/owa/calendar/bd544d0e58d04717958bf88a88927976@campus.utcluj.ro/88846a5e6c8a4bbfbb9b9d92f03295586707960592668117762/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 107",
-    "color": "#e83e8c",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "ebf79070": {
-    "url": "http://outlook.office365.com/owa/calendar/883fbf0567fc467284d1b494997c1547@campus.utcluj.ro/bb35b193c61448ccb3db30bf683f682c8843270077753930078/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 128",
-    "color": "#003366",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "68a7c73c": {
-    "url": "http://outlook.office365.com/owa/calendar/2bc351c815b049bf875b03bdc3de5d2a@campus.utcluj.ro/5ddccd6b9b044e9e9a0b769dcc64cb0d16011798825208155521/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 127",
-    "color": "#0066cc",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "7af44631": {
-    "url": "http://outlook.office365.com/owa/calendar/9935f801b7b24d999c524ea6930e4504@campus.utcluj.ro/db637218c81449efbef2df3868512521937266732662103744/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 126",
-    "color": "#28a745",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "3551965d": {
-    "url": "https://outlook.office365.com/owa/calendar/01f5f3dbf48d4edcb5026190c7a40041@campus.utcluj.ro/ec3b79c57cc04d9f9c02bdc260cddaf84711760262349721871/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 103",
-    "color": "#dc3545",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "0cf1a401": {
-    "url": "https://outlook.office365.com/owa/calendar/087032b12e3e475980fecb9249a4e87f@campus.utcluj.ro/d8f6456f18634f8588ee8bbe1c43540716901539822885786769/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 102",
-    "color": "#fd7e14",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "4890e5ee": {
-    "url": "http://outlook.office365.com/owa/calendar/9ab2cf70588d412689a741ac27c7dc7c@campus.utcluj.ro/da94019ff9b54cbe8eca7f8942a8d6da5728733752158713661/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 125",
-    "color": "#6f42c1",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "1c37430a": {
-    "url": "https://outlook.office365.com/owa/calendar/c277698c440e4858a2d311bd8a704bca@campus.utcluj.ro/6504d0a30c4f457088dad300f02f3f1214514913813120379700/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 105",
-    "color": "#20c997",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "e9e65668": {
-    "url": "http://outlook.office365.com/owa/calendar/f142a265f5c24c25b7848d89dcbc62f5@campus.utcluj.ro/24506af7380041828845b4f4a0d9545b17632199253210550300/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 37",
-    "color": "#e83e8c",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "74989706": {
-    "url": "http://outlook.office365.com/owa/calendar/b4815828fa98487d91c39ddf454163c7@campus.utcluj.ro/fb1fa4d4a2f143e488e77df5fbc19a5817308164875996803353/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 34",
-    "color": "#003366",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "a53bb61d": {
-    "url": "http://outlook.office365.com/owa/calendar/e3582b29c0174f8a9d80d42e342cf0aa@campus.utcluj.ro/af59a2d546a4420f93a503edbfd160f816075394973509184635/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 30",
-    "color": "#0066cc",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "06478041": {
-    "url": "http://outlook.office365.com/owa/calendar/92feaa1d822e4aebb3c98ddf8c9526b9@campus.utcluj.ro/cfc06c1a41784ada975f5394ee41dbb11023914862198793708/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 23",
-    "color": "#28a745",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "2cf18018": {
-    "url": "http://outlook.office365.com/owa/calendar/a68be421dafb4a33bdbb0dbaa7634a50@campus.utcluj.ro/d5f49a072b6d44618f26ac720123c8098882989012024069063/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 20",
-    "color": "#dc3545",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "6795530e": {
-    "url": "http://outlook.office365.com/owa/calendar/7f1cb018afc24f588fc852aabb103a18@campus.utcluj.ro/24882d3e0c7749108c25398b50d9eda417957349680396930251/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 33",
-    "color": "#fd7e14",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "2ce59277": {
-    "url": "https://outlook.office365.com/owa/calendar/33c4b61348b74baa98da486245a22f69@campus.utcluj.ro/fc3d8b215ef74385b0b43f89224423e616163807469309657084/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 10",
-    "color": "#6f42c1",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "60b5f50b": {
-    "url": "http://outlook.office365.com/owa/calendar/ddebbc43ab104b90a2ebc0c0fea65351@campus.utcluj.ro/7c775a0ded654450bef79f719dd4253111117431312280053111/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 4",
-    "color": "#20c997",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "4e17f6ad": {
-    "url": "https://outlook.office365.com/owa/calendar/c1c06730a0d548fc97b51894b5a3d362@campus.utcluj.ro/7ed6d9a964ba4199bf0ecff1b4cbb19712972190088115766043/calendar.html",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 505",
-    "color": "#e83e8c",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": null
-  },
-  "f0e57e81": {
-    "url": "https://outlook.office365.com/owa/calendar/f05ae83ed135445789062294661a78aa@campus.utcluj.ro/b021062831e748c3bc9e917ba12826c63065508075060337244/calendar.html",
-    "name": "UTCN - CUNBM Victor Babes 62A - Sala L26/1",
-    "color": "#003366",
-    "building": "UTCN BABES CUNBM",
-    "room": null
-  },
-  "f3cc8227": {
-    "url": "https://outlook.office365.com/owa/calendar/f48173acfc964e25ace4cf8cf2c146f9@campus.utcluj.ro/8fa5c6b1ea3c4a499d168a063a5f227710002910147337353083/calendar.html",
-    "name": "UTCN - CUNBM Victor Babes 62A - Sala L23/1",
-    "color": "#0066cc",
-    "building": "UTCN BABES CUNBM",
-    "room": null
-  },
-  "03019478": {
-    "url": "https://outlook.office365.com/owa/calendar/153bf4b8c0514aa8a56417ed8992d914@campus.utcluj.ro/64d134fdfe354eac8cf255ad2fdf57b09151124291925953497/calendar.html",
-    "name": "UTCN - CUNBM Victor Babes 62A - Sala B74",
-    "color": "#28a745",
-    "building": "UTCN BABES CUNBM",
-    "room": null
-  },
-  "1a81fe05": {
-    "url": "https://outlook.office365.com/owa/calendar/fb8d4b3a62ae44248252d6005c113a7e@campus.utcluj.ro/9894c08922e8446f9e2f5cb2d96c3d6f3217632174702891255/calendar.html",
-    "name": "UTCN - CUNBM Victor Babes 62A - Sala A3",
-    "color": "#dc3545",
-    "building": "UTCN BABES CUNBM",
-    "room": null
-  },
-  "f07f42f0": {
-    "url": "https://outlook.office365.com/owa/calendar/c94c913227184f11bb891ff1c14fed8b@campus.utcluj.ro/8fcd1b93e2f04056a937046a947facca5487809175895084570/calendar.html",
-    "name": "UTCN - CUNBM Victor Babes 62A - Sala A2",
-    "color": "#fd7e14",
-    "building": "UTCN BABES CUNBM",
-    "room": null
-  },
-  "edcd3b47": {
-    "url": "https://outlook.office365.com/owa/calendar/06d58bb6c58c42cd92b22bc70089e6c9@campus.utcluj.ro/96b88d8a68e047feac83bf7ba7009a7243862708895849135/calendar.html",
-    "name": "UTCN - CUNBM Victor Babes 62A - Sala A4",
-    "color": "#6f42c1",
-    "building": "UTCN BABES CUNBM",
-    "room": null
-  },
-  "6bb1d6ee": {
-    "url": "https://outlook.office365.com/owa/calendar/45362a6d11df4fb894b05ba2fa4cafdd@campus.utcluj.ro/266e9a0c863240bfa8cc5e4dc0d89af36807275624616540967/calendar.html",
-    "name": "UTCN - CUNBM Victor Babes 62A - Sala A1",
-    "color": "#20c997",
-    "building": "UTCN BABES CUNBM",
-    "room": null
-  },
-  "bdce78dd": {
-    "url": "https://outlook.office365.com/owa/calendar/b24c13833e804c5fa3ad11c34edf4016@campus.utcluj.ro/9858ed245ca642869b860baf18870e496921177399726666401/calendar.html",
-    "name": "UTCN - INSTA Blvd. 21 Decembrie 1989 - Sala P01",
-    "color": "#e83e8c",
-    "building": "UTCN 21 DECEMBRIE INSTALATII CLUJ",
-    "room": null
-  },
-  "d0e2d1db": {
-    "url": "https://outlook.office365.com/owa/calendar/78d6258c48304d1b999bea11beae256c@campus.utcluj.ro/593fa5a1c33043748756c7f5f8ecb36811682836993177368435/calendar.html",
-    "name": "UTCN - INSTA Blvd. 21 Decembrie 1989 - Aula",
-    "color": "#003366",
-    "building": "UTCN 21 DECEMBRIE INSTALATII CLUJ",
-    "room": null
-  },
-  "9f0a445f": {
-    "url": "https://outlook.office365.com/owa/calendar/1c778e9274974187826f2b2dd0447660@campus.utcluj.ro/c518b66497434a0d8f18e0a89d01f81111248740627744967659/calendar.html",
-    "name": "UTCN - ARMM Muncii 12 - Sala 3",
-    "color": "#0066cc",
-    "building": "UTCN MUNCII SIMTEX CLUJ",
-    "room": null
-  },
-  "e59bbfcc": {
-    "url": "https://outlook.office365.com/owa/calendar/6f27e2305bf442f2bb08c0b5dc1d1f42@campus.utcluj.ro/b0f3b6270db04618b106576602fea47b14647381725133957102/calendar.html",
-    "name": "UTCN - Cons Observatorului 72-74 - Sala O1",
-    "color": "#28a745",
-    "building": "UTCN OBSERVATOR CONSTRUCTII CLUJ",
-    "room": null
-  },
-  "4ef30ced": {
-    "url": "https://outlook.office365.com/owa/calendar/921663b8852a4b59bd0fcb557e8fb3e3@campus.utcluj.ro/b2e08a02ba4542a3b27d063b57ece4cd14305712522080967695/calendar.html",
-    "name": "UTCN - Cons Observatorului 72-74 - Sala O8",
-    "color": "#dc3545",
-    "building": "UTCN OBSERVATOR CONSTRUCTII CLUJ",
-    "room": null
-  },
-  "05788a75": {
-    "url": "https://outlook.office365.com/owa/calendar/8ba9c96221d44eeea0f7b4f112f92ca6@campus.utcluj.ro/0bddb9b17d0146eda74fcde920af7411594666909497130246/calendar.html",
-    "name": "UTCN - Cons Observatorului 72-74 - Sala O102",
-    "color": "#fd7e14",
-    "building": "UTCN OBSERVATOR CONSTRUCTII CLUJ",
-    "room": null
-  },
-  "d0100dcf": {
-    "url": "https://outlook.office365.com/owa/calendar/22d4a472d9874cf7873a1bd1939ad55e@campus.utcluj.ro/d181897156c2414d8d6ab196c42d1e3210418329460054209394/calendar.html",
-    "name": "UTCN - CONS Bar - Sala 213",
-    "color": "#6f42c1",
-    "building": "UTCN BARITIU CONSTRUCTII CLUJ",
-    "room": null
-  },
-  "514fb69b": {
-    "url": "https://outlook.office365.com/owa/calendar/aa69fd9d8cad49a8bace9555c6c31d8b@campus.utcluj.ro/95bcb6da434048ae86bbd98b0dfbdd6310012641212388466794/calendar.html",
-    "name": "UTCN - CONS Bar - Sala 169",
-    "color": "#20c997",
-    "building": "UTCN BARITIU CONSTRUCTII CLUJ",
-    "room": null
-  },
-  "e7e9f1cf": {
-    "url": "https://outlook.office365.com/owa/calendar/f3a87447626d46bfb1569c55ad46cbe7@campus.utcluj.ro/0d23b26b42a340edb652b79f27b84aa015050941843672206700/calendar.html",
-    "name": "UTCN - CONS Bar - Sala 157",
-    "color": "#e83e8c",
-    "building": "UTCN BARITIU CONSTRUCTII CLUJ",
-    "room": null
-  },
-  "8847dc38": {
-    "url": "https://outlook.office365.com/owa/calendar/ea71d0bb43ca4ee89bab2567e4414285@campus.utcluj.ro/009b080c1951425eae7fda6d52bceaf116792829138931392885/calendar.html",
-    "name": "UTCN - CONS Bar - Sala 115",
-    "color": "#003366",
-    "building": "UTCN BARITIU CONSTRUCTII CLUJ",
-    "room": null
-  },
-  "b943797b": {
-    "url": "https://outlook.office365.com/owa/calendar/22b6bc2b144045449131ab73dc1be374@campus.utcluj.ro/b9a28372266a41479730f193e4f548357293333472514865693/calendar.html",
-    "name": "UTCN - CONS Bar - Sala 161",
-    "color": "#0066cc",
-    "building": "UTCN BARITIU CONSTRUCTII CLUJ",
-    "room": null
-  },
-  "d3e06452": {
-    "url": "http://outlook.office365.com/owa/calendar/a07a282863d9413fabc111be7eca0226@campus.utcluj.ro/7add44a72c0a4f30b25683827f4afb7216622138307942613875/calendar.html",
-    "name": "UTCN - AC Bar - Sala 36",
-    "color": "#28a745",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": null
-  },
-  "d880dd30": {
-    "url": "http://outlook.office365.com/owa/calendar/de05dbcdc8d34d2ca80c61512463cbc0@campus.utcluj.ro/eb704a924cc74565a8198cf077751b4313158737863952741809/calendar.html",
-    "name": "UTCN - AC Bar - Sala P03",
-    "color": "#dc3545",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": null
-  },
-  "daa5bacb": {
-    "url": "http://outlook.office365.com/owa/calendar/c96aedd3f76544c7837466fd6e0e9474@campus.utcluj.ro/23e6aec566f34a0585d0f25833155a1a2957858414771048870/calendar.html",
-    "name": "UTCN - AC Bar - Sala 40",
-    "color": "#fd7e14",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": null
-  },
-  "c9e229ad": {
-    "url": "https://outlook.office365.com/owa/calendar/767ecccc757d4d1cb06e69cfc5859a99@campus.utcluj.ro/9d027f91b69a47c8ac3abeaf8f1616cb2599555293167064219/calendar.html",
-    "name": "UTCN - AC Bar - Sala 16B",
-    "color": "#6f42c1",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": null
-  },
-  "3cbf3487": {
-    "url": "https://outlook.office365.com/owa/calendar/bc6293dcf2ac494b891910e8b2903100@campus.utcluj.ro/b54861fd15f640ffa9d4a53565c53165838900861736632320/calendar.html",
-    "name": "UTCN - IE Bar - Sala D22",
-    "color": "#20c997",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": null
-  },
-  "ad32ed0e": {
-    "url": "https://outlook.office365.com/owa/calendar/03e9c3eb51804b2a8ddf57efde942640@campus.utcluj.ro/e98d6eaa46e64a22afe82e9233e073635307254572847619666/calendar.html",
-    "name": "UTCN - IE Bar - Sala H21",
-    "color": "#e83e8c",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": null
-  },
-  "3dfdad93": {
-    "url": "https://outlook.office365.com/owa/calendar/e9babfabef2c41579ba460bb1fb55a5b@campus.utcluj.ro/b684d2820bc747daa6e995c10a497cbb17732842012882639601/calendar.html",
-    "name": "UTCN - IE Bar - Sala 316",
-    "color": "#003366",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": null
-  },
-  "1a779492": {
-    "url": "https://outlook.office365.com/owa/calendar/1e3132d45e8e42138bdfbd1f2d00cc3f@campus.utcluj.ro/0b99fcb8743b43199331f66c6ea291033113260389161843545/calendar.html",
-    "name": "UTCN - ETTI Bar - Sala 330",
-    "color": "#0066cc",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": null
-  },
-  "7facf6d4": {
-    "url": "https://outlook.office365.com/owa/calendar/482dbad4b0c8489b9693279447140a0a@campus.utcluj.ro/d825137571a349ba8287adedab2cdfb514627582738429928726/calendar.html",
-    "name": "UTCN - ETTI Bar - Sala 367",
-    "color": "#28a745",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": null
-  },
-  "305502de": {
-    "url": "https://outlook.office365.com/owa/calendar/a3f3f7dd873a40c398bd9728d26da3be@campus.utcluj.ro/b5f56c85fefb4b70b763ce745bc1f04a13354822966997054726/calendar.html",
-    "name": "UTCN - ETTI Bar - Sala 329",
-    "color": "#dc3545",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": null
-  },
-  "b4311d12": {
-    "url": "https://outlook.office365.com/owa/calendar/783cb511ce3146a19f529cc46461a138@campus.utcluj.ro/2cdb617778cd43d1bb06710dc527517d1165772283573533856/calendar.html",
-    "name": "UTCN - IE Bar - Sala 318",
-    "color": "#fd7e14",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": null
-  },
-  "c19c6159": {
-    "url": "https://outlook.office365.com/owa/calendar/426a2c020f5e4d179aa78bd943ee9a8f@campus.utcluj.ro/e27df06a04d4460e9ed404c8b87c63a413946056066639156367/calendar.html",
-    "name": "UTCN - ETTI Bar - Sala E04",
-    "color": "#6f42c1",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": null
-  },
-  "386de44d": {
-    "url": "https://outlook.office365.com/owa/calendar/03a0c9b436de47c7b2d160f0694c11e0@campus.utcluj.ro/099b8f2802044c0a9c49d1eca1a4e7079780360619601604971/calendar.html",
-    "name": "UTCN - ETTI Bar - Sala S41",
-    "color": "#20c997",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": null
-  },
-  "c1eefcb6": {
-    "url": "https://outlook.office365.com/owa/calendar/011ed1e0e2254bd788ffa5f271afa398@campus.utcluj.ro/7a36518756f841a1bf2ea23c8704b8519633424276481403873/calendar.html",
-    "name": "UTCN - AC Bar - Sala S42",
-    "color": "#e83e8c",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": null
-  },
-  "c9379d62": {
-    "url": "https://outlook.office365.com/owa/calendar/6b0531287d01410da35d454404a4b3de@campus.utcluj.ro/f42a1ce02fea4765b68aed2ca3531e9016230198696104586443/calendar.html",
-    "name": "UTCN - IE Bar - Sala P02",
-    "color": "#003366",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": null
-  },
-  "28fb3035": {
-    "url": "https://outlook.office365.com/owa/calendar/52a73b4f189d4c0eb5f2549b9be382f0@campus.utcluj.ro/1ae56296cae841b29a3bf729346c4f1a10638459542953233954/calendar.html",
-    "name": "UTCN - AC Bar - Sala 356",
-    "color": "#0066cc",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": null
-  },
-  "64dde0d0": {
-    "url": "https://outlook.office365.com/owa/calendar/20696cd038544cf0b95725c9bd6ad434@campus.utcluj.ro/87d073e386af42ca867ff9e12d6b521f2545483240802485141/calendar.html",
-    "name": "UTCN - ETTI Bar - Sala 368",
-    "color": "#28a745",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": null
-  },
-  "dd78a342": {
-    "url": "https://outlook.office365.com/owa/calendar/182bacda4cc54c828f6b9be9fa1bf549@campus.utcluj.ro/d943d49375fc44489ffc9f890e3e0ff91330299505588086582/calendar.html",
-    "name": "UTCN - AC Bar - Sala 26B",
-    "color": "#dc3545",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": null
-  },
-  "3e622275": {
-    "url": "http://outlook.office365.com/owa/calendar/828381f1cbe74cb08fd6969cc2147cb5@campus.utcluj.ro/f10453bc9e914abc981110b24d58650e6530057062271799879/calendar.html",
-    "name": "UTCN - AC Bar - Sala BT 505",
-    "color": "#fd7e14",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": null
-  },
-  "c88fe879": {
-    "url": "http://outlook.office365.com/owa/calendar/a4e166f84cd1408b841072ea82e5ed4c@campus.utcluj.ro/b3b5393ad30a4d6b99329263d589e96e14289065892614941807/calendar.html",
-    "name": "UTCN - AC Bar - Sala BT 504",
-    "color": "#6f42c1",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": null
-  },
-  "43d9e8c4": {
-    "url": "http://outlook.office365.com/owa/calendar/bcca9970db0c46349ed6f28c8176c2f8@campus.utcluj.ro/b498d20f6c1345daaac0a695706d284815991736931980221487/calendar.html",
-    "name": "UTCN - AC Bar - Sala BT 502",
-    "color": "#20c997",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": null
-  },
-  "b343dcbe": {
-    "url": "http://outlook.office365.com/owa/calendar/0b019e161e524c84ab96678b51f02374@campus.utcluj.ro/671c337f220b4e0e869babcd71f8f7813648205003871415572/calendar.html",
-    "name": "UTCN - AC Bar - Sala BT 503",
-    "color": "#e83e8c",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": null
-  },
-  "206477a9": {
-    "url": "https://outlook.office365.com/owa/calendar/d6e69b62387a4c8b885647786071c65b@campus.utcluj.ro/46a96d936e5e4e129743235839a9cbb216714085778746247586/calendar.html",
-    "name": "UTCN - AC Bar - Sala BT 501",
-    "color": "#003366",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": null
-  },
-  "7fb107e6": {
-    "url": "https://outlook.office365.com/owa/calendar/2973e1925d27439fba6128347d68b65f@campus.utcluj.ro/982915e601d54a318b9120c4e4b9e74d16005272970557829414/calendar.html",
-    "name": "UTCN - ETTI Bar - Sala BT 104",
-    "color": "#0066cc",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": null
-  },
-  "13452be9": {
-    "url": "https://outlook.office365.com/owa/calendar/4a3b092ea38345d88404d0bac0db7702@campus.utcluj.ro/c75ea176103b431bb9bff5b7044f872514552350120730701095/calendar.html",
-    "name": "UTCN - ETTI Bar - Sala BT 101",
-    "color": "#28a745",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": null
-  },
-  "4e36a558": {
-    "url": "https://outlook.office365.com/owa/calendar/4d3571651d464a1a944fbe672ba62b84@campus.utcluj.ro/4aff3e6cda544d4eb9854a91168d673216398369614859241660/calendar.html",
-    "name": "UTCN - AC Bar - Sala BT 605",
-    "color": "#dc3545",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": null
-  },
-  "eb561c6a": {
-    "url": "https://outlook.office365.com/owa/calendar/142b9e9b5cd143e8b3ff531473171841@campus.utcluj.ro/65c5de55e57746559688d26c46bf74838749769534200103753/calendar.html",
-    "name": "UTCN - IE Bar - Sala BT 301",
-    "color": "#fd7e14",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": null
-  },
-  "86991a3f": {
-    "url": "https://outlook.office365.com/owa/calendar/6196aa57de3a46ffbeee282efefb2d62@campus.utcluj.ro/580a4ba1a0394c4ab1caad906cf7cf287269409148282756483/calendar.html",
-    "name": "UTCN - IE Bar - Sala BT 302",
-    "color": "#6f42c1",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": null
-  },
-  "70d73986": {
-    "url": "https://outlook.office365.com/owa/calendar/a298b9929f4847478d01a555120ab01e@campus.utcluj.ro/c36332c746974507b164570e73f5ccac17345435354118711566/calendar.html",
-    "name": "UTCN - ETTI Bar - Sala BT 105",
-    "color": "#20c997",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": null
-  },
-  "7aef419d": {
-    "url": "https://outlook.office365.com/owa/calendar/d55755fed596460ebe7b84aaa06bde18@campus.utcluj.ro/19429297de9947caaa3345bfc5e6f98112186208588121380842/calendar.html",
-    "name": "UTCN - IE Bar - Sala BT 404",
-    "color": "#e83e8c",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": null
-  },
-  "eefcac0d": {
-    "url": "https://outlook.office365.com/owa/calendar/a92903c1b4e14833ac7192487a2eef52@campus.utcluj.ro/1742195f66c54cbeabd54919984d6c2d12816494198183711770/calendar.html",
-    "name": "UTCN - IE Bar - Sala BT 401",
-    "color": "#003366",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": null
-  },
-  "c6f91d9c": {
-    "url": "https://outlook.office365.com/owa/calendar/62da40fb72624e6cb29e8f3148a3a380@campus.utcluj.ro/1f4f2a9ee6804b0e921e9274d5308a2a18215479473383923325/calendar.html",
-    "name": "UTCN - ETTI Bar - Sala BT 204",
-    "color": "#0066cc",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": null
-  },
-  "0e854be9": {
-    "url": "https://outlook.office365.com/owa/calendar/ec7297ce82684077b6e5176bc71ff96d@campus.utcluj.ro/f9e8d3b8196c4dda824580932f952e7b7483364481661616404/calendar.html",
-    "name": "UTCN - AC Bar - Sala BT 603",
-    "color": "#28a745",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": null
-  },
-  "6f426d95": {
-    "url": "https://outlook.office365.com/owa/calendar/7f5e16979d50465ab3263c9edea56e82@campus.utcluj.ro/73c08b081d4f4cd58c451b5ad1c2cfeb3940275610148253028/calendar.html",
-    "name": "UTCN - AC Bar - Sala BT 604",
-    "color": "#dc3545",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": null
-  },
-  "bcbbc8ba": {
-    "url": "https://outlook.office365.com/owa/calendar/a57e6216dc2b46cf9221080cb62f5673@campus.utcluj.ro/2f0d3e8664b84ccd8c5678fac130aad55152205670997262503/calendar.html",
-    "name": "UTCN - ETTI Bar - Sala BT 205",
-    "color": "#fd7e14",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": null
-  },
-  "d388854a": {
-    "url": "https://outlook.office365.com/owa/calendar/aadad6128c434cafb70bd0bc9f054a09@campus.utcluj.ro/f304f85c2e064176bce6aa9e760dad9d10051774377936060454/calendar.html",
-    "name": "UTCN - IE Bar - Sala BT 304",
-    "color": "#6f42c1",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": null
-  },
-  "08baadd7": {
-    "url": "https://outlook.office365.com/owa/calendar/022a23e0fa0f423cb7f640a87bd89977@campus.utcluj.ro/376d8d4fa359477a9e8ab64786d65a096683573902960169448/calendar.html",
-    "name": "UTCN - ETTI Bar - Sala BT 203",
-    "color": "#20c997",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": null
-  },
-  "bf7f1197": {
-    "url": "https://outlook.office365.com/owa/calendar/0d0d20baeacc4ea282d91c117cdd9b96@campus.utcluj.ro/11b4a02bcdca44fdbf252554a80c95691043377668700617147/calendar.html",
-    "name": "UTCN - AC Bar - Sala BT 702",
-    "color": "#e83e8c",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": null
-  },
-  "a6d62cc7": {
-    "url": "https://outlook.office365.com/owa/calendar/4f4147e3ce974902a359f5113b51a447@campus.utcluj.ro/d163a8c733904feb97c5187a4d9b8c0d6895965863866313083/calendar.html",
-    "name": "UTCN - ETTI Bar - Sala BT 201",
-    "color": "#003366",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": null
-  },
-  "4346e79f": {
-    "url": "https://outlook.office365.com/owa/calendar/09ec5e09d86441a8a2a8ded646eae974@campus.utcluj.ro/f5db505bb83242f797678ee506e2b5e83846760642172240321/calendar.html",
-    "name": "UTCN - ETTI Bar - Sala BT 102",
-    "color": "#0066cc",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": null
-  },
-  "40e9beb5": {
-    "url": "https://outlook.office365.com/owa/calendar/d360dac17ed8482c98ac13e4a255dc47@campus.utcluj.ro/b695b07211b44af2b768e1504e8016ac12033489895368593723/calendar.html",
-    "name": "UTCN - IE Bar - Sala BT 402",
-    "color": "#28a745",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": null
-  },
-  "9f578490": {
-    "url": "http://outlook.office365.com/owa/calendar/b704aa7ac4304e98ad8207eb362bfa99@campus.utcluj.ro/b3c5709ebdaa4e5da359178588a8565810299257685696895984/calendar.html",
-    "name": "UTCN - AC Dorobantilor - Sala D01",
-    "color": "#dc3545",
-    "building": "UTCN DOROBANTILOR ELECTRO CLUJ",
-    "room": null
-  },
-  "30d7439f": {
-    "url": "http://outlook.office365.com/owa/calendar/d6b58657f5f34b20b9be182bdee42a58@campus.utcluj.ro/e6be9487c6aa48b4a44c933bf7a2606612113108404090667895/calendar.html",
-    "name": "UTCN - AC Dorobantilor - Sala 105",
-    "color": "#fd7e14",
-    "building": "UTCN DOROBANTILOR ELECTRO CLUJ",
-    "room": null
-  },
-  "102542e5": {
-    "url": "http://outlook.office365.com/owa/calendar/7e7fe18985ba46a7be5c18309b308e49@campus.utcluj.ro/371ca5a3dd944102bc64a27884cd768a4538921717912516099/calendar.html",
-    "name": "UTCN - AC Dorobantilor - Sala 103",
-    "color": "#6f42c1",
-    "building": "UTCN DOROBANTILOR ELECTRO CLUJ",
-    "room": null
-  },
-  "2304590b": {
-    "url": "http://outlook.office365.com/owa/calendar/4a1867f2c69f453884eb1155e82b819b@campus.utcluj.ro/8bf273e8cbb743fca1b659985c844b891415857042006572232/calendar.html",
-    "name": "UTCN - AC Dorobantilor - Sala 107",
-    "color": "#20c997",
-    "building": "UTCN DOROBANTILOR ELECTRO CLUJ",
-    "room": null
-  },
-  "20059077": {
-    "url": "https://outlook.office365.com/owa/calendar/9d21134480d8460ea778ed65de7b289c@campus.utcluj.ro/1d4753b5145e42eb89f6ec30e0aaa4835459575961504388940/calendar.html",
-    "name": "UTCN - Dorobantilor 71-73 Corp A - Sala 1-2",
-    "color": "#e83e8c",
-    "building": "UTCN DOROBANTILOR DECIDFR CLUJ",
-    "room": null
-  },
-  "024818aa": {
-    "url": "https://outlook.office365.com/owa/calendar/bab27cd066054184b51850a7bd5b76b5@campus.utcluj.ro/f33f9fbbc55349828d52e4f4dd25593614811630865311000535/calendar.html",
-    "name": "UTCN - Dorobantilor 71-73 - DECIDFR",
-    "color": "#003366",
-    "building": "UTCN DOROBANTILOR DECIDFR CLUJ",
-    "room": null
-  },
-  "f941d2ec": {
-    "url": "https://outlook.office365.com/owa/calendar/833fe045f7824a5381fbae924429297b@campus.utcluj.ro/ab2168240db94129b3e95c3f539fd46a14939052852893932707/calendar.html",
-    "name": "UTCN - Dorobantilor 71-73 Corp A - Sala 1-3",
-    "color": "#0066cc",
-    "building": "UTCN DOROBANTILOR DECIDFR CLUJ",
-    "room": null
-  },
-  "e90dabf2": {
-    "url": "https://outlook.office365.com/owa/calendar/5248e1e6a9ac4381b5ba30fe5bc81a99@campus.utcluj.ro/7701769fb1964a8c92c109b331413c454139217445827280509/calendar.html",
-    "name": "UTCN - Dorobantilor 71-73 Corp A - Sala 1-1",
-    "color": "#28a745",
-    "building": "UTCN DOROBANTILOR DECIDFR CLUJ",
-    "room": null
-  },
-  "49fc3c9a": {
-    "url": "https://outlook.office365.com/owa/calendar/804fc2e4bd91440abd3cf141e1b38425@campus.utcluj.ro/a4f7d97ee8584f879fe228c8d05edcec7873654453925511696/calendar.html",
-    "name": "UTCN - ETTI Observatorului 2 - Sala 507",
-    "color": "#dc3545",
-    "building": "UTCN OBSERVATOR ELECTRO CLUJ",
-    "room": null
-  },
-  "8ecd5eee": {
-    "url": "https://outlook.office365.com/owa/calendar/4baf85b9d23e444fab45018954ba1d13@campus.utcluj.ro/64b1ecbb89c64d7091aad8608a8ceaa35524098022047501136/calendar.html",
-    "name": "UTCN - AC Observatorului 2 - Sala 308",
-    "color": "#fd7e14",
-    "building": "UTCN OBSERVATOR ELECTRO CLUJ",
-    "room": null
-  },
-  "c942229a": {
-    "url": "https://outlook.office365.com/owa/calendar/71d07328ece04443a3faa0a9d6319f11@campus.utcluj.ro/b3660146216e486a9427965dcd5c596f8411651768609147697/calendar.html",
-    "name": "UTCN - ETTI Observatorului 2 - Sala 501B",
-    "color": "#6f42c1",
-    "building": "UTCN OBSERVATOR ELECTRO CLUJ",
-    "room": null
-  },
-  "8813d675": {
-    "url": "https://outlook.office365.com/owa/calendar/ff10d6f02c6941559e04c66ef6c66235@campus.utcluj.ro/37afa8e6c9cc4c239de985c68af8629d18189057379114182970/calendar.html",
-    "name": "UTCN - ETTI Observatorului 2 - Sala 410",
-    "color": "#20c997",
-    "building": "UTCN OBSERVATOR ELECTRO CLUJ",
-    "room": null
-  },
-  "33eaa8a2": {
-    "url": "https://outlook.office365.com/owa/calendar/95f690a654674da994ed82c955991615@campus.utcluj.ro/080c2199c7834f2a989bc2cda63ba69615012402782938320572/calendar.html",
-    "name": "UTCN - ETTI Observatorului 2 - Sala 509",
-    "color": "#e83e8c",
-    "building": "UTCN OBSERVATOR ELECTRO CLUJ",
-    "room": null
-  },
-  "7621bbd4": {
-    "url": "https://outlook.office365.com/owa/calendar/d608a38d7af8414b9ff64a8046d0dd27@campus.utcluj.ro/fdb2bc9742b14fab9a140dea6ae0a1196101942199880770194/calendar.html",
-    "name": "UTCN - IE Observatorului 2 - Sala 5",
-    "color": "#003366",
-    "building": "UTCN OBSERVATOR ELECTRO CLUJ",
-    "room": null
-  },
-  "0c1d36a7": {
-    "url": "https://outlook.office365.com/owa/calendar/d78af41074e84ca3a29310e7ad66a571@campus.utcluj.ro/83d0b24456444842a6e3d64f5499a7998355118700802253080/calendar.html",
-    "name": "UTCN - AC Observatorului 2 - Sala 303",
-    "color": "#0066cc",
-    "building": "UTCN OBSERVATOR ELECTRO CLUJ",
-    "room": null
-  },
-  "41adc1ad": {
-    "url": "https://outlook.office365.com/owa/calendar/d591f9d8f72d4b5b9b4bcc9e411d56c2@campus.utcluj.ro/f91fa10e28544ecab12772cd851cc45713034270433608247068/calendar.html",
-    "name": "UTCN - ETTI Observatorului 2 - Sala 404",
-    "color": "#28a745",
-    "building": "UTCN OBSERVATOR ELECTRO CLUJ",
-    "room": null
-  },
-  "0e7429de": {
-    "url": "https://outlook.office365.com/owa/calendar/a9b573722ad94f45b682e1bed165550f@campus.utcluj.ro/d4b040e49ce44871bc8fc4a793e9112d17227538003445982370/calendar.html",
-    "name": "UTCN - ETTI Observatorului 2 - Sala 506B",
-    "color": "#dc3545",
-    "building": "UTCN OBSERVATOR ELECTRO CLUJ",
-    "room": null
-  },
-  "b2b9d4ae": {
-    "url": "https://outlook.office365.com/owa/calendar/4a40a038c6224320aa8e6a5960ba622a@campus.utcluj.ro/794b46d8cf504c3f907b867d8ef0ab3713675293087331874768/calendar.html",
-    "name": "UTCN - AC Observatorului 2 - Sala 309",
-    "color": "#fd7e14",
-    "building": "UTCN OBSERVATOR ELECTRO CLUJ",
-    "room": null
-  },
-  "cab4ced0": {
-    "url": "https://outlook.office365.com/owa/calendar/e480dbc1106f416c889fbb5398f796d8@campus.utcluj.ro/db6c2c93ca1f4e4db3645dc52f7ed5a4157849311530112522/calendar.html",
-    "name": "UTCN - IE Observatorului 2 - Sala 7C",
-    "color": "#6f42c1",
-    "building": "UTCN OBSERVATOR ELECTRO CLUJ",
-    "room": null
-  },
-  "80092616": {
-    "url": "https://outlook.office365.com/owa/calendar/d85a677d98c04091b0c7c1f9b515ff91@campus.utcluj.ro/4cdc8329d62d45b39f990977d8a4963b8409104016693109503/calendar.html",
-    "name": "UTCN - AC Observatorului 2 - Sala 305",
-    "color": "#20c997",
-    "building": "UTCN OBSERVATOR ELECTRO CLUJ",
-    "room": null
-  },
-  "e5492ff0": {
-    "url": "https://outlook.office365.com/owa/calendar/2c9ba45a0eae40cbb73858356013e4f2@campus.utcluj.ro/55d9d056e2684f75bd87b1d2479f4e14948866029227653928/calendar.html",
-    "name": "UTCN - ETTI Observatorului 2 - Sala 407",
-    "color": "#e83e8c",
-    "building": "UTCN OBSERVATOR ELECTRO CLUJ",
-    "room": null
-  },
-  "5894c82e": {
-    "url": "https://outlook.office365.com/owa/calendar/fd64f8b694d440f692c66fd7fc2c74be@campus.utcluj.ro/c6c7f6b28be9493089a4ac8beb54d1663326784373175118471/calendar.html",
-    "name": "UTCN - ETTI Observatorului 2 - Sala 402",
-    "color": "#003366",
-    "building": "UTCN OBSERVATOR ELECTRO CLUJ",
-    "room": null
-  },
-  "88472459": {
-    "url": "https://outlook.office365.com/owa/calendar/a46021aab69c45e2aa9d988922d54248@campus.utcluj.ro/896339b9754f471e87779495b8d98a2510080477572535811922/calendar.html",
-    "name": "UTCN - ETTI Observatorului 2 - Sala 401",
-    "color": "#0066cc",
-    "building": "UTCN OBSERVATOR ELECTRO CLUJ",
-    "room": null
-  },
-  "f87e27c6": {
-    "url": "https://outlook.office365.com/owa/calendar/117b1a6b49984facb47bc42dd0e571a8@campus.utcluj.ro/ace23963db6f4d7891f3d2f20072b06515111776838913045133/calendar.html",
-    "name": "UTCN - ETTI Observatorului 2 - Sala 506A",
-    "color": "#28a745",
-    "building": "UTCN OBSERVATOR ELECTRO CLUJ",
-    "room": null
-  },
-  "362a72e5": {
-    "url": "https://outlook.office365.com/owa/calendar/7433551d8a9f4a39b97d1d7cdae27076@campus.utcluj.ro/daf46b3cb58940f7b866bb17ac302afa16936313465599088916/calendar.html",
-    "name": "UTCN - CUNBM Victoriei 76 - Sala S67",
-    "color": "#dc3545",
-    "building": "UTCN VICTORIEI CUNBM",
-    "room": null
-  },
-  "c97ed17a": {
-    "url": "https://outlook.office365.com/owa/calendar/1e7c10dc9597406a962f7730381ea5d5@campus.utcluj.ro/07834ed22493412dbee0af199ada20a1679606469189881503/calendar.html",
-    "name": "UTCN - CUNBM Victoriei 76 - Sala A59",
-    "color": "#fd7e14",
-    "building": "UTCN VICTORIEI CUNBM",
-    "room": null
-  },
-  "2d08237b": {
-    "url": "http://outlook.office365.com/owa/calendar/c0a00ab1e5504a7b832dfe89c70259f8@campus.utcluj.ro/a8db06972e204c5e912b4a9a12c5956213786006386065359395/calendar.html",
-    "name": "UTCN - CESTI CUNBM",
-    "color": "#6f42c1",
-    "building": "UTCN VICTORIEI CUNBM",
-    "room": null
-  },
-  "c9145123": {
-    "url": "http://outlook.office365.com/owa/calendar/ebf584296e27451f881f299f81cd0baf@campus.utcluj.ro/4710edc002644e5a88e04267673fae1c7227915822595955757/calendar.html",
-    "name": "UTCN - AC Daic - Sala 206",
-    "color": "#20c997",
-    "building": "UTCN DAICOVICIU CLUJ",
-    "room": null
-  },
-  "5dc2c6bd": {
-    "url": "http://outlook.office365.com/owa/calendar/f22dd6bbe42945e08e89c1516a82b0b7@campus.utcluj.ro/499763e8015e4c3590fbebff61c4244b5745281987689689452/calendar.html",
-    "name": "UTCN - AC Daic - Sala 479",
-    "color": "#e83e8c",
-    "building": "UTCN DAICOVICIU CLUJ",
-    "room": null
-  },
-  "f6190e9b": {
-    "url": "https://outlook.office365.com/owa/calendar/77a6190ace044efc96dc92c0424b5db3@campus.utcluj.ro/1ed3071ef5ba4a8a82fd7525b41d97d75123532789196401377/calendar.html",
-    "name": "UTCN - DAICOVICIU 15 - DMCDI",
-    "color": "#003366",
-    "building": "UTCN DAICOVICIU CLUJ",
-    "room": null
-  },
-  "62a6f69c": {
-    "url": "https://outlook.office365.com/owa/calendar/2558b0263ce545e0bfda02b1474e5c5d@campus.utcluj.ro/8b0e18910794455dbd4ab23812110d53998087074370350586/calendar.html",
-    "name": "UTCN - CONS DAICOVICIU - Sala 604",
-    "color": "#0066cc",
-    "building": "UTCN DAICOVICIU CLUJ",
-    "room": null
-  },
-  "9fe5d512": {
-    "url": "https://outlook.office365.com/owa/calendar/83f45e59772d4628b03cc9d21654ad23@campus.utcluj.ro/3cd72cc579d14626a7aa08d7d5bde12d14504394438333080978/calendar.html",
-    "name": "UTCN - CONS DAICOVICIU - Sala 705",
-    "color": "#28a745",
-    "building": "UTCN DAICOVICIU CLUJ",
-    "room": null
-  },
-  "c53af2c1": {
-    "url": "http://outlook.office365.com/owa/calendar/988fba4a3ed0405f81e82fd99028c052@campus.utcluj.ro/b5d0b2ad681c4441beb7fb0d00691e08397613310085276986/calendar.html",
-    "name": "UTCN - DAICOVICIU 15 - Sala 431",
-    "color": "#dc3545",
-    "building": "UTCN DAICOVICIU CLUJ",
-    "room": null
-  },
-  "3d648d87": {
-    "url": "http://outlook.office365.com/owa/calendar/64b2fcaf131443b5a60ec50cd5f756e7@campus.utcluj.ro/467a58c015164b66af9579ab17eea26b654117146146300478/calendar.html",
-    "name": "UTCN - CESTI Cluj",
-    "color": "#fd7e14",
-    "building": "UTCN DAICOVICIU CLUJ",
-    "room": null
-  },
-  "c4ecc81e": {
-    "url": "http://outlook.office365.com/owa/calendar/6ebd695f2de544c49d6f96202df0e0c6@campus.utcluj.ro/b6112630e7da4ea39f11b094aac25df14620102040852371902/calendar.html",
-    "name": "UTCN - Aula Domsa",
-    "color": "#6f42c1",
-    "building": "UTCN DAICOVICIU CLUJ",
-    "room": null
-  },
-  "3d0772b8": {
-    "url": "http://outlook.office365.com/owa/calendar/481562ae30c345b8a0417a7e24f175c8@campus.utcluj.ro/b1bfb5292a334e229712e9a61129faef1724955221381497856/calendar.html",
-    "name": "UTCN - IIRMP Muncii 103-105 - Sala Collegium",
-    "color": "#20c997",
-    "building": "UTCN MUNCII CLUJ",
-    "room": null
-  },
-  "38461dc8": {
-    "url": "https://outlook.office365.com/owa/calendar/3c5ad3405ca84364becb83e752e83465@campus.utcluj.ro/3f291a1b605549389487cbf5581a6cee15690257524447050243/calendar.html",
-    "name": "UTCN - IIRMP Muncii 103-105 - Sala B105",
-    "color": "#e83e8c",
-    "building": "UTCN MUNCII CLUJ",
-    "room": null
-  },
-  "6ef53029": {
-    "url": "https://outlook.office365.com/owa/calendar/86800cd4d26b451fa3ddc195163b8d41@campus.utcluj.ro/044347e72cf748189aab9eb96193d4d516109088026048608113/calendar.html",
-    "name": "UTCN - ARMM Muncii 103-105 - Sala D08A",
-    "color": "#003366",
-    "building": "UTCN MUNCII CLUJ",
-    "room": null
-  },
-  "988b5930": {
-    "url": "https://outlook.office365.com/owa/calendar/742030df9a1145f79f246266d16aaa19@campus.utcluj.ro/33e837f8bfb946d7bdb0c23a9e9784438094491037190444825/calendar.html",
-    "name": "UTCN - IIRMP Muncii 103-105 - Sala B106",
-    "color": "#0066cc",
-    "building": "UTCN MUNCII CLUJ",
-    "room": null
-  },
-  "d93fdff8": {
-    "url": "https://outlook.office365.com/owa/calendar/455dbe559be940dc8c4b0bc947e5e9cb@campus.utcluj.ro/474cf801e6af4da288e9771d7010dc4f16360615254874367374/calendar.html",
-    "name": "UTCN - ARMM Muncii 103-105 - Sala A13",
-    "color": "#28a745",
-    "building": "UTCN MUNCII CLUJ",
-    "room": null
-  },
-  "b5a1e3d5": {
-    "url": "https://outlook.office365.com/owa/calendar/8c56645debb6439190cf2002c35b607f@campus.utcluj.ro/77cfe4966bb142278591fa9c189308a110950812604967119849/calendar.html",
-    "name": "UTCN - IIRMP Muncii 103-105 - Sala E07",
-    "color": "#dc3545",
-    "building": "UTCN MUNCII CLUJ",
-    "room": null
-  },
-  "310a6af3": {
-    "url": "https://outlook.office365.com/owa/calendar/723c71913f5440d88557a91d760a3a8f@campus.utcluj.ro/ea86c7c8eb6e43ac98f8407665f04c9a11921888838287585885/calendar.html",
-    "name": "UTCN - IIRMP Muncii 103-105 - Sala C102",
-    "color": "#fd7e14",
-    "building": "UTCN MUNCII CLUJ",
-    "room": null
-  },
-  "853e1707": {
-    "url": "https://outlook.office365.com/owa/calendar/9dc810a9f6eb4711a4c212237b0f3827@campus.utcluj.ro/7395956760d94c78bff5b90bfd6cd7ad13457112995751914361/calendar.html",
-    "name": "UTCN - IMM Muncii 103-105 - Sala G10",
-    "color": "#6f42c1",
-    "building": "UTCN MUNCII CLUJ",
-    "room": null
-  },
-  "e8a09dc9": {
-    "url": "https://outlook.office365.com/owa/calendar/bbb83c66270a45ea96fcf73caa486597@campus.utcluj.ro/1193feef30e44c978d59d70a744cf4411523870210407175550/calendar.html",
-    "name": "UTCN - IMM Muncii 103-105 - Sala E114",
-    "color": "#20c997",
-    "building": "UTCN MUNCII CLUJ",
-    "room": null
-  },
-  "6d467079": {
-    "url": "https://outlook.office365.com/owa/calendar/2d2d5b3da1504367a9cfa37e1434c576@campus.utcluj.ro/f3d60380a5334890967e69f61f5bd6b01504847312403637086/calendar.html",
-    "name": "UTCN - ARMM Muncii 103-105 - Sala C303",
-    "color": "#e83e8c",
-    "building": "UTCN MUNCII CLUJ",
-    "room": null
-  },
-  "48b47466": {
-    "url": "https://outlook.office365.com/owa/calendar/1ccbaf0082d944249b35f9cf1f981f68@campus.utcluj.ro/ac05a87de03e4c4faea6e2bc4a938d1f15540254936049703717/calendar.html",
-    "name": "UTCN - IIRMP Muncii 103-105 - Sala M310",
-    "color": "#003366",
-    "building": "UTCN MUNCII CLUJ",
-    "room": null
-  },
-  "251a4805": {
-    "url": "https://outlook.office365.com/owa/calendar/8bbc3b13cd2545ac95b2ee9772a3b82e@campus.utcluj.ro/c2f6cc38a1da4501bdb275d5e7fdc3b014913443233045095865/calendar.html",
-    "name": "UTCN - ARMM Muncii 103-105 - Sala D01K",
-    "color": "#0066cc",
-    "building": "UTCN MUNCII CLUJ",
-    "room": null
-  },
-  "a4c50660": {
-    "url": "http://outlook.office365.com/owa/calendar/ff71f5d4ef78484db82b7cd4e203aa97@campus.utcluj.ro/3b75cdd247414b89a255bd92026cbcc410810192519064393375/calendar.html",
-    "name": "UTCN - Aula Centenar",
-    "color": "#28a745",
-    "building": "UTCN MUNCII CLUJ",
-    "room": null
-  },
-  "0d0d5e4a": {
-    "url": "http://outlook.office365.com/owa/calendar/3eb52ce938624e7790ab81361f0ac3f1@campus.utcluj.ro/f2859edaf4ce476f97484247b77472122623979707452980535/calendar.html",
-    "name": "UTCN - CUNBM Sala Senatului",
-    "color": "#dc3545",
-    "building": "UTCN RECTORAT CUNBM",
-    "room": null
-  },
-  "153109b2": {
-    "url": "http://outlook.office365.com/owa/calendar/49fb6e315a3c4c17915b29835bad42ea@campus.utcluj.ro/0afef4a5189641deb4464f790f3465351672912736610294354/calendar.html",
-    "name": "UTCN - Aula Magna CUNBM",
-    "color": "#fd7e14",
-    "building": "UTCN RECTORAT CUNBM",
-    "room": null
-  },
-  "cc6f0acc": {
-    "url": "http://outlook.office365.com/owa/calendar/d2c5d28f172d4394bc45de79551dae9f@campus.utcluj.ro/ff4feaecf1e64be4ac70921ba3c7e4813224001752777747891/calendar.html",
-    "name": "UTCN - RECTORAT - Sala 115",
-    "color": "#6f42c1",
-    "building": "UTCN RECTORAT",
-    "room": null
-  },
-  "ee57a7c5": {
-    "url": "https://outlook.office365.com/owa/calendar/fc0ab40298e64caeaa14be996036a807@campus.utcluj.ro/dcf727857fe04d56b4ca8516d4b8ff2a16887609845941625406/calendar.html",
-    "name": "UTCN - RECTORAT - Sala 219",
-    "color": "#20c997",
-    "building": "UTCN RECTORAT",
-    "room": null
-  },
-  "c05f5f2e": {
-    "url": "http://outlook.office365.com/owa/calendar/05effa6a5a20475db5db039dc6e32bbc@campus.utcluj.ro/ffad23a3e4fa478b936b0459b14d71f76818501080686338516/calendar.html",
-    "name": "UTCN - RECTORAT - Sala 211",
-    "color": "#e83e8c",
-    "building": "UTCN RECTORAT",
-    "room": null
-  },
-  "b962bb51": {
-    "url": "http://outlook.office365.com/owa/calendar/56216c3cbefa41c2aee3604169accaa2@campus.utcluj.ro/cdd100f4c5ca40718a14c399ce19bdc8334032730094602152/calendar.html",
-    "name": "UTCN - RECTORAT - Sala 120",
-    "color": "#003366",
-    "building": "UTCN RECTORAT",
-    "room": null
-  },
-  "2ddd326c": {
-    "url": "http://outlook.office365.com/owa/calendar/77857393c8934d239e4e26df70ccf49c@campus.utcluj.ro/bb71035b168c40069300bfffdba2ca5517879324408226661536/calendar.html",
-    "name": "UTCN - RECTORAT - Sala P23",
-    "color": "#0066cc",
-    "building": "UTCN RECTORAT",
-    "room": null
-  },
-  "d0ee895c": {
-    "url": "https://outlook.office365.com/owa/calendar/02e0e4e5988541beb37d1d311021d591@campus.utcluj.ro/f165bdbe4cd8463aab29d6b2c6dde8811376436817678416584/calendar.html",
-    "name": "UTCN - HUB UT - Sala 2-6",
-    "color": "#28a745",
-    "building": "UTCN HUB CLUJ",
-    "room": null
-  },
-  "9276d66c": {
-    "url": "https://outlook.office365.com/owa/calendar/efb94cbd6ea54d76a7cb399cc79539ad@campus.utcluj.ro/e659f751f1de4a5cb86a5ae60ecbdb8d10134300954909195052/calendar.html",
-    "name": "UTCN - HUB UT - Sala 2-4",
-    "color": "#dc3545",
-    "building": "UTCN HUB CLUJ",
-    "room": null
-  },
-  "dfa9ec72": {
-    "url": "https://outlook.office365.com/owa/calendar/c0ee2bbcd481408fb413a5762bedb22c@campus.utcluj.ro/287dec02b28645929ea88060b9e1f27517626717181307120504/calendar.html",
-    "name": "UTCN - HUB UT - Sala 2-7",
-    "color": "#fd7e14",
-    "building": "UTCN HUB CLUJ",
-    "room": null
-  },
-  "2b2397e1": {
-    "url": "https://outlook.office365.com/owa/calendar/260f699a7e7741edb73e8d7a8c8dade6@campus.utcluj.ro/6b3866ef98ee4bfeacc36917abdd6efe18317677392087118261/calendar.html",
-    "name": "UTCN - HUB UT - Sala 2-5",
-    "color": "#6f42c1",
-    "building": "UTCN HUB CLUJ",
-    "room": null
-  },
-  "f5f27c9f": {
-    "url": "https://outlook.office365.com/owa/calendar/0e3c1061ace94209820fe5b97ba430fb@campus.utcluj.ro/578a66b13684439596e7e6727bd83b1d3831380052953128501/calendar.html",
-    "name": "UTCN - HUB UT - Sala 1-1",
-    "color": "#20c997",
-    "building": "UTCN HUB CLUJ",
-    "room": null
-  },
-  "933c7350": {
-    "url": "https://outlook.office365.com/owa/calendar/05aff2c7ffcc4387bd94806ad10bb84c@campus.utcluj.ro/eb562ba9edf64fb3b5cf121970264d8e16272913970701890711/calendar.html",
-    "name": "UTCN - BRD HUB",
-    "color": "#e83e8c",
-    "building": "UTCN HUB CLUJ",
-    "room": null
-  },
-  "b52d20f3": {
-    "url": "https://outlook.office365.com/owa/calendar/6df0b487dbed46adbb893b709e0aec6b@campus.utcluj.ro/d0583e2ff6ae4b7c821414fdbab614726486838255886964362/calendar.html",
-    "name": "UTCN - ROOM CONFERENCE 1 UTCN HUB",
-    "color": "#003366",
-    "building": "UTCN HUB CLUJ",
-    "room": null
-  },
-  "f0ae5a87": {
-    "url": "https://outlook.office365.com/owa/calendar/ea44e891bdc04f648df9449273c0765e@campus.utcluj.ro/43b69f62bd1d4734889620dc369d3879327021450492865205/calendar.html",
-    "name": "UTCN - ROOM CONFERENCE 2 UTCN HUB",
-    "color": "#0066cc",
-    "building": "UTCN HUB CLUJ",
-    "room": null
-  },
-  "4db6c4b2": {
-    "url": "https://outlook.office365.com/owa/calendar/9e52bd188dc9492398aa76a9623aa245@campus.utcluj.ro/11f8b9fb43e84ed3b6850dc84db423b16997328360830985704/calendar.html",
-    "name": "UTCN - Aula UTCN HUB",
-    "color": "#28a745",
-    "building": "UTCN HUB CLUJ",
-    "room": null
-  },
-  "8ae69e11": {
-    "url": "http://outlook.office365.com/owa/calendar/a356924d5c2141debf9da6abdd01e81c@campus.utcluj.ro/28a60600f75a4a1daee5ef6be818074e3569903772639482002/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 11",
-    "color": "#0066cc",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 11"
-  },
-  "b15750ad": {
-    "url": "http://outlook.office365.com/owa/calendar/027c0f803ceb4e31a8856f79f27fbbd4@campus.utcluj.ro/010c02f6bc364b3398ed39220c813bff18176434378820300293/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 205",
-    "color": "#6610f2",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 205"
-  },
-  "d6f7d706": {
-    "url": "http://outlook.office365.com/owa/calendar/8e2057bb15c9406a8ab61221107d9d25@campus.utcluj.ro/c4a2adc3626e4aad8b13d780d3d009fa9069223347745240968/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 204",
-    "color": "#20c997",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 204"
-  },
-  "9ef9cc77": {
-    "url": "http://outlook.office365.com/owa/calendar/83ea4f20b7d448dfb295418dd094b521@campus.utcluj.ro/1793524b065942a5932c60845833e7036226699877863089493/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 405",
-    "color": "#6610f2",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 405"
-  },
-  "eaec33e3": {
-    "url": "http://outlook.office365.com/owa/calendar/b81d6241994b49f3ae54cfa91436edb4@campus.utcluj.ro/bd166368701d45fbb04f0e35535c965a12508232011876248634/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 417",
-    "color": "#dc3545",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 417"
-  },
-  "78797af5": {
-    "url": "https://outlook.office365.com/owa/calendar/b4fb55fc02934f6d96997f2f28b32040@campus.utcluj.ro/b6be906df71b457c9dcf49009379de208291682664383960244/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 104",
-    "color": "#dc3545",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 104"
-  },
-  "f0259e1b": {
-    "url": "http://outlook.office365.com/owa/calendar/0ce6184fa1ca4a82a3ad937cb6f36ec0@campus.utcluj.ro/da9f398f78474101a74296575fefbafe2842329952109476403/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 516",
-    "color": "#e83e8c",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 516"
-  },
-  "7eaffc31": {
-    "url": "http://outlook.office365.com/owa/calendar/3cac35010fdf4a12991cedacffbe5d46@campus.utcluj.ro/8f65b6059b28493c93f8e0cc796d25e916111206743021714118/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 515",
-    "color": "#e83e8c",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 515"
-  },
-  "7176519d": {
-    "url": "http://outlook.office365.com/owa/calendar/00b52e72598f4084baf350119c38789a@campus.utcluj.ro/6d2cbd9a8ffd478c874ddb0e230db1ea12006300986932300667/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 526",
-    "color": "#6610f2",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 526"
-  },
-  "e506c4c2": {
-    "url": "http://outlook.office365.com/owa/calendar/7e7abeafb13d41a99adc8916f450ee7b@campus.utcluj.ro/65a06113a888408ab894d3c5ccb5b83c9322553329796288940/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 525",
-    "color": "#17a2b8",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 525"
-  },
-  "cd568f62": {
-    "url": "http://outlook.office365.com/owa/calendar/23220f192ce440789801285500f63bbf@campus.utcluj.ro/05ee9648ab6c456b99c39c808f735d6d910544300020796397/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 524",
-    "color": "#fd7e14",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 524"
-  },
-  "30ad6153": {
-    "url": "http://outlook.office365.com/owa/calendar/14a11fe870d74947b22558caca6e8b68@campus.utcluj.ro/9a1acde9550b4ec9afc9fc0fffa3298313521416865616354597/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 504",
-    "color": "#6610f2",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 504"
-  },
-  "6398df60": {
-    "url": "http://outlook.office365.com/owa/calendar/8dd21f7aea0b48a18a70dc29213115f1@campus.utcluj.ro/ec395041033c48f887be68046d3976313481444369486133191/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 503",
-    "color": "#e6590f",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 503"
-  },
-  "7f0778ee": {
-    "url": "http://outlook.office365.com/owa/calendar/db4a8fbccc7d46bfb19113400da2f458@campus.utcluj.ro/26958b12e0e941cf85d64d7d14bac0ef9859296705225930443/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 502",
-    "color": "#e6590f",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 502"
-  },
-  "03b631e9": {
-    "url": "http://outlook.office365.com/owa/calendar/6abb029c2ef04b27a582646abbfc4c08@campus.utcluj.ro/6d89a5f0ea8042cc8b78d7f5a5c8d8508743044546396921248/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 523",
-    "color": "#6f42c1",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 523"
-  },
-  "78845e8a": {
-    "url": "http://outlook.office365.com/owa/calendar/ff1e19f2286a40129b32dc57b269e97c@campus.utcluj.ro/628337056fbb42bd99d83ed394de9a2812415035872309508805/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 423",
-    "color": "#28a745",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 423"
-  },
-  "f164ec00": {
-    "url": "http://outlook.office365.com/owa/calendar/18b4fac381db4a6f9678d114edac04ea@campus.utcluj.ro/e0a27bc44f0a44d89bf1b408cfb310b316852531619586622916/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 418",
-    "color": "#20c997",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 418"
-  },
-  "49d6bbb6": {
-    "url": "http://outlook.office365.com/owa/calendar/d721f5c7267c4f44896c25e53a2df898@campus.utcluj.ro/00909defe6104fc783169b6c120108743889436417842858006/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 416",
-    "color": "#007bff",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 416"
-  },
-  "b0388ac8": {
-    "url": "http://outlook.office365.com/owa/calendar/f493fa31634a40cd9574240089393298@campus.utcluj.ro/f3c2b78fdb644f96b25c96644d5fa8d013244098106707257210/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 407",
-    "color": "#fd7e14",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 407"
-  },
-  "7340672c": {
-    "url": "http://outlook.office365.com/owa/calendar/47b4d56ec58d4939b3476e271565deab@campus.utcluj.ro/f290e5581c204704829e1e3eb89f1f5c752879054332011073/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 428",
-    "color": "#20c997",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 428"
-  },
-  "ae186a52": {
-    "url": "http://outlook.office365.com/owa/calendar/80273a4ccae14c26a3afcb85eae4cc31@campus.utcluj.ro/d73e7e94438e4691b9893451cb66365511413093477986834969/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 427",
-    "color": "#003366",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 427"
-  },
-  "3eebc326": {
-    "url": "http://outlook.office365.com/owa/calendar/4299286d9ffe441c828b648b9eb8e557@campus.utcluj.ro/2d81e659c48749178bd91a2cde27932d4778800432436374368/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 426",
-    "color": "#20c997",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 426"
-  },
-  "326b43ad": {
-    "url": "http://outlook.office365.com/owa/calendar/a07b74a31e1443539656b0afba60042b@campus.utcluj.ro/e954315ffc27462f9a6619638dd181a73198420335934627107/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 404",
-    "color": "#6f42c1",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 404"
   },
   "d1e9da24": {
     "url": "http://outlook.office365.com/owa/calendar/271f31d815d849489edaed33959bcfb8@campus.utcluj.ro/74d38c0b89d34adcba15278b66ff64949656482739591566560/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 403",
-    "color": "#17a2b8",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 403"
-  },
-  "76edcbc4": {
-    "url": "http://outlook.office365.com/owa/calendar/05025b15ab884719a8774aaaace118c2@campus.utcluj.ro/f9388964800f47c7a64b10730006129816237767699205134861/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 402",
-    "color": "#fd7e14",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 402"
-  },
-  "6edb34db": {
-    "url": "http://outlook.office365.com/owa/calendar/fa0b415e678142029941285487511baf@campus.utcluj.ro/99d9f537aa4247e98cdc3b67fa3f5f593331518140728516756/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 425",
-    "color": "#6610f2",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 425"
-  },
-  "a7b09d3a": {
-    "url": "http://outlook.office365.com/owa/calendar/b357254bb24647f78ffc8aa69f596823@campus.utcluj.ro/0176e4b0ea47443f83bcf007002a9f1613362169572306228119/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 323",
-    "color": "#17a2b8",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 323"
-  },
-  "90f0e87d": {
-    "url": "http://outlook.office365.com/owa/calendar/f4b409928a4c4124b3a7e0e1e45af815@campus.utcluj.ro/9fd34b1a5aac43f4b2af0e2e6420256112725172051649695618/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 318",
-    "color": "#6610f2",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 318"
-  },
-  "b05c033f": {
-    "url": "http://outlook.office365.com/owa/calendar/5ecb7337eab142969de1b1f007c243ff@campus.utcluj.ro/7c081caae42e47319465504554426af610499018764481135174/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 317",
-    "color": "#0066cc",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 317"
-  },
-  "ea0362cd": {
-    "url": "http://outlook.office365.com/owa/calendar/4b78a489438d4397ab065237c2fb9909@campus.utcluj.ro/76d2c2302d5c49b0944d7cdbfb34bbe32620730198017950932/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 316",
-    "color": "#6610f2",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 316"
-  },
-  "5ee36843": {
-    "url": "http://outlook.office365.com/owa/calendar/3b3968253057473895627a9f5db39626@campus.utcluj.ro/bae9585786094b46879a1da0239df6997006178516024745136/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 307",
-    "color": "#6610f2",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 307"
-  },
-  "0cbf42fb": {
-    "url": "http://outlook.office365.com/owa/calendar/edf3d71e91d54f698c309b8564a68c84@campus.utcluj.ro/233719a8802f4b738dbd57a3c677321410364370949032218393/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 328",
-    "color": "#661000",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 328"
-  },
-  "3a0977d6": {
-    "url": "http://outlook.office365.com/owa/calendar/18c6148ee0c6495880672ef9c270b9dd@campus.utcluj.ro/5ff0bdb8734d4e18b0ba6bc65a8028d19411086372293245115/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 327",
-    "color": "#007bff",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 327"
-  },
-  "d9c4f4ce": {
-    "url": "http://outlook.office365.com/owa/calendar/a6859459497a4c1c9c1e184cc78ae012@campus.utcluj.ro/71e93be74e104973adfa9af3ae72f00c14499971520356935215/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 326",
-    "color": "#20c997",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 326"
-  },
-  "80271fdb": {
-    "url": "http://outlook.office365.com/owa/calendar/fa41af113df74f92b55ce09eb15a50df@campus.utcluj.ro/926ab04e83b24881a44551bc7267e1ea9771455757049915068/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 304",
-    "color": "#dc3545",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 304"
-  },
-  "cf04b58a": {
-    "url": "http://outlook.office365.com/owa/calendar/4dc72dc502bf48c7aa7ac9e1bae22890@campus.utcluj.ro/27bb5513ef4c48a39ea4a0c4b178905011184734623697262653/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 303",
-    "color": "#20c997",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 303"
-  },
-  "5cccef8b": {
-    "url": "http://outlook.office365.com/owa/calendar/e182e6d6341f452f8c96818578c52ef6@campus.utcluj.ro/9df27367bf214dafb233da092bc233598181410381887938532/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 302",
-    "color": "#661000",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 302"
-  },
-  "6fab1f52": {
-    "url": "http://outlook.office365.com/owa/calendar/dc14b392dac24271bc48304776ca25a6@campus.utcluj.ro/a92e7f17627f487080a6672d6e6fe7e94527843340417364429/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 325",
-    "color": "#17a2b8",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 325"
-  },
-  "0422a23e": {
-    "url": "http://outlook.office365.com/owa/calendar/8e9034c7ae0a48c2a411bfd7db8c0ec3@campus.utcluj.ro/374b7bfaa90b4c6fb01b742853e3b3357617600720402185189/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 305",
-    "color": "#e6590f",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 305"
-  },
-  "b3f5a6dd": {
-    "url": "http://outlook.office365.com/owa/calendar/081396c8271b4f7ebc1fe5c347499f39@campus.utcluj.ro/8bd87950ebaa411bbeb1cfe7458f41f01842029406743451474/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 223",
-    "color": "#e83e8c",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 223"
-  },
-  "287315c5": {
-    "url": "http://outlook.office365.com/owa/calendar/c3c788db3c5444e3be8cbe21907ed306@campus.utcluj.ro/64c4824290724eec8590ea208143738a17241629958252910651/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 218",
-    "color": "#6f42c1",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 218"
-  },
-  "6d3eeffa": {
-    "url": "http://outlook.office365.com/owa/calendar/02883c38b26e480b99f8cc76c0e7b19a@campus.utcluj.ro/4c1aa433da6e4624935bb97ecefe4d656980291791111468005/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 217",
-    "color": "#fd7e14",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 217"
-  },
-  "bc65f498": {
-    "url": "http://outlook.office365.com/owa/calendar/c5ffb7c601bb4252b70be47baf796b95@campus.utcluj.ro/4bf721c315d641a2a79c46089c03ae811091158201220480126/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 216",
-    "color": "#20c997",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 216"
-  },
-  "5616f1ac": {
-    "url": "http://outlook.office365.com/owa/calendar/cea15869e6fe4eca81409b71c2566cee@campus.utcluj.ro/2e2abf3425a24b518ba4e902e420d61b3790923002459984107/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 207",
-    "color": "#20c997",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 207"
-  },
-  "a7a7b177": {
-    "url": "http://outlook.office365.com/owa/calendar/4054c857d5f44b9fa0faf4efe738e9b9@campus.utcluj.ro/81538571cd8d46cbbdbc81efef3703eb17892466298974091612/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 228",
-    "color": "#6f42c1",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 228"
-  },
-  "7b901fba": {
-    "url": "http://outlook.office365.com/owa/calendar/6f2c8e895dd846efb7d87abb91964070@campus.utcluj.ro/733970e55a024e42b2af8e5c7e2770a25138278416839213454/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 227",
-    "color": "#003366",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 227"
-  },
-  "b5ca6551": {
-    "url": "http://outlook.office365.com/owa/calendar/69e99a33c2514784bbc900e15111c433@campus.utcluj.ro/d60311c129b54da4bbc8fea3b529d84710190988020130014919/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 226",
-    "color": "#661000",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 226"
-  },
-  "bdb7a02e": {
-    "url": "http://outlook.office365.com/owa/calendar/53bd84fa68424b629e35e70225dcec43@campus.utcluj.ro/b0a28103fccb43168eec808a53d9d67c2703605951016120367/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 203",
-    "color": "#28a745",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 203"
-  },
-  "a66515d7": {
-    "url": "http://outlook.office365.com/owa/calendar/ea43b46f436d480da6a6b0f83f42bef5@campus.utcluj.ro/8592bca6b8294873bcdd4c0beb65fbe211083143506326222116/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 202",
-    "color": "#6610f2",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 202"
-  },
-  "c26b952a": {
-    "url": "http://outlook.office365.com/owa/calendar/801c604a62684a7ca913a76cc11d268d@campus.utcluj.ro/5c22c7e9aca24765a74d5e5ca7cf732610082240032892117517/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 225",
-    "color": "#007bff",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 225"
-  },
-  "2906a382": {
-    "url": "http://outlook.office365.com/owa/calendar/622c44881dfc460390e946285970578a@campus.utcluj.ro/001c4f0627f2474e9ea5ea005b7ba55c15289366763008537379/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 16",
-    "color": "#28a745",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 16"
-  },
-  "4347ebb0": {
-    "url": "http://outlook.office365.com/owa/calendar/106015d409ff47a7b6c1e916825d9fcc@campus.utcluj.ro/1cbe95069049479eaae3bb9a7d6b6ce115651159477365913006/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 123",
-    "color": "#28a745",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 123"
-  },
-  "84cfd35f": {
-    "url": "http://outlook.office365.com/owa/calendar/4d9a87d7362d4855a1834580b7c7274f@campus.utcluj.ro/b07cd6ecb1f64f3f996c13c867509ef413579619657383683114/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 118",
-    "color": "#0066cc",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 118"
-  },
-  "4ef1dfa4": {
-    "url": "http://outlook.office365.com/owa/calendar/6c8a613c92e54dd382428e24b1605d00@campus.utcluj.ro/dbb34bcc6e0b470b8d304c1538e5c25a17227850326186938536/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 117",
-    "color": "#20c997",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 117"
-  },
-  "409b25df": {
-    "url": "http://outlook.office365.com/owa/calendar/08a22b78bf03475e9595bf5079bc6fc9@campus.utcluj.ro/14ac599657d84b7bbb79286c5bd119637554613537923573716/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 116",
-    "color": "#dc3545",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 116"
-  },
-  "cc3e823b": {
-    "url": "https://outlook.office365.com/owa/calendar/bd544d0e58d04717958bf88a88927976@campus.utcluj.ro/88846a5e6c8a4bbfbb9b9d92f03295586707960592668117762/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 107",
-    "color": "#6610f2",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 107"
-  },
-  "6266d63d": {
-    "url": "http://outlook.office365.com/owa/calendar/883fbf0567fc467284d1b494997c1547@campus.utcluj.ro/bb35b193c61448ccb3db30bf683f682c8843270077753930078/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 128",
-    "color": "#0066cc",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 128"
-  },
-  "0b9c8d85": {
-    "url": "http://outlook.office365.com/owa/calendar/2bc351c815b049bf875b03bdc3de5d2a@campus.utcluj.ro/5ddccd6b9b044e9e9a0b769dcc64cb0d16011798825208155521/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 127",
-    "color": "#6f42c1",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 127"
-  },
-  "c78dcaee": {
-    "url": "http://outlook.office365.com/owa/calendar/9935f801b7b24d999c524ea6930e4504@campus.utcluj.ro/db637218c81449efbef2df3868512521937266732662103744/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 126",
-    "color": "#17a2b8",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 126"
-  },
-  "ffb98766": {
-    "url": "https://outlook.office365.com/owa/calendar/01f5f3dbf48d4edcb5026190c7a40041@campus.utcluj.ro/ec3b79c57cc04d9f9c02bdc260cddaf84711760262349721871/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 103",
-    "color": "#003366",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 103"
-  },
-  "07ffe921": {
-    "url": "https://outlook.office365.com/owa/calendar/087032b12e3e475980fecb9249a4e87f@campus.utcluj.ro/d8f6456f18634f8588ee8bbe1c43540716901539822885786769/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 102",
-    "color": "#6f42c1",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 102"
-  },
-  "1d612337": {
-    "url": "http://outlook.office365.com/owa/calendar/9ab2cf70588d412689a741ac27c7dc7c@campus.utcluj.ro/da94019ff9b54cbe8eca7f8942a8d6da5728733752158713661/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 125",
-    "color": "#6f42c1",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 125"
-  },
-  "a12ee5ba": {
-    "url": "https://outlook.office365.com/owa/calendar/c277698c440e4858a2d311bd8a704bca@campus.utcluj.ro/6504d0a30c4f457088dad300f02f3f1214514913813120379700/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 105",
-    "color": "#fd7e14",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 105"
-  },
-  "57bf7930": {
-    "url": "http://outlook.office365.com/owa/calendar/f142a265f5c24c25b7848d89dcbc62f5@campus.utcluj.ro/24506af7380041828845b4f4a0d9545b17632199253210550300/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 37",
-    "color": "#003366",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 37"
-  },
-  "64716ba7": {
-    "url": "http://outlook.office365.com/owa/calendar/b4815828fa98487d91c39ddf454163c7@campus.utcluj.ro/fb1fa4d4a2f143e488e77df5fbc19a5817308164875996803353/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 34",
-    "color": "#6610f2",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 34"
-  },
-  "91d5cb92": {
-    "url": "http://outlook.office365.com/owa/calendar/e3582b29c0174f8a9d80d42e342cf0aa@campus.utcluj.ro/af59a2d546a4420f93a503edbfd160f816075394973509184635/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 30",
-    "color": "#007bff",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 30"
-  },
-  "fcdde68e": {
-    "url": "http://outlook.office365.com/owa/calendar/92feaa1d822e4aebb3c98ddf8c9526b9@campus.utcluj.ro/cfc06c1a41784ada975f5394ee41dbb11023914862198793708/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 23",
-    "color": "#20c997",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 23"
-  },
-  "4eff31a4": {
-    "url": "http://outlook.office365.com/owa/calendar/a68be421dafb4a33bdbb0dbaa7634a50@campus.utcluj.ro/d5f49a072b6d44618f26ac720123c8098882989012024069063/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 20",
-    "color": "#007bff",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 20"
-  },
-  "91fec609": {
-    "url": "http://outlook.office365.com/owa/calendar/7f1cb018afc24f588fc852aabb103a18@campus.utcluj.ro/24882d3e0c7749108c25398b50d9eda417957349680396930251/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 33",
-    "color": "#6f42c1",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 33"
-  },
-  "fa22318a": {
-    "url": "https://outlook.office365.com/owa/calendar/33c4b61348b74baa98da486245a22f69@campus.utcluj.ro/fc3d8b215ef74385b0b43f89224423e616163807469309657084/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 10",
-    "color": "#17a2b8",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 10"
-  },
-  "3f4372d6": {
-    "url": "http://outlook.office365.com/owa/calendar/ddebbc43ab104b90a2ebc0c0fea65351@campus.utcluj.ro/7c775a0ded654450bef79f719dd4253111117431312280053111/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 4",
-    "color": "#20c997",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 4"
-  },
-  "880d6402": {
-    "url": "https://outlook.office365.com/owa/calendar/c1c06730a0d548fc97b51894b5a3d362@campus.utcluj.ro/7ed6d9a964ba4199bf0ecff1b4cbb19712972190088115766043/calendar.ics",
-    "name": "UTCN - AIRI Observatorului 2 - Sala 505",
-    "color": "#fd7e14",
-    "building": "UTCN AIRI - Artificial Intelligence Research Institute",
-    "room": "Sala 505"
-  },
-  "af42a70b": {
-    "url": "https://outlook.office365.com/owa/calendar/f05ae83ed135445789062294661a78aa@campus.utcluj.ro/b021062831e748c3bc9e917ba12826c63065508075060337244/calendar.ics",
-    "name": "UTCN - CUNBM Victor Babes 62A - Sala L26/1",
-    "color": "#661000",
-    "building": "UTCN BABES CUNBM",
-    "room": "Sala L26/1"
-  },
-  "db66d49d": {
-    "url": "https://outlook.office365.com/owa/calendar/f48173acfc964e25ace4cf8cf2c146f9@campus.utcluj.ro/8fa5c6b1ea3c4a499d168a063a5f227710002910147337353083/calendar.ics",
-    "name": "UTCN - CUNBM Victor Babes 62A - Sala L23/1",
-    "color": "#e83e8c",
-    "building": "UTCN BABES CUNBM",
-    "room": "Sala L23/1"
-  },
-  "8cde99e2": {
-    "url": "https://outlook.office365.com/owa/calendar/153bf4b8c0514aa8a56417ed8992d914@campus.utcluj.ro/64d134fdfe354eac8cf255ad2fdf57b09151124291925953497/calendar.ics",
-    "name": "UTCN - CUNBM Victor Babes 62A - Sala B74",
-    "color": "#17a2b8",
-    "building": "UTCN BABES CUNBM",
-    "room": "Sala B74"
-  },
-  "391a557d": {
-    "url": "https://outlook.office365.com/owa/calendar/fb8d4b3a62ae44248252d6005c113a7e@campus.utcluj.ro/9894c08922e8446f9e2f5cb2d96c3d6f3217632174702891255/calendar.ics",
-    "name": "UTCN - CUNBM Victor Babes 62A - Sala A3",
-    "color": "#e83e8c",
-    "building": "UTCN BABES CUNBM",
-    "room": "Sala A3"
-  },
-  "157fba34": {
-    "url": "https://outlook.office365.com/owa/calendar/c94c913227184f11bb891ff1c14fed8b@campus.utcluj.ro/8fcd1b93e2f04056a937046a947facca5487809175895084570/calendar.ics",
-    "name": "UTCN - CUNBM Victor Babes 62A - Sala A2",
-    "color": "#003366",
-    "building": "UTCN BABES CUNBM",
-    "room": "Sala A2"
-  },
-  "ecf5e71c": {
-    "url": "https://outlook.office365.com/owa/calendar/06d58bb6c58c42cd92b22bc70089e6c9@campus.utcluj.ro/96b88d8a68e047feac83bf7ba7009a7243862708895849135/calendar.ics",
-    "name": "UTCN - CUNBM Victor Babes 62A - Sala A4",
-    "color": "#e6590f",
-    "building": "UTCN BABES CUNBM",
-    "room": "Sala A4"
-  },
-  "bb5a3f60": {
-    "url": "https://outlook.office365.com/owa/calendar/45362a6d11df4fb894b05ba2fa4cafdd@campus.utcluj.ro/266e9a0c863240bfa8cc5e4dc0d89af36807275624616540967/calendar.ics",
-    "name": "UTCN - CUNBM Victor Babes 62A - Sala A1",
-    "color": "#17a2b8",
-    "building": "UTCN BABES CUNBM",
-    "room": "Sala A1"
-  },
-  "58178fc3": {
-    "url": "https://outlook.office365.com/owa/calendar/b24c13833e804c5fa3ad11c34edf4016@campus.utcluj.ro/9858ed245ca642869b860baf18870e496921177399726666401/calendar.ics",
-    "name": "UTCN - INSTA Blvd. 21 Decembrie 1989 - Sala P01",
-    "color": "#6f42c1",
-    "building": "UTCN 21 DECEMBRIE INSTALATII CLUJ",
-    "room": "Sala P01"
-  },
-  "cdfd3264": {
-    "url": "https://outlook.office365.com/owa/calendar/78d6258c48304d1b999bea11beae256c@campus.utcluj.ro/593fa5a1c33043748756c7f5f8ecb36811682836993177368435/calendar.ics",
-    "name": "UTCN - INSTA Blvd. 21 Decembrie 1989 - Aula",
-    "color": "#007bff",
-    "building": "UTCN 21 DECEMBRIE INSTALATII CLUJ",
-    "room": "Aula"
-  },
-  "0e982761": {
-    "url": "https://outlook.office365.com/owa/calendar/1c778e9274974187826f2b2dd0447660@campus.utcluj.ro/c518b66497434a0d8f18e0a89d01f81111248740627744967659/calendar.ics",
-    "name": "UTCN - ARMM Muncii 12 - Sala 3",
-    "color": "#6610f2",
-    "building": "UTCN MUNCII SIMTEX CLUJ",
-    "room": "Sala 3"
-  },
-  "b66378f9": {
-    "url": "https://outlook.office365.com/owa/calendar/6f27e2305bf442f2bb08c0b5dc1d1f42@campus.utcluj.ro/b0f3b6270db04618b106576602fea47b14647381725133957102/calendar.ics",
-    "name": "UTCN - Cons Observatorului 72-74 - Sala O1",
-    "color": "#dc3545",
-    "building": "UTCN OBSERVATOR CONSTRUCTII CLUJ",
-    "room": "Sala O1"
-  },
-  "c7b2f3e8": {
-    "url": "https://outlook.office365.com/owa/calendar/921663b8852a4b59bd0fcb557e8fb3e3@campus.utcluj.ro/b2e08a02ba4542a3b27d063b57ece4cd14305712522080967695/calendar.ics",
-    "name": "UTCN - Cons Observatorului 72-74 - Sala O8",
-    "color": "#28a745",
-    "building": "UTCN OBSERVATOR CONSTRUCTII CLUJ",
-    "room": "Sala O8"
-  },
-  "e839e51f": {
-    "url": "https://outlook.office365.com/owa/calendar/8ba9c96221d44eeea0f7b4f112f92ca6@campus.utcluj.ro/0bddb9b17d0146eda74fcde920af7411594666909497130246/calendar.ics",
-    "name": "UTCN - Cons Observatorului 72-74 - Sala O102",
-    "color": "#6f42c1",
-    "building": "UTCN OBSERVATOR CONSTRUCTII CLUJ",
-    "room": "Sala O102"
-  },
-  "159b6e06": {
-    "url": "https://outlook.office365.com/owa/calendar/22d4a472d9874cf7873a1bd1939ad55e@campus.utcluj.ro/d181897156c2414d8d6ab196c42d1e3210418329460054209394/calendar.ics",
-    "name": "UTCN - CONS Bar - Sala 213",
-    "color": "#003366",
-    "building": "UTCN BARITIU CONSTRUCTII CLUJ",
-    "room": "Sala 213"
-  },
-  "26f09da3": {
-    "url": "https://outlook.office365.com/owa/calendar/aa69fd9d8cad49a8bace9555c6c31d8b@campus.utcluj.ro/95bcb6da434048ae86bbd98b0dfbdd6310012641212388466794/calendar.ics",
-    "name": "UTCN - CONS Bar - Sala 169",
-    "color": "#e83e8c",
-    "building": "UTCN BARITIU CONSTRUCTII CLUJ",
-    "room": "Sala 169"
-  },
-  "3343f68b": {
-    "url": "https://outlook.office365.com/owa/calendar/f3a87447626d46bfb1569c55ad46cbe7@campus.utcluj.ro/0d23b26b42a340edb652b79f27b84aa015050941843672206700/calendar.ics",
-    "name": "UTCN - CONS Bar - Sala 157",
-    "color": "#661000",
-    "building": "UTCN BARITIU CONSTRUCTII CLUJ",
-    "room": "Sala 157"
-  },
-  "c68e9e5c": {
-    "url": "https://outlook.office365.com/owa/calendar/ea71d0bb43ca4ee89bab2567e4414285@campus.utcluj.ro/009b080c1951425eae7fda6d52bceaf116792829138931392885/calendar.ics",
-    "name": "UTCN - CONS Bar - Sala 115",
-    "color": "#28a745",
-    "building": "UTCN BARITIU CONSTRUCTII CLUJ",
-    "room": "Sala 115"
-  },
-  "642d767f": {
-    "url": "https://outlook.office365.com/owa/calendar/22b6bc2b144045449131ab73dc1be374@campus.utcluj.ro/b9a28372266a41479730f193e4f548357293333472514865693/calendar.ics",
-    "name": "UTCN - CONS Bar - Sala 161",
-    "color": "#6f42c1",
-    "building": "UTCN BARITIU CONSTRUCTII CLUJ",
-    "room": "Sala 161"
-  },
-  "60fb316f": {
-    "url": "http://outlook.office365.com/owa/calendar/a07a282863d9413fabc111be7eca0226@campus.utcluj.ro/7add44a72c0a4f30b25683827f4afb7216622138307942613875/calendar.ics",
-    "name": "UTCN - AC Bar - Sala 36",
-    "color": "#6610f2",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": "Sala 36"
-  },
-  "c816c665": {
-    "url": "http://outlook.office365.com/owa/calendar/de05dbcdc8d34d2ca80c61512463cbc0@campus.utcluj.ro/eb704a924cc74565a8198cf077751b4313158737863952741809/calendar.ics",
-    "name": "UTCN - AC Bar - Sala P03",
-    "color": "#dc3545",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": "Sala P03"
-  },
-  "534fd5a6": {
-    "url": "http://outlook.office365.com/owa/calendar/c96aedd3f76544c7837466fd6e0e9474@campus.utcluj.ro/23e6aec566f34a0585d0f25833155a1a2957858414771048870/calendar.ics",
-    "name": "UTCN - AC Bar - Sala 40",
-    "color": "#20c997",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": "Sala 40"
-  },
-  "fe610990": {
-    "url": "https://outlook.office365.com/owa/calendar/767ecccc757d4d1cb06e69cfc5859a99@campus.utcluj.ro/9d027f91b69a47c8ac3abeaf8f1616cb2599555293167064219/calendar.ics",
-    "name": "UTCN - AC Bar - Sala 16B",
-    "color": "#e6590f",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": "Sala 16B"
-  },
-  "f436619c": {
-    "url": "https://outlook.office365.com/owa/calendar/bc6293dcf2ac494b891910e8b2903100@campus.utcluj.ro/b54861fd15f640ffa9d4a53565c53165838900861736632320/calendar.ics",
-    "name": "UTCN - IE Bar - Sala D22",
-    "color": "#003366",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": "Sala D22"
-  },
-  "a211aa4f": {
-    "url": "https://outlook.office365.com/owa/calendar/03e9c3eb51804b2a8ddf57efde942640@campus.utcluj.ro/e98d6eaa46e64a22afe82e9233e073635307254572847619666/calendar.ics",
-    "name": "UTCN - IE Bar - Sala H21",
-    "color": "#dc3545",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": "Sala H21"
-  },
-  "c3f14f23": {
-    "url": "https://outlook.office365.com/owa/calendar/e9babfabef2c41579ba460bb1fb55a5b@campus.utcluj.ro/b684d2820bc747daa6e995c10a497cbb17732842012882639601/calendar.ics",
-    "name": "UTCN - IE Bar - Sala 316",
-    "color": "#661000",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": "Sala 316"
-  },
-  "d1ec4859": {
-    "url": "https://outlook.office365.com/owa/calendar/1e3132d45e8e42138bdfbd1f2d00cc3f@campus.utcluj.ro/0b99fcb8743b43199331f66c6ea291033113260389161843545/calendar.ics",
-    "name": "UTCN - ETTI Bar - Sala 330",
-    "color": "#0066cc",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": "Sala 330"
-  },
-  "a8c6b3f0": {
-    "url": "https://outlook.office365.com/owa/calendar/482dbad4b0c8489b9693279447140a0a@campus.utcluj.ro/d825137571a349ba8287adedab2cdfb514627582738429928726/calendar.ics",
-    "name": "UTCN - ETTI Bar - Sala 367",
-    "color": "#17a2b8",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": "Sala 367"
-  },
-  "3a03bcf1": {
-    "url": "https://outlook.office365.com/owa/calendar/a3f3f7dd873a40c398bd9728d26da3be@campus.utcluj.ro/b5f56c85fefb4b70b763ce745bc1f04a13354822966997054726/calendar.ics",
-    "name": "UTCN - ETTI Bar - Sala 329",
-    "color": "#e83e8c",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": "Sala 329"
-  },
-  "83396b3d": {
-    "url": "https://outlook.office365.com/owa/calendar/783cb511ce3146a19f529cc46461a138@campus.utcluj.ro/2cdb617778cd43d1bb06710dc527517d1165772283573533856/calendar.ics",
-    "name": "UTCN - IE Bar - Sala 318",
-    "color": "#661000",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": "Sala 318"
-  },
-  "51e8986e": {
-    "url": "https://outlook.office365.com/owa/calendar/426a2c020f5e4d179aa78bd943ee9a8f@campus.utcluj.ro/e27df06a04d4460e9ed404c8b87c63a413946056066639156367/calendar.ics",
-    "name": "UTCN - ETTI Bar - Sala E04",
-    "color": "#007bff",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": "Sala E04"
-  },
-  "e979be11": {
-    "url": "https://outlook.office365.com/owa/calendar/03a0c9b436de47c7b2d160f0694c11e0@campus.utcluj.ro/099b8f2802044c0a9c49d1eca1a4e7079780360619601604971/calendar.ics",
-    "name": "UTCN - ETTI Bar - Sala S41",
-    "color": "#661000",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": "Sala S41"
+    "name": "UTCN AIRI OBS 403",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "40212126": {
     "url": "https://outlook.office365.com/owa/calendar/011ed1e0e2254bd788ffa5f271afa398@campus.utcluj.ro/7a36518756f841a1bf2ea23c8704b8519633424276481403873/calendar.ics",
-    "name": "UTCN - AC Bar - Sala S42",
-    "color": "#20c997",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": "Sala S42"
+    "name": "UTCN AC BAR S42",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "76edcbc4": {
+    "url": "http://outlook.office365.com/owa/calendar/05025b15ab884719a8774aaaace118c2@campus.utcluj.ro/f9388964800f47c7a64b10730006129816237767699205134861/calendar.ics",
+    "name": "UTCN AIRI OBS 402",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "88f39468": {
     "url": "https://outlook.office365.com/owa/calendar/6b0531287d01410da35d454404a4b3de@campus.utcluj.ro/f42a1ce02fea4765b68aed2ca3531e9016230198696104586443/calendar.ics",
-    "name": "UTCN - IE Bar - Sala P02",
-    "color": "#28a745",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": "Sala P02"
+    "name": "UTCN IE BAR P02",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "6edb34db": {
+    "url": "http://outlook.office365.com/owa/calendar/fa0b415e678142029941285487511baf@campus.utcluj.ro/99d9f537aa4247e98cdc3b67fa3f5f593331518140728516756/calendar.ics",
+    "name": "UTCN AIRI OBS 425",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "6e487a8d": {
     "url": "https://outlook.office365.com/owa/calendar/52a73b4f189d4c0eb5f2549b9be382f0@campus.utcluj.ro/1ae56296cae841b29a3bf729346c4f1a10638459542953233954/calendar.ics",
-    "name": "UTCN - AC Bar - Sala 356",
-    "color": "#0066cc",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": "Sala 356"
+    "name": "UTCN AC BAR 356",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "a7b09d3a": {
+    "url": "http://outlook.office365.com/owa/calendar/b357254bb24647f78ffc8aa69f596823@campus.utcluj.ro/0176e4b0ea47443f83bcf007002a9f1613362169572306228119/calendar.ics",
+    "name": "UTCN AIRI OBS 323",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "97a11201": {
     "url": "https://outlook.office365.com/owa/calendar/20696cd038544cf0b95725c9bd6ad434@campus.utcluj.ro/87d073e386af42ca867ff9e12d6b521f2545483240802485141/calendar.ics",
-    "name": "UTCN - ETTI Bar - Sala 368",
-    "color": "#e83e8c",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": "Sala 368"
+    "name": "UTCN ETTI BAR 368",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "90f0e87d": {
+    "url": "http://outlook.office365.com/owa/calendar/f4b409928a4c4124b3a7e0e1e45af815@campus.utcluj.ro/9fd34b1a5aac43f4b2af0e2e6420256112725172051649695618/calendar.ics",
+    "name": "UTCN AIRI OBS 318",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "2f0e6858": {
     "url": "https://outlook.office365.com/owa/calendar/182bacda4cc54c828f6b9be9fa1bf549@campus.utcluj.ro/d943d49375fc44489ffc9f890e3e0ff91330299505588086582/calendar.ics",
-    "name": "UTCN - AC Bar - Sala 26B",
-    "color": "#e6590f",
-    "building": "UTCN BARITIU ELECTRO CLUJ",
-    "room": "Sala 26B"
+    "name": "UTCN AC BAR 26B",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "b05c033f": {
+    "url": "http://outlook.office365.com/owa/calendar/5ecb7337eab142969de1b1f007c243ff@campus.utcluj.ro/7c081caae42e47319465504554426af610499018764481135174/calendar.ics",
+    "name": "UTCN AIRI OBS 317",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "71dfe967": {
     "url": "http://outlook.office365.com/owa/calendar/828381f1cbe74cb08fd6969cc2147cb5@campus.utcluj.ro/f10453bc9e914abc981110b24d58650e6530057062271799879/calendar.ics",
-    "name": "UTCN - AC Bar - Sala BT 505",
-    "color": "#6f42c1",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": "Sala BT 505"
+    "name": "UTCN AC BAR BT 505",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "ea0362cd": {
+    "url": "http://outlook.office365.com/owa/calendar/4b78a489438d4397ab065237c2fb9909@campus.utcluj.ro/76d2c2302d5c49b0944d7cdbfb34bbe32620730198017950932/calendar.ics",
+    "name": "UTCN AIRI OBS 316",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "5b5bc5d6": {
     "url": "http://outlook.office365.com/owa/calendar/a4e166f84cd1408b841072ea82e5ed4c@campus.utcluj.ro/b3b5393ad30a4d6b99329263d589e96e14289065892614941807/calendar.ics",
-    "name": "UTCN - AC Bar - Sala BT 504",
-    "color": "#17a2b8",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": "Sala BT 504"
+    "name": "UTCN AC BAR BT 504",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "5ee36843": {
+    "url": "http://outlook.office365.com/owa/calendar/3b3968253057473895627a9f5db39626@campus.utcluj.ro/bae9585786094b46879a1da0239df6997006178516024745136/calendar.ics",
+    "name": "UTCN AIRI OBS 307",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "637980a2": {
     "url": "http://outlook.office365.com/owa/calendar/bcca9970db0c46349ed6f28c8176c2f8@campus.utcluj.ro/b498d20f6c1345daaac0a695706d284815991736931980221487/calendar.ics",
-    "name": "UTCN - AC Bar - Sala BT 502",
-    "color": "#003366",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": "Sala BT 502"
+    "name": "UTCN AC BAR BT 502",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "0cbf42fb": {
+    "url": "http://outlook.office365.com/owa/calendar/edf3d71e91d54f698c309b8564a68c84@campus.utcluj.ro/233719a8802f4b738dbd57a3c677321410364370949032218393/calendar.ics",
+    "name": "UTCN AIRI OBS 328",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "45aab341": {
     "url": "http://outlook.office365.com/owa/calendar/0b019e161e524c84ab96678b51f02374@campus.utcluj.ro/671c337f220b4e0e869babcd71f8f7813648205003871415572/calendar.ics",
-    "name": "UTCN - AC Bar - Sala BT 503",
-    "color": "#e83e8c",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": "Sala BT 503"
+    "name": "UTCN AC BAR BT 503",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "3a0977d6": {
+    "url": "http://outlook.office365.com/owa/calendar/18c6148ee0c6495880672ef9c270b9dd@campus.utcluj.ro/5ff0bdb8734d4e18b0ba6bc65a8028d19411086372293245115/calendar.ics",
+    "name": "UTCN AIRI OBS 327",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "eab789c7": {
     "url": "https://outlook.office365.com/owa/calendar/d6e69b62387a4c8b885647786071c65b@campus.utcluj.ro/46a96d936e5e4e129743235839a9cbb216714085778746247586/calendar.ics",
-    "name": "UTCN - AC Bar - Sala BT 501",
-    "color": "#dc3545",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": "Sala BT 501"
+    "name": "UTCN AC BAR BT 501",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "d9c4f4ce": {
+    "url": "http://outlook.office365.com/owa/calendar/a6859459497a4c1c9c1e184cc78ae012@campus.utcluj.ro/71e93be74e104973adfa9af3ae72f00c14499971520356935215/calendar.ics",
+    "name": "UTCN AIRI OBS 326",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "3093c420": {
     "url": "https://outlook.office365.com/owa/calendar/2973e1925d27439fba6128347d68b65f@campus.utcluj.ro/982915e601d54a318b9120c4e4b9e74d16005272970557829414/calendar.ics",
-    "name": "UTCN - ETTI Bar - Sala BT 104",
-    "color": "#007bff",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": "Sala BT 104"
+    "name": "UTCN ETTI BAR BT 104",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "80271fdb": {
+    "url": "http://outlook.office365.com/owa/calendar/fa41af113df74f92b55ce09eb15a50df@campus.utcluj.ro/926ab04e83b24881a44551bc7267e1ea9771455757049915068/calendar.ics",
+    "name": "UTCN AIRI OBS 304",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "577976a0": {
     "url": "https://outlook.office365.com/owa/calendar/4a3b092ea38345d88404d0bac0db7702@campus.utcluj.ro/c75ea176103b431bb9bff5b7044f872514552350120730701095/calendar.ics",
-    "name": "UTCN - ETTI Bar - Sala BT 101",
-    "color": "#28a745",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": "Sala BT 101"
+    "name": "UTCN ETTI BAR BT 101",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "cf04b58a": {
+    "url": "http://outlook.office365.com/owa/calendar/4dc72dc502bf48c7aa7ac9e1bae22890@campus.utcluj.ro/27bb5513ef4c48a39ea4a0c4b178905011184734623697262653/calendar.ics",
+    "name": "UTCN AIRI OBS 303",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "5cf0e5c2": {
     "url": "https://outlook.office365.com/owa/calendar/4d3571651d464a1a944fbe672ba62b84@campus.utcluj.ro/4aff3e6cda544d4eb9854a91168d673216398369614859241660/calendar.ics",
-    "name": "UTCN - AC Bar - Sala BT 605",
-    "color": "#28a745",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": "Sala BT 605"
+    "name": "UTCN AC BAR BT 605",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "5cccef8b": {
+    "url": "http://outlook.office365.com/owa/calendar/e182e6d6341f452f8c96818578c52ef6@campus.utcluj.ro/9df27367bf214dafb233da092bc233598181410381887938532/calendar.ics",
+    "name": "UTCN AIRI OBS 302",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "217ed046": {
     "url": "https://outlook.office365.com/owa/calendar/142b9e9b5cd143e8b3ff531473171841@campus.utcluj.ro/65c5de55e57746559688d26c46bf74838749769534200103753/calendar.ics",
-    "name": "UTCN - IE Bar - Sala BT 301",
-    "color": "#fd7e14",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": "Sala BT 301"
+    "name": "UTCN IE BAR BT 301",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "6fab1f52": {
+    "url": "http://outlook.office365.com/owa/calendar/dc14b392dac24271bc48304776ca25a6@campus.utcluj.ro/a92e7f17627f487080a6672d6e6fe7e94527843340417364429/calendar.ics",
+    "name": "UTCN AIRI OBS 325",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "be744d23": {
     "url": "https://outlook.office365.com/owa/calendar/6196aa57de3a46ffbeee282efefb2d62@campus.utcluj.ro/580a4ba1a0394c4ab1caad906cf7cf287269409148282756483/calendar.ics",
-    "name": "UTCN - IE Bar - Sala BT 302",
-    "color": "#6610f2",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": "Sala BT 302"
+    "name": "UTCN IE BAR BT 302",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "0422a23e": {
+    "url": "http://outlook.office365.com/owa/calendar/8e9034c7ae0a48c2a411bfd7db8c0ec3@campus.utcluj.ro/374b7bfaa90b4c6fb01b742853e3b3357617600720402185189/calendar.ics",
+    "name": "UTCN AIRI OBS 305",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "c8b9b120": {
     "url": "https://outlook.office365.com/owa/calendar/a298b9929f4847478d01a555120ab01e@campus.utcluj.ro/c36332c746974507b164570e73f5ccac17345435354118711566/calendar.ics",
-    "name": "UTCN - ETTI Bar - Sala BT 105",
-    "color": "#17a2b8",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": "Sala BT 105"
+    "name": "UTCN ETTI BAR BT 105",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "b3f5a6dd": {
+    "url": "http://outlook.office365.com/owa/calendar/081396c8271b4f7ebc1fe5c347499f39@campus.utcluj.ro/8bd87950ebaa411bbeb1cfe7458f41f01842029406743451474/calendar.ics",
+    "name": "UTCN AIRI OBS 223",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "1aa26f40": {
     "url": "https://outlook.office365.com/owa/calendar/d55755fed596460ebe7b84aaa06bde18@campus.utcluj.ro/19429297de9947caaa3345bfc5e6f98112186208588121380842/calendar.ics",
-    "name": "UTCN - IE Bar - Sala BT 404",
-    "color": "#fd7e14",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": "Sala BT 404"
+    "name": "UTCN IE BAR BT 404",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "287315c5": {
+    "url": "http://outlook.office365.com/owa/calendar/c3c788db3c5444e3be8cbe21907ed306@campus.utcluj.ro/64c4824290724eec8590ea208143738a17241629958252910651/calendar.ics",
+    "name": "UTCN AIRI OBS 218",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "34dc7006": {
     "url": "https://outlook.office365.com/owa/calendar/a92903c1b4e14833ac7192487a2eef52@campus.utcluj.ro/1742195f66c54cbeabd54919984d6c2d12816494198183711770/calendar.ics",
-    "name": "UTCN - IE Bar - Sala BT 401",
-    "color": "#17a2b8",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": "Sala BT 401"
+    "name": "UTCN IE BAR BT 401",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "6d3eeffa": {
+    "url": "http://outlook.office365.com/owa/calendar/02883c38b26e480b99f8cc76c0e7b19a@campus.utcluj.ro/4c1aa433da6e4624935bb97ecefe4d656980291791111468005/calendar.ics",
+    "name": "UTCN AIRI OBS 217",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "47ea2a83": {
     "url": "https://outlook.office365.com/owa/calendar/62da40fb72624e6cb29e8f3148a3a380@campus.utcluj.ro/1f4f2a9ee6804b0e921e9274d5308a2a18215479473383923325/calendar.ics",
-    "name": "UTCN - ETTI Bar - Sala BT 204",
-    "color": "#6f42c1",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": "Sala BT 204"
+    "name": "UTCN ETTI BAR BT 204",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "bc65f498": {
+    "url": "http://outlook.office365.com/owa/calendar/c5ffb7c601bb4252b70be47baf796b95@campus.utcluj.ro/4bf721c315d641a2a79c46089c03ae811091158201220480126/calendar.ics",
+    "name": "UTCN AIRI OBS 216",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "a4e51756": {
     "url": "https://outlook.office365.com/owa/calendar/ec7297ce82684077b6e5176bc71ff96d@campus.utcluj.ro/f9e8d3b8196c4dda824580932f952e7b7483364481661616404/calendar.ics",
-    "name": "UTCN - AC Bar - Sala BT 603",
-    "color": "#28a745",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": "Sala BT 603"
+    "name": "UTCN AC BAR BT 603",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "5616f1ac": {
+    "url": "http://outlook.office365.com/owa/calendar/cea15869e6fe4eca81409b71c2566cee@campus.utcluj.ro/2e2abf3425a24b518ba4e902e420d61b3790923002459984107/calendar.ics",
+    "name": "UTCN AIRI OBS 207",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "ebc697f2": {
     "url": "https://outlook.office365.com/owa/calendar/7f5e16979d50465ab3263c9edea56e82@campus.utcluj.ro/73c08b081d4f4cd58c451b5ad1c2cfeb3940275610148253028/calendar.ics",
-    "name": "UTCN - AC Bar - Sala BT 604",
-    "color": "#003366",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": "Sala BT 604"
+    "name": "UTCN AC BAR BT 604",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "a7a7b177": {
+    "url": "http://outlook.office365.com/owa/calendar/4054c857d5f44b9fa0faf4efe738e9b9@campus.utcluj.ro/81538571cd8d46cbbdbc81efef3703eb17892466298974091612/calendar.ics",
+    "name": "UTCN AIRI OBS 228",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "7b901fba": {
+    "url": "http://outlook.office365.com/owa/calendar/6f2c8e895dd846efb7d87abb91964070@campus.utcluj.ro/733970e55a024e42b2af8e5c7e2770a25138278416839213454/calendar.ics",
+    "name": "UTCN AIRI OBS 227",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "92eb0d00": {
     "url": "https://outlook.office365.com/owa/calendar/a57e6216dc2b46cf9221080cb62f5673@campus.utcluj.ro/2f0d3e8664b84ccd8c5678fac130aad55152205670997262503/calendar.ics",
-    "name": "UTCN - ETTI Bar - Sala BT 205",
-    "color": "#007bff",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": "Sala BT 205"
+    "name": "UTCN ETTI BAR BT 205",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "b5ca6551": {
+    "url": "http://outlook.office365.com/owa/calendar/69e99a33c2514784bbc900e15111c433@campus.utcluj.ro/d60311c129b54da4bbc8fea3b529d84710190988020130014919/calendar.ics",
+    "name": "UTCN AIRI OBS 226",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "1415125a": {
     "url": "https://outlook.office365.com/owa/calendar/aadad6128c434cafb70bd0bc9f054a09@campus.utcluj.ro/f304f85c2e064176bce6aa9e760dad9d10051774377936060454/calendar.ics",
-    "name": "UTCN - IE Bar - Sala BT 304",
-    "color": "#003366",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": "Sala BT 304"
+    "name": "UTCN IE BAR BT 304",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "bdb7a02e": {
+    "url": "http://outlook.office365.com/owa/calendar/53bd84fa68424b629e35e70225dcec43@campus.utcluj.ro/b0a28103fccb43168eec808a53d9d67c2703605951016120367/calendar.ics",
+    "name": "UTCN AIRI OBS 203",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "3376c7e1": {
     "url": "https://outlook.office365.com/owa/calendar/022a23e0fa0f423cb7f640a87bd89977@campus.utcluj.ro/376d8d4fa359477a9e8ab64786d65a096683573902960169448/calendar.ics",
-    "name": "UTCN - ETTI Bar - Sala BT 203",
-    "color": "#661000",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": "Sala BT 203"
+    "name": "UTCN ETTI BAR BT 203",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "a66515d7": {
+    "url": "http://outlook.office365.com/owa/calendar/ea43b46f436d480da6a6b0f83f42bef5@campus.utcluj.ro/8592bca6b8294873bcdd4c0beb65fbe211083143506326222116/calendar.ics",
+    "name": "UTCN AIRI OBS 202",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "4ea178df": {
     "url": "https://outlook.office365.com/owa/calendar/0d0d20baeacc4ea282d91c117cdd9b96@campus.utcluj.ro/11b4a02bcdca44fdbf252554a80c95691043377668700617147/calendar.ics",
-    "name": "UTCN - AC Bar - Sala BT 702",
-    "color": "#6610f2",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": "Sala BT 702"
+    "name": "UTCN AC BAR BT 702",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "c26b952a": {
+    "url": "http://outlook.office365.com/owa/calendar/801c604a62684a7ca913a76cc11d268d@campus.utcluj.ro/5c22c7e9aca24765a74d5e5ca7cf732610082240032892117517/calendar.ics",
+    "name": "UTCN AIRI OBS 225",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "52669dcd": {
     "url": "https://outlook.office365.com/owa/calendar/4f4147e3ce974902a359f5113b51a447@campus.utcluj.ro/d163a8c733904feb97c5187a4d9b8c0d6895965863866313083/calendar.ics",
-    "name": "UTCN - ETTI Bar - Sala BT 201",
-    "color": "#661000",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": "Sala BT 201"
+    "name": "UTCN ETTI BAR BT 201",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "2906a382": {
+    "url": "http://outlook.office365.com/owa/calendar/622c44881dfc460390e946285970578a@campus.utcluj.ro/001c4f0627f2474e9ea5ea005b7ba55c15289366763008537379/calendar.ics",
+    "name": "UTCN AIRI OBS 16",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "3eb816aa": {
     "url": "https://outlook.office365.com/owa/calendar/09ec5e09d86441a8a2a8ded646eae974@campus.utcluj.ro/f5db505bb83242f797678ee506e2b5e83846760642172240321/calendar.ics",
-    "name": "UTCN - ETTI Bar - Sala BT 102",
-    "color": "#28a745",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": "Sala BT 102"
+    "name": "UTCN ETTI BAR BT 102",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "4347ebb0": {
+    "url": "http://outlook.office365.com/owa/calendar/106015d409ff47a7b6c1e916825d9fcc@campus.utcluj.ro/1cbe95069049479eaae3bb9a7d6b6ce115651159477365913006/calendar.ics",
+    "name": "UTCN AIRI OBS 123",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "c788ff3f": {
     "url": "https://outlook.office365.com/owa/calendar/d360dac17ed8482c98ac13e4a255dc47@campus.utcluj.ro/b695b07211b44af2b768e1504e8016ac12033489895368593723/calendar.ics",
-    "name": "UTCN - IE Bar - Sala BT 402",
-    "color": "#e83e8c",
-    "building": "UTCN BT ELECTRO CLUJ",
-    "room": "Sala BT 402"
+    "name": "UTCN IE BAR BT 402",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "84cfd35f": {
+    "url": "http://outlook.office365.com/owa/calendar/4d9a87d7362d4855a1834580b7c7274f@campus.utcluj.ro/b07cd6ecb1f64f3f996c13c867509ef413579619657383683114/calendar.ics",
+    "name": "UTCN AIRI OBS 118",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "6e423284": {
     "url": "http://outlook.office365.com/owa/calendar/b704aa7ac4304e98ad8207eb362bfa99@campus.utcluj.ro/b3c5709ebdaa4e5da359178588a8565810299257685696895984/calendar.ics",
-    "name": "UTCN - AC Dorobantilor - Sala D01",
-    "color": "#003366",
-    "building": "UTCN DOROBANTILOR ELECTRO CLUJ",
-    "room": "Sala D01"
+    "name": "UTCN AC DORO D01",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "4ef1dfa4": {
+    "url": "http://outlook.office365.com/owa/calendar/6c8a613c92e54dd382428e24b1605d00@campus.utcluj.ro/dbb34bcc6e0b470b8d304c1538e5c25a17227850326186938536/calendar.ics",
+    "name": "UTCN AIRI OBS 117",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "e9eb5060": {
     "url": "http://outlook.office365.com/owa/calendar/d6b58657f5f34b20b9be182bdee42a58@campus.utcluj.ro/e6be9487c6aa48b4a44c933bf7a2606612113108404090667895/calendar.ics",
-    "name": "UTCN - AC Dorobantilor - Sala 105",
-    "color": "#20c997",
-    "building": "UTCN DOROBANTILOR ELECTRO CLUJ",
-    "room": "Sala 105"
+    "name": "UTCN AC DORO 105",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "409b25df": {
+    "url": "http://outlook.office365.com/owa/calendar/08a22b78bf03475e9595bf5079bc6fc9@campus.utcluj.ro/14ac599657d84b7bbb79286c5bd119637554613537923573716/calendar.ics",
+    "name": "UTCN AIRI OBS 116",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "08b2ee4d": {
     "url": "http://outlook.office365.com/owa/calendar/7e7fe18985ba46a7be5c18309b308e49@campus.utcluj.ro/371ca5a3dd944102bc64a27884cd768a4538921717912516099/calendar.ics",
-    "name": "UTCN - AC Dorobantilor - Sala 103",
-    "color": "#e83e8c",
-    "building": "UTCN DOROBANTILOR ELECTRO CLUJ",
-    "room": "Sala 103"
+    "name": "UTCN AC DORO 103",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "cc3e823b": {
+    "url": "https://outlook.office365.com/owa/calendar/bd544d0e58d04717958bf88a88927976@campus.utcluj.ro/88846a5e6c8a4bbfbb9b9d92f03295586707960592668117762/calendar.ics",
+    "name": "UTCN AIRI OBS 107",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "d8278d9b": {
     "url": "http://outlook.office365.com/owa/calendar/4a1867f2c69f453884eb1155e82b819b@campus.utcluj.ro/8bf273e8cbb743fca1b659985c844b891415857042006572232/calendar.ics",
-    "name": "UTCN - AC Dorobantilor - Sala 107",
-    "color": "#6f42c1",
-    "building": "UTCN DOROBANTILOR ELECTRO CLUJ",
-    "room": "Sala 107"
+    "name": "UTCN AC DORO 107",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "6266d63d": {
+    "url": "http://outlook.office365.com/owa/calendar/883fbf0567fc467284d1b494997c1547@campus.utcluj.ro/bb35b193c61448ccb3db30bf683f682c8843270077753930078/calendar.ics",
+    "name": "UTCN AIRI OBS 128",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "c52f5e0c": {
     "url": "https://outlook.office365.com/owa/calendar/9d21134480d8460ea778ed65de7b289c@campus.utcluj.ro/1d4753b5145e42eb89f6ec30e0aaa4835459575961504388940/calendar.ics",
-    "name": "UTCN - Dorobantilor 71-73 Corp A - Sala 1-2",
-    "color": "#003366",
-    "building": "UTCN DOROBANTILOR DECIDFR CLUJ",
-    "room": "Sala 1-2"
+    "name": "UTCN DORO CORP A 1 2",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "0b9c8d85": {
+    "url": "http://outlook.office365.com/owa/calendar/2bc351c815b049bf875b03bdc3de5d2a@campus.utcluj.ro/5ddccd6b9b044e9e9a0b769dcc64cb0d16011798825208155521/calendar.ics",
+    "name": "UTCN AIRI OBS 127",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "387540e0": {
     "url": "https://outlook.office365.com/owa/calendar/bab27cd066054184b51850a7bd5b76b5@campus.utcluj.ro/f33f9fbbc55349828d52e4f4dd25593614811630865311000535/calendar.ics",
-    "name": "UTCN - Dorobantilor 71-73 - DECIDFR",
-    "color": "#003366",
-    "building": "UTCN DOROBANTILOR DECIDFR CLUJ",
-    "room": "DECIDFR"
+    "name": "UTCN DORO DECIDFR",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "c78dcaee": {
+    "url": "http://outlook.office365.com/owa/calendar/9935f801b7b24d999c524ea6930e4504@campus.utcluj.ro/db637218c81449efbef2df3868512521937266732662103744/calendar.ics",
+    "name": "UTCN AIRI OBS 126",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "b6a5a343": {
     "url": "https://outlook.office365.com/owa/calendar/833fe045f7824a5381fbae924429297b@campus.utcluj.ro/ab2168240db94129b3e95c3f539fd46a14939052852893932707/calendar.ics",
-    "name": "UTCN - Dorobantilor 71-73 Corp A - Sala 1-3",
-    "color": "#661000",
-    "building": "UTCN DOROBANTILOR DECIDFR CLUJ",
-    "room": "Sala 1-3"
+    "name": "UTCN DORO CORP A 1 3",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "ffb98766": {
+    "url": "https://outlook.office365.com/owa/calendar/01f5f3dbf48d4edcb5026190c7a40041@campus.utcluj.ro/ec3b79c57cc04d9f9c02bdc260cddaf84711760262349721871/calendar.ics",
+    "name": "UTCN AIRI OBS 103",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "6942c5bc": {
     "url": "https://outlook.office365.com/owa/calendar/5248e1e6a9ac4381b5ba30fe5bc81a99@campus.utcluj.ro/7701769fb1964a8c92c109b331413c454139217445827280509/calendar.ics",
-    "name": "UTCN - Dorobantilor 71-73 Corp A - Sala 1-1",
-    "color": "#28a745",
-    "building": "UTCN DOROBANTILOR DECIDFR CLUJ",
-    "room": "Sala 1-1"
+    "name": "UTCN DORO CORP A 1 1",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "07ffe921": {
+    "url": "https://outlook.office365.com/owa/calendar/087032b12e3e475980fecb9249a4e87f@campus.utcluj.ro/d8f6456f18634f8588ee8bbe1c43540716901539822885786769/calendar.ics",
+    "name": "UTCN AIRI OBS 102",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "b391d660": {
     "url": "https://outlook.office365.com/owa/calendar/804fc2e4bd91440abd3cf141e1b38425@campus.utcluj.ro/a4f7d97ee8584f879fe228c8d05edcec7873654453925511696/calendar.ics",
-    "name": "UTCN - ETTI Observatorului 2 - Sala 507",
-    "color": "#003366",
-    "building": "UTCN OBSERVATOR ELECTRO CLUJ",
-    "room": "Sala 507"
+    "name": "UTCN ETTI OBS 507",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "1d612337": {
+    "url": "http://outlook.office365.com/owa/calendar/9ab2cf70588d412689a741ac27c7dc7c@campus.utcluj.ro/da94019ff9b54cbe8eca7f8942a8d6da5728733752158713661/calendar.ics",
+    "name": "UTCN AIRI OBS 125",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "6c6e5765": {
     "url": "https://outlook.office365.com/owa/calendar/4baf85b9d23e444fab45018954ba1d13@campus.utcluj.ro/64b1ecbb89c64d7091aad8608a8ceaa35524098022047501136/calendar.ics",
-    "name": "UTCN - AC Observatorului 2 - Sala 308",
-    "color": "#e83e8c",
-    "building": "UTCN OBSERVATOR ELECTRO CLUJ",
-    "room": "Sala 308"
+    "name": "UTCN AC OBS 308",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "a12ee5ba": {
+    "url": "https://outlook.office365.com/owa/calendar/c277698c440e4858a2d311bd8a704bca@campus.utcluj.ro/6504d0a30c4f457088dad300f02f3f1214514913813120379700/calendar.ics",
+    "name": "UTCN AIRI OBS 105",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "f43998be": {
     "url": "https://outlook.office365.com/owa/calendar/71d07328ece04443a3faa0a9d6319f11@campus.utcluj.ro/b3660146216e486a9427965dcd5c596f8411651768609147697/calendar.ics",
-    "name": "UTCN - ETTI Observatorului 2 - Sala 501B",
-    "color": "#17a2b8",
-    "building": "UTCN OBSERVATOR ELECTRO CLUJ",
-    "room": "Sala 501B"
+    "name": "UTCN ETTI OBS 501B",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "57bf7930": {
+    "url": "http://outlook.office365.com/owa/calendar/f142a265f5c24c25b7848d89dcbc62f5@campus.utcluj.ro/24506af7380041828845b4f4a0d9545b17632199253210550300/calendar.ics",
+    "name": "UTCN AIRI OBS 37",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "5c3e0178": {
     "url": "https://outlook.office365.com/owa/calendar/ff10d6f02c6941559e04c66ef6c66235@campus.utcluj.ro/37afa8e6c9cc4c239de985c68af8629d18189057379114182970/calendar.ics",
-    "name": "UTCN - ETTI Observatorului 2 - Sala 410",
-    "color": "#fd7e14",
-    "building": "UTCN OBSERVATOR ELECTRO CLUJ",
-    "room": "Sala 410"
+    "name": "UTCN ETTI OBS 410",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "64716ba7": {
+    "url": "http://outlook.office365.com/owa/calendar/b4815828fa98487d91c39ddf454163c7@campus.utcluj.ro/fb1fa4d4a2f143e488e77df5fbc19a5817308164875996803353/calendar.ics",
+    "name": "UTCN AIRI OBS 34",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "ea71e1a3": {
     "url": "https://outlook.office365.com/owa/calendar/95f690a654674da994ed82c955991615@campus.utcluj.ro/080c2199c7834f2a989bc2cda63ba69615012402782938320572/calendar.ics",
-    "name": "UTCN - ETTI Observatorului 2 - Sala 509",
-    "color": "#6610f2",
-    "building": "UTCN OBSERVATOR ELECTRO CLUJ",
-    "room": "Sala 509"
+    "name": "UTCN ETTI OBS 509",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "91d5cb92": {
+    "url": "http://outlook.office365.com/owa/calendar/e3582b29c0174f8a9d80d42e342cf0aa@campus.utcluj.ro/af59a2d546a4420f93a503edbfd160f816075394973509184635/calendar.ics",
+    "name": "UTCN AIRI OBS 30",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "ee557fc8": {
     "url": "https://outlook.office365.com/owa/calendar/d608a38d7af8414b9ff64a8046d0dd27@campus.utcluj.ro/fdb2bc9742b14fab9a140dea6ae0a1196101942199880770194/calendar.ics",
-    "name": "UTCN - IE Observatorului 2 - Sala 5",
-    "color": "#007bff",
-    "building": "UTCN OBSERVATOR ELECTRO CLUJ",
-    "room": "Sala 5"
+    "name": "UTCN IE OBS 5",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "fcdde68e": {
+    "url": "http://outlook.office365.com/owa/calendar/92feaa1d822e4aebb3c98ddf8c9526b9@campus.utcluj.ro/cfc06c1a41784ada975f5394ee41dbb11023914862198793708/calendar.ics",
+    "name": "UTCN AIRI OBS 23",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "a48a0b57": {
     "url": "https://outlook.office365.com/owa/calendar/d78af41074e84ca3a29310e7ad66a571@campus.utcluj.ro/83d0b24456444842a6e3d64f5499a7998355118700802253080/calendar.ics",
-    "name": "UTCN - AC Observatorului 2 - Sala 303",
-    "color": "#6610f2",
-    "building": "UTCN OBSERVATOR ELECTRO CLUJ",
-    "room": "Sala 303"
+    "name": "UTCN AC OBS 303",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "4eff31a4": {
+    "url": "http://outlook.office365.com/owa/calendar/a68be421dafb4a33bdbb0dbaa7634a50@campus.utcluj.ro/d5f49a072b6d44618f26ac720123c8098882989012024069063/calendar.ics",
+    "name": "UTCN AIRI OBS 20",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "74c57077": {
     "url": "https://outlook.office365.com/owa/calendar/d591f9d8f72d4b5b9b4bcc9e411d56c2@campus.utcluj.ro/f91fa10e28544ecab12772cd851cc45713034270433608247068/calendar.ics",
-    "name": "UTCN - ETTI Observatorului 2 - Sala 404",
-    "color": "#661000",
-    "building": "UTCN OBSERVATOR ELECTRO CLUJ",
-    "room": "Sala 404"
+    "name": "UTCN ETTI OBS 404",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "91fec609": {
+    "url": "http://outlook.office365.com/owa/calendar/7f1cb018afc24f588fc852aabb103a18@campus.utcluj.ro/24882d3e0c7749108c25398b50d9eda417957349680396930251/calendar.ics",
+    "name": "UTCN AIRI OBS 33",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "04a95c2d": {
     "url": "https://outlook.office365.com/owa/calendar/a9b573722ad94f45b682e1bed165550f@campus.utcluj.ro/d4b040e49ce44871bc8fc4a793e9112d17227538003445982370/calendar.ics",
-    "name": "UTCN - ETTI Observatorului 2 - Sala 506B",
-    "color": "#661000",
-    "building": "UTCN OBSERVATOR ELECTRO CLUJ",
-    "room": "Sala 506B"
+    "name": "UTCN ETTI OBS 506B",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "fa22318a": {
+    "url": "https://outlook.office365.com/owa/calendar/33c4b61348b74baa98da486245a22f69@campus.utcluj.ro/fc3d8b215ef74385b0b43f89224423e616163807469309657084/calendar.ics",
+    "name": "UTCN AIRI OBS 10",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "279a8da3": {
     "url": "https://outlook.office365.com/owa/calendar/4a40a038c6224320aa8e6a5960ba622a@campus.utcluj.ro/794b46d8cf504c3f907b867d8ef0ab3713675293087331874768/calendar.ics",
-    "name": "UTCN - AC Observatorului 2 - Sala 309",
-    "color": "#dc3545",
-    "building": "UTCN OBSERVATOR ELECTRO CLUJ",
-    "room": "Sala 309"
+    "name": "UTCN AC OBS 309",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "3f4372d6": {
+    "url": "http://outlook.office365.com/owa/calendar/ddebbc43ab104b90a2ebc0c0fea65351@campus.utcluj.ro/7c775a0ded654450bef79f719dd4253111117431312280053111/calendar.ics",
+    "name": "UTCN AIRI OBS 4",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "d196ed6a": {
     "url": "https://outlook.office365.com/owa/calendar/e480dbc1106f416c889fbb5398f796d8@campus.utcluj.ro/db6c2c93ca1f4e4db3645dc52f7ed5a4157849311530112522/calendar.ics",
-    "name": "UTCN - IE Observatorului 2 - Sala 7C",
-    "color": "#28a745",
-    "building": "UTCN OBSERVATOR ELECTRO CLUJ",
-    "room": "Sala 7C"
+    "name": "UTCN IE OBS 7C",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "880d6402": {
+    "url": "https://outlook.office365.com/owa/calendar/c1c06730a0d548fc97b51894b5a3d362@campus.utcluj.ro/7ed6d9a964ba4199bf0ecff1b4cbb19712972190088115766043/calendar.ics",
+    "name": "UTCN AIRI OBS 505",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "716dc8c2": {
     "url": "https://outlook.office365.com/owa/calendar/d85a677d98c04091b0c7c1f9b515ff91@campus.utcluj.ro/4cdc8329d62d45b39f990977d8a4963b8409104016693109503/calendar.ics",
-    "name": "UTCN - AC Observatorului 2 - Sala 305",
-    "color": "#28a745",
-    "building": "UTCN OBSERVATOR ELECTRO CLUJ",
-    "room": "Sala 305"
+    "name": "UTCN AC OBS 305",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "af42a70b": {
+    "url": "https://outlook.office365.com/owa/calendar/f05ae83ed135445789062294661a78aa@campus.utcluj.ro/b021062831e748c3bc9e917ba12826c63065508075060337244/calendar.ics",
+    "name": "UTCN CUNBM L26 1",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "45c844c0": {
     "url": "https://outlook.office365.com/owa/calendar/2c9ba45a0eae40cbb73858356013e4f2@campus.utcluj.ro/55d9d056e2684f75bd87b1d2479f4e14948866029227653928/calendar.ics",
-    "name": "UTCN - ETTI Observatorului 2 - Sala 407",
-    "color": "#28a745",
-    "building": "UTCN OBSERVATOR ELECTRO CLUJ",
-    "room": "Sala 407"
+    "name": "UTCN ETTI OBS 407",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "db66d49d": {
+    "url": "https://outlook.office365.com/owa/calendar/f48173acfc964e25ace4cf8cf2c146f9@campus.utcluj.ro/8fa5c6b1ea3c4a499d168a063a5f227710002910147337353083/calendar.ics",
+    "name": "UTCN CUNBM L23 1",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "2116747d": {
     "url": "https://outlook.office365.com/owa/calendar/fd64f8b694d440f692c66fd7fc2c74be@campus.utcluj.ro/c6c7f6b28be9493089a4ac8beb54d1663326784373175118471/calendar.ics",
-    "name": "UTCN - ETTI Observatorului 2 - Sala 402",
-    "color": "#0066cc",
-    "building": "UTCN OBSERVATOR ELECTRO CLUJ",
-    "room": "Sala 402"
+    "name": "UTCN ETTI OBS 402",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "8cde99e2": {
+    "url": "https://outlook.office365.com/owa/calendar/153bf4b8c0514aa8a56417ed8992d914@campus.utcluj.ro/64d134fdfe354eac8cf255ad2fdf57b09151124291925953497/calendar.ics",
+    "name": "UTCN CUNBM B74",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "9a56cd18": {
     "url": "https://outlook.office365.com/owa/calendar/a46021aab69c45e2aa9d988922d54248@campus.utcluj.ro/896339b9754f471e87779495b8d98a2510080477572535811922/calendar.ics",
-    "name": "UTCN - ETTI Observatorului 2 - Sala 401",
-    "color": "#17a2b8",
-    "building": "UTCN OBSERVATOR ELECTRO CLUJ",
-    "room": "Sala 401"
+    "name": "UTCN ETTI OBS 401",
+    "color": null,
+    "building": null,
+    "room": null
   },
-  "e4c59f6b": {
-    "url": "https://outlook.office365.com/owa/calendar/117b1a6b49984facb47bc42dd0e571a8@campus.utcluj.ro/ace23963db6f4d7891f3d2f20072b06515111776838913045133/calendar.ics",
-    "name": "UTCN - ETTI Observatorului 2 - Sala 506A",
-    "color": "#e83e8c",
-    "building": "UTCN OBSERVATOR ELECTRO CLUJ",
-    "room": "Sala 506A"
+  "391a557d": {
+    "url": "https://outlook.office365.com/owa/calendar/fb8d4b3a62ae44248252d6005c113a7e@campus.utcluj.ro/9894c08922e8446f9e2f5cb2d96c3d6f3217632174702891255/calendar.ics",
+    "name": "UTCN CUNBM A3",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "157fba34": {
+    "url": "https://outlook.office365.com/owa/calendar/c94c913227184f11bb891ff1c14fed8b@campus.utcluj.ro/8fcd1b93e2f04056a937046a947facca5487809175895084570/calendar.ics",
+    "name": "UTCN CUNBM A2",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "ecf5e71c": {
+    "url": "https://outlook.office365.com/owa/calendar/06d58bb6c58c42cd92b22bc70089e6c9@campus.utcluj.ro/96b88d8a68e047feac83bf7ba7009a7243862708895849135/calendar.ics",
+    "name": "UTCN CUNBM A4",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "1065946d": {
     "url": "https://outlook.office365.com/owa/calendar/7433551d8a9f4a39b97d1d7cdae27076@campus.utcluj.ro/daf46b3cb58940f7b866bb17ac302afa16936313465599088916/calendar.ics",
-    "name": "UTCN - CUNBM Victoriei 76 - Sala S67",
-    "color": "#6610f2",
-    "building": "UTCN VICTORIEI CUNBM",
-    "room": "Sala S67"
+    "name": "UTCN CUNBM S67",
+    "color": null,
+    "building": null,
+    "room": null
   },
-  "e2a8f630": {
-    "url": "https://outlook.office365.com/owa/calendar/1e7c10dc9597406a962f7730381ea5d5@campus.utcluj.ro/07834ed22493412dbee0af199ada20a1679606469189881503/calendar.ics",
-    "name": "UTCN - CUNBM Victoriei 76 - Sala A59",
-    "color": "#e6590f",
-    "building": "UTCN VICTORIEI CUNBM",
-    "room": "Sala A59"
+  "bb5a3f60": {
+    "url": "https://outlook.office365.com/owa/calendar/45362a6d11df4fb894b05ba2fa4cafdd@campus.utcluj.ro/266e9a0c863240bfa8cc5e4dc0d89af36807275624616540967/calendar.ics",
+    "name": "UTCN CUNBM A1",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "58178fc3": {
+    "url": "https://outlook.office365.com/owa/calendar/b24c13833e804c5fa3ad11c34edf4016@campus.utcluj.ro/9858ed245ca642869b860baf18870e496921177399726666401/calendar.ics",
+    "name": "UTCN INSTA BLVD P01",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "ff9d78d4": {
     "url": "http://outlook.office365.com/owa/calendar/c0a00ab1e5504a7b832dfe89c70259f8@campus.utcluj.ro/a8db06972e204c5e912b4a9a12c5956213786006386065359395/calendar.ics",
-    "name": "UTCN - CESTI CUNBM",
-    "color": "#17a2b8",
-    "building": "UTCN VICTORIEI CUNBM",
-    "room": "CESTI CUNBM"
+    "name": "UTCN CESTI CUNBM",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "bfd2cb50": {
     "url": "http://outlook.office365.com/owa/calendar/ebf584296e27451f881f299f81cd0baf@campus.utcluj.ro/4710edc002644e5a88e04267673fae1c7227915822595955757/calendar.ics",
-    "name": "UTCN - AC Daic - Sala 206",
-    "color": "#e6590f",
-    "building": "UTCN DAICOVICIU CLUJ",
-    "room": "Sala 206"
+    "name": "UTCN AC DAIC 206",
+    "color": null,
+    "building": null,
+    "room": null
+  },
+  "cdfd3264": {
+    "url": "https://outlook.office365.com/owa/calendar/78d6258c48304d1b999bea11beae256c@campus.utcluj.ro/593fa5a1c33043748756c7f5f8ecb36811682836993177368435/calendar.ics",
+    "name": "UTCN INSTA BLVD AULA",
+    "color": null,
+    "building": null,
+    "room": null
   },
   "e4875c31": {
     "url": "http://outlook.office365.com/owa/calendar/f22dd6bbe42945e08e89c1516a82b0b7@campus.utcluj.ro/499763e8015e4c3590fbebff61c4244b5745281987689689452/calendar.ics",
-    "name": "UTCN - AC Daic - Sala 479",
-    "color": "#6f42c1",
-    "building": "UTCN DAICOVICIU CLUJ",
-    "room": "Sala 479"
-  },
-  "90f94d99": {
-    "url": "https://outlook.office365.com/owa/calendar/77a6190ace044efc96dc92c0424b5db3@campus.utcluj.ro/1ed3071ef5ba4a8a82fd7525b41d97d75123532789196401377/calendar.ics",
-    "name": "UTCN - DAICOVICIU 15 - DMCDI",
-    "color": "#6610f2",
-    "building": "UTCN DAICOVICIU CLUJ",
-    "room": "DMCDI"
-  },
-  "96d789cc": {
-    "url": "https://outlook.office365.com/owa/calendar/2558b0263ce545e0bfda02b1474e5c5d@campus.utcluj.ro/8b0e18910794455dbd4ab23812110d53998087074370350586/calendar.ics",
-    "name": "UTCN - CONS DAICOVICIU - Sala 604",
-    "color": "#28a745",
-    "building": "UTCN DAICOVICIU CLUJ",
-    "room": "Sala 604"
-  },
-  "3417e9cf": {
-    "url": "https://outlook.office365.com/owa/calendar/83f45e59772d4628b03cc9d21654ad23@campus.utcluj.ro/3cd72cc579d14626a7aa08d7d5bde12d14504394438333080978/calendar.ics",
-    "name": "UTCN - CONS DAICOVICIU - Sala 705",
-    "color": "#6f42c1",
-    "building": "UTCN DAICOVICIU CLUJ",
-    "room": "Sala 705"
-  },
-  "f840635d": {
-    "url": "http://outlook.office365.com/owa/calendar/988fba4a3ed0405f81e82fd99028c052@campus.utcluj.ro/b5d0b2ad681c4441beb7fb0d00691e08397613310085276986/calendar.ics",
-    "name": "UTCN - DAICOVICIU 15 - Sala 431",
-    "color": "#6610f2",
-    "building": "UTCN DAICOVICIU CLUJ",
-    "room": "Sala 431"
-  },
-  "900b0ea2": {
-    "url": "http://outlook.office365.com/owa/calendar/64b2fcaf131443b5a60ec50cd5f756e7@campus.utcluj.ro/467a58c015164b66af9579ab17eea26b654117146146300478/calendar.ics",
-    "name": "UTCN - CESTI Cluj",
-    "color": "#20c997",
-    "building": "UTCN DAICOVICIU CLUJ",
-    "room": "CESTI Cluj"
-  },
-  "f343aa39": {
-    "url": "http://outlook.office365.com/owa/calendar/6ebd695f2de544c49d6f96202df0e0c6@campus.utcluj.ro/b6112630e7da4ea39f11b094aac25df14620102040852371902/calendar.ics",
-    "name": "UTCN - Aula Domsa",
-    "color": "#0066cc",
-    "building": "UTCN DAICOVICIU CLUJ",
-    "room": "Aula Domsa"
-  },
-  "fb1d9120": {
-    "url": "http://outlook.office365.com/owa/calendar/481562ae30c345b8a0417a7e24f175c8@campus.utcluj.ro/b1bfb5292a334e229712e9a61129faef1724955221381497856/calendar.ics",
-    "name": "UTCN - IIRMP Muncii 103-105 - Sala Collegium",
-    "color": "#fd7e14",
-    "building": "UTCN MUNCII CLUJ",
-    "room": "Sala Collegium"
-  },
-  "3c4cfff0": {
-    "url": "https://outlook.office365.com/owa/calendar/3c5ad3405ca84364becb83e752e83465@campus.utcluj.ro/3f291a1b605549389487cbf5581a6cee15690257524447050243/calendar.ics",
-    "name": "UTCN - IIRMP Muncii 103-105 - Sala B105",
-    "color": "#28a745",
-    "building": "UTCN MUNCII CLUJ",
-    "room": "Sala B105"
-  },
-  "76796c2c": {
-    "url": "https://outlook.office365.com/owa/calendar/86800cd4d26b451fa3ddc195163b8d41@campus.utcluj.ro/044347e72cf748189aab9eb96193d4d516109088026048608113/calendar.ics",
-    "name": "UTCN - ARMM Muncii 103-105 - Sala D08A",
-    "color": "#007bff",
-    "building": "UTCN MUNCII CLUJ",
-    "room": "Sala D08A"
-  },
-  "112a68bd": {
-    "url": "https://outlook.office365.com/owa/calendar/742030df9a1145f79f246266d16aaa19@campus.utcluj.ro/33e837f8bfb946d7bdb0c23a9e9784438094491037190444825/calendar.ics",
-    "name": "UTCN - IIRMP Muncii 103-105 - Sala B106",
-    "color": "#661000",
-    "building": "UTCN MUNCII CLUJ",
-    "room": "Sala B106"
-  },
-  "cd723620": {
-    "url": "https://outlook.office365.com/owa/calendar/455dbe559be940dc8c4b0bc947e5e9cb@campus.utcluj.ro/474cf801e6af4da288e9771d7010dc4f16360615254874367374/calendar.ics",
-    "name": "UTCN - ARMM Muncii 103-105 - Sala A13",
-    "color": "#28a745",
-    "building": "UTCN MUNCII CLUJ",
-    "room": "Sala A13"
-  },
-  "cdd99704": {
-    "url": "https://outlook.office365.com/owa/calendar/8c56645debb6439190cf2002c35b607f@campus.utcluj.ro/77cfe4966bb142278591fa9c189308a110950812604967119849/calendar.ics",
-    "name": "UTCN - IIRMP Muncii 103-105 - Sala E07",
-    "color": "#17a2b8",
-    "building": "UTCN MUNCII CLUJ",
-    "room": "Sala E07"
-  },
-  "d20988dc": {
-    "url": "https://outlook.office365.com/owa/calendar/723c71913f5440d88557a91d760a3a8f@campus.utcluj.ro/ea86c7c8eb6e43ac98f8407665f04c9a11921888838287585885/calendar.ics",
-    "name": "UTCN - IIRMP Muncii 103-105 - Sala C102",
-    "color": "#e6590f",
-    "building": "UTCN MUNCII CLUJ",
-    "room": "Sala C102"
-  },
-  "38beaf9a": {
-    "url": "https://outlook.office365.com/owa/calendar/9dc810a9f6eb4711a4c212237b0f3827@campus.utcluj.ro/7395956760d94c78bff5b90bfd6cd7ad13457112995751914361/calendar.ics",
-    "name": "UTCN - IMM Muncii 103-105 - Sala G10",
-    "color": "#28a745",
-    "building": "UTCN MUNCII CLUJ",
-    "room": "Sala G10"
-  },
-  "b6552616": {
-    "url": "https://outlook.office365.com/owa/calendar/bbb83c66270a45ea96fcf73caa486597@campus.utcluj.ro/1193feef30e44c978d59d70a744cf4411523870210407175550/calendar.ics",
-    "name": "UTCN - IMM Muncii 103-105 - Sala E114",
-    "color": "#17a2b8",
-    "building": "UTCN MUNCII CLUJ",
-    "room": "Sala E114"
-  },
-  "de6ebaae": {
-    "url": "https://outlook.office365.com/owa/calendar/2d2d5b3da1504367a9cfa37e1434c576@campus.utcluj.ro/f3d60380a5334890967e69f61f5bd6b01504847312403637086/calendar.ics",
-    "name": "UTCN - ARMM Muncii 103-105 - Sala C303",
-    "color": "#28a745",
-    "building": "UTCN MUNCII CLUJ",
-    "room": "Sala C303"
-  },
-  "a27e8bd3": {
-    "url": "https://outlook.office365.com/owa/calendar/1ccbaf0082d944249b35f9cf1f981f68@campus.utcluj.ro/ac05a87de03e4c4faea6e2bc4a938d1f15540254936049703717/calendar.ics",
-    "name": "UTCN - IIRMP Muncii 103-105 - Sala M310",
-    "color": "#6f42c1",
-    "building": "UTCN MUNCII CLUJ",
-    "room": "Sala M310"
-  },
-  "f4836310": {
-    "url": "https://outlook.office365.com/owa/calendar/8bbc3b13cd2545ac95b2ee9772a3b82e@campus.utcluj.ro/c2f6cc38a1da4501bdb275d5e7fdc3b014913443233045095865/calendar.ics",
-    "name": "UTCN - ARMM Muncii 103-105 - Sala D01K",
-    "color": "#17a2b8",
-    "building": "UTCN MUNCII CLUJ",
-    "room": "Sala D01K"
-  },
-  "2bd46dd5": {
-    "url": "http://outlook.office365.com/owa/calendar/ff71f5d4ef78484db82b7cd4e203aa97@campus.utcluj.ro/3b75cdd247414b89a255bd92026cbcc410810192519064393375/calendar.ics",
-    "name": "UTCN - Aula Centenar",
-    "color": "#dc3545",
-    "building": "UTCN MUNCII CLUJ",
-    "room": "Aula Centenar"
-  },
-  "f2645494": {
-    "url": "http://outlook.office365.com/owa/calendar/3eb52ce938624e7790ab81361f0ac3f1@campus.utcluj.ro/f2859edaf4ce476f97484247b77472122623979707452980535/calendar.ics",
-    "name": "UTCN - CUNBM Sala Senatului",
-    "color": "#28a745",
-    "building": "UTCN RECTORAT CUNBM",
-    "room": "CUNBM Sala Senatului"
-  },
-  "3d0694dc": {
-    "url": "http://outlook.office365.com/owa/calendar/49fb6e315a3c4c17915b29835bad42ea@campus.utcluj.ro/0afef4a5189641deb4464f790f3465351672912736610294354/calendar.ics",
-    "name": "UTCN - Aula Magna CUNBM",
-    "color": "#007bff",
-    "building": "UTCN RECTORAT CUNBM",
-    "room": "Aula Magna CUNBM"
-  },
-  "a7048cbb": {
-    "url": "http://outlook.office365.com/owa/calendar/d2c5d28f172d4394bc45de79551dae9f@campus.utcluj.ro/ff4feaecf1e64be4ac70921ba3c7e4813224001752777747891/calendar.ics",
-    "name": "UTCN - RECTORAT - Sala 115",
-    "color": "#6f42c1",
-    "building": "UTCN RECTORAT",
-    "room": "Sala 115"
-  },
-  "3b5ab9cf": {
-    "url": "https://outlook.office365.com/owa/calendar/fc0ab40298e64caeaa14be996036a807@campus.utcluj.ro/dcf727857fe04d56b4ca8516d4b8ff2a16887609845941625406/calendar.ics",
-    "name": "UTCN - RECTORAT - Sala 219",
-    "color": "#dc3545",
-    "building": "UTCN RECTORAT",
-    "room": "Sala 219"
-  },
-  "5fdab220": {
-    "url": "http://outlook.office365.com/owa/calendar/05effa6a5a20475db5db039dc6e32bbc@campus.utcluj.ro/ffad23a3e4fa478b936b0459b14d71f76818501080686338516/calendar.ics",
-    "name": "UTCN - RECTORAT - Sala 211",
-    "color": "#17a2b8",
-    "building": "UTCN RECTORAT",
-    "room": "Sala 211"
-  },
-  "ced1b3f3": {
-    "url": "http://outlook.office365.com/owa/calendar/56216c3cbefa41c2aee3604169accaa2@campus.utcluj.ro/cdd100f4c5ca40718a14c399ce19bdc8334032730094602152/calendar.ics",
-    "name": "UTCN - RECTORAT - Sala 120",
-    "color": "#0066cc",
-    "building": "UTCN RECTORAT",
-    "room": "Sala 120"
-  },
-  "a4ca0de9": {
-    "url": "http://outlook.office365.com/owa/calendar/77857393c8934d239e4e26df70ccf49c@campus.utcluj.ro/bb71035b168c40069300bfffdba2ca5517879324408226661536/calendar.ics",
-    "name": "UTCN - RECTORAT - Sala P23",
-    "color": "#661000",
-    "building": "UTCN RECTORAT",
-    "room": "Sala P23"
-  },
-  "b3257b92": {
-    "url": "https://outlook.office365.com/owa/calendar/02e0e4e5988541beb37d1d311021d591@campus.utcluj.ro/f165bdbe4cd8463aab29d6b2c6dde8811376436817678416584/calendar.ics",
-    "name": "UTCN - HUB UT - Sala 2-6",
-    "color": "#28a745",
-    "building": "UTCN HUB CLUJ",
-    "room": "Sala 2-6"
-  },
-  "2e182311": {
-    "url": "https://outlook.office365.com/owa/calendar/efb94cbd6ea54d76a7cb399cc79539ad@campus.utcluj.ro/e659f751f1de4a5cb86a5ae60ecbdb8d10134300954909195052/calendar.ics",
-    "name": "UTCN - HUB UT - Sala 2-4",
-    "color": "#661000",
-    "building": "UTCN HUB CLUJ",
-    "room": "Sala 2-4"
-  },
-  "7d9e47ce": {
-    "url": "https://outlook.office365.com/owa/calendar/c0ee2bbcd481408fb413a5762bedb22c@campus.utcluj.ro/287dec02b28645929ea88060b9e1f27517626717181307120504/calendar.ics",
-    "name": "UTCN - HUB UT - Sala 2-7",
-    "color": "#003366",
-    "building": "UTCN HUB CLUJ",
-    "room": "Sala 2-7"
-  },
-  "8bae047e": {
-    "url": "https://outlook.office365.com/owa/calendar/260f699a7e7741edb73e8d7a8c8dade6@campus.utcluj.ro/6b3866ef98ee4bfeacc36917abdd6efe18317677392087118261/calendar.ics",
-    "name": "UTCN - HUB UT - Sala 2-5",
-    "color": "#20c997",
-    "building": "UTCN HUB CLUJ",
-    "room": "Sala 2-5"
-  },
-  "fac4c0d9": {
-    "url": "https://outlook.office365.com/owa/calendar/0e3c1061ace94209820fe5b97ba430fb@campus.utcluj.ro/578a66b13684439596e7e6727bd83b1d3831380052953128501/calendar.ics",
-    "name": "UTCN - HUB UT - Sala 1-1",
-    "color": "#dc3545",
-    "building": "UTCN HUB CLUJ",
-    "room": "Sala 1-1"
-  },
-  "c4c596a4": {
-    "url": "https://outlook.office365.com/owa/calendar/05aff2c7ffcc4387bd94806ad10bb84c@campus.utcluj.ro/eb562ba9edf64fb3b5cf121970264d8e16272913970701890711/calendar.ics",
-    "name": "UTCN - BRD HUB",
-    "color": "#007bff",
-    "building": "UTCN HUB CLUJ",
-    "room": "BRD HUB"
-  },
-  "2f3456e2": {
-    "url": "https://outlook.office365.com/owa/calendar/6df0b487dbed46adbb893b709e0aec6b@campus.utcluj.ro/d0583e2ff6ae4b7c821414fdbab614726486838255886964362/calendar.ics",
-    "name": "UTCN - ROOM CONFERENCE 1 UTCN HUB",
-    "color": "#003366",
-    "building": "UTCN HUB CLUJ",
-    "room": "ROOM CONFERENCE 1 UTCN HUB"
-  },
-  "587415c3": {
-    "url": "https://outlook.office365.com/owa/calendar/ea44e891bdc04f648df9449273c0765e@campus.utcluj.ro/43b69f62bd1d4734889620dc369d3879327021450492865205/calendar.ics",
-    "name": "UTCN - ROOM CONFERENCE 2 UTCN HUB",
-    "color": "#6610f2",
-    "building": "UTCN HUB CLUJ",
-    "room": "ROOM CONFERENCE 2 UTCN HUB"
-  },
-  "3c17ac01": {
-    "url": "https://outlook.office365.com/owa/calendar/9e52bd188dc9492398aa76a9623aa245@campus.utcluj.ro/11f8b9fb43e84ed3b6850dc84db423b16997328360830985704/calendar.ics",
-    "name": "UTCN - Aula UTCN HUB",
-    "color": "#6610f2",
-    "building": "UTCN HUB CLUJ",
-    "room": "Aula UTCN HUB"
+    "name": "UTCN AC DAIC 479",
+    "color": null,
+    "building": null,
+    "room": null
   }
+}
 }

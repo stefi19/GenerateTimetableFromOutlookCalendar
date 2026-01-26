@@ -29,19 +29,39 @@ def main():
 
     print(f"Using CSV: {csv_path}")
 
-    # Collect unique URLs
+    # Collect unique URLs and names (CSV uses: name, email, ..., html(col4), ics(col5))
     urls = set()
+    names_by_url = {}
+    import re
+
+    def _format_email_to_name(email: str) -> str:
+        if not email:
+            return ''
+        local = email.split('@', 1)[0]
+        parts = re.split(r'[^0-9A-Za-z]+', local)
+        parts = [p for p in parts if p and p.lower() != 'room']
+        if not parts:
+            return local
+        out_parts = [p.upper() if not p.isdigit() else p for p in parts]
+        return ' '.join(out_parts)
+
     with open(csv_path, 'r', encoding='utf-8') as f:
         reader = csv.reader(f)
-        next(reader, None)  # Skip header
+        next(reader, None)  # Skip header if present
         for row in reader:
-            if len(row) >= 5:
-                html_url = row[3].strip()
-                ics_url = row[4].strip() if len(row) > 4 else ''
-                if html_url:
-                    urls.add(html_url)
-                if ics_url:
-                    urls.add(ics_url)
+            # prefer ICS (col 5) then HTML (col 4)
+            html_url = row[4].strip() if len(row) > 4 else ''
+            ics_url = row[5].strip() if len(row) > 5 else ''
+            url = ics_url or html_url
+            if not url:
+                continue
+            urls.add(url)
+            # prefer email (col 1) to generate a name, fallback to col 0
+            email = row[1].strip() if len(row) > 1 else ''
+            if email:
+                names_by_url[url] = _format_email_to_name(email)
+            else:
+                names_by_url[url] = (row[0].strip() if row and len(row) > 0 else f'Calendar {url.split("/")[-1]}')
 
     print(f"Found {len(urls)} unique URLs")
 
@@ -57,7 +77,8 @@ def main():
     added = 0
     for url in urls:
         try:
-            cur.execute('INSERT OR IGNORE INTO calendars (url, name, enabled, created_at) VALUES (?, ?, 1, datetime("now"))', (url, f'Calendar {url.split("/")[-1]}'))
+            name = names_by_url.get(url, f'Calendar {url.split("/")[-1]}')
+            cur.execute('INSERT OR IGNORE INTO calendars (url, name, enabled, created_at) VALUES (?, ?, 1, datetime("now"))', (url, name))
             if cur.rowcount > 0:
                 added += 1
         except Exception as e:

@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "start": "2025-10-17T12:30:00",
+    "end": "2025-10-17T13:00:00",
+    "title": "Norina Elvira Herki",
+    "location": "UTCN - AIRI Observatorului 2 - Sala 505 (Cluj-Napoca, RO)",
+    "description": "",
+    "source": "880d6402"
+  },
+  {
+    "start": "2025-10-14T09:00:00",
+    "end": "2025-10-14T09:30:00",
+    "title": "Norina Elvira Herki",
+    "location": "UTCN - AIRI Observatorului 2 - Sala 505 (Cluj-Napoca, RO)",
+    "description": "",
+    "source": "880d6402"
+  },
+  {
+    "start": "2025-10-17T15:30:00",
+    "end": "2025-10-17T16:00:00",
+    "title": "Artificial Intelligence Research Institute",
+    "location": "UTCN - AIRI Observatorului 2 - Sala 505 (Cluj-Napoca, RO)",
+    "description": "",
+    "source": "880d6402"
+  }
+]

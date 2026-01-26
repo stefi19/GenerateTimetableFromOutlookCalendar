@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "start": "2025-04-01T15:00:00",
+    "end": "2025-04-01T17:00:00",
+    "title": "Lecture 5",
+    "location": "UTCN - ETTI Bar - Sala BT 204",
+    "description": "",
+    "source": "47ea2a83"
+  },
+  {
+    "start": "2025-03-18T13:00:00",
+    "end": "2025-03-18T14:00:00",
+    "title": "Ecosistem Video Yealink - eUT4ALL - e-PNRR",
+    "location": "Microsoft Teams Meeting; UTCN - AC Bar - Sala 356; UTCN - IIRMP Muncii 103-105 - Sala M310; UTCN - AC Bar - Sala 26B; UTCN - Cons Observatorului 72-74 - Sala O1; UTCN - AC Bar - Sala 16B; UTCN - AC Bar - Sala BT 604; UTCN - ICIA - Observatorului - Sala 28",
+    "description": "",
+    "source": "47ea2a83"
+  },
+  {
+    "start": "2025-04-08T15:00:00",
+    "end": "2025-04-08T17:00:00",
+    "title": "Lecture 6",
+    "location": "UTCN - ETTI Bar - Sala BT 204",
+    "description": "",
+    "source": "47ea2a83"
+  },
+  {
+    "start": "2025-07-09T09:30:00",
+    "end": "2025-07-09T10:00:00",
+    "title": "Test",
+    "location": "UTCN - ETTI Bar - Sala BT 204 (RO)",
+    "description": "",
+    "source": "47ea2a83"
+  },
+  {
+    "start": "2025-02-27T08:50:48",
+    "end": "2025-02-27T09:30:00",
+    "title": "Reserved",
+    "location": "",
+    "description": "\n\n\n________________________________________________________________________________\nMicrosoft Teams Need help?<https://aka.ms/JoinTeamsMeeting?omkt=en-GB>\nJoin the meeting now<https://teams.microsoft.com/l/meetup-join/19%3ameeting_NDBhN2NmODEtMTZmZS00ZmU5LWIyZjktZjZmMjI2YzEyN2M1%40thread.v2/0?context=%7b%22Tid%22%3a%22a6eb79fa-c4a9-4cce-818d-b85274d15305%22%2c%22Oid%22%3a%22b5854b05-055c-4ae7-b088-9f1eafe1572e%22%7d>\nMeeting ID: 351 799 628 97\nPasscode: N7oL6cH6\n________________________________\nDial in by phone\n+40 21 529 2227,,276456839#<tel:+40215292227,,276456839#> Romania, Bucharest\nFind a local number<https://dialin.teams.microsoft.com/31ffe0f8-1aa7-4b50-8338-1559dd2042f9?id=276456839>\nPhone conference ID: 276 456 839#\nFor organisers: Meeting options<https://teams.microsoft.com/meetingOptions/?organizerId=b5854b05-055c-4ae7-b088-9f1eafe1572e&tenantId=a6eb79fa-c4a9-4cce-818d-b85274d15305&threadId=19_meeting_NDBhN2NmODEtMTZmZS00ZmU5LWIyZjktZjZmMjI2YzEyN2M1@thread.v2&messageId=0&language=en-GB> | Reset dial-in PIN<https://dialin.teams.microsoft.com/usp/pstnconferencing>\nPrivacy and security<https://www.utcluj.ro>\n________________________________________________________________________________\n",
+    "source": "47ea2a83"
+  },
+  {
+    "start": "2025-03-05T12:54:31",
+    "end": "2025-03-05T13:30:00",
+    "title": "Reserved",
+    "location": "",
+    "description": "\n\n\n________________________________________________________________________________\nMicrosoft Teams Need help?<https://aka.ms/JoinTeamsMeeting?omkt=en-GB>\nJoin the meeting now<https://teams.microsoft.com/l/meetup-join/19%3ameeting_YzEyZGNjMTEtMDIwOS00Y2I1LTk2ZmYtZGU5MzRhZDYzODE0%40thread.v2/0?context=%7b%22Tid%22%3a%22a6eb79fa-c4a9-4cce-818d-b85274d15305%22%2c%22Oid%22%3a%22b5854b05-055c-4ae7-b088-9f1eafe1572e%22%7d>\nMeeting ID: 369 458 832 612\nPasscode: bs7kr9Dn\n________________________________\nDial in by phone\n+40 21 529 2227,,70237569#<tel:+40215292227,,70237569#> Romania, Bucharest\nFind a local number<https://dialin.teams.microsoft.com/31ffe0f8-1aa7-4b50-8338-1559dd2042f9?id=70237569>\nPhone conference ID: 702 375 69#\nFor organisers: Meeting options<https://teams.microsoft.com/meetingOptions/?organizerId=b5854b05-055c-4ae7-b088-9f1eafe1572e&tenantId=a6eb79fa-c4a9-4cce-818d-b85274d15305&threadId=19_meeting_YzEyZGNjMTEtMDIwOS00Y2I1LTk2ZmYtZGU5MzRhZDYzODE0@thread.v2&messageId=0&language=en-GB> | Reset dial-in PIN<https://dialin.teams.microsoft.com/usp/pstnconferencing>\nPrivacy and security<https://www.utcluj.ro>\n________________________________________________________________________________\n",
+    "source": "47ea2a83"
+  }
+]

@@ -14,6 +14,10 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
-    emptyDirBeforeWrite: true
+    emptyDirBeforeWrite: true,
+    // target a reasonably modern ES version to improve compatibility with
+    // older Safari versions that may throw "Cannot access uninitialized variable".
+    // If further compatibility is required consider adding @vitejs/plugin-legacy.
+    target: 'es2019'
   }
 })

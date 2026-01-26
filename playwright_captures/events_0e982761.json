@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "start": "2025-02-17T21:00:00",
+    "end": "2025-02-17T22:00:00",
+    "title": "Radu Mihai Popa",
+    "location": "Microsoft Teams Meeting",
+    "description": "",
+    "source": "0e982761"
+  },
+  {
+    "start": "2025-03-09T18:15:00",
+    "end": "2025-03-09T18:45:00",
+    "title": "Radu Mihai Popa",
+    "location": "Microsoft Teams Meeting",
+    "description": "",
+    "source": "0e982761"
+  },
+  {
+    "start": "2025-03-18T13:00:00",
+    "end": "2025-03-18T14:00:00",
+    "title": "Miruna Cont",
+    "location": "Microsoft Teams Meeting",
+    "description": "",
+    "source": "0e982761"
+  }
+]

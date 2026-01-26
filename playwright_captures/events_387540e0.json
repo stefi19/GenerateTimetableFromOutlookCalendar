@@ -1,1 +1,290 @@
-[]
+[
+  {
+    "start": "2025-09-25T15:00:00",
+    "end": "2025-09-25T15:30:00",
+    "title": "Sedinta Echipa DECIDFR",
+    "location": "UTCN - Dorobantilor 71-73 - DECIDFR; UTCN - ETTI Observatorului 2 - Sala 506A",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-09-17T10:30:00",
+    "end": "2025-09-17T10:55:00",
+    "title": "test1",
+    "location": "UTCN - Dorobantilor 71-73 - DECIDFR (RO)",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-10-23T09:30:00",
+    "end": "2025-10-23T10:00:00",
+    "title": "Sedinta DECIDFR",
+    "location": "UTCN - Dorobantilor 71-73 - DECIDFR (RO)",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-12-04T09:30:00",
+    "end": "2025-12-04T10:00:00",
+    "title": "Sedinta DECIDFR",
+    "location": "UTCN - Dorobantilor 71-73 - DECIDFR (RO)",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-11-06T09:30:00",
+    "end": "2025-11-06T10:00:00",
+    "title": "Sedinta DECIDFR",
+    "location": "UTCN - Dorobantilor 71-73 - DECIDFR (RO)",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-11-20T09:30:00",
+    "end": "2025-11-20T10:00:00",
+    "title": "Sedinta DECIDFR",
+    "location": "UTCN - Dorobantilor 71-73 - DECIDFR (RO)",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-09-17T11:30:00",
+    "end": "2025-09-17T11:55:00",
+    "title": "Test5",
+    "location": "UTCN - Dorobantilor 71-73 - DECIDFR (RO)",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-04-01T09:30:00",
+    "end": "2025-04-01T10:00:00",
+    "title": "SIS - PI si SF",
+    "location": "UTCN - Dorobantilor 71-73 - DECIDFR",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-10-17T09:00:00",
+    "end": "2025-10-17T09:30:00",
+    "title": "Sedinta DECIDFR",
+    "location": "UTCN - DAICOVICIU 15 - Sala 431; UTCN - Dorobantilor 71-73 - DECIDFR",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-02-25T09:30:00",
+    "end": "2025-02-25T10:00:00",
+    "title": "Bianca Pascu",
+    "location": "UTCN - Dorobantilor 71-73 - DECIDFR",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-06-26T10:30:00",
+    "end": "2025-06-26T11:30:00",
+    "title": "Flux organizare USERS MANAGEMENT - PROD",
+    "location": "Microsoft Teams Meeting; UTCN - Dorobantilor 71-73 - DECIDFR",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-06-26T11:30:00",
+    "end": "2025-06-26T12:00:00",
+    "title": "Demarare colectare GT - 3 - PNRR",
+    "location": "Microsoft Teams Meeting; UTCN - Dorobantilor 71-73 - DECIDFR",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-07-08T09:30:00",
+    "end": "2025-07-08T10:00:00",
+    "title": "Sedinta saptamanala DECIDFR",
+    "location": "UTCN - Dorobantilor 71-73 - DECIDFR; UTCN - DAICOVICIU 15 - Sala 431",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-07-03T14:00:00",
+    "end": "2025-07-03T14:30:00",
+    "title": "Sedinta saptamanala DECIDFR",
+    "location": "UTCN - Dorobantilor 71-73 - DECIDFR; UTCN - DAICOVICIU 15 - Sala 431",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-06-19T14:00:00",
+    "end": "2025-06-19T14:30:00",
+    "title": "Sedinta saptamanala DECIDFR",
+    "location": "UTCN - Dorobantilor 71-73 - DECIDFR; UTCN - DAICOVICIU 15 - Sala 431",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-06-13T08:30:00",
+    "end": "2025-06-13T09:00:00",
+    "title": "Sedinta saptamanala DECIDFR",
+    "location": "UTCN - Dorobantilor 71-73 - DECIDFR; UTCN - DAICOVICIU 15 - Sala 431",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-04-30T08:30:00",
+    "end": "2025-04-30T09:00:00",
+    "title": "Sedinta saptamanala DECIDFR",
+    "location": "UTCN - Dorobantilor 71-73 - DECIDFR; UTCN - DAICOVICIU 15 - Sala 431",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-09-17T11:00:00",
+    "end": "2025-09-17T11:25:00",
+    "title": "Test4",
+    "location": "UTCN - Dorobantilor 71-73 - DECIDFR (RO)",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-03-27T09:00:00",
+    "end": "2025-03-27T10:30:00",
+    "title": "Sedinta saptamanala DECIDFR",
+    "location": "UTCN - Dorobantilor 71-73 - DECIDFR; UTCN - DAICOVICIU 15 - Sala 431",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-03-20T09:00:00",
+    "end": "2025-03-20T10:30:00",
+    "title": "Sedinta saptamanala DECIDFR",
+    "location": "UTCN - Dorobantilor 71-73 - DECIDFR; UTCN - DAICOVICIU 15 - Sala 431",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-03-13T09:00:00",
+    "end": "2025-03-13T10:30:00",
+    "title": "Sedinta saptamanala DECIDFR",
+    "location": "UTCN - Dorobantilor 71-73 - DECIDFR",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-03-06T14:30:00",
+    "end": "2025-03-06T15:00:00",
+    "title": "Sedinta saptamanala DECIDFR",
+    "location": "UTCN - Dorobantilor 71-73 - DECIDFR",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-04-30T09:00:00",
+    "end": "2025-04-30T09:30:00",
+    "title": "Preluare SSM+PSI - UTCluj.Digital",
+    "location": "UTCN - DAICOVICIU 15 - Sala 431; UTCN - Dorobantilor 71-73 - DECIDFR",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-09-03T13:30:00",
+    "end": "2025-09-03T14:00:00",
+    "title": "testare SIS cu decid",
+    "location": "UTCN - Dorobantilor 71-73 - DECIDFR (RO)",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-03-27T13:00:00",
+    "end": "2025-03-27T14:00:00",
+    "title": "DECIDFR - Evaluare personal + Structura SIS",
+    "location": "UTCN - Dorobantilor 71-73 - DECIDFR",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-03-27T14:00:00",
+    "end": "2025-03-27T14:30:00",
+    "title": "DECIDFR - Discutie Razvan Meleg - Alarma si acces",
+    "location": "UTCN - Dorobantilor 71-73 - DECIDFR",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-02-27T15:00:00",
+    "end": "2025-02-27T15:30:00",
+    "title": "Bogdan Orza",
+    "location": "UTCN - Dorobantilor 71-73 - DECIDFR",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-01-30T12:00:00",
+    "end": "2025-01-30T12:30:00",
+    "title": "Bogdan Orza",
+    "location": "UTCN - DAICOVICIU 15 - Sala 431; UTCN - Dorobantilor 71-73 - DECIDFR",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-05-07T09:00:00",
+    "end": "2025-05-07T11:00:00",
+    "title": "SIS - Staging secretariat",
+    "location": "UTCN - Dorobantilor 71-73 - DECIDFR",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-04-09T13:30:00",
+    "end": "2025-04-09T15:00:00",
+    "title": "Meeting ROF",
+    "location": "UTCN - DAICOVICIU 15 - Sala 431; UTCN - Dorobantilor 71-73 - DECIDFR",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-09-20T10:00:00",
+    "end": "2025-09-20T14:00:00",
+    "title": "Prezentare ByteStorm",
+    "location": "UTCN - Dorobantilor 71-73 - DECIDFR (RO)",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-04-16T08:30:00",
+    "end": "2025-04-16T09:30:00",
+    "title": "DECIDFR - status inserare date - sis.utcluj.app + sedinta saptamanala",
+    "location": "UTCN - DAICOVICIU 15 - Sala 431; UTCN - Dorobantilor 71-73 - DECIDFR",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-03-27T15:00:00",
+    "end": "2025-03-27T16:00:00",
+    "title": "eUT4ALL - Meeting GT - PNRR - Organizare",
+    "location": "UTCN - Dorobantilor 71-73 - DECIDFR",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-12-03T08:00:00",
+    "end": "2025-12-03T09:30:00",
+    "title": "DECIDFR - discutii organizatorice",
+    "location": "UTCN - Dorobantilor 71-73 - DECIDFR (RO)",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-02-06T10:00:00",
+    "end": "2025-02-06T10:30:00",
+    "title": "Sedinta saptamanala DECIDFR",
+    "location": "UTCN - Dorobantilor 71-73 - DECIDFR; UTCN - DAICOVICIU 15 - Sala 431",
+    "description": "",
+    "source": "387540e0"
+  },
+  {
+    "start": "2025-03-18T13:00:00",
+    "end": "2025-03-18T14:00:00",
+    "title": "Miruna Cont",
+    "location": "Microsoft Teams Meeting; UTCN - ICIA - Observatorului - Sala 25; UTCN - ICIA - Observatorului - Sala 18; UTCN - CONS Bar - Sala 169; UTCN - AC Bar - Sala 16B; UTCN - AC Bar - Sala BT 603; UTCN - ETTI Observatorului 2 - Sala 507; UTCN - ICIA - Observatorul",
+    "description": "",
+    "source": "387540e0"
+  }
+]

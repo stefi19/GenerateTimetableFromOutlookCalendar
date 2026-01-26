@@ -73,6 +73,8 @@
             const [editingCalendar, setEditingCalendar] = React.useState(null)
             const [stats, setStats] = React.useState({ events_count: 0, last_import: null })
             const [importLog, setImportLog] = React.useState([])
+            const [plannedOrder, setPlannedOrder] = React.useState([])
+            const [showFullPreview, setShowFullPreview] = React.useState(false)
             const [sessionRemaining, setSessionRemaining] = React.useState(null)
             const [warningInfo, setWarningInfo] = React.useState(null)
 
@@ -127,6 +129,20 @@
                     setStats({ events_count: data.events_count || 0, last_import: data.last_import })
                     setExtractorRunning(data.extractor_running || false)
                     setExtractorProgress(data.extractor_progress || null)
+                    setPlannedOrder(data.planned_order || [])
+                    // Prefer server-side extractor log (includes very fast entries)
+                    if (data.extractor_log && data.extractor_log.length) {
+                        setImportLog(prev => {
+                            // merge server log entries into UI log without duplication
+                            const merged = [...prev]
+                            data.extractor_log.forEach(l => {
+                                if (!merged.find(x => x.msg === l)) {
+                                    merged.push({ time: new Date().toLocaleTimeString(), msg: l, type: 'info' })
+                                }
+                            })
+                            return merged.slice(-500)
+                        })
+                    }
 
                     // Auto-add progress messages to log
                     if (data.extractor_progress && data.extractor_progress.message) {
@@ -473,7 +489,18 @@
                                 }
                             }, `[${log.time}] ${log.msg}`)
                         )
-                    )
+                    ),
+                    // CSV Download / Upload controls
+                    React.createElement('div', { style: { marginTop: '0.75rem', display: 'flex', gap: '8px', alignItems: 'center' } },
+                        // Download link (forces a friendly filename)
+                        React.createElement('a', { href: '/download/Rooms_PUBLISHER_HTML-ICS(in).csv', download: 'Rooms_PUBLISHER_HTML-ICS.csv', className: 'btn btn-secondary', style: { padding: '0.4rem 0.6rem', background: '#6c757d', color: 'white', borderRadius: '4px', textDecoration: 'none' } }, 'Download CSV'),
+                        // Upload form: file input + button
+                        React.createElement('div', { style: { display: 'flex', gap: '6px', alignItems: 'center' } },
+                            React.createElement('input', { id: 'upload-csv-input', name: 'file', type: 'file', accept: '.csv', style: { padding: '0.2rem' } }),
+                            React.createElement('button', { id: 'upload-csv-btn', type: 'button', onClick: null, style: { padding: '0.4rem 0.6rem', background: '#007bff', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' } }, 'Upload CSV')
+                        )
+                    ),
+                    // (CSV preview removed by admin request)
                 ),
 
                 // Add Calendar Form
@@ -603,6 +630,43 @@
         }
 
         ReactDOM.createRoot(document.getElementById('admin-root')).render(React.createElement(Admin))
+
+        // Wire the upload button behaviour after the React tree is mounted.
+        // We wait briefly for the element to exist then attach a click handler
+        setTimeout(() => {
+            const uploadBtn = document.getElementById('upload-csv-btn')
+            const uploadInput = document.getElementById('upload-csv-input')
+            if (!uploadBtn || !uploadInput) return
+            uploadBtn.addEventListener('click', () => {
+                if (!uploadInput.files || uploadInput.files.length === 0) {
+                    alert('Please choose a CSV file to upload')
+                    return
+                }
+                const file = uploadInput.files[0]
+                const fd = new FormData()
+                fd.append('file', file, file.name)
+
+                uploadBtn.disabled = true
+                const previousText = uploadBtn.textContent
+                uploadBtn.textContent = 'Uploading...'
+
+                fetch('/admin/upload_rooms_publisher', { method: 'POST', body: fd })
+                .then(r => r.json())
+                .then(j => {
+                    // trigger a full status refresh so planned_order appears
+                    fetch('/admin/api/status').then(()=>{})
+                    alert(j.message || 'Upload complete')
+                })
+                .catch(e => {
+                    console.error('Upload failed', e)
+                    alert('Upload failed')
+                })
+                .finally(() => {
+                    uploadBtn.disabled = false
+                    uploadBtn.textContent = previousText
+                })
+            })
+        }, 400)
     </script>
 </body>
 </html>

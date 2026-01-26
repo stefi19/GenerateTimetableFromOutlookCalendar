@@ -1,1 +1,82 @@
-[]
+[
+  {
+    "start": "2025-03-05T08:00:00",
+    "end": "2025-03-05T10:00:00",
+    "title": "Sorin Besoiu",
+    "location": "Întâlnire Microsoft Teams; UTCN - ARMM Muncii 103-105 - Sala C303",
+    "description": "",
+    "source": "de6ebaae"
+  },
+  {
+    "start": "2025-03-18T13:00:00",
+    "end": "2025-03-18T14:00:00",
+    "title": "Ecosistem Video Yealink - eUT4ALL - e-PNRR",
+    "location": "Microsoft Teams Meeting; UTCN - AC Bar - Sala 356; UTCN - IIRMP Muncii 103-105 - Sala M310; UTCN - AC Bar - Sala 26B; UTCN - Cons Observatorului 72-74 - Sala O1; UTCN - AC Bar - Sala 16B; UTCN - AC Bar - Sala BT 604; UTCN - ICIA - Observatorului - Sala 28",
+    "description": "",
+    "source": "de6ebaae"
+  },
+  {
+    "start": "2025-04-02T19:30:00",
+    "end": "2025-04-02T20:00:00",
+    "title": "Sustinere raport cerecetare nr.2 - Baneasa Andrei",
+    "location": "Microsoft Teams Meeting; UTCN - ARMM Muncii 103-105 - Sala C303",
+    "description": "",
+    "source": "de6ebaae"
+  },
+  {
+    "start": "2025-04-28T13:00:00",
+    "end": "2025-04-28T14:00:00",
+    "title": "referat Francisc",
+    "location": "Microsoft Teams Meeting",
+    "description": "",
+    "source": "de6ebaae"
+  },
+  {
+    "start": "2025-03-12T14:00:00",
+    "end": "2025-03-12T16:00:00",
+    "title": "Sorin Besoiu",
+    "location": "Întâlnire Microsoft Teams; UTCN - ARMM Muncii 103-105 - Sala C303",
+    "description": "",
+    "source": "de6ebaae"
+  },
+  {
+    "start": "2025-03-12T12:00:00",
+    "end": "2025-03-12T14:00:00",
+    "title": "Sorin Besoiu",
+    "location": "Întâlnire Microsoft Teams; UTCN - ARMM Muncii 103-105 - Sala C303",
+    "description": "",
+    "source": "de6ebaae"
+  },
+  {
+    "start": "2025-03-12T08:00:00",
+    "end": "2025-03-12T10:00:00",
+    "title": "Sorin Besoiu",
+    "location": "Întâlnire Microsoft Teams; UTCN - ARMM Muncii 103-105 - Sala C303",
+    "description": "",
+    "source": "de6ebaae"
+  },
+  {
+    "start": "2025-04-28T14:00:00",
+    "end": "2025-04-28T14:30:00",
+    "title": "Raport cercetare 2 Banabic Antonio",
+    "location": "Microsoft Teams Meeting",
+    "description": "",
+    "source": "de6ebaae"
+  },
+  {
+    "start": "2025-03-24T13:40:00",
+    "end": "2025-03-24T14:10:00",
+    "title": "Debora Gabriela Buleandra",
+    "location": "UTCN - ARMM Muncii 103-105 - Sala C303",
+    "description": "",
+    "source": "de6ebaae"
+  },
+  {
+    "start": "2025-02-26T15:00:00",
+    "end": "2025-02-26T15:30:00",
+    "title": "Sorin Besoiu",
+    "location": "C303",
+    "description": "",
+    "source": "de6ebaae"
+  }
+]

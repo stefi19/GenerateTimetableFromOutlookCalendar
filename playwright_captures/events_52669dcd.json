@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "start": "2025-07-01T13:30:00",
+    "end": "2025-07-01T14:00:00",
+    "title": "MEET",
+    "location": "Microsoft Teams Meeting",
+    "description": "",
+    "source": "52669dcd"
+  },
+  {
+    "start": "2025-02-27T11:07:00",
+    "end": "2025-02-27T11:15:00",
+    "title": "Reserved",
+    "location": "",
+    "description": "\n\n\n________________________________________________________________________________\nMicrosoft Teams Need help?<https://aka.ms/JoinTeamsMeeting?omkt=en-GB>\nJoin the meeting now<https://teams.microsoft.com/l/meetup-join/19%3ameeting_MDMxNjZjNGUtY2QxZi00NGM2LWFmMWEtMDJmZDdiMGFiMTY5%40thread.v2/0?context=%7b%22Tid%22%3a%22a6eb79fa-c4a9-4cce-818d-b85274d15305%22%2c%22Oid%22%3a%228278af7c-8f98-485e-8e8d-ae06bd153df3%22%7d>\nMeeting ID: 352 899 878 144\nPasscode: XU6WK2ev\n________________________________\nDial in by phone\n+40 21 529 2227,,246105375#<tel:+40215292227,,246105375#> Romania, Bucharest\nFind a local number<https://dialin.teams.microsoft.com/31ffe0f8-1aa7-4b50-8338-1559dd2042f9?id=246105375>\nPhone conference ID: 246 105 375#\nFor organisers: Meeting options<https://teams.microsoft.com/meetingOptions/?organizerId=8278af7c-8f98-485e-8e8d-ae06bd153df3&tenantId=a6eb79fa-c4a9-4cce-818d-b85274d15305&threadId=19_meeting_MDMxNjZjNGUtY2QxZi00NGM2LWFmMWEtMDJmZDdiMGFiMTY5@thread.v2&messageId=0&language=en-GB> | Reset dial-in PIN<https://dialin.teams.microsoft.com/usp/pstnconferencing>\nPrivacy and security<https://www.utcluj.ro>\n________________________________________________________________________________\n",
+    "source": "52669dcd"
+  },
+  {
+    "start": "2025-07-03T12:00:00",
+    "end": "2025-07-03T14:00:00",
+    "title": "Consultatii Proiect",
+    "location": "Microsoft Teams Meeting; UTCN - ETTI Bar - Sala BT 201",
+    "description": "",
+    "source": "52669dcd"
+  },
+  {
+    "start": "2025-03-18T13:00:00",
+    "end": "2025-03-18T14:00:00",
+    "title": "Ecosistem Video Yealink - eUT4ALL - e-PNRR",
+    "location": "Microsoft Teams Meeting; UTCN - AC Bar - Sala 356; UTCN - IIRMP Muncii 103-105 - Sala M310; UTCN - AC Bar - Sala 26B; UTCN - Cons Observatorului 72-74 - Sala O1; UTCN - AC Bar - Sala 16B; UTCN - AC Bar - Sala BT 604; UTCN - ICIA - Observatorului - Sala 28",
+    "description": "",
+    "source": "52669dcd"
+  }
+]
