@@ -1145,6 +1145,8 @@ def _run_extractor_background():
         # Record planned order for debugging/traceability (first 200 chars)
         try:
             planned = [n for (_u, n) in urls]
+            # store full planned order for traceability and a truncated one for UI
+            extractor_state['planned_order_full'] = planned
             extractor_state['planned_order'] = planned[:200]
             # write a small preamble to stdout so the admin log shows the planned order
             try:
@@ -1210,12 +1212,13 @@ def _run_extractor_for_url(url: str, calendar_name: str = None) -> int:
     try:
         ts = datetime.datetime.now().isoformat()
         msg = f"{ts} - START: {calendar_name or url}"
-        # keep a short rolling log
+            # keep a rolling server-side log (larger capacity to support bulk imports)
         ll = extractor_state.setdefault('log', [])
         ll.append(msg)
-        # trim to last 500 entries to avoid unbounded growth
-        if len(ll) > 500:
-            del ll[0:len(ll)-500]
+        # trim to last N entries to avoid unbounded growth (allow large imports)
+        LOG_CAP = 5000
+        if len(ll) > LOG_CAP:
+            del ll[0:len(ll)-LOG_CAP]
     except Exception:
         pass
     
@@ -1322,7 +1325,7 @@ def _run_extractor_for_url(url: str, calendar_name: str = None) -> int:
     except Exception:
         pass
 
-    # append a finish message to the server-side log so UI can show even
+            # append a finish message to the server-side log so UI can show even
     # very quick runs that a client-side poll might miss
     try:
         ts = datetime.datetime.now().isoformat()
@@ -1330,8 +1333,9 @@ def _run_extractor_for_url(url: str, calendar_name: str = None) -> int:
         msg = f"{ts} - DONE: Extracted {cnt} events from {calendar_name or url} (rc={rc})"
         ll = extractor_state.setdefault('log', [])
         ll.append(msg)
-        if len(ll) > 500:
-            del ll[0:len(ll)-500]
+        LOG_CAP = 5000
+        if len(ll) > LOG_CAP:
+            del ll[0:len(ll)-LOG_CAP]
     except Exception:
         pass
 
@@ -2554,7 +2558,8 @@ def admin_api_status():
             'events_extracted': extractor_state.get('events_extracted', 0),
         },
         'planned_order': planned or [],
-        'extractor_log': extractor_state.get('log', [])[-200:],
+        'planned_order_full': extractor_state.get('planned_order_full', []),
+    'extractor_log': extractor_state.get('log', [])[-2000:],
         'periodic_fetcher': {
             'started': _periodic_fetcher_started,
             'running': periodic_fetch_state.get('running', False),
@@ -2835,6 +2840,11 @@ def admin_upload_rooms_publisher():
                                 import hashlib as _hashlib
                                 h = _hashlib.sha1(chosen_url.encode('utf-8')).hexdigest()[:8]
                                 cal_display = name or chosen_url
+                                # snapshot events count before processing this calendar to compute per-calendar delta
+                                try:
+                                    before_events_count = extractor_state.get('events_extracted', 0)
+                                except Exception:
+                                    before_events_count = 0
 
                                 # Announce start in progress_message and server-side log
                                 try:
@@ -2850,8 +2860,9 @@ def admin_upload_rooms_publisher():
                                     # also keep a START marker for compatibility
                                     start_msg = f"{ts} - START: {cal_display}"
                                     ll.append(start_msg)
-                                    if len(ll) > 500:
-                                        del ll[0:len(ll)-500]
+                                    LOG_CAP = 5000
+                                    if len(ll) > LOG_CAP:
+                                        del ll[0:len(ll)-LOG_CAP]
                                 except Exception:
                                     pass
 
@@ -2919,15 +2930,22 @@ def admin_upload_rooms_publisher():
                                     except Exception:
                                         pass
 
-                                # Append DONE log entry for this calendar
+                                # Append DONE log entry for this calendar, including per-calendar event delta
                                 try:
                                     ts = datetime.utcnow().isoformat()
-                                    cnt = extractor_state.get('events_extracted', 0)
-                                    msg = f"{ts} - DONE: processed {cal_display}"
+                                    # calculate events added during this calendar's processing
+                                    before_cnt = locals().get('before_events_count', None)
+                                    if before_cnt is None:
+                                        # fallback: assume previous total from state prior to this calendar
+                                        before_cnt = extractor_state.get('events_extracted', 0) - (len(out_events) if 'out_events' in locals() else 0)
+                                    after_cnt = extractor_state.get('events_extracted', 0)
+                                    delta = max(0, after_cnt - (before_cnt or 0))
+                                    msg = f"{ts} - DONE: processed {cal_display} ({delta} events)"
                                     ll = extractor_state.setdefault('log', [])
                                     ll.append(msg)
-                                    if len(ll) > 500:
-                                        del ll[0:len(ll)-500]
+                                    LOG_CAP = 5000
+                                    if len(ll) > LOG_CAP:
+                                        del ll[0:len(ll)-LOG_CAP]
                                 except Exception:
                                     pass
 
@@ -2939,8 +2957,9 @@ def admin_upload_rooms_publisher():
                             ll = extractor_state.setdefault('log', [])
                             ll.append(f"{ts} - INFO: Import Complete")
                             ll.append(f"{ts} - INFO: tot {total} events")
-                            if len(ll) > 500:
-                                del ll[0:len(ll)-500]
+                            LOG_CAP = 5000
+                            if len(ll) > LOG_CAP:
+                                del ll[0:len(ll)-LOG_CAP]
                         except Exception:
                             pass
                         try:
