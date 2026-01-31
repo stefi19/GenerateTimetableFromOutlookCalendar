@@ -26,5 +26,13 @@ cd /app && python tools/enforce_csv_full_update.py
 
 echo "Setup complete"
 
-# Start the application
-exec "$@"
+# Ensure app files are owned by the non-root runtime user so Playwright and
+# the application can access installed browser binaries and caches.
+chown -R appuser:appuser /app || true
+
+# Drop privileges to `appuser` when launching the main process so Playwright
+# runs with the same user that installed browsers during image build.
+# Use `su` to run the provided command as appuser. This preserves the
+# existing behavior but ensures the runtime user has the expected home
+# directory and cache paths.
+exec su -s /bin/bash appuser -c "$*"

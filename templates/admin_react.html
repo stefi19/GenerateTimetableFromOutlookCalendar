@@ -124,7 +124,16 @@
                     }
 
                     const data = await res.json()
-                    setCalendars(data.calendars || [])
+                    // Sort calendars primarily by `name`. Calendars without a name are placed after named ones.
+                    const sorted = (data.calendars || []).slice().sort((a, b) => {
+                        const an = (a && a.name) ? a.name.toString().toLowerCase() : ''
+                        const bn = (b && b.name) ? b.name.toString().toLowerCase() : ''
+                        // Put unnamed entries after named entries
+                        if (!an && bn) return 1
+                        if (an && !bn) return -1
+                        return an.localeCompare(bn)
+                    })
+                    setCalendars(sorted)
                     // manual events are intentionally excluded from this admin UI
                     setStats({ events_count: data.events_count || 0, last_import: data.last_import })
                     setExtractorRunning(data.extractor_running || false)
@@ -490,16 +499,7 @@
                             }, `[${log.time}] ${log.msg}`)
                         )
                     ),
-                    // CSV Download / Upload controls
-                    React.createElement('div', { style: { marginTop: '0.75rem', display: 'flex', gap: '8px', alignItems: 'center' } },
-                        // Download link (forces a friendly filename)
-                        React.createElement('a', { href: '/download/Rooms_PUBLISHER_HTML-ICS(in).csv', download: 'Rooms_PUBLISHER_HTML-ICS.csv', className: 'btn btn-secondary', style: { padding: '0.4rem 0.6rem', background: '#6c757d', color: 'white', borderRadius: '4px', textDecoration: 'none' } }, 'Download CSV'),
-                        // Upload form: file input + button
-                        React.createElement('div', { style: { display: 'flex', gap: '6px', alignItems: 'center' } },
-                            React.createElement('input', { id: 'upload-csv-input', name: 'file', type: 'file', accept: '.csv', style: { padding: '0.2rem' } }),
-                            React.createElement('button', { id: 'upload-csv-btn', type: 'button', onClick: null, style: { padding: '0.4rem 0.6rem', background: '#007bff', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' } }, 'Upload CSV')
-                        )
-                    ),
+                    
                     // (CSV preview removed by admin request)
                 ),
 
@@ -537,6 +537,15 @@
                             disabled: importing,
                             style: { padding: '0.5rem 1rem', background: '#28a745', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }
                         }, importing ? 'Importing...' : 'Import All')
+                    )
+                    
+                ),
+                // CSV Controls - always visible, placed before Configured Calendars as requested
+                React.createElement('div', { style: { background: '#f8f9fa', padding: '1rem', borderRadius: '8px', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '8px' } },
+                    React.createElement('a', { href: '/download/Rooms_PUBLISHER_HTML-ICS(in).csv', download: 'Rooms_PUBLISHER_HTML-ICS.csv', className: 'btn btn-secondary', style: { padding: '0.4rem 0.6rem', background: '#6c757d', color: 'white', borderRadius: '4px', textDecoration: 'none' } }, 'Download CSV'),
+                    React.createElement('div', { style: { display: 'flex', gap: '6px', alignItems: 'center' } },
+                        React.createElement('input', { id: 'upload-csv-input-global', name: 'file', type: 'file', accept: '.csv', style: { padding: '0.2rem' } }),
+                        React.createElement('button', { id: 'upload-csv-btn-global', type: 'button', onClick: null, style: { padding: '0.4rem 0.6rem', background: '#007bff', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' } }, 'Upload CSV')
                     )
                 ),
 
@@ -634,36 +643,45 @@
         // Wire the upload button behaviour after the React tree is mounted.
         // We wait briefly for the element to exist then attach a click handler
         setTimeout(() => {
-            const uploadBtn = document.getElementById('upload-csv-btn')
-            const uploadInput = document.getElementById('upload-csv-input')
-            if (!uploadBtn || !uploadInput) return
-            uploadBtn.addEventListener('click', () => {
-                if (!uploadInput.files || uploadInput.files.length === 0) {
-                    alert('Please choose a CSV file to upload')
-                    return
-                }
-                const file = uploadInput.files[0]
-                const fd = new FormData()
-                fd.append('file', file, file.name)
+            // attach only to the permanent controls placed before Configured Calendars
+            const pairs = [
+                { btnId: 'upload-csv-btn-global', inputId: 'upload-csv-input-global' }
+            ]
+            pairs.forEach(p => {
+                const uploadBtn = document.getElementById(p.btnId)
+                const uploadInput = document.getElementById(p.inputId)
+                if (!uploadBtn || !uploadInput) return
+                // avoid double-attaching
+                if (uploadBtn._attached) return
+                uploadBtn._attached = true
+                uploadBtn.addEventListener('click', () => {
+                    if (!uploadInput.files || uploadInput.files.length === 0) {
+                        alert('Please choose a CSV file to upload')
+                        return
+                    }
+                    const file = uploadInput.files[0]
+                    const fd = new FormData()
+                    fd.append('file', file, file.name)
 
-                uploadBtn.disabled = true
-                const previousText = uploadBtn.textContent
-                uploadBtn.textContent = 'Uploading...'
+                    uploadBtn.disabled = true
+                    const previousText = uploadBtn.textContent
+                    uploadBtn.textContent = 'Uploading...'
 
-                fetch('/admin/upload_rooms_publisher', { method: 'POST', body: fd })
-                .then(r => r.json())
-                .then(j => {
-                    // trigger a full status refresh so planned_order appears
-                    fetch('/admin/api/status').then(()=>{})
-                    alert(j.message || 'Upload complete')
-                })
-                .catch(e => {
-                    console.error('Upload failed', e)
-                    alert('Upload failed')
-                })
-                .finally(() => {
-                    uploadBtn.disabled = false
-                    uploadBtn.textContent = previousText
+                    fetch('/admin/upload_rooms_publisher', { method: 'POST', body: fd })
+                    .then(r => r.json())
+                    .then(j => {
+                        // trigger a full status refresh so planned_order appears
+                        fetch('/admin/api/status').then(()=>{})
+                        alert(j.message || 'Upload complete')
+                    })
+                    .catch(e => {
+                        console.error('Upload failed', e)
+                        alert('Upload failed')
+                    })
+                    .finally(() => {
+                        uploadBtn.disabled = false
+                        uploadBtn.textContent = previousText
+                    })
                 })
             })
         }, 400)
