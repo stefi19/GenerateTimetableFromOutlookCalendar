@@ -14,6 +14,18 @@ import hashlib
 import pathlib
 from datetime import date, timedelta
 
+# Try ICS-first parsing using timetable.parse_ics_from_url to avoid launching
+# Playwright when a public .ics feed is available. This is faster and more
+# reliable for canonical .ics endpoints.
+try:
+    # ensure project root is on path when run as a script from different CWDs
+    proj_root = pathlib.Path(__file__).parent.parent
+    if str(proj_root) not in sys.path:
+        sys.path.insert(0, str(proj_root))
+    from timetable import parse_ics_from_url
+except Exception:
+    parse_ics_from_url = None
+
 
 DB = pathlib.Path('data') / 'app.db'
 OUT_DIR = pathlib.Path('playwright_captures')
@@ -36,6 +48,50 @@ def sha8(s: str) -> str:
 def run_for_url(url, name=None, env=None):
     print('---')
     print('Extracting:', name or url)
+    # Determine the +/-60 day range
+    today = date.today()
+    from_d = today - timedelta(days=60)
+    to_d = today + timedelta(days=60)
+
+    # First attempt: if we have an ICS parser available, try parsing the
+    # URL as an .ics feed. This covers both direct .ics URLs and HTML pages
+    # that return a calendar when requested directly.
+    if parse_ics_from_url is not None:
+        try:
+            # Many calendars in the CSV are direct .ics links; try parsing
+            events = parse_ics_from_url(url, verbose=False)
+            # filter events to requested window
+            events_in_range = [e for e in events if e.start and from_d <= e.start.date() <= to_d]
+            if events_in_range:
+                # write per-calendar file
+                h = sha8(url)
+                ev_out = OUT_DIR / f'events_{h}.json'
+                try:
+                    OUT_DIR.mkdir(parents=True, exist_ok=True)
+                    with open(ev_out, 'w', encoding='utf-8') as f:
+                        import json
+                        arr = []
+                        for e in events_in_range:
+                            arr.append({'start': e.start.isoformat() if e.start else None,
+                                        'end': e.end.isoformat() if e.end else None,
+                                        'title': e.title,
+                                        'location': e.location,
+                                        'description': e.description,
+                                        'source': h})
+                        json.dump(arr, f, indent=2, ensure_ascii=False)
+                    print('Wrote (ICS) ', ev_out)
+                    return True
+                except Exception as e:
+                    print('Failed to write ICS-derived events file for', url, '->', e)
+                    # fall through to HTML extractor fallback
+            else:
+                # No events in-range from ICS; fall through to HTML extractor
+                pass
+        except Exception as e:
+            # ICS parse failed (not an ICS resource or network error) -> fallback
+            print('ICS parse failed for', url, '->', e)
+
+    # Fallback: run the Playwright-based HTML extractor
     cmd = [sys.executable, str(pathlib.Path('tools') / 'extract_published_events.py'), url]
     try:
         proc = subprocess.run(cmd, check=False, env=env)
@@ -99,6 +155,24 @@ def main():
     except Exception as e:
         print('Schedule rebuild failed:', e)
         return 1
+
+    # Write a marker file to indicate the import finished, with a short summary.
+    try:
+        import json
+        from datetime import datetime
+        marker = OUT_DIR / 'import_complete.txt'
+        info = {
+            'timestamp': datetime.utcnow().isoformat() + 'Z',
+            'total_calendars': total,
+            'succeeded': ok,
+            'failed': fail
+        }
+        with open(marker, 'w', encoding='utf-8') as mf:
+            mf.write('Import complete\n')
+            mf.write(json.dumps(info, indent=2, ensure_ascii=False))
+        print('Import complete — marker written to', marker)
+    except Exception as e:
+        print('Failed to write import marker:', e)
 
     return 0
 
