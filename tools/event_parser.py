@@ -342,8 +342,8 @@ def parse_event(event: dict) -> dict:
             # prefer explicit event_type if present
             et = t_low
         else:
-            # default to 'lecture' for standard teaching events
-            et = 'lecture'
+            # if no clear type, leave empty (don't default to 'lecture')
+            et = ''
 
         # Extract year/group from title and from calendar name if present
         grp = {'year': '', 'group': '', 'display': ''}
@@ -389,14 +389,26 @@ def parse_event(event: dict) -> dict:
                 final = f"{base} ({et})"
         else:
             # lecture or laboratory or default
-            if yg and prof:
-                final = f"{base} ({et}) {yg}, {prof}"
-            elif yg:
-                final = f"{base} ({et}) {yg}"
-            elif prof:
-                final = f"{base} ({et}), {prof}"
+            if et:
+                # explicit type present (e.g., laboratory)
+                if yg and prof:
+                    final = f"{base} ({et}) {yg}, {prof}"
+                elif yg:
+                    final = f"{base} ({et}) {yg}"
+                elif prof:
+                    final = f"{base} ({et}), {prof}"
+                else:
+                    final = f"{base} ({et})"
             else:
-                final = f"{base} ({et})"
+                # no explicit type: do not add parentheses, keep simple
+                if yg and prof:
+                    final = f"{base} {yg}, {prof}"
+                elif yg:
+                    final = f"{base} {yg}"
+                elif prof:
+                    final = f"{base}, {prof}"
+                else:
+                    final = f"{base}"
 
         result['display_title'] = final
     except Exception:
