@@ -372,9 +372,18 @@ def parse_event(event: dict) -> dict:
         elif grp.get('group'):
             yg = grp.get('group')
 
-        # Compose professor/organizer
+        # Compose professor/organizer (keep separately; do not include in display title)
         prof = result.get('professor') or ''
         prof = prof.strip()
+
+        # If the base includes the professor (e.g. "Name, A. Groza" or "Name - A. Groza"), strip it
+        if prof:
+            # remove patterns like ", {prof}" or " - {prof}" (case-insensitive)
+            sep_patterns = [f', {prof}', f' - {prof}', f', {prof.lower()}', f' - {prof.lower()}']
+            for sp in sep_patterns:
+                if base.endswith(sp):
+                    base = base[: -len(sp)].strip()
+                    break
 
         # Base name
         base = parsed_title.subject or parsed_title.abbreviation or (parsed_title.original_title or title)
@@ -382,31 +391,20 @@ def parse_event(event: dict) -> dict:
 
         # Final display title assembly
         if et == 'conference' or et == 'seminar':
-            # conferences may have organisers in professor field or in title
-            if prof:
-                final = f"{base} ({et}) - {prof}"
-            else:
-                final = f"{base} ({et})"
+            # conferences/seminars: show the type but keep organisers/professor separate
+            final = f"{base} ({et})"
         else:
             # lecture or laboratory or default
             if et:
                 # explicit type present (e.g., laboratory)
-                if yg and prof:
-                    final = f"{base} ({et}) {yg}, {prof}"
-                elif yg:
+                if yg:
                     final = f"{base} ({et}) {yg}"
-                elif prof:
-                    final = f"{base} ({et}), {prof}"
                 else:
                     final = f"{base} ({et})"
             else:
                 # no explicit type: do not add parentheses, keep simple
-                if yg and prof:
-                    final = f"{base} {yg}, {prof}"
-                elif yg:
+                if yg:
                     final = f"{base} {yg}"
-                elif prof:
-                    final = f"{base}, {prof}"
                 else:
                     final = f"{base}"
 
