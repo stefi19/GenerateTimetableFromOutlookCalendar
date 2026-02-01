@@ -22,9 +22,22 @@ migrate_from_files()
 print('DB initialized')
 "
 
-# Populate calendars from CSV
+# Populate calendars from CSV (if present)
 echo "Populating calendars from CSV..."
-cd /app && python tools/populate_calendars_from_csv.py
+# Look for canonical CSV in several locations and run the population script only if found.
+CSV_CANDIDATES=("/app/config/Rooms_PUBLISHER_HTML-ICS(in).csv" "/app/Rooms_PUBLISHER_HTML-ICS(in).csv" "/app/playwright_captures/Rooms_PUBLISHER_HTML-ICS(in).csv")
+CSV_FOUND=0
+for p in "${CSV_CANDIDATES[@]}"; do
+	if [ -f "$p" ]; then
+		echo "Found CSV at $p - populating calendars"
+		cd /app && python tools/populate_calendars_from_csv.py || true
+		CSV_FOUND=1
+		break
+	fi
+done
+if [ "$CSV_FOUND" -eq 0 ]; then
+	echo "Warning: CSV file 'Rooms_PUBLISHER_HTML-ICS(in).csv' not found - skipping population step"
+fi
 
 # Update with emails, names, buildings
 echo "Updating calendars with CSV data..."
