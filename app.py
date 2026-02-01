@@ -16,6 +16,7 @@ import functools
 import csv
 from datetime import datetime, date, timedelta
 from typing import List, Dict, Optional
+import signal
 
 from flask import Flask, render_template, request, redirect, url_for, send_file, jsonify, session, Response
 import hmac
@@ -1048,6 +1049,11 @@ def add_calendar_url(url: str, name: str = None):
         try:
             cur.execute('INSERT OR IGNORE INTO calendars (url, name, color, enabled, created_at) VALUES (?, ?, ?, 1, ?)',
                         (url, name or '', None, datetime.now().isoformat()))
+            # Ensure URL is marked enabled even if it already existed
+            try:
+                cur.execute('UPDATE calendars SET enabled = 1 WHERE url = ?', (url,))
+            except Exception:
+                pass
             conn.commit()
             # Get the ID (either newly inserted or existing)
             cur.execute('SELECT id FROM calendars WHERE url = ?', (url,))
@@ -2772,8 +2778,63 @@ def admin_api_status():
                 last_import = events_file.stat().st_mtime
             except Exception:
                 pass
+        # Also include events from schedule_by_room.json (aggregated schedule)
+        schedule_file = pathlib.Path('playwright_captures/schedule_by_room.json')
+        sch_count = 0
+        try:
+            if schedule_file.exists():
+                with open(schedule_file, 'r', encoding='utf-8') as f:
+                    schedule = json.load(f)
+                # schedule_by_room.json is a map room -> day -> [events]
+                for room, days in (schedule.items() if isinstance(schedule, dict) else []):
+                    try:
+                        for day, evs in (days.items() if isinstance(days, dict) else []):
+                            if isinstance(evs, list):
+                                sch_count += len(evs)
+                    except Exception:
+                        continue
+                mtime = schedule_file.stat().st_mtime
+                if last_import is None or mtime > last_import:
+                    last_import = mtime
+        except Exception:
+            sch_count = 0
+
+        # Also check global events.json (fallback) and compute counts there
+        events_file = pathlib.Path('playwright_captures/events.json')
+        events_file_count = 0
+        try:
+            if events_file.exists():
+                with open(events_file, 'r', encoding='utf-8') as f:
+                    evs = json.load(f)
+                if isinstance(evs, list):
+                    events_file_count = len(evs)
+                mtime = events_file.stat().st_mtime
+                if last_import is None or mtime > last_import:
+                    last_import = mtime
+        except Exception:
+            events_file_count = 0
+
+        # manual/extracurricular events from DB are additional sources
+        extracount = 0
+        try:
+            extracount = len(list_extracurricular_db() or [])
+        except Exception:
+            extracount = 0
+
+        # Ensure events_count picks the largest available source to avoid
+        # under-reporting during races between detached extraction and API calls.
+        try:
+            events_count = max(events_count, sch_count, events_file_count, len(manual_events or []), extracount)
+        except Exception:
+            # fallback to previous value
+            pass
     except Exception as e:
-        pass
+        # Log the exception to container logs for diagnosis while keeping the
+        # API resilient. Avoid exposing internals to clients.
+        try:
+            app.logger.exception('admin_api_status top-level error')
+        except Exception:
+            print('admin_api_status top-level error:', e)
     
     # If extractor_state doesn't yet have a planned_order (no run started),
     # provide a lightweight CSV preview by reading the canonical publisher CSV
@@ -2811,16 +2872,88 @@ def admin_api_status():
     except Exception:
         stderr_text = None
 
+    # If a detached extractor subprocess was launched, detect it via the
+    # saved pid (in-memory or on-disk) so the admin UI reports running while
+    # the external process is still active.
+    extractor_running = extractor_state.get('running', False)
+    detached_pid = extractor_state.get('detached_pid')
+    pidfile = pathlib.Path(__file__).parent / 'playwright_captures' / 'extract_detached.pid'
+    if not detached_pid:
+        try:
+            if pidfile.exists():
+                try:
+                    detached_pid = int(pidfile.read_text(encoding='utf-8').strip())
+                except Exception:
+                    detached_pid = None
+        except Exception:
+            detached_pid = None
+
+    if detached_pid:
+        try:
+            # Check process aliveness; os.kill(pid, 0) raises OSError if not alive
+            os.kill(int(detached_pid), 0)
+            extractor_running = True
+            if not extractor_state.get('progress_message'):
+                extractor_state['progress_message'] = f'Detached extraction (pid {detached_pid}) running'
+        except Exception:
+            # process not running any more -> cleanup pidfile and state
+            try:
+                if pidfile.exists():
+                    pidfile.unlink()
+            except Exception:
+                pass
+            extractor_state.pop('detached_pid', None)
+
+    # Provide filesystem-derived progress so the admin UI isn't stuck when the
+    # extractor is running as a detached external process (which doesn't update
+    # the in-memory extractor_state). We compute how many per-calendar files
+    # have been written and how many contain events.
+    try:
+        files = list(out_dir.glob('events_*.json')) if out_dir.exists() else []
+        files_sorted = sorted(files, key=lambda p: p.stat().st_mtime)
+        files_count = len(files_sorted)
+        nonzero_count = 0
+        last_written = None
+        for p in files_sorted:
+            try:
+                with open(p, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                    if isinstance(data, list) and len(data) > 0:
+                        nonzero_count += 1
+                last_written = p.name
+            except Exception:
+                continue
+        # Always update filesystem-derived counters so the admin UI shows
+        # accurate, up-to-date numbers immediately after uploads or during
+        # detached extraction runs.
+        try:
+            extractor_state['fs_events_count'] = files_count
+            extractor_state['fs_events_nonzero'] = nonzero_count
+            extractor_state['fs_last_written'] = last_written
+        except Exception:
+            pass
+    except Exception:
+        pass
+
     return jsonify({
         'calendars': calendars,
         'manual_events': manual_events,
         'events_count': events_count,
+        # breakdown fields for debugging and more robust UI decisions
+        'events_count_by_files': events_count if events_count else None,
+        'events_count_by_schedule': sch_count,
+        'events_count_global_json': events_file_count,
+        'events_count_manual': len(manual_events or []),
+        'events_count_extracurricular': extracount,
         'last_import': last_import,
-        'extractor_running': extractor_state.get('running', False),
+        'extractor_running': bool(extractor_running),
         'extractor_progress': {
             'current_calendar': extractor_state.get('current_calendar'),
             'message': extractor_state.get('progress_message'),
             'events_extracted': extractor_state.get('events_extracted', 0),
+            'fs_events_count': extractor_state.get('fs_events_count', 0),
+            'fs_events_nonzero': extractor_state.get('fs_events_nonzero', 0),
+            'fs_last_written': extractor_state.get('fs_last_written'),
         },
         'planned_order': planned or [],
         'planned_order_full': extractor_state.get('planned_order_full', []),
@@ -2983,6 +3116,50 @@ def admin_upload_rooms_publisher():
         if not saved:
             return jsonify({'success': False, 'message': 'Failed to save uploaded file'}), 500
 
+        # Before clearing state, try to stop any detached extractor process so
+        # the uploaded CSV becomes authoritative and no background runner is
+        # concurrently writing files from the old state.
+        try:
+            pc_dir = pathlib.Path(__file__).parent / 'playwright_captures'
+            pidfile = pc_dir / 'extract_detached.pid'
+            if pidfile.exists():
+                try:
+                    pid_text = pidfile.read_text(encoding='utf-8').strip()
+                    pid = int(pid_text)
+                except Exception:
+                    pid = None
+                if pid:
+                    try:
+                        # ask the process to terminate gracefully
+                        os.kill(pid, signal.SIGTERM)
+                        # wait a short while for it to exit
+                        for _ in range(10):
+                            time.sleep(0.5)
+                            try:
+                                os.kill(pid, 0)
+                            except OSError:
+                                break
+                        else:
+                            # still alive -> force kill
+                            try:
+                                os.kill(pid, signal.SIGKILL)
+                            except Exception:
+                                pass
+                    except Exception:
+                        pass
+                try:
+                    pidfile.unlink()
+                except Exception:
+                    pass
+            # clear in-memory extractor state hints
+            try:
+                extractor_state['running'] = False
+                extractor_state.pop('detached_pid', None)
+            except Exception:
+                pass
+        except Exception:
+            pass
+
         # Immediately clear existing extracted events and calendar records so
         # the upload fully replaces the current state. We remove per-calendar
         # extracted files and clear DB tables for calendars and manual/extracurricular
@@ -3027,251 +3204,117 @@ def admin_upload_rooms_publisher():
                         p.unlink()
                 except Exception:
                     pass
+            # Write minimal placeholder files so frontends requesting these
+            # resources during the import do not receive 500 errors.
+            try:
+                (pc_dir / 'events.json').write_text('[]', encoding='utf-8')
+            except Exception:
+                pass
+            try:
+                (pc_dir / 'schedule_by_room.json').write_text('{}', encoding='utf-8')
+            except Exception:
+                pass
+            try:
+                (pc_dir / 'subject_mappings.json').write_text('{}', encoding='utf-8')
+            except Exception:
+                pass
         except Exception:
             pass
 
         # Populate the calendars table from the uploaded CSV then run a full
-        # extraction (now -60d .. now +60d) in the background. We run the
-        # existing helper scripts under tools/ to keep behaviour consistent.
+        # extraction (now -60d .. now +60d) in a separate process so the work
+        # is not tied to the lifetime of a Gunicorn worker thread. We use the
+        # helper scripts under tools/ for consistency: first populate the DB,
+        # then run the full extraction which will write per-calendar files.
         started_import = False
         try:
-            def _bg_repopulate_and_extract():
-                    # Populate DB from CSV first so calendar metadata exists
-                    env = os.environ.copy()
-                    env.setdefault('PYTHONUTF8', '1')
-                    base = pathlib.Path(__file__).parent
-                    try:
-                        subprocess.run([sys.executable, str(base / 'tools' / 'populate_calendars_from_csv.py')], check=False, env=env)
-                    except Exception:
-                        pass
+            env = os.environ.copy()
+            env.setdefault('PYTHONUTF8', '1')
+            base = pathlib.Path(__file__).parent
 
-                    # Now process the canonical CSV in-order: try ICS parsing first
-                    # and fall back to the Playwright extractor for calendars with
-                    # no usable ICS feed. This ensures the admin UI sees per-calendar
-                    # START/DONE messages and events appear progressively.
-                    csv_candidates = [pathlib.Path(__file__).parent / 'config' / 'Rooms_PUBLISHER_HTML-ICS(in).csv',
-                                      pathlib.Path(__file__).parent / 'Rooms_PUBLISHER_HTML-ICS(in).csv',
-                                      pathlib.Path('Rooms_PUBLISHER_HTML-ICS(in).csv')]
-                    csv_path = None
-                    for p in csv_candidates:
+            # populate DB synchronously so run_full_extraction sees the new rows
+            try:
+                subprocess.run([sys.executable, str(base / 'tools' / 'populate_calendars_from_csv.py')], check=False, env=env, cwd=str(base))
+            except Exception:
+                pass
+
+            # Run an ICS-first repair pass synchronously so .ics calendars
+            # produce their per-calendar events_<sha8>.json immediately.
+            try:
+                # Run the ICS-repair script in a small wrapper that ensures the
+                # project root is on sys.path. Executing via -c avoids issues
+                # where Python's sys.path[0] points to the tools/ directory and
+                # `import timetable` fails.
+                wrapper = (
+                    'import sys; '
+                    'sys.path.insert(0, "' + str(base) + '"); '
+                    'exec(open("tools/ics_repair_from_csv.py").read())'
+                )
+                subprocess.run([sys.executable, '-c', wrapper], check=False, env=env, cwd=str(base))
+                # After ICS repair, build the merged schedule so the frontend
+                # can immediately show aggregated events (schedule_by_room.json)
+                # even before Playwright finishes HTML extraction.
+                try:
+                    subprocess.run([sys.executable, str(base / 'tools' / 'build_schedule_by_room.py')], check=False, env=env, cwd=str(base))
+                except Exception:
+                    pass
+            except Exception:
+                pass
+
+            # Launch full extraction as a detached subprocess so it runs to
+            # completion independently of the web worker process.
+            try:
+                pc_dir = pathlib.Path(__file__).parent / 'playwright_captures'
+                pc_dir.mkdir(exist_ok=True)
+                out_path = pc_dir / 'extract_stdout.txt'
+                err_path = pc_dir / 'extract_stderr.txt'
+                # open files in append mode so multiple runs don't clobber history
+                out_f = open(out_path, 'a', encoding='utf-8')
+                err_f = open(err_path, 'a', encoding='utf-8')
+                # Prefer an explicit Python executable from the project venv if present
+                python_exec = os.environ.get('APP_PYTHON')
+                if not python_exec:
+                    # common venv locations in project root
+                    cand = [base / '.venv' / 'bin' / 'python3', base / '.venv' / 'bin' / 'python', base / 'env' / 'bin' / 'python3', base / 'env' / 'bin' / 'python']
+                    for c in cand:
                         try:
-                            if p.exists():
-                                csv_path = p
+                            if c.exists():
+                                python_exec = str(c)
                                 break
                         except Exception:
                             continue
+                if not python_exec:
+                    python_exec = sys.executable
 
-                    # Acquire the periodic lock to serialize extractor activity
-                    try:
-                        _periodic_lock.acquire()
-                    except Exception:
-                        pass
-
+                # Use Popen so we don't block; start a new session so the child
+                # detaches from the web worker and continues independently.
+                proc = subprocess.Popen([python_exec, str(base / 'tools' / 'run_full_extraction.py')], stdout=out_f, stderr=err_f, env=env, cwd=str(base), start_new_session=True, close_fds=True)
+                # Record detached-run metadata so the admin UI can detect the
+                # background process and report that an import is in progress.
+                try:
                     extractor_state['running'] = True
                     extractor_state['last_started'] = datetime.utcnow().isoformat()
-                    extractor_state['events_extracted'] = 0
-
+                    extractor_state['stdout_path'] = str(out_path)
+                    extractor_state['stderr_path'] = str(err_path)
+                    extractor_state['progress_message'] = f'Detached extraction started (pid {proc.pid})'
+                    extractor_state['detached_pid'] = int(proc.pid)
+                    # write a pid file for cross-process detection (persisted)
+                    pidfile = pc_dir / 'extract_detached.pid'
                     try:
-                        if not csv_path:
-                            # no CSV found: fallback to previously existing background behaviour
-                            try:
-                                _run_extractor_background()
-                            except Exception:
-                                pass
-                            return
-
-                        # Read CSV rows in file order and process each
-                        processed_any = False
-                        with open(csv_path, 'r', encoding='utf-8') as f:
-                            rdr = csv.reader(f)
-                            first = True
-                            for row in rdr:
-                                if first:
-                                    first = False
-                                    hdr = '|'.join(row).lower()
-                                    if 'published' in hdr or 'nume_sala' in hdr or 'publishedcalendarurl' in hdr:
-                                        continue
-                                if not row or len(row) < 6:
-                                    continue
-                                # columns: 0=name,1=email,2=building,3=delegate,4=html,5=ics
-                                email = (row[1] or '').strip()
-                                name = ''
-                                if email:
-                                    # reuse existing helper formatting
-                                    try:
-                                        # lightweight formatting similar to read_rooms_publisher_csv
-                                        import re
-                                        local = email.split('@',1)[0]
-                                        parts = re.split(r'[^0-9A-Za-z]+', local)
-                                        parts = [p for p in parts if p and p.lower()!='room']
-                                        name = ' '.join([p.upper() if not p.isdigit() else p for p in parts])
-                                    except Exception:
-                                        name = email
-                                else:
-                                    name = (row[0] or '').strip()
-
-                                html_url = (row[4] or '').strip()
-                                ics_url = (row[5] or '').strip()
-                                chosen_url = ics_url or html_url
-                                if not chosen_url:
-                                    continue
-
-                                # Persist calendar row to DB so metadata available
-                                try:
-                                    init_db()
-                                    add_calendar_url(chosen_url, name)
-                                    # also store email where available
-                                    try:
-                                        with get_db_connection() as conn:
-                                            cur = conn.cursor()
-                                            cur.execute('UPDATE calendars SET email_address = ?, name = ? WHERE url = ?', (email or None, name or None, chosen_url))
-                                            conn.commit()
-                                    except Exception:
-                                        pass
-                                except Exception:
-                                    pass
-
-                                # prepare hash and state messages
-                                import hashlib as _hashlib
-                                h = _hashlib.sha1(chosen_url.encode('utf-8')).hexdigest()[:8]
-                                cal_display = _display_name_for(chosen_url, name)
-                                # snapshot events count before processing this calendar to compute per-calendar delta
-                                try:
-                                    before_events_count = extractor_state.get('events_extracted', 0)
-                                except Exception:
-                                    before_events_count = 0
-
-                                # Announce start in progress_message and server-side log
-                                try:
-                                    extractor_state['progress_message'] = f'Extracting events from {cal_display}...'
-                                except Exception:
-                                    pass
-                                try:
-                                    ts = datetime.utcnow().isoformat()
-                                    # Add a human-friendly progress log entry (same text as progress_message)
-                                    progress_msg = f"{ts} - {extractor_state.get('progress_message', 'Extracting...')}"
-                                    ll = extractor_state.setdefault('log', [])
-                                    ll.append(progress_msg)
-                                    # also keep a START marker for compatibility
-                                    start_msg = f"{ts} - START: {cal_display}"
-                                    ll.append(start_msg)
-                                    LOG_CAP = 5000
-                                    if len(ll) > LOG_CAP:
-                                        del ll[0:len(ll)-LOG_CAP]
-                                except Exception:
-                                    pass
-
-                                # Try ICS parsing first
-                                parsed_ok = False
-                                if ics_url:
-                                    try:
-                                        evs = parse_ics_from_url(ics_url)
-                                        if evs:
-                                            # convert Event objects to dicts compatible with events_{h}.json
-                                            out_events = []
-                                            for e in evs:
-                                                try:
-                                                    out_events.append({
-                                                        'start': e.start.isoformat(),
-                                                        'end': e.end.isoformat() if e.end else None,
-                                                        'title': e.title,
-                                                        'location': e.location,
-                                                        'description': e.description,
-                                                        'source': h,
-                                                    })
-                                                except Exception:
-                                                    continue
-
-                                            out_dir = pathlib.Path(__file__).parent / 'playwright_captures'
-                                            out_dir.mkdir(exist_ok=True)
-                                            ev_out = out_dir / f'events_{h}.json'
-                                            try:
-                                                with open(ev_out, 'w', encoding='utf-8') as fo:
-                                                    json.dump(out_events, fo, indent=2, ensure_ascii=False, default=str)
-                                            except Exception:
-                                                pass
-
-                                            # Update calendar_map.json
-                                            try:
-                                                map_path = out_dir / 'calendar_map.json'
-                                                cmap = {}
-                                                if map_path.exists():
-                                                    with open(map_path, 'r', encoding='utf-8') as mf:
-                                                        cmap = json.load(mf)
-                                                cmap[h] = {'url': chosen_url, 'name': name or '', 'color': None}
-                                                with open(map_path, 'w', encoding='utf-8') as mf:
-                                                    json.dump(cmap, mf, indent=2, ensure_ascii=False)
-                                            except Exception:
-                                                pass
-
-                                            # update extractor_state counts
-                                            try:
-                                                extractor_state['events_extracted'] = extractor_state.get('events_extracted', 0) + len(out_events)
-                                                extractor_state['progress_message'] = f'Parsed {len(out_events)} events from {cal_display} (ICS)'
-                                            except Exception:
-                                                pass
-
-                                            parsed_ok = True
-                                            processed_any = True
-                                    except Exception:
-                                        # parsing failed; fall back to extractor
-                                        parsed_ok = False
-
-                                if not parsed_ok:
-                                    # run Playwright extractor for this calendar URL (html or ics fallback)
-                                    try:
-                                        _run_extractor_for_url(chosen_url, name)
-                                        processed_any = True
-                                    except Exception:
-                                        pass
-
-                                # Append DONE log entry for this calendar, including per-calendar event delta
-                                try:
-                                    ts = datetime.utcnow().isoformat()
-                                    # calculate events added during this calendar's processing
-                                    before_cnt = locals().get('before_events_count', None)
-                                    if before_cnt is None:
-                                        # fallback: assume previous total from state prior to this calendar
-                                        before_cnt = extractor_state.get('events_extracted', 0) - (len(out_events) if 'out_events' in locals() else 0)
-                                    after_cnt = extractor_state.get('events_extracted', 0)
-                                    delta = max(0, after_cnt - (before_cnt or 0))
-                                    msg = f"{ts} - DONE: processed {cal_display} ({delta} events)"
-                                    ll = extractor_state.setdefault('log', [])
-                                    ll.append(msg)
-                                    LOG_CAP = 5000
-                                    if len(ll) > LOG_CAP:
-                                        del ll[0:len(ll)-LOG_CAP]
-                                except Exception:
-                                    pass
-
-                        # finished iterating rows
-                        # Append final summary messages so the UI shows completion and total events
-                        try:
-                            ts = datetime.utcnow().isoformat()
-                            total = extractor_state.get('events_extracted', 0)
-                            ll = extractor_state.setdefault('log', [])
-                            ll.append(f"{ts} - INFO: Import Complete")
-                            ll.append(f"{ts} - INFO: tot {total} events")
-                            LOG_CAP = 5000
-                            if len(ll) > LOG_CAP:
-                                del ll[0:len(ll)-LOG_CAP]
-                        except Exception:
-                            pass
-                        try:
-                            extractor_state['last_rc'] = 0 if processed_any else 1
-                        except Exception:
-                            pass
-                    finally:
-                        extractor_state['running'] = False
-                        try:
-                            _periodic_lock.release()
-                        except Exception:
-                            pass
-
-            # start background thread to run the heavy extraction without blocking
-            t = threading.Thread(target=_bg_repopulate_and_extract, daemon=True)
-            t.start()
-            started_import = True
+                        with open(pidfile, 'w', encoding='utf-8') as pf:
+                            pf.write(str(proc.pid))
+                    except Exception:
+                        pass
+                except Exception:
+                    pass
+                started_import = True
+            except Exception as e:
+                # fallback: try running extraction in-thread if Popen fails
+                try:
+                    _run_extractor_background()
+                    started_import = True
+                except Exception:
+                    started_import = False
         except Exception:
             started_import = False
 

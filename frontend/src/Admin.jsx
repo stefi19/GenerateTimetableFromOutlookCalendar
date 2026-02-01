@@ -12,6 +12,8 @@ export default function Admin() {
   const [newCalendar, setNewCalendar] = useState({ url: '', name: '', color: '#003366' })
   
   const [stats, setStats] = useState({ events_count: 0, last_import: null, extractor_running: false })
+  // extractor full stdout/stderr are intentionally not stored in the SPA
+  // to avoid rendering very large repeated preambles in the admin UI.
   const pollingRef = useRef(null)
 
   const fetchData = useCallback(async (showLoading = true) => {
@@ -27,6 +29,8 @@ export default function Admin() {
           extractor_running: data.extractor_running || false,
           periodic_fetcher: data.periodic_fetcher
         })
+  // Do not store large extractor stdout in SPA state (server exposes
+  // planned order and recent log entries separately).
       }
     } catch (e) {
       console.error(e)
@@ -261,4 +265,3 @@ export default function Admin() {
       </div>
     </div>
   )
-}

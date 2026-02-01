@@ -101,7 +101,16 @@ def main():
                             fname = out_dir / f'json_capture_{idx}.json'
                             with open(fname, 'w', encoding='utf-8') as f:
                                 json.dump(j, f, indent=2, ensure_ascii=False)
-                            print('Captured:', u, '->', fname)
+                            # attempt to include response diagnostics for debugging
+                            try:
+                                status = getattr(resp, 'status', None)
+                            except Exception:
+                                status = None
+                            try:
+                                size = fname.stat().st_size
+                            except Exception:
+                                size = None
+                            print(f'Captured: {u} status={status} saved_to={fname} size={size}')
             except Exception as e:
                 print('on_response error', e)
 

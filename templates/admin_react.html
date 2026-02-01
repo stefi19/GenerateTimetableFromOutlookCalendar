@@ -176,7 +176,12 @@
             }, [])
 
             // Initial load
-            React.useEffect(() => { fetchData() }, [fetchData])
+            React.useEffect(() => { 
+                fetchData()
+                // expose a global helper so out-of-React controls (upload button)
+                // can trigger an immediate refresh without reloading the page.
+                try { window.fetchAdminStatus = (showLoading = false) => fetchData(showLoading) } catch (e) {}
+            }, [fetchData])
             
             // Poll every 2 seconds when extractor is running
             React.useEffect(() => {
@@ -461,7 +466,14 @@
                                 fontSize: '0.85rem',
                                 fontWeight: 'bold'
                             }
-                        }, `${extractorProgress.events_extracted} events`)
+                        }, `${extractorProgress.events_extracted} events`),
+                        // Show filesystem-derived progress when available
+                        (extractorProgress.fs_events_count !== undefined) && React.createElement('span', {
+                            style: { marginLeft: '0.75rem', color: '#333', fontSize: '0.9rem' }
+                        }, `${extractorProgress.fs_events_count} files written`),
+                        (extractorProgress.fs_events_nonzero !== undefined) && React.createElement('span', {
+                            style: { marginLeft: '0.5rem', color: '#666', fontSize: '0.85rem' }
+                        }, `${extractorProgress.fs_events_nonzero} non-empty`)
                     ),
                     extractorRunning && React.createElement('div', { 
                         style: { 
@@ -655,11 +667,12 @@
                         // trigger a full status refresh so planned_order appears
                         fetch('/admin/api/status').then(()=>{})
                         alert(j.message || 'Upload complete')
-                        // If server scheduled the background import, reload the
-                        // admin UI so the running import and planned order are
-                        // shown automatically (avoids needing to press "Import All").
+                        // If server scheduled the background import, trigger a
+                        // dynamic admin refresh so the running import and
+                        // planned order are shown automatically without a
+                        // full page reload.
                         if (j && j.success) {
-                            window.location.reload()
+                            try { if (window.fetchAdminStatus) window.fetchAdminStatus(false) } catch (e) { console.warn('fetchAdminStatus failed', e) }
                         }
                     })
                     .catch(e => {

@@ -68,6 +68,11 @@ def import_csv(csv_path: Path):
                             (url, name or '', None, datetime.utcnow().isoformat()))
                 if cur.rowcount > 0:
                     inserted += 1
+                # Ensure this URL is enabled even if it already existed
+                try:
+                    cur.execute('UPDATE calendars SET enabled = 1 WHERE url = ?', (url,))
+                except Exception:
+                    pass
                 else:
                     # existing row - if name empty in DB and current name non-empty, update it
                     if name:

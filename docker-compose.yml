@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
   timetable:
     build:
@@ -6,37 +8,27 @@ services:
     container_name: utcn-timetable
     restart: unless-stopped
     ports:
-      # Allow overriding the host port via HOST_PORT env var, default to 5000
-      - "${HOST_PORT:-5000}:5000"
-    # Run as root so the entrypoint can populate/migrate mounted volumes
-    # (keeps existing app entrypoint logic intact while ensuring write perms)
+      - "${HOST_PORT:-5001}:5000"
     user: "0"
     volumes:
-      # Persist database and captures
       - timetable_data:/app/data
       - timetable_captures:/app/playwright_captures
-      # Persist config (uploads will write here). Use a named volume so
-      # files persist between restarts and are writable inside the container.
       - timetable_config:/app/config
-      # Persist Playwright user-data (optional, useful for authenticated fetches)
       - playwright_user_data:/app/playwright_data
     environment:
       - FLASK_ENV=production
       - FLASK_SECRET=${FLASK_SECRET:-change-me-in-production}
       - ADMIN_PASSWORD=${ADMIN_PASSWORD:-admin123}
       - PLAYWRIGHT_USER_DATA_DIR=/app/playwright_data
-      # Optional: for authenticated calendar fetching
-      # - PLAYWRIGHT_USER_DATA_DIR=/app/playwright_data
+      - APP_PYTHON=/usr/local/bin/python3
     env_file:
-      - path: .env
-        required: false
+      - .env
     healthcheck:
       test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5000/health')"]
       interval: 30s
       timeout: 10s
       retries: 3
       start_period: 10s
-    # Resource limits (adjust based on your server)
     deploy:
       resources:
         limits:
@@ -45,7 +37,6 @@ services:
         reservations:
           cpus: '0.5'
           memory: 512M
-    # Increase file descriptor limit inside the container to avoid "Too many open files"
     ulimits:
       nofile:
         soft: 65536
@@ -53,10 +44,6 @@ services:
 
 volumes:
   timetable_data:
-    driver: local
   timetable_captures:
-    driver: local
   timetable_config:
-    driver: local
   playwright_user_data:
-    driver: local

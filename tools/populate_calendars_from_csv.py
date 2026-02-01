@@ -81,6 +81,21 @@ def main():
             cur.execute('INSERT OR IGNORE INTO calendars (url, name, enabled, created_at) VALUES (?, ?, 1, datetime("now"))', (url, name))
             if cur.rowcount > 0:
                 added += 1
+            # Ensure the calendar is marked enabled even if it already existed
+            try:
+                cur.execute('UPDATE calendars SET enabled = 1 WHERE url = ?', (url,))
+            except Exception:
+                pass
+            # If DB has no name and we have one from CSV, update it
+            try:
+                if name:
+                    cur.execute('SELECT name FROM calendars WHERE url = ?', (url,))
+                    r = cur.fetchone()
+                    db_name = r[0] if r else None
+                    if not db_name:
+                        cur.execute('UPDATE calendars SET name = ? WHERE url = ?', (name, url))
+            except Exception:
+                pass
         except Exception as e:
             print(f"Error adding {url}: {e}")
 
