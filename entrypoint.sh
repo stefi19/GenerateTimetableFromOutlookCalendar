@@ -39,9 +39,20 @@ if [ "$CSV_FOUND" -eq 0 ]; then
 	echo "Warning: CSV file 'Rooms_PUBLISHER_HTML-ICS(in).csv' not found - skipping population step"
 fi
 
-# Update with emails, names, buildings
+# Update with emails, names, buildings (only if CSV exists)
 echo "Updating calendars with CSV data..."
-cd /app && python tools/enforce_csv_full_update.py
+CSV_CHECK_FOUND=0
+for p in "${CSV_CANDIDATES[@]}"; do
+	if [ -f "$p" ]; then
+		echo "Found CSV at $p - running enforce_csv_full_update"
+		cd /app && python tools/enforce_csv_full_update.py || true
+		CSV_CHECK_FOUND=1
+		break
+	fi
+done
+if [ "$CSV_CHECK_FOUND" -eq 0 ]; then
+	echo "Warning: CSV file 'Rooms_PUBLISHER_HTML-ICS(in).csv' not found - skipping enforce_csv_full_update"
+fi
 
 echo "Setup complete"
 
