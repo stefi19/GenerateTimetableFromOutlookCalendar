@@ -786,6 +786,48 @@ extractor_state = {
     'log': [],
 }
 
+
+def _display_name_for(url: str, calendar_name: str | None = None) -> str:
+    """Return a friendly display name for a calendar: prefer explicit calendar_name,
+    then DB name, then calendar_map.json entry, then a short URL fragment.
+    """
+    if calendar_name:
+        return calendar_name
+    try:
+        init_db()
+        rows = list_calendar_urls()
+        for r in rows:
+            if r.get('url') == url:
+                nm = r.get('name') or r.get('email_address') or None
+                if nm:
+                    return nm
+    except Exception:
+        pass
+    # try calendar_map.json
+    try:
+        map_path = pathlib.Path('playwright_captures') / 'calendar_map.json'
+        if map_path.exists():
+            with open(map_path, 'r', encoding='utf-8') as f:
+                cmap = json.load(f)
+            h = hashlib.sha1(url.encode('utf-8')).hexdigest()[:8]
+            meta = cmap.get(h) or {}
+            if meta.get('name'):
+                return meta.get('name')
+    except Exception:
+        pass
+    # fallback: use last path segment or host
+    try:
+        from urllib.parse import urlparse
+        p = urlparse(url)
+        path = (p.path or '').rstrip('/')
+        if path:
+            seg = path.split('/')[-1]
+            if seg:
+                return seg
+        return p.netloc or url
+    except Exception:
+        return url
+
 # Scheduler control
 periodic_fetch_state = {
     'running': False,
@@ -1142,30 +1184,122 @@ def _run_extractor_background():
     urls = read_rooms_publisher_csv()
     if urls:
         any_rc = False
-        # Record planned order for debugging/traceability (first 200 chars)
+        # Use CSV-provided list only. The CSV is the authoritative source and
+        # we should not implicitly append DB-only calendars during a full
+        # import — this ensures the periodic or admin-triggered run only
+        # fetches the publisher-provided set (the 304 items you expect).
+        combined = list(urls)
+
+        # Record planned order for debugging/traceability (full list; UI truncates)
+        planned = [n for (_u, n) in combined]
+        extractor_state['planned_order_full'] = planned
+        extractor_state['planned_order'] = planned[:200]
+
+        # write a small preamble to stdout so the admin log shows the planned order
         try:
-            planned = [n for (_u, n) in urls]
-            # store full planned order for traceability and a truncated one for UI
-            extractor_state['planned_order_full'] = planned
-            extractor_state['planned_order'] = planned[:200]
-            # write a small preamble to stdout so the admin log shows the planned order
-            try:
-                with open(stdout_path, 'a', encoding='utf-8') as out_f:
-                    out_f.write('\nPlanned CSV extraction order:\n')
-                    for i, nm in enumerate(planned, start=1):
-                        out_f.write(f"{i}: {nm}\n")
-                    out_f.write('\n')
-            except Exception:
-                pass
+            with open(stdout_path, 'a', encoding='utf-8') as out_f:
+                out_f.write('\nPlanned CSV extraction order (CSV only):\n')
+                for i, nm in enumerate(planned, start=1):
+                    out_f.write(f"{i}: {nm}\n")
+                out_f.write('\n')
         except Exception:
             pass
-        for u, name in urls:
+
+        # Prune per-calendar files to match the CSV list: remove any
+        # events_<hash>.json and related extractor stdout/stderr files that
+        # do not correspond to URLs currently in the CSV. This keeps the
+        # `playwright_captures` directory limited to the 304 canonical
+        # calendars.
+        try:
+            wanted_hashes = set()
+            for u, _n in combined:
+                try:
+                    h = hashlib.sha1(u.encode('utf-8')).hexdigest()[:8]
+                    wanted_hashes.add(h)
+                except Exception:
+                    continue
+
+            cap_dir = pathlib.Path('playwright_captures')
+            if cap_dir.exists():
+                # remove events files not in wanted_hashes
+                for p in cap_dir.glob('events_*.json'):
+                    fn = p.name
+                    try:
+                        h = fn.split('_', 1)[1].split('.', 1)[0]
+                    except Exception:
+                        h = None
+                    if h and h not in wanted_hashes:
+                        try:
+                            p.unlink()
+                        except Exception:
+                            pass
+                # remove extractor per-url stdout/stderr pairs for removed hashes
+                for p in cap_dir.glob('extract_*.stdout.txt'):
+                    fn = p.name
+                    try:
+                        h = fn.split('_', 1)[1].split('.', 1)[0]
+                    except Exception:
+                        h = None
+                    if h and h not in wanted_hashes:
+                        try:
+                            p.unlink()
+                        except Exception:
+                            pass
+                for p in cap_dir.glob('extract_*.stderr.txt'):
+                    fn = p.name
+                    try:
+                        h = fn.split('_', 1)[1].split('.', 1)[0]
+                    except Exception:
+                        h = None
+                    if h and h not in wanted_hashes:
+                        try:
+                            p.unlink()
+                        except Exception:
+                            pass
+                # prune calendar_map.json keys not in wanted_hashes
+                try:
+                    map_path = cap_dir / 'calendar_map.json'
+                    if map_path.exists():
+                        with open(map_path, 'r', encoding='utf-8') as mf:
+                            cmap = json.load(mf)
+                        changed = False
+                        for key in list(cmap.keys()):
+                            if key not in wanted_hashes:
+                                cmap.pop(key, None)
+                                changed = True
+                        if changed:
+                            with open(map_path, 'w', encoding='utf-8') as mf:
+                                json.dump(cmap, mf, indent=2, ensure_ascii=False)
+                except Exception:
+                    pass
+
+        except Exception:
+            pass
+
+        for u, name in combined:
             try:
                 rc = _run_extractor_for_url(u, name)
                 if rc == 0:
                     any_rc = True
             except Exception:
                 continue
+
+        # After running per-calendar extraction, regenerate the merged schedule
+        try:
+            today = date.today()
+            from_d = today - timedelta(days=60)  # -2 months ~ 60 days
+            to_d = today + timedelta(days=60)    # +2 months
+            extractor_state['progress_message'] = f'Regenerating merged schedule for {from_d}..{to_d}'
+            try:
+                ensure_schedule(from_d, to_d)
+                extractor_state['progress_message'] = f'Schedule regenerated for {from_d}..{to_d}'
+            except Exception as e:
+                ts = datetime.utcnow().isoformat()
+                ll = extractor_state.setdefault('log', [])
+                ll.append(f"{ts} - SCHEDULE GENERATION FAILED: {e}")
+        except Exception:
+            pass
+
         extractor_state['last_rc'] = 0 if any_rc else 1
         extractor_state['running'] = False
         try:
@@ -1206,13 +1340,13 @@ def _run_extractor_for_url(url: str, calendar_name: str = None) -> int:
     stderr_path = out_dir / f'extract_{h}.stderr.txt'
     
     # Update progress state and server-side log (so fast transitions are visible)
-    extractor_state['current_calendar'] = calendar_name or url[:50]
-    extractor_state['progress_message'] = f'Extracting events from {calendar_name or "calendar"}...'
+    extractor_state['current_calendar'] = _display_name_for(url, calendar_name)[:50]
+    extractor_state['progress_message'] = f"Extracting events from {_display_name_for(url, calendar_name)}..."
     extractor_state['events_extracted'] = 0
     try:
-        ts = datetime.datetime.now().isoformat()
-        msg = f"{ts} - START: {calendar_name or url}"
-            # keep a rolling server-side log (larger capacity to support bulk imports)
+        ts = datetime.now().isoformat()
+        msg = f"{ts} - START: {_display_name_for(url, calendar_name)}"
+        # keep a rolling server-side log (larger capacity to support bulk imports)
         ll = extractor_state.setdefault('log', [])
         ll.append(msg)
         # trim to last N entries to avoid unbounded growth (allow large imports)
@@ -1222,6 +1356,80 @@ def _run_extractor_for_url(url: str, calendar_name: str = None) -> int:
     except Exception:
         pass
     
+    # If the URL looks like a direct .ics feed, prefer fetching + parsing it directly
+    try:
+        url_l = (url or '').lower()
+    except Exception:
+        url_l = ''
+    if '.ics' in url_l or url_l.endswith('.ics'):
+        try:
+            # Try to parse .ics directly (faster and more reliable than spinning up Playwright)
+            parsed = []
+            try:
+                parsed = parse_ics_from_url(url, verbose=True)
+            except Exception as e:
+                parsed = []
+            # convert to simple dicts and write per-calendar events file
+            if parsed is not None:
+                data = []
+                for ev in parsed:
+                    try:
+                        data.append({'start': ev.start.isoformat() if ev.start else None,
+                                     'end': ev.end.isoformat() if ev.end else None,
+                                     'title': ev.title or '',
+                                     'location': ev.location or '',
+                                     'raw': {}})
+                    except Exception:
+                        continue
+
+                # write per-calendar events file and mapping just like extractor would
+                try:
+                    h = hashlib.sha1(url.encode('utf-8')).hexdigest()[:8]
+                    out_dir = pathlib.Path('playwright_captures')
+                    out_dir.mkdir(exist_ok=True)
+                    ev_out = out_dir / f'events_{h}.json'
+                    with open(ev_out, 'w', encoding='utf-8') as f:
+                        json.dump(data, f, indent=2, ensure_ascii=False, default=str)
+                    # update calendar_map.json
+                    try:
+                        map_path = out_dir / 'calendar_map.json'
+                        cmap = {}
+                        if map_path.exists():
+                            with open(map_path, 'r', encoding='utf-8') as mf:
+                                cmap = json.load(mf)
+                        name = None
+                        color = None
+                        try:
+                            init_db()
+                            rows = list_calendar_urls()
+                            for r in rows:
+                                if r.get('url') == url:
+                                    name = r.get('name')
+                                    color = r.get('color')
+                                    break
+                        except Exception:
+                            pass
+                        cmap[h] = {'url': url, 'name': name or '', 'color': color}
+                        with open(map_path, 'w', encoding='utf-8') as mf:
+                            json.dump(cmap, mf, indent=2, ensure_ascii=False)
+                    except Exception:
+                        pass
+
+                    # update extractor_state and return success rc 0
+                    extractor_state['events_extracted'] = len(data)
+                    extractor_state['progress_message'] = f"Parsed {len(data)} events from ICS feed {_display_name_for(url, calendar_name)}"
+                    ts = datetime.now().isoformat()
+                    ll = extractor_state.setdefault('log', [])
+                    ll.append(f"{ts} - ICS PARSE: Parsed {len(data)} events from {_display_name_for(url, calendar_name)}")
+                    if len(ll) > 5000:
+                        del ll[0:len(ll)-5000]
+                    return 0
+                except Exception:
+                    # fallthrough to running playwright extractor if ICS parsing failed
+                    pass
+        except Exception:
+            pass
+
     cmd = [sys.executable, str(pathlib.Path('tools') / 'extract_published_events.py'), url]
     try:
         # force UTF-8 for child process to avoid Windows cp1252 / OEM codepage problems
@@ -1231,6 +1439,31 @@ def _run_extractor_for_url(url: str, calendar_name: str = None) -> int:
         with open(stdout_path, 'w', encoding='utf-8') as out_f, open(stderr_path, 'w', encoding='utf-8') as err_f:
             proc = subprocess.run(cmd, stdout=out_f, stderr=err_f, text=True, env=env)
             rc = proc.returncode
+        # collect child process stdout/stderr and push short diagnostic into server-side log
+        try:
+            try:
+                so = stdout_path.read_text(encoding='utf-8')
+            except Exception:
+                so = ''
+            try:
+                se = stderr_path.read_text(encoding='utf-8')
+            except Exception:
+                se = ''
+            # keep only tail to avoid huge entries
+            def _tail_text(s, chars=2000):
+                if not s:
+                    return ''
+                return s[-chars:]
+            ll = extractor_state.setdefault('log', [])
+            ts2 = datetime.now().isoformat()
+            ll.append(f"{ts2} - SUBPROCESS STDOUT (last {min(2000,len(so))} chars):\n" + _tail_text(so))
+            ll.append(f"{ts2} - SUBPROCESS STDERR (last {min(2000,len(se))} chars):\n" + _tail_text(se))
+            # trim
+            LOG_CAP = 5000
+            if len(ll) > LOG_CAP:
+                del ll[0:len(ll)-LOG_CAP]
+        except Exception:
+            pass
     except Exception as e:
         with open(stderr_path, 'a', encoding='utf-8') as err_f:
             err_f.write(str(e))
@@ -1251,7 +1484,7 @@ def _run_extractor_for_url(url: str, calendar_name: str = None) -> int:
 
             # Update progress with event count
             extractor_state['events_extracted'] = len(data)
-            extractor_state['progress_message'] = f'Extracted {len(data)} events from {calendar_name or "calendar"}'
+            extractor_state['progress_message'] = f"Extracted {len(data)} events from {_display_name_for(url, calendar_name)}"
 
             # Get the color from DB for this calendar
             cal_color = None
@@ -1328,9 +1561,9 @@ def _run_extractor_for_url(url: str, calendar_name: str = None) -> int:
             # append a finish message to the server-side log so UI can show even
     # very quick runs that a client-side poll might miss
     try:
-        ts = datetime.datetime.now().isoformat()
+        ts = datetime.now().isoformat()
         cnt = extractor_state.get('events_extracted', 0)
-        msg = f"{ts} - DONE: Extracted {cnt} events from {calendar_name or url} (rc={rc})"
+        msg = f"{ts} - DONE: Extracted {cnt} events from {_display_name_for(url, calendar_name)} (rc={rc})"
         ll = extractor_state.setdefault('log', [])
         ll.append(msg)
         LOG_CAP = 5000
@@ -1352,21 +1585,20 @@ def periodic_fetcher(interval_minutes: int = 60):
             # Avoid overlapping runs
             if not _periodic_lock.acquire(blocking=False):
                 # already running
+                # avoid busy-looping while another run holds the lock
+                time.sleep(5)
                 continue
             periodic_fetch_state['running'] = True
             periodic_fetch_state['last_run'] = datetime.utcnow().isoformat()
 
-            # Prefer the Rooms_PUBLISHER CSV as authoritative source of calendars.
-            # Use the centralized helper so all fetchers read the CSV consistently.
+            # Use the Rooms_PUBLISHER CSV as the single authoritative source of calendars.
+            # If the CSV is missing or empty, skip this run rather than falling back to the DB.
             urls_with_names = read_rooms_publisher_csv()
             if not urls_with_names:
-                try:
-                    rows = list_calendar_urls()
-                    for r in rows:
-                        if r.get('enabled') and r.get('url'):
-                            urls_with_names.append((r.get('url'), r.get('name')))
-                except Exception:
-                    urls_with_names = []
+                # No CSV configured -> nothing to do this cycle
+                periodic_fetch_state['running'] = False
+                _periodic_lock.release()
+                continue
 
             # If no URLs configured, skip
             if not urls_with_names:
@@ -1383,6 +1615,18 @@ def periodic_fetcher(interval_minutes: int = 60):
 
             if any_success:
                 periodic_fetch_state['last_success'] = datetime.utcnow().isoformat()
+                # After successful per-calendar extraction, regenerate merged schedule
+                try:
+                    today = date.today()
+                    from_d = today - timedelta(days=60)
+                    to_d = today + timedelta(days=60)
+                    extractor_state['progress_message'] = f'Regenerating merged schedule for {from_d}..{to_d}'
+                    ensure_schedule(from_d, to_d)
+                    extractor_state['progress_message'] = f'Schedule regenerated for {from_d}..{to_d}'
+                except Exception as e:
+                    ts = datetime.utcnow().isoformat()
+                    ll = extractor_state.setdefault('log', [])
+                    ll.append(f"{ts} - PERIODIC SCHEDULE GENERATION FAILED: {e}")
 
         except Exception:
             pass
@@ -1710,8 +1954,8 @@ def _daily_cleanup_loop(cutoff_days: int = 60):
         # This helps ensure the server has an up-to-date two-month window available
         # for API clients even if no browser client is active.
         try:
-            from_date = date.today()
-            to_date = from_date + timedelta(days=60)
+            from_date = date.today() - timedelta(days=60)
+            to_date = date.today() + timedelta(days=60)
             # Attempt to acquire the periodic lock so we don't overlap with the hourly
             # periodic_fetcher (which uses the same lock). If the periodic fetcher is
             # currently running, skip the prefetch this cycle.
@@ -1721,14 +1965,11 @@ def _daily_cleanup_loop(cutoff_days: int = 60):
             else:
                 try:
                     print('Starting daily two-month prefetch for all calendars')
-                    # Prefer Rooms_PUBLISHER CSV for the authoritative list, fall back to DB
+                    # Use Rooms_PUBLISHER CSV as authoritative; if missing, skip prefetch
                     urls_with_names = read_rooms_publisher_csv()
                     if not urls_with_names:
-                        try:
-                            rows = list_calendar_urls()
-                            urls_with_names = [(r.get('url'), r.get('name')) for r in rows if r.get('enabled') and r.get('url')]
-                        except Exception:
-                            urls_with_names = []
+                        print('Daily prefetch: publisher CSV not found or empty; skipping')
+                        urls_with_names = []
 
                     any_ok = False
                     for u, name in urls_with_names:
@@ -2546,6 +2787,30 @@ def admin_api_status():
         except Exception:
             planned = []
 
+    # Read full stdout/stderr files for the extractor (if present).
+    stdout_text = None
+    stderr_text = None
+    try:
+        out_path = pathlib.Path(__file__).parent / 'playwright_captures' / 'extract_stdout.txt'
+        if out_path.exists():
+            try:
+                with open(out_path, 'r', encoding='utf-8', errors='replace') as f:
+                    stdout_text = f.read()
+            except Exception:
+                stdout_text = None
+    except Exception:
+        stdout_text = None
+    try:
+        err_path = pathlib.Path(__file__).parent / 'playwright_captures' / 'extract_stderr.txt'
+        if err_path.exists():
+            try:
+                with open(err_path, 'r', encoding='utf-8', errors='replace') as f:
+                    stderr_text = f.read()
+            except Exception:
+                stderr_text = None
+    except Exception:
+        stderr_text = None
+
     return jsonify({
         'calendars': calendars,
         'manual_events': manual_events,
@@ -2559,6 +2824,9 @@ def admin_api_status():
         },
         'planned_order': planned or [],
         'planned_order_full': extractor_state.get('planned_order_full', []),
+    # Provide the in-memory recent log entries; full stdout/stderr files are
+    # intentionally not returned in the admin API to avoid showing the large
+    # extractor stdout blob in the UI.
     'extractor_log': extractor_state.get('log', [])[-2000:],
         'periodic_fetcher': {
             'started': _periodic_fetcher_started,
@@ -2654,33 +2922,60 @@ def admin_upload_rooms_publisher():
         csv_filename = 'Rooms_PUBLISHER_HTML-ICS(in).csv'
         saved = []
 
-        # Try to write into config/
+        # Try to write into config/ (backup existing first)
         try:
             cfg_dir = pathlib.Path(__file__).parent / 'config'
             cfg_dir.mkdir(exist_ok=True)
             target = cfg_dir / csv_filename
-            with open(target, 'wb') as out:
+            # backup existing file if present
+            try:
+                if target.exists():
+                    bak = cfg_dir / f"{csv_filename}.bak.{int(time.time())}"
+                    target.replace(bak)
+            except Exception:
+                # if backup fails, continue and overwrite below
+                pass
+            # atomic write via temp file
+            tmp = cfg_dir / f".{csv_filename}.tmp"
+            with open(tmp, 'wb') as out:
                 out.write(content)
+            tmp.replace(target)
             saved.append(str(target))
         except Exception:
             pass
 
-        # Also save to playwright_captures/ for backward compatibility
+        # Also save to playwright_captures/ for backward compatibility (backup existing)
         try:
             pc_dir = pathlib.Path(__file__).parent / 'playwright_captures'
             pc_dir.mkdir(exist_ok=True)
             target2 = pc_dir / csv_filename
-            with open(target2, 'wb') as out:
+            try:
+                if target2.exists():
+                    bak2 = pc_dir / f"{csv_filename}.bak.{int(time.time())}"
+                    target2.replace(bak2)
+            except Exception:
+                pass
+            tmp2 = pc_dir / f".{csv_filename}.tmp"
+            with open(tmp2, 'wb') as out:
                 out.write(content)
+            tmp2.replace(target2)
             saved.append(str(target2))
         except Exception:
             pass
 
-        # And try repo root
+        # And try repo root (backup existing)
         try:
             root_target = pathlib.Path(__file__).parent / csv_filename
-            with open(root_target, 'wb') as out:
+            try:
+                if root_target.exists():
+                    bak3 = root_target.parent / f"{csv_filename}.bak.{int(time.time())}"
+                    root_target.replace(bak3)
+            except Exception:
+                pass
+            tmp3 = root_target.parent / f".{csv_filename}.tmp"
+            with open(tmp3, 'wb') as out:
                 out.write(content)
+            tmp3.replace(root_target)
             saved.append(str(root_target))
         except Exception:
             pass
@@ -2839,7 +3134,7 @@ def admin_upload_rooms_publisher():
                                 # prepare hash and state messages
                                 import hashlib as _hashlib
                                 h = _hashlib.sha1(chosen_url.encode('utf-8')).hexdigest()[:8]
-                                cal_display = name or chosen_url
+                                cal_display = _display_name_for(chosen_url, name)
                                 # snapshot events count before processing this calendar to compute per-calendar delta
                                 try:
                                     before_events_count = extractor_state.get('events_extracted', 0)

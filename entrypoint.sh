@@ -1,6 +1,12 @@
 #!/bin/bash
 set -e
 
+# Raise the soft/hard nofile limit for the current shell so child processes
+# inherit a higher file descriptor limit. Docker ulimits sometimes don't
+# propagate to all runtimes on macOS/older dockerd setups, so setting here
+# provides an additional safety net.
+ulimit -n 65536 || true
+
 echo "Starting entrypoint..."
 
 # Always run setup for now (debugging)

@@ -139,10 +139,9 @@
                     setExtractorRunning(data.extractor_running || false)
                     setExtractorProgress(data.extractor_progress || null)
                     setPlannedOrder(data.planned_order || [])
-                    // Prefer server-side extractor log (includes very fast entries)
+                    // Prefer server-side extractor log entries for short live updates
                     if (data.extractor_log && data.extractor_log.length) {
                         setImportLog(prev => {
-                            // merge server log entries into UI log without duplication
                             const merged = [...prev]
                             data.extractor_log.forEach(l => {
                                 if (!merged.find(x => x.msg === l)) {
@@ -152,6 +151,8 @@
                             return merged.slice(-500)
                         })
                     }
+
+                    // Full extractor stdout is intentionally not exposed in the UI
 
                     // Auto-add progress messages to log
                     if (data.extractor_progress && data.extractor_progress.message) {
@@ -481,26 +482,7 @@
                             }
                         })
                     ),
-                    importLog.length > 0 && React.createElement('div', { 
-                        style: { 
-                            maxHeight: '150px', 
-                            overflowY: 'auto', 
-                            fontSize: '0.85rem',
-                            fontFamily: 'monospace'
-                        }
-                    },
-                        importLog.slice(-10).map((log, i) => 
-                            React.createElement('div', { 
-                                key: i, 
-                                style: { 
-                                    padding: '0.25rem 0',
-                                    color: log.type === 'error' ? '#c62828' : log.type === 'success' ? '#2e7d32' : '#666'
-                                }
-                            }, `[${log.time}] ${log.msg}`)
-                        )
-                    ),
-                    
-                    // (CSV preview removed by admin request)
+                    // (Full extractor stdout removed from UI by admin request)
                 ),
 
                 // Add Calendar Form
