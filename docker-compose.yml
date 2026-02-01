@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   timetable:
     build:
@@ -21,8 +19,8 @@ services:
       - ADMIN_PASSWORD=${ADMIN_PASSWORD:-admin123}
       - PLAYWRIGHT_USER_DATA_DIR=/app/playwright_data
       - APP_PYTHON=/usr/local/bin/python3
-    env_file:
-      - .env
+    # Optional: you can provide a local .env file with overrides (FLASK_SECRET, ADMIN_PASSWORD, HOST_PORT)
+    # If you prefer not to use a .env file, the environment variables above have safe defaults.
     healthcheck:
       test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5000/health')"]
       interval: 30s
