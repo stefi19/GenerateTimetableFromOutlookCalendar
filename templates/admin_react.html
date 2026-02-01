@@ -655,6 +655,12 @@
                         // trigger a full status refresh so planned_order appears
                         fetch('/admin/api/status').then(()=>{})
                         alert(j.message || 'Upload complete')
+                        // If server scheduled the background import, reload the
+                        // admin UI so the running import and planned order are
+                        // shown automatically (avoids needing to press "Import All").
+                        if (j && j.success) {
+                            window.location.reload()
+                        }
                     })
                     .catch(e => {
                         console.error('Upload failed', e)
