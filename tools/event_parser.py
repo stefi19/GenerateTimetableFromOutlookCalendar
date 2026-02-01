@@ -321,6 +321,87 @@ def parse_event(event: dict) -> dict:
     # Dacă room-ul vine din titlu și nu din locație
     if not result['room'] and parsed_title.room_code:
         result['room'] = parsed_title.room_code
+
+    # --- Build normalized display title according to project standard
+    # Desired formats:
+    # Lecture: Name (lecture) Year[/{group}], Professor
+    # Laboratory: Name (laboratory) Year/{group}, Professor
+    # Conference/other: Name (conference) - organisers
+    try:
+        # Determine event type label
+        et = ''
+        t_low = parsed_title.event_type.lower() if parsed_title.event_type else ''
+        title_low = (title or '').lower()
+        if parsed_title.is_lab or 'lab' in title_low or 'laborator' in title_low or 'practic' in title_low:
+            et = 'laboratory'
+        elif 'conf' in title_low or 'invited' in title_low or 'workshop' in title_low or 'conference' in title_low:
+            et = 'conference'
+        elif 'seminar' in title_low:
+            et = 'seminar'
+        elif t_low:
+            # prefer explicit event_type if present
+            et = t_low
+        else:
+            # default to 'lecture' for standard teaching events
+            et = 'lecture'
+
+        # Extract year/group from title and from calendar name if present
+        grp = {'year': '', 'group': '', 'display': ''}
+        try:
+            # try parse_group_from_string on title and on calendar name if available
+            grp = parse_group_from_string(title or '') or grp
+            # If not found in title, try source calendar name if provided in event
+            src_name = ''
+            if isinstance(event.get('source'), str):
+                src_name = event.get('source')
+            elif isinstance(event.get('calendar_name'), str):
+                src_name = event.get('calendar_name')
+            if (not grp.get('year') and src_name):
+                g2 = parse_group_from_string(src_name)
+                if g2 and g2.get('year'):
+                    grp = g2
+        except Exception:
+            pass
+
+        # Compose year/group string
+        yg = ''
+        if grp.get('year') and grp.get('group'):
+            yg = f"{grp.get('year')} year/{grp.get('group')}"
+        elif grp.get('year'):
+            yg = f"{grp.get('year')} year"
+        elif grp.get('group'):
+            yg = grp.get('group')
+
+        # Compose professor/organizer
+        prof = result.get('professor') or ''
+        prof = prof.strip()
+
+        # Base name
+        base = parsed_title.subject or parsed_title.abbreviation or (parsed_title.original_title or title)
+        base = base.strip()
+
+        # Final display title assembly
+        if et == 'conference' or et == 'seminar':
+            # conferences may have organisers in professor field or in title
+            if prof:
+                final = f"{base} ({et}) - {prof}"
+            else:
+                final = f"{base} ({et})"
+        else:
+            # lecture or laboratory or default
+            if yg and prof:
+                final = f"{base} ({et}) {yg}, {prof}"
+            elif yg:
+                final = f"{base} ({et}) {yg}"
+            elif prof:
+                final = f"{base} ({et}), {prof}"
+            else:
+                final = f"{base} ({et})"
+
+        result['display_title'] = final
+    except Exception:
+        # leave display_title as-is on error
+        pass
     
     return result
 
