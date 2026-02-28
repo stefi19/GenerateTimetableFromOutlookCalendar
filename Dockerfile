@@ -72,13 +72,16 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt \
     && pip install --no-cache-dir gunicorn
 
-# Create non-root user for security BEFORE installing Playwright
-RUN useradd --create-home --shell /bin/bash appuser
+# Install Playwright browsers to a shared path accessible by both root and appuser.
+# We set PLAYWRIGHT_BROWSERS_PATH so that any user (root during entrypoint setup,
+# appuser during gunicorn/extraction) finds the same browser binaries.
+ENV PLAYWRIGHT_BROWSERS_PATH=/opt/playwright-browsers
+RUN mkdir -p /opt/playwright-browsers \
+    && playwright install --with-deps chromium \
+    && chmod -R a+rX /opt/playwright-browsers
 
-# Install Playwright browsers as appuser (so cache is in their home)
-USER appuser
-RUN playwright install chromium
-USER root
+# Create non-root user for security
+RUN useradd --create-home --shell /bin/bash appuser
 
 # Copy application code
 COPY app.py timetable.py ./
