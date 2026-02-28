@@ -28,5 +28,9 @@ venv/
 /.pytest_cache/
 backend.log
 playwright_captures/
+
+# CSV backup files (auto-generated)
+*.csv.bak.*
+test_rooms.csv
 data/
 .DS_Store
