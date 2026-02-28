@@ -65,8 +65,11 @@ def main():
         # fallback default (kept for backwards compatibility)
         url = 'https://outlook.office365.com/calendar/published/173862b98010453296f2a697e45f3b1e@campus.utcluj.ro/daeb64d4bd994c52b4f54d04ba1940ca2236386271423118770/calendar.html'
     user_data_dir = os.environ.get('PLAYWRIGHT_USER_DATA_DIR', os.path.expanduser('~/.playwright_profile'))
-    out_dir = pathlib.Path('playwright_captures')
-    out_dir.mkdir(exist_ok=True)
+    # Allow callers (e.g. concurrent extraction) to redirect output to a
+    # per-URL temp directory so multiple Playwright instances don't clobber
+    # each other's events.json.
+    out_dir = pathlib.Path(os.environ.get('EXTRACT_OUTPUT_DIR', 'playwright_captures'))
+    out_dir.mkdir(parents=True, exist_ok=True)
 
     print('Using PLAYWRIGHT_USER_DATA_DIR:', user_data_dir)
     print('Extracting URL:', url)

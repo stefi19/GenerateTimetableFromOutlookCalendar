@@ -19,6 +19,25 @@ services:
       - ADMIN_PASSWORD=${ADMIN_PASSWORD:-admin123}
       - PLAYWRIGHT_USER_DATA_DIR=/app/playwright_data
       - APP_PYTHON=/usr/local/bin/python3
+      # ── Performance tuning for 32 GB / 16 vCPU ──
+      # Gunicorn: 8 workers (rule-of-thumb: 2×CPU for I/O-bound apps),
+      # 4 threads each => 32 concurrent handler slots, gthread worker class.
+      - GUNICORN_WORKERS=8
+      - GUNICORN_THREADS=4
+      - GUNICORN_WORKER_CLASS=gthread
+      - GUNICORN_TIMEOUT=180
+      - GUNICORN_KEEPALIVE=5
+      - GUNICORN_MAX_REQUESTS=2000
+      - GUNICORN_MAX_REQUESTS_JITTER=200
+      # SQLite WAL mode for better concurrent read/write
+      - SQLITE_WAL_MODE=1
+      # Playwright parallel extraction (use up to 6 concurrent browsers)
+      - PLAYWRIGHT_CONCURRENCY=6
+      - PLAYWRIGHT_BROWSER_TIMEOUT=90000
+      # Python memory / GC tweaks
+      - PYTHONMALLOC=pymalloc
+      - PYTHONHASHSEED=random
+      - MALLOC_ARENA_MAX=4
     # Optional: you can provide a local .env file with overrides (FLASK_SECRET, ADMIN_PASSWORD, HOST_PORT)
     # If you prefer not to use a .env file, the environment variables above have safe defaults.
     healthcheck:
@@ -26,19 +45,30 @@ services:
       interval: 30s
       timeout: 10s
       retries: 3
-      start_period: 10s
+      start_period: 15s
     deploy:
       resources:
         limits:
-          cpus: '2'
-          memory: 2G
+          cpus: '14'
+          memory: 28G
         reservations:
-          cpus: '0.5'
-          memory: 512M
+          cpus: '4'
+          memory: 4G
     ulimits:
       nofile:
         soft: 65536
         hard: 65536
+    # Use tmpfs for temporary data (Playwright screenshots, temp files)
+    tmpfs:
+      - /tmp:size=2G
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "5"
+    # Kernel tuning via sysctls (network performance)
+    sysctls:
+      - net.core.somaxconn=4096
 
 volumes:
   timetable_data:

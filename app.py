@@ -34,6 +34,54 @@ from timetable import (
 app = Flask(__name__)
 app.config["SECRET_KEY"] = os.environ.get("FLASK_SECRET", "dev-secret")
 
+# ── Performance: JSON response settings ──
+# Use compact JSON separators (no spaces) to reduce response size ~15%
+app.config["JSONIFY_PRETTYPRINT_REGULAR"] = False
+app.json.compact = True
+
+# ── Performance: In-memory schedule cache ──
+# Avoid re-reading schedule_by_room.json from disk on every /events.json request.
+# Cache is invalidated when the file's mtime changes.
+_schedule_cache_lock = threading.Lock()
+_schedule_cache = {
+    'data': None,      # parsed JSON dict
+    'mtime': 0,        # last known mtime of the file
+    'path': None,      # path that was cached
+}
+
+# TTL-based JSON file cache for any frequently-read file
+_file_cache_lock = threading.Lock()
+_file_cache = {}  # path -> {'data': ..., 'mtime': ..., 'ts': ...}
+_FILE_CACHE_TTL = 10  # seconds - re-stat the file at most every 10s
+
+
+def _read_json_cached(file_path: str, ttl: int = _FILE_CACHE_TTL):
+    """Read and cache a JSON file, re-reading only when mtime changes."""
+    now = time.time()
+    with _file_cache_lock:
+        entry = _file_cache.get(file_path)
+        if entry and (now - entry['ts']) < ttl:
+            return entry['data']
+
+    try:
+        p = pathlib.Path(file_path)
+        if not p.exists():
+            return None
+        mtime = p.stat().st_mtime
+        with _file_cache_lock:
+            entry = _file_cache.get(file_path)
+            if entry and entry['mtime'] == mtime:
+                entry['ts'] = now
+                return entry['data']
+        with open(p, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        with _file_cache_lock:
+            _file_cache[file_path] = {'data': data, 'mtime': mtime, 'ts': now}
+        return data
+    except Exception:
+        return None
+
+
 # Admin authentication
 # Defaults kept to preserve existing tests; change via env in production
 ADMIN_USERNAME = os.environ.get("ADMIN_USERNAME", "admin")
@@ -657,96 +705,95 @@ def ensure_schedule(from_date: date, to_date: date):
                                 it['location'] = name_meta
                     except Exception:
                         pass
-                        # dedupe by raw ItemId if available, otherwise by title+start
-                        try:
-                            raw = it.get('raw') or {}
-                            iid = None
-                            if isinstance(raw, dict):
-                                iid = raw.get('ItemId', {}).get('Id') if raw.get('ItemId') else None
-                            key = iid or (str(it.get('title','')) + '|' + str(it.get('start') or ''))
-                        except Exception:
-                            key = (str(it.get('title','')) + '|' + str(it.get('start') or ''))
 
-                        # attempt to enrich with calendar color and metadata from calendar_map.json
-                        try:
-                            map_path = out_dir / 'calendar_map.json'
-                            if map_path.exists() and it.get('source'):
-                                with open(map_path, 'r', encoding='utf-8') as mf:
-                                    cmap = json.load(mf)
-                                meta = cmap.get(it.get('source')) or {}
-                                col = meta.get('color')
-                                if col:
-                                    it['color'] = col
-                                bld = meta.get('building')
-                                room_meta = meta.get('room')
-                                if bld and not it.get('building'):
-                                    it['building'] = bld
-                                if room_meta and not it.get('location') and not it.get('room'):
-                                    it['room'] = room_meta
-                                    it['location'] = room_meta
-                        except Exception:
-                            pass
+                    # dedupe by raw ItemId if available, otherwise by title+start
+                    try:
+                        raw = it.get('raw') or {}
+                        iid = None
+                        if isinstance(raw, dict):
+                            iid = raw.get('ItemId', {}).get('Id') if raw.get('ItemId') else None
+                        key = iid or (str(it.get('title','')) + '|' + str(it.get('start') or ''))
+                    except Exception:
+                        key = (str(it.get('title','')) + '|' + str(it.get('start') or ''))
 
-                        # fill missing fields with placeholder " - " to avoid UNKNOWN/None
-                        try:
-                            if not it.get('title'):
-                                it['title'] = ' - '
-                            if not it.get('location'):
-                                it['location'] = ' - '
-                            if not it.get('start'):
-                                it['start'] = ' - '
-                            if not it.get('room'):
-                                it['room'] = it.get('location') or ' - '
-                            if not it.get('building'):
-                                it['building'] = ' - '
-                        except Exception:
-                            pass
+                    # enrich with calendar color and metadata from the already-loaded cmap
+                    try:
+                        src = it.get('source')
+                        if src and str(src) in cmap:
+                            meta = cmap.get(str(src)) or {}
+                            col = meta.get('color')
+                            if col:
+                                it['color'] = col
+                            bld = meta.get('building')
+                            room_meta = meta.get('room')
+                            if bld and not it.get('building'):
+                                it['building'] = bld
+                            if room_meta and not it.get('location') and not it.get('room'):
+                                it['room'] = room_meta
+                                it['location'] = room_meta
+                    except Exception:
+                        pass
 
-                        # Deduplication with preference: if a duplicate key exists, pick the event
-                        # with more useful metadata (room present, end time present, professor, color).
-                        def score_event(e):
-                            s = 0
-                            r = (e.get('room') or '').strip()
-                            if r and r not in ('', ' - ', 'UNKNOWN'):
-                                s += 50
-                            # end presence
-                            if e.get('end'):
-                                s += 20
-                            # professor
-                            if e.get('professor'):
-                                s += 5
-                            # color
-                            if e.get('color'):
-                                s += 2
-                            return s
+                    # fill missing fields with placeholder " - " to avoid UNKNOWN/None
+                    try:
+                        if not it.get('title'):
+                            it['title'] = ' - '
+                        if not it.get('location'):
+                            it['location'] = ' - '
+                        if not it.get('start'):
+                            it['start'] = ' - '
+                        if not it.get('room'):
+                            it['room'] = it.get('location') or ' - '
+                        if not it.get('building'):
+                            it['building'] = ' - '
+                    except Exception:
+                        pass
 
-                        if key in seen:
-                            # check if new one is better than stored
-                            prev = None
-                            # find previous in merged (linear search - merged small)
-                            for idx, existing in enumerate(merged):
-                                try:
-                                    raw_ex = existing.get('raw') or {}
-                                    iid_ex = None
-                                    if isinstance(raw_ex, dict):
-                                        iid_ex = raw_ex.get('ItemId', {}).get('Id') if raw_ex.get('ItemId') else None
-                                    key_ex = iid_ex or (str(existing.get('title','')) + '|' + str(existing.get('start') or ''))
-                                except Exception:
-                                    key_ex = (str(existing.get('title','')) + '|' + str(existing.get('start') or ''))
-                                if key_ex == key:
-                                    prev = (idx, existing)
-                                    break
-                            if prev is None:
-                                # shouldn't happen, but append as safe fallback
-                                merged.append(it)
-                            else:
-                                idx, existing = prev
-                                if score_event(it) > score_event(existing):
-                                    merged[idx] = it
-                            continue
+                    # Deduplication with preference: if a duplicate key exists, pick the event
+                    # with more useful metadata (room present, end time present, professor, color).
+                    def score_event(e):
+                        s = 0
+                        r = (e.get('room') or '').strip()
+                        if r and r not in ('', ' - ', 'UNKNOWN'):
+                            s += 50
+                        # end presence
+                        if e.get('end'):
+                            s += 20
+                        # professor
+                        if e.get('professor'):
+                            s += 5
+                        # color
+                        if e.get('color'):
+                            s += 2
+                        return s
 
-                        seen.add(key)
-                        merged.append(it)
+                    if key in seen:
+                        # check if new one is better than stored
+                        prev = None
+                        # find previous in merged (linear search - merged small)
+                        for idx, existing in enumerate(merged):
+                            try:
+                                raw_ex = existing.get('raw') or {}
+                                iid_ex = None
+                                if isinstance(raw_ex, dict):
+                                    iid_ex = raw_ex.get('ItemId', {}).get('Id') if raw_ex.get('ItemId') else None
+                                key_ex = iid_ex or (str(existing.get('title','')) + '|' + str(existing.get('start') or ''))
+                            except Exception:
+                                key_ex = (str(existing.get('title','')) + '|' + str(existing.get('start') or ''))
+                            if key_ex == key:
+                                prev = (idx, existing)
+                                break
+                        if prev is None:
+                            # shouldn't happen, but append as safe fallback
+                            merged.append(it)
+                        else:
+                            idx, existing = prev
+                            if score_event(it) > score_event(existing):
+                                merged[idx] = it
+                        continue
+
+                    seen.add(key)
+                    merged.append(it)
         # ALWAYS save merged file (even if empty, to clear old events)
         try:
             out_dir.mkdir(parents=True, exist_ok=True)
@@ -874,8 +921,16 @@ def _close_tracked_connections():
 atexit.register(_close_tracked_connections)
 
 def get_db_connection():
-    conn = sqlite3.connect(str(DB_PATH))
+    conn = sqlite3.connect(str(DB_PATH), timeout=30)
     conn.row_factory = sqlite3.Row
+    # ── Performance: WAL mode + tuning for concurrent reads ──
+    if os.environ.get('SQLITE_WAL_MODE', ''):
+        conn.execute('PRAGMA journal_mode=WAL')
+        conn.execute('PRAGMA synchronous=NORMAL')
+        conn.execute('PRAGMA cache_size=-64000')   # 64 MB page cache
+        conn.execute('PRAGMA mmap_size=268435456')  # 256 MB memory-mapped I/O
+        conn.execute('PRAGMA temp_store=MEMORY')
+        conn.execute('PRAGMA busy_timeout=10000')   # 10s busy timeout
     return conn
 
 def init_db():
@@ -1308,6 +1363,29 @@ def _run_extractor_background():
 
         extractor_state['last_rc'] = 0 if any_rc else 1
         extractor_state['running'] = False
+        extractor_state['progress_message'] = 'Extraction finished.'
+        # Write disk markers so the admin UI (and detached extraction monitor)
+        # can detect completion even after process restart.
+        try:
+            cap_dir = pathlib.Path('playwright_captures')
+            cap_dir.mkdir(exist_ok=True)
+            # import_complete.txt
+            with open(cap_dir / 'import_complete.txt', 'w', encoding='utf-8') as f:
+                f.write(datetime.utcnow().isoformat() + '\n')
+            # import_progress.json with final totals
+            total = len(combined)
+            succeeded = sum(1 for u, n in combined if (pathlib.Path('playwright_captures') / f'events_{hashlib.sha1(u.encode("utf-8")).hexdigest()[:8]}.json').exists())
+            import json as _json
+            with open(cap_dir / 'import_progress.json', 'w', encoding='utf-8') as f:
+                _json.dump({
+                    'total_calendars': total,
+                    'succeeded': succeeded,
+                    'failed': total - succeeded,
+                    'finished': True,
+                    'finished_at': datetime.utcnow().isoformat(),
+                }, f, indent=2)
+        except Exception:
+            pass
         try:
             _periodic_lock.release()
         except Exception:
@@ -1376,10 +1454,18 @@ def _run_extractor_for_url(url: str, calendar_name: str = None) -> int:
             except Exception as e:
                 parsed = []
             # convert to simple dicts and write per-calendar events file
+            # Filter to ±60 day window to avoid storing unbounded history
             if parsed is not None:
+                today_ics = date.today()
+                from_d_ics = today_ics - timedelta(days=60)
+                to_d_ics = today_ics + timedelta(days=60)
                 data = []
                 for ev in parsed:
                     try:
+                        if ev.start:
+                            ev_date = ev.start.date() if hasattr(ev.start, 'date') else ev.start
+                            if ev_date < from_d_ics or ev_date > to_d_ics:
+                                continue
                         data.append({'start': ev.start.isoformat() if ev.start else None,
                                      'end': ev.end.isoformat() if ev.end else None,
                                      'title': ev.title or '',
@@ -1405,6 +1491,8 @@ def _run_extractor_for_url(url: str, calendar_name: str = None) -> int:
                                 cmap = json.load(mf)
                         name = None
                         color = None
+                        building = None
+                        room = None
                         try:
                             init_db()
                             rows = list_calendar_urls()
@@ -1412,10 +1500,12 @@ def _run_extractor_for_url(url: str, calendar_name: str = None) -> int:
                                 if r.get('url') == url:
                                     name = r.get('name')
                                     color = r.get('color')
+                                    building = r.get('building')
+                                    room = r.get('room')
                                     break
                         except Exception:
                             pass
-                        cmap[h] = {'url': url, 'name': name or '', 'color': color}
+                        cmap[h] = {'url': url, 'name': name or '', 'color': color, 'building': building, 'room': room}
                         with open(map_path, 'w', encoding='utf-8') as mf:
                             json.dump(cmap, mf, indent=2, ensure_ascii=False)
                     except Exception:
@@ -1441,6 +1531,12 @@ def _run_extractor_for_url(url: str, calendar_name: str = None) -> int:
         # force UTF-8 for child process to avoid Windows cp1252 / OEM codepage problems
         env = os.environ.copy()
         env.setdefault('PYTHONUTF8', '1')
+        env.setdefault('PYTHONIOENCODING', 'utf-8')
+        # Use a per-URL temp directory so concurrent/overlapping runs don't
+        # clobber the shared events.json.
+        tmp_out = out_dir / f'_tmp_{h}'
+        tmp_out.mkdir(parents=True, exist_ok=True)
+        env['EXTRACT_OUTPUT_DIR'] = str(tmp_out)
         env.setdefault('PYTHONIOENCODING', 'utf-8')
         with open(stdout_path, 'w', encoding='utf-8') as out_f, open(stderr_path, 'w', encoding='utf-8') as err_f:
             proc = subprocess.run(cmd, stdout=out_f, stderr=err_f, text=True, env=env)
@@ -1475,12 +1571,12 @@ def _run_extractor_for_url(url: str, calendar_name: str = None) -> int:
             err_f.write(str(e))
         rc = 1
 
-    # If extractor produced an events.json, tag the events with the source hash
+    # If extractor produced an events.json in the per-URL temp dir, tag events and move
     try:
         out_dir = pathlib.Path('playwright_captures')
-        ev_in = out_dir / 'events.json'
+        tmp_out = out_dir / f'_tmp_{h}'
+        ev_in = tmp_out / 'events.json'
         if ev_in.exists():
-            h = hashlib.sha1(url.encode('utf-8')).hexdigest()[:8]
             ev_out = out_dir / f'events_{h}.json'
             try:
                 with open(ev_in, 'r', encoding='utf-8') as f:
@@ -1527,9 +1623,11 @@ def _run_extractor_for_url(url: str, calendar_name: str = None) -> int:
                 if map_path.exists():
                     with open(map_path, 'r', encoding='utf-8') as f:
                         cmap = json.load(f)
-                # attempt to get name/color from DB
+                # attempt to get name/color/building/room from DB
                 name = None
                 color = None
+                building = None
+                room = None
                 try:
                     init_db()
                     rows = list_calendar_urls()
@@ -1537,34 +1635,40 @@ def _run_extractor_for_url(url: str, calendar_name: str = None) -> int:
                         if r.get('url') == url:
                             name = r.get('name')
                             color = r.get('color')
+                            building = r.get('building')
+                            room = r.get('room')
                             break
                 except Exception:
                     pass
-                cmap[h] = {'url': url, 'name': name or '', 'color': color, 'building': name and None or None}
-                # attempt to include building/room from DB if available
-                try:
-                    for r in rows:
-                        if r.get('url') == url:
-                            cmap[h]['building'] = r.get('building')
-                            cmap[h]['room'] = r.get('room')
-                            break
-                except Exception:
-                    pass
+                cmap[h] = {'url': url, 'name': name or '', 'color': color, 'building': building, 'room': room}
                 with open(map_path, 'w', encoding='utf-8') as f:
                     json.dump(cmap, f, indent=2, ensure_ascii=False)
             except Exception:
                 pass
 
-            # remove the generic events.json to avoid accidental reuse
+            # remove the temp events.json and clean up temp dir
             try:
                 ev_in.unlink()
+            except Exception:
+                pass
+            try:
+                import shutil
+                shutil.rmtree(tmp_out, ignore_errors=True)
             except Exception:
                 pass
 
     except Exception:
         pass
+    # Clean up temp dir even if events.json wasn't produced
+    try:
+        tmp_cleanup = pathlib.Path('playwright_captures') / f'_tmp_{h}'
+        if tmp_cleanup.exists():
+            import shutil
+            shutil.rmtree(tmp_cleanup, ignore_errors=True)
+    except Exception:
+        pass
 
-            # append a finish message to the server-side log so UI can show even
+    # append a finish message to the server-side log so UI can show even
     # very quick runs that a client-side poll might miss
     try:
         ts = datetime.now().isoformat()
@@ -1586,6 +1690,7 @@ def periodic_fetcher(interval_minutes: int = 60):
     global periodic_fetch_state
     # read calendar URLs from DB
     while True:
+        _got_periodic_lock = False
         try:
 
             # Avoid overlapping runs
@@ -1594,6 +1699,7 @@ def periodic_fetcher(interval_minutes: int = 60):
                 # avoid busy-looping while another run holds the lock
                 time.sleep(5)
                 continue
+            _got_periodic_lock = True
             periodic_fetch_state['running'] = True
             periodic_fetch_state['last_run'] = datetime.utcnow().isoformat()
 
@@ -1602,14 +1708,6 @@ def periodic_fetcher(interval_minutes: int = 60):
             urls_with_names = read_rooms_publisher_csv()
             if not urls_with_names:
                 # No CSV configured -> nothing to do this cycle
-                periodic_fetch_state['running'] = False
-                _periodic_lock.release()
-                continue
-
-            # If no URLs configured, skip
-            if not urls_with_names:
-                periodic_fetch_state['running'] = False
-                _periodic_lock.release()
                 continue
 
             # Run extractor for each URL sequentially
@@ -1638,10 +1736,11 @@ def periodic_fetcher(interval_minutes: int = 60):
             pass
         finally:
             periodic_fetch_state['running'] = False
-            try:
-                _periodic_lock.release()
-            except Exception:
-                pass
+            if _got_periodic_lock:
+                try:
+                    _periodic_lock.release()
+                except Exception:
+                    pass
         # Sleep until next run
         time.sleep(interval_minutes * 60)
 
@@ -1785,26 +1884,61 @@ def cleanup_old_events(cutoff_days: int = 60, base_dir: str | pathlib.Path | Non
     except Exception:
         removed_from_file = 0
 
-    # Also remove per-calendar events files older than cutoff (events_<hash>.json)
+    # Also prune old events WITHIN per-calendar files (events_<hash>.json).
+    # These files are rewritten on each extraction so their mtime is always
+    # recent, but they may accumulate events outside the ±60 day window.
+    calendar_events_pruned = 0
     calendar_files_removed = 0
+    future_cutoff = date.today() + timedelta(days=cutoff_days)
     try:
         captures_dir = base / 'playwright_captures'
         if captures_dir.exists() and captures_dir.is_dir():
             for p in captures_dir.glob('events_*.json'):
+                # skip staging temp files
+                if p.name.endswith('.tmp.json'):
+                    continue
                 try:
-                    mtime = datetime.fromtimestamp(p.stat().st_mtime).date()
-                    if mtime < cutoff_date:
-                        p.unlink()
-                        calendar_files_removed += 1
+                    with open(p, 'r', encoding='utf-8') as f:
+                        items = json.load(f)
+                    if not isinstance(items, list):
+                        continue
+                    kept = []
+                    for ev in items:
+                        s = ev.get('start')
+                        if not s:
+                            kept.append(ev)
+                            continue
+                        try:
+                            try:
+                                dt = datetime.fromisoformat(s)
+                            except Exception:
+                                from dateutil import parser as dtparser
+                                dt = dtparser.parse(s)
+                            d = dt.date()
+                            if d < cutoff_date or d > future_cutoff:
+                                calendar_events_pruned += 1
+                                continue
+                            kept.append(ev)
+                        except Exception:
+                            kept.append(ev)
+                    if len(kept) < len(items):
+                        if kept:
+                            with open(p, 'w', encoding='utf-8') as f:
+                                json.dump(kept, f, indent=2, ensure_ascii=False, default=str)
+                        else:
+                            # no events left — remove the file entirely
+                            p.unlink()
+                            calendar_files_removed += 1
                 except Exception:
                     continue
     except Exception:
-        calendar_files_removed = 0
+        calendar_events_pruned = 0
 
     return {
         'manual_deleted': deleted_manual,
         'extracurricular_deleted': deleted_extra,
         'file_removed': removed_from_file,
+        'calendar_events_pruned': calendar_events_pruned,
         'calendar_files_removed': calendar_files_removed,
         'cutoff_date': cutoff_date.isoformat(),
     }
@@ -2097,8 +2231,20 @@ def events_json():
     if not jpath or not os.path.exists(jpath):
         return jsonify([])
 
-    with open(jpath, 'r', encoding='utf-8') as f:
-        schedule = json.load(f)
+    # Use cached schedule data to avoid re-reading the JSON file on every request
+    schedule = _read_json_cached(str(jpath))
+    if schedule is None:
+        return jsonify([])
+
+    # Load calendar_map once (not per-event) to avoid thousands of file reads
+    _cmap_for_events = {}
+    try:
+        _cmap_path = pathlib.Path('playwright_captures') / 'calendar_map.json'
+        if _cmap_path.exists():
+            with open(_cmap_path, 'r', encoding='utf-8') as _mf:
+                _cmap_for_events = json.load(_mf)
+    except Exception:
+        _cmap_for_events = {}
 
     events = []
     for room, days in schedule.items():
@@ -2158,26 +2304,19 @@ def events_json():
                     'group': '',
                     'group_display': '',
                 }
-                # resolve color and calendar_name from merged metadata or calendar_map.json
+                # resolve color and calendar_name from merged metadata or calendar_map
                 try:
                     # if schedule already had a color (merged), preserve it
                     if isinstance(e, dict) and e.get('color'):
                         ev['color'] = e.get('color')
 
                     src = ev.get('source')
-                    if src:
-                        map_path = pathlib.Path('playwright_captures') / 'calendar_map.json'
-                        if map_path.exists():
-                            try:
-                                with open(map_path, 'r', encoding='utf-8') as mf:
-                                    cmap = json.load(mf)
-                                meta = cmap.get(src) or {}
-                                if meta.get('color') and not ev['color']:
-                                    ev['color'] = meta.get('color')
-                                if meta.get('name'):
-                                    ev['calendar_name'] = meta.get('name')
-                            except Exception:
-                                pass
+                    if src and src in _cmap_for_events:
+                        meta = _cmap_for_events.get(src) or {}
+                        if meta.get('color') and not ev['color']:
+                            ev['color'] = meta.get('color')
+                        if meta.get('name'):
+                            ev['calendar_name'] = meta.get('name')
                 except Exception:
                     # ignore any errors resolving calendar metadata
                     pass
@@ -2935,6 +3074,20 @@ def admin_api_status():
     except Exception:
         pass
 
+    # If present, read the runner's import_progress.json so the UI can show
+    # precise per-calendar progress (total / succeeded / failed / files_count)
+    import_progress = None
+    try:
+        prog_path = pathlib.Path(__file__).parent / 'playwright_captures' / 'import_progress.json'
+        if prog_path.exists():
+            try:
+                with open(prog_path, 'r', encoding='utf-8') as pf:
+                    import_progress = json.load(pf)
+            except Exception:
+                import_progress = None
+    except Exception:
+        import_progress = None
+
     return jsonify({
         'calendars': calendars,
         'manual_events': manual_events,
@@ -2954,6 +3107,7 @@ def admin_api_status():
             'fs_events_count': extractor_state.get('fs_events_count', 0),
             'fs_events_nonzero': extractor_state.get('fs_events_nonzero', 0),
             'fs_last_written': extractor_state.get('fs_last_written'),
+            'import_progress': import_progress,
         },
         'planned_order': planned or [],
         'planned_order_full': extractor_state.get('planned_order_full', []),
@@ -3379,14 +3533,68 @@ def admin_import_calendar():
     extractor_state['events_extracted'] = 0
     extractor_state['current_calendar'] = name or 'calendar'
 
-    # Start extractor in background - use URL if provided, else default
+    # If a specific URL was provided, run per-URL extractor in a thread
     if url:
         t = threading.Thread(target=_run_extractor_for_url, args=(url, name), daemon=True)
-    else:
-        t = threading.Thread(target=_run_extractor_background, daemon=True)
-    t.start()
+        t.start()
+        return jsonify({'success': True, 'message': 'Import started', 'url': url}), 202
 
-    return jsonify({'success': True, 'message': 'Import started', 'url': url}), 202
+    # No url -> user asked to re-import ALL calendars. Launch the robust
+    # full extraction runner (`tools/run_full_extraction.py`) as a detached
+    # subprocess so it runs independently and writes the canonical
+    # `import_progress.json` / `import_complete.txt` markers the UI consumes.
+    try:
+        base = pathlib.Path(__file__).parent
+        pc_dir = base / 'playwright_captures'
+        pc_dir.mkdir(exist_ok=True)
+        out_path = pc_dir / 'extract_stdout.txt'
+        err_path = pc_dir / 'extract_stderr.txt'
+        # open files in append mode so multiple runs don't clobber history
+        out_f = open(out_path, 'a', encoding='utf-8')
+        err_f = open(err_path, 'a', encoding='utf-8')
+        # Prefer an explicit Python executable from the project venv if present
+        python_exec = os.environ.get('APP_PYTHON')
+        if not python_exec:
+            cand = [base / '.venv' / 'bin' / 'python3', base / '.venv' / 'bin' / 'python', base / 'env' / 'bin' / 'python3', base / 'env' / 'bin' / 'python']
+            for c in cand:
+                try:
+                    if c.exists():
+                        python_exec = str(c)
+                        break
+                except Exception:
+                    continue
+        if not python_exec:
+            python_exec = sys.executable
+
+        proc = subprocess.Popen([python_exec, str(base / 'tools' / 'run_full_extraction.py')], stdout=out_f, stderr=err_f, env=os.environ.copy(), cwd=str(base), start_new_session=True, close_fds=True)
+
+        # Record detached-run metadata for UI detection
+        try:
+            extractor_state['running'] = True
+            extractor_state['last_started'] = datetime.utcnow().isoformat()
+            extractor_state['stdout_path'] = str(out_path)
+            extractor_state['stderr_path'] = str(err_path)
+            extractor_state['progress_message'] = f'Detached full extraction started (pid {proc.pid})'
+            extractor_state['detached_pid'] = int(proc.pid)
+            pidfile = pc_dir / 'extract_detached.pid'
+            try:
+                with open(pidfile, 'w', encoding='utf-8') as pf:
+                    pf.write(str(proc.pid))
+            except Exception:
+                pass
+        except Exception:
+            pass
+
+        return jsonify({'success': True, 'message': 'Full import scheduled (detached)'}), 202
+    except Exception as e:
+        # fallback to in-thread run if Popen failed
+        try:
+            t = threading.Thread(target=_run_extractor_background, daemon=True)
+            t.start()
+            return jsonify({'success': True, 'message': 'Import started (background thread fallback)'}), 202
+        except Exception:
+            extractor_state['running'] = False
+            return jsonify({'success': False, 'message': f'Failed to start import: {e}'}), 500
 
 
 @app.route('/admin/add_event', methods=['POST'])
@@ -3892,35 +4100,30 @@ def departures_json():
     today = date.today()
     tomorrow = today + timedelta(days=1)
     
-    # Load events from schedule
+    # Load events from schedule (use cached reads)
     events_file = pathlib.Path('playwright_captures/events.json')
     all_events = []
     
-    if events_file.exists():
-        with open(events_file, 'r', encoding='utf-8') as f:
-            try:
-                loaded = json.load(f)
-            except Exception:
-                loaded = []
-            # mark origin for debugging
-            for it in loaded:
-                if isinstance(it, dict):
-                    it.setdefault('_origin', 'events_json')
-            all_events = loaded
+    loaded = _read_json_cached(str(events_file))
+    if loaded and isinstance(loaded, list):
+        # mark origin for debugging
+        for it in loaded:
+            if isinstance(it, dict):
+                it.setdefault('_origin', 'events_json')
+        all_events = list(loaded)  # copy so we don't mutate cache
     
-    # Also load from schedule_by_room.json if available
+    # Also load from schedule_by_room.json if available (cached)
     schedule_file = pathlib.Path('playwright_captures/schedule_by_room.json')
-    if schedule_file.exists():
-        with open(schedule_file, 'r', encoding='utf-8') as f:
-            schedule = json.load(f)
+    schedule = _read_json_cached(str(schedule_file))
+    if schedule and isinstance(schedule, dict):
         for room, days in schedule.items():
             for day, evs in days.items():
                 for e in evs:
-                    e['room'] = room
-                    # mark origin for debugging
-                    if isinstance(e, dict):
-                        e.setdefault('_origin', 'schedule_by_room')
-                    all_events.append(e)
+                    ec = dict(e)  # copy so we don't mutate cache
+                    ec['room'] = room
+                    if isinstance(ec, dict):
+                        ec.setdefault('_origin', 'schedule_by_room')
+                    all_events.append(ec)
     
     # Add extracurricular events from DB
     try:

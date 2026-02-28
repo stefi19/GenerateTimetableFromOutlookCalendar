@@ -30,4 +30,3 @@ backend.log
 playwright_captures/
 data/
 .DS_Store
-docker-compose.local.yml

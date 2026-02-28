@@ -12,8 +12,6 @@ export default function Admin() {
   const [newCalendar, setNewCalendar] = useState({ url: '', name: '', color: '#003366' })
   
   const [stats, setStats] = useState({ events_count: 0, last_import: null, extractor_running: false })
-  // extractor full stdout/stderr are intentionally not stored in the SPA
-  // to avoid rendering very large repeated preambles in the admin UI.
   const pollingRef = useRef(null)
 
   const fetchData = useCallback(async (showLoading = true) => {
@@ -27,10 +25,9 @@ export default function Admin() {
           events_count: data.events_count || 0, 
           last_import: data.last_import,
           extractor_running: data.extractor_running || false,
+          extractor_progress: data.extractor_progress || null,
           periodic_fetcher: data.periodic_fetcher
         })
-  // Do not store large extractor stdout in SPA state (server exposes
-  // planned order and recent log entries separately).
       }
     } catch (e) {
       console.error(e)
@@ -139,6 +136,12 @@ export default function Admin() {
             {stats.extractor_running && (
               <span className="status-badge importing">Importing...</span>
             )}
+            {!stats.extractor_running && stats.extractor_progress && stats.extractor_progress.import_progress && stats.extractor_progress.import_progress.finished && (
+              <span className="status-badge" style={{ background: '#28a745', color: '#fff', padding: '0.25rem 0.75rem', borderRadius: '12px', fontSize: '0.8rem', fontWeight: 600 }}>✓ Extraction Finished</span>
+            )}
+            {!stats.extractor_running && stats.extractor_progress && stats.extractor_progress.message && stats.extractor_progress.message.toLowerCase().includes('finished') && (
+              <span className="status-badge" style={{ background: '#28a745', color: '#fff', padding: '0.25rem 0.75rem', borderRadius: '12px', fontSize: '0.8rem', fontWeight: 600 }}>✓ Finished</span>
+            )}
           </div>
           <div className="stats-grid">
             <div className="stat-card">
@@ -151,6 +154,33 @@ export default function Admin() {
             </div>
             {/* Manual events stat removed */}
           </div>
+          {stats.extractor_progress && stats.extractor_progress.import_progress && (
+            (() => {
+              const p = stats.extractor_progress.import_progress
+              const total = p.total_calendars || p.total || 0
+              const succ = p.succeeded || p.succeeded_count || 0
+              const failed = p.failed || p.failed_count || 0
+              const files = p.files_count || stats.extractor_progress.fs_events_count || 0
+              const percent = total > 0 ? Math.round(((succ + failed) / total) * 100) : 0
+              const isFinished = p.finished || false
+              const barColor = isFinished ? '#28a745' : '#ffc107'
+              return (
+                <div style={{ marginTop: '0.75rem' }}>
+                  <div style={{ fontSize: '0.9rem', color: '#333' }}>
+                    {isFinished ? '✓ ' : ''}Import progress: {succ} succeeded, {failed} failed — {files}/{total} files written
+                    {isFinished && p.finished_at && (
+                      <span style={{ marginLeft: '0.5rem', color: '#666', fontSize: '0.85rem' }}>
+                        (completed at {new Date(p.finished_at).toLocaleTimeString()})
+                      </span>
+                    )}
+                  </div>
+                  <div style={{ height: '10px', background: '#e9ecef', borderRadius: '4px', overflow: 'hidden', marginTop: '0.35rem' }}>
+                    <div style={{ width: `${percent}%`, height: '100%', background: barColor, transition: 'background 0.3s' }} />
+                  </div>
+                </div>
+              )
+            })()
+          )}
           {stats.periodic_fetcher && (
             <div className="periodic-status">
               <small>
@@ -265,3 +295,4 @@ export default function Admin() {
       </div>
     </div>
   )
+}

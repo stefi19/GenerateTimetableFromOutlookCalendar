@@ -32,6 +32,8 @@ def main():
     # Collect unique URLs and names (CSV uses: name, email, ..., html(col4), ics(col5))
     urls = set()
     names_by_url = {}
+    buildings_by_url = {}
+    emails_by_url = {}
     import re
 
     def _format_email_to_name(email: str) -> str:
@@ -56,8 +58,14 @@ def main():
             if not url:
                 continue
             urls.add(url)
-            # prefer email (col 1) to generate a name, fallback to col 0
+            # store building (col 2) and email (col 1) for later DB update
+            building = row[2].strip() if len(row) > 2 else ''
             email = row[1].strip() if len(row) > 1 else ''
+            if building:
+                buildings_by_url[url] = building
+            if email:
+                emails_by_url[url] = email
+            # prefer email (col 1) to generate a name, fallback to col 0
             if email:
                 names_by_url[url] = _format_email_to_name(email)
             else:
@@ -78,7 +86,9 @@ def main():
     for url in urls:
         try:
             name = names_by_url.get(url, f'Calendar {url.split("/")[-1]}')
-            cur.execute('INSERT OR IGNORE INTO calendars (url, name, enabled, created_at) VALUES (?, ?, 1, datetime("now"))', (url, name))
+            building = buildings_by_url.get(url, '')
+            email = emails_by_url.get(url, '')
+            cur.execute('INSERT OR IGNORE INTO calendars (url, name, building, email_address, enabled, created_at) VALUES (?, ?, ?, ?, 1, datetime("now"))', (url, name, building or None, email or None))
             if cur.rowcount > 0:
                 added += 1
             # Ensure the calendar is marked enabled even if it already existed
@@ -94,6 +104,14 @@ def main():
                     db_name = r[0] if r else None
                     if not db_name:
                         cur.execute('UPDATE calendars SET name = ? WHERE url = ?', (name, url))
+            except Exception:
+                pass
+            # Always update building and email from CSV if available
+            try:
+                if building:
+                    cur.execute('UPDATE calendars SET building = ? WHERE url = ? AND (building IS NULL OR building = "")', (building, url))
+                if email:
+                    cur.execute('UPDATE calendars SET email_address = ? WHERE url = ? AND (email_address IS NULL OR email_address = "")', (email, url))
             except Exception:
                 pass
         except Exception as e:

@@ -42,13 +42,14 @@ def main():
         reader = csv.reader(f)
         header = next(reader, None)  # Skip header
         for row in reader:
-            if len(row) < 5:
+            if len(row) < 6:
                 continue
             name = row[0].strip()
             email = row[1].strip()
             building = row[2].strip() if len(row) > 2 else ''
-            html_url = row[3].strip() if len(row) > 3 else ''
-            ics_url = row[4].strip() if len(row) > 4 else ''
+            # Column 3 is Optiune_Delegat (TRUE/FALSE), skip it
+            html_url = row[4].strip() if len(row) > 4 else ''
+            ics_url = row[5].strip() if len(row) > 5 else ''
             
             for url in (html_url, ics_url):
                 if url:

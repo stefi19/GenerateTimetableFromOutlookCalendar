@@ -99,23 +99,68 @@ def is_future_event(ev: Dict[str, Any], today_dt: date) -> bool:
 
 
 def run_extractor_for_url(url: str, env: Dict[str, str]) -> bool:
+    """Run the Playwright extractor for a single URL.
+
+    Each invocation writes to its own temp directory (via EXTRACT_OUTPUT_DIR)
+    so concurrent calls don't clobber each other's events.json.
+    Returns True on success.
+    """
+    h = sha8(url)
+    tmp_out = OUT / f'_tmp_{h}'
+    tmp_out.mkdir(parents=True, exist_ok=True)
+    sub_env = dict(env)
+    sub_env['EXTRACT_OUTPUT_DIR'] = str(tmp_out)
     cmd = [sys.executable, str(ROOT / 'tools' / 'extract_published_events.py'), url]
     try:
-        proc = subprocess.run(cmd, check=False, env=env)
-        return proc.returncode == 0
+        proc = subprocess.run(cmd, check=False, env=sub_env)
+        ok = proc.returncode == 0
     except Exception:
-        return False
+        ok = False
+    # Move events.json from temp dir to the shared dir as events_<h>.tmp.json
+    # so merge_future_events can pick it up without races.
+    tmp_events = tmp_out / 'events.json'
+    staging = OUT / f'events_{h}.tmp.json'
+    if tmp_events.exists():
+        try:
+            if staging.exists():
+                staging.unlink()
+            tmp_events.rename(staging)
+        except Exception:
+            pass
+    # clean up temp dir
+    try:
+        import shutil
+        shutil.rmtree(tmp_out, ignore_errors=True)
+    except Exception:
+        pass
+    return ok
 
 
 def merge_future_events(url: str):
     h = sha8(url)
     out_file = OUT / f'events_{h}.json'
-    tmp_in = OUT / 'events.json'
+    # Read from the staging file written by run_extractor_for_url
+    tmp_in = OUT / f'events_{h}.tmp.json'
     today_dt = date.today()
 
     # Load existing events (if any)
     existing = load_json(out_file) if out_file.exists() else []
-    past = [e for e in existing if not is_future_event(e, today_dt)]
+    # Keep past events within the ±60 day window (don't accumulate unbounded history)
+    cutoff_past = today_dt - timedelta(days=60)
+    past = []
+    for e in existing:
+        if is_future_event(e, today_dt):
+            continue  # will be replaced by new_future
+        # check if event is within the past 60-day window
+        s = e.get('start')
+        if s:
+            try:
+                d = dtparser.parse(s).date()
+                if d < cutoff_past:
+                    continue  # too old, prune
+            except Exception:
+                pass
+        past.append(e)
 
     # Load newly extracted events (if any)
     new = load_json(tmp_in) if tmp_in.exists() else []
@@ -209,6 +254,7 @@ def rebuild_schedule(from_d: date, to_d: date, env: Dict[str, str]):
 def main():
     INTERVAL = int(os.environ.get('INTERVAL_SECONDS', '3600'))
     RUN_ONCE = os.environ.get('RUN_ONCE', '') in ('1', 'true', 'True')
+    PW_CONCURRENCY = int(os.environ.get('PLAYWRIGHT_CONCURRENCY', '4'))
     env = os.environ.copy()
     env.setdefault('PYTHONUTF8', '1')
 
@@ -218,19 +264,41 @@ def main():
         print(f'Found {len(urls)} enabled calendars')
         succeeded = 0
         failed = 0
-        for cal in urls:
+
+        # ── Concurrent extraction (optimized for 16 vCPU / 32 GB) ──
+        # Each extraction launches a Playwright browser subprocess.
+        # Limit concurrency to avoid OOM (each browser ~300-500 MB).
+        from concurrent.futures import ThreadPoolExecutor, as_completed
+        import threading
+        _lock = threading.Lock()
+
+        def extract_and_merge(cal):
             url = cal['url']
             name = cal.get('name') or url
-            print('Extracting', name)
+            print(f'  → Extracting: {name}')
+            # Each URL now writes to its own temp directory (via EXTRACT_OUTPUT_DIR)
+            # and stages output as events_<hash>.tmp.json, so no serialization needed.
             ok = run_extractor_for_url(url, env)
             if not ok:
-                print('Extractor returned non-zero for', url)
-                failed += 1
-                # continue to try to merge any partial capture
+                print(f'  ✗ Extractor failed for: {url}')
             else:
-                succeeded += 1
+                print(f'  ✓ Extractor OK for: {name}')
             # merge/update per-calendar file preserving past
             merge_future_events(url)
+            return ok
+
+        with ThreadPoolExecutor(max_workers=PW_CONCURRENCY) as pool:
+            futures = {pool.submit(extract_and_merge, cal): cal for cal in urls}
+            for future in as_completed(futures):
+                try:
+                    ok = future.result()
+                except Exception:
+                    ok = False
+                with _lock:
+                    if ok:
+                        succeeded += 1
+                    else:
+                        failed += 1
 
         print(f'Extraction pass finished. succeeded={succeeded} failed={failed}')
 

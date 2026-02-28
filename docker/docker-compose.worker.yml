@@ -11,7 +11,28 @@ services:
     environment:
       - INTERVAL_SECONDS=3600
       - RUN_ONCE=0
-    # If you need to run with a persistent Playwright profile for authenticated calendars,
-    # set PLAYWRIGHT_USER_DATA_DIR to a bind mount path here.
-    # volumes:
-    #   - /path/on/host/playwright-profile:/data/playwright-profile
+      # Concurrency: parallel ICS fetches + limited Playwright browsers
+      - ICS_CONCURRENCY=8
+      - PLAYWRIGHT_CONCURRENCY=4
+      - SQLITE_WAL_MODE=1
+      - PYTHONMALLOC=pymalloc
+      - MALLOC_ARENA_MAX=4
+    deploy:
+      resources:
+        limits:
+          cpus: '8'
+          memory: 12G
+        reservations:
+          cpus: '2'
+          memory: 2G
+    tmpfs:
+      - /tmp:size=1G
+    ulimits:
+      nofile:
+        soft: 65536
+        hard: 65536
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "25m"
+        max-file: "3"

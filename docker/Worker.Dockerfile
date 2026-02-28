@@ -1,4 +1,10 @@
-FROM python:3.11-slim
+FROM python:3.12-slim-bookworm
+
+# Performance environment variables
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PYTHONMALLOC=pymalloc \
+    MALLOC_ARENA_MAX=4
 
 # Install dependencies needed by Playwright and browsers
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -18,7 +24,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libpangocairo-1.0-0 \
     libxkbcommon0 \
     libgtk-3-0 \
- && rm -rf /var/lib/apt/lists/*
+    dumb-init \
+ && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 WORKDIR /app
 
@@ -33,6 +40,6 @@ RUN python -m playwright install chromium
 # Copy project
 COPY . /app
 
-ENV PYTHONUNBUFFERED=1
-
+# Use dumb-init for proper signal handling
+ENTRYPOINT ["dumb-init", "--"]
 CMD ["/usr/local/bin/python", "tools/worker_update_future.py"]

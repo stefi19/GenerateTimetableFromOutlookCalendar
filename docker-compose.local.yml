@@ -1,0 +1,71 @@
+version: '3.8'
+
+services:
+  timetable:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: utcn-timetable-local
+    restart: unless-stopped
+    ports:
+      - "5001:5000"
+    user: "0"
+    volumes:
+      - timetable_data:/app/data
+      - timetable_captures:/app/playwright_captures
+      - timetable_config:/app/config
+      - playwright_user_data:/app/playwright_data
+    environment:
+      FLASK_ENV: production
+      FLASK_SECRET: ${FLASK_SECRET:-change-me-in-production}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-admin123}
+      PLAYWRIGHT_USER_DATA_DIR: /app/playwright_data
+      # ── Performance tuning for 32 GB / 16 vCPU ──
+      GUNICORN_WORKERS: "8"
+      GUNICORN_THREADS: "4"
+      GUNICORN_WORKER_CLASS: "gthread"
+      GUNICORN_TIMEOUT: "180"
+      GUNICORN_KEEPALIVE: "5"
+      GUNICORN_MAX_REQUESTS: "2000"
+      GUNICORN_MAX_REQUESTS_JITTER: "200"
+      SQLITE_WAL_MODE: "1"
+      PLAYWRIGHT_CONCURRENCY: "6"
+      PYTHONMALLOC: "pymalloc"
+      MALLOC_ARENA_MAX: "4"
+    ulimits:
+      nofile:
+        soft: 65536
+        hard: 65536
+    deploy:
+      resources:
+        limits:
+          cpus: '14'
+          memory: 28G
+        reservations:
+          cpus: '4'
+          memory: 4G
+    tmpfs:
+      - /tmp:size=2G
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "5"
+    sysctls:
+      - net.core.somaxconn=4096
+
+volumes:
+  timetable_data:
+    driver: local
+  timetable_captures:
+    driver: local
+  timetable_config:
+    driver: local
+  playwright_user_data:
+    driver: local

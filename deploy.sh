@@ -35,8 +35,8 @@ if [ "$DO_PRUNE" = "true" ]; then
 	docker system prune -f || true
 fi
 
-echo "🔨 Building Docker images (no-cache)..."
-docker compose build --no-cache
+echo "🔨 Building Docker images (parallel, with BuildKit)..."
+DOCKER_BUILDKIT=1 COMPOSE_DOCKER_CLI_BUILD=1 docker compose build --parallel
 
 echo "🚀 Starting containers..."
 docker compose up -d

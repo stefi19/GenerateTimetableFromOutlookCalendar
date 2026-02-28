@@ -467,10 +467,14 @@
                                 fontWeight: 'bold'
                             }
                         }, `${extractorProgress.events_extracted} events`),
-                        // Show filesystem-derived progress when available
+                        // Prefer runner-provided import_progress if present, otherwise fall back to filesystem-derived counters
+                        extractorProgress && extractorProgress.import_progress ? React.createElement('span', { style: { marginLeft: '0.75rem', color: '#333', fontSize: '0.9rem' }},
+                            `${extractorProgress.import_progress.succeeded || 0} succeeded, ${extractorProgress.import_progress.failed || 0} failed — ${extractorProgress.import_progress.files_count || extractorProgress.fs_events_count || 0}/${extractorProgress.import_progress.total_calendars || extractorProgress.import_progress.total || 0} files written`
+                        ) : (
                         (extractorProgress.fs_events_count !== undefined) && React.createElement('span', {
                             style: { marginLeft: '0.75rem', color: '#333', fontSize: '0.9rem' }
-                        }, `${extractorProgress.fs_events_count} files written`),
+                        }, `${extractorProgress.fs_events_count} files written`)
+                        ),
                         (extractorProgress.fs_events_nonzero !== undefined) && React.createElement('span', {
                             style: { marginLeft: '0.5rem', color: '#666', fontSize: '0.85rem' }
                         }, `${extractorProgress.fs_events_nonzero} non-empty`)
