@@ -472,6 +472,8 @@ def debug_pipeline():
         diag['schedule_error'] = str(e)
     # 4. fingerprint state
     diag['rebuild_state'] = dict(_schedule_last_rebuild)
+    diag['rebuild_state']['last_empty_check'] = _schedule_last_empty_check
+    diag['rebuild_state']['empty_retry_sec'] = _EMPTY_SCHEDULE_RETRY_SEC
     # 5. import progress
     try:
         prog = out_dir / 'import_progress.json'
@@ -726,10 +728,20 @@ _schedule_last_rebuild = {
     'events_mtime': 0.0,       # max mtime of events_*.json when last rebuilt
     'events_count': 0,         # number of events_*.json files when last rebuilt
 }
+# Throttle for the "no events yet" case: don't re-run build_schedule_by_room.py
+# more than once every _EMPTY_SCHEDULE_RETRY_SEC seconds when there are no events.
+_schedule_last_empty_check = 0.0       # wall-clock time of last rc=2 result
+_EMPTY_SCHEDULE_RETRY_SEC = 30         # seconds between retries when no events
 
 
 def _events_files_fingerprint() -> tuple:
-    """Return (max_mtime, file_count) of events_*.json files."""
+    """Return (max_mtime, file_count) of events_*.json files.
+
+    Also incorporates the import_complete.txt mtime so that when the detached
+    extractor finishes (and writes that marker), we detect the change even
+    though all individual events_*.json files may already exist from an earlier
+    pass.
+    """
     out_dir = pathlib.Path('playwright_captures')
     max_mt = 0.0
     count = 0
@@ -742,6 +754,15 @@ def _events_files_fingerprint() -> tuple:
                 count += 1
             except Exception:
                 pass
+    except Exception:
+        pass
+    # Include import_complete.txt mtime so a finished extraction forces rebuild
+    try:
+        ic = out_dir / 'import_complete.txt'
+        if ic.exists():
+            ic_mt = ic.stat().st_mtime
+            if ic_mt > max_mt:
+                max_mt = ic_mt
     except Exception:
         pass
     return (max_mt, count)
@@ -758,8 +779,14 @@ def ensure_schedule(from_date: date, to_date: date):
 
     A cross-process file lock prevents multiple Gunicorn workers from
     rebuilding the schedule simultaneously.
+
+    IMPORTANT: when the build produces an empty schedule (rc=2), we save the
+    fingerprint with was_empty=True and record the wall-clock time. The fast
+    path will re-trigger a rebuild every _EMPTY_SCHEDULE_RETRY_SEC seconds
+    (default 30s) so that events produced by the detached extraction are
+    picked up promptly without hammering the subprocess on every HTTP request.
     """
-    global _schedule_rebuilding
+    global _schedule_rebuilding, _schedule_last_empty_check
     out_dir = pathlib.Path('playwright_captures')
     jpath = out_dir / 'schedule_by_room.json'
     cpath = out_dir / 'schedule_by_room.csv'
@@ -771,6 +798,7 @@ def ensure_schedule(from_date: date, to_date: date):
 
     # ── Fast path: if the schedule file exists and data hasn't changed, skip rebuild ──
     cur_mtime, cur_count = _events_files_fingerprint()
+    now = time.time()
     with _schedule_rebuild_lock:
         prev = _schedule_last_rebuild
         data_changed = (cur_mtime != prev['events_mtime'] or
@@ -778,6 +806,12 @@ def ensure_schedule(from_date: date, to_date: date):
         need_rebuild = data_changed or not jpath.exists()
         if need_rebuild and _schedule_rebuilding and jpath.exists():
             need_rebuild = False
+        # If data hasn't changed but the last build produced an empty schedule,
+        # retry periodically in case the build_schedule_by_room.py script finds
+        # events it previously missed (e.g. extraction finishing).
+        if not need_rebuild and prev.get('was_empty') and jpath.exists():
+            if (now - _schedule_last_empty_check) >= _EMPTY_SCHEDULE_RETRY_SEC:
+                need_rebuild = True
 
     if not need_rebuild:
         if jpath.exists():
@@ -826,16 +860,32 @@ def ensure_schedule(from_date: date, to_date: date):
                '--to', build_to.isoformat()]
         result = subprocess.run(cmd, check=False, capture_output=True, text=True,
                                 timeout=120)
-        if result.returncode not in (0, 2):
-            # rc=2 means "no events found" — not an error, just empty schedule
+
+        if result.returncode == 0:
+            # Successful build with events — update fingerprint so subsequent
+            # requests skip the rebuild.
+            app.logger.info('ensure_schedule: rebuilt schedule (events_count=%d)', cur_count)
+            with _schedule_rebuild_lock:
+                _schedule_last_rebuild['events_mtime'] = cur_mtime
+                _schedule_last_rebuild['events_count'] = cur_count
+                _schedule_last_rebuild['was_empty'] = False
+                _schedule_rebuilding = False
+        elif result.returncode == 2:
+            # No events found — save fingerprint so we don't rebuild on every
+            # request, but mark was_empty=True so the throttled retry loop
+            # re-checks every _EMPTY_SCHEDULE_RETRY_SEC seconds.
+            app.logger.info('ensure_schedule: no events found yet (rc=2, events_count=%d)', cur_count)
+            with _schedule_rebuild_lock:
+                _schedule_last_rebuild['events_mtime'] = cur_mtime
+                _schedule_last_rebuild['events_count'] = cur_count
+                _schedule_last_rebuild['was_empty'] = True
+                _schedule_rebuilding = False
+                _schedule_last_empty_check = time.time()
+        else:
             app.logger.error('build_schedule_by_room.py failed (rc=%d): %s',
                              result.returncode, (result.stderr or '')[:500])
-
-        # Update fingerprint so subsequent requests skip rebuild
-        with _schedule_rebuild_lock:
-            _schedule_last_rebuild['events_mtime'] = cur_mtime
-            _schedule_last_rebuild['events_count'] = cur_count
-            _schedule_rebuilding = False
+            with _schedule_rebuild_lock:
+                _schedule_rebuilding = False
 
         # Invalidate file cache
         with _file_cache_lock:
@@ -862,8 +912,9 @@ def ensure_schedule(from_date: date, to_date: date):
 
     if not jpath.exists():
         # build_schedule_by_room.py returns 2 and doesn't write the file when
-        # there are no events. Create a minimal empty schedule so subsequent
-        # fast-path checks find the file and don't keep retrying.
+        # there are no events. Create a minimal empty schedule so the endpoint
+        # returns [] instead of 500.  The was_empty flag in the fingerprint
+        # ensures periodic retries until real events arrive.
         try:
             with open(jpath, 'w', encoding='utf-8') as f:
                 json.dump({}, f)
@@ -1830,6 +1881,11 @@ def start_periodic_fetcher_if_needed(interval_minutes: int = 60):
 _background_tasks_initialized = False
 _background_tasks_init_lock = threading.Lock()
 _BG_LOCK_PATH = pathlib.Path('playwright_captures') / '.bg_tasks.lock'
+# Module-level reference to the lock file descriptor so it is never GC'd /
+# closed while the worker process lives.  Without this the fcntl lock would be
+# released as soon as the local variable in _init_background_tasks() went out
+# of scope, allowing a second worker to acquire the lock.
+_bg_lock_fd = None  # type: ignore
 
 
 def _init_background_tasks():
@@ -1839,7 +1895,7 @@ def _init_background_tasks():
     one to acquire the lock starts periodic_fetcher and daily_cleanup.
     Other workers skip background tasks entirely.
     """
-    global _background_tasks_initialized
+    global _background_tasks_initialized, _bg_lock_fd
     if _background_tasks_initialized:
         return
     with _background_tasks_init_lock:
@@ -1854,27 +1910,25 @@ def _init_background_tasks():
     # Only the first worker to succeed will start the background threads.
     try:
         _BG_LOCK_PATH.parent.mkdir(parents=True, exist_ok=True)
-        # Open in exclusive-create mode: only one process can create it.
-        # We keep the file descriptor open for the lifetime of the process
-        # so the lock persists. On worker restart/recycling, the new worker
-        # can acquire it.
         import fcntl
-        _bg_lock_fd = open(_BG_LOCK_PATH, 'w')
+        fd = open(_BG_LOCK_PATH, 'w')
         try:
-            fcntl.flock(_bg_lock_fd, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            fcntl.flock(fd, fcntl.LOCK_EX | fcntl.LOCK_NB)
         except (OSError, IOError):
             # Another worker already holds the lock — skip bg tasks in this worker
-            _bg_lock_fd.close()
+            fd.close()
             return
-        # Write our PID so we can debug which worker owns bg tasks
+        # Store in module-level variable so the fd (and its lock) survive
+        # for the lifetime of this worker process.
+        _bg_lock_fd = fd
         _bg_lock_fd.write(str(os.getpid()))
         _bg_lock_fd.flush()
-        # Don't close _bg_lock_fd — keep it open to hold the lock
     except Exception:
         # If locking fails for any reason, fall through and start tasks anyway
         # (better to have duplicates than no background work at all)
         pass
 
+    app.logger.info('This worker (pid=%d) owns background tasks', os.getpid())
     start_periodic_fetcher_if_needed(60)
     start_daily_cleanup_if_needed()
 
