@@ -751,10 +751,13 @@ def ensure_schedule(from_date: date, to_date: date):
     """Ensure `playwright_captures/schedule_by_room.json` and CSV exist for the given range.
 
     Uses fingerprinting of events_*.json files to avoid expensive rebuilds
-    when data hasn't changed. Only re-merges and re-runs
-    tools/build_schedule_by_room.py when new extraction data is available.
-    The schedule is always built for the full ±60 day window so that
-    different frontend view-modes don't trigger separate rebuilds.
+    when data hasn't changed.  Delegates ALL merging/loading to
+    tools/build_schedule_by_room.py so that app.py itself never opens hundreds
+    of event files (which caused [Errno 24] Too many open files under Gunicorn
+    with 8 workers).
+
+    A cross-process file lock prevents multiple Gunicorn workers from
+    rebuilding the schedule simultaneously.
     """
     global _schedule_rebuilding
     out_dir = pathlib.Path('playwright_captures')
@@ -762,7 +765,6 @@ def ensure_schedule(from_date: date, to_date: date):
     cpath = out_dir / 'schedule_by_room.csv'
 
     # Always build for the full ±60 day window regardless of the requested range.
-    # The caller (events_json) does its own date filtering on the schedule data.
     today = date.today()
     build_from = today - timedelta(days=60)
     build_to   = today + timedelta(days=60)
@@ -774,204 +776,100 @@ def ensure_schedule(from_date: date, to_date: date):
         data_changed = (cur_mtime != prev['events_mtime'] or
                         cur_count != prev['events_count'])
         need_rebuild = data_changed or not jpath.exists()
-        # If another thread is already rebuilding, don't queue a second rebuild;
-        # just serve the existing (possibly stale) schedule file if it exists.
         if need_rebuild and _schedule_rebuilding and jpath.exists():
             need_rebuild = False
 
     if not need_rebuild:
-        # Schedule is up-to-date (or being rebuilt by another thread) — return cached path
         if jpath.exists():
             return jpath, cpath
-        # File doesn't exist and no rebuild needed → shouldn't happen, but
-        # fall through to rebuild to be safe.
+        # Fall through to rebuild
 
-    # ── Slow path: merge events and rebuild schedule ──
+    # ── Slow path: rebuild via subprocess ──
+    # Use a file-based lock so only one Gunicorn worker rebuilds at a time
+    import fcntl
+    lock_path = out_dir / '.schedule_rebuild.lock'
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    try:
+        lock_fd = open(lock_path, 'w')
+    except Exception:
+        lock_fd = None
+
+    got_lock = False
+    if lock_fd:
+        try:
+            fcntl.flock(lock_fd, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            got_lock = True
+        except (OSError, IOError):
+            # Another process is rebuilding — return existing file or wait briefly
+            lock_fd.close()
+            lock_fd = None
+            if jpath.exists():
+                return jpath, cpath
+            # No file and can't lock → wait a short time for the other rebuild
+            time.sleep(2)
+            if jpath.exists():
+                return jpath, cpath
+            # Still nothing — fall through and try to build (may contend, but better than empty)
+
     with _schedule_rebuild_lock:
         _schedule_rebuilding = True
-    # Before regenerating, merge any per-calendar extracted files (events_<hash>.json)
+
     try:
-        merged_path = out_dir / 'events.json'
-        # find per-calendar files
-        parts = list(out_dir.glob('events_*.json'))
-        # load existing calendar_map and supplement from DB (so we can enrich events with calendar name/room)
-        cmap = {}
-        try:
-            map_path = out_dir / 'calendar_map.json'
-            if map_path.exists():
-                with open(map_path, 'r', encoding='utf-8') as mf:
-                    cmap = json.load(mf)
-        except Exception:
-            cmap = {}
-        # supplement with DB rows if some hashes are missing
-        try:
-            init_db()
-            rows = list_calendar_urls()
-            import hashlib
-            for r in rows:
-                url = r.get('url') or ''
-                if not url:
-                    continue
-                h = hashlib.sha1(url.encode('utf-8')).hexdigest()[:8]
-                if h not in cmap:
-                    cmap[h] = {'url': url, 'name': r.get('name') or '', 'color': r.get('color'), 'building': r.get('building'), 'room': r.get('room')}
-        except Exception:
-            pass
-        # DON'T include the generic events.json as it's the output file
-        # and processing it first would prevent newer events with colors from being added
-        merged = []
-        seen = set()
-
-        def _score_event(e):
-            s = 0
-            r = (e.get('room') or '').strip()
-            if r and r not in ('', ' - ', 'UNKNOWN'):
-                s += 50
-            if e.get('end'):
-                s += 20
-            if e.get('professor'):
-                s += 5
-            if e.get('color'):
-                s += 2
-            return s
-
-        if parts:
-            for p in parts:
-                try:
-                    with open(p, 'r', encoding='utf-8') as f:
-                        items = json.load(f)
-                except Exception:
-                    items = []
-                for it in items:
-                    # If event lacks location, try to enrich from calendar_map/db using file hash or source
-                    try:
-                        src = it.get('source')
-                        meta = None
-                        if src and str(src) in cmap:
-                            meta = cmap.get(str(src))
-                        else:
-                            # derive hash from filename like events_<hash>.json
-                            name = p.stem
-                            if name.startswith('events_'):
-                                h = name.split('_',1)[1]
-                                meta = cmap.get(h)
-                        if meta and (not it.get('location') or it.get('location') in ('', ' - ')):
-                            room_meta = meta.get('room') if isinstance(meta, dict) else None
-                            name_meta = meta.get('name') if isinstance(meta, dict) else None
-                            if room_meta:
-                                it['room'] = room_meta
-                                it['location'] = room_meta
-                            elif name_meta:
-                                it['location'] = name_meta
-                    except Exception:
-                        pass
-
-                    # dedupe by raw ItemId if available, otherwise by title+start
-                    try:
-                        raw = it.get('raw') or {}
-                        iid = None
-                        if isinstance(raw, dict):
-                            iid = raw.get('ItemId', {}).get('Id') if raw.get('ItemId') else None
-                        key = iid or (str(it.get('title','')) + '|' + str(it.get('start') or ''))
-                    except Exception:
-                        key = (str(it.get('title','')) + '|' + str(it.get('start') or ''))
-
-                    # enrich with calendar color and metadata from the already-loaded cmap
-                    try:
-                        src = it.get('source')
-                        if src and str(src) in cmap:
-                            meta = cmap.get(str(src)) or {}
-                            col = meta.get('color')
-                            if col:
-                                it['color'] = col
-                            bld = meta.get('building')
-                            room_meta = meta.get('room')
-                            if bld and not it.get('building'):
-                                it['building'] = bld
-                            if room_meta and not it.get('location') and not it.get('room'):
-                                it['room'] = room_meta
-                                it['location'] = room_meta
-                    except Exception:
-                        pass
-
-                    # fill missing fields with placeholder " - " to avoid UNKNOWN/None
-                    try:
-                        if not it.get('title'):
-                            it['title'] = ' - '
-                        if not it.get('location'):
-                            it['location'] = ' - '
-                        if not it.get('start'):
-                            it['start'] = ' - '
-                        if not it.get('room'):
-                            it['room'] = it.get('location') or ' - '
-                        if not it.get('building'):
-                            it['building'] = ' - '
-                    except Exception:
-                        pass
-
-                    if key in seen:
-                        # check if new one is better than stored
-                        prev_ev = None
-                        for idx, existing in enumerate(merged):
-                            try:
-                                raw_ex = existing.get('raw') or {}
-                                iid_ex = None
-                                if isinstance(raw_ex, dict):
-                                    iid_ex = raw_ex.get('ItemId', {}).get('Id') if raw_ex.get('ItemId') else None
-                                key_ex = iid_ex or (str(existing.get('title','')) + '|' + str(existing.get('start') or ''))
-                            except Exception:
-                                key_ex = (str(existing.get('title','')) + '|' + str(existing.get('start') or ''))
-                            if key_ex == key:
-                                prev_ev = (idx, existing)
-                                break
-                        if prev_ev is None:
-                            merged.append(it)
-                        else:
-                            idx, existing = prev_ev
-                            if _score_event(it) > _score_event(existing):
-                                merged[idx] = it
-                        continue
-
-                    seen.add(key)
-                    merged.append(it)
-        # ALWAYS save merged file (even if empty, to clear old events)
-        try:
-            out_dir.mkdir(parents=True, exist_ok=True)
-            with open(merged_path, 'w', encoding='utf-8') as f:
-                json.dump(merged, f, indent=2, ensure_ascii=False, default=str)
-        except Exception:
-            pass
-
-    except Exception:
-        pass
-
-    # call the build script to regenerate for the full ±60d range
-    try:
+        # Let build_schedule_by_room.py handle everything: it reads events_*.json
+        # files directly, so we don't need to open them here.
         script = pathlib.Path('tools') / 'build_schedule_by_room.py'
         if not script.exists():
             raise FileNotFoundError(script)
-        cmd = [sys.executable, str(script), '--from', build_from.isoformat(), '--to', build_to.isoformat()]
-        result = subprocess.run(cmd, check=False, capture_output=True, text=True)
-        if result.returncode != 0:
-            app.logger.error('build_schedule_by_room.py failed (rc=%d): %s', result.returncode, (result.stderr or '')[:500])
+        cmd = [sys.executable, str(script),
+               '--from', build_from.isoformat(),
+               '--to', build_to.isoformat()]
+        result = subprocess.run(cmd, check=False, capture_output=True, text=True,
+                                timeout=120)
+        if result.returncode not in (0, 2):
+            # rc=2 means "no events found" — not an error, just empty schedule
+            app.logger.error('build_schedule_by_room.py failed (rc=%d): %s',
+                             result.returncode, (result.stderr or '')[:500])
+
+        # Update fingerprint so subsequent requests skip rebuild
+        with _schedule_rebuild_lock:
+            _schedule_last_rebuild['events_mtime'] = cur_mtime
+            _schedule_last_rebuild['events_count'] = cur_count
+            _schedule_rebuilding = False
+
+        # Invalidate file cache
+        with _file_cache_lock:
+            _file_cache.pop(str(jpath), None)
+
     except Exception as e:
-        app.logger.error('ensure_schedule subprocess error: %s', e)
+        app.logger.error('ensure_schedule error: %s', e)
         with _schedule_rebuild_lock:
             _schedule_rebuilding = False
+        if lock_fd and got_lock:
+            try:
+                fcntl.flock(lock_fd, fcntl.LOCK_UN)
+                lock_fd.close()
+            except Exception:
+                pass
         raise
-
-    # Update the rebuild fingerprint so subsequent requests skip the rebuild
-    with _schedule_rebuild_lock:
-        _schedule_last_rebuild['events_mtime'] = cur_mtime
-        _schedule_last_rebuild['events_count'] = cur_count
-        _schedule_rebuilding = False
-
-    # Invalidate the file cache so the next read picks up the fresh schedule
-    with _file_cache_lock:
-        _file_cache.pop(str(jpath), None)
+    finally:
+        if lock_fd and got_lock:
+            try:
+                fcntl.flock(lock_fd, fcntl.LOCK_UN)
+                lock_fd.close()
+            except Exception:
+                pass
 
     if not jpath.exists():
-        raise FileNotFoundError(jpath)
+        # build_schedule_by_room.py returns 2 and doesn't write the file when
+        # there are no events. Create a minimal empty schedule so subsequent
+        # fast-path checks find the file and don't keep retrying.
+        try:
+            with open(jpath, 'w', encoding='utf-8') as f:
+                json.dump({}, f)
+        except Exception:
+            pass
+
     return jpath, cpath
 
 
@@ -1925,22 +1823,60 @@ def start_periodic_fetcher_if_needed(interval_minutes: int = 60):
 # process are NOT inherited by forked workers. Instead, we use a
 # before_request hook that runs once per worker to start the background
 # threads (periodic fetcher, daily cleanup).
+# IMPORTANT: Only ONE Gunicorn worker should run background tasks (periodic
+# fetcher, daily cleanup) to avoid 8× the file-descriptor usage and 8×
+# simultaneous extraction runs. We use a file-based lock that persists across
+# workers: the first worker to acquire it runs the tasks; all others skip.
 _background_tasks_initialized = False
 _background_tasks_init_lock = threading.Lock()
+_BG_LOCK_PATH = pathlib.Path('playwright_captures') / '.bg_tasks.lock'
 
 
 def _init_background_tasks():
-    """Start background threads once per process (works after Gunicorn fork)."""
+    """Start background threads once per process, but only in ONE worker.
+    
+    Uses a file-based lock so that among 8 Gunicorn workers, only the first
+    one to acquire the lock starts periodic_fetcher and daily_cleanup.
+    Other workers skip background tasks entirely.
+    """
     global _background_tasks_initialized
     if _background_tasks_initialized:
         return
     with _background_tasks_init_lock:
         if _background_tasks_initialized:
             return
-        _background_tasks_initialized = True
-    if os.environ.get('DISABLE_BACKGROUND_TASKS') != '1':
-        start_periodic_fetcher_if_needed(60)
-        start_daily_cleanup_if_needed()
+        _background_tasks_initialized = True  # don't retry in this worker
+
+    if os.environ.get('DISABLE_BACKGROUND_TASKS') == '1':
+        return
+
+    # Try to acquire a file-based lock (non-blocking).
+    # Only the first worker to succeed will start the background threads.
+    try:
+        _BG_LOCK_PATH.parent.mkdir(parents=True, exist_ok=True)
+        # Open in exclusive-create mode: only one process can create it.
+        # We keep the file descriptor open for the lifetime of the process
+        # so the lock persists. On worker restart/recycling, the new worker
+        # can acquire it.
+        import fcntl
+        _bg_lock_fd = open(_BG_LOCK_PATH, 'w')
+        try:
+            fcntl.flock(_bg_lock_fd, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except (OSError, IOError):
+            # Another worker already holds the lock — skip bg tasks in this worker
+            _bg_lock_fd.close()
+            return
+        # Write our PID so we can debug which worker owns bg tasks
+        _bg_lock_fd.write(str(os.getpid()))
+        _bg_lock_fd.flush()
+        # Don't close _bg_lock_fd — keep it open to hold the lock
+    except Exception:
+        # If locking fails for any reason, fall through and start tasks anyway
+        # (better to have duplicates than no background work at all)
+        pass
+
+    start_periodic_fetcher_if_needed(60)
+    start_daily_cleanup_if_needed()
 
 
 @app.before_request
@@ -2413,15 +2349,10 @@ def events_json():
     if schedule is None:
         return jsonify([])
 
-    # Load calendar_map once (not per-event) to avoid thousands of file reads
-    _cmap_for_events = {}
-    try:
-        _cmap_path = pathlib.Path('playwright_captures') / 'calendar_map.json'
-        if _cmap_path.exists():
-            with open(_cmap_path, 'r', encoding='utf-8') as _mf:
-                _cmap_for_events = json.load(_mf)
-    except Exception:
-        _cmap_for_events = {}
+    # Load calendar_map once (not per-event) using cached reader
+    _cmap_for_events = _read_json_cached(
+        str(pathlib.Path('playwright_captures') / 'calendar_map.json')
+    ) or {}
 
     events = []
     for room, days in schedule.items():
