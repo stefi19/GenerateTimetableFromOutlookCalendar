@@ -71,7 +71,7 @@ if [ ! -f "$PIDFILE" ]; then
     echo "  Enabled calendars in DB: ${ENABLED_COUNT}"
     if [ "${ENABLED_COUNT}" -gt 0 ]; then
         echo "  🚀 Starting detached full extraction as appuser..."
-        su -s /bin/bash appuser -c "mkdir -p /app/playwright_captures && nohup python3 /app/tools/run_full_extraction.py > /app/playwright_captures/extract_stdout.txt 2>/app/playwright_captures/extract_stderr.txt & echo \$! > /app/playwright_captures/extract_detached.pid" || true
+        su -s /bin/bash appuser -c "cd /app && mkdir -p /app/playwright_captures && nohup python3 /app/tools/run_full_extraction.py > /app/playwright_captures/extract_stdout.txt 2>/app/playwright_captures/extract_stderr.txt & echo \$! > /app/playwright_captures/extract_detached.pid" || true
         echo "  ✓ Detached extractor started"
     else
         echo "  ⚠ No enabled calendars - skipping extraction"

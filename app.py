@@ -418,6 +418,92 @@ def health_check():
     }), 200
 
 
+@app.route("/debug/pipeline", methods=["GET"])
+def debug_pipeline():
+    """Diagnostic: show what the events pipeline sees (no auth required, read-only)."""
+    out_dir = pathlib.Path('playwright_captures')
+    diag = {'cwd': os.getcwd()}
+    # 1. events_*.json files
+    try:
+        parts = sorted(out_dir.glob('events_*.json'))
+        non_empty = 0
+        total_events = 0
+        for p in parts:
+            try:
+                with open(p, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                if data:
+                    non_empty += 1
+                    total_events += len(data)
+            except Exception:
+                pass
+        diag['events_files'] = len(parts)
+        diag['events_files_non_empty'] = non_empty
+        diag['total_raw_events'] = total_events
+    except Exception as e:
+        diag['events_files_error'] = str(e)
+    # 2. events.json (merged)
+    try:
+        merged = out_dir / 'events.json'
+        if merged.exists():
+            with open(merged, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            diag['events_json_count'] = len(data) if isinstance(data, list) else 'not-a-list'
+        else:
+            diag['events_json_count'] = 'MISSING'
+    except Exception as e:
+        diag['events_json_error'] = str(e)
+    # 3. schedule_by_room.json
+    try:
+        sched = out_dir / 'schedule_by_room.json'
+        if sched.exists():
+            with open(sched, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            rooms = len(data)
+            total_sched = sum(len(evs) for days in data.values() for evs in days.values())
+            diag['schedule_rooms'] = rooms
+            diag['schedule_total_events'] = total_sched
+            # date range
+            all_dates = sorted(set(d for days in data.values() for d in days))
+            diag['schedule_date_range'] = [all_dates[0], all_dates[-1]] if all_dates else []
+        else:
+            diag['schedule_by_room'] = 'MISSING'
+    except Exception as e:
+        diag['schedule_error'] = str(e)
+    # 4. fingerprint state
+    diag['rebuild_state'] = dict(_schedule_last_rebuild)
+    # 5. import progress
+    try:
+        prog = out_dir / 'import_progress.json'
+        if prog.exists():
+            with open(prog, 'r', encoding='utf-8') as f:
+                diag['import_progress'] = json.load(f)
+    except Exception:
+        pass
+    # 6. calendar_map
+    try:
+        cmap = out_dir / 'calendar_map.json'
+        if cmap.exists():
+            with open(cmap, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            diag['calendar_map_entries'] = len(data)
+        else:
+            diag['calendar_map'] = 'MISSING'
+    except Exception:
+        pass
+    # 7. try a quick ensure_schedule and report outcome
+    try:
+        today = date.today()
+        from_d = today - timedelta(days=7)
+        to_d = today + timedelta(days=60)
+        jpath, _ = ensure_schedule(from_d, to_d)
+        diag['ensure_schedule_result'] = str(jpath)
+        diag['ensure_schedule_exists'] = jpath.exists() if hasattr(jpath, 'exists') else os.path.exists(str(jpath))
+    except Exception as e:
+        diag['ensure_schedule_error'] = str(e)
+    return jsonify(diag)
+
+
 @app.route('/log_js_error', methods=['POST'])
 def log_js_error():
     """Receive JS error reports from the frontend for debugging.
@@ -630,19 +716,81 @@ def render_and_find_ics(url: str) -> List[str]:
     return out, saved_files
 
 
+# ── Schedule rebuild tracking ──
+# Track the latest mtime of any events_*.json file so we only rebuild the
+# schedule when data has actually changed. This avoids running a heavy
+# subprocess on every /events.json HTTP request.
+_schedule_rebuild_lock = threading.Lock()
+_schedule_rebuilding = False            # True while a rebuild is in progress
+_schedule_last_rebuild = {
+    'events_mtime': 0.0,       # max mtime of events_*.json when last rebuilt
+    'events_count': 0,         # number of events_*.json files when last rebuilt
+}
+
+
+def _events_files_fingerprint() -> tuple:
+    """Return (max_mtime, file_count) of events_*.json files."""
+    out_dir = pathlib.Path('playwright_captures')
+    max_mt = 0.0
+    count = 0
+    try:
+        for p in out_dir.glob('events_*.json'):
+            try:
+                mt = p.stat().st_mtime
+                if mt > max_mt:
+                    max_mt = mt
+                count += 1
+            except Exception:
+                pass
+    except Exception:
+        pass
+    return (max_mt, count)
+
+
 def ensure_schedule(from_date: date, to_date: date):
     """Ensure `playwright_captures/schedule_by_room.json` and CSV exist for the given range.
 
-    This calls the tools/build_schedule_by_room.py script with the requested range
-    using the current Python executable. Returns the path to the JSON schedule file
-    or raises if generation failed.
+    Uses fingerprinting of events_*.json files to avoid expensive rebuilds
+    when data hasn't changed. Only re-merges and re-runs
+    tools/build_schedule_by_room.py when new extraction data is available.
+    The schedule is always built for the full ±60 day window so that
+    different frontend view-modes don't trigger separate rebuilds.
     """
+    global _schedule_rebuilding
     out_dir = pathlib.Path('playwright_captures')
     jpath = out_dir / 'schedule_by_room.json'
     cpath = out_dir / 'schedule_by_room.csv'
+
+    # Always build for the full ±60 day window regardless of the requested range.
+    # The caller (events_json) does its own date filtering on the schedule data.
+    today = date.today()
+    build_from = today - timedelta(days=60)
+    build_to   = today + timedelta(days=60)
+
+    # ── Fast path: if the schedule file exists and data hasn't changed, skip rebuild ──
+    cur_mtime, cur_count = _events_files_fingerprint()
+    with _schedule_rebuild_lock:
+        prev = _schedule_last_rebuild
+        data_changed = (cur_mtime != prev['events_mtime'] or
+                        cur_count != prev['events_count'])
+        need_rebuild = data_changed or not jpath.exists()
+        # If another thread is already rebuilding, don't queue a second rebuild;
+        # just serve the existing (possibly stale) schedule file if it exists.
+        if need_rebuild and _schedule_rebuilding and jpath.exists():
+            need_rebuild = False
+
+    if not need_rebuild:
+        # Schedule is up-to-date (or being rebuilt by another thread) — return cached path
+        if jpath.exists():
+            return jpath, cpath
+        # File doesn't exist and no rebuild needed → shouldn't happen, but
+        # fall through to rebuild to be safe.
+
+    # ── Slow path: merge events and rebuild schedule ──
+    with _schedule_rebuild_lock:
+        _schedule_rebuilding = True
     # Before regenerating, merge any per-calendar extracted files (events_<hash>.json)
     try:
-        out_dir = pathlib.Path('playwright_captures')
         merged_path = out_dir / 'events.json'
         # find per-calendar files
         parts = list(out_dir.glob('events_*.json'))
@@ -673,6 +821,20 @@ def ensure_schedule(from_date: date, to_date: date):
         # and processing it first would prevent newer events with colors from being added
         merged = []
         seen = set()
+
+        def _score_event(e):
+            s = 0
+            r = (e.get('room') or '').strip()
+            if r and r not in ('', ' - ', 'UNKNOWN'):
+                s += 50
+            if e.get('end'):
+                s += 20
+            if e.get('professor'):
+                s += 5
+            if e.get('color'):
+                s += 2
+            return s
+
         if parts:
             for p in parts:
                 try:
@@ -694,14 +856,12 @@ def ensure_schedule(from_date: date, to_date: date):
                                 h = name.split('_',1)[1]
                                 meta = cmap.get(h)
                         if meta and (not it.get('location') or it.get('location') in ('', ' - ')):
-                            # prefer explicit room then name
                             room_meta = meta.get('room') if isinstance(meta, dict) else None
                             name_meta = meta.get('name') if isinstance(meta, dict) else None
                             if room_meta:
                                 it['room'] = room_meta
                                 it['location'] = room_meta
                             elif name_meta:
-                                # set location to name so downstream parsers can extract room
                                 it['location'] = name_meta
                     except Exception:
                         pass
@@ -749,28 +909,9 @@ def ensure_schedule(from_date: date, to_date: date):
                     except Exception:
                         pass
 
-                    # Deduplication with preference: if a duplicate key exists, pick the event
-                    # with more useful metadata (room present, end time present, professor, color).
-                    def score_event(e):
-                        s = 0
-                        r = (e.get('room') or '').strip()
-                        if r and r not in ('', ' - ', 'UNKNOWN'):
-                            s += 50
-                        # end presence
-                        if e.get('end'):
-                            s += 20
-                        # professor
-                        if e.get('professor'):
-                            s += 5
-                        # color
-                        if e.get('color'):
-                            s += 2
-                        return s
-
                     if key in seen:
                         # check if new one is better than stored
-                        prev = None
-                        # find previous in merged (linear search - merged small)
+                        prev_ev = None
                         for idx, existing in enumerate(merged):
                             try:
                                 raw_ex = existing.get('raw') or {}
@@ -781,14 +922,13 @@ def ensure_schedule(from_date: date, to_date: date):
                             except Exception:
                                 key_ex = (str(existing.get('title','')) + '|' + str(existing.get('start') or ''))
                             if key_ex == key:
-                                prev = (idx, existing)
+                                prev_ev = (idx, existing)
                                 break
-                        if prev is None:
-                            # shouldn't happen, but append as safe fallback
+                        if prev_ev is None:
                             merged.append(it)
                         else:
-                            idx, existing = prev
-                            if score_event(it) > score_event(existing):
+                            idx, existing = prev_ev
+                            if _score_event(it) > _score_event(existing):
                                 merged[idx] = it
                         continue
 
@@ -805,16 +945,30 @@ def ensure_schedule(from_date: date, to_date: date):
     except Exception:
         pass
 
-    # call the build script to regenerate for the requested range
+    # call the build script to regenerate for the full ±60d range
     try:
         script = pathlib.Path('tools') / 'build_schedule_by_room.py'
         if not script.exists():
             raise FileNotFoundError(script)
-        cmd = [sys.executable, str(script), '--from', from_date.isoformat(), '--to', to_date.isoformat()]
-        subprocess.run(cmd, check=False)
+        cmd = [sys.executable, str(script), '--from', build_from.isoformat(), '--to', build_to.isoformat()]
+        result = subprocess.run(cmd, check=False, capture_output=True, text=True)
+        if result.returncode != 0:
+            app.logger.error('build_schedule_by_room.py failed (rc=%d): %s', result.returncode, (result.stderr or '')[:500])
     except Exception as e:
-        # swallow but propagate via return
+        app.logger.error('ensure_schedule subprocess error: %s', e)
+        with _schedule_rebuild_lock:
+            _schedule_rebuilding = False
         raise
+
+    # Update the rebuild fingerprint so subsequent requests skip the rebuild
+    with _schedule_rebuild_lock:
+        _schedule_last_rebuild['events_mtime'] = cur_mtime
+        _schedule_last_rebuild['events_count'] = cur_count
+        _schedule_rebuilding = False
+
+    # Invalidate the file cache so the next read picks up the fresh schedule
+    with _file_cache_lock:
+        _file_cache.pop(str(jpath), None)
 
     if not jpath.exists():
         raise FileNotFoundError(jpath)
@@ -1766,12 +1920,33 @@ def start_periodic_fetcher_if_needed(interval_minutes: int = 60):
         return False
 
 
-# Start the periodic fetcher on module import (works with Gunicorn)
-# This runs once when the app is loaded
-if os.environ.get('DISABLE_BACKGROUND_TASKS') != '1':
-    # Start the periodic fetcher on module import (works with Gunicorn)
-    # This runs once when the app is loaded
-    start_periodic_fetcher_if_needed(60)
+# ── Lazy background-task start ──
+# With Gunicorn --preload, threads started at import time in the master
+# process are NOT inherited by forked workers. Instead, we use a
+# before_request hook that runs once per worker to start the background
+# threads (periodic fetcher, daily cleanup).
+_background_tasks_initialized = False
+_background_tasks_init_lock = threading.Lock()
+
+
+def _init_background_tasks():
+    """Start background threads once per process (works after Gunicorn fork)."""
+    global _background_tasks_initialized
+    if _background_tasks_initialized:
+        return
+    with _background_tasks_init_lock:
+        if _background_tasks_initialized:
+            return
+        _background_tasks_initialized = True
+    if os.environ.get('DISABLE_BACKGROUND_TASKS') != '1':
+        start_periodic_fetcher_if_needed(60)
+        start_daily_cleanup_if_needed()
+
+
+@app.before_request
+def _ensure_background_tasks():
+    """Lazily start background tasks on first request in each worker."""
+    _init_background_tasks()
 
 
 # ----------------- Daily DB cleanup -----------------
@@ -2153,9 +2328,9 @@ def start_daily_cleanup_if_needed(cutoff_days: int = 60):
         return False
 
 
-if os.environ.get('DISABLE_BACKGROUND_TASKS') != '1':
-    # Start the cleanup thread on import
-    start_daily_cleanup_if_needed(60)
+# NOTE: Background tasks (periodic fetcher + daily cleanup) are started
+# lazily via the @app.before_request hook (_ensure_background_tasks) so
+# they survive Gunicorn --preload forking. Do NOT start them at import time.
 
 
 # OLD FRONTEND ROUTE - DISABLED (use /app for React SPA)
@@ -2224,11 +2399,13 @@ def events_json():
     # ensure schedule exists
     try:
         jpath, cpath = ensure_schedule(from_date, to_date)
-    except Exception:
+    except Exception as exc:
         # No schedule available yet - return empty array (not 500 error)
+        app.logger.warning('ensure_schedule failed: %s', exc)
         return jsonify([])
 
     if not jpath or not os.path.exists(jpath):
+        app.logger.warning('schedule file missing after ensure_schedule: %s', jpath)
         return jsonify([])
 
     # Use cached schedule data to avoid re-reading the JSON file on every request
