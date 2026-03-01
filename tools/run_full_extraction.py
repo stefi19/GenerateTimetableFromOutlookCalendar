@@ -42,7 +42,13 @@ OUT_DIR.mkdir(exist_ok=True)
 def get_enabled_urls(db_path):
     conn = sqlite3.connect(str(db_path))
     cur = conn.cursor()
-    cur.execute("SELECT url, name FROM calendars WHERE enabled = 1 AND url IS NOT NULL")
+    # Fetch html_url alongside the primary (ICS) url so Playwright can use
+    # the HTML view as a fallback when ICS parsing fails.
+    try:
+        cur.execute("SELECT url, name, html_url FROM calendars WHERE enabled = 1 AND url IS NOT NULL")
+    except Exception:
+        # Old DB without html_url column — fall back to 2-column query
+        cur.execute("SELECT url, name FROM calendars WHERE enabled = 1 AND url IS NOT NULL")
     rows = cur.fetchall()
     conn.close()
     return rows
@@ -69,10 +75,10 @@ def run_for_url(url, name=None, env=None):
             events = parse_ics_from_url(url, verbose=False)
             # filter events to requested window
             events_in_range = [e for e in events if e.start and from_d <= e.start.date() <= to_d]
+            h = sha8(url)
+            ev_out = OUT_DIR / f'events_{h}.json'
             if events_in_range:
                 # write per-calendar file
-                h = sha8(url)
-                ev_out = OUT_DIR / f'events_{h}.json'
                 try:
                     OUT_DIR.mkdir(parents=True, exist_ok=True)
                     with open(ev_out, 'w', encoding='utf-8') as f:
@@ -92,8 +98,17 @@ def run_for_url(url, name=None, env=None):
                     print('Failed to write ICS-derived events file for', url, '->', e)
                     # fall through to HTML extractor fallback
             else:
-                # No events in-range from ICS; fall through to HTML extractor
-                pass
+                # Valid VCALENDAR but no events in range — write an empty file
+                # and treat as success (room has no bookings, don't need Playwright).
+                try:
+                    OUT_DIR.mkdir(parents=True, exist_ok=True)
+                    with open(ev_out, 'w', encoding='utf-8') as f:
+                        import json
+                        json.dump([], f)
+                    print('Wrote (ICS, no events in range)', ev_out)
+                except Exception:
+                    pass
+                return True
         except Exception as e:
             # ICS parse failed (not an ICS resource or network error) -> fallback
             print('ICS parse failed for', url, '->', e)
@@ -144,10 +159,19 @@ def run_for_url(url, name=None, env=None):
 
 
 def main():
-    urls = get_enabled_urls(DB)
-    if not urls:
+    raw_rows = get_enabled_urls(DB)
+    if not raw_rows:
         print('No enabled calendars found in DB')
         return 1
+
+    # Normalise rows to 3-tuples (url, name, html_url).
+    # Old DBs without html_url return 2-tuples; pad with None.
+    urls = []
+    for row in raw_rows:
+        url = row[0]
+        name = row[1] if len(row) > 1 else None
+        html_url = row[2] if len(row) > 2 else None
+        urls.append((url, name, html_url))
 
     # Prepare environment for Playwright (preserve any existing variable)
     env = os.environ.copy()
@@ -197,21 +221,30 @@ def main():
     #   Phase 1: ICS only (no Playwright fallback) — highly parallel
     #   Phase 2: Playwright fallback for failures — limited concurrency
 
-    def try_ics_only(url_name):
-        """Try ICS parsing only (no Playwright fallback). Returns (url, name, success)."""
-        url, name = url_name
+    def try_ics_only(url_entry):
+        """Try ICS parsing only (no Playwright fallback). Returns (url, name, html_url, success).
+
+        A calendar whose ICS feed returns a valid VCALENDAR with 0 events in
+        the ±60-day window is treated as a SUCCESS (the room simply has no
+        bookings). This prevents needlessly queuing it for the heavyweight
+        Playwright fallback, which would either produce nothing or crash.
+        An empty events_<hash>.json file is written so the downstream
+        file-count check still matches the number of calendars.
+        """
+        url, name, html_url = url_entry
         if parse_ics_from_url is None:
-            return (url, name, False)
+            return (url, name, html_url, False)
         today = date.today()
         from_d = today - timedelta(days=60)
         to_d = today + timedelta(days=60)
         try:
             events = parse_ics_from_url(url, verbose=False)
+            # ICS parse succeeded — determine how many are in the date window.
             events_in_range = [e for e in events if e.start and from_d <= e.start.date() <= to_d]
+            h = sha8(url)
+            ev_out = OUT_DIR / f'events_{h}.json'
+            OUT_DIR.mkdir(parents=True, exist_ok=True)
             if events_in_range:
-                h = sha8(url)
-                ev_out = OUT_DIR / f'events_{h}.json'
-                OUT_DIR.mkdir(parents=True, exist_ok=True)
                 arr = []
                 for e in events_in_range:
                     arr.append({
@@ -225,24 +258,30 @@ def main():
                 with open(ev_out, 'w', encoding='utf-8') as f:
                     json.dump(arr, f, indent=2, ensure_ascii=False)
                 print(f'  ✓ ICS OK: {name or url} ({len(arr)} events)')
-                return (url, name, True)
+            else:
+                # Valid VCALENDAR but no events in the window — write an empty
+                # file so the file-count check at the end still passes.
+                with open(ev_out, 'w', encoding='utf-8') as f:
+                    json.dump([], f)
+                print(f'  ✓ ICS OK (no events in range): {name or url}')
+            return (url, name, html_url, True)
         except Exception:
             pass
-        return (url, name, False)
+        return (url, name, html_url, False)
 
     try:
         with ThreadPoolExecutor(max_workers=ics_concurrency) as pool:
-            futures = {pool.submit(try_ics_only, (url, name)): (url, name)
-                       for url, name in urls}
+            futures = {pool.submit(try_ics_only, (url, name, html_url)): (url, name, html_url)
+                       for url, name, html_url in urls}
             for future in as_completed(futures):
-                url, name, success = future.result()
+                url, name, html_url, success = future.result()
                 if success:
                     with _progress_lock:
                         ok += 1
                         ics_succeeded.add(url)
                         write_progress(last=name or url)
                 else:
-                    playwright_queue.append((url, name))
+                    playwright_queue.append((url, name, html_url))
 
         print(f'Phase 1 complete: {ok} succeeded via ICS, '
               f'{len(playwright_queue)} need Playwright fallback')
@@ -252,17 +291,20 @@ def main():
             print(f'Phase 2: Running Playwright extraction for {len(playwright_queue)} '
                   f'calendars (concurrency={pw_concurrency})...')
 
-            def run_playwright_for(url_name):
-                url, name = url_name
+            def run_playwright_for(url_entry):
+                url, name, html_url = url_entry
+                # Prefer the HTML URL for Playwright (it renders the Outlook
+                # SPA). Fall back to the primary URL if no HTML URL is stored.
+                pw_url = html_url or url
                 print(f'  → Playwright: {name or url}')
-                h = sha8(url)
+                h = sha8(url)  # hash is always based on the primary (ICS) URL
                 # Each Playwright subprocess writes to its own temp directory
                 # so concurrent instances don't clobber each other's events.json.
                 tmp_out = OUT_DIR / f'_tmp_{h}'
                 tmp_out.mkdir(parents=True, exist_ok=True)
                 sub_env = dict(env)
                 sub_env['EXTRACT_OUTPUT_DIR'] = str(tmp_out)
-                cmd = [sys.executable, str(pathlib.Path('tools') / 'extract_published_events.py'), url]
+                cmd = [sys.executable, str(pathlib.Path('tools') / 'extract_published_events.py'), pw_url]
                 try:
                     proc = subprocess.run(cmd, check=False, env=sub_env)
                     rc = proc.returncode

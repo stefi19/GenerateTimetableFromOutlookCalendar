@@ -34,6 +34,7 @@ def main():
     names_by_url = {}
     buildings_by_url = {}
     emails_by_url = {}
+    html_urls_by_url = {}  # primary url -> corresponding HTML URL for Playwright fallback
     import re
 
     def _format_email_to_name(email: str) -> str:
@@ -51,13 +52,17 @@ def main():
         reader = csv.reader(f)
         next(reader, None)  # Skip header if present
         for row in reader:
-            # prefer ICS (col 5) then HTML (col 4)
+            # prefer ICS (col 5) then HTML (col 4) as the primary URL
             html_url = row[4].strip() if len(row) > 4 else ''
             ics_url = row[5].strip() if len(row) > 5 else ''
             url = ics_url or html_url
             if not url:
                 continue
             urls.add(url)
+            # Store the HTML URL separately so Playwright can use it as fallback
+            # when the ICS feed fails or returns no events.
+            if html_url and html_url != url:
+                html_urls_by_url[url] = html_url
             # store building (col 2) and email (col 1) for later DB update
             building = row[2].strip() if len(row) > 2 else ''
             email = row[1].strip() if len(row) > 1 else ''
@@ -71,7 +76,7 @@ def main():
             else:
                 names_by_url[url] = (row[0].strip() if row and len(row) > 0 else f'Calendar {url.split("/")[-1]}')
 
-    print(f"Found {len(urls)} unique URLs")
+    print(f"Found {len(urls)} unique URLs ({len(html_urls_by_url)} with HTML fallback)")
 
     # Connect to DB
     db_path = pathlib.Path(__file__).parent.parent / 'data' / 'app.db'
@@ -88,6 +93,7 @@ def main():
             name = names_by_url.get(url, f'Calendar {url.split("/")[-1]}')
             building = buildings_by_url.get(url, '')
             email = emails_by_url.get(url, '')
+            html_url = html_urls_by_url.get(url, '')
             cur.execute('INSERT OR IGNORE INTO calendars (url, name, building, email_address, enabled, created_at) VALUES (?, ?, ?, ?, 1, datetime("now"))', (url, name, building or None, email or None))
             if cur.rowcount > 0:
                 added += 1
@@ -106,12 +112,14 @@ def main():
                         cur.execute('UPDATE calendars SET name = ? WHERE url = ?', (name, url))
             except Exception:
                 pass
-            # Always update building and email from CSV if available
+            # Always update building, email, and html_url from CSV if available
             try:
                 if building:
                     cur.execute('UPDATE calendars SET building = ? WHERE url = ? AND (building IS NULL OR building = "")', (building, url))
                 if email:
                     cur.execute('UPDATE calendars SET email_address = ? WHERE url = ? AND (email_address IS NULL OR email_address = "")', (email, url))
+                if html_url:
+                    cur.execute('UPDATE calendars SET html_url = ? WHERE url = ?', (html_url, url))
             except Exception:
                 pass
         except Exception as e:

@@ -1146,6 +1146,21 @@ def init_db():
                 conn.commit()
         except Exception:
             pass
+    # ensure older DBs have the html_url column (published HTML calendar URL
+    # used as a Playwright fallback when the primary ICS URL fails)
+    try:
+        with get_db_connection() as conn:
+            cur = conn.cursor()
+            cur.execute("SELECT html_url FROM calendars LIMIT 1")
+            _ = cur.fetchone()
+    except Exception:
+        try:
+            with get_db_connection() as conn:
+                cur = conn.cursor()
+                cur.execute('ALTER TABLE calendars ADD COLUMN html_url TEXT')
+                conn.commit()
+        except Exception:
+            pass
 
 def migrate_from_files():
     """Migrate existing JSON configs into the DB if present."""
@@ -1355,7 +1370,7 @@ def _run_extractor_background():
         combined = list(urls)
 
         # Record planned order for debugging/traceability (full list; UI truncates)
-        planned = [n for (_u, n) in combined]
+        planned = [n for (_u, n, *_rest) in combined]
         extractor_state['planned_order_full'] = planned
         extractor_state['planned_order'] = planned[:200]
 
@@ -1376,7 +1391,7 @@ def _run_extractor_background():
         # calendars.
         try:
             wanted_hashes = set()
-            for u, _n in combined:
+            for u, _n, *_rest in combined:
                 try:
                     h = hashlib.sha1(u.encode('utf-8')).hexdigest()[:8]
                     wanted_hashes.add(h)
@@ -1440,9 +1455,11 @@ def _run_extractor_background():
         except Exception:
             pass
 
-        for u, name in combined:
+        for entry in combined:
             try:
-                rc = _run_extractor_for_url(u, name)
+                u, name = entry[0], entry[1]
+                html_fallback = entry[2] if len(entry) >= 3 else None
+                rc = _run_extractor_for_url(u, name, html_url=html_fallback)
                 if rc == 0:
                     any_rc = True
             except Exception:
@@ -1518,8 +1535,15 @@ def _run_extractor_background():
             pass
 
 
-def _run_extractor_for_url(url: str, calendar_name: str = None) -> int:
-    """Run the extractor script for a specific URL (uses CLI arg). Returns returncode."""
+def _run_extractor_for_url(url: str, calendar_name: str = None, html_url: str = None) -> int:
+    """Run the extractor script for a specific URL (uses CLI arg). Returns returncode.
+
+    Parameters:
+        url          – Primary calendar URL (usually ICS).
+        calendar_name – Display name for logging.
+        html_url     – Optional HTML calendar URL used as Playwright fallback
+                       when the ICS URL cannot be rendered in a browser.
+    """
     out_dir = pathlib.Path('playwright_captures')
     out_dir.mkdir(exist_ok=True)
     h = hashlib.sha1(url.encode('utf-8')).hexdigest()[:8]
@@ -1577,6 +1601,15 @@ def _run_extractor_for_url(url: str, calendar_name: str = None) -> int:
                     except Exception:
                         continue
 
+                # Only write when we actually have events — do NOT overwrite
+                # an existing (possibly non-empty) file with an empty array.
+                # Most ICS feeds return an empty VCALENDAR (0 VEVENTs) for
+                # rooms with no current bookings; writing [] would clobber
+                # data that the full-extraction pipeline produced earlier.
+                if not data:
+                    # Return success (ICS parse succeeded) but skip the file write
+                    return 0
+
                 # write per-calendar events file and mapping just like extractor would
                 try:
                     h = hashlib.sha1(url.encode('utf-8')).hexdigest()[:8]
@@ -1629,7 +1662,11 @@ def _run_extractor_for_url(url: str, calendar_name: str = None) -> int:
         except Exception:
             pass
 
-    cmd = [sys.executable, str(pathlib.Path('tools') / 'extract_published_events.py'), url]
+    # Playwright fallback: use the HTML calendar URL when available because the
+    # ICS URL is not a renderable web page.  Hash stays based on the primary URL
+    # so the events_<hash>.json filename is consistent across approaches.
+    pw_url = html_url or url
+    cmd = [sys.executable, str(pathlib.Path('tools') / 'extract_published_events.py'), pw_url]
     try:
         # force UTF-8 for child process to avoid Windows cp1252 / OEM codepage problems
         env = os.environ.copy()
@@ -1815,8 +1852,14 @@ def periodic_fetcher(interval_minutes: int = 60):
 
             # Run extractor for each URL sequentially
             any_success = False
-            for u, name in urls_with_names:
-                rc = _run_extractor_for_url(u, name)
+            for entry in urls_with_names:
+                # Support both old 2-tuples and new 3-tuples (url, name, html_url)
+                if len(entry) >= 3:
+                    u, name, html_fallback = entry[0], entry[1], entry[2]
+                else:
+                    u, name = entry[0], entry[1]
+                    html_fallback = None
+                rc = _run_extractor_for_url(u, name, html_url=html_fallback)
                 if rc == 0:
                     any_success = True
 
@@ -2186,7 +2229,11 @@ def read_rooms_publisher_csv():
                 ics = (row[5] or '').strip() if len(row) > 5 else ''
                 url = ics or html
                 if url:
-                    out.append((url, name))
+                    # Return (primary_url, display_name, html_url) 3-tuples.
+                    # html_url is the HTML calendar URL used as Playwright
+                    # fallback when ICS parsing yields no events.
+                    html_fallback = html if (html and url != html) else None
+                    out.append((url, name, html_fallback))
     except Exception:
         return []
     return out
@@ -2277,9 +2324,11 @@ def _daily_cleanup_loop(cutoff_days: int = 60):
                         urls_with_names = []
 
                     any_ok = False
-                    for u, name in urls_with_names:
+                    for entry in urls_with_names:
                         try:
-                            rc = _run_extractor_for_url(u, name)
+                            u, name = entry[0], entry[1]
+                            html_fallback = entry[2] if len(entry) >= 3 else None
+                            rc = _run_extractor_for_url(u, name, html_url=html_fallback)
                             if rc == 0:
                                 any_ok = True
                         except Exception:
