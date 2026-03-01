@@ -22,608 +22,265 @@ A production-grade Flask + React application that imports events from **Outlook 
 
 - [Tech Stack](#tech-stack)- [Running the App](#running-the-app)
 
-- [Project Structure](#project-structure)- [Frontend (React SPA)](#frontend-react-spa)
 
-- [Quick Start](#quick-start)- [Backend API](#backend-api)
+├── app.py                          # Flask backend — routes, API, background tasks# Set admin password (optional)
 
-  - [Docker (Production)](#docker-production)- [Admin UI](#admin-ui)
 
-  - [VM Deployment](#vm-deployment)- [Storage](#storage)
+├── deploy.sh                       # One-command VM deployment script**Updating the app without losing data:**
+├── data/docker compose build --no-cache
 
-  - [Local Development](#local-development)- [Periodic Importer](#periodic-importer)
 
-- [Configuration](#configuration)- [Troubleshooting](#troubleshooting)
+### Event Management
+| `GUNICORN_MAX_REQUESTS` | `2000` | Max requests before worker restart || Table | Description |
 
-  - [Environment Variables](#environment-variables)- [Contributing](#contributing)
+<!--
+  Clean, condensed README for the AC UTCN Timetable Viewer.
+  Replaces older/duplicated READMEs with a single authoritative document.
+-->
 
-  - [CSV Calendar Source](#csv-calendar-source)
+# AC UTCN — Room Timetable Viewer
 
-  - [Room & Building Aliases](#room--building-aliases)## Overview
+A production-grade Flask + React application that imports events from
+Outlook "published calendar" feeds (ICS + HTML), normalizes room/subject
+data, and serves a modern timetable UI. Built for the Technical
+University of Cluj-Napoca (UTCN), Faculty of Automation and Computer
+Science.
 
-- [Extraction Pipeline](#extraction-pipeline)
+---
 
-- [API Reference](#api-reference)This project is a complete timetable management system for the Technical University of Cluj-Napoca (UTCN), Faculty of Automation and Computer Science. It:
+## Table of contents
 
-  - [Public Endpoints](#public-endpoints)
+- Overview
+- Features
+- Architecture
+- Tech stack
+- Project structure
+- Quick start
+  - Docker (production)
+  - VM deployment
+  - Local development
+- Configuration
+  - Environment variables
+  - CSV calendar source
+  - Room & building aliases
+- Extraction pipeline
+- API reference
+  - Public endpoints
+  - Admin endpoints
+- Admin panel
+- Frontend development
+- Data storage
+- Deployment operations
+- Troubleshooting
+- License
 
-  - [Admin Endpoints](#admin-endpoints)- Extracts events from published Outlook calendar pages (or uploaded `.ics` files)
+---
 
-- [Admin Panel](#admin-panel)- Applies subject/location normalization for consistent display
+## Overview
 
-- [Frontend Development](#frontend-development)- Persists configured calendar URLs and user-added events in a local SQLite database
+The system ingests room calendars published by Outlook/Exchange (≈200
+rooms), parses ICS feeds or scrapes HTML calendar pages with Playwright,
+and exposes the merged timetable through a React SPA with three views:
 
-- [Data Storage](#data-storage)- Provides a **modern React SPA frontend** with:
-
-- [Deployment Operations](#deployment-operations)  - 📅 **Schedule View** — full weekly timetable with filtering
-
-- [Troubleshooting](#troubleshooting)  - 🚀 **Departures View** — departure-board style display for today/tomorrow
-
-- [License](#license)  - ⚙️ **Admin Panel** — manage calendars, events, and imports
-
-- Includes Playwright-based tools for extracting calendars from client-side rendered pages
+| View | Purpose |
+|------|---------|
+| Schedule | Weekly timetable grid (filterable by room/subject/professor) |
+| Departures | Departure-board style view for today/tomorrow (lobby displays) |
+| Admin | Manage calendars, run imports, add manual/extracurricular events |
 
 ---
 
 ## Features
 
-## Overview
-
-### ✅ Implemented Features
-
-The system ingests room calendars published by Outlook/Exchange (≈200 rooms), parses ICS feeds or scrapes HTML calendar pages with Playwright, and exposes the merged timetable through a React SPA with three views:
-
-| Feature | Description |
-
-| View | Description ||---------|-------------|
-
-|------|-------------|| **React SPA Frontend** | Modern single-page application with tabbed navigation (Schedule, Departures, Admin) |
-
-| **Schedule** | Weekly timetable grid grouped by day, filterable by room/subject/professor || **Live Clock Display** | Real-time clock in header showing current date and time |
-
-| **Departures** | Airport-style departure board for lobby displays — shows today + tomorrow || **Schedule View** | Full timetable view with day grouping and event cards |
-
-| **Admin** | Password-protected panel to upload CSVs, manage calendars, trigger imports || **Departures Board** | Departure-board style view for today/tomorrow, ideal for large displays |
-
-| **Admin Panel** | Add/manage calendar URLs, trigger imports, manage manual & extracurricular events |
-
----| **SQLite Persistence** | All calendars, manual events, and extracurricular events stored in `data/app.db` |
-
-| **Playwright Extractor** | Render client-side pages and extract `.ics` links automatically |
-
-## Features| **Subject Normalization** | Parse event titles into subject, professor, and room components |
-
-| **Events API** | REST endpoint `/events.json` with filtering support |
-
-| Category | Feature || **Periodic Auto-Import** | Background thread imports calendars every 60 minutes |
-
-|----------|---------|| **Per-Calendar Colors** | Optional color assignment for each calendar source |
-
-| **Calendar Import** | Dual-URL pipeline — ICS feed (fast, concurrent) with HTML/Playwright fallback || **Legacy Migration** | Automatic migration from JSON config files to SQLite |
-
-| **Bulk CSV Upload** | Upload `Rooms_PUBLISHER_HTML-ICS(in).csv` to populate all room calendars at once |
-
-| **React SPA** | Schedule, Departures board, and Admin views with live clock and UTCN branding |### 🗓️ Planned Features
-
-| **Admin Auth** | Password-protected admin with session management, CSRF protection, rate limiting |
-
-| **Per-Calendar Colors** | Optional hex color per calendar source for visual differentiation |- Password-protected Admin access
-
-| **Periodic Auto-Import** | Background thread re-fetches all calendars every 60 minutes |- Professor-specific views with restricted capabilities
-
-| **Daily Cleanup** | Automatic pruning of events older than 60 days |- Central hosted server with real-time sync to multiple devices
-
-| **Subject Normalisation** | Parses titles into subject + professor + room components |- Offline-first local DB with WebSocket push updates
-
-| **Room/Building Aliases** | JSON-based mappings for consistent room and building names |
-
-| **ICS Export** | Export per-room schedules as `.ics` files |## Tech Stack
-
-| **Health Check** | `GET /health` endpoint for Docker/load-balancer probes |
-
-| **Debug Pipeline** | `GET /debug/pipeline` diagnostic endpoint (no auth) || Layer | Technology |
-
-| **SQLite + WAL** | WAL-mode SQLite with file-locking for concurrent Gunicorn workers ||-------|------------|
-
-| **Performance Tuned** | Optimised for 32 GB RAM / 16 vCPU — 8 Gunicorn workers × 4 threads || **Backend** | Python 3.10+, Flask, Gunicorn |
-
-| **Manual Events** | Admin can add one-off events directly || **Frontend** | React 18, Vite |
-
-| **Extracurricular Events** | Manage recurring activities (clubs, sports) shown alongside timetable || **Database** | SQLite (`data/app.db`) |
-
-| **Calendar Parsing** | `ics` library, custom microformat parser |
-
----| **Web Scraping** | Playwright (for client-side rendered pages) |
-
-| **Styling** | Custom CSS with modern design |
-
-## Architecture| **Containerization** | Docker, Docker Compose |
-
-
-
-```## Project Structure
-
-┌─────────────────────────────────────────────────────────────────┐
-
-│                      React SPA (Vite)                           │```
-
-│   ┌───────────┐   ┌──────────────┐   ┌──────────┐              │├── app.py                    # Flask backend (API + routes)
-
-│   │ Schedule  │   │  Departures  │   │  Admin   │              │├── timetable.py              # Calendar parsing utilities
-
-│   └───────────┘   └──────────────┘   └──────────┘              │├── requirements.txt          # Python dependencies
-
-└───────────────────────────┬─────────────────────────────────────┘├── Dockerfile                # Docker image build
-
-                            │ /events.json, /calendars.json, ...├── docker-compose.yml        # Docker Compose config
-
-┌───────────────────────────▼─────────────────────────────────────┐├── run.sh                    # Quick start script
-
-│                    Flask + Gunicorn                              │├── setup.sh                  # Full setup script
-
-│   ┌────────────┐  ┌───────────────┐  ┌──────────────────────┐  │├── config/
-
-│   │ Events API │  │ Admin Routes  │  │ Background Tasks     │  ││   └── room_aliases.json     # Room name mappings
-
-│   │            │  │ (auth-gated)  │  │ • periodic_fetcher   │  │├── data/
-
-│   │            │  │               │  │ • daily_cleanup       │  ││   └── app.db                # SQLite database (created on first run)
-
-│   └────────────┘  └───────────────┘  └──────────────────────┘  │├── frontend/                 # React SPA
-
-└───────────────────────────┬─────────────────────────────────────┘│   ├── src/
-
-                            ││   │   ├── App.jsx           # Main app component with tabs
-
-┌───────────────────────────▼─────────────────────────────────────┐│   │   ├── Schedule.jsx      # Schedule view
-
-│                     Data Layer                                   ││   │   ├── Departures.jsx    # Departures board view
-
-│   ┌────────────────┐  ┌─────────────────────────────────────┐   ││   │   ├── Admin.jsx         # Admin panel
-
-│   │ SQLite (WAL)   │  │ playwright_captures/                │   ││   │   ├── styles.css        # Application styles
-
-│   │ data/app.db    │  │   events_<hash>.json  (per-room)    │   ││   │   └── main.jsx          # Entry point
-
-│   │                │  │   schedule_by_room.json (merged)    │   ││   ├── package.json
-
-│   │                │  │   calendar_map.json                 │   ││   └── vite.config.js
-
-│   └────────────────┘  └─────────────────────────────────────┘   │├── playwright_captures/      # Extractor output files
-
-└───────────────────────────┬─────────────────────────────────────┘│   ├── events.json           # Merged events for UI
-
-                            ││   └── schedule_by_room.json # Room-based schedule
-
-┌───────────────────────────▼─────────────────────────────────────┐├── templates/                # Jinja2 templates (legacy + fallback)
-
-│                  Extraction Pipeline                             │├── tools/                    # CLI utilities
-
-│                                                                  ││   ├── extract_published_events.py
-
-│   Phase 1: ICS-direct (ThreadPoolExecutor, 8 workers)           ││   ├── build_schedule_by_room.py
-
-│   ┌──────────────────────────────────────────────────────┐      ││   └── subject_parser.py
-
-│   │  parse_ics_from_url() → events_<sha1[:8]>.json      │      │└── static/                   # Static assets
-
-│   │  Empty VCALENDAR = success (room has no bookings)    │      │```
-
-│   └──────────────────────────────────────────────────────┘      │
-
-│                         │ failures only                          │## Requirements
-
-│   Phase 2: Playwright fallback (4 workers)                      │
-
-│   ┌──────────────────────────────────────────────────────┐      │- **Python**: 3.10+ (tested with 3.14)
-
-│   │  extract_published_events.py → headless Chromium     │      │- **Node.js**: 18+ (for frontend development)
-
-│   │  Uses html_url from CSV (not the ICS URL)            │      │- **Docker**: 20+ (for containerized deployment)
-
-│   └──────────────────────────────────────────────────────┘      │- **System**: macOS / Linux (Playwright requires extra setup on some systems)
-
-│                         │                                        │
-
-│   Phase 3: build_schedule_by_room.py                            │## Quick Start
-
-│   ┌──────────────────────────────────────────────────────┐      │
-
-│   │  Merge all events_*.json → schedule_by_room.json     │      │### Option 1: Docker (Recommended for Production)
-
-│   └──────────────────────────────────────────────────────┘      │
-
-└──────────────────────────────────────────────────────────────────┘```bash
-
-```# Build and run with Docker Compose
-
-docker compose up -d
+- Dual-URL pipeline: ICS feed (fast, concurrent) with HTML/Playwright fallback
+- Bulk CSV upload (`Rooms_PUBLISHER_HTML-ICS(in).csv`) to populate calendars
+- React SPA frontend (Vite) with Schedule, Departures and Admin
+- Admin authentication, CSRF protection and per-IP rate limiting
+- Per-calendar color assignment
+- Periodic background importer (default: every 60 minutes)
+- Daily cleanup and retention (default: 60 days)
+- Title parsing & subject normalization (subject/professor/room)
+- Room and building aliasing via JSON config files
+- Playwright extractor for client-side rendered calendar pages
+- WAL-mode SQLite for robust concurrent access
 
 ---
 
-# View logs
+## Architecture (high level)
 
-## Tech Stackdocker compose logs -f
+The core components:
 
+- Flask backend (REST API, admin routes, background threads)
+- React frontend (Vite) — SPA used by end users and admins
+- Extraction pipeline (`tools/*`) that writes per-calendar JSON files
+- `playwright_captures/` directory that stores per-calendar outputs and
+  the merged schedule
 
+Extraction flow summary:
 
-| Layer | Technology |# Stop
+1. CSV → DB: populate calendars and store both ICS (primary) and HTML
+   fallback URLs
+2. Phase 1 — ICS direct: parse ICS feeds concurrently (fast)
+   - Empty VCALENDAR (no events) is considered success and does not fall
+     back to Playwright
+3. Phase 2 — Playwright fallback: render the HTML URL when ICS fails
+4. Phase 3 — Merge: `build_schedule_by_room.py` builds `schedule_by_room.json`
 
-|-------|------------|docker compose down
+---
 
-| **Runtime** | Python 3.12, Flask, Gunicorn (gthread) |```
+## Tech stack
 
-| **Frontend** | React 18, Vite, custom CSS |
+- Backend: Python 3.12, Flask, Gunicorn (gthread)
+- Frontend: React 18, Vite
+- Database: SQLite (WAL)
+- Scraping: Playwright (headless Chromium)
+- Calendar parsing: `ics` library + custom parsers
+- Container: Docker (multi-stage build: Node + Python)
 
-| **Database** | SQLite 3 (WAL mode) |The app will be available at **http://localhost:5000**
+---
 
-| **Calendar Parsing** | `ics` library + custom microformat parser |
-
-| **Web Scraping** | Playwright (headless Chromium) |### Option 2: VM Deployment (Production Server)
-
-| **Container** | Docker multi-stage build (Node 20 + Python 3.12-slim-bookworm) |
-
-| **Orchestration** | Docker Compose with health checks |For deploying on a VM with persistent data that survives code updates:
-
-
-
----```bash
-
-# First time setup on VM
-
-## Project Structuregit clone https://github.com/stefi19/GenerateTimetableFromOutlookCalendar.git
-
-cd GenerateTimetableFromOutlookCalendar
+## Project structure (important files)
 
 ```
-
-├── app.py                          # Flask backend — routes, API, background tasks# Set admin password (optional)
-
-├── timetable.py                    # ICS parsing, event model, fetch utilitiesecho "ADMIN_PASSWORD=your-secure-password" > .env
-
-├── requirements.txt                # Python dependencies
-
-├── Dockerfile                      # Multi-stage build (frontend + backend)# Start the app
-
-├── docker-compose.yml              # Production compose with perf tuningdocker compose up -d --build
-
-├── docker-compose.local.yml        # Local development overrides```
-
-├── entrypoint.sh                   # Container entrypoint (DB setup, extraction, Gunicorn)
-
-├── deploy.sh                       # One-command VM deployment script**Updating the app without losing data:**
-
-├── run.sh                          # Local development start script
-
-├── setup.sh                        # First-time local setup (venv, deps, Playwright)```bash
-
-│# Pull latest code and rebuild
-
-├── config/./deploy.sh
-
-│   ├── Rooms_PUBLISHER_HTML-ICS(in).csv   # Authoritative room calendar list
-
-│   ├── room_aliases.json                  # Room name normalisations# Or manually:
-
-│   └── building_aliases.json              # Building name mappingsgit pull origin main
-
-│docker compose down
-
-├── data/docker compose build --no-cache
-
-│   └── app.db                      # SQLite database (created at runtime)docker compose up -d
-
-│```
-
-├── frontend/                       # React SPA (Vite)
-
-│   ├── package.json**Data persistence:** User data (calendars, events) is stored in Docker volumes:
-
-│   ├── vite.config.js- `timetable_data` — SQLite database with calendars and manual events
-
-│   └── src/- `timetable_captures` — Extracted calendar events
-
-│       ├── main.jsx                # Entry point
-
-│       ├── App.jsx                 # Root component with tab navigationThese volumes persist across container rebuilds. To backup:
-
-│       ├── Schedule.jsx            # Weekly timetable view
-
-│       ├── Departures.jsx          # Departure board view```bash
-
-│       ├── Admin.jsx               # Admin panel# Backup data
-
-│       ├── RouteMap.jsx            # Route / campus mapdocker run --rm -v timetable_data:/data -v $(pwd):/backup alpine tar czf /backup/data-backup.tar.gz -C /data .
-
-│       └── styles.css              # Application styles
-
-│# Restore data
-
-├── tools/                          # CLI utilities & pipeline scriptsdocker run --rm -v timetable_data:/data -v $(pwd):/backup alpine tar xzf /backup/data-backup.tar.gz -C /data
-
-│   ├── run_full_extraction.py      # Orchestrates full ICS + Playwright extraction```
-
-│   ├── build_schedule_by_room.py   # Merges per-room files → schedule_by_room.json
-
-│   ├── extract_published_events.py # Playwright-based HTML calendar scraper### Option 3: Automated Setup (Development)
-
-│   ├── populate_calendars_from_csv.py  # CSV → DB population
-
-│   ├── enforce_csv_full_update.py  # Sync DB metadata from CSV```bash
-
-│   ├── subject_parser.py           # Title → subject + professor parsing# Clone and setup
-
-│   ├── event_parser.py             # Event normalisation utilities./setup.sh
-
-│   ├── init_db.py                  # Standalone DB initialisation
-
-│   ├── worker_update_future.py     # Background worker for incremental updates# Run the app
-
-│   └── ...                         # Additional maintenance/diagnostic tools./run.sh
-
-│```
-
-├── playwright_captures/            # Extraction output (runtime, git-ignored)
-
-│   ├── events_<hash>.json          # Per-calendar events (sha1(url)[:8])### Option 3: Manual Setup
-
-│   ├── schedule_by_room.json       # Merged room schedule (served by API)
-
-│   ├── calendar_map.json           # Hash → URL/name/building mapping```bash
-
-│   ├── import_progress.json        # Live extraction progress# Create virtual environment
-
-│   └── import_complete.txt         # Marker written when extraction finishespython3 -m venv .venv
-
-│source .venv/bin/activate
-
-├── templates/                      # Jinja2 templates (admin login, React shell)
-
-└── static/                         # Static assets# Install Python dependencies
-
-```pip install -r requirements.txt
-
-
-
----# Install Playwright browsers (for calendar extraction)
-
-python -m playwright install chromium
-
-## Quick Start
-
-# Run the app
-
-### Docker (Production)python app.py
-
+app.py                      # Flask backend (API + routes)
+timetable.py                # Calendar parsing utilities
+requirements.txt            # Python dependencies
+Dockerfile
+docker-compose.yml
+entrypoint.sh
+deploy.sh
+frontend/                   # React SPA
+tools/                      # Extraction and utility scripts
+config/                     # CSV + alias mappings
+data/                       # data/app.db (SQLite)
+playwright_captures/        # Extractor outputs (git-ignored)
 ```
+
+---
+
+## Quick start
+
+### Docker (recommended)
 
 ```bash
-
-# Clone the repository## Running the App
-
 git clone https://github.com/stefi19/GenerateTimetableFromOutlookCalendar.git
-
-cd GenerateTimetableFromOutlookCalendar### Development Mode
-
-
-
-# (Optional) Create a .env file with your settings```bash
-
-cat > .env <<EOF# Using the run script (recommended)
-
-ADMIN_PASSWORD=your-secure-password./run.sh
-
-FLASK_SECRET=$(openssl rand -hex 32)
-
-HOST_PORT=5000# Or manually
-
-EOFsource .venv/bin/activate
-
-python app.py
-
-# Build and run```
-
+cd GenerateTimetableFromOutlookCalendar
+# (optional) create .env with ADMIN_PASSWORD and FLASK_SECRET
 docker compose up -d --build
-
-The app starts at **http://127.0.0.1:5000** and automatically redirects to the React SPA.
-
-# Check status
-
-docker compose ps### Background Mode
-
 docker compose logs -f timetable
+```
 
-``````bash
+App is available at `http://localhost:5000`.
 
-# Start in background
+### VM deployment
 
-The app will be available at **http://localhost:5000**.nohup ./.venv/bin/python app.py > server.log 2>&1 &
+Use `deploy.sh` for a one-command deploy and safe rolling updates.
 
+### Local development
 
-
-### VM Deployment# View logs
-
-tail -f server.log
-
-For a production VM with persistent data:
-
-# Stop the server
-
-```bashkill $(lsof -ti:5000)
-
-# First time```
-
-git clone https://github.com/stefi19/GenerateTimetableFromOutlookCalendar.git
-
-cd GenerateTimetableFromOutlookCalendar## Frontend (React SPA)
-
-echo "ADMIN_PASSWORD=your-secure-password" > .env
-
-docker compose up -d --buildThe frontend is a modern React single-page application accessible at `/app`:
-
-
-
-# Subsequent updates (preserves all data)### Navigation Tabs
-
-./deploy.sh
-
-```| Tab | Route | Description |
-
-|-----|-------|-------------|
-
-`deploy.sh` pulls the latest code, rebuilds the image, restarts the container, and waits for health. Docker volumes persist data across rebuilds:| 📅 **Schedule** | `/app` | Weekly timetable with day grouping |
-
-| 🚀 **Departures** | `/app` | Today/tomorrow events for display boards |
-
-| Volume | Contents || ⚙️ **Admin** | `/app` | Manage calendars and events |
-
-|--------|----------|
-
-| `timetable_data` | SQLite database (`data/app.db`) |### Features
-
-| `timetable_captures` | Extracted events, schedules |
-
-| `timetable_config` | CSV and alias configuration |- **Live Clock**: Real-time display of current date and time
-
-| `playwright_user_data` | Playwright browser profile |- **Responsive Design**: Works on desktop and tablet displays
-
-- **Event Cards**: Visual cards showing event details (time, title, location, professor)
-
-**Backup & restore:**- **University Branding**: UTCN themed header and styling
-
-
-
-```bash## Backend API
-
-# Backup
-
-docker run --rm -v timetable_data:/data -v $(pwd):/backup alpine \### Main Endpoints
-
-  tar czf /backup/data-backup.tar.gz -C /data .
-
-| Method | Endpoint | Description |
-
-# Restore|--------|----------|-------------|
-
-docker run --rm -v timetable_data:/data -v $(pwd):/backup alpine \| `GET` | `/` | Redirects to SPA |
-
-  tar xzf /backup/data-backup.tar.gz -C /data| `GET` | `/app` | React SPA frontend |
-
-```| `GET` | `/events.json` | Events API with filters |
-
-| `GET` | `/schedule` | Legacy schedule view |
-
-### Local Development| `GET` | `/departures` | Legacy departures view |
-
-| `GET` | `/admin` | Legacy admin view |
-
-```bash| `POST` | `/admin/calendar` | Add calendar URL |
-
-# First-time setup| `POST` | `/admin/import` | Trigger import |
-
-python3 -m venv .venv| `POST` | `/admin/manual-event` | Add manual event |
-
+```bash
+python3 -m venv .venv
 source .venv/bin/activate
-
-pip install -r requirements.txt### Events API Query Parameters
-
+pip install -r requirements.txt
 python -m playwright install chromium
-
+python app.py  # backend
+cd frontend
+npm install
+npm run dev    # frontend HMR
 ```
 
-# Run the backendGET /events.json?from=2026-01-01&to=2026-01-07&subject=Math&room=A101
-
-python app.py```
-
-# → http://localhost:5000
-
-| Parameter | Description |
-
-# In a separate terminal — frontend dev server with hot reload|-----------|-------------|
-
-cd frontend| `from` | Start date (YYYY-MM-DD) |
-
-npm install| `to` | End date (YYYY-MM-DD) |
-
-npm run dev| `subject` | Filter by subject |
-
-# → http://localhost:5173 (proxies API to Flask)| `professor` | Filter by professor |
-
-```| `room` | Filter by room |
-
-
-
-Or use the convenience scripts:## Admin UI
-
-
-
-```bashAccess the Admin panel via the ⚙️ Admin tab in the SPA (or `/admin` for legacy view).
-
-./setup.sh   # Full first-time setup
-
-./run.sh     # Start the app### Calendar Management
-
-```
-
-- **Add Calendar URL**: Enter a published Outlook calendar URL with optional name and color
-
----- **Import Now**: Trigger immediate calendar extraction (runs Playwright in background)
-
-- **Delete Calendar**: Remove a configured calendar from the database
+---
 
 ## Configuration
 
-### Event Management
+Key environment variables (set in `.env` or Docker compose):
 
-### Environment Variables
+- `ADMIN_PASSWORD` — admin password (change in production)
+- `FLASK_SECRET` — Flask session secret
+- `GUNICORN_WORKERS`, `GUNICORN_THREADS`, `GUNICORN_WORKER_CLASS` — Gunicorn tuning
+- `SQLITE_WAL_MODE` — enable WAL mode for SQLite
+- `PLAYWRIGHT_CONCURRENCY` / `ICS_CONCURRENCY` — extraction concurrency
+- `DISABLE_BACKGROUND_TASKS` — set `1` to disable periodic importer
 
-- **Manual Events**: Add one-time events directly (persisted in DB)
+CSV format: `config/Rooms_PUBLISHER_HTML-ICS(in).csv` — columns include
+`Nume_Sala`, `Email_Sala`, `Cladire`, `PublishedCalendarUrl` (HTML),
+`PublishedICalUrl` (ICS). The CSV is authoritative and is used to populate
+the calendars table.
 
-| Variable | Default | Description |- **Extracurricular Events**: Add recurring activities (clubs, sports, etc.)
+---
 
-|----------|---------|-------------|- **Delete Events**: Remove manual or extracurricular events
+## Extraction pipeline (details)
 
-| `ADMIN_USERNAME` | `admin` | Admin login username |
+- Phase 1: Try `parse_ics_from_url()` concurrently (fast path). Events are
+  filtered to ±60 days and written to `playwright_captures/events_<hash>.json`.
+- If the feed is an empty VCALENDAR (0 events), the run is considered
+  successful and no Playwright fallback is queued.
+- Phase 2: Playwright fallback renders the HTML URL (from CSV) and
+  captures XHR responses to extract calendar items.
+- Phase 3: `build_schedule_by_room.py` merges per-calendar files into
+  `schedule_by_room.json` which the frontend consumes.
 
-| `ADMIN_PASSWORD` | `admin123` | Admin login password (**change in production**) |### Color Coding
+---
 
-| `ADMIN_SESSION_TIMEOUT` | `3600` | Admin session duration (seconds) |
+## API reference (high level)
 
-| `FLASK_SECRET` | `dev-secret` | Flask session secret key |Each calendar can have an assigned color displayed as a swatch in the admin list for easy identification.
+- `GET /` → SPA
+- `GET /health` → health check
+- `GET /events.json` → merged events (supports `from`, `to`, `room`, `subject` filters)
+- `GET /calendars.json` → configured calendars
+- Admin endpoints require authentication and are exposed under `/admin`.
 
-| `PORT` | `5000` | HTTP listen port |
+Refer to the in-repo admin UI for exact operations (upload CSV, import,
+add manual events, delete calendars).
 
-| `GUNICORN_WORKERS` | `8` | Number of Gunicorn worker processes |## Storage
+---
 
-| `GUNICORN_THREADS` | `4` | Threads per worker |
+## Admin panel
 
-| `GUNICORN_WORKER_CLASS` | `gthread` | Worker class |### SQLite Database (`data/app.db`)
+Accessible at `/admin`. Features include bulk CSV upload, manual event
+creation, import controls, and calendar metadata editing (name, color,
+enabled toggles).
 
-| `GUNICORN_TIMEOUT` | `180` | Request timeout (seconds) |
+Security: session-based auth, CSRF protection, per-IP authentication
+rate limiting.
 
-| `GUNICORN_MAX_REQUESTS` | `2000` | Max requests before worker restart || Table | Description |
+---
 
-| `SQLITE_WAL_MODE` | `1` | Enable WAL mode for concurrent reads ||-------|-------------|
+## Troubleshooting (quick)
 
-| `PLAYWRIGHT_CONCURRENCY` | `6` | Max simultaneous Playwright browsers || `calendars` | Configured calendar URLs with name, color, enabled status |
+- If the UI shows 0 events: visit `/debug/pipeline` to inspect per-calendar
+  file counts and schedule state.
+- If Playwright crashes (SIGSEGV) on your host, either use the provided
+  Docker image (includes system deps) or install platform-specific
+  libraries (`libnss3`, `libatk1.0-0`, etc.).
+- If you see `too many open files`, increase `ulimit -n` or run inside
+  container which sets a higher limit in `entrypoint.sh`.
 
-| `ICS_CONCURRENCY` | `8` | Max simultaneous ICS HTTP fetches || `manual_events` | User-added one-time events |
+---
 
-| `DISABLE_BACKGROUND_TASKS` | `0` | Set to `1` to skip periodic fetcher/cleanup || `extracurricular_events` | Recurring extracurricular activities |
+## Data & backups
 
-| `PLAYWRIGHT_USER_DATA_DIR` | — | Path to persistent Playwright browser profile |
+- Database: `data/app.db` (SQLite). Persisted in Docker volume `timetable_data`.
+- Extracted files: `playwright_captures/` (persisted in `timetable_captures`).
 
-| `APP_PYTHON` | — | Override Python executable path |### Playwright Captures (`playwright_captures/`)
+Backup example:
 
+```bash
+docker run --rm -v timetable_data:/data -v $(pwd):/backup alpine \
+  tar czf /backup/data-backup.tar.gz -C /data .
+```
 
+---
 
-### CSV Calendar Source| File | Description |
+## License
 
-|------|-------------|
+MIT
 
-The authoritative list of room calendars is a CSV file: `config/Rooms_PUBLISHER_HTML-ICS(in).csv`| `events.json` | Merged events from all sources (used by UI) |
+---
 
-| `schedule_by_room.json` | Room-based schedule view |
-
+If you'd like, I can also: add a concise `CONTRIBUTING.md`, generate a
+clean `.gitignore`, or create a short `README_ADMIN.md` for the admin
+user workflows. Which would you prefer next?
 | Column | Index | Description || `schedule_by_room.csv` | CSV export of room schedule |
 
 |--------|-------|-------------|| `calendar_full.ics` | Raw downloaded ICS file |
